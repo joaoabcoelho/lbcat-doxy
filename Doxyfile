@@ -771,7 +771,6 @@ WARN_LOGFILE           =
 # spaces. See also FILE_PATTERNS and EXTENSION_MAPPING
 # Note: If this tag is empty the current directory is searched.
 
-#INPUT                  = /home/eleclhcb/LHCb/lbcat-cmake/CatDoc/README.md /home/eleclhcb/LHCb/lbcat-cmake/CatDoc/Tutorial.md /home/eleclhcb/LHCb/lbcat-cmake/CatDoc/../CatKernel /home/eleclhcb/LHCb/lbcat-cmake/CatDoc/../CatPython /home/eleclhcb/LHCb/lbcat-cmake/CatDoc/../CatCore /home/eleclhcb/LHCb/lbcat-cmake/CatDoc/../CatCalo /home/eleclhcb/LHCb/lbcat-cmake/CatDoc/../CatCaloEvent /home/eleclhcb/LHCb/lbcat-cmake/CatDoc/../CatCaloUpgrade /home/eleclhcb/LHCb/lbcat-cmake/CatDoc/../CatCaloProto40MHz /home/eleclhcb/LHCb/lbcat-cmake/CatDoc/../CatBcn
 INPUT                  = $(CATPATH)
 
 # This tag can be used to specify the character encoding of the source files
