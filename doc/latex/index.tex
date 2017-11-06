@@ -1,0 +1,51 @@
+\subsection*{Introduction\+: }
+
+Cat is the software for the control, configuration and test of the calorimeter electronics.
+
+\hyperlink{tutorial}{C\+AT Tutorial} for a brief tutorial
+
+\subsection*{Installation\+: }
+
+You need to have cmake installed on your machine (this is on the standard repositories and probably already installed on your machine). C\+MT is not used anymore.
+
+Just checkout a new working copy of the software, but requiring a specific branch which is called cmake.
+
+Go to the main directory and adapt the setup.\+sh file. You should have only to modify the C\+A\+T\+P\+A\+TH variable, so that it points to the directory where the software is installed.
+
+Type
+
+\begin{quote}
+source setup.\+sh \end{quote}
+
+
+\begin{quote}
+cmake . \end{quote}
+
+
+\begin{quote}
+make all \end{quote}
+
+
+\begin{quote}
+make install \end{quote}
+The doxygen documentation can be built with the command
+
+\begin{quote}
+make doc \end{quote}
+
+
+\subsection*{Starting Cat\+: }
+
+To start cat you can run either in any place (alias defined in the setup.\+sh file)\+:
+
+\begin{quote}
+catcmd \end{quote}
+for the command version
+
+\begin{quote}
+catgui \end{quote}
+for the gui version. It is advised to create another directory where you start the software, so that all the user files/directory will stand in another place than the source and compilation files. An alias setup\+Cat is useful to launch the command
+
+\begin{quote}
+source setup.\+sh \end{quote}
+with the proper path to the source.\+sh file. 

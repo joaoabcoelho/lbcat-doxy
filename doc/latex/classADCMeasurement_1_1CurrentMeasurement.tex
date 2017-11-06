@@ -1,0 +1,194 @@
+\hypertarget{classADCMeasurement_1_1CurrentMeasurement}{}\section{A\+D\+C\+Measurement.\+Current\+Measurement Class Reference}
+\label{classADCMeasurement_1_1CurrentMeasurement}\index{A\+D\+C\+Measurement.\+Current\+Measurement@{A\+D\+C\+Measurement.\+Current\+Measurement}}
+Inheritance diagram for A\+D\+C\+Measurement.\+Current\+Measurement\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classADCMeasurement_1_1CurrentMeasurement}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classADCMeasurement_1_1CurrentMeasurement_a0a2d0af1a969198d474d3f1fcd656d87}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, cat, obj, panel, path)
+\item 
+def \hyperlink{classADCMeasurement_1_1CurrentMeasurement_a1ae6055f5228952c14ea04fe83db0cb4}{on\+Apply} (self, event)
+\item 
+def \hyperlink{classADCMeasurement_1_1CurrentMeasurement_af3fb35c2334ccea6ac6274604bf09703}{update} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classADCMeasurement_1_1CurrentMeasurement_ab3415b829a716f76fc9503aa932fa0b7}{s1}
+\item 
+\hyperlink{classADCMeasurement_1_1CurrentMeasurement_a7bf546778b1b2e06ae9b3c07b8bccb95}{s2}
+\item 
+\hyperlink{classADCMeasurement_1_1CurrentMeasurement_a6fb15bf8899950a9cb87f35c33595586}{s3}
+\item 
+\hyperlink{classADCMeasurement_1_1CurrentMeasurement_a506aa9010df3a05e20606be1ee4f4c5b}{s4}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 11 of file A\+D\+C\+Measurement.\+py.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classADCMeasurement_1_1CurrentMeasurement_a0a2d0af1a969198d474d3f1fcd656d87}\label{classADCMeasurement_1_1CurrentMeasurement_a0a2d0af1a969198d474d3f1fcd656d87}} 
+\index{A\+D\+C\+Measurement\+::\+Current\+Measurement@{A\+D\+C\+Measurement\+::\+Current\+Measurement}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!A\+D\+C\+Measurement\+::\+Current\+Measurement@{A\+D\+C\+Measurement\+::\+Current\+Measurement}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def A\+D\+C\+Measurement.\+Current\+Measurement.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{panel,  }\item[{}]{path }\end{DoxyParamCaption})}
+
+
+
+Definition at line 12 of file A\+D\+C\+Measurement.\+py.
+
+
+
+References element.\+element.\+loadxrc(), and proc.\+proc.\+loadxrc().
+
+
+\begin{DoxyCode}
+12     \textcolor{keyword}{def }\hyperlink{classwrapper_1_1ModuleDictWrapper_a9a7a794150502f51df687831583e13b9}{\_\_init\_\_}(self, cat, obj, panel, path):
+13         proc.\_\_init\_\_(self,cat,obj,panel,path)
+14         self.loadxrc()
+15         self.s1=self.getControl(\textcolor{stringliteral}{"s1"})
+16         self.s2=self.getControl(\textcolor{stringliteral}{"s2"})
+17         self.s3=self.getControl(\textcolor{stringliteral}{"s3"})
+18         self.s4=self.getControl(\textcolor{stringliteral}{"s4"})
+19         self.update()
+20         self.panel.Bind(wx.EVT\_BUTTON, self.onApply, id=xrc.XRCID(\textcolor{stringliteral}{"Apply"}))
+21 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classADCMeasurement_1_1CurrentMeasurement_a1ae6055f5228952c14ea04fe83db0cb4}\label{classADCMeasurement_1_1CurrentMeasurement_a1ae6055f5228952c14ea04fe83db0cb4}} 
+\index{A\+D\+C\+Measurement\+::\+Current\+Measurement@{A\+D\+C\+Measurement\+::\+Current\+Measurement}!on\+Apply@{on\+Apply}}
+\index{on\+Apply@{on\+Apply}!A\+D\+C\+Measurement\+::\+Current\+Measurement@{A\+D\+C\+Measurement\+::\+Current\+Measurement}}
+\subsubsection{\texorpdfstring{on\+Apply()}{onApply()}}
+{\footnotesize\ttfamily def A\+D\+C\+Measurement.\+Current\+Measurement.\+on\+Apply (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{event }\end{DoxyParamCaption})}
+
+
+
+Definition at line 22 of file A\+D\+C\+Measurement.\+py.
+
+
+
+References object.\+object.\+obj, Cfg\+Frame.\+Cfg\+Frame.\+obj, Storage\+Fifo.\+Storage\+Fifo.\+s1, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s1, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s1, Test\+U\+S\+B.\+Test\+U\+S\+B.\+s1, Test\+I2\+C.\+Test\+I2\+C.\+s1, Test\+Suite.\+Test\+Suite.\+s1, A\+D\+C\+Measurement.\+Current\+Measurement.\+s1, Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+s1, Storage\+Fifo.\+Storage\+Fifo.\+s2, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s2, Test\+I2\+C.\+Test\+I2\+C.\+s2, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s2, Test\+U\+S\+B.\+Test\+U\+S\+B.\+s2, Test\+Suite.\+Test\+Suite.\+s2, A\+D\+C\+Measurement.\+Current\+Measurement.\+s2, Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+s2, Test\+I2\+C.\+Test\+I2\+C.\+s3, Storage\+Fifo.\+Storage\+Fifo.\+s3, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s3, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s3, Test\+U\+S\+B.\+Test\+U\+S\+B.\+s3, Test\+Suite.\+Test\+Suite.\+s3, Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+s3, A\+D\+C\+Measurement.\+Current\+Measurement.\+s3, Storage\+Fifo.\+Storage\+Fifo.\+s4, Test\+I2\+C.\+Test\+I2\+C.\+s4, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s4, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s4, Test\+U\+S\+B.\+Test\+U\+S\+B.\+s4, Test\+Suite.\+Test\+Suite.\+s4, A\+D\+C\+Measurement.\+Current\+Measurement.\+s4, and Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+s4.
+
+
+
+Referenced by A3\+P\+E\+\_\+\+Bit\+Flip.\+A3\+P\+E\+\_\+\+Bit\+Flip.\+\_\+\+\_\+init\+\_\+\+\_\+(), and Emulate\+F\+E.\+Emulate\+F\+E.\+\_\+\+\_\+init\+\_\+\+\_\+().
+
+
+\begin{DoxyCode}
+22     \textcolor{keyword}{def }onApply(self, event):
+23         v1 = float(self.s1.GetValue())
+24         v2 = float(self.s2.GetValue())
+25         v3 = float(self.s3.GetValue())
+26         v4 = float(self.s4.GetValue())
+27         self.obj.setSigma(v1,v2,v3,v4)
+28 
+\end{DoxyCode}
+\mbox{\Hypertarget{classADCMeasurement_1_1CurrentMeasurement_af3fb35c2334ccea6ac6274604bf09703}\label{classADCMeasurement_1_1CurrentMeasurement_af3fb35c2334ccea6ac6274604bf09703}} 
+\index{A\+D\+C\+Measurement\+::\+Current\+Measurement@{A\+D\+C\+Measurement\+::\+Current\+Measurement}!update@{update}}
+\index{update@{update}!A\+D\+C\+Measurement\+::\+Current\+Measurement@{A\+D\+C\+Measurement\+::\+Current\+Measurement}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily def A\+D\+C\+Measurement.\+Current\+Measurement.\+update (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line 29 of file A\+D\+C\+Measurement.\+py.
+
+
+
+References object.\+object.\+obj, Cfg\+Frame.\+Cfg\+Frame.\+obj, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s1, Test\+I2\+C.\+Test\+I2\+C.\+s1, Storage\+Fifo.\+Storage\+Fifo.\+s1, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s1, Test\+U\+S\+B.\+Test\+U\+S\+B.\+s1, Test\+Suite.\+Test\+Suite.\+s1, Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+s1, A\+D\+C\+Measurement.\+Current\+Measurement.\+s1, Storage\+Fifo.\+Storage\+Fifo.\+s2, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s2, Test\+I2\+C.\+Test\+I2\+C.\+s2, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s2, Test\+U\+S\+B.\+Test\+U\+S\+B.\+s2, Test\+Suite.\+Test\+Suite.\+s2, Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+s2, A\+D\+C\+Measurement.\+Current\+Measurement.\+s2, Storage\+Fifo.\+Storage\+Fifo.\+s3, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s3, Test\+I2\+C.\+Test\+I2\+C.\+s3, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s3, Test\+U\+S\+B.\+Test\+U\+S\+B.\+s3, Test\+Suite.\+Test\+Suite.\+s3, Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+s3, A\+D\+C\+Measurement.\+Current\+Measurement.\+s3, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s4, Test\+U\+S\+B.\+Test\+U\+S\+B.\+s4, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s4, Storage\+Fifo.\+Storage\+Fifo.\+s4, Test\+I2\+C.\+Test\+I2\+C.\+s4, Test\+Suite.\+Test\+Suite.\+s4, Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+s4, and A\+D\+C\+Measurement.\+Current\+Measurement.\+s4.
+
+
+
+Referenced by App\+Frame.\+App\+Frame.\+delete\+Hardware(), Conf\+Frame.\+Conf\+Frame.\+on\+Change(), Graph\+Frame.\+Graph\+Frame.\+on\+Change(), Cfg\+Frame.\+Cfg\+Frame.\+on\+Change(), Conf\+Frame.\+Conf\+Frame.\+on\+Edit(), App\+Frame.\+App\+Frame.\+on\+Load(), Conf\+Frame.\+Conf\+Frame.\+on\+Re\+Load(), Graph\+Frame.\+Graph\+Frame.\+on\+Re\+Load(), Cfg\+Frame.\+Cfg\+Frame.\+on\+Re\+Load(), and App\+Frame.\+App\+Frame.\+on\+Re\+Load().
+
+
+\begin{DoxyCode}
+29     \textcolor{keyword}{def }update(self):
+30         v1=self.obj.sigma(0)
+31         v2=self.obj.sigma(1)
+32         v3=self.obj.sigma(2)
+33         v4=self.obj.sigma(3)
+34 
+35         self.s1.SetValue(str(v1))
+36         self.s2.SetValue(str(v2))
+37         self.s3.SetValue(str(v3))
+38         self.s4.SetValue(str(v4))        
+39 
+40 \textcolor{comment}{#----------------------------------------------------------------------}
+41 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classADCMeasurement_1_1CurrentMeasurement_ab3415b829a716f76fc9503aa932fa0b7}\label{classADCMeasurement_1_1CurrentMeasurement_ab3415b829a716f76fc9503aa932fa0b7}} 
+\index{A\+D\+C\+Measurement\+::\+Current\+Measurement@{A\+D\+C\+Measurement\+::\+Current\+Measurement}!s1@{s1}}
+\index{s1@{s1}!A\+D\+C\+Measurement\+::\+Current\+Measurement@{A\+D\+C\+Measurement\+::\+Current\+Measurement}}
+\subsubsection{\texorpdfstring{s1}{s1}}
+{\footnotesize\ttfamily A\+D\+C\+Measurement.\+Current\+Measurement.\+s1}
+
+
+
+Definition at line 15 of file A\+D\+C\+Measurement.\+py.
+
+
+
+Referenced by A\+D\+C\+Measurement.\+Current\+Measurement.\+on\+Apply(), Current\+Measurement.\+Current\+Measurement.\+on\+Apply(), Current\+Measurement.\+Current\+Measurement.\+update(), and A\+D\+C\+Measurement.\+Current\+Measurement.\+update().
+
+\mbox{\Hypertarget{classADCMeasurement_1_1CurrentMeasurement_a7bf546778b1b2e06ae9b3c07b8bccb95}\label{classADCMeasurement_1_1CurrentMeasurement_a7bf546778b1b2e06ae9b3c07b8bccb95}} 
+\index{A\+D\+C\+Measurement\+::\+Current\+Measurement@{A\+D\+C\+Measurement\+::\+Current\+Measurement}!s2@{s2}}
+\index{s2@{s2}!A\+D\+C\+Measurement\+::\+Current\+Measurement@{A\+D\+C\+Measurement\+::\+Current\+Measurement}}
+\subsubsection{\texorpdfstring{s2}{s2}}
+{\footnotesize\ttfamily A\+D\+C\+Measurement.\+Current\+Measurement.\+s2}
+
+
+
+Definition at line 16 of file A\+D\+C\+Measurement.\+py.
+
+
+
+Referenced by A\+D\+C\+Measurement.\+Current\+Measurement.\+on\+Apply(), Current\+Measurement.\+Current\+Measurement.\+on\+Apply(), Current\+Measurement.\+Current\+Measurement.\+update(), and A\+D\+C\+Measurement.\+Current\+Measurement.\+update().
+
+\mbox{\Hypertarget{classADCMeasurement_1_1CurrentMeasurement_a6fb15bf8899950a9cb87f35c33595586}\label{classADCMeasurement_1_1CurrentMeasurement_a6fb15bf8899950a9cb87f35c33595586}} 
+\index{A\+D\+C\+Measurement\+::\+Current\+Measurement@{A\+D\+C\+Measurement\+::\+Current\+Measurement}!s3@{s3}}
+\index{s3@{s3}!A\+D\+C\+Measurement\+::\+Current\+Measurement@{A\+D\+C\+Measurement\+::\+Current\+Measurement}}
+\subsubsection{\texorpdfstring{s3}{s3}}
+{\footnotesize\ttfamily A\+D\+C\+Measurement.\+Current\+Measurement.\+s3}
+
+
+
+Definition at line 17 of file A\+D\+C\+Measurement.\+py.
+
+
+
+Referenced by A\+D\+C\+Measurement.\+Current\+Measurement.\+on\+Apply(), Current\+Measurement.\+Current\+Measurement.\+on\+Apply(), Current\+Measurement.\+Current\+Measurement.\+update(), and A\+D\+C\+Measurement.\+Current\+Measurement.\+update().
+
+\mbox{\Hypertarget{classADCMeasurement_1_1CurrentMeasurement_a506aa9010df3a05e20606be1ee4f4c5b}\label{classADCMeasurement_1_1CurrentMeasurement_a506aa9010df3a05e20606be1ee4f4c5b}} 
+\index{A\+D\+C\+Measurement\+::\+Current\+Measurement@{A\+D\+C\+Measurement\+::\+Current\+Measurement}!s4@{s4}}
+\index{s4@{s4}!A\+D\+C\+Measurement\+::\+Current\+Measurement@{A\+D\+C\+Measurement\+::\+Current\+Measurement}}
+\subsubsection{\texorpdfstring{s4}{s4}}
+{\footnotesize\ttfamily A\+D\+C\+Measurement.\+Current\+Measurement.\+s4}
+
+
+
+Definition at line 18 of file A\+D\+C\+Measurement.\+py.
+
+
+
+Referenced by A\+D\+C\+Measurement.\+Current\+Measurement.\+on\+Apply(), Current\+Measurement.\+Current\+Measurement.\+on\+Apply(), Current\+Measurement.\+Current\+Measurement.\+update(), and A\+D\+C\+Measurement.\+Current\+Measurement.\+update().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+N\+I/python/proc/\hyperlink{ADCMeasurement_8py}{A\+D\+C\+Measurement.\+py}\end{DoxyCompactItemize}

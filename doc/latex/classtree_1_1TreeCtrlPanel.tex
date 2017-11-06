@@ -1,0 +1,135 @@
+\hypertarget{classtree_1_1TreeCtrlPanel}{}\section{tree.\+Tree\+Ctrl\+Panel Class Reference}
+\label{classtree_1_1TreeCtrlPanel}\index{tree.\+Tree\+Ctrl\+Panel@{tree.\+Tree\+Ctrl\+Panel}}
+Inheritance diagram for tree.\+Tree\+Ctrl\+Panel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtree_1_1TreeCtrlPanel}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classtree_1_1TreeCtrlPanel_a7186d9554ffd4aaa2b753cea3fb35239}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, parent)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtree_1_1TreeCtrlPanel_add705d7a471f6f93110250ff8ca9cede}{tree}
+\item 
+\hyperlink{classtree_1_1TreeCtrlPanel_a9dedbbc0b6aa0fb6e71ce8a4d073f000}{fldridx}
+\item 
+\hyperlink{classtree_1_1TreeCtrlPanel_ac9d97abe845ba6a991ccae80295ca72e}{fldropenidx}
+\item 
+\hyperlink{classtree_1_1TreeCtrlPanel_a329afaebcd954a826bf2105603847b52}{fileidx}
+\item 
+\hyperlink{classtree_1_1TreeCtrlPanel_a78a6e29067f5bb18636e006e97b27003}{il}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 24 of file tree.\+py.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtree_1_1TreeCtrlPanel_a7186d9554ffd4aaa2b753cea3fb35239}\label{classtree_1_1TreeCtrlPanel_a7186d9554ffd4aaa2b753cea3fb35239}} 
+\index{tree\+::\+Tree\+Ctrl\+Panel@{tree\+::\+Tree\+Ctrl\+Panel}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!tree\+::\+Tree\+Ctrl\+Panel@{tree\+::\+Tree\+Ctrl\+Panel}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def tree.\+Tree\+Ctrl\+Panel.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{parent }\end{DoxyParamCaption})}
+
+
+
+Definition at line 25 of file tree.\+py.
+
+
+\begin{DoxyCode}
+25     \textcolor{keyword}{def }\hyperlink{classwrapper_1_1ModuleDictWrapper_a9a7a794150502f51df687831583e13b9}{\_\_init\_\_}(self, parent):
+26         \textcolor{comment}{# Use the WANTS\_CHARS style so the panel doesn't eat the Return key.}
+27         wx.Panel.\_\_init\_\_(self, parent, -1, style=wx.WANTS\_CHARS)
+28         self.Bind(wx.EVT\_SIZE, self.OnSize)
+29         tID = wx.NewId()
+30         self.tree = MyTreeCtrl(self, tID, wx.DefaultPosition, wx.DefaultSize,
+31                                wx.TR\_DEFAULT\_STYLE
+32                                \textcolor{comment}{#wx.TR\_HAS\_BUTTONS}
+33                                \textcolor{comment}{#| wx.TR\_EDIT\_LABELS}
+34                                \textcolor{comment}{#| wx.TR\_MULTIPLE}
+35                                \textcolor{comment}{#| wx.TR\_HIDE\_ROOT}
+36 \textcolor{comment}{#                               , self.log}
+37                                )
+38         isz = (16,16)
+39         il = wx.ImageList(isz[0], isz[1])
+40         self.fldridx     = il.Add(wx.ArtProvider\_GetBitmap(wx.ART\_FOLDER,      wx.ART\_OTHER, isz))
+41         self.fldropenidx = il.Add(wx.ArtProvider\_GetBitmap(wx.ART\_FILE\_OPEN,   wx.ART\_OTHER, isz))
+42         self.fileidx     = il.Add(wx.ArtProvider\_GetBitmap(wx.ART\_NORMAL\_FILE, wx.ART\_OTHER, isz))
+43 \textcolor{comment}{#        smileidx    = il.Add(images.getSmilesBitmap())}
+44 
+45         self.tree.SetImageList(il)
+46         self.il = il
+47 
+48         \textcolor{comment}{# NOTE:  For some reason tree items have to have a data object in}
+49         \textcolor{comment}{#        order to be sorted.  Since our compare just uses the labels}
+50         \textcolor{comment}{#        we don't need any real data, so we'll just use None below for}
+51         \textcolor{comment}{#        the item data.}
+52 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classtree_1_1TreeCtrlPanel_a329afaebcd954a826bf2105603847b52}\label{classtree_1_1TreeCtrlPanel_a329afaebcd954a826bf2105603847b52}} 
+\index{tree\+::\+Tree\+Ctrl\+Panel@{tree\+::\+Tree\+Ctrl\+Panel}!fileidx@{fileidx}}
+\index{fileidx@{fileidx}!tree\+::\+Tree\+Ctrl\+Panel@{tree\+::\+Tree\+Ctrl\+Panel}}
+\subsubsection{\texorpdfstring{fileidx}{fileidx}}
+{\footnotesize\ttfamily tree.\+Tree\+Ctrl\+Panel.\+fileidx}
+
+
+
+Definition at line 42 of file tree.\+py.
+
+\mbox{\Hypertarget{classtree_1_1TreeCtrlPanel_a9dedbbc0b6aa0fb6e71ce8a4d073f000}\label{classtree_1_1TreeCtrlPanel_a9dedbbc0b6aa0fb6e71ce8a4d073f000}} 
+\index{tree\+::\+Tree\+Ctrl\+Panel@{tree\+::\+Tree\+Ctrl\+Panel}!fldridx@{fldridx}}
+\index{fldridx@{fldridx}!tree\+::\+Tree\+Ctrl\+Panel@{tree\+::\+Tree\+Ctrl\+Panel}}
+\subsubsection{\texorpdfstring{fldridx}{fldridx}}
+{\footnotesize\ttfamily tree.\+Tree\+Ctrl\+Panel.\+fldridx}
+
+
+
+Definition at line 40 of file tree.\+py.
+
+\mbox{\Hypertarget{classtree_1_1TreeCtrlPanel_ac9d97abe845ba6a991ccae80295ca72e}\label{classtree_1_1TreeCtrlPanel_ac9d97abe845ba6a991ccae80295ca72e}} 
+\index{tree\+::\+Tree\+Ctrl\+Panel@{tree\+::\+Tree\+Ctrl\+Panel}!fldropenidx@{fldropenidx}}
+\index{fldropenidx@{fldropenidx}!tree\+::\+Tree\+Ctrl\+Panel@{tree\+::\+Tree\+Ctrl\+Panel}}
+\subsubsection{\texorpdfstring{fldropenidx}{fldropenidx}}
+{\footnotesize\ttfamily tree.\+Tree\+Ctrl\+Panel.\+fldropenidx}
+
+
+
+Definition at line 41 of file tree.\+py.
+
+\mbox{\Hypertarget{classtree_1_1TreeCtrlPanel_a78a6e29067f5bb18636e006e97b27003}\label{classtree_1_1TreeCtrlPanel_a78a6e29067f5bb18636e006e97b27003}} 
+\index{tree\+::\+Tree\+Ctrl\+Panel@{tree\+::\+Tree\+Ctrl\+Panel}!il@{il}}
+\index{il@{il}!tree\+::\+Tree\+Ctrl\+Panel@{tree\+::\+Tree\+Ctrl\+Panel}}
+\subsubsection{\texorpdfstring{il}{il}}
+{\footnotesize\ttfamily tree.\+Tree\+Ctrl\+Panel.\+il}
+
+
+
+Definition at line 46 of file tree.\+py.
+
+\mbox{\Hypertarget{classtree_1_1TreeCtrlPanel_add705d7a471f6f93110250ff8ca9cede}\label{classtree_1_1TreeCtrlPanel_add705d7a471f6f93110250ff8ca9cede}} 
+\index{tree\+::\+Tree\+Ctrl\+Panel@{tree\+::\+Tree\+Ctrl\+Panel}!tree@{tree}}
+\index{tree@{tree}!tree\+::\+Tree\+Ctrl\+Panel@{tree\+::\+Tree\+Ctrl\+Panel}}
+\subsubsection{\texorpdfstring{tree}{tree}}
+{\footnotesize\ttfamily tree.\+Tree\+Ctrl\+Panel.\+tree}
+
+
+
+Definition at line 30 of file tree.\+py.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Python/python/\hyperlink{tree_8py}{tree.\+py}\end{DoxyCompactItemize}

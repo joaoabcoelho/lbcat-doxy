@@ -1,0 +1,271 @@
+\hyperlink{tutorial}{C\+AT Tutorial}
+
+\subsection*{seful commands\+: }
+
+\begin{quote}
+C\+T\+R\+L+\+A\+L\+T+fleche \end{quote}
+fenetre PC
+
+\begin{quote}
+cd \end{quote}
+remonte ds arborescence
+
+\begin{quote}
+setup\+Cat \end{quote}
+et se deplacer ou sont les fichiers de configuration
+
+\begin{quote}
+cd L\+H\+Cb/lbcat-\/febv1 \end{quote}
+on trouve ds ce repertoire Feb\+\_\+v1.\+py et ds le ss repertoire F\+E\+V\+\_\+v1 F\+E\+B.\+py
+
+\begin{quote}
+catcmd \end{quote}
+démarre le soft
+
+\begin{quote}
+execfile(\char`\"{}\+F\+E\+B\+\_\+v1.\+py\char`\"{}) \end{quote}
+vient apres la commande catcmd attention pas de blanc de tb etc ...
+
+\begin{quote}
+C\+T\+R\+L+d \end{quote}
+pour revenir au terminal help(\+Configuration) // Affiche l\textquotesingle{}aide du module Configuration (taper \textquotesingle{}q\textquotesingle{} pour sortir de l\textquotesingle{}aide) help(fe) // Affiche l\textquotesingle{}aide sur l\textquotesingle{}objet fe (qui est ici une carte \hyperlink{classFEB__v1}{F\+E\+B\+\_\+v1}) (taper \textquotesingle{}q\textquotesingle{} pour sortir de l\textquotesingle{}aide)
+
+\subsection*{Slow Control (U\+S\+B/\+I2\+C/\+S\+PI)\+: }
+
+\subsubsection*{U\+SB}
+
+\begin{quote}
+\hyperlink{namespaceshell_a2f31bbe4baf894f4863c4d392239ab8b}{fe.\+reset()} \end{quote}
+Full reset of the board
+
+\begin{quote}
+fe.\+reset\+Usb() \end{quote}
+Reset of the Rx and Tx fifo of the usb interface
+
+\subsubsection*{S\+PI}
+
+Orientation du bus S\+PI sur le device à l\textquotesingle{}adresse 17 (Trig/\+Seq P\+GA)
+
+\begin{quote}
+seq.\+set\+Spi\+Add(17) \end{quote}
+
+
+Ecriture/lecture d\textquotesingle{}un mot (valeur 10) à la sous-\/adresse 3
+
+\begin{quote}
+seq.\+spi\+Write(3,10) \end{quote}
+
+
+\begin{quote}
+seq.\+spi\+Read(3) \end{quote}
+
+
+retourne la valeur 10
+
+Ecriture/lecture d\textquotesingle{}un bloc de 4 mots à la sous-\/adresse 3
+
+\begin{quote}
+seq.\+spi\+Write(3,4,\mbox{[}1,2,3,4\mbox{]}) \end{quote}
+
+
+\begin{quote}
+a=seq.\+spi\+Read(3,4) \end{quote}
+
+
+retourne la liste \mbox{[}1,2,3,4\mbox{]} stockée dans la variable a.
+
+Exemple avec le I\+C\+E\+C\+AL
+
+\begin{quote}
+seq.\+set\+Spi\+Add(11) \end{quote}
+écriture dans icecal 4 par spi
+
+\begin{quote}
+seq.\+spi\+Write(28,xx) \end{quote}
+écriture valeur xx registre horloge channel 0 du icecal
+
+Exemples avec une valeur en hexa
+
+\begin{quote}
+seq.\+set\+Spi\+Add(9) \end{quote}
+set Spi add for read/write to the F\+E\+P\+GA 4 (address 9)
+
+\begin{quote}
+seq.\+spi\+Write(4,int(\textquotesingle{}0x20F\textquotesingle{},16)+256) \end{quote}
+Ecrire register 4 de la valeur hex 20f + decimal 256
+
+\begin{quote}
+seq.\+spi\+Read(3) \end{quote}
+Lecture du registre 3 en decimal
+
+\begin{quote}
+hex(seq.\+spi\+Read(3)) \end{quote}
+Lecture du registre 3 avec conversion en hexa
+
+\subsection*{F\+I\+FO\+: }
+
+\begin{quote}
+fe.\+reset\+Fifo\+Inject\+F\+E(5) \end{quote}
+reset pointeur fifo injection Fepga 5
+
+\begin{quote}
+fe.\+reset\+Fifo\+Spy\+F\+E(5) \end{quote}
+reset pointeur fifo spy Fepga 5
+
+\begin{quote}
+fe.\+write\+Fifo\+Inject\+F\+E(5) \end{quote}
+écrit la fifo d\textquotesingle{}injection du fepga 5
+
+\begin{quote}
+fe.\+write\+Fifo\+Spy\+F\+E(5) \end{quote}
+écrit la fifo de spy du fepga 5
+
+\begin{quote}
+fe.\+write\+Fifo\+L\+L\+T() \end{quote}
+écrit la fifo de spy du trig pga
+
+\begin{quote}
+fe.\+read\+Fifo\+Inject\+F\+E(5, 1) \end{quote}
+lit la fifo d\textquotesingle{}injection du fepga 5 avec affichage (1)
+
+\begin{quote}
+fe.\+read\+Fifo\+Spy\+F\+E(5, 1) \end{quote}
+lit la fifo de spy du fepga 5 avec affichage (1)
+
+\begin{quote}
+fe.\+read\+Fifo\+L\+L\+T\+F\+E(5, 1) \end{quote}
+lit la fifo de L\+LT du fepga 5 avec affichage (1)
+
+\begin{quote}
+fe.\+read\+Fifo\+L\+L\+T(1) \end{quote}
+lit la fifo de spy du trig pga avec affichage (1)
+
+\subsection*{Configuration\+: }
+
+\begin{quote}
+Conf\+Block(1) \end{quote}
+configutation du block completed
+
+\begin{quote}
+Configuration.\+conf\+I\+C\+E\+C\+A\+L(4,0) \end{quote}
+configuration globale du I\+C\+E\+C\+AL 4 avec un reard de clk de 0 setip
+
+\begin{quote}
+fe.\+set\+Probe\+Enable(4,1) \end{quote}
+Positionne les probes en sorties
+
+\begin{quote}
+fe.\+set\+Test\+Duration(value) \end{quote}
+charge value dans les registres de test duration de T\+O\+US les F\+P\+GA (F\+E+\+Trig)
+
+\begin{quote}
+fe.\+test\+Duration(fpga) \end{quote}
+lit la tes duration value du fpga FE (fpga 0 à 7) ou trig (fpga = -\/1)set
+
+\begin{quote}
+fe.\+set\+Stop\+Inj\+Loop(value) \end{quote}
+charge value dans les registres de disable loop de T\+O\+US les F\+P\+GA (F\+E+\+Trig)
+
+\begin{quote}
+fe.\+stop\+Inj\+Loop(fpga) \end{quote}
+lit la valeur du disale loop du fpga FE (fpga 0 à 7) ou trig (fpga = -\/1)
+
+\begin{quote}
+fe.\+set\+Clock\+Falling\+Edge(fe, ch, value) \end{quote}
+set clock edge to value to sample input data from fpga fe, channel ch
+
+\begin{quote}
+fe.\+clock\+Falling\+Edge(fe, ch) \end{quote}
+clock edge to sample input data from fpga fe, channel ch
+
+\begin{quote}
+fe.\+set\+Clock80\+M\+Hz\+Falling\+Edge(value) \end{quote}
+set clock 80\+M\+J\+HZ edge to value to sample input data S\+EQ F\+P\+GA
+
+\begin{quote}
+fe.\+clock80\+M\+Hz\+Falling\+Edge() \end{quote}
+clock edge to sample input data S\+EQ F\+P\+GA
+
+\begin{quote}
+Configuration.\+set\+G\+B\+T\+Clock\+Phase(gbt, ch, delay) \end{quote}
+set the clock phase for the channel ch of the G\+B\+Tx gbt
+
+\subsection*{Test Programs\+: }
+
+\begin{quote}
+test\+I2\+C() \end{quote}
+lance une écriture/lecture i2c sur l\textquotesingle{}adresse 0 du G\+BT de 0x\+AA = d170
+
+\begin{quote}
+test\+S\+P\+I(value) \end{quote}
+ecrit value sur le registre de 3 du FE P\+GA 2 puis relit et affiche la valeur relue.
+
+\begin{quote}
+Inj\+Proc(x) \end{quote}
+lance acquisition à partir de la fifo d\textquotesingle{}injection du Fpga x
+
+\begin{quote}
+A\+D\+C\+Proc(x) \end{quote}
+
+
+lance acquisition et lecture des fifo spy pour les donnees A\+DC, concerne le Fpga x
+
+\subsection*{L\+LT\+: }
+
+\begin{quote}
+fe.\+latency\+L\+L\+T() \end{quote}
+donne le status des latencies des voies dans le L\+LT
+
+\begin{quote}
+fe.\+set\+Latency\+L\+L\+T(latency) \end{quote}
+applique la latency pour les voies de la carte
+
+\begin{quote}
+fe.\+set\+Latency\+L\+L\+T\+Side\+Nb(latency) \end{quote}
+applique la latency pour le Side neighbour
+
+\begin{quote}
+fe.\+set\+Latency\+L\+L\+T\+Up\+Nb(latency) \end{quote}
+applique la latency pour le Up neighbour
+
+\begin{quote}
+fe.\+set\+Latency\+L\+L\+T\+Corner(latency) \end{quote}
+applique la latency pour la voie corner
+
+\begin{quote}
+fe.\+mask\+L\+L\+T() \end{quote}
+donne le status des masques des voies dans le L\+LT
+
+\begin{quote}
+fe.\+set\+Mask\+L\+L\+T(channel, status) \end{quote}
+applique le masque status pour la voie channel
+
+\begin{quote}
+fe.\+set\+Mask\+L\+L\+T\+Side\+Nb(channel, status) \end{quote}
+applique le masque status pour la voie channel arrivant de Side
+
+\begin{quote}
+fe.\+set\+Mask\+L\+L\+T\+Up\+Nb(channel, status) \end{quote}
+applique le masque status pour la voie channel venant de Up
+
+\begin{quote}
+fe.\+set\+Mask\+L\+L\+T\+Corner(status) \end{quote}
+applique le masque status pour la voie corner
+
+\subsection*{G\+BT\+: }
+
+\begin{quote}
+fe.\+set\+Gbt\+Mode(gbt,mode) \end{quote}
+Met le gbt \textquotesingle{}gbt\textquotesingle{} dans mode \textquotesingle{}mode\textquotesingle{}. 0 est mode normal, 1 est fixed pattern modeœ
+
+\begin{quote}
+fe.\+gbt\+Status(gbt) \end{quote}
+relie le status du gbt \textquotesingle{}gbt\textquotesingle{}
+
+\begin{quote}
+fe.\+set\+Gbt\+Data\+Path(gbt, switch0, switch1, switch2) \end{quote}
+definie la position des 3 switchs du data path du gbt gbt
+
+\begin{quote}
+Configuration.\+gbt\+Data\+Path(gbt) \end{quote}
+relit la configuration des 3 switchs du data path 

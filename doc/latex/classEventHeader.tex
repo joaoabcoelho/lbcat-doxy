@@ -1,0 +1,274 @@
+\hypertarget{classEventHeader}{}\section{Event\+Header Class Reference}
+\label{classEventHeader}\index{Event\+Header@{Event\+Header}}
+
+
+{\ttfamily \#include $<$include/\+Event\+Header.\+h$>$}
+
+Inheritance diagram for Event\+Header\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classEventHeader}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEventHeader_ae2143206ec5b29d153067b3a1ff0ba19}{Event\+Header} ()
+\begin{DoxyCompactList}\small\item\em Standard constructor. \end{DoxyCompactList}\item 
+\hyperlink{classEventHeader_af0e4e6e449537503a3a08a8d58ab4235}{Event\+Header} (int, int)
+\item 
+virtual \hyperlink{classEventHeader_ad6c5966f7d4a6a6f9d76f730de80c50a}{$\sim$\+Event\+Header} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+unsigned long \hyperlink{classEventHeader_af54e2ad4984187b2aa9ecbda6bf07cd0}{evt} ()
+\item 
+unsigned long \hyperlink{classEventHeader_a5cf1b80c7e41886ae5d177f1a444b280}{run} ()
+\item 
+unsigned long \hyperlink{classEventHeader_adbda915747b0bd94a19e2e5d3ec7db97}{date} ()
+\item 
+void \hyperlink{classEventHeader_a978b95b3b941bfa6ad92e09aaa0ebcc0}{set\+Evt} (unsigned long ievt)
+\item 
+void \hyperlink{classEventHeader_a9444a1e959b20387dc8d74c31e5c5aa6}{set\+Run} (unsigned long irun)
+\item 
+void \hyperlink{classEventHeader_aade4ba64d15f2b25e09eb4cb16d9fb3c}{new\+Evt} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Class\+Def(\hyperlink{classEventHeader}{Event\+Header}, 1) protected unsigned long \hyperlink{classEventHeader_a9763260b9dc642325bacb534188ab0fd}{Run}
+\item 
+unsigned long \hyperlink{classEventHeader_af8098a8d9d00190c845e7b7df833e0a9}{Date}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Frédéric Machefert 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2004-\/10-\/04 
+\end{DoxyDate}
+
+
+Definition at line 20 of file Event\+Header.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEventHeader_ae2143206ec5b29d153067b3a1ff0ba19}\label{classEventHeader_ae2143206ec5b29d153067b3a1ff0ba19}} 
+\index{Event\+Header@{Event\+Header}!Event\+Header@{Event\+Header}}
+\index{Event\+Header@{Event\+Header}!Event\+Header@{Event\+Header}}
+\subsubsection{\texorpdfstring{Event\+Header()}{EventHeader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Event\+Header\+::\+Event\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Standard constructor. 
+
+\mbox{\Hypertarget{classEventHeader_af0e4e6e449537503a3a08a8d58ab4235}\label{classEventHeader_af0e4e6e449537503a3a08a8d58ab4235}} 
+\index{Event\+Header@{Event\+Header}!Event\+Header@{Event\+Header}}
+\index{Event\+Header@{Event\+Header}!Event\+Header@{Event\+Header}}
+\subsubsection{\texorpdfstring{Event\+Header()}{EventHeader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Event\+Header\+::\+Event\+Header (\begin{DoxyParamCaption}\item[{int}]{run,  }\item[{int}]{evt }\end{DoxyParamCaption})}
+
+
+
+Definition at line 26 of file Event\+Header.\+cpp.
+
+
+
+References Date, evt(), and run().
+
+
+\begin{DoxyCode}
+26                                            \{
+27   \hyperlink{classRun}{Run} = \hyperlink{classEventHeader_a5cf1b80c7e41886ae5d177f1a444b280}{run};
+28   Evt = \hyperlink{classEventHeader_af54e2ad4984187b2aa9ecbda6bf07cd0}{evt};
+29   TDatime today;
+30   \hyperlink{classEventHeader_af8098a8d9d00190c845e7b7df833e0a9}{Date}   = today.GetDate();
+31 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classEventHeader_ad6c5966f7d4a6a6f9d76f730de80c50a}\label{classEventHeader_ad6c5966f7d4a6a6f9d76f730de80c50a}} 
+\index{Event\+Header@{Event\+Header}!````~Event\+Header@{$\sim$\+Event\+Header}}
+\index{````~Event\+Header@{$\sim$\+Event\+Header}!Event\+Header@{Event\+Header}}
+\subsubsection{\texorpdfstring{$\sim$\+Event\+Header()}{~EventHeader()}}
+{\footnotesize\ttfamily Event\+Header\+::$\sim$\+Event\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+
+
+Definition at line 36 of file Event\+Header.\+cpp.
+
+
+\begin{DoxyCode}
+36                           \{
+37 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classEventHeader_adbda915747b0bd94a19e2e5d3ec7db97}\label{classEventHeader_adbda915747b0bd94a19e2e5d3ec7db97}} 
+\index{Event\+Header@{Event\+Header}!date@{date}}
+\index{date@{date}!Event\+Header@{Event\+Header}}
+\subsubsection{\texorpdfstring{date()}{date()}}
+{\footnotesize\ttfamily unsigned long Event\+Header\+::date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 35 of file Event\+Header.\+h.
+
+
+
+References Date.
+
+
+\begin{DoxyCode}
+35                       \{
+36     \textcolor{keywordflow}{return} \hyperlink{classEventHeader_af8098a8d9d00190c845e7b7df833e0a9}{Date};
+37   \}  
+\end{DoxyCode}
+\mbox{\Hypertarget{classEventHeader_af54e2ad4984187b2aa9ecbda6bf07cd0}\label{classEventHeader_af54e2ad4984187b2aa9ecbda6bf07cd0}} 
+\index{Event\+Header@{Event\+Header}!evt@{evt}}
+\index{evt@{evt}!Event\+Header@{Event\+Header}}
+\subsubsection{\texorpdfstring{evt()}{evt()}}
+{\footnotesize\ttfamily unsigned long Event\+Header\+::evt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 27 of file Event\+Header.\+h.
+
+
+
+Referenced by Event\+Header().
+
+
+\begin{DoxyCode}
+27                      \{
+28     \textcolor{keywordflow}{return} Evt;
+29   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classEventHeader_aade4ba64d15f2b25e09eb4cb16d9fb3c}\label{classEventHeader_aade4ba64d15f2b25e09eb4cb16d9fb3c}} 
+\index{Event\+Header@{Event\+Header}!new\+Evt@{new\+Evt}}
+\index{new\+Evt@{new\+Evt}!Event\+Header@{Event\+Header}}
+\subsubsection{\texorpdfstring{new\+Evt()}{newEvt()}}
+{\footnotesize\ttfamily void Event\+Header\+::new\+Evt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 42 of file Event\+Header.\+cpp.
+
+
+
+References Date.
+
+
+
+Referenced by set\+Run().
+
+
+\begin{DoxyCode}
+42                         \{
+43   Evt++;  
+44   TDatime today;
+45   \hyperlink{classEventHeader_af8098a8d9d00190c845e7b7df833e0a9}{Date}   = today.GetDate();
+46 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classEventHeader_a5cf1b80c7e41886ae5d177f1a444b280}\label{classEventHeader_a5cf1b80c7e41886ae5d177f1a444b280}} 
+\index{Event\+Header@{Event\+Header}!run@{run}}
+\index{run@{run}!Event\+Header@{Event\+Header}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily unsigned long Event\+Header\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 31 of file Event\+Header.\+h.
+
+
+
+References Run.
+
+
+
+Referenced by Event\+Header().
+
+
+\begin{DoxyCode}
+31                      \{
+32     \textcolor{keywordflow}{return} \hyperlink{classEventHeader_a9763260b9dc642325bacb534188ab0fd}{Run};
+33   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classEventHeader_a978b95b3b941bfa6ad92e09aaa0ebcc0}\label{classEventHeader_a978b95b3b941bfa6ad92e09aaa0ebcc0}} 
+\index{Event\+Header@{Event\+Header}!set\+Evt@{set\+Evt}}
+\index{set\+Evt@{set\+Evt}!Event\+Header@{Event\+Header}}
+\subsubsection{\texorpdfstring{set\+Evt()}{setEvt()}}
+{\footnotesize\ttfamily void Event\+Header\+::set\+Evt (\begin{DoxyParamCaption}\item[{unsigned long}]{ievt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 39 of file Event\+Header.\+h.
+
+
+\begin{DoxyCode}
+39                                   \{
+40     Evt = ievt;
+41   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classEventHeader_a9444a1e959b20387dc8d74c31e5c5aa6}\label{classEventHeader_a9444a1e959b20387dc8d74c31e5c5aa6}} 
+\index{Event\+Header@{Event\+Header}!set\+Run@{set\+Run}}
+\index{set\+Run@{set\+Run}!Event\+Header@{Event\+Header}}
+\subsubsection{\texorpdfstring{set\+Run()}{setRun()}}
+{\footnotesize\ttfamily void Event\+Header\+::set\+Run (\begin{DoxyParamCaption}\item[{unsigned long}]{irun }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 43 of file Event\+Header.\+h.
+
+
+
+References new\+Evt().
+
+
+\begin{DoxyCode}
+43                                   \{
+44     \hyperlink{classRun}{Run} = irun;
+45   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classEventHeader_af8098a8d9d00190c845e7b7df833e0a9}\label{classEventHeader_af8098a8d9d00190c845e7b7df833e0a9}} 
+\index{Event\+Header@{Event\+Header}!Date@{Date}}
+\index{Date@{Date}!Event\+Header@{Event\+Header}}
+\subsubsection{\texorpdfstring{Date}{Date}}
+{\footnotesize\ttfamily unsigned long Event\+Header\+::\+Date}
+
+
+
+Definition at line 61 of file Event\+Header.\+h.
+
+
+
+Referenced by Class\+Imp(), date(), Event\+Header(), and new\+Evt().
+
+\mbox{\Hypertarget{classEventHeader_a9763260b9dc642325bacb534188ab0fd}\label{classEventHeader_a9763260b9dc642325bacb534188ab0fd}} 
+\index{Event\+Header@{Event\+Header}!Run@{Run}}
+\index{Run@{Run}!Event\+Header@{Event\+Header}}
+\subsubsection{\texorpdfstring{Run}{Run}}
+{\footnotesize\ttfamily Class\+Def (\hyperlink{classEventHeader}{Event\+Header},1) protected unsigned long Event\+Header\+::\+Run}
+
+
+
+Definition at line 54 of file Event\+Header.\+h.
+
+
+
+Referenced by run().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Calo\+Event/inc/\hyperlink{EventHeader_8h}{Event\+Header.\+h}\item 
+/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Calo\+Event/src/\hyperlink{EventHeader_8cpp}{Event\+Header.\+cpp}\end{DoxyCompactItemize}

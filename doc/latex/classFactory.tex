@@ -1,0 +1,279 @@
+\hypertarget{classFactory}{}\section{Factory Class Reference}
+\label{classFactory}\index{Factory@{Factory}}
+
+
+{\ttfamily \#include $<$inc/\+Factory.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFactory_ac792bf88cfb7b6804b479529da5308cc}{Factory} ()
+\begin{DoxyCompactList}\small\item\em Standard constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classFactory_abb3d73c23bef3ca95487856ef0d7c476}{$\sim$\+Factory} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classFactory_a0f10adde2d57c8a1d07fdb4557f3ac3b}{set\+List\+D\+LL} (std\+::string \hyperlink{classFactory_a21cd37e4b21b06e574cf67faea08782a}{list\+D\+LL})
+\item 
+std\+::string \hyperlink{classFactory_a21cd37e4b21b06e574cf67faea08782a}{list\+D\+LL} ()
+\item 
+void \hyperlink{classFactory_a7bc368f81d0228931a44b41b27c39b53}{set\+List\+Element} (std\+::list \hyperlink{classFactory_aca9a1442c4ee2f17ea27db723ce65d90}{list\+Element})
+\item 
+std\+::list \hyperlink{classFactory_aca9a1442c4ee2f17ea27db723ce65d90}{list\+Element} ()
+\item 
+void \hyperlink{classFactory_afdec7fe6e79da3e5748d33f740333671}{set\+List\+Proc} (std\+::string \hyperlink{classFactory_afb222fc976d624fa6fdcb30f0aca586c}{list\+Proc})
+\item 
+std\+::string \hyperlink{classFactory_afb222fc976d624fa6fdcb30f0aca586c}{list\+Proc} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classFactory_a266167ae49fcf4fa9baa5485dea4b062}{m\+\_\+list\+D\+LL}
+\item 
+std\+::list \hyperlink{classFactory_a83a99d80105fab2371ce03230b90e8a3}{m\+\_\+list\+Element}
+\item 
+std\+::string \hyperlink{classFactory_aec20c1d0a1ef175f55a82e868edabe88}{m\+\_\+list\+Proc}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2006-\/10-\/23 
+\end{DoxyDate}
+
+
+Definition at line 13 of file Factory.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFactory_ac792bf88cfb7b6804b479529da5308cc}\label{classFactory_ac792bf88cfb7b6804b479529da5308cc}} 
+\index{Factory@{Factory}!Factory@{Factory}}
+\index{Factory@{Factory}!Factory@{Factory}}
+\subsubsection{\texorpdfstring{Factory()}{Factory()}}
+{\footnotesize\ttfamily Factory\+::\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Standard constructor. 
+
+\mbox{\Hypertarget{classFactory_abb3d73c23bef3ca95487856ef0d7c476}\label{classFactory_abb3d73c23bef3ca95487856ef0d7c476}} 
+\index{Factory@{Factory}!````~Factory@{$\sim$\+Factory}}
+\index{````~Factory@{$\sim$\+Factory}!Factory@{Factory}}
+\subsubsection{\texorpdfstring{$\sim$\+Factory()}{~Factory()}}
+{\footnotesize\ttfamily virtual Factory\+::$\sim$\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classFactory_a21cd37e4b21b06e574cf67faea08782a}\label{classFactory_a21cd37e4b21b06e574cf67faea08782a}} 
+\index{Factory@{Factory}!list\+D\+LL@{list\+D\+LL}}
+\index{list\+D\+LL@{list\+D\+LL}!Factory@{Factory}}
+\subsubsection{\texorpdfstring{list\+D\+L\+L()}{listDLL()}}
+{\footnotesize\ttfamily std\+::string Factory\+::list\+D\+LL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get accessor to member m\+\_\+list\+D\+LL \begin{DoxyReturn}{Returns}
+the current value of m\+\_\+list\+D\+LL 
+\end{DoxyReturn}
+
+
+Definition at line 33 of file Factory.\+h.
+
+
+
+References m\+\_\+list\+D\+LL.
+
+
+
+Referenced by set\+List\+D\+L\+L().
+
+
+\begin{DoxyCode}
+33                        \{
+34     \textcolor{keywordflow}{return} \hyperlink{classFactory_a266167ae49fcf4fa9baa5485dea4b062}{m\_listDLL};
+35   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classFactory_aca9a1442c4ee2f17ea27db723ce65d90}\label{classFactory_aca9a1442c4ee2f17ea27db723ce65d90}} 
+\index{Factory@{Factory}!list\+Element@{list\+Element}}
+\index{list\+Element@{list\+Element}!Factory@{Factory}}
+\subsubsection{\texorpdfstring{list\+Element()}{listElement()}}
+{\footnotesize\ttfamily std\+::list Factory\+::list\+Element (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get accessor to member m\+\_\+list\+Element \begin{DoxyReturn}{Returns}
+the current value of m\+\_\+list\+Element 
+\end{DoxyReturn}
+
+
+Definition at line 50 of file Factory.\+h.
+
+
+
+References m\+\_\+list\+Element.
+
+
+
+Referenced by set\+List\+Element().
+
+
+\begin{DoxyCode}
+50                          \{
+51     \textcolor{keywordflow}{return} \hyperlink{classFactory_a83a99d80105fab2371ce03230b90e8a3}{m\_listElement};
+52   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classFactory_afb222fc976d624fa6fdcb30f0aca586c}\label{classFactory_afb222fc976d624fa6fdcb30f0aca586c}} 
+\index{Factory@{Factory}!list\+Proc@{list\+Proc}}
+\index{list\+Proc@{list\+Proc}!Factory@{Factory}}
+\subsubsection{\texorpdfstring{list\+Proc()}{listProc()}}
+{\footnotesize\ttfamily std\+::string Factory\+::list\+Proc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get accessor to member m\+\_\+list\+Proc \begin{DoxyReturn}{Returns}
+the current value of m\+\_\+list\+Proc 
+\end{DoxyReturn}
+
+
+Definition at line 66 of file Factory.\+h.
+
+
+
+References m\+\_\+list\+Proc.
+
+
+
+Referenced by set\+List\+Proc().
+
+
+\begin{DoxyCode}
+66                         \{
+67     \textcolor{keywordflow}{return} \hyperlink{classFactory_aec20c1d0a1ef175f55a82e868edabe88}{m\_listProc};
+68   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classFactory_a0f10adde2d57c8a1d07fdb4557f3ac3b}\label{classFactory_a0f10adde2d57c8a1d07fdb4557f3ac3b}} 
+\index{Factory@{Factory}!set\+List\+D\+LL@{set\+List\+D\+LL}}
+\index{set\+List\+D\+LL@{set\+List\+D\+LL}!Factory@{Factory}}
+\subsubsection{\texorpdfstring{set\+List\+D\+L\+L()}{setListDLL()}}
+{\footnotesize\ttfamily void Factory\+::set\+List\+D\+LL (\begin{DoxyParamCaption}\item[{std\+::string}]{list\+D\+LL }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set accessor to member m\+\_\+list\+D\+LL 
+\begin{DoxyParams}{Parameters}
+{\em list\+D\+LL} & the new value for m\+\_\+list\+D\+LL \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 25 of file Factory.\+h.
+
+
+
+References list\+D\+L\+L(), and m\+\_\+list\+D\+LL.
+
+
+\begin{DoxyCode}
+25                                       \{
+26     \hyperlink{classFactory_a266167ae49fcf4fa9baa5485dea4b062}{m\_listDLL} = \hyperlink{classFactory_a21cd37e4b21b06e574cf67faea08782a}{listDLL};
+27   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classFactory_a7bc368f81d0228931a44b41b27c39b53}\label{classFactory_a7bc368f81d0228931a44b41b27c39b53}} 
+\index{Factory@{Factory}!set\+List\+Element@{set\+List\+Element}}
+\index{set\+List\+Element@{set\+List\+Element}!Factory@{Factory}}
+\subsubsection{\texorpdfstring{set\+List\+Element()}{setListElement()}}
+{\footnotesize\ttfamily void Factory\+::set\+List\+Element (\begin{DoxyParamCaption}\item[{std\+::list}]{list\+Element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set accessor to member m\+\_\+list\+Element 
+\begin{DoxyParams}{Parameters}
+{\em list\+Element} & the new value for m\+\_\+list\+Element \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 42 of file Factory.\+h.
+
+
+
+References list\+Element(), and m\+\_\+list\+Element.
+
+
+\begin{DoxyCode}
+42                                             \{
+43     \hyperlink{classFactory_a83a99d80105fab2371ce03230b90e8a3}{m\_listElement} = \hyperlink{classFactory_aca9a1442c4ee2f17ea27db723ce65d90}{listElement};
+44   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classFactory_afdec7fe6e79da3e5748d33f740333671}\label{classFactory_afdec7fe6e79da3e5748d33f740333671}} 
+\index{Factory@{Factory}!set\+List\+Proc@{set\+List\+Proc}}
+\index{set\+List\+Proc@{set\+List\+Proc}!Factory@{Factory}}
+\subsubsection{\texorpdfstring{set\+List\+Proc()}{setListProc()}}
+{\footnotesize\ttfamily void Factory\+::set\+List\+Proc (\begin{DoxyParamCaption}\item[{std\+::string}]{list\+Proc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set accessor to member m\+\_\+list\+Proc 
+\begin{DoxyParams}{Parameters}
+{\em list\+Proc} & the new value for m\+\_\+list\+Proc \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 58 of file Factory.\+h.
+
+
+
+References list\+Proc(), and m\+\_\+list\+Proc.
+
+
+\begin{DoxyCode}
+58                                         \{
+59     \hyperlink{classFactory_aec20c1d0a1ef175f55a82e868edabe88}{m\_listProc} = \hyperlink{classFactory_afb222fc976d624fa6fdcb30f0aca586c}{listProc};
+60   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classFactory_a266167ae49fcf4fa9baa5485dea4b062}\label{classFactory_a266167ae49fcf4fa9baa5485dea4b062}} 
+\index{Factory@{Factory}!m\+\_\+list\+D\+LL@{m\+\_\+list\+D\+LL}}
+\index{m\+\_\+list\+D\+LL@{m\+\_\+list\+D\+LL}!Factory@{Factory}}
+\subsubsection{\texorpdfstring{m\+\_\+list\+D\+LL}{m\_listDLL}}
+{\footnotesize\ttfamily std\+::string Factory\+::m\+\_\+list\+D\+LL\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 73 of file Factory.\+h.
+
+
+
+Referenced by list\+D\+L\+L(), and set\+List\+D\+L\+L().
+
+\mbox{\Hypertarget{classFactory_a83a99d80105fab2371ce03230b90e8a3}\label{classFactory_a83a99d80105fab2371ce03230b90e8a3}} 
+\index{Factory@{Factory}!m\+\_\+list\+Element@{m\+\_\+list\+Element}}
+\index{m\+\_\+list\+Element@{m\+\_\+list\+Element}!Factory@{Factory}}
+\subsubsection{\texorpdfstring{m\+\_\+list\+Element}{m\_listElement}}
+{\footnotesize\ttfamily std\+::list Factory\+::m\+\_\+list\+Element\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 74 of file Factory.\+h.
+
+
+
+Referenced by list\+Element(), and set\+List\+Element().
+
+\mbox{\Hypertarget{classFactory_aec20c1d0a1ef175f55a82e868edabe88}\label{classFactory_aec20c1d0a1ef175f55a82e868edabe88}} 
+\index{Factory@{Factory}!m\+\_\+list\+Proc@{m\+\_\+list\+Proc}}
+\index{m\+\_\+list\+Proc@{m\+\_\+list\+Proc}!Factory@{Factory}}
+\subsubsection{\texorpdfstring{m\+\_\+list\+Proc}{m\_listProc}}
+{\footnotesize\ttfamily std\+::string Factory\+::m\+\_\+list\+Proc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 75 of file Factory.\+h.
+
+
+
+Referenced by list\+Proc(), and set\+List\+Proc().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/inc/\hyperlink{Factory_8h}{Factory.\+h}\end{DoxyCompactItemize}

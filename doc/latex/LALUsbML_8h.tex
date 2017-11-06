@@ -1,0 +1,1273 @@
+\hypertarget{LALUsbML_8h}{}\section{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+L\+A\+L\+Usb\+M\+Lx64/include/\+L\+A\+L\+Usb\+ML.h File Reference}
+\label{LALUsbML_8h}\index{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+L\+A\+L\+Usb\+M\+Lx64/include/\+L\+A\+L\+Usb\+M\+L.\+h@{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+L\+A\+L\+Usb\+M\+Lx64/include/\+L\+A\+L\+Usb\+M\+L.\+h}}
+{\ttfamily \#include $<$fcntl.\+h$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$sys/stat.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}ftd2xx.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__int__frame__info}{\+\_\+int\+\_\+frame\+\_\+info}
+\item 
+struct \hyperlink{struct__ml__frame}{\+\_\+ml\+\_\+frame}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{LALUsbML_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI}
+\item 
+\#define \hyperlink{LALUsbML_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall}
+\item 
+\#define \hyperlink{LALUsbML_8h_ab44759ae95dd86cbc2855adf525c43cd}{U\+S\+B\+\_\+\+No\+Err}~\hyperlink{LALUsbx64_2include_2ftd2xx_8h_abc6126af1d45847bc59afa0aa3216b04a57771796d33c3f4178130c5daa56b9a3}{F\+T\+\_\+\+OK}
+\item 
+\#define \hyperlink{LALUsbML_8h_ae0b3e8ff2ead52f7bc55eada7507b5f5}{Frame\+No\+Err}~\hyperlink{LALUsbx64_2include_2ftd2xx_8h_abc6126af1d45847bc59afa0aa3216b04a57771796d33c3f4178130c5daa56b9a3}{F\+T\+\_\+\+OK}
+\item 
+\#define \hyperlink{LALUsbML_8h_a1e7801d7d2ee49a7e1d67e786d48d6b7}{F\+R\+A\+M\+E\+\_\+\+H\+E\+A\+D\+ER}~0x000000\+AA
+\item 
+\#define \hyperlink{LALUsbML_8h_a28008c47bb898192fd5efa5fc3d574bc}{F\+R\+A\+M\+E\+\_\+\+T\+R\+A\+I\+L\+ER}~0x00000055
+\item 
+\#define \hyperlink{LALUsbML_8h_a5ce0c731d7337c6313a960b5bc1be38e}{I\+S\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT}~0x0000007F
+\item 
+\#define \hyperlink{LALUsbML_8h_ab2f24d71b50144885a0f182b6d2e274a}{D\+A\+T\+A\+\_\+\+R\+E\+AD}~0x00000080
+\item 
+\#define \hyperlink{LALUsbML_8h_a1033012652c8143c410c1b30f1dc5af0}{D\+A\+T\+A\+\_\+\+W\+R\+I\+TE}~0x0000007F
+\item 
+\#define \hyperlink{LALUsbML_8h_a040c48a6477cdf394bcc06a2b476d975}{U\+S\+E\+R\+\_\+\+I\+R\+Q\+\_\+\+F\+L\+AG}~0x00000080
+\item 
+\#define \hyperlink{LALUsbML_8h_acaee23bf97a6add491dd394ceb68cd1a}{M\+A\+X\+L\+A\+Y\+ER}~8
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \hyperlink{LALUsbML_8h_a924f0407cf36b3f3e28cb21f146730aa}{Printf\+Func}) (char $\ast$format,...)
+\item 
+typedef void($\ast$ \hyperlink{LALUsbML_8h_aaf94da1a2ffe7c2e42d8670c9af59930}{Perror\+Func}) (char $\ast$msg)
+\item 
+typedef \hyperlink{LALUsbMLx64_2include_2ftd2xx_8h_a61e5e58382c1d302533317f81d6bc781}{F\+T\+\_\+\+S\+T\+A\+T\+US} \hyperlink{LALUsbML_8h_aa7e5a2302774d5aa1d48a2a1cfc46e86}{U\+S\+B\+\_\+\+Error}
+\item 
+typedef enum \hyperlink{LALUsbML_8h_a6dfd30c28d324509407e086c99773814}{\+\_\+frame\+\_\+error\+\_\+constants} \hyperlink{LALUsbML_8h_a9bb3592187ff0a18b63caab692ff9ff5}{Frame\+Error}
+\item 
+typedef enum \hyperlink{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11}{\+\_\+extended\+\_\+usb\+\_\+errors} \hyperlink{LALUsbML_8h_ac71032bff6ebe08f542aedd5be9e0e55}{Ext\+\_\+\+U\+S\+B\+\_\+\+Error}
+\item 
+typedef struct \hyperlink{struct__int__frame__info}{\+\_\+int\+\_\+frame\+\_\+info} \hyperlink{LALUsbML_8h_a5f14a361bdd579d3bad0d9936c066296}{Interrupt\+Frame\+Info}
+\item 
+typedef struct \hyperlink{struct__int__frame__info}{\+\_\+int\+\_\+frame\+\_\+info} $\ast$ \hyperlink{LALUsbML_8h_a52661c94f3ea4205c3d63853fad6617a}{Interrupt\+Frame\+Info\+Ptr}
+\item 
+typedef enum \hyperlink{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40}{\+\_\+fake\+\_\+errors} \hyperlink{LALUsbML_8h_a08ba78def560e79cc4cccde6dd8d72bb}{Fake\+Error\+Type}
+\item 
+typedef struct \hyperlink{struct__ml__frame}{\+\_\+ml\+\_\+frame} \hyperlink{LALUsbML_8h_ac256ca94b86e3a080c0fc61f3c546bb1}{M\+L\+\_\+\+Frame}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{LALUsbML_8h_a7bb4b3f5a75f92e2825cf776d730210c}{T\+X\+R\+X\+\_\+\+S\+T\+A\+T\+US} \{ \hyperlink{LALUsbML_8h_a7bb4b3f5a75f92e2825cf776d730210cabd9903cac935c87bf56315827d03ae6a}{R\+X\+S\+T\+A\+T\+US}, 
+\hyperlink{LALUsbML_8h_a7bb4b3f5a75f92e2825cf776d730210ca9cafa2e2fa7aa5557cad854538cd329d}{T\+X\+S\+T\+A\+T\+US}, 
+\hyperlink{LALUsb_8h_a7bb4b3f5a75f92e2825cf776d730210cabd9903cac935c87bf56315827d03ae6a}{R\+X\+S\+T\+A\+T\+US}, 
+\hyperlink{LALUsb_8h_a7bb4b3f5a75f92e2825cf776d730210ca9cafa2e2fa7aa5557cad854538cd329d}{T\+X\+S\+T\+A\+T\+US}
+ \}
+\item 
+enum \hyperlink{LALUsbML_8h_a6dfd30c28d324509407e086c99773814}{\+\_\+frame\+\_\+error\+\_\+constants} \{ \newline
+\hyperlink{LALUsbML_8h_a6dfd30c28d324509407e086c99773814aa1ad3146aa59e86e0c0ae53a61236402}{F\+E\+\_\+\+N\+O\+NE}, 
+\hyperlink{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a37cfc63bda210e8eaae037e4f95a4a52}{F\+E\+\_\+\+D\+E\+V\+I\+CE}, 
+\hyperlink{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a162a44ee5a1fca3adbb420ca0d2c411d}{F\+E\+\_\+\+S\+O\+F\+T\+W\+A\+RE}, 
+\hyperlink{LALUsbML_8h_a6dfd30c28d324509407e086c99773814ac097b4e4688e1c2bb052b1a86c1e357f}{F\+E\+\_\+\+U\+S\+ER}, 
+\newline
+\hyperlink{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a8a4fe5844f1927499bcd767be31c3b82}{F\+E\+\_\+\+E\+R\+R\+OR}, 
+\hyperlink{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a7170df5ba9d44f72af7773313022b525}{F\+E\+\_\+\+H\+E\+A\+D\+ER}, 
+\hyperlink{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a1c307f49dc07ea12dfd98f71f92a9922}{F\+E\+\_\+\+T\+R\+A\+I\+L\+ER}, 
+\hyperlink{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a70210543e1290f3b8b9fbd708f567b0e}{Max\+Frame\+Error}, 
+\newline
+\hyperlink{LALUsb_8h_a6dfd30c28d324509407e086c99773814aa1ad3146aa59e86e0c0ae53a61236402}{F\+E\+\_\+\+N\+O\+NE}, 
+\hyperlink{LALUsb_8h_a6dfd30c28d324509407e086c99773814a37cfc63bda210e8eaae037e4f95a4a52}{F\+E\+\_\+\+D\+E\+V\+I\+CE}, 
+\hyperlink{LALUsb_8h_a6dfd30c28d324509407e086c99773814a162a44ee5a1fca3adbb420ca0d2c411d}{F\+E\+\_\+\+S\+O\+F\+T\+W\+A\+RE}, 
+\hyperlink{LALUsb_8h_a6dfd30c28d324509407e086c99773814ac097b4e4688e1c2bb052b1a86c1e357f}{F\+E\+\_\+\+U\+S\+ER}, 
+\newline
+\hyperlink{LALUsb_8h_a6dfd30c28d324509407e086c99773814a8a4fe5844f1927499bcd767be31c3b82}{F\+E\+\_\+\+E\+R\+R\+OR}, 
+\hyperlink{LALUsb_8h_a6dfd30c28d324509407e086c99773814a7170df5ba9d44f72af7773313022b525}{F\+E\+\_\+\+H\+E\+A\+D\+ER}, 
+\hyperlink{LALUsb_8h_a6dfd30c28d324509407e086c99773814a1c307f49dc07ea12dfd98f71f92a9922}{F\+E\+\_\+\+T\+R\+A\+I\+L\+ER}, 
+\hyperlink{LALUsb_8h_a6dfd30c28d324509407e086c99773814a70210543e1290f3b8b9fbd708f567b0e}{Max\+Frame\+Error}
+ \}
+\item 
+enum \hyperlink{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11}{\+\_\+extended\+\_\+usb\+\_\+errors} \{ \newline
+\hyperlink{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11afd1c409187b1dfd3d66887a5e07e7ed3}{U\+S\+B\+\_\+\+I\+N\+T\+\_\+\+F\+R\+A\+ME} = F\+T\+\_\+\+O\+T\+H\+E\+R\+\_\+\+E\+R\+R\+OR + 2, 
+\hyperlink{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11acbe5fd1d7b0ba49990531809ad0546f2}{I\+O\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+W\+R\+I\+TE}, 
+\hyperlink{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a8d9834bd348f026fceef2d7d3636529a}{I\+O\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+R\+E\+AD}, 
+\hyperlink{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11afcf321c063e54fa6bf035bb1d895df68}{B\+A\+D\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+E\+R\+R\+OR}, 
+\newline
+\hyperlink{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a5032c53476b78f5a316db165945661ea}{B\+A\+D\+\_\+\+T\+R\+A\+I\+L\+E\+R\+\_\+\+E\+R\+R\+OR}, 
+\hyperlink{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11ad3f305ac4eca193a9fceba19aaf64abf}{B\+A\+D\+\_\+\+S\+U\+B\+A\+D\+D\+R\+\_\+\+E\+R\+R\+OR}, 
+\hyperlink{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a03b6365c1e6cf4d1fa79b2e71dff15a9}{N\+U\+L\+L\+\_\+\+D\+E\+S\+C\+S\+T\+R\+\_\+\+P\+TR}, 
+\hyperlink{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a27c58711ccd25fae609d9cab85033868}{N\+U\+L\+L\+\_\+\+S\+E\+R\+N\+U\+M\+\_\+\+P\+TR}, 
+\newline
+\hyperlink{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a9d6f49afc0387129e010b80516de5897}{B\+A\+D\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+P\+A\+TH}, 
+\hyperlink{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11ab9830ee984bcd189a3c83068865eb6c8}{M\+A\+X\+L\+A\+Y\+E\+R\+\_\+\+N\+U\+L\+L\+\_\+\+P\+TR}, 
+\hyperlink{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a3253af8a98dbde8b4c8a1afe6265d7fa}{S\+U\+B\+\_\+\+A\+D\+D\+R\+R\+\_\+0x40\+\_\+\+E\+R\+R\+OR}, 
+\hyperlink{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a2d4220873a77aafb174113defadb0113}{Max\+\_\+\+U\+S\+B\+\_\+\+Errors}, 
+\newline
+\hyperlink{LALUsb_8h_a68260f9cf3649507d12904cfa1592c11afd1c409187b1dfd3d66887a5e07e7ed3}{U\+S\+B\+\_\+\+I\+N\+T\+\_\+\+F\+R\+A\+ME} = F\+T\+\_\+\+O\+T\+H\+E\+R\+\_\+\+E\+R\+R\+OR + 2, 
+\hyperlink{LALUsb_8h_a68260f9cf3649507d12904cfa1592c11acbe5fd1d7b0ba49990531809ad0546f2}{I\+O\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+W\+R\+I\+TE}, 
+\hyperlink{LALUsb_8h_a68260f9cf3649507d12904cfa1592c11a8d9834bd348f026fceef2d7d3636529a}{I\+O\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+R\+E\+AD}, 
+\hyperlink{LALUsb_8h_a68260f9cf3649507d12904cfa1592c11afcf321c063e54fa6bf035bb1d895df68}{B\+A\+D\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+E\+R\+R\+OR}, 
+\newline
+\hyperlink{LALUsb_8h_a68260f9cf3649507d12904cfa1592c11a5032c53476b78f5a316db165945661ea}{B\+A\+D\+\_\+\+T\+R\+A\+I\+L\+E\+R\+\_\+\+E\+R\+R\+OR}, 
+\hyperlink{LALUsb_8h_a68260f9cf3649507d12904cfa1592c11ad3f305ac4eca193a9fceba19aaf64abf}{B\+A\+D\+\_\+\+S\+U\+B\+A\+D\+D\+R\+\_\+\+E\+R\+R\+OR}, 
+\hyperlink{LALUsb_8h_a68260f9cf3649507d12904cfa1592c11a03b6365c1e6cf4d1fa79b2e71dff15a9}{N\+U\+L\+L\+\_\+\+D\+E\+S\+C\+S\+T\+R\+\_\+\+P\+TR}, 
+\hyperlink{LALUsb_8h_a68260f9cf3649507d12904cfa1592c11a27c58711ccd25fae609d9cab85033868}{N\+U\+L\+L\+\_\+\+S\+E\+R\+N\+U\+M\+\_\+\+P\+TR}, 
+\newline
+\hyperlink{LALUsb_8h_a68260f9cf3649507d12904cfa1592c11a2d4220873a77aafb174113defadb0113}{Max\+\_\+\+U\+S\+B\+\_\+\+Errors}
+ \}
+\item 
+enum \hyperlink{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40}{\+\_\+fake\+\_\+errors} \{ \newline
+\hyperlink{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40a6356e390467faee4dfb43daa2c445323}{F\+K\+\_\+\+L\+E\+T\+S\+B\+E\+T\+R\+UE} = 1, 
+\hyperlink{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40a92fc3d666095867ff5dc6bf111c160e6}{F\+K\+\_\+\+H\+E\+A\+D\+ER} = 2, 
+\hyperlink{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40ae29f90f9bd2aece7aba7014a484625fb}{F\+K\+\_\+\+T\+R\+A\+I\+L\+ER} = 4, 
+\hyperlink{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40a7c83c22eb4b4b505bb941a7e820b7581}{F\+K\+\_\+\+C\+O\+U\+NT} = 8, 
+\newline
+\hyperlink{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40a902fa07ad08d2bd6faef5c27842109fe}{Max\+Fake\+Errors} = 16, 
+\hyperlink{LALUsb_8h_a9dc924c9c4161118ac45416ade6f1c40a6356e390467faee4dfb43daa2c445323}{F\+K\+\_\+\+L\+E\+T\+S\+B\+E\+T\+R\+UE} = 1, 
+\hyperlink{LALUsb_8h_a9dc924c9c4161118ac45416ade6f1c40a92fc3d666095867ff5dc6bf111c160e6}{F\+K\+\_\+\+H\+E\+A\+D\+ER} = 2, 
+\hyperlink{LALUsb_8h_a9dc924c9c4161118ac45416ade6f1c40ae29f90f9bd2aece7aba7014a484625fb}{F\+K\+\_\+\+T\+R\+A\+I\+L\+ER} = 4, 
+\newline
+\hyperlink{LALUsb_8h_a9dc924c9c4161118ac45416ade6f1c40a7c83c22eb4b4b505bb941a7e820b7581}{F\+K\+\_\+\+C\+O\+U\+NT} = 8, 
+\hyperlink{LALUsb_8h_a9dc924c9c4161118ac45416ade6f1c40a902fa07ad08d2bd6faef5c27842109fe}{Max\+Fake\+Errors} = 16
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a336db296b4acf8000328e221decd92aa}{U\+S\+B\+\_\+\+Find\+Devices} (char $\ast$Device\+Description\+Str)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a8478dab34336456351db61fe137395d7}{U\+S\+B\+\_\+\+Init} (int id, \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} verbose)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a77b48cfbf9075545430b778cd4ad777f}{U\+S\+B\+\_\+\+Reset\+Device} (int id)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{LALUsbMLx64_2include_2ftd2xx_8h_a61e5e58382c1d302533317f81d6bc781}{F\+T\+\_\+\+S\+T\+A\+T\+US} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_ac66e53477144e6eec3c8a43542aa2637}{Get\+Device\+Ser\+Num} (char $\ast$buffer, int index)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{LALUsbMLx64_2include_2ftd2xx_8h_a61e5e58382c1d302533317f81d6bc781}{F\+T\+\_\+\+S\+T\+A\+T\+US} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_ac1a8725baa2700b45e2d70fa07344eb8}{Get\+Device\+Desc} (char $\ast$buffer, int index)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_aa10ee3545ce47a289db7f9966a5db833}{U\+S\+B\+\_\+\+Get\+Number\+Of\+Devs} (void)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_afddae9279114a5ac030841d021ee7a63}{Open\+Usb\+Device} (char $\ast$sernumstr)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} void \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a3f0a3f9e09951c39ae1df0638008875a}{Close\+Usb\+Device} (int id)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} void \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_aa48b8127fdc6a7ff5e2c6f14f6b20812}{U\+S\+B\+\_\+\+Close\+All} (void)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} void \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_abd2ca38d79f0d81b98947ebbe55b6a13}{dbg\+\_\+\+Open\+Log\+File} (void)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} void \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a9eaa15834cdbdff8e97d39fba65c48d1}{dbg\+\_\+\+Close\+Log\+File} (void)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_ab28cf26b80d470d84681e4da8a38afd7}{U\+S\+B\+\_\+\+Purge\+Buffers} (int id)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_aad042c936f58d7da7c45810ee19cbf1a}{U\+S\+B\+\_\+\+Write} (int id, void $\ast$buf, int count, int $\ast$written)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_aac4ec65d0cfc24dce587e811dd7c4e01}{U\+S\+B\+\_\+\+Read} (int id, void $\ast$buf, int maxcnt, int $\ast$rdcount)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a19ec67fc6286e0703239d7bba9b6c2af}{U\+S\+B\+\_\+\+Get\+Status} (int id, \hyperlink{LALUsbML_8h_a7bb4b3f5a75f92e2825cf776d730210c}{T\+X\+R\+X\+\_\+\+S\+T\+A\+T\+US})
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a217702d9c80d1bb65ce8703c0a7382fa}{U\+S\+B\+\_\+\+Set\+Timeouts} (int id, int tx\+\_\+timeout, int rx\+\_\+timeout)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a671ccd24a9539d26bae5926a06662129}{U\+S\+B\+\_\+\+Set\+Xfer\+Size} (int id, unsigned long txsize, unsigned long rxsize)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a1a6965b64c7de773855cbdeaf2a62a27}{U\+S\+B\+\_\+\+Set\+Latency\+Timer} (int id, \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a4f4bb67531a9bf6f0b9c6ad76aeba587}{U\+C\+H\+AR} msecs)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a90c0ec96b211bb1b45c4b26afe6f6ced}{U\+S\+B\+\_\+\+Get\+Latency\+Timer} (int id, \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a06c249fdad80e91872a47b11efbf963a}{P\+U\+C\+H\+AR} msecs)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_ab382532b67c0fadc1796d072f380e398}{U\+S\+B\+\_\+\+Set\+Baud\+Rate} (int id, int baud)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} void \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_ac2e865d0549ed76ecc13c63f3b8fcedc}{U\+S\+B\+\_\+\+Perror} (\hyperlink{LALUsbML_8h_aa7e5a2302774d5aa1d48a2a1cfc46e86}{U\+S\+B\+\_\+\+Error} err\+\_\+code)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{LALUsbML_8h_aa7e5a2302774d5aa1d48a2a1cfc46e86}{U\+S\+B\+\_\+\+Error} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a1662b77c9968848acf173f6f9c765ddd}{U\+S\+B\+\_\+\+Get\+Last\+Error} (void)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} void \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a5e6b89e40e1de65b67237c4b51e25972}{U\+S\+B\+\_\+\+Set\+Perror\+Func} (\hyperlink{LALUsb_8h_aaf94da1a2ffe7c2e42d8670c9af59930}{Perror\+Func} func)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} void \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a41c2a2cba8825f159d0472c4051ed261}{U\+S\+B\+\_\+\+Print\+Err\+Msg} (char $\ast$msg)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} char $\ast$\hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_af0863b311a9d606cd518301e6296c0ed}{Get\+Err\+Msg} (\hyperlink{LALUsbML_8h_aa7e5a2302774d5aa1d48a2a1cfc46e86}{U\+S\+B\+\_\+\+Error} err\+\_\+code)
+\item 
+void \hyperlink{LALUsbML_8h_ab005d208ed0777bd9518b776493b023c}{U\+S\+B\+\_\+\+Printf} (char $\ast$format,...)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} void \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a0c4bce4b321046096498696d41515377}{U\+S\+B\+\_\+\+Set\+Printf\+Func} (\hyperlink{LALUsb_8h_a924f0407cf36b3f3e28cb21f146730aa}{Printf\+Func} func)
+\item 
+\hyperlink{LALUsbML_8h_aa7e5a2302774d5aa1d48a2a1cfc46e86}{U\+S\+B\+\_\+\+Error} \hyperlink{LALUsbML_8h_a08abe9d78348cd81d0a96dc044e5fe63}{Get\+U\+S\+B\+\_\+\+Errno} (void)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a784f57af1433a5334f4a7d23ee4caad9}{U\+S\+B\+\_\+\+Reset\+Mode} (int id)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a33d11c5713bc41165b004b1ed3a1b408}{U\+S\+B\+\_\+\+Set\+Synchronous\+Mode} (int id, int sleep\+\_\+time)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a87916fdd822b605a05fb7bddf01bbabb}{U\+S\+B\+\_\+\+Set\+Flow\+Control\+To\+Hardware} (int id)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a25ed5b8ccaca68b01967f7cae160348b}{U\+S\+B\+\_\+\+Erase\+E\+Eprom\+Data} (int id)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_aee64bfec0df4db7d2b24edcdaca655ef}{U\+S\+B\+\_\+\+Write\+E\+Eprom\+Data} (int id)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a414627be9c52759e024fd350a62c6b42}{U\+S\+B\+\_\+\+Read\+E\+Eprom\+Data} (int id, \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} verbose)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a02aad26b8fc3cf9412e1f6593e9a78a8}{U\+S\+B\+\_\+\+Set\+Serial\+Number} (int id, char $\ast$sernum)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} char $\ast$\hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_acd37c588c8ab36a633f0d1c6abd5af08}{U\+S\+B\+\_\+\+Get\+Default\+Serial\+Num} (void)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} char $\ast$\hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a69888cfc799086742988cef71c01124f}{U\+S\+B\+\_\+\+Get\+Eprom\+Serial\+Num} (void)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a2ce2250da9b3bf5705d6c64b2fb5e6e3}{U\+S\+B\+\_\+\+Set\+Desc\+Str} (int id, char $\ast$desc\+\_\+str)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} char $\ast$\hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_ab97488efefb72b5a8c11904f97cf47c8}{U\+S\+B\+\_\+\+Get\+Default\+Device\+Desc} (void)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} char $\ast$\hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a87e0b3814433c5f52c2ae12344cf7bc9}{U\+S\+B\+\_\+\+Get\+Eprom\+Device\+Desc} (void)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a12f970c756968bf69c0a1d1fd7f4587e}{U\+S\+B\+\_\+\+Set\+Power\+Source} (int id, unsigned short powersrc)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a8d921d03646c58f8fd78ddbd029e64ba}{U\+S\+B\+\_\+\+Set\+Max\+Power} (int id, unsigned short current)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a417eaf04d96bd2d3fca0111f8003bcb0}{Usb\+Wrt} (int id, char sub\+\_\+addr, void $\ast$buffer, int count)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a613b00e83691d644c8d1cf05c499392b}{Usb\+Rd} (int id, char sub\+\_\+addr, void $\ast$array, int count)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_aeb238df3a6642023c98bb5dab0d8a4ef}{Usb\+Rd\+Ex} (int id, void $\ast$array, int maxcnt, int $\ast$frames)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_abd8fb7f5b24f8eb2e2f27688ecfce695}{Usb\+Read\+Ex} (int id, void $\ast$array, int maxcnt, int $\ast$frames, int $\ast$frame\+\_\+size)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} void \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a47d6ee31e4abf700091cea1aafb91e28}{Usb\+Set\+Int\+Checking\+State} (\hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} truefalse)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} void \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_ab3398c17204ba7fb4b47eb9bbf4ba94e}{Print\+Frame\+Info} (void)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a2a8ab1d8d149f3358ecfb50d97612ba6}{Get\+Last\+Frame\+Status} (void)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{LALUsbML_8h_a52661c94f3ea4205c3d63853fad6617a}{Interrupt\+Frame\+Info\+Ptr} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a0d954861c62c9ba4318032a779c7116e}{Get\+Last\+Frame} (void)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} void \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a6dace07ba34933004adf1933f250b05e}{Reset\+Lost\+Frames} (void)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} void \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_aeeae4d2471b10b2a546e2375350655d0}{Reset\+Frame\+Errors} (void)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_af632da489ebc3708ec3ab6791ee53fa4}{U\+L\+O\+NG} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a5352550075f3448a578920eed334b7a6}{Get\+Lost\+Frames} (void)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_af632da489ebc3708ec3ab6791ee53fa4}{U\+L\+O\+NG} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a15a837c8dd6bf78ba1d32158e7f18161}{Get\+Total\+Byte\+Count} (void)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} void \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_aaa1eba27cff3c8bc53755856b6e84edb}{Reset\+Total\+Byte\+Count} (void)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_af632da489ebc3708ec3ab6791ee53fa4}{U\+L\+O\+NG} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_acf73bf83fa355d173b3d0b1de48cfbf4}{Get\+Header\+Errors} (void)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_af632da489ebc3708ec3ab6791ee53fa4}{U\+L\+O\+NG} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_afa365e8fcca89a1be458e4a22d875e94}{Get\+Trailer\+Errors} (void)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_aa0fcaafc2d95a37bb326abedcec12ca5}{Usb\+Wrt\+ML} (int id, int $\ast$target\+\_\+path\+\_\+array, char sub\+\_\+addr, void $\ast$buffer, int count)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a540320392908ba7d57bcc168916a82d4}{Usb\+Read\+ML} (int id, int $\ast$target\+\_\+path\+\_\+array, char sub\+\_\+addr, void $\ast$buffer, int usercount)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a988063a8e1f62d7ffc6073041660b595}{Usb\+Request\+For\+Read\+ML} (int id, int $\ast$target\+\_\+path\+\_\+array, char sub\+\_\+addr, void $\ast$buffer, int count)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a53886e1a3511c5013c89b5fc36fe8571}{Usb\+Read\+Ex\+ML} (int id, int $\ast$target\+\_\+path\+\_\+array, void $\ast$array, int maxcnt, int $\ast$frames, int $\ast$frame\+\_\+size, int $\ast$sub\+\_\+add\+\_\+array)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int $\ast$\hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a1f4eee33e19ad6a323876213b59c1227}{Usb\+Get\+Target\+Path\+Array} (int id)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_adb388c97933978f5f29c28f53d09ebe9}{Usb\+Get\+Nlayers} (int id)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_adb0d6352075f8eb4d93652619dee0e27}{Usb\+Set\+Max\+Layer} (int id, int num\+\_\+layers)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a4efc74849c30afc89c2a1ddeef199360}{Usb\+Get\+Max\+Layer} (int id, int $\ast$num\+\_\+layers)
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} \hyperlink{LALUsbML_8h_a4b152904931a161922da9e963e46b745}{Usb\+Read\+Ex\+M\+L\+\_\+\+New} (int id, void $\ast$array, \hyperlink{LALUsbML_8h_ac256ca94b86e3a080c0fc61f3c546bb1}{M\+L\+\_\+\+Frame} $\ast$mf\+\_\+array, int max\+\_\+num\+\_\+bytes, int $\ast$frames)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{LALUsb_8h_aaf94da1a2ffe7c2e42d8670c9af59930}{Perror\+Func} \hyperlink{LALUsbML_8h_a733226ff2d2676365651e3e3184ed029}{pf\+Error}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{LALUsbML_8h_af801940f92d305287834530901e9c473}\label{LALUsbML_8h_af801940f92d305287834530901e9c473}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!\+\_\+cstmcall@{\+\_\+cstmcall}}
+\index{\+\_\+cstmcall@{\+\_\+cstmcall}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+cstmcall}{\_cstmcall}}
+{\footnotesize\ttfamily \#define \+\_\+cstmcall}
+
+
+
+Definition at line 31 of file L\+A\+L\+Usb\+M\+L.\+h.
+
+\mbox{\Hypertarget{LALUsbML_8h_ab2f24d71b50144885a0f182b6d2e274a}\label{LALUsbML_8h_ab2f24d71b50144885a0f182b6d2e274a}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!D\+A\+T\+A\+\_\+\+R\+E\+AD@{D\+A\+T\+A\+\_\+\+R\+E\+AD}}
+\index{D\+A\+T\+A\+\_\+\+R\+E\+AD@{D\+A\+T\+A\+\_\+\+R\+E\+AD}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{D\+A\+T\+A\+\_\+\+R\+E\+AD}{DATA\_READ}}
+{\footnotesize\ttfamily \#define D\+A\+T\+A\+\_\+\+R\+E\+AD~0x00000080}
+
+
+
+Definition at line 166 of file L\+A\+L\+Usb\+M\+L.\+h.
+
+\mbox{\Hypertarget{LALUsbML_8h_a1033012652c8143c410c1b30f1dc5af0}\label{LALUsbML_8h_a1033012652c8143c410c1b30f1dc5af0}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!D\+A\+T\+A\+\_\+\+W\+R\+I\+TE@{D\+A\+T\+A\+\_\+\+W\+R\+I\+TE}}
+\index{D\+A\+T\+A\+\_\+\+W\+R\+I\+TE@{D\+A\+T\+A\+\_\+\+W\+R\+I\+TE}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{D\+A\+T\+A\+\_\+\+W\+R\+I\+TE}{DATA\_WRITE}}
+{\footnotesize\ttfamily \#define D\+A\+T\+A\+\_\+\+W\+R\+I\+TE~0x0000007F}
+
+
+
+Definition at line 167 of file L\+A\+L\+Usb\+M\+L.\+h.
+
+\mbox{\Hypertarget{LALUsbML_8h_a1e7801d7d2ee49a7e1d67e786d48d6b7}\label{LALUsbML_8h_a1e7801d7d2ee49a7e1d67e786d48d6b7}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!F\+R\+A\+M\+E\+\_\+\+H\+E\+A\+D\+ER@{F\+R\+A\+M\+E\+\_\+\+H\+E\+A\+D\+ER}}
+\index{F\+R\+A\+M\+E\+\_\+\+H\+E\+A\+D\+ER@{F\+R\+A\+M\+E\+\_\+\+H\+E\+A\+D\+ER}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{F\+R\+A\+M\+E\+\_\+\+H\+E\+A\+D\+ER}{FRAME\_HEADER}}
+{\footnotesize\ttfamily \#define F\+R\+A\+M\+E\+\_\+\+H\+E\+A\+D\+ER~0x000000\+AA}
+
+
+
+Definition at line 162 of file L\+A\+L\+Usb\+M\+L.\+h.
+
+\mbox{\Hypertarget{LALUsbML_8h_a28008c47bb898192fd5efa5fc3d574bc}\label{LALUsbML_8h_a28008c47bb898192fd5efa5fc3d574bc}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!F\+R\+A\+M\+E\+\_\+\+T\+R\+A\+I\+L\+ER@{F\+R\+A\+M\+E\+\_\+\+T\+R\+A\+I\+L\+ER}}
+\index{F\+R\+A\+M\+E\+\_\+\+T\+R\+A\+I\+L\+ER@{F\+R\+A\+M\+E\+\_\+\+T\+R\+A\+I\+L\+ER}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{F\+R\+A\+M\+E\+\_\+\+T\+R\+A\+I\+L\+ER}{FRAME\_TRAILER}}
+{\footnotesize\ttfamily \#define F\+R\+A\+M\+E\+\_\+\+T\+R\+A\+I\+L\+ER~0x00000055}
+
+
+
+Definition at line 163 of file L\+A\+L\+Usb\+M\+L.\+h.
+
+\mbox{\Hypertarget{LALUsbML_8h_ae0b3e8ff2ead52f7bc55eada7507b5f5}\label{LALUsbML_8h_ae0b3e8ff2ead52f7bc55eada7507b5f5}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Frame\+No\+Err@{Frame\+No\+Err}}
+\index{Frame\+No\+Err@{Frame\+No\+Err}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Frame\+No\+Err}{FrameNoErr}}
+{\footnotesize\ttfamily \#define Frame\+No\+Err~\hyperlink{LALUsbx64_2include_2ftd2xx_8h_abc6126af1d45847bc59afa0aa3216b04a57771796d33c3f4178130c5daa56b9a3}{F\+T\+\_\+\+OK}}
+
+
+
+Definition at line 70 of file L\+A\+L\+Usb\+M\+L.\+h.
+
+\mbox{\Hypertarget{LALUsbML_8h_a5ce0c731d7337c6313a960b5bc1be38e}\label{LALUsbML_8h_a5ce0c731d7337c6313a960b5bc1be38e}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!I\+S\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT@{I\+S\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT}}
+\index{I\+S\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT@{I\+S\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{I\+S\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT}{IS\_INTERRUPT}}
+{\footnotesize\ttfamily \#define I\+S\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT~0x0000007F}
+
+
+
+Definition at line 164 of file L\+A\+L\+Usb\+M\+L.\+h.
+
+\mbox{\Hypertarget{LALUsbML_8h_ae420b065eb15cfb4611913b0635227e7}\label{LALUsbML_8h_ae420b065eb15cfb4611913b0635227e7}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!L\+A\+L\+U\+S\+B\+\_\+\+A\+PI@{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI}}
+\index{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI@{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI}{LALUSB\_API}}
+{\footnotesize\ttfamily \#define L\+A\+L\+U\+S\+B\+\_\+\+A\+PI}
+
+
+
+Definition at line 30 of file L\+A\+L\+Usb\+M\+L.\+h.
+
+\mbox{\Hypertarget{LALUsbML_8h_acaee23bf97a6add491dd394ceb68cd1a}\label{LALUsbML_8h_acaee23bf97a6add491dd394ceb68cd1a}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!M\+A\+X\+L\+A\+Y\+ER@{M\+A\+X\+L\+A\+Y\+ER}}
+\index{M\+A\+X\+L\+A\+Y\+ER@{M\+A\+X\+L\+A\+Y\+ER}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+X\+L\+A\+Y\+ER}{MAXLAYER}}
+{\footnotesize\ttfamily \#define M\+A\+X\+L\+A\+Y\+ER~8}
+
+
+
+Definition at line 236 of file L\+A\+L\+Usb\+M\+L.\+h.
+
+\mbox{\Hypertarget{LALUsbML_8h_ab44759ae95dd86cbc2855adf525c43cd}\label{LALUsbML_8h_ab44759ae95dd86cbc2855adf525c43cd}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+No\+Err@{U\+S\+B\+\_\+\+No\+Err}}
+\index{U\+S\+B\+\_\+\+No\+Err@{U\+S\+B\+\_\+\+No\+Err}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+No\+Err}{USB\_NoErr}}
+{\footnotesize\ttfamily \#define U\+S\+B\+\_\+\+No\+Err~\hyperlink{LALUsbx64_2include_2ftd2xx_8h_abc6126af1d45847bc59afa0aa3216b04a57771796d33c3f4178130c5daa56b9a3}{F\+T\+\_\+\+OK}}
+
+
+
+Definition at line 69 of file L\+A\+L\+Usb\+M\+L.\+h.
+
+
+
+Referenced by Usb\+F\+T\+Interface\+::usb\+Read\+U16(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Read\+U16(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Read\+U32(), Usb\+F\+T\+Interface\+::usb\+Read\+U32(), Usb\+F\+T\+Interface\+::usb\+Read\+U8(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Read\+U8(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+Read(), Usb\+F\+T\+Interface\+::usb\+Write\+Read(), Usb\+F\+T\+Interface\+::usb\+Write\+U16(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+U16(), Usb\+F\+T\+Interface\+::usb\+Write\+U32(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+U32(), Usb\+F\+T\+Interface\+::usb\+Write\+U8(), and Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+U8().
+
+\mbox{\Hypertarget{LALUsbML_8h_a040c48a6477cdf394bcc06a2b476d975}\label{LALUsbML_8h_a040c48a6477cdf394bcc06a2b476d975}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+E\+R\+\_\+\+I\+R\+Q\+\_\+\+F\+L\+AG@{U\+S\+E\+R\+\_\+\+I\+R\+Q\+\_\+\+F\+L\+AG}}
+\index{U\+S\+E\+R\+\_\+\+I\+R\+Q\+\_\+\+F\+L\+AG@{U\+S\+E\+R\+\_\+\+I\+R\+Q\+\_\+\+F\+L\+AG}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+E\+R\+\_\+\+I\+R\+Q\+\_\+\+F\+L\+AG}{USER\_IRQ\_FLAG}}
+{\footnotesize\ttfamily \#define U\+S\+E\+R\+\_\+\+I\+R\+Q\+\_\+\+F\+L\+AG~0x00000080}
+
+
+
+Definition at line 169 of file L\+A\+L\+Usb\+M\+L.\+h.
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{LALUsbML_8h_ac71032bff6ebe08f542aedd5be9e0e55}\label{LALUsbML_8h_ac71032bff6ebe08f542aedd5be9e0e55}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Ext\+\_\+\+U\+S\+B\+\_\+\+Error@{Ext\+\_\+\+U\+S\+B\+\_\+\+Error}}
+\index{Ext\+\_\+\+U\+S\+B\+\_\+\+Error@{Ext\+\_\+\+U\+S\+B\+\_\+\+Error}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Ext\+\_\+\+U\+S\+B\+\_\+\+Error}{Ext\_USB\_Error}}
+{\footnotesize\ttfamily typedef enum \hyperlink{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11}{\+\_\+extended\+\_\+usb\+\_\+errors} \hyperlink{LALUsbML_8h_ac71032bff6ebe08f542aedd5be9e0e55}{Ext\+\_\+\+U\+S\+B\+\_\+\+Error}}
+
+\mbox{\Hypertarget{LALUsbML_8h_a08ba78def560e79cc4cccde6dd8d72bb}\label{LALUsbML_8h_a08ba78def560e79cc4cccde6dd8d72bb}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Fake\+Error\+Type@{Fake\+Error\+Type}}
+\index{Fake\+Error\+Type@{Fake\+Error\+Type}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Fake\+Error\+Type}{FakeErrorType}}
+{\footnotesize\ttfamily typedef enum \hyperlink{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40}{\+\_\+fake\+\_\+errors} \hyperlink{LALUsbML_8h_a08ba78def560e79cc4cccde6dd8d72bb}{Fake\+Error\+Type}}
+
+\mbox{\Hypertarget{LALUsbML_8h_a9bb3592187ff0a18b63caab692ff9ff5}\label{LALUsbML_8h_a9bb3592187ff0a18b63caab692ff9ff5}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Frame\+Error@{Frame\+Error}}
+\index{Frame\+Error@{Frame\+Error}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Frame\+Error}{FrameError}}
+{\footnotesize\ttfamily typedef enum \hyperlink{LALUsbML_8h_a6dfd30c28d324509407e086c99773814}{\+\_\+frame\+\_\+error\+\_\+constants} \hyperlink{LALUsbML_8h_a9bb3592187ff0a18b63caab692ff9ff5}{Frame\+Error}}
+
+\mbox{\Hypertarget{LALUsbML_8h_a5f14a361bdd579d3bad0d9936c066296}\label{LALUsbML_8h_a5f14a361bdd579d3bad0d9936c066296}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Interrupt\+Frame\+Info@{Interrupt\+Frame\+Info}}
+\index{Interrupt\+Frame\+Info@{Interrupt\+Frame\+Info}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Interrupt\+Frame\+Info}{InterruptFrameInfo}}
+{\footnotesize\ttfamily typedef struct \hyperlink{struct__int__frame__info}{\+\_\+int\+\_\+frame\+\_\+info} \hyperlink{LALUsbML_8h_a5f14a361bdd579d3bad0d9936c066296}{Interrupt\+Frame\+Info}}
+
+\mbox{\Hypertarget{LALUsbML_8h_a52661c94f3ea4205c3d63853fad6617a}\label{LALUsbML_8h_a52661c94f3ea4205c3d63853fad6617a}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Interrupt\+Frame\+Info\+Ptr@{Interrupt\+Frame\+Info\+Ptr}}
+\index{Interrupt\+Frame\+Info\+Ptr@{Interrupt\+Frame\+Info\+Ptr}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Interrupt\+Frame\+Info\+Ptr}{InterruptFrameInfoPtr}}
+{\footnotesize\ttfamily typedef struct \hyperlink{struct__int__frame__info}{\+\_\+int\+\_\+frame\+\_\+info} $\ast$ \hyperlink{LALUsbML_8h_a52661c94f3ea4205c3d63853fad6617a}{Interrupt\+Frame\+Info\+Ptr}}
+
+\mbox{\Hypertarget{LALUsbML_8h_ac256ca94b86e3a080c0fc61f3c546bb1}\label{LALUsbML_8h_ac256ca94b86e3a080c0fc61f3c546bb1}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!M\+L\+\_\+\+Frame@{M\+L\+\_\+\+Frame}}
+\index{M\+L\+\_\+\+Frame@{M\+L\+\_\+\+Frame}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{M\+L\+\_\+\+Frame}{ML\_Frame}}
+{\footnotesize\ttfamily typedef struct \hyperlink{struct__ml__frame}{\+\_\+ml\+\_\+frame} \hyperlink{LALUsbML_8h_ac256ca94b86e3a080c0fc61f3c546bb1}{M\+L\+\_\+\+Frame}}
+
+\mbox{\Hypertarget{LALUsbML_8h_aaf94da1a2ffe7c2e42d8670c9af59930}\label{LALUsbML_8h_aaf94da1a2ffe7c2e42d8670c9af59930}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Perror\+Func@{Perror\+Func}}
+\index{Perror\+Func@{Perror\+Func}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Perror\+Func}{PerrorFunc}}
+{\footnotesize\ttfamily typedef void($\ast$ Perror\+Func) (char $\ast$msg)}
+
+
+
+Definition at line 64 of file L\+A\+L\+Usb\+M\+L.\+h.
+
+\mbox{\Hypertarget{LALUsbML_8h_a924f0407cf36b3f3e28cb21f146730aa}\label{LALUsbML_8h_a924f0407cf36b3f3e28cb21f146730aa}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Printf\+Func@{Printf\+Func}}
+\index{Printf\+Func@{Printf\+Func}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Printf\+Func}{PrintfFunc}}
+{\footnotesize\ttfamily typedef void($\ast$ Printf\+Func) (char $\ast$format,...)}
+
+
+
+Definition at line 58 of file L\+A\+L\+Usb\+M\+L.\+h.
+
+\mbox{\Hypertarget{LALUsbML_8h_aa7e5a2302774d5aa1d48a2a1cfc46e86}\label{LALUsbML_8h_aa7e5a2302774d5aa1d48a2a1cfc46e86}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Error@{U\+S\+B\+\_\+\+Error}}
+\index{U\+S\+B\+\_\+\+Error@{U\+S\+B\+\_\+\+Error}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Error}{USB\_Error}}
+{\footnotesize\ttfamily typedef \hyperlink{LALUsbMLx64_2include_2ftd2xx_8h_a61e5e58382c1d302533317f81d6bc781}{F\+T\+\_\+\+S\+T\+A\+T\+US} \hyperlink{LALUsbML_8h_aa7e5a2302774d5aa1d48a2a1cfc46e86}{U\+S\+B\+\_\+\+Error}}
+
+
+
+Definition at line 72 of file L\+A\+L\+Usb\+M\+L.\+h.
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11}\label{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!\+\_\+extended\+\_\+usb\+\_\+errors@{\+\_\+extended\+\_\+usb\+\_\+errors}}
+\index{\+\_\+extended\+\_\+usb\+\_\+errors@{\+\_\+extended\+\_\+usb\+\_\+errors}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+extended\+\_\+usb\+\_\+errors}{\_extended\_usb\_errors}}
+{\footnotesize\ttfamily enum \hyperlink{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11}{\+\_\+extended\+\_\+usb\+\_\+errors}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{U\+S\+B\+\_\+\+I\+N\+T\+\_\+\+F\+R\+A\+ME@{U\+S\+B\+\_\+\+I\+N\+T\+\_\+\+F\+R\+A\+ME}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+I\+N\+T\+\_\+\+F\+R\+A\+ME@{U\+S\+B\+\_\+\+I\+N\+T\+\_\+\+F\+R\+A\+ME}}}\mbox{\Hypertarget{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11afd1c409187b1dfd3d66887a5e07e7ed3}\label{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11afd1c409187b1dfd3d66887a5e07e7ed3}} 
+U\+S\+B\+\_\+\+I\+N\+T\+\_\+\+F\+R\+A\+ME&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+O\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+W\+R\+I\+TE@{I\+O\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+W\+R\+I\+TE}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!I\+O\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+W\+R\+I\+TE@{I\+O\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+W\+R\+I\+TE}}}\mbox{\Hypertarget{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11acbe5fd1d7b0ba49990531809ad0546f2}\label{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11acbe5fd1d7b0ba49990531809ad0546f2}} 
+I\+O\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+W\+R\+I\+TE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+O\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+R\+E\+AD@{I\+O\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+R\+E\+AD}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!I\+O\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+R\+E\+AD@{I\+O\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+R\+E\+AD}}}\mbox{\Hypertarget{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a8d9834bd348f026fceef2d7d3636529a}\label{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a8d9834bd348f026fceef2d7d3636529a}} 
+I\+O\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+R\+E\+AD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B\+A\+D\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+E\+R\+R\+OR@{B\+A\+D\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+E\+R\+R\+OR}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!B\+A\+D\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+E\+R\+R\+OR@{B\+A\+D\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+E\+R\+R\+OR}}}\mbox{\Hypertarget{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11afcf321c063e54fa6bf035bb1d895df68}\label{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11afcf321c063e54fa6bf035bb1d895df68}} 
+B\+A\+D\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+E\+R\+R\+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B\+A\+D\+\_\+\+T\+R\+A\+I\+L\+E\+R\+\_\+\+E\+R\+R\+OR@{B\+A\+D\+\_\+\+T\+R\+A\+I\+L\+E\+R\+\_\+\+E\+R\+R\+OR}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!B\+A\+D\+\_\+\+T\+R\+A\+I\+L\+E\+R\+\_\+\+E\+R\+R\+OR@{B\+A\+D\+\_\+\+T\+R\+A\+I\+L\+E\+R\+\_\+\+E\+R\+R\+OR}}}\mbox{\Hypertarget{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a5032c53476b78f5a316db165945661ea}\label{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a5032c53476b78f5a316db165945661ea}} 
+B\+A\+D\+\_\+\+T\+R\+A\+I\+L\+E\+R\+\_\+\+E\+R\+R\+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B\+A\+D\+\_\+\+S\+U\+B\+A\+D\+D\+R\+\_\+\+E\+R\+R\+OR@{B\+A\+D\+\_\+\+S\+U\+B\+A\+D\+D\+R\+\_\+\+E\+R\+R\+OR}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!B\+A\+D\+\_\+\+S\+U\+B\+A\+D\+D\+R\+\_\+\+E\+R\+R\+OR@{B\+A\+D\+\_\+\+S\+U\+B\+A\+D\+D\+R\+\_\+\+E\+R\+R\+OR}}}\mbox{\Hypertarget{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11ad3f305ac4eca193a9fceba19aaf64abf}\label{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11ad3f305ac4eca193a9fceba19aaf64abf}} 
+B\+A\+D\+\_\+\+S\+U\+B\+A\+D\+D\+R\+\_\+\+E\+R\+R\+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+U\+L\+L\+\_\+\+D\+E\+S\+C\+S\+T\+R\+\_\+\+P\+TR@{N\+U\+L\+L\+\_\+\+D\+E\+S\+C\+S\+T\+R\+\_\+\+P\+TR}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!N\+U\+L\+L\+\_\+\+D\+E\+S\+C\+S\+T\+R\+\_\+\+P\+TR@{N\+U\+L\+L\+\_\+\+D\+E\+S\+C\+S\+T\+R\+\_\+\+P\+TR}}}\mbox{\Hypertarget{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a03b6365c1e6cf4d1fa79b2e71dff15a9}\label{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a03b6365c1e6cf4d1fa79b2e71dff15a9}} 
+N\+U\+L\+L\+\_\+\+D\+E\+S\+C\+S\+T\+R\+\_\+\+P\+TR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+U\+L\+L\+\_\+\+S\+E\+R\+N\+U\+M\+\_\+\+P\+TR@{N\+U\+L\+L\+\_\+\+S\+E\+R\+N\+U\+M\+\_\+\+P\+TR}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!N\+U\+L\+L\+\_\+\+S\+E\+R\+N\+U\+M\+\_\+\+P\+TR@{N\+U\+L\+L\+\_\+\+S\+E\+R\+N\+U\+M\+\_\+\+P\+TR}}}\mbox{\Hypertarget{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a27c58711ccd25fae609d9cab85033868}\label{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a27c58711ccd25fae609d9cab85033868}} 
+N\+U\+L\+L\+\_\+\+S\+E\+R\+N\+U\+M\+\_\+\+P\+TR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B\+A\+D\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+P\+A\+TH@{B\+A\+D\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+P\+A\+TH}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!B\+A\+D\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+P\+A\+TH@{B\+A\+D\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+P\+A\+TH}}}\mbox{\Hypertarget{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a9d6f49afc0387129e010b80516de5897}\label{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a9d6f49afc0387129e010b80516de5897}} 
+B\+A\+D\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+P\+A\+TH&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M\+A\+X\+L\+A\+Y\+E\+R\+\_\+\+N\+U\+L\+L\+\_\+\+P\+TR@{M\+A\+X\+L\+A\+Y\+E\+R\+\_\+\+N\+U\+L\+L\+\_\+\+P\+TR}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!M\+A\+X\+L\+A\+Y\+E\+R\+\_\+\+N\+U\+L\+L\+\_\+\+P\+TR@{M\+A\+X\+L\+A\+Y\+E\+R\+\_\+\+N\+U\+L\+L\+\_\+\+P\+TR}}}\mbox{\Hypertarget{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11ab9830ee984bcd189a3c83068865eb6c8}\label{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11ab9830ee984bcd189a3c83068865eb6c8}} 
+M\+A\+X\+L\+A\+Y\+E\+R\+\_\+\+N\+U\+L\+L\+\_\+\+P\+TR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+U\+B\+\_\+\+A\+D\+D\+R\+R\+\_\+0x40\+\_\+\+E\+R\+R\+OR@{S\+U\+B\+\_\+\+A\+D\+D\+R\+R\+\_\+0x40\+\_\+\+E\+R\+R\+OR}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!S\+U\+B\+\_\+\+A\+D\+D\+R\+R\+\_\+0x40\+\_\+\+E\+R\+R\+OR@{S\+U\+B\+\_\+\+A\+D\+D\+R\+R\+\_\+0x40\+\_\+\+E\+R\+R\+OR}}}\mbox{\Hypertarget{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a3253af8a98dbde8b4c8a1afe6265d7fa}\label{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a3253af8a98dbde8b4c8a1afe6265d7fa}} 
+S\+U\+B\+\_\+\+A\+D\+D\+R\+R\+\_\+0x40\+\_\+\+E\+R\+R\+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Max\+\_\+\+U\+S\+B\+\_\+\+Errors@{Max\+\_\+\+U\+S\+B\+\_\+\+Errors}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Max\+\_\+\+U\+S\+B\+\_\+\+Errors@{Max\+\_\+\+U\+S\+B\+\_\+\+Errors}}}\mbox{\Hypertarget{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a2d4220873a77aafb174113defadb0113}\label{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a2d4220873a77aafb174113defadb0113}} 
+Max\+\_\+\+U\+S\+B\+\_\+\+Errors&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{U\+S\+B\+\_\+\+I\+N\+T\+\_\+\+F\+R\+A\+ME@{U\+S\+B\+\_\+\+I\+N\+T\+\_\+\+F\+R\+A\+ME}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+I\+N\+T\+\_\+\+F\+R\+A\+ME@{U\+S\+B\+\_\+\+I\+N\+T\+\_\+\+F\+R\+A\+ME}}}\mbox{\Hypertarget{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11afd1c409187b1dfd3d66887a5e07e7ed3}\label{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11afd1c409187b1dfd3d66887a5e07e7ed3}} 
+U\+S\+B\+\_\+\+I\+N\+T\+\_\+\+F\+R\+A\+ME&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+O\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+W\+R\+I\+TE@{I\+O\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+W\+R\+I\+TE}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!I\+O\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+W\+R\+I\+TE@{I\+O\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+W\+R\+I\+TE}}}\mbox{\Hypertarget{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11acbe5fd1d7b0ba49990531809ad0546f2}\label{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11acbe5fd1d7b0ba49990531809ad0546f2}} 
+I\+O\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+W\+R\+I\+TE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+O\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+R\+E\+AD@{I\+O\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+R\+E\+AD}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!I\+O\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+R\+E\+AD@{I\+O\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+R\+E\+AD}}}\mbox{\Hypertarget{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a8d9834bd348f026fceef2d7d3636529a}\label{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a8d9834bd348f026fceef2d7d3636529a}} 
+I\+O\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+R\+E\+AD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B\+A\+D\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+E\+R\+R\+OR@{B\+A\+D\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+E\+R\+R\+OR}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!B\+A\+D\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+E\+R\+R\+OR@{B\+A\+D\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+E\+R\+R\+OR}}}\mbox{\Hypertarget{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11afcf321c063e54fa6bf035bb1d895df68}\label{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11afcf321c063e54fa6bf035bb1d895df68}} 
+B\+A\+D\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+E\+R\+R\+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B\+A\+D\+\_\+\+T\+R\+A\+I\+L\+E\+R\+\_\+\+E\+R\+R\+OR@{B\+A\+D\+\_\+\+T\+R\+A\+I\+L\+E\+R\+\_\+\+E\+R\+R\+OR}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!B\+A\+D\+\_\+\+T\+R\+A\+I\+L\+E\+R\+\_\+\+E\+R\+R\+OR@{B\+A\+D\+\_\+\+T\+R\+A\+I\+L\+E\+R\+\_\+\+E\+R\+R\+OR}}}\mbox{\Hypertarget{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a5032c53476b78f5a316db165945661ea}\label{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a5032c53476b78f5a316db165945661ea}} 
+B\+A\+D\+\_\+\+T\+R\+A\+I\+L\+E\+R\+\_\+\+E\+R\+R\+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B\+A\+D\+\_\+\+S\+U\+B\+A\+D\+D\+R\+\_\+\+E\+R\+R\+OR@{B\+A\+D\+\_\+\+S\+U\+B\+A\+D\+D\+R\+\_\+\+E\+R\+R\+OR}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!B\+A\+D\+\_\+\+S\+U\+B\+A\+D\+D\+R\+\_\+\+E\+R\+R\+OR@{B\+A\+D\+\_\+\+S\+U\+B\+A\+D\+D\+R\+\_\+\+E\+R\+R\+OR}}}\mbox{\Hypertarget{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11ad3f305ac4eca193a9fceba19aaf64abf}\label{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11ad3f305ac4eca193a9fceba19aaf64abf}} 
+B\+A\+D\+\_\+\+S\+U\+B\+A\+D\+D\+R\+\_\+\+E\+R\+R\+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+U\+L\+L\+\_\+\+D\+E\+S\+C\+S\+T\+R\+\_\+\+P\+TR@{N\+U\+L\+L\+\_\+\+D\+E\+S\+C\+S\+T\+R\+\_\+\+P\+TR}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!N\+U\+L\+L\+\_\+\+D\+E\+S\+C\+S\+T\+R\+\_\+\+P\+TR@{N\+U\+L\+L\+\_\+\+D\+E\+S\+C\+S\+T\+R\+\_\+\+P\+TR}}}\mbox{\Hypertarget{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a03b6365c1e6cf4d1fa79b2e71dff15a9}\label{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a03b6365c1e6cf4d1fa79b2e71dff15a9}} 
+N\+U\+L\+L\+\_\+\+D\+E\+S\+C\+S\+T\+R\+\_\+\+P\+TR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+U\+L\+L\+\_\+\+S\+E\+R\+N\+U\+M\+\_\+\+P\+TR@{N\+U\+L\+L\+\_\+\+S\+E\+R\+N\+U\+M\+\_\+\+P\+TR}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!N\+U\+L\+L\+\_\+\+S\+E\+R\+N\+U\+M\+\_\+\+P\+TR@{N\+U\+L\+L\+\_\+\+S\+E\+R\+N\+U\+M\+\_\+\+P\+TR}}}\mbox{\Hypertarget{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a27c58711ccd25fae609d9cab85033868}\label{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a27c58711ccd25fae609d9cab85033868}} 
+N\+U\+L\+L\+\_\+\+S\+E\+R\+N\+U\+M\+\_\+\+P\+TR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Max\+\_\+\+U\+S\+B\+\_\+\+Errors@{Max\+\_\+\+U\+S\+B\+\_\+\+Errors}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Max\+\_\+\+U\+S\+B\+\_\+\+Errors@{Max\+\_\+\+U\+S\+B\+\_\+\+Errors}}}\mbox{\Hypertarget{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a2d4220873a77aafb174113defadb0113}\label{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a2d4220873a77aafb174113defadb0113}} 
+Max\+\_\+\+U\+S\+B\+\_\+\+Errors&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 199 of file L\+A\+L\+Usb\+M\+L.\+h.
+
+
+\begin{DoxyCode}
+200 \{
+201     \hyperlink{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11afd1c409187b1dfd3d66887a5e07e7ed3}{USB\_INT\_FRAME} = \hyperlink{LALUsbMLx64_2include_2ftd2xx_8h_a06fc87d81c62e9abb8790b6e5713c55ba69ca4908cb1d711452f413c66d408b8d}{FT\_OTHER\_ERROR} + 2,
+202     \hyperlink{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11acbe5fd1d7b0ba49990531809ad0546f2}{IO\_TIMEOUT\_WRITE},
+203     \hyperlink{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a8d9834bd348f026fceef2d7d3636529a}{IO\_TIMEOUT\_READ},
+204     \hyperlink{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11afcf321c063e54fa6bf035bb1d895df68}{BAD\_HEADER\_ERROR},
+205     \hyperlink{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a5032c53476b78f5a316db165945661ea}{BAD\_TRAILER\_ERROR},
+206     \hyperlink{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11ad3f305ac4eca193a9fceba19aaf64abf}{BAD\_SUBADDR\_ERROR},
+207     \hyperlink{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a03b6365c1e6cf4d1fa79b2e71dff15a9}{NULL\_DESCSTR\_PTR},
+208     \hyperlink{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a27c58711ccd25fae609d9cab85033868}{NULL\_SERNUM\_PTR},
+209     \hyperlink{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a9d6f49afc0387129e010b80516de5897}{BAD\_TARGET\_PATH},
+210     \hyperlink{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11ab9830ee984bcd189a3c83068865eb6c8}{MAXLAYER\_NULL\_PTR},
+211     \hyperlink{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a3253af8a98dbde8b4c8a1afe6265d7fa}{SUB\_ADDRR\_0x40\_ERROR},
+212     \hyperlink{LALUsbML_8h_a68260f9cf3649507d12904cfa1592c11a2d4220873a77aafb174113defadb0113}{Max\_USB\_Errors}
+213 \}\hyperlink{LALUsbML_8h_ac71032bff6ebe08f542aedd5be9e0e55}{Ext\_USB\_Error};
+\end{DoxyCode}
+\mbox{\Hypertarget{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40}\label{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!\+\_\+fake\+\_\+errors@{\+\_\+fake\+\_\+errors}}
+\index{\+\_\+fake\+\_\+errors@{\+\_\+fake\+\_\+errors}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+fake\+\_\+errors}{\_fake\_errors}}
+{\footnotesize\ttfamily enum \hyperlink{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40}{\+\_\+fake\+\_\+errors}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+K\+\_\+\+L\+E\+T\+S\+B\+E\+T\+R\+UE@{F\+K\+\_\+\+L\+E\+T\+S\+B\+E\+T\+R\+UE}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!F\+K\+\_\+\+L\+E\+T\+S\+B\+E\+T\+R\+UE@{F\+K\+\_\+\+L\+E\+T\+S\+B\+E\+T\+R\+UE}}}\mbox{\Hypertarget{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40a6356e390467faee4dfb43daa2c445323}\label{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40a6356e390467faee4dfb43daa2c445323}} 
+F\+K\+\_\+\+L\+E\+T\+S\+B\+E\+T\+R\+UE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+K\+\_\+\+H\+E\+A\+D\+ER@{F\+K\+\_\+\+H\+E\+A\+D\+ER}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!F\+K\+\_\+\+H\+E\+A\+D\+ER@{F\+K\+\_\+\+H\+E\+A\+D\+ER}}}\mbox{\Hypertarget{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40a92fc3d666095867ff5dc6bf111c160e6}\label{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40a92fc3d666095867ff5dc6bf111c160e6}} 
+F\+K\+\_\+\+H\+E\+A\+D\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+K\+\_\+\+T\+R\+A\+I\+L\+ER@{F\+K\+\_\+\+T\+R\+A\+I\+L\+ER}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!F\+K\+\_\+\+T\+R\+A\+I\+L\+ER@{F\+K\+\_\+\+T\+R\+A\+I\+L\+ER}}}\mbox{\Hypertarget{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40ae29f90f9bd2aece7aba7014a484625fb}\label{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40ae29f90f9bd2aece7aba7014a484625fb}} 
+F\+K\+\_\+\+T\+R\+A\+I\+L\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+K\+\_\+\+C\+O\+U\+NT@{F\+K\+\_\+\+C\+O\+U\+NT}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!F\+K\+\_\+\+C\+O\+U\+NT@{F\+K\+\_\+\+C\+O\+U\+NT}}}\mbox{\Hypertarget{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40a7c83c22eb4b4b505bb941a7e820b7581}\label{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40a7c83c22eb4b4b505bb941a7e820b7581}} 
+F\+K\+\_\+\+C\+O\+U\+NT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Max\+Fake\+Errors@{Max\+Fake\+Errors}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Max\+Fake\+Errors@{Max\+Fake\+Errors}}}\mbox{\Hypertarget{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40a902fa07ad08d2bd6faef5c27842109fe}\label{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40a902fa07ad08d2bd6faef5c27842109fe}} 
+Max\+Fake\+Errors&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+K\+\_\+\+L\+E\+T\+S\+B\+E\+T\+R\+UE@{F\+K\+\_\+\+L\+E\+T\+S\+B\+E\+T\+R\+UE}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!F\+K\+\_\+\+L\+E\+T\+S\+B\+E\+T\+R\+UE@{F\+K\+\_\+\+L\+E\+T\+S\+B\+E\+T\+R\+UE}}}\mbox{\Hypertarget{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40a6356e390467faee4dfb43daa2c445323}\label{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40a6356e390467faee4dfb43daa2c445323}} 
+F\+K\+\_\+\+L\+E\+T\+S\+B\+E\+T\+R\+UE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+K\+\_\+\+H\+E\+A\+D\+ER@{F\+K\+\_\+\+H\+E\+A\+D\+ER}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!F\+K\+\_\+\+H\+E\+A\+D\+ER@{F\+K\+\_\+\+H\+E\+A\+D\+ER}}}\mbox{\Hypertarget{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40a92fc3d666095867ff5dc6bf111c160e6}\label{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40a92fc3d666095867ff5dc6bf111c160e6}} 
+F\+K\+\_\+\+H\+E\+A\+D\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+K\+\_\+\+T\+R\+A\+I\+L\+ER@{F\+K\+\_\+\+T\+R\+A\+I\+L\+ER}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!F\+K\+\_\+\+T\+R\+A\+I\+L\+ER@{F\+K\+\_\+\+T\+R\+A\+I\+L\+ER}}}\mbox{\Hypertarget{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40ae29f90f9bd2aece7aba7014a484625fb}\label{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40ae29f90f9bd2aece7aba7014a484625fb}} 
+F\+K\+\_\+\+T\+R\+A\+I\+L\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+K\+\_\+\+C\+O\+U\+NT@{F\+K\+\_\+\+C\+O\+U\+NT}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!F\+K\+\_\+\+C\+O\+U\+NT@{F\+K\+\_\+\+C\+O\+U\+NT}}}\mbox{\Hypertarget{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40a7c83c22eb4b4b505bb941a7e820b7581}\label{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40a7c83c22eb4b4b505bb941a7e820b7581}} 
+F\+K\+\_\+\+C\+O\+U\+NT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Max\+Fake\+Errors@{Max\+Fake\+Errors}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Max\+Fake\+Errors@{Max\+Fake\+Errors}}}\mbox{\Hypertarget{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40a902fa07ad08d2bd6faef5c27842109fe}\label{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40a902fa07ad08d2bd6faef5c27842109fe}} 
+Max\+Fake\+Errors&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 227 of file L\+A\+L\+Usb\+M\+L.\+h.
+
+
+\begin{DoxyCode}
+228 \{
+229     \hyperlink{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40a6356e390467faee4dfb43daa2c445323}{FK\_LETSBETRUE} = 1,         \textcolor{comment}{// No error}
+230     \hyperlink{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40a92fc3d666095867ff5dc6bf111c160e6}{FK\_HEADER} = 2,             \textcolor{comment}{// header}
+231     \hyperlink{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40ae29f90f9bd2aece7aba7014a484625fb}{FK\_TRAILER} = 4,               \textcolor{comment}{// trailer}
+232     \hyperlink{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40a7c83c22eb4b4b505bb941a7e820b7581}{FK\_COUNT} = 8,               \textcolor{comment}{// bad number of bytes}
+233     \hyperlink{LALUsbML_8h_a9dc924c9c4161118ac45416ade6f1c40a902fa07ad08d2bd6faef5c27842109fe}{MaxFakeErrors} = 16
+234 \}\hyperlink{LALUsbML_8h_a08ba78def560e79cc4cccde6dd8d72bb}{FakeErrorType};
+\end{DoxyCode}
+\mbox{\Hypertarget{LALUsbML_8h_a6dfd30c28d324509407e086c99773814}\label{LALUsbML_8h_a6dfd30c28d324509407e086c99773814}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!\+\_\+frame\+\_\+error\+\_\+constants@{\+\_\+frame\+\_\+error\+\_\+constants}}
+\index{\+\_\+frame\+\_\+error\+\_\+constants@{\+\_\+frame\+\_\+error\+\_\+constants}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+frame\+\_\+error\+\_\+constants}{\_frame\_error\_constants}}
+{\footnotesize\ttfamily enum \hyperlink{LALUsbML_8h_a6dfd30c28d324509407e086c99773814}{\+\_\+frame\+\_\+error\+\_\+constants}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+E\+\_\+\+N\+O\+NE@{F\+E\+\_\+\+N\+O\+NE}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!F\+E\+\_\+\+N\+O\+NE@{F\+E\+\_\+\+N\+O\+NE}}}\mbox{\Hypertarget{LALUsbML_8h_a6dfd30c28d324509407e086c99773814aa1ad3146aa59e86e0c0ae53a61236402}\label{LALUsbML_8h_a6dfd30c28d324509407e086c99773814aa1ad3146aa59e86e0c0ae53a61236402}} 
+F\+E\+\_\+\+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+E\+\_\+\+D\+E\+V\+I\+CE@{F\+E\+\_\+\+D\+E\+V\+I\+CE}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!F\+E\+\_\+\+D\+E\+V\+I\+CE@{F\+E\+\_\+\+D\+E\+V\+I\+CE}}}\mbox{\Hypertarget{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a37cfc63bda210e8eaae037e4f95a4a52}\label{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a37cfc63bda210e8eaae037e4f95a4a52}} 
+F\+E\+\_\+\+D\+E\+V\+I\+CE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+E\+\_\+\+S\+O\+F\+T\+W\+A\+RE@{F\+E\+\_\+\+S\+O\+F\+T\+W\+A\+RE}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!F\+E\+\_\+\+S\+O\+F\+T\+W\+A\+RE@{F\+E\+\_\+\+S\+O\+F\+T\+W\+A\+RE}}}\mbox{\Hypertarget{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a162a44ee5a1fca3adbb420ca0d2c411d}\label{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a162a44ee5a1fca3adbb420ca0d2c411d}} 
+F\+E\+\_\+\+S\+O\+F\+T\+W\+A\+RE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+E\+\_\+\+U\+S\+ER@{F\+E\+\_\+\+U\+S\+ER}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!F\+E\+\_\+\+U\+S\+ER@{F\+E\+\_\+\+U\+S\+ER}}}\mbox{\Hypertarget{LALUsbML_8h_a6dfd30c28d324509407e086c99773814ac097b4e4688e1c2bb052b1a86c1e357f}\label{LALUsbML_8h_a6dfd30c28d324509407e086c99773814ac097b4e4688e1c2bb052b1a86c1e357f}} 
+F\+E\+\_\+\+U\+S\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+E\+\_\+\+E\+R\+R\+OR@{F\+E\+\_\+\+E\+R\+R\+OR}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!F\+E\+\_\+\+E\+R\+R\+OR@{F\+E\+\_\+\+E\+R\+R\+OR}}}\mbox{\Hypertarget{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a8a4fe5844f1927499bcd767be31c3b82}\label{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a8a4fe5844f1927499bcd767be31c3b82}} 
+F\+E\+\_\+\+E\+R\+R\+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+E\+\_\+\+H\+E\+A\+D\+ER@{F\+E\+\_\+\+H\+E\+A\+D\+ER}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!F\+E\+\_\+\+H\+E\+A\+D\+ER@{F\+E\+\_\+\+H\+E\+A\+D\+ER}}}\mbox{\Hypertarget{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a7170df5ba9d44f72af7773313022b525}\label{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a7170df5ba9d44f72af7773313022b525}} 
+F\+E\+\_\+\+H\+E\+A\+D\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+E\+\_\+\+T\+R\+A\+I\+L\+ER@{F\+E\+\_\+\+T\+R\+A\+I\+L\+ER}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!F\+E\+\_\+\+T\+R\+A\+I\+L\+ER@{F\+E\+\_\+\+T\+R\+A\+I\+L\+ER}}}\mbox{\Hypertarget{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a1c307f49dc07ea12dfd98f71f92a9922}\label{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a1c307f49dc07ea12dfd98f71f92a9922}} 
+F\+E\+\_\+\+T\+R\+A\+I\+L\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Max\+Frame\+Error@{Max\+Frame\+Error}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Max\+Frame\+Error@{Max\+Frame\+Error}}}\mbox{\Hypertarget{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a70210543e1290f3b8b9fbd708f567b0e}\label{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a70210543e1290f3b8b9fbd708f567b0e}} 
+Max\+Frame\+Error&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+E\+\_\+\+N\+O\+NE@{F\+E\+\_\+\+N\+O\+NE}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!F\+E\+\_\+\+N\+O\+NE@{F\+E\+\_\+\+N\+O\+NE}}}\mbox{\Hypertarget{LALUsbML_8h_a6dfd30c28d324509407e086c99773814aa1ad3146aa59e86e0c0ae53a61236402}\label{LALUsbML_8h_a6dfd30c28d324509407e086c99773814aa1ad3146aa59e86e0c0ae53a61236402}} 
+F\+E\+\_\+\+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+E\+\_\+\+D\+E\+V\+I\+CE@{F\+E\+\_\+\+D\+E\+V\+I\+CE}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!F\+E\+\_\+\+D\+E\+V\+I\+CE@{F\+E\+\_\+\+D\+E\+V\+I\+CE}}}\mbox{\Hypertarget{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a37cfc63bda210e8eaae037e4f95a4a52}\label{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a37cfc63bda210e8eaae037e4f95a4a52}} 
+F\+E\+\_\+\+D\+E\+V\+I\+CE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+E\+\_\+\+S\+O\+F\+T\+W\+A\+RE@{F\+E\+\_\+\+S\+O\+F\+T\+W\+A\+RE}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!F\+E\+\_\+\+S\+O\+F\+T\+W\+A\+RE@{F\+E\+\_\+\+S\+O\+F\+T\+W\+A\+RE}}}\mbox{\Hypertarget{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a162a44ee5a1fca3adbb420ca0d2c411d}\label{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a162a44ee5a1fca3adbb420ca0d2c411d}} 
+F\+E\+\_\+\+S\+O\+F\+T\+W\+A\+RE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+E\+\_\+\+U\+S\+ER@{F\+E\+\_\+\+U\+S\+ER}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!F\+E\+\_\+\+U\+S\+ER@{F\+E\+\_\+\+U\+S\+ER}}}\mbox{\Hypertarget{LALUsbML_8h_a6dfd30c28d324509407e086c99773814ac097b4e4688e1c2bb052b1a86c1e357f}\label{LALUsbML_8h_a6dfd30c28d324509407e086c99773814ac097b4e4688e1c2bb052b1a86c1e357f}} 
+F\+E\+\_\+\+U\+S\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+E\+\_\+\+E\+R\+R\+OR@{F\+E\+\_\+\+E\+R\+R\+OR}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!F\+E\+\_\+\+E\+R\+R\+OR@{F\+E\+\_\+\+E\+R\+R\+OR}}}\mbox{\Hypertarget{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a8a4fe5844f1927499bcd767be31c3b82}\label{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a8a4fe5844f1927499bcd767be31c3b82}} 
+F\+E\+\_\+\+E\+R\+R\+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+E\+\_\+\+H\+E\+A\+D\+ER@{F\+E\+\_\+\+H\+E\+A\+D\+ER}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!F\+E\+\_\+\+H\+E\+A\+D\+ER@{F\+E\+\_\+\+H\+E\+A\+D\+ER}}}\mbox{\Hypertarget{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a7170df5ba9d44f72af7773313022b525}\label{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a7170df5ba9d44f72af7773313022b525}} 
+F\+E\+\_\+\+H\+E\+A\+D\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+E\+\_\+\+T\+R\+A\+I\+L\+ER@{F\+E\+\_\+\+T\+R\+A\+I\+L\+ER}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!F\+E\+\_\+\+T\+R\+A\+I\+L\+ER@{F\+E\+\_\+\+T\+R\+A\+I\+L\+ER}}}\mbox{\Hypertarget{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a1c307f49dc07ea12dfd98f71f92a9922}\label{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a1c307f49dc07ea12dfd98f71f92a9922}} 
+F\+E\+\_\+\+T\+R\+A\+I\+L\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Max\+Frame\+Error@{Max\+Frame\+Error}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Max\+Frame\+Error@{Max\+Frame\+Error}}}\mbox{\Hypertarget{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a70210543e1290f3b8b9fbd708f567b0e}\label{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a70210543e1290f3b8b9fbd708f567b0e}} 
+Max\+Frame\+Error&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 186 of file L\+A\+L\+Usb\+M\+L.\+h.
+
+
+\begin{DoxyCode}
+187 \{
+188     \hyperlink{LALUsbML_8h_a6dfd30c28d324509407e086c99773814aa1ad3146aa59e86e0c0ae53a61236402}{FE\_NONE},                     \textcolor{comment}{// No frame error nor interrupt}
+189     \hyperlink{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a37cfc63bda210e8eaae037e4f95a4a52}{FE\_DEVICE},                     \textcolor{comment}{// Error (Interrupt) came from device}
+190     \hyperlink{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a162a44ee5a1fca3adbb420ca0d2c411d}{FE\_SOFTWARE},                 \textcolor{comment}{// Error detected by the software}
+191     \hyperlink{LALUsbML_8h_a6dfd30c28d324509407e086c99773814ac097b4e4688e1c2bb052b1a86c1e357f}{FE\_USER},                     \textcolor{comment}{// User interrupt}
+192     \hyperlink{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a8a4fe5844f1927499bcd767be31c3b82}{FE\_ERROR},                       \textcolor{comment}{// Interrupt has been generated by an error}
+193     \hyperlink{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a7170df5ba9d44f72af7773313022b525}{FE\_HEADER},                     \textcolor{comment}{// Header error}
+194     \hyperlink{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a1c307f49dc07ea12dfd98f71f92a9922}{FE\_TRAILER},                       \textcolor{comment}{// Trailer error}
+195     \hyperlink{LALUsbML_8h_a6dfd30c28d324509407e086c99773814a70210543e1290f3b8b9fbd708f567b0e}{MaxFrameError}
+196 \}\hyperlink{LALUsbML_8h_a9bb3592187ff0a18b63caab692ff9ff5}{FrameError};
+\end{DoxyCode}
+\mbox{\Hypertarget{LALUsbML_8h_a7bb4b3f5a75f92e2825cf776d730210c}\label{LALUsbML_8h_a7bb4b3f5a75f92e2825cf776d730210c}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!T\+X\+R\+X\+\_\+\+S\+T\+A\+T\+US@{T\+X\+R\+X\+\_\+\+S\+T\+A\+T\+US}}
+\index{T\+X\+R\+X\+\_\+\+S\+T\+A\+T\+US@{T\+X\+R\+X\+\_\+\+S\+T\+A\+T\+US}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{T\+X\+R\+X\+\_\+\+S\+T\+A\+T\+US}{TXRX\_STATUS}}
+{\footnotesize\ttfamily enum \hyperlink{LALUsbML_8h_a7bb4b3f5a75f92e2825cf776d730210c}{T\+X\+R\+X\+\_\+\+S\+T\+A\+T\+US}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+X\+S\+T\+A\+T\+US@{R\+X\+S\+T\+A\+T\+US}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!R\+X\+S\+T\+A\+T\+US@{R\+X\+S\+T\+A\+T\+US}}}\mbox{\Hypertarget{LALUsbML_8h_a7bb4b3f5a75f92e2825cf776d730210cabd9903cac935c87bf56315827d03ae6a}\label{LALUsbML_8h_a7bb4b3f5a75f92e2825cf776d730210cabd9903cac935c87bf56315827d03ae6a}} 
+R\+X\+S\+T\+A\+T\+US&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+X\+S\+T\+A\+T\+US@{T\+X\+S\+T\+A\+T\+US}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!T\+X\+S\+T\+A\+T\+US@{T\+X\+S\+T\+A\+T\+US}}}\mbox{\Hypertarget{LALUsbML_8h_a7bb4b3f5a75f92e2825cf776d730210ca9cafa2e2fa7aa5557cad854538cd329d}\label{LALUsbML_8h_a7bb4b3f5a75f92e2825cf776d730210ca9cafa2e2fa7aa5557cad854538cd329d}} 
+T\+X\+S\+T\+A\+T\+US&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+X\+S\+T\+A\+T\+US@{R\+X\+S\+T\+A\+T\+US}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!R\+X\+S\+T\+A\+T\+US@{R\+X\+S\+T\+A\+T\+US}}}\mbox{\Hypertarget{LALUsbML_8h_a7bb4b3f5a75f92e2825cf776d730210cabd9903cac935c87bf56315827d03ae6a}\label{LALUsbML_8h_a7bb4b3f5a75f92e2825cf776d730210cabd9903cac935c87bf56315827d03ae6a}} 
+R\+X\+S\+T\+A\+T\+US&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+X\+S\+T\+A\+T\+US@{T\+X\+S\+T\+A\+T\+US}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!T\+X\+S\+T\+A\+T\+US@{T\+X\+S\+T\+A\+T\+US}}}\mbox{\Hypertarget{LALUsbML_8h_a7bb4b3f5a75f92e2825cf776d730210ca9cafa2e2fa7aa5557cad854538cd329d}\label{LALUsbML_8h_a7bb4b3f5a75f92e2825cf776d730210ca9cafa2e2fa7aa5557cad854538cd329d}} 
+T\+X\+S\+T\+A\+T\+US&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 47 of file L\+A\+L\+Usb\+M\+L.\+h.
+
+
+\begin{DoxyCode}
+48 \{
+49     \hyperlink{LALUsbML_8h_a7bb4b3f5a75f92e2825cf776d730210cabd9903cac935c87bf56315827d03ae6a}{RXSTATUS},
+50     \hyperlink{LALUsbML_8h_a7bb4b3f5a75f92e2825cf776d730210ca9cafa2e2fa7aa5557cad854538cd329d}{TXSTATUS}
+51 \}\hyperlink{LALUsbML_8h_a7bb4b3f5a75f92e2825cf776d730210c}{TXRX\_STATUS};
+\end{DoxyCode}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{LALUsbML_8h_a3f0a3f9e09951c39ae1df0638008875a}\label{LALUsbML_8h_a3f0a3f9e09951c39ae1df0638008875a}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Close\+Usb\+Device@{Close\+Usb\+Device}}
+\index{Close\+Usb\+Device@{Close\+Usb\+Device}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Close\+Usb\+Device()}{CloseUsbDevice()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} void \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} Close\+Usb\+Device (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Referenced by Usb\+F\+T\+Interface\+::close(), and Usb\+F\+T\+M\+L\+Interface\+::close().
+
+\mbox{\Hypertarget{LALUsbML_8h_a9eaa15834cdbdff8e97d39fba65c48d1}\label{LALUsbML_8h_a9eaa15834cdbdff8e97d39fba65c48d1}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!dbg\+\_\+\+Close\+Log\+File@{dbg\+\_\+\+Close\+Log\+File}}
+\index{dbg\+\_\+\+Close\+Log\+File@{dbg\+\_\+\+Close\+Log\+File}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{dbg\+\_\+\+Close\+Log\+File()}{dbg\_CloseLogFile()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} void \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} dbg\+\_\+\+Close\+Log\+File (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_abd2ca38d79f0d81b98947ebbe55b6a13}\label{LALUsbML_8h_abd2ca38d79f0d81b98947ebbe55b6a13}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!dbg\+\_\+\+Open\+Log\+File@{dbg\+\_\+\+Open\+Log\+File}}
+\index{dbg\+\_\+\+Open\+Log\+File@{dbg\+\_\+\+Open\+Log\+File}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{dbg\+\_\+\+Open\+Log\+File()}{dbg\_OpenLogFile()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} void \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} dbg\+\_\+\+Open\+Log\+File (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_ac1a8725baa2700b45e2d70fa07344eb8}\label{LALUsbML_8h_ac1a8725baa2700b45e2d70fa07344eb8}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Get\+Device\+Desc@{Get\+Device\+Desc}}
+\index{Get\+Device\+Desc@{Get\+Device\+Desc}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Get\+Device\+Desc()}{GetDeviceDesc()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{LALUsbMLx64_2include_2ftd2xx_8h_a61e5e58382c1d302533317f81d6bc781}{F\+T\+\_\+\+S\+T\+A\+T\+US} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} Get\+Device\+Desc (\begin{DoxyParamCaption}\item[{char $\ast$}]{buffer,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Referenced by Usb\+F\+T\+Interface\+::init(), and Usb\+F\+T\+M\+L\+Interface\+::init().
+
+\mbox{\Hypertarget{LALUsbML_8h_ac66e53477144e6eec3c8a43542aa2637}\label{LALUsbML_8h_ac66e53477144e6eec3c8a43542aa2637}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Get\+Device\+Ser\+Num@{Get\+Device\+Ser\+Num}}
+\index{Get\+Device\+Ser\+Num@{Get\+Device\+Ser\+Num}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Get\+Device\+Ser\+Num()}{GetDeviceSerNum()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{LALUsbMLx64_2include_2ftd2xx_8h_a61e5e58382c1d302533317f81d6bc781}{F\+T\+\_\+\+S\+T\+A\+T\+US} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} Get\+Device\+Ser\+Num (\begin{DoxyParamCaption}\item[{char $\ast$}]{buffer,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Referenced by Usb\+F\+T\+Interface\+::init(), and Usb\+F\+T\+M\+L\+Interface\+::init().
+
+\mbox{\Hypertarget{LALUsbML_8h_af0863b311a9d606cd518301e6296c0ed}\label{LALUsbML_8h_af0863b311a9d606cd518301e6296c0ed}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Get\+Err\+Msg@{Get\+Err\+Msg}}
+\index{Get\+Err\+Msg@{Get\+Err\+Msg}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Get\+Err\+Msg()}{GetErrMsg()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} char$\ast$ \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} Get\+Err\+Msg (\begin{DoxyParamCaption}\item[{\hyperlink{LALUsbML_8h_aa7e5a2302774d5aa1d48a2a1cfc46e86}{U\+S\+B\+\_\+\+Error}}]{err\+\_\+code }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_acf73bf83fa355d173b3d0b1de48cfbf4}\label{LALUsbML_8h_acf73bf83fa355d173b3d0b1de48cfbf4}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Get\+Header\+Errors@{Get\+Header\+Errors}}
+\index{Get\+Header\+Errors@{Get\+Header\+Errors}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Get\+Header\+Errors()}{GetHeaderErrors()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_af632da489ebc3708ec3ab6791ee53fa4}{U\+L\+O\+NG} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} Get\+Header\+Errors (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_a0d954861c62c9ba4318032a779c7116e}\label{LALUsbML_8h_a0d954861c62c9ba4318032a779c7116e}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Get\+Last\+Frame@{Get\+Last\+Frame}}
+\index{Get\+Last\+Frame@{Get\+Last\+Frame}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Get\+Last\+Frame()}{GetLastFrame()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{LALUsbML_8h_a52661c94f3ea4205c3d63853fad6617a}{Interrupt\+Frame\+Info\+Ptr} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} Get\+Last\+Frame (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_a2a8ab1d8d149f3358ecfb50d97612ba6}\label{LALUsbML_8h_a2a8ab1d8d149f3358ecfb50d97612ba6}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Get\+Last\+Frame\+Status@{Get\+Last\+Frame\+Status}}
+\index{Get\+Last\+Frame\+Status@{Get\+Last\+Frame\+Status}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Get\+Last\+Frame\+Status()}{GetLastFrameStatus()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} Get\+Last\+Frame\+Status (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_a5352550075f3448a578920eed334b7a6}\label{LALUsbML_8h_a5352550075f3448a578920eed334b7a6}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Get\+Lost\+Frames@{Get\+Lost\+Frames}}
+\index{Get\+Lost\+Frames@{Get\+Lost\+Frames}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Get\+Lost\+Frames()}{GetLostFrames()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_af632da489ebc3708ec3ab6791ee53fa4}{U\+L\+O\+NG} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} Get\+Lost\+Frames (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_a15a837c8dd6bf78ba1d32158e7f18161}\label{LALUsbML_8h_a15a837c8dd6bf78ba1d32158e7f18161}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Get\+Total\+Byte\+Count@{Get\+Total\+Byte\+Count}}
+\index{Get\+Total\+Byte\+Count@{Get\+Total\+Byte\+Count}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Get\+Total\+Byte\+Count()}{GetTotalByteCount()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_af632da489ebc3708ec3ab6791ee53fa4}{U\+L\+O\+NG} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} Get\+Total\+Byte\+Count (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_afa365e8fcca89a1be458e4a22d875e94}\label{LALUsbML_8h_afa365e8fcca89a1be458e4a22d875e94}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Get\+Trailer\+Errors@{Get\+Trailer\+Errors}}
+\index{Get\+Trailer\+Errors@{Get\+Trailer\+Errors}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Get\+Trailer\+Errors()}{GetTrailerErrors()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_af632da489ebc3708ec3ab6791ee53fa4}{U\+L\+O\+NG} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} Get\+Trailer\+Errors (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_a08abe9d78348cd81d0a96dc044e5fe63}\label{LALUsbML_8h_a08abe9d78348cd81d0a96dc044e5fe63}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Get\+U\+S\+B\+\_\+\+Errno@{Get\+U\+S\+B\+\_\+\+Errno}}
+\index{Get\+U\+S\+B\+\_\+\+Errno@{Get\+U\+S\+B\+\_\+\+Errno}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Get\+U\+S\+B\+\_\+\+Errno()}{GetUSB\_Errno()}}
+{\footnotesize\ttfamily \hyperlink{LALUsbML_8h_aa7e5a2302774d5aa1d48a2a1cfc46e86}{U\+S\+B\+\_\+\+Error} Get\+U\+S\+B\+\_\+\+Errno (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_afddae9279114a5ac030841d021ee7a63}\label{LALUsbML_8h_afddae9279114a5ac030841d021ee7a63}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Open\+Usb\+Device@{Open\+Usb\+Device}}
+\index{Open\+Usb\+Device@{Open\+Usb\+Device}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Open\+Usb\+Device()}{OpenUsbDevice()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} Open\+Usb\+Device (\begin{DoxyParamCaption}\item[{char $\ast$}]{sernumstr }\end{DoxyParamCaption})}
+
+
+
+Referenced by Usb\+F\+T\+Interface\+::init(), and Usb\+F\+T\+M\+L\+Interface\+::init().
+
+\mbox{\Hypertarget{LALUsbML_8h_ab3398c17204ba7fb4b47eb9bbf4ba94e}\label{LALUsbML_8h_ab3398c17204ba7fb4b47eb9bbf4ba94e}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Print\+Frame\+Info@{Print\+Frame\+Info}}
+\index{Print\+Frame\+Info@{Print\+Frame\+Info}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Print\+Frame\+Info()}{PrintFrameInfo()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} void \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} Print\+Frame\+Info (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Referenced by Usb\+F\+T\+Interface\+::usb\+Read\+U16(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Read\+U16(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Read\+U32(), Usb\+F\+T\+Interface\+::usb\+Read\+U32(), Usb\+F\+T\+Interface\+::usb\+Read\+U8(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Read\+U8(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+Read(), Usb\+F\+T\+Interface\+::usb\+Write\+Read(), Usb\+F\+T\+Interface\+::usb\+Write\+U16(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+U16(), Usb\+F\+T\+Interface\+::usb\+Write\+U32(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+U32(), Usb\+F\+T\+Interface\+::usb\+Write\+U8(), and Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+U8().
+
+\mbox{\Hypertarget{LALUsbML_8h_aeeae4d2471b10b2a546e2375350655d0}\label{LALUsbML_8h_aeeae4d2471b10b2a546e2375350655d0}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Reset\+Frame\+Errors@{Reset\+Frame\+Errors}}
+\index{Reset\+Frame\+Errors@{Reset\+Frame\+Errors}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Reset\+Frame\+Errors()}{ResetFrameErrors()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} void \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} Reset\+Frame\+Errors (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_a6dace07ba34933004adf1933f250b05e}\label{LALUsbML_8h_a6dace07ba34933004adf1933f250b05e}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Reset\+Lost\+Frames@{Reset\+Lost\+Frames}}
+\index{Reset\+Lost\+Frames@{Reset\+Lost\+Frames}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Reset\+Lost\+Frames()}{ResetLostFrames()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} void \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} Reset\+Lost\+Frames (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_aaa1eba27cff3c8bc53755856b6e84edb}\label{LALUsbML_8h_aaa1eba27cff3c8bc53755856b6e84edb}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Reset\+Total\+Byte\+Count@{Reset\+Total\+Byte\+Count}}
+\index{Reset\+Total\+Byte\+Count@{Reset\+Total\+Byte\+Count}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Reset\+Total\+Byte\+Count()}{ResetTotalByteCount()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} void \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} Reset\+Total\+Byte\+Count (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_aa48b8127fdc6a7ff5e2c6f14f6b20812}\label{LALUsbML_8h_aa48b8127fdc6a7ff5e2c6f14f6b20812}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Close\+All@{U\+S\+B\+\_\+\+Close\+All}}
+\index{U\+S\+B\+\_\+\+Close\+All@{U\+S\+B\+\_\+\+Close\+All}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Close\+All()}{USB\_CloseAll()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} void \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Close\+All (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_a25ed5b8ccaca68b01967f7cae160348b}\label{LALUsbML_8h_a25ed5b8ccaca68b01967f7cae160348b}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Erase\+E\+Eprom\+Data@{U\+S\+B\+\_\+\+Erase\+E\+Eprom\+Data}}
+\index{U\+S\+B\+\_\+\+Erase\+E\+Eprom\+Data@{U\+S\+B\+\_\+\+Erase\+E\+Eprom\+Data}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Erase\+E\+Eprom\+Data()}{USB\_EraseEEpromData()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Erase\+E\+Eprom\+Data (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_a336db296b4acf8000328e221decd92aa}\label{LALUsbML_8h_a336db296b4acf8000328e221decd92aa}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Find\+Devices@{U\+S\+B\+\_\+\+Find\+Devices}}
+\index{U\+S\+B\+\_\+\+Find\+Devices@{U\+S\+B\+\_\+\+Find\+Devices}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Find\+Devices()}{USB\_FindDevices()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Find\+Devices (\begin{DoxyParamCaption}\item[{char $\ast$}]{Device\+Description\+Str }\end{DoxyParamCaption})}
+
+
+
+Referenced by Usb\+F\+T\+Interface\+::init(), and Usb\+F\+T\+M\+L\+Interface\+::init().
+
+\mbox{\Hypertarget{LALUsbML_8h_ab97488efefb72b5a8c11904f97cf47c8}\label{LALUsbML_8h_ab97488efefb72b5a8c11904f97cf47c8}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Get\+Default\+Device\+Desc@{U\+S\+B\+\_\+\+Get\+Default\+Device\+Desc}}
+\index{U\+S\+B\+\_\+\+Get\+Default\+Device\+Desc@{U\+S\+B\+\_\+\+Get\+Default\+Device\+Desc}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Get\+Default\+Device\+Desc()}{USB\_GetDefaultDeviceDesc()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} char$\ast$ \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Get\+Default\+Device\+Desc (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_acd37c588c8ab36a633f0d1c6abd5af08}\label{LALUsbML_8h_acd37c588c8ab36a633f0d1c6abd5af08}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Get\+Default\+Serial\+Num@{U\+S\+B\+\_\+\+Get\+Default\+Serial\+Num}}
+\index{U\+S\+B\+\_\+\+Get\+Default\+Serial\+Num@{U\+S\+B\+\_\+\+Get\+Default\+Serial\+Num}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Get\+Default\+Serial\+Num()}{USB\_GetDefaultSerialNum()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} char$\ast$ \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Get\+Default\+Serial\+Num (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_a87e0b3814433c5f52c2ae12344cf7bc9}\label{LALUsbML_8h_a87e0b3814433c5f52c2ae12344cf7bc9}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Get\+Eprom\+Device\+Desc@{U\+S\+B\+\_\+\+Get\+Eprom\+Device\+Desc}}
+\index{U\+S\+B\+\_\+\+Get\+Eprom\+Device\+Desc@{U\+S\+B\+\_\+\+Get\+Eprom\+Device\+Desc}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Get\+Eprom\+Device\+Desc()}{USB\_GetEpromDeviceDesc()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} char$\ast$ \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Get\+Eprom\+Device\+Desc (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Referenced by Usb\+F\+T\+Interface\+::init().
+
+\mbox{\Hypertarget{LALUsbML_8h_a69888cfc799086742988cef71c01124f}\label{LALUsbML_8h_a69888cfc799086742988cef71c01124f}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Get\+Eprom\+Serial\+Num@{U\+S\+B\+\_\+\+Get\+Eprom\+Serial\+Num}}
+\index{U\+S\+B\+\_\+\+Get\+Eprom\+Serial\+Num@{U\+S\+B\+\_\+\+Get\+Eprom\+Serial\+Num}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Get\+Eprom\+Serial\+Num()}{USB\_GetEpromSerialNum()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} char$\ast$ \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Get\+Eprom\+Serial\+Num (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Referenced by Usb\+F\+T\+Interface\+::init().
+
+\mbox{\Hypertarget{LALUsbML_8h_a1662b77c9968848acf173f6f9c765ddd}\label{LALUsbML_8h_a1662b77c9968848acf173f6f9c765ddd}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Get\+Last\+Error@{U\+S\+B\+\_\+\+Get\+Last\+Error}}
+\index{U\+S\+B\+\_\+\+Get\+Last\+Error@{U\+S\+B\+\_\+\+Get\+Last\+Error}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Get\+Last\+Error()}{USB\_GetLastError()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{LALUsbML_8h_aa7e5a2302774d5aa1d48a2a1cfc46e86}{U\+S\+B\+\_\+\+Error} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Get\+Last\+Error (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Referenced by Usb\+F\+T\+Interface\+::init(), Usb\+F\+T\+M\+L\+Interface\+::init(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Read\+U16(), Usb\+F\+T\+Interface\+::usb\+Read\+U16(), Usb\+F\+T\+Interface\+::usb\+Read\+U32(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Read\+U32(), Usb\+F\+T\+Interface\+::usb\+Read\+U8(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Read\+U8(), Usb\+F\+T\+Interface\+::usb\+Write\+Read(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+Read(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+U16(), Usb\+F\+T\+Interface\+::usb\+Write\+U16(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+U32(), Usb\+F\+T\+Interface\+::usb\+Write\+U32(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+U8(), and Usb\+F\+T\+Interface\+::usb\+Write\+U8().
+
+\mbox{\Hypertarget{LALUsbML_8h_a90c0ec96b211bb1b45c4b26afe6f6ced}\label{LALUsbML_8h_a90c0ec96b211bb1b45c4b26afe6f6ced}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Get\+Latency\+Timer@{U\+S\+B\+\_\+\+Get\+Latency\+Timer}}
+\index{U\+S\+B\+\_\+\+Get\+Latency\+Timer@{U\+S\+B\+\_\+\+Get\+Latency\+Timer}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Get\+Latency\+Timer()}{USB\_GetLatencyTimer()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Get\+Latency\+Timer (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a06c249fdad80e91872a47b11efbf963a}{P\+U\+C\+H\+AR}}]{msecs }\end{DoxyParamCaption})}
+
+
+
+Referenced by Usb\+F\+T\+Interface\+::init(), Usb\+F\+T\+M\+L\+Interface\+::init(), Usb\+F\+T\+Interface\+::latency\+Timer(), and Usb\+F\+T\+M\+L\+Interface\+::latency\+Timer().
+
+\mbox{\Hypertarget{LALUsbML_8h_aa10ee3545ce47a289db7f9966a5db833}\label{LALUsbML_8h_aa10ee3545ce47a289db7f9966a5db833}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Get\+Number\+Of\+Devs@{U\+S\+B\+\_\+\+Get\+Number\+Of\+Devs}}
+\index{U\+S\+B\+\_\+\+Get\+Number\+Of\+Devs@{U\+S\+B\+\_\+\+Get\+Number\+Of\+Devs}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Get\+Number\+Of\+Devs()}{USB\_GetNumberOfDevs()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Get\+Number\+Of\+Devs (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_a19ec67fc6286e0703239d7bba9b6c2af}\label{LALUsbML_8h_a19ec67fc6286e0703239d7bba9b6c2af}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Get\+Status@{U\+S\+B\+\_\+\+Get\+Status}}
+\index{U\+S\+B\+\_\+\+Get\+Status@{U\+S\+B\+\_\+\+Get\+Status}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Get\+Status()}{USB\_GetStatus()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Get\+Status (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\hyperlink{LALUsbML_8h_a7bb4b3f5a75f92e2825cf776d730210c}{T\+X\+R\+X\+\_\+\+S\+T\+A\+T\+US}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_a8478dab34336456351db61fe137395d7}\label{LALUsbML_8h_a8478dab34336456351db61fe137395d7}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Init@{U\+S\+B\+\_\+\+Init}}
+\index{U\+S\+B\+\_\+\+Init@{U\+S\+B\+\_\+\+Init}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Init()}{USB\_Init()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Init (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}}]{verbose }\end{DoxyParamCaption})}
+
+
+
+Referenced by Usb\+F\+T\+Interface\+::init(), and Usb\+F\+T\+M\+L\+Interface\+::init().
+
+\mbox{\Hypertarget{LALUsbML_8h_ac2e865d0549ed76ecc13c63f3b8fcedc}\label{LALUsbML_8h_ac2e865d0549ed76ecc13c63f3b8fcedc}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Perror@{U\+S\+B\+\_\+\+Perror}}
+\index{U\+S\+B\+\_\+\+Perror@{U\+S\+B\+\_\+\+Perror}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Perror()}{USB\_Perror()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} void \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Perror (\begin{DoxyParamCaption}\item[{\hyperlink{LALUsbML_8h_aa7e5a2302774d5aa1d48a2a1cfc46e86}{U\+S\+B\+\_\+\+Error}}]{err\+\_\+code }\end{DoxyParamCaption})}
+
+
+
+Referenced by Usb\+F\+T\+Interface\+::init(), and Usb\+F\+T\+M\+L\+Interface\+::init().
+
+\mbox{\Hypertarget{LALUsbML_8h_a41c2a2cba8825f159d0472c4051ed261}\label{LALUsbML_8h_a41c2a2cba8825f159d0472c4051ed261}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Print\+Err\+Msg@{U\+S\+B\+\_\+\+Print\+Err\+Msg}}
+\index{U\+S\+B\+\_\+\+Print\+Err\+Msg@{U\+S\+B\+\_\+\+Print\+Err\+Msg}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Print\+Err\+Msg()}{USB\_PrintErrMsg()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} void \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Print\+Err\+Msg (\begin{DoxyParamCaption}\item[{char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_ab005d208ed0777bd9518b776493b023c}\label{LALUsbML_8h_ab005d208ed0777bd9518b776493b023c}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Printf@{U\+S\+B\+\_\+\+Printf}}
+\index{U\+S\+B\+\_\+\+Printf@{U\+S\+B\+\_\+\+Printf}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Printf()}{USB\_Printf()}}
+{\footnotesize\ttfamily void U\+S\+B\+\_\+\+Printf (\begin{DoxyParamCaption}\item[{char $\ast$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_ab28cf26b80d470d84681e4da8a38afd7}\label{LALUsbML_8h_ab28cf26b80d470d84681e4da8a38afd7}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Purge\+Buffers@{U\+S\+B\+\_\+\+Purge\+Buffers}}
+\index{U\+S\+B\+\_\+\+Purge\+Buffers@{U\+S\+B\+\_\+\+Purge\+Buffers}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Purge\+Buffers()}{USB\_PurgeBuffers()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Purge\+Buffers (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Referenced by Usb\+F\+T\+M\+L\+Interface\+::init(), and Usb\+F\+T\+M\+L\+Interface\+::purge\+Buffers().
+
+\mbox{\Hypertarget{LALUsbML_8h_aac4ec65d0cfc24dce587e811dd7c4e01}\label{LALUsbML_8h_aac4ec65d0cfc24dce587e811dd7c4e01}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Read@{U\+S\+B\+\_\+\+Read}}
+\index{U\+S\+B\+\_\+\+Read@{U\+S\+B\+\_\+\+Read}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Read()}{USB\_Read()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Read (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{void $\ast$}]{buf,  }\item[{int}]{maxcnt,  }\item[{int $\ast$}]{rdcount }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_a414627be9c52759e024fd350a62c6b42}\label{LALUsbML_8h_a414627be9c52759e024fd350a62c6b42}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Read\+E\+Eprom\+Data@{U\+S\+B\+\_\+\+Read\+E\+Eprom\+Data}}
+\index{U\+S\+B\+\_\+\+Read\+E\+Eprom\+Data@{U\+S\+B\+\_\+\+Read\+E\+Eprom\+Data}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Read\+E\+Eprom\+Data()}{USB\_ReadEEpromData()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Read\+E\+Eprom\+Data (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}}]{verbose }\end{DoxyParamCaption})}
+
+
+
+Referenced by Usb\+F\+T\+Interface\+::init().
+
+\mbox{\Hypertarget{LALUsbML_8h_a77b48cfbf9075545430b778cd4ad777f}\label{LALUsbML_8h_a77b48cfbf9075545430b778cd4ad777f}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Reset\+Device@{U\+S\+B\+\_\+\+Reset\+Device}}
+\index{U\+S\+B\+\_\+\+Reset\+Device@{U\+S\+B\+\_\+\+Reset\+Device}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Reset\+Device()}{USB\_ResetDevice()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Reset\+Device (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Referenced by Usb\+F\+T\+M\+L\+Interface\+::init(), and Usb\+F\+T\+M\+L\+Interface\+::reset().
+
+\mbox{\Hypertarget{LALUsbML_8h_a784f57af1433a5334f4a7d23ee4caad9}\label{LALUsbML_8h_a784f57af1433a5334f4a7d23ee4caad9}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Reset\+Mode@{U\+S\+B\+\_\+\+Reset\+Mode}}
+\index{U\+S\+B\+\_\+\+Reset\+Mode@{U\+S\+B\+\_\+\+Reset\+Mode}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Reset\+Mode()}{USB\_ResetMode()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Reset\+Mode (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Referenced by Usb\+F\+T\+M\+L\+Interface\+::init(), and Usb\+F\+T\+M\+L\+Interface\+::reset\+Mode().
+
+\mbox{\Hypertarget{LALUsbML_8h_ab382532b67c0fadc1796d072f380e398}\label{LALUsbML_8h_ab382532b67c0fadc1796d072f380e398}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Set\+Baud\+Rate@{U\+S\+B\+\_\+\+Set\+Baud\+Rate}}
+\index{U\+S\+B\+\_\+\+Set\+Baud\+Rate@{U\+S\+B\+\_\+\+Set\+Baud\+Rate}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Set\+Baud\+Rate()}{USB\_SetBaudRate()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Set\+Baud\+Rate (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{int}]{baud }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_a2ce2250da9b3bf5705d6c64b2fb5e6e3}\label{LALUsbML_8h_a2ce2250da9b3bf5705d6c64b2fb5e6e3}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Set\+Desc\+Str@{U\+S\+B\+\_\+\+Set\+Desc\+Str}}
+\index{U\+S\+B\+\_\+\+Set\+Desc\+Str@{U\+S\+B\+\_\+\+Set\+Desc\+Str}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Set\+Desc\+Str()}{USB\_SetDescStr()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Set\+Desc\+Str (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{char $\ast$}]{desc\+\_\+str }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_a87916fdd822b605a05fb7bddf01bbabb}\label{LALUsbML_8h_a87916fdd822b605a05fb7bddf01bbabb}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Set\+Flow\+Control\+To\+Hardware@{U\+S\+B\+\_\+\+Set\+Flow\+Control\+To\+Hardware}}
+\index{U\+S\+B\+\_\+\+Set\+Flow\+Control\+To\+Hardware@{U\+S\+B\+\_\+\+Set\+Flow\+Control\+To\+Hardware}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Set\+Flow\+Control\+To\+Hardware()}{USB\_SetFlowControlToHardware()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Set\+Flow\+Control\+To\+Hardware (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_a1a6965b64c7de773855cbdeaf2a62a27}\label{LALUsbML_8h_a1a6965b64c7de773855cbdeaf2a62a27}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Set\+Latency\+Timer@{U\+S\+B\+\_\+\+Set\+Latency\+Timer}}
+\index{U\+S\+B\+\_\+\+Set\+Latency\+Timer@{U\+S\+B\+\_\+\+Set\+Latency\+Timer}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Set\+Latency\+Timer()}{USB\_SetLatencyTimer()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Set\+Latency\+Timer (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a4f4bb67531a9bf6f0b9c6ad76aeba587}{U\+C\+H\+AR}}]{msecs }\end{DoxyParamCaption})}
+
+
+
+Referenced by Usb\+F\+T\+Interface\+::init(), Usb\+F\+T\+M\+L\+Interface\+::init(), Usb\+F\+T\+Interface\+::set\+Latency\+Timer(), and Usb\+F\+T\+M\+L\+Interface\+::set\+Latency\+Timer().
+
+\mbox{\Hypertarget{LALUsbML_8h_a8d921d03646c58f8fd78ddbd029e64ba}\label{LALUsbML_8h_a8d921d03646c58f8fd78ddbd029e64ba}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Set\+Max\+Power@{U\+S\+B\+\_\+\+Set\+Max\+Power}}
+\index{U\+S\+B\+\_\+\+Set\+Max\+Power@{U\+S\+B\+\_\+\+Set\+Max\+Power}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Set\+Max\+Power()}{USB\_SetMaxPower()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Set\+Max\+Power (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{unsigned short}]{current }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_a5e6b89e40e1de65b67237c4b51e25972}\label{LALUsbML_8h_a5e6b89e40e1de65b67237c4b51e25972}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Set\+Perror\+Func@{U\+S\+B\+\_\+\+Set\+Perror\+Func}}
+\index{U\+S\+B\+\_\+\+Set\+Perror\+Func@{U\+S\+B\+\_\+\+Set\+Perror\+Func}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Set\+Perror\+Func()}{USB\_SetPerrorFunc()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} void \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Set\+Perror\+Func (\begin{DoxyParamCaption}\item[{\hyperlink{LALUsb_8h_aaf94da1a2ffe7c2e42d8670c9af59930}{Perror\+Func}}]{func }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_a12f970c756968bf69c0a1d1fd7f4587e}\label{LALUsbML_8h_a12f970c756968bf69c0a1d1fd7f4587e}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Set\+Power\+Source@{U\+S\+B\+\_\+\+Set\+Power\+Source}}
+\index{U\+S\+B\+\_\+\+Set\+Power\+Source@{U\+S\+B\+\_\+\+Set\+Power\+Source}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Set\+Power\+Source()}{USB\_SetPowerSource()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Set\+Power\+Source (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{unsigned short}]{powersrc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_a0c4bce4b321046096498696d41515377}\label{LALUsbML_8h_a0c4bce4b321046096498696d41515377}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Set\+Printf\+Func@{U\+S\+B\+\_\+\+Set\+Printf\+Func}}
+\index{U\+S\+B\+\_\+\+Set\+Printf\+Func@{U\+S\+B\+\_\+\+Set\+Printf\+Func}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Set\+Printf\+Func()}{USB\_SetPrintfFunc()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} void \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Set\+Printf\+Func (\begin{DoxyParamCaption}\item[{\hyperlink{LALUsb_8h_a924f0407cf36b3f3e28cb21f146730aa}{Printf\+Func}}]{func }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_a02aad26b8fc3cf9412e1f6593e9a78a8}\label{LALUsbML_8h_a02aad26b8fc3cf9412e1f6593e9a78a8}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Set\+Serial\+Number@{U\+S\+B\+\_\+\+Set\+Serial\+Number}}
+\index{U\+S\+B\+\_\+\+Set\+Serial\+Number@{U\+S\+B\+\_\+\+Set\+Serial\+Number}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Set\+Serial\+Number()}{USB\_SetSerialNumber()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Set\+Serial\+Number (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{char $\ast$}]{sernum }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_a33d11c5713bc41165b004b1ed3a1b408}\label{LALUsbML_8h_a33d11c5713bc41165b004b1ed3a1b408}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Set\+Synchronous\+Mode@{U\+S\+B\+\_\+\+Set\+Synchronous\+Mode}}
+\index{U\+S\+B\+\_\+\+Set\+Synchronous\+Mode@{U\+S\+B\+\_\+\+Set\+Synchronous\+Mode}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Set\+Synchronous\+Mode()}{USB\_SetSynchronousMode()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Set\+Synchronous\+Mode (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{int}]{sleep\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Referenced by Usb\+F\+T\+M\+L\+Interface\+::init(), and Usb\+F\+T\+M\+L\+Interface\+::set\+Synchronous\+Mode().
+
+\mbox{\Hypertarget{LALUsbML_8h_a217702d9c80d1bb65ce8703c0a7382fa}\label{LALUsbML_8h_a217702d9c80d1bb65ce8703c0a7382fa}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Set\+Timeouts@{U\+S\+B\+\_\+\+Set\+Timeouts}}
+\index{U\+S\+B\+\_\+\+Set\+Timeouts@{U\+S\+B\+\_\+\+Set\+Timeouts}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Set\+Timeouts()}{USB\_SetTimeouts()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Set\+Timeouts (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{int}]{tx\+\_\+timeout,  }\item[{int}]{rx\+\_\+timeout }\end{DoxyParamCaption})}
+
+
+
+Referenced by Usb\+F\+T\+Interface\+::init(), Usb\+F\+T\+M\+L\+Interface\+::init(), Usb\+F\+T\+Interface\+::set\+Time\+Out(), and Usb\+F\+T\+M\+L\+Interface\+::set\+Time\+Out().
+
+\mbox{\Hypertarget{LALUsbML_8h_a671ccd24a9539d26bae5926a06662129}\label{LALUsbML_8h_a671ccd24a9539d26bae5926a06662129}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Set\+Xfer\+Size@{U\+S\+B\+\_\+\+Set\+Xfer\+Size}}
+\index{U\+S\+B\+\_\+\+Set\+Xfer\+Size@{U\+S\+B\+\_\+\+Set\+Xfer\+Size}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Set\+Xfer\+Size()}{USB\_SetXferSize()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Set\+Xfer\+Size (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{unsigned long}]{txsize,  }\item[{unsigned long}]{rxsize }\end{DoxyParamCaption})}
+
+
+
+Referenced by Usb\+F\+T\+Interface\+::init(), Usb\+F\+T\+M\+L\+Interface\+::init(), Usb\+F\+T\+Interface\+::set\+Buffer(), and Usb\+F\+T\+M\+L\+Interface\+::set\+Buffer().
+
+\mbox{\Hypertarget{LALUsbML_8h_aad042c936f58d7da7c45810ee19cbf1a}\label{LALUsbML_8h_aad042c936f58d7da7c45810ee19cbf1a}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Write@{U\+S\+B\+\_\+\+Write}}
+\index{U\+S\+B\+\_\+\+Write@{U\+S\+B\+\_\+\+Write}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Write()}{USB\_Write()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Write (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{void $\ast$}]{buf,  }\item[{int}]{count,  }\item[{int $\ast$}]{written }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_aee64bfec0df4db7d2b24edcdaca655ef}\label{LALUsbML_8h_aee64bfec0df4db7d2b24edcdaca655ef}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!U\+S\+B\+\_\+\+Write\+E\+Eprom\+Data@{U\+S\+B\+\_\+\+Write\+E\+Eprom\+Data}}
+\index{U\+S\+B\+\_\+\+Write\+E\+Eprom\+Data@{U\+S\+B\+\_\+\+Write\+E\+Eprom\+Data}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+Write\+E\+Eprom\+Data()}{USB\_WriteEEpromData()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL} \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} U\+S\+B\+\_\+\+Write\+E\+Eprom\+Data (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_a4efc74849c30afc89c2a1ddeef199360}\label{LALUsbML_8h_a4efc74849c30afc89c2a1ddeef199360}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Usb\+Get\+Max\+Layer@{Usb\+Get\+Max\+Layer}}
+\index{Usb\+Get\+Max\+Layer@{Usb\+Get\+Max\+Layer}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Usb\+Get\+Max\+Layer()}{UsbGetMaxLayer()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} Usb\+Get\+Max\+Layer (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{int $\ast$}]{num\+\_\+layers }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_adb388c97933978f5f29c28f53d09ebe9}\label{LALUsbML_8h_adb388c97933978f5f29c28f53d09ebe9}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Usb\+Get\+Nlayers@{Usb\+Get\+Nlayers}}
+\index{Usb\+Get\+Nlayers@{Usb\+Get\+Nlayers}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Usb\+Get\+Nlayers()}{UsbGetNlayers()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} Usb\+Get\+Nlayers (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_a1f4eee33e19ad6a323876213b59c1227}\label{LALUsbML_8h_a1f4eee33e19ad6a323876213b59c1227}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Usb\+Get\+Target\+Path\+Array@{Usb\+Get\+Target\+Path\+Array}}
+\index{Usb\+Get\+Target\+Path\+Array@{Usb\+Get\+Target\+Path\+Array}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Usb\+Get\+Target\+Path\+Array()}{UsbGetTargetPathArray()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int$\ast$ \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} Usb\+Get\+Target\+Path\+Array (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_a613b00e83691d644c8d1cf05c499392b}\label{LALUsbML_8h_a613b00e83691d644c8d1cf05c499392b}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Usb\+Rd@{Usb\+Rd}}
+\index{Usb\+Rd@{Usb\+Rd}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Usb\+Rd()}{UsbRd()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} Usb\+Rd (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{char}]{sub\+\_\+addr,  }\item[{void $\ast$}]{array,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+Referenced by Usb\+F\+T\+Interface\+::usb\+Read\+U16(), Usb\+F\+T\+Interface\+::usb\+Read\+U32(), Usb\+F\+T\+Interface\+::usb\+Read\+U8(), and Usb\+F\+T\+Interface\+::usb\+Write\+Read().
+
+\mbox{\Hypertarget{LALUsbML_8h_aeb238df3a6642023c98bb5dab0d8a4ef}\label{LALUsbML_8h_aeb238df3a6642023c98bb5dab0d8a4ef}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Usb\+Rd\+Ex@{Usb\+Rd\+Ex}}
+\index{Usb\+Rd\+Ex@{Usb\+Rd\+Ex}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Usb\+Rd\+Ex()}{UsbRdEx()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} Usb\+Rd\+Ex (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{void $\ast$}]{array,  }\item[{int}]{maxcnt,  }\item[{int $\ast$}]{frames }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_abd8fb7f5b24f8eb2e2f27688ecfce695}\label{LALUsbML_8h_abd8fb7f5b24f8eb2e2f27688ecfce695}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Usb\+Read\+Ex@{Usb\+Read\+Ex}}
+\index{Usb\+Read\+Ex@{Usb\+Read\+Ex}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Usb\+Read\+Ex()}{UsbReadEx()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} Usb\+Read\+Ex (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{void $\ast$}]{array,  }\item[{int}]{maxcnt,  }\item[{int $\ast$}]{frames,  }\item[{int $\ast$}]{frame\+\_\+size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_a53886e1a3511c5013c89b5fc36fe8571}\label{LALUsbML_8h_a53886e1a3511c5013c89b5fc36fe8571}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Usb\+Read\+Ex\+ML@{Usb\+Read\+Ex\+ML}}
+\index{Usb\+Read\+Ex\+ML@{Usb\+Read\+Ex\+ML}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Usb\+Read\+Ex\+M\+L()}{UsbReadExML()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} Usb\+Read\+Ex\+ML (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{int $\ast$}]{target\+\_\+path\+\_\+array,  }\item[{void $\ast$}]{array,  }\item[{int}]{maxcnt,  }\item[{int $\ast$}]{frames,  }\item[{int $\ast$}]{frame\+\_\+size,  }\item[{int $\ast$}]{sub\+\_\+add\+\_\+array }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_a4b152904931a161922da9e963e46b745}\label{LALUsbML_8h_a4b152904931a161922da9e963e46b745}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Usb\+Read\+Ex\+M\+L\+\_\+\+New@{Usb\+Read\+Ex\+M\+L\+\_\+\+New}}
+\index{Usb\+Read\+Ex\+M\+L\+\_\+\+New@{Usb\+Read\+Ex\+M\+L\+\_\+\+New}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Usb\+Read\+Ex\+M\+L\+\_\+\+New()}{UsbReadExML\_New()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} Usb\+Read\+Ex\+M\+L\+\_\+\+New (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{void $\ast$}]{array,  }\item[{\hyperlink{LALUsbML_8h_ac256ca94b86e3a080c0fc61f3c546bb1}{M\+L\+\_\+\+Frame} $\ast$}]{mf\+\_\+array,  }\item[{int}]{max\+\_\+num\+\_\+bytes,  }\item[{int $\ast$}]{frames }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_a540320392908ba7d57bcc168916a82d4}\label{LALUsbML_8h_a540320392908ba7d57bcc168916a82d4}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Usb\+Read\+ML@{Usb\+Read\+ML}}
+\index{Usb\+Read\+ML@{Usb\+Read\+ML}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Usb\+Read\+M\+L()}{UsbReadML()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} Usb\+Read\+ML (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{int $\ast$}]{target\+\_\+path\+\_\+array,  }\item[{char}]{sub\+\_\+addr,  }\item[{void $\ast$}]{buffer,  }\item[{int}]{usercount }\end{DoxyParamCaption})}
+
+
+
+Referenced by Usb\+F\+T\+M\+L\+Interface\+::usb\+Read\+U16(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Read\+U32(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Read\+U8(), and Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+Read().
+
+\mbox{\Hypertarget{LALUsbML_8h_a988063a8e1f62d7ffc6073041660b595}\label{LALUsbML_8h_a988063a8e1f62d7ffc6073041660b595}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Usb\+Request\+For\+Read\+ML@{Usb\+Request\+For\+Read\+ML}}
+\index{Usb\+Request\+For\+Read\+ML@{Usb\+Request\+For\+Read\+ML}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Usb\+Request\+For\+Read\+M\+L()}{UsbRequestForReadML()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} Usb\+Request\+For\+Read\+ML (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{int $\ast$}]{target\+\_\+path\+\_\+array,  }\item[{char}]{sub\+\_\+addr,  }\item[{void $\ast$}]{buffer,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_a47d6ee31e4abf700091cea1aafb91e28}\label{LALUsbML_8h_a47d6ee31e4abf700091cea1aafb91e28}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Usb\+Set\+Int\+Checking\+State@{Usb\+Set\+Int\+Checking\+State}}
+\index{Usb\+Set\+Int\+Checking\+State@{Usb\+Set\+Int\+Checking\+State}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Usb\+Set\+Int\+Checking\+State()}{UsbSetIntCheckingState()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} void \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} Usb\+Set\+Int\+Checking\+State (\begin{DoxyParamCaption}\item[{\hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}}]{truefalse }\end{DoxyParamCaption})}
+
+
+
+Referenced by Usb\+F\+T\+Interface\+::init(), and Usb\+F\+T\+M\+L\+Interface\+::init().
+
+\mbox{\Hypertarget{LALUsbML_8h_adb0d6352075f8eb4d93652619dee0e27}\label{LALUsbML_8h_adb0d6352075f8eb4d93652619dee0e27}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Usb\+Set\+Max\+Layer@{Usb\+Set\+Max\+Layer}}
+\index{Usb\+Set\+Max\+Layer@{Usb\+Set\+Max\+Layer}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Usb\+Set\+Max\+Layer()}{UsbSetMaxLayer()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} Usb\+Set\+Max\+Layer (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{int}]{num\+\_\+layers }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{LALUsbML_8h_a417eaf04d96bd2d3fca0111f8003bcb0}\label{LALUsbML_8h_a417eaf04d96bd2d3fca0111f8003bcb0}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Usb\+Wrt@{Usb\+Wrt}}
+\index{Usb\+Wrt@{Usb\+Wrt}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Usb\+Wrt()}{UsbWrt()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} Usb\+Wrt (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{char}]{sub\+\_\+addr,  }\item[{void $\ast$}]{buffer,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+Referenced by Usb\+F\+T\+Interface\+::usb\+Write\+Read(), Usb\+F\+T\+Interface\+::usb\+Write\+U16(), Usb\+F\+T\+Interface\+::usb\+Write\+U32(), and Usb\+F\+T\+Interface\+::usb\+Write\+U8().
+
+\mbox{\Hypertarget{LALUsbML_8h_aa0fcaafc2d95a37bb326abedcec12ca5}\label{LALUsbML_8h_aa0fcaafc2d95a37bb326abedcec12ca5}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!Usb\+Wrt\+ML@{Usb\+Wrt\+ML}}
+\index{Usb\+Wrt\+ML@{Usb\+Wrt\+ML}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{Usb\+Wrt\+M\+L()}{UsbWrtML()}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} int \hyperlink{LALUsb_8h_af801940f92d305287834530901e9c473}{\+\_\+cstmcall} Usb\+Wrt\+ML (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{int $\ast$}]{target\+\_\+path\+\_\+array,  }\item[{char}]{sub\+\_\+addr,  }\item[{void $\ast$}]{buffer,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+Referenced by Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+Read(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+U16(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+U32(), and Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+U8().
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{LALUsbML_8h_a733226ff2d2676365651e3e3184ed029}\label{LALUsbML_8h_a733226ff2d2676365651e3e3184ed029}} 
+\index{L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}!pf\+Error@{pf\+Error}}
+\index{pf\+Error@{pf\+Error}!L\+A\+L\+Usb\+M\+L.\+h@{L\+A\+L\+Usb\+M\+L.\+h}}
+\subsubsection{\texorpdfstring{pf\+Error}{pfError}}
+{\footnotesize\ttfamily \hyperlink{LALUsb_8h_ae420b065eb15cfb4611913b0635227e7}{L\+A\+L\+U\+S\+B\+\_\+\+A\+PI} \hyperlink{LALUsb_8h_aaf94da1a2ffe7c2e42d8670c9af59930}{Perror\+Func} pf\+Error}
+

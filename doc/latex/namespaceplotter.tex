@@ -1,0 +1,68 @@
+\hypertarget{namespaceplotter}{}\section{plotter Namespace Reference}
+\label{namespaceplotter}\index{plotter@{plotter}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classplotter_1_1plotter}{plotter}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceplotter_a5d9521541ff0c72bf439078efacf2f42}{h1d} (fig, histo, alpha=0.\+5, facecolor=\textquotesingle{}green\textquotesingle{}, edgecolor=\textquotesingle{}yellow\textquotesingle{}, linestyle=\textquotesingle{}dashed\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespaceplotter_a5d9521541ff0c72bf439078efacf2f42}\label{namespaceplotter_a5d9521541ff0c72bf439078efacf2f42}} 
+\index{plotter@{plotter}!h1d@{h1d}}
+\index{h1d@{h1d}!plotter@{plotter}}
+\subsubsection{\texorpdfstring{h1d()}{h1d()}}
+{\footnotesize\ttfamily def plotter.\+h1d (\begin{DoxyParamCaption}\item[{}]{fig,  }\item[{}]{histo,  }\item[{}]{alpha = {\ttfamily 0.5},  }\item[{}]{facecolor = {\ttfamily \textquotesingle{}green\textquotesingle{}},  }\item[{}]{edgecolor = {\ttfamily \textquotesingle{}yellow\textquotesingle{}},  }\item[{}]{linestyle = {\ttfamily \textquotesingle{}dashed\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 51 of file plotter.\+py.
+
+
+
+Referenced by plotter.\+plotter.\+destroy(), A3\+P\+E\+\_\+\+Bit\+Flip.\+Plot(), Storage\+Fifo\+Acquisition.\+Plot(), Storage\+Fifo.\+Plot(), Test\+Suite.\+Plot(), Test\+I2\+C.\+Plot(), Test\+S\+P\+I.\+Plot(), Test\+U\+S\+B.\+Plot(), and Acquisition.\+Plot().
+
+
+\begin{DoxyCode}
+51         linestyle=\textcolor{stringliteral}{'dashed'}):
+52         \textcolor{keyword}{import} numpy \textcolor{keyword}{as} np
+53         left=np.array(histo.edges()[:-1])
+54         right=np.array(histo.edges()[1:])
+55         bottom = np.zeros(len(left))
+56         top=bottom+histo.bins()
+57         nrects=len(left)
+58         nverts = nrects*(1+3+1)
+59         verts = np.zeros((nverts, 2))
+60         codes = np.ones(nverts, int) * Path.LINETO
+61         codes[0::5] = Path.MOVETO
+62         codes[4::5] = Path.CLOSEPOLY
+63         verts[0::5,0] = left
+64         verts[0::5,1] = bottom
+65         verts[1::5,0] = left
+66         verts[1::5,1] = top
+67         verts[2::5,0] = right
+68         verts[2::5,1] = top
+69         verts[3::5,0] = right
+70         verts[3::5,1] = bottom
+71         barpath = Path(verts, codes)
+72         patch = patches.PathPatch(barpath,
+73                                   facecolor=facecolor,
+74                                   edgecolor=edgecolor,
+75                                   alpha=alpha,
+76                                   linestyle=linestyle)
+77         max=histo.maxY()
+78         fig.add\_patch(patch)
+79         fig.set\_xlim(histo.minX(), histo.maxX())
+80         \textcolor{keywordflow}{if} (max>0):
+81                 fig.set\_ylim(0.,max*1.05)
+82         \textcolor{keywordflow}{else}:
+83                 fig.set\_ylim(max*1.05,0.)
+84                 
+87 
+88 
+\end{DoxyCode}

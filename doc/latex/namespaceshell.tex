@@ -1,0 +1,835 @@
+\hypertarget{namespaceshell}{}\section{shell Namespace Reference}
+\label{namespaceshell}\index{shell@{shell}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceshell_ac20d6d8d358a08b077ebca4dc98eca96}{opts} ()
+\item 
+def \hyperlink{namespaceshell_a7c2aab80550f476d91e0d8f0c350a635}{obj} ()
+\item 
+def \hyperlink{namespaceshell_a4b477089a422d9adc38334764718c485}{get} (path)
+\item 
+def \hyperlink{namespaceshell_a407fefdfad7caab50f7b0eabd9ddbf55}{cd} (path=\textquotesingle{}\textquotesingle{})
+\item 
+def \hyperlink{namespaceshell_af9ea9dab4000d08fadcd5fed31b64911}{load} (filename)
+\item 
+def \hyperlink{namespaceshell_a406c1a03890c85fe979d6d8e540b3bdf}{reload} ()
+\item 
+def \hyperlink{namespaceshell_aa9b05ca51c55671aa9ce6973d3c68049}{ls} (path=\textquotesingle{}\textquotesingle{})
+\item 
+def \hyperlink{namespaceshell_a739d025c0779dd20066ec2f61b0513aa}{ll} (path=\textquotesingle{}\textquotesingle{})
+\item 
+def \hyperlink{namespaceshell_ac92525a6872e660926b18f1047e21ee7}{pwd} ()
+\item 
+def \hyperlink{namespaceshell_aee4ac95f90c385c4fa8e9cd13ce2380d}{tree} (path=\textquotesingle{}\textquotesingle{})
+\item 
+def \hyperlink{namespaceshell_aebe5a080b6d651f77ca73d69a425f126}{view} (path=\textquotesingle{}\textquotesingle{}, indent=\textquotesingle{} \textquotesingle{})
+\item 
+def \hyperlink{namespaceshell_a4e7ade568694b57b3284d8b323ac9ecd}{create} (object, type)
+\item 
+def \hyperlink{namespaceshell_ae1ffb966b730c62592e1093acd8d9e29}{process} (object)
+\item 
+def \hyperlink{namespaceshell_a5ea2525995cedc3efd69ea8a7f034d1e}{data} (object, stream=None)
+\item 
+def \hyperlink{namespaceshell_a79f68caaf52d03ff793360cebe45cc22}{app} ()
+\item 
+def \hyperlink{namespaceshell_a14da1173b3cc5b8569cc0020130e3bd7}{clear} (path=\textquotesingle{}\textquotesingle{})
+\item 
+def \hyperlink{namespaceshell_a324876531afa651f59288dbab3f5603a}{delete} (path=\textquotesingle{}\textquotesingle{})
+\item 
+def \hyperlink{namespaceshell_ae17d022e61c0f8d61c3dee4f9bc68f51}{output\+Level} (level=\textquotesingle{}I\+N\+FO\textquotesingle{})
+\item 
+def \hyperlink{namespaceshell_aa0929fa150d13168df6061f9d51b727b}{init} ()
+\item 
+def \hyperlink{namespaceshell_ac644e906d4031b3ab30adb8e1984b252}{network} ()
+\item 
+def \hyperlink{namespaceshell_a2f31bbe4baf894f4863c4d392239ab8b}{reset} (path=\textquotesingle{}\textquotesingle{})
+\item 
+def \hyperlink{namespaceshell_af141a2fee68e5e84d8ac2cc51c3feedd}{prompt} ()
+\item 
+def \hyperlink{namespaceshell_a8bb3d636e52da2226367b0123101a49f}{load\+Dll} (name)
+\item 
+def \hyperlink{namespaceshell_ac89ea08a5e75ecb222fe9e707b3ee102}{run} (processus, element, nevt)
+\item 
+def \hyperlink{namespaceshell_a95156c76dce36cfad6d1e2fcb85265ed}{shell} (\hyperlink{namespaceshell_a79f68caaf52d03ff793360cebe45cc22}{app}, \hyperlink{namespaceshell_aa87f3fd6ea8190070b0b7326abebf39c}{args})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceshell_aa87f3fd6ea8190070b0b7326abebf39c}{args} = \hyperlink{classarguments_1_1arguments}{arguments}()
+\item 
+\hyperlink{namespaceshell_a01f54959c7299ff506841249f48b2d47}{shell\+Mode}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespaceshell_a79f68caaf52d03ff793360cebe45cc22}\label{namespaceshell_a79f68caaf52d03ff793360cebe45cc22}} 
+\index{shell@{shell}!app@{app}}
+\index{app@{app}!shell@{shell}}
+\subsubsection{\texorpdfstring{app()}{app()}}
+{\footnotesize\ttfamily def shell.\+app (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 168 of file shell.\+py.
+
+
+\begin{DoxyCode}
+168 \textcolor{keyword}{def }\hyperlink{namespaceshell_a79f68caaf52d03ff793360cebe45cc22}{app}():
+169   \textcolor{keywordflow}{return} cat
+170 
+171 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceshell_a407fefdfad7caab50f7b0eabd9ddbf55}\label{namespaceshell_a407fefdfad7caab50f7b0eabd9ddbf55}} 
+\index{shell@{shell}!cd@{cd}}
+\index{cd@{cd}!shell@{shell}}
+\subsubsection{\texorpdfstring{cd()}{cd()}}
+{\footnotesize\ttfamily def shell.\+cd (\begin{DoxyParamCaption}\item[{}]{path = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 34 of file shell.\+py.
+
+
+
+References prompt().
+
+
+\begin{DoxyCode}
+34 \textcolor{keyword}{def }\hyperlink{namespaceshell_a407fefdfad7caab50f7b0eabd9ddbf55}{cd}(path=''):
+35   cat.cd(path)
+36   \hyperlink{namespaceshell_af141a2fee68e5e84d8ac2cc51c3feedd}{prompt}()
+37 
+38 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceshell_a14da1173b3cc5b8569cc0020130e3bd7}\label{namespaceshell_a14da1173b3cc5b8569cc0020130e3bd7}} 
+\index{shell@{shell}!clear@{clear}}
+\index{clear@{clear}!shell@{shell}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily def shell.\+clear (\begin{DoxyParamCaption}\item[{}]{path = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 172 of file shell.\+py.
+
+
+
+Referenced by delete(), App\+Frame.\+App\+Frame.\+on\+Delete(), and reload().
+
+
+\begin{DoxyCode}
+172 \textcolor{keyword}{def }\hyperlink{namespaceshell_a14da1173b3cc5b8569cc0020130e3bd7}{clear}(path=''):
+173   \textcolor{keywordflow}{if} path == \textcolor{stringliteral}{''}:
+174     element = cat.current()
+175   \textcolor{keywordflow}{else}:
+176     element = cat.current().child(path)
+177   \textcolor{keywordflow}{if} type(element) != \textcolor{keywordtype}{None}:
+178     element.clear()
+179 
+180 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceshell_a4e7ade568694b57b3284d8b323ac9ecd}\label{namespaceshell_a4e7ade568694b57b3284d8b323ac9ecd}} 
+\index{shell@{shell}!create@{create}}
+\index{create@{create}!shell@{shell}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily def shell.\+create (\begin{DoxyParamCaption}\item[{}]{object,  }\item[{}]{type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 131 of file shell.\+py.
+
+
+
+Referenced by Application.\+hostname().
+
+
+\begin{DoxyCode}
+131 \textcolor{keyword}{def }\hyperlink{namespaceshell_a4e7ade568694b57b3284d8b323ac9ecd}{create}(object, type):
+132   \textcolor{keywordflow}{if} cat.create(object, type).isFailure():
+133     cat.fatal(\textcolor{stringliteral}{"Could not make object "} +
+134               object + \textcolor{stringliteral}{" of type "} + type, \textcolor{stringliteral}{"CAT"})
+135 
+136 \textcolor{comment}{#----------------------------------------------------------------------------}
+137 
+138 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceshell_a5ea2525995cedc3efd69ea8a7f034d1e}\label{namespaceshell_a5ea2525995cedc3efd69ea8a7f034d1e}} 
+\index{shell@{shell}!data@{data}}
+\index{data@{data}!shell@{shell}}
+\subsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily def shell.\+data (\begin{DoxyParamCaption}\item[{}]{object,  }\item[{}]{stream = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 150 of file shell.\+py.
+
+
+
+Referenced by A3\+P\+E.\+clock\+Division(), Server\+\_\+\+N\+I6008.\+cmd(), Specs\+Mezzanine.\+cmdline(), Data.\+Data(), A3\+P\+E.\+enable\+Storage(), A3\+P\+E.\+fifo\+Depth(), A3\+P\+E.\+fifo\+Latency(), Register.\+get\+Bit(), Fe\+P\+G\+A.\+i2c\+Read(), Seq\+P\+G\+A.\+i2c\+Read(), Fe\+P\+G\+A.\+i2c\+Write(), Seq\+P\+G\+A.\+i2c\+Write(), A3\+P\+E.\+latency\+A\+X(), A3\+P\+E.\+length\+A\+X(), A3\+P\+E.\+load\+From\+A\+X(), A3\+P\+E.\+load\+Pattern(), A3\+P\+E.\+load\+Storage(), A3\+P\+E.\+load\+To\+A\+X(), A3\+P\+E.\+load\+Trigger(), A3\+P\+E.\+n\+Trigger(), R\+A\+M.\+raz(), Usb\+F\+T\+M\+L\+Interface.\+read(), Usb\+F\+T\+Interface.\+read(), Register.\+set\+Bit(), A3\+P\+E.\+set\+Clock\+Division(), L\+S\+Delay\+Chip\+V1.\+set\+Config\+Reg(), Data.\+set\+Data(), I\+Odata.\+set\+Data\+U16(), I\+Odata.\+set\+Data\+U32(), I\+Odata.\+set\+Data\+U8(), Seq\+P\+G\+A.\+set\+Ext\+Trig(), A3\+P\+E.\+set\+Fifo\+Depth(), A3\+P\+E.\+set\+Fifo\+Latency(), Fe\+P\+G\+A.\+set\+I2c\+G\+B\+T\+S\+C\+A(), Seq\+P\+G\+A.\+set\+I2c\+G\+B\+T\+S\+C\+A(), A3\+P\+E.\+set\+N\+Trigger(), A3\+P\+E.\+set\+Pipeline(), Seq\+P\+G\+A.\+set\+Spi\+G\+B\+T\+S\+C\+A(), Fe\+P\+G\+A.\+set\+Spi\+G\+B\+T\+S\+C\+A(), A3\+P\+E.\+set\+Trigger\+Delay(), A3\+P\+E.\+set\+Trigger\+Rate(), A3\+P\+E.\+trigger\+Delay(), A3\+P\+E.\+trigger\+Rate(), Usb\+F\+T\+Interface.\+usb\+Read(), Usb\+F\+T\+M\+L\+Interface.\+usb\+Read(), Usb\+F\+T\+Interface.\+usb\+Write(), Usb\+F\+T\+M\+L\+Interface.\+usb\+Write(), Usb\+F\+T\+M\+L\+Interface.\+write(), Specs\+Interface.\+write(), and Usb\+F\+T\+Interface.\+write().
+
+
+\begin{DoxyCode}
+150 \textcolor{keyword}{def }\hyperlink{namespaceshell_a5ea2525995cedc3efd69ea8a7f034d1e}{data}(object, stream=None):
+151   ok = \textcolor{keyword}{False}
+152   list = cat.procDb().list()
+153   \textcolor{keywordflow}{for} p \textcolor{keywordflow}{in} range(len(list)):
+154     \textcolor{keywordflow}{if} (list[p].name() == object):
+155       ok = \textcolor{keyword}{True}
+156       \textcolor{keywordflow}{if} (stream == \textcolor{keywordtype}{None}):
+157         list[p].\hyperlink{namespaceshell_a5ea2525995cedc3efd69ea8a7f034d1e}{data}().info()
+158       \textcolor{keywordflow}{else}:
+159         \textcolor{keywordflow}{return} list[p].\hyperlink{namespaceshell_a5ea2525995cedc3efd69ea8a7f034d1e}{data}().vector(stream)
+160   \textcolor{keywordflow}{if} (ok == \textcolor{keyword}{False}):
+161     cat.warning(\textcolor{stringliteral}{"Could not find processus "} + object + \textcolor{stringliteral}{"."}, \textcolor{stringliteral}{"CAT"})
+162     \textcolor{keywordflow}{return}
+163 
+164 \textcolor{comment}{#----------------------------------------------------------------------------}
+165 \textcolor{comment}{# application settings}
+166 
+167 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceshell_a324876531afa651f59288dbab3f5603a}\label{namespaceshell_a324876531afa651f59288dbab3f5603a}} 
+\index{shell@{shell}!delete@{delete}}
+\index{delete@{delete}!shell@{shell}}
+\subsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily def shell.\+delete (\begin{DoxyParamCaption}\item[{}]{path = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 181 of file shell.\+py.
+
+
+
+References clear().
+
+
+\begin{DoxyCode}
+181 \textcolor{keyword}{def }\hyperlink{namespaceshell_a324876531afa651f59288dbab3f5603a}{delete}(path=''):
+182   \textcolor{keywordflow}{if} path == \textcolor{stringliteral}{'*'}:
+183     cat.current().\hyperlink{namespaceshell_a14da1173b3cc5b8569cc0020130e3bd7}{clear}()
+184   \textcolor{keywordflow}{else}:
+185     cat.current().delChild(path)
+186 
+187 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceshell_a4b477089a422d9adc38334764718c485}\label{namespaceshell_a4b477089a422d9adc38334764718c485}} 
+\index{shell@{shell}!get@{get}}
+\index{get@{get}!shell@{shell}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily def shell.\+get (\begin{DoxyParamCaption}\item[{}]{path }\end{DoxyParamCaption})}
+
+
+
+Definition at line 30 of file shell.\+py.
+
+
+
+Referenced by run().
+
+
+\begin{DoxyCode}
+30 \textcolor{keyword}{def }\hyperlink{namespaceshell_a4b477089a422d9adc38334764718c485}{get}(path):
+31   \textcolor{keywordflow}{return} cat.current().child(path)
+32 
+33 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceshell_aa0929fa150d13168df6061f9d51b727b}\label{namespaceshell_aa0929fa150d13168df6061f9d51b727b}} 
+\index{shell@{shell}!init@{init}}
+\index{init@{init}!shell@{shell}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily def shell.\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 203 of file shell.\+py.
+
+
+
+Referenced by App\+Frame.\+App\+Frame.\+on\+Init().
+
+
+\begin{DoxyCode}
+203 \textcolor{keyword}{def }\hyperlink{namespaceshell_aa0929fa150d13168df6061f9d51b727b}{init}():
+204   cat.computer().recursiveInitCommunications()
+205   cat.computer().recursiveInitElement()
+206 
+207 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceshell_a739d025c0779dd20066ec2f61b0513aa}\label{namespaceshell_a739d025c0779dd20066ec2f61b0513aa}} 
+\index{shell@{shell}!ll@{ll}}
+\index{ll@{ll}!shell@{shell}}
+\subsubsection{\texorpdfstring{ll()}{ll()}}
+{\footnotesize\ttfamily def shell.\+ll (\begin{DoxyParamCaption}\item[{}]{path = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 70 of file shell.\+py.
+
+
+\begin{DoxyCode}
+70 \textcolor{keyword}{def }\hyperlink{namespaceshell_a739d025c0779dd20066ec2f61b0513aa}{ll}(path=''):
+71   \textcolor{keywordflow}{if} path == \textcolor{stringliteral}{''}:
+72     element = cat.current()
+73   \textcolor{keywordflow}{else}:
+74     element = cat.current().child(path)
+75   \textcolor{keywordflow}{if} type(element) != \textcolor{keywordtype}{None}:
+76     lproc = cat.procDb().list(element)
+77     nproc = len(lproc)
+78     \textcolor{keywordflow}{if} (nproc) > 0:
+79       cat.info(\textcolor{stringliteral}{"- Processus: "}, \textcolor{stringliteral}{"CAT"})
+80     \textcolor{keywordflow}{for} p \textcolor{keywordflow}{in} range(nproc):
+81       cat.info(\textcolor{stringliteral}{"    "} + lproc[p].name() +
+82                \textcolor{stringliteral}{" : "} + lproc[p].title(), \textcolor{stringliteral}{"CAT"})
+83     l = element.children()
+84     \textcolor{keywordflow}{if} (len(l)) > 0:
+85       cat.info(\textcolor{stringliteral}{"- Element(s): "}, \textcolor{stringliteral}{"CAT"})
+86     \textcolor{keywordflow}{for} iter \textcolor{keywordflow}{in} range(len(l)):
+87       cat.info(\textcolor{stringliteral}{"    "} + l[iter].name() +
+88                \textcolor{stringliteral}{" ["} + l[iter].type() + \textcolor{stringliteral}{"]"}, \textcolor{stringliteral}{"CAT"})
+89       lproc = cat.procDb().list(l[iter])
+90       \textcolor{keywordflow}{for} p \textcolor{keywordflow}{in} range(len(lproc)):
+91         cat.info(\textcolor{stringliteral}{"       . "} + lproc[p].name() +
+92                  \textcolor{stringliteral}{" : "} + lproc[p].title(), \textcolor{stringliteral}{"CAT"})
+93       cat.info(element.name() + \textcolor{stringliteral}{" :  "} + str(len(l)) + \textcolor{stringliteral}{" child(ren) found ["} +
+94                str(nproc) + \textcolor{stringliteral}{" processus]."}, \textcolor{stringliteral}{"CAT"})
+95 
+96 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceshell_af9ea9dab4000d08fadcd5fed31b64911}\label{namespaceshell_af9ea9dab4000d08fadcd5fed31b64911}} 
+\index{shell@{shell}!load@{load}}
+\index{load@{load}!shell@{shell}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily def shell.\+load (\begin{DoxyParamCaption}\item[{}]{filename }\end{DoxyParamCaption})}
+
+
+
+Definition at line 39 of file shell.\+py.
+
+
+
+References prompt().
+
+
+
+Referenced by load\+Dll(), and reload().
+
+
+\begin{DoxyCode}
+39 \textcolor{keyword}{def }\hyperlink{namespaceshell_af9ea9dab4000d08fadcd5fed31b64911}{load}(filename):
+40   \textcolor{keywordflow}{if} (os.path.exists(filename) == \textcolor{keyword}{False}):
+41     filename = filename + \textcolor{stringliteral}{".py"}
+42   \textcolor{keywordflow}{if} (os.path.exists(filename)):
+43     execfile(filename)
+44     \hyperlink{namespaceshell_af141a2fee68e5e84d8ac2cc51c3feedd}{prompt}()
+45     cat.options().setDefFile(filename)
+46   \textcolor{keywordflow}{else}:
+47     cat.warning(\textcolor{stringliteral}{"File "} + filename + \textcolor{stringliteral}{" does not exist."}, \textcolor{stringliteral}{"CAT"})
+48 
+49 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceshell_a8bb3d636e52da2226367b0123101a49f}\label{namespaceshell_a8bb3d636e52da2226367b0123101a49f}} 
+\index{shell@{shell}!load\+Dll@{load\+Dll}}
+\index{load\+Dll@{load\+Dll}!shell@{shell}}
+\subsubsection{\texorpdfstring{load\+Dll()}{loadDll()}}
+{\footnotesize\ttfamily def shell.\+load\+Dll (\begin{DoxyParamCaption}\item[{}]{name }\end{DoxyParamCaption})}
+
+
+
+Definition at line 230 of file shell.\+py.
+
+
+
+References load().
+
+
+\begin{DoxyCode}
+230 \textcolor{keyword}{def }\hyperlink{namespaceshell_a8bb3d636e52da2226367b0123101a49f}{loadDll}(name):
+231   cat.dllMgr().\hyperlink{namespaceshell_af9ea9dab4000d08fadcd5fed31b64911}{load}(name)
+232 
+233 \textcolor{comment}{#----------------------------------------------------------------------------}
+234 \textcolor{comment}{# processing}
+235 
+236 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceshell_aa9b05ca51c55671aa9ce6973d3c68049}\label{namespaceshell_aa9b05ca51c55671aa9ce6973d3c68049}} 
+\index{shell@{shell}!ls@{ls}}
+\index{ls@{ls}!shell@{shell}}
+\subsubsection{\texorpdfstring{ls()}{ls()}}
+{\footnotesize\ttfamily def shell.\+ls (\begin{DoxyParamCaption}\item[{}]{path = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 56 of file shell.\+py.
+
+
+\begin{DoxyCode}
+56 \textcolor{keyword}{def }\hyperlink{namespaceshell_aa9b05ca51c55671aa9ce6973d3c68049}{ls}(path=''):
+57   \textcolor{keywordflow}{if} path == \textcolor{stringliteral}{''}:
+58     element = cat.current()
+59   \textcolor{keywordflow}{else}:
+60     element = cat.current().child(path)
+61   \textcolor{keywordflow}{if} type(element) != \textcolor{keywordtype}{None}:
+62     l = element.children()
+63     \textcolor{keywordflow}{for} iter \textcolor{keywordflow}{in} range(len(l)):
+64       cat.info(\textcolor{stringliteral}{"    "} + l[iter].name() +
+65                \textcolor{stringliteral}{" ["} + l[iter].type() + \textcolor{stringliteral}{"]"}, \textcolor{stringliteral}{"CAT"})
+66     cat.info(element.name() + \textcolor{stringliteral}{" :  "} + str(len(l)) +
+67              \textcolor{stringliteral}{" child(ren) found."}, \textcolor{stringliteral}{"CAT"})
+68 
+69 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceshell_ac644e906d4031b3ab30adb8e1984b252}\label{namespaceshell_ac644e906d4031b3ab30adb8e1984b252}} 
+\index{shell@{shell}!network@{network}}
+\index{network@{network}!shell@{shell}}
+\subsubsection{\texorpdfstring{network()}{network()}}
+{\footnotesize\ttfamily def shell.\+network (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 208 of file shell.\+py.
+
+
+
+Referenced by Application.\+status().
+
+
+\begin{DoxyCode}
+208 \textcolor{keyword}{def }\hyperlink{namespaceshell_ac644e906d4031b3ab30adb8e1984b252}{network}():
+209   cat.fatal(\textcolor{stringliteral}{"Not implemented."}, \textcolor{stringliteral}{"CAT"})
+210 
+211 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceshell_a7c2aab80550f476d91e0d8f0c350a635}\label{namespaceshell_a7c2aab80550f476d91e0d8f0c350a635}} 
+\index{shell@{shell}!obj@{obj}}
+\index{obj@{obj}!shell@{shell}}
+\subsubsection{\texorpdfstring{obj()}{obj()}}
+{\footnotesize\ttfamily def shell.\+obj (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 26 of file shell.\+py.
+
+
+
+Referenced by Application.\+create().
+
+
+\begin{DoxyCode}
+26 \textcolor{keyword}{def }\hyperlink{namespaceshell_a7c2aab80550f476d91e0d8f0c350a635}{obj}():
+27   \textcolor{keywordflow}{return} cat.current()
+28 
+29 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceshell_ac20d6d8d358a08b077ebca4dc98eca96}\label{namespaceshell_ac20d6d8d358a08b077ebca4dc98eca96}} 
+\index{shell@{shell}!opts@{opts}}
+\index{opts@{opts}!shell@{shell}}
+\subsubsection{\texorpdfstring{opts()}{opts()}}
+{\footnotesize\ttfamily def shell.\+opts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 19 of file shell.\+py.
+
+
+
+Referenced by run().
+
+
+\begin{DoxyCode}
+19 \textcolor{keyword}{def }\hyperlink{namespaceshell_ac20d6d8d358a08b077ebca4dc98eca96}{opts}():
+20   \textcolor{keywordflow}{return} cat.options()
+21 
+22 \textcolor{comment}{#----------------------------------------------------------------------------}
+23 \textcolor{comment}{# tree/object navigation}
+24 
+25 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceshell_ae17d022e61c0f8d61c3dee4f9bc68f51}\label{namespaceshell_ae17d022e61c0f8d61c3dee4f9bc68f51}} 
+\index{shell@{shell}!output\+Level@{output\+Level}}
+\index{output\+Level@{output\+Level}!shell@{shell}}
+\subsubsection{\texorpdfstring{output\+Level()}{outputLevel()}}
+{\footnotesize\ttfamily def shell.\+output\+Level (\begin{DoxyParamCaption}\item[{}]{level = {\ttfamily \textquotesingle{}INFO\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 188 of file shell.\+py.
+
+
+
+Referenced by shell().
+
+
+\begin{DoxyCode}
+188 \textcolor{keyword}{def }\hyperlink{namespaceshell_ae17d022e61c0f8d61c3dee4f9bc68f51}{outputLevel}(level='INFO'):
+189   levels = \{\textcolor{stringliteral}{'VERBOSE'}: MsgLevel.VERBOSE,
+190             \textcolor{stringliteral}{'DEBUG'}: MsgLevel.DEBUG,
+191             \textcolor{stringliteral}{'INFO'}: MsgLevel.INFO,
+192             \textcolor{stringliteral}{'WARNING'}: MsgLevel.WARNING,
+193             \textcolor{stringliteral}{'FATAL'}: MsgLevel.FATAL\}
+194   outLevel = levels.get(level)
+195   \textcolor{keywordflow}{if} outLevel != \textcolor{keywordtype}{None}:
+196     cat.options().setLogOutputLevel(outLevel)
+197   \textcolor{keywordflow}{else}:
+198     cat.warning(\textcolor{stringliteral}{"Output Level should be 'VERBOSE', 'DEBUG', 'INFO', 'WARNING' or 'FATAL'"},
+199                 \textcolor{stringliteral}{"CAT"})
+200     cat.warning(\textcolor{stringliteral}{"'"} + level + \textcolor{stringliteral}{"' level output not understood."}, \textcolor{stringliteral}{"CAT"})
+201 
+202 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceshell_ae1ffb966b730c62592e1093acd8d9e29}\label{namespaceshell_ae1ffb966b730c62592e1093acd8d9e29}} 
+\index{shell@{shell}!process@{process}}
+\index{process@{process}!shell@{shell}}
+\subsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily def shell.\+process (\begin{DoxyParamCaption}\item[{}]{object }\end{DoxyParamCaption})}
+
+
+
+Definition at line 139 of file shell.\+py.
+
+
+
+Referenced by Application.\+prepare().
+
+
+\begin{DoxyCode}
+139 \textcolor{keyword}{def }\hyperlink{namespaceshell_ae1ffb966b730c62592e1093acd8d9e29}{process}(object):
+140   ok = \textcolor{keyword}{False}
+141   list = cat.procDb().list()
+142   \textcolor{keywordflow}{for} p \textcolor{keywordflow}{in} range(len(list)):
+143     \textcolor{keywordflow}{if} (list[p].name() == object):
+144       \textcolor{keywordflow}{return} list[p]
+145   \textcolor{keywordflow}{if} (ok == \textcolor{keyword}{False}):
+146     cat.warning(\textcolor{stringliteral}{"Could not find processus "} + object + \textcolor{stringliteral}{"."}, \textcolor{stringliteral}{"CAT"})
+147     \textcolor{keywordflow}{return} \textcolor{keywordtype}{None}
+148 
+149 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceshell_af141a2fee68e5e84d8ac2cc51c3feedd}\label{namespaceshell_af141a2fee68e5e84d8ac2cc51c3feedd}} 
+\index{shell@{shell}!prompt@{prompt}}
+\index{prompt@{prompt}!shell@{shell}}
+\subsubsection{\texorpdfstring{prompt()}{prompt()}}
+{\footnotesize\ttfamily def shell.\+prompt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 221 of file shell.\+py.
+
+
+
+Referenced by cd(), load(), and shell().
+
+
+\begin{DoxyCode}
+221 \textcolor{keyword}{def }\hyperlink{namespaceshell_af141a2fee68e5e84d8ac2cc51c3feedd}{prompt}():
+222   current = cat.current()
+223   \textcolor{keywordflow}{if} current != \textcolor{keywordtype}{None}:
+224     sys.ps1 = \textcolor{stringliteral}{"\(\backslash\)033[92m"} + current.name() + \textcolor{stringliteral}{"\(\backslash\)033[0m[\(\backslash\)033[93m"} + \(\backslash\)
+225         current.type() + \textcolor{stringliteral}{"\(\backslash\)033[0m] > "}
+226   \textcolor{keywordflow}{else}:
+227     sys.ps1 = \textcolor{stringliteral}{"\(\backslash\)033[91mInvalid\(\backslash\)033[0m[\(\backslash\)033[95mNone\(\backslash\)033[0m] > "}
+228 
+229 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceshell_ac92525a6872e660926b18f1047e21ee7}\label{namespaceshell_ac92525a6872e660926b18f1047e21ee7}} 
+\index{shell@{shell}!pwd@{pwd}}
+\index{pwd@{pwd}!shell@{shell}}
+\subsubsection{\texorpdfstring{pwd()}{pwd()}}
+{\footnotesize\ttfamily def shell.\+pwd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 97 of file shell.\+py.
+
+
+\begin{DoxyCode}
+97 \textcolor{keyword}{def }\hyperlink{namespaceshell_ac92525a6872e660926b18f1047e21ee7}{pwd}():
+98   cat.info(cat.current().name() + \textcolor{stringliteral}{" ["} + cat.current().type() + \textcolor{stringliteral}{"]"}, \textcolor{stringliteral}{"CAT"})
+99 
+100 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceshell_a406c1a03890c85fe979d6d8e540b3bdf}\label{namespaceshell_a406c1a03890c85fe979d6d8e540b3bdf}} 
+\index{shell@{shell}!reload@{reload}}
+\index{reload@{reload}!shell@{shell}}
+\subsubsection{\texorpdfstring{reload()}{reload()}}
+{\footnotesize\ttfamily def shell.\+reload (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 50 of file shell.\+py.
+
+
+
+References clear(), and load().
+
+
+
+Referenced by App\+Frame.\+App\+Frame.\+on\+Re\+Load().
+
+
+\begin{DoxyCode}
+50 \textcolor{keyword}{def }\hyperlink{namespaceshell_a406c1a03890c85fe979d6d8e540b3bdf}{reload}():
+51   filename = cat.options().defFile()
+52   cat.computer().\hyperlink{namespaceshell_a14da1173b3cc5b8569cc0020130e3bd7}{clear}()
+53   \hyperlink{namespaceshell_af9ea9dab4000d08fadcd5fed31b64911}{load}(filename)
+54 
+55 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceshell_a2f31bbe4baf894f4863c4d392239ab8b}\label{namespaceshell_a2f31bbe4baf894f4863c4d392239ab8b}} 
+\index{shell@{shell}!reset@{reset}}
+\index{reset@{reset}!shell@{shell}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily def shell.\+reset (\begin{DoxyParamCaption}\item[{}]{path = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 212 of file shell.\+py.
+
+
+
+Referenced by M\+S\+Oxxxx.\+init(), I\+C\+E\+C\+A\+Lv3.\+init(), L\+S\+Delay\+Chip\+V1.\+init(), and Proto\+F\+E\+B\+\_\+v1.\+Proto\+F\+E\+B\+\_\+v1.\+on\+Global\+Reset().
+
+
+\begin{DoxyCode}
+212 \textcolor{keyword}{def }\hyperlink{namespaceshell_a2f31bbe4baf894f4863c4d392239ab8b}{reset}(path=''):
+213   \textcolor{keywordflow}{if} path == \textcolor{stringliteral}{''}:
+214     element = cat.current()
+215   \textcolor{keywordflow}{else}:
+216     element = cat.current().child(path)
+217   \textcolor{keywordflow}{if} type(element) != \textcolor{keywordtype}{None}:
+218     element.reset()
+219 
+220 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceshell_ac89ea08a5e75ecb222fe9e707b3ee102}\label{namespaceshell_ac89ea08a5e75ecb222fe9e707b3ee102}} 
+\index{shell@{shell}!run@{run}}
+\index{run@{run}!shell@{shell}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily def shell.\+run (\begin{DoxyParamCaption}\item[{}]{processus,  }\item[{}]{element,  }\item[{}]{nevt }\end{DoxyParamCaption})}
+
+
+
+Definition at line 237 of file shell.\+py.
+
+
+
+References get(), and opts().
+
+
+
+Referenced by Run.\+Run(), M\+S\+Oxxxx.\+set\+Debug\+Mode(), and Run.\+set\+Number().
+
+
+\begin{DoxyCode}
+237 \textcolor{keyword}{def }\hyperlink{namespaceshell_ac89ea08a5e75ecb222fe9e707b3ee102}{run}(processus, element, nevt):
+238   \textcolor{keywordflow}{if} (type(element) == str):
+239     element = \hyperlink{namespaceshell_a4b477089a422d9adc38334764718c485}{get}(element)
+240     \textcolor{keywordflow}{if} (element == \textcolor{keywordtype}{None}):
+241       \textcolor{keywordflow}{return} Code.FAILURE
+242   ok = \textcolor{keyword}{False}
+243   proc = \textcolor{keywordtype}{None}
+244   list = cat.procDb().list(element)
+245   \textcolor{keywordflow}{for} p \textcolor{keywordflow}{in} range(len(list)):
+246     \textcolor{keywordflow}{if} (list[p].name() == processus):
+247       proc = list[p]
+248       ok = \textcolor{keyword}{True}
+249   \textcolor{keywordflow}{if} (ok == \textcolor{keyword}{False}):
+250     cat.warning(\textcolor{stringliteral}{"Could not find processus "} + processus + \textcolor{stringliteral}{"."}, \textcolor{stringliteral}{"CAT"})
+251     \textcolor{keywordflow}{return} Code.FAILURE
+252   nrun = \hyperlink{namespaceshell_ac20d6d8d358a08b077ebca4dc98eca96}{opts}().runNumber()
+253   \textcolor{keywordflow}{if} (cat.prepare(processus, element, nevt).isFailure()):
+254     cat.warning(\textcolor{stringliteral}{"Could not prepare the processus "} +
+255                 processus + \textcolor{stringliteral}{"."}, \textcolor{stringliteral}{"CAT"})
+256     \textcolor{keywordflow}{return} Code.FAILURE
+257   evt = nevt
+258   width = 50
+259 
+260   plts   = \textcolor{keywordtype}{None}
+261   module = \textcolor{keywordtype}{None}
+262   wrap = \hyperlink{namespacewrapper}{wrapper}(cat, proc, \textcolor{stringliteral}{"proc"})
+263   online  = cat.options().plotFreq()
+264   \textcolor{keywordflow}{if} (wrap.ok):
+265     module = wrap.GetActive()
+266     proc.setElement(element)
+267     \textcolor{keywordflow}{if} module \textcolor{keywordflow}{and} (online != 0):
+268       plts = module.createPlots(cat, proc, nrun)        
+269     
+270   p = \hyperlink{classprogressbar_1_1AnimatedProgressBar}{progressbar.AnimatedProgressBar}(
+271       processus, end=abs(evt), width=width, fill=\textcolor{stringliteral}{'▣'}, blank=\textcolor{stringliteral}{'-'})
+272   timing  = -1.
+273   ievt    = 0
+274   \textcolor{keywordflow}{if} (evt<0): timing = time.time()
+275   evt    = abs(evt)
+276   stop    = \textcolor{keyword}{False}
+277 
+278   \textcolor{keywordflow}{try}:
+279     \textcolor{keywordflow}{while} ( \textcolor{keywordflow}{not} stop ):
+280       ievt+=1
+281       \textcolor{keywordflow}{if} timing>=0:
+282         elapsed = time.time() - timing
+283         p.set(elapsed)
+284         \textcolor{keywordflow}{if} elapsed > evt : stop = \textcolor{keyword}{True}
+285       \textcolor{keywordflow}{else} :
+286         p + 1
+287         \textcolor{keywordflow}{if} ievt>=evt : stop = \textcolor{keyword}{True}
+288       p.show\_progress()
+289       \textcolor{keywordflow}{if} (cat.loop().isFailure()):
+290         cat.warning(\textcolor{stringliteral}{"Error detected during processing."}, \textcolor{stringliteral}{"CAT"})
+291       \textcolor{keywordflow}{if} online>0 \textcolor{keywordflow}{and} plt:
+292         \textcolor{keywordflow}{if} ievt%online==0:
+293           \textcolor{keywordflow}{if} module :
+294             module.updatePlots(plts, proc)
+295   \textcolor{keywordflow}{except} KeyboardInterrupt:
+296     \textcolor{keywordflow}{pass}
+297 
+298   cat.terminate()
+299   \textcolor{keywordflow}{if} module \textcolor{keywordflow}{and} online==0:
+300     plts = module.createPlots(cat, proc, nrun) 
+301     module.updatePlots(plts, proc)
+302 
+303   \textcolor{comment}{#  Plot(processus, nrun)}
+304 
+305 \textcolor{comment}{# def plot(processus, nrun):}
+306 \textcolor{comment}{#   p = proc(processus)}
+307 \textcolor{comment}{#   if (p != None):}
+308 \textcolor{comment}{#     wrap = wrapper(cat, p, "proc")}
+309 \textcolor{comment}{#     if (wrap.ok):}
+310 \textcolor{comment}{#       module = wrap.GetActive()}
+311 \textcolor{comment}{#       plot = module.Plot(cat, p, None, nrun)}
+312 \textcolor{comment}{#       if plot:}
+313 \textcolor{comment}{#         plot.current().show()}
+314 \textcolor{comment}{#   return Code.SUCCESS}
+315 
+316 \textcolor{comment}{# def finalplot(processus, nrun):}
+317 \textcolor{comment}{#   p = proc(processus)}
+318 \textcolor{comment}{#   if (p != None):}
+319 \textcolor{comment}{#     wrap = wrapper(cat, p, "proc")}
+320 \textcolor{comment}{#     if (wrap.ok):}
+321 \textcolor{comment}{#       module = wrap.GetActive()}
+322 \textcolor{comment}{#       plot = module.FinalPlot(cat, p, None, nrun)}
+323 \textcolor{comment}{#       if plot:}
+324 \textcolor{comment}{#         plot.current().show()}
+325 \textcolor{comment}{#   return Code.SUCCESS}
+326 
+327 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceshell_a95156c76dce36cfad6d1e2fcb85265ed}\label{namespaceshell_a95156c76dce36cfad6d1e2fcb85265ed}} 
+\index{shell@{shell}!shell@{shell}}
+\index{shell@{shell}!shell@{shell}}
+\subsubsection{\texorpdfstring{shell()}{shell()}}
+{\footnotesize\ttfamily def shell.\+shell (\begin{DoxyParamCaption}\item[{}]{app,  }\item[{}]{args }\end{DoxyParamCaption})}
+
+
+
+Definition at line 328 of file shell.\+py.
+
+
+
+References output\+Level(), and prompt().
+
+
+\begin{DoxyCode}
+328 \textcolor{keyword}{def }\hyperlink{namespaceshell_a95156c76dce36cfad6d1e2fcb85265ed}{shell}(app, args):
+329   \textcolor{keyword}{import} version
+330   \textcolor{keyword}{global} cat
+331   \textcolor{keyword}{global} figid
+332   figid = 0
+333   \textcolor{keywordflow}{if} (app == \textcolor{keywordtype}{None}):
+334     cat = \hyperlink{classApplication}{Application}()
+335   \textcolor{keywordflow}{else}:
+336     cat = app
+337   \hyperlink{namespaceshell_ae17d022e61c0f8d61c3dee4f9bc68f51}{outputLevel}(args.output)
+338   vers = \hyperlink{classversion_1_1version}{version.version}()
+339   vers.info()
+340   cat.initialize()
+341   \textcolor{keywordflow}{if} (\textcolor{stringliteral}{""} <> args.file):
+342     \textcolor{keywordflow}{if} (os.path.exists(args.file)):
+343       execfile(args.file)
+344       cat.options().setDefFile(args.file)
+345     \textcolor{keywordflow}{else}:
+346       cat.fatal(\textcolor{stringliteral}{"Cannot execute init file "} +
+347                 args.file + \textcolor{stringliteral}{". Abort."}, \textcolor{stringliteral}{"CAT"})
+348       \textcolor{keywordflow}{return} -1
+349   \hyperlink{namespaceshell_af141a2fee68e5e84d8ac2cc51c3feedd}{prompt}()
+350 
+351 \textcolor{comment}{# main}
+352 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceshell_aee4ac95f90c385c4fa8e9cd13ce2380d}\label{namespaceshell_aee4ac95f90c385c4fa8e9cd13ce2380d}} 
+\index{shell@{shell}!tree@{tree}}
+\index{tree@{tree}!shell@{shell}}
+\subsubsection{\texorpdfstring{tree()}{tree()}}
+{\footnotesize\ttfamily def shell.\+tree (\begin{DoxyParamCaption}\item[{}]{path = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 101 of file shell.\+py.
+
+
+\begin{DoxyCode}
+101 \textcolor{keyword}{def }\hyperlink{namespaceshell_aee4ac95f90c385c4fa8e9cd13ce2380d}{tree}(path=''):
+102   \textcolor{keywordflow}{if} path == \textcolor{stringliteral}{''}:
+103     element = cat.current()
+104   \textcolor{keywordflow}{else}:
+105     element = cat.current().child(path)
+106   \textcolor{keywordflow}{if} type(element) != \textcolor{keywordtype}{None}:
+107     element.tree()
+108 
+109 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceshell_aebe5a080b6d651f77ca73d69a425f126}\label{namespaceshell_aebe5a080b6d651f77ca73d69a425f126}} 
+\index{shell@{shell}!view@{view}}
+\index{view@{view}!shell@{shell}}
+\subsubsection{\texorpdfstring{view()}{view()}}
+{\footnotesize\ttfamily def shell.\+view (\begin{DoxyParamCaption}\item[{}]{path = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{indent = {\ttfamily \textquotesingle{}~~\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 110 of file shell.\+py.
+
+
+\begin{DoxyCode}
+110 \textcolor{keyword}{def }\hyperlink{namespaceshell_aebe5a080b6d651f77ca73d69a425f126}{view}(path='', indent='  '):
+111   \textcolor{keywordflow}{if} path == \textcolor{stringliteral}{''}:
+112     element = cat.current()
+113   \textcolor{keywordflow}{else}:
+114     element = cat.current().child(path)
+115   line = indent + \textcolor{stringliteral}{' -> '} + \(\backslash\)
+116       element.name() + \textcolor{stringliteral}{'['} + element.type() + \(\backslash\)
+117       \textcolor{stringliteral}{' - '} + element.attributs() + \textcolor{stringliteral}{']'}
+118   \textcolor{keywordflow}{print} line
+119   l = element.children()
+120   \textcolor{keywordflow}{for} iter \textcolor{keywordflow}{in} range(len(l)):
+121     lproc = cat.procDb().list(l[iter])
+122     \textcolor{keywordflow}{for} p \textcolor{keywordflow}{in} range(len(lproc)):
+123       \textcolor{keywordflow}{print} indent + \textcolor{stringliteral}{"   ."} + lproc[p].name() + \textcolor{stringliteral}{"("} + lproc[p].title() + \textcolor{stringliteral}{") - "} + lproc[p].attributs()
+124     \hyperlink{namespaceshell_aebe5a080b6d651f77ca73d69a425f126}{view}(l[iter].path(\textcolor{stringliteral}{''}), indent + \textcolor{stringliteral}{'  '})
+125 
+126  \textcolor{comment}{# def com(objecgt):}
+127  \textcolor{comment}{#   while connection!=None:}
+128  \textcolor{comment}{#   print connection()}
+129 
+130 
+\end{DoxyCode}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceshell_aa87f3fd6ea8190070b0b7326abebf39c}\label{namespaceshell_aa87f3fd6ea8190070b0b7326abebf39c}} 
+\index{shell@{shell}!args@{args}}
+\index{args@{args}!shell@{shell}}
+\subsubsection{\texorpdfstring{args}{args}}
+{\footnotesize\ttfamily shell.\+args = \hyperlink{classarguments_1_1arguments}{arguments}()}
+
+
+
+Definition at line 354 of file shell.\+py.
+
+\mbox{\Hypertarget{namespaceshell_a01f54959c7299ff506841249f48b2d47}\label{namespaceshell_a01f54959c7299ff506841249f48b2d47}} 
+\index{shell@{shell}!shell\+Mode@{shell\+Mode}}
+\index{shell\+Mode@{shell\+Mode}!shell@{shell}}
+\subsubsection{\texorpdfstring{shell\+Mode}{shellMode}}
+{\footnotesize\ttfamily shell.\+shell\+Mode}
+
+
+
+Definition at line 355 of file shell.\+py.
+

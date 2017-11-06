@@ -1,0 +1,729 @@
+\hypertarget{classvar}{}\section{var Class Reference}
+\label{classvar}\index{var@{var}}
+
+
+{\ttfamily \#include $<$inc/var.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classvar_ae4f9e2c747c3e72f245b148146b1855e}{Type} \{ \newline
+\hyperlink{classvar_ae4f9e2c747c3e72f245b148146b1855ea0f04795086058cdfd618ce292cc10f7b}{U\+N\+K\+N\+O\+WN}, 
+\hyperlink{classvar_ae4f9e2c747c3e72f245b148146b1855eae9bfb9b218ebe0917ff49ad2dc74eea8}{C\+H\+AR}, 
+\hyperlink{classvar_ae4f9e2c747c3e72f245b148146b1855eae8b4ab776b56b78d2f219c9666e6ffbf}{I\+NT}, 
+\hyperlink{classvar_ae4f9e2c747c3e72f245b148146b1855ead10e07906d918cec495207e33b00256a}{F\+L\+O\+AT}, 
+\newline
+\hyperlink{classvar_ae4f9e2c747c3e72f245b148146b1855ea645fb8aa32f88e2b580ab65fe3a0a234}{D\+O\+U\+B\+LE}, 
+\hyperlink{classvar_ae4f9e2c747c3e72f245b148146b1855ea7a154d7312f6d12c9031819ad3dfef71}{S\+T\+R\+I\+NG}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvar_af87bf2817f89678071ac7588a85a7f36}{var} ()
+\begin{DoxyCompactList}\small\item\em Standard constructor. \end{DoxyCompactList}\item 
+\hyperlink{classvar_a4afcdfc96cfac4b68e92415698f7e9de}{var} (char)
+\item 
+\hyperlink{classvar_a5fc966797c6c91705d714f5401b18eee}{var} (int)
+\item 
+\hyperlink{classvar_ab11a35ca2d25eed124494fc27f29f311}{var} (float)
+\item 
+\hyperlink{classvar_ad1a961ff2bb77b5e19d774a90974b17d}{var} (double)
+\item 
+\hyperlink{classvar_a84b88cbf0dc21a204a458b33133325d2}{var} (std\+::string)
+\item 
+virtual \hyperlink{classvar_ac7d2944f98e9772ab540050ae22fe9d1}{$\sim$var} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+char \hyperlink{classvar_af5c2865eb834ce2d22991a3250d278ba}{vchar} ()
+\item 
+int \hyperlink{classvar_a84535a30ae85f19acb935fcc98a03abf}{vint} ()
+\item 
+float \hyperlink{classvar_ac811c23f3fcb941746c1dd419e68b501}{vfloat} ()
+\item 
+double \hyperlink{classvar_aabcdbcace1882ed0c6506deabf4eddcb}{vdouble} ()
+\item 
+std\+::string \hyperlink{classvar_ada169cb1305db45a1de31071ce5033e2}{vstring} ()
+\item 
+std\+::vector$<$ \hyperlink{classvar}{var} $>$ \hyperlink{classvar_a1fe5529702a2697eb8cf69e8f80b0d86}{vector} (const char $\ast$,...)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classvar_a3e079680ce51addea659b23d303ceedc}{verbose} (std\+::string msg)
+\item 
+void \hyperlink{classvar_a90d3b799c7953db985d7488de79e247d}{debug} (std\+::string msg)
+\item 
+void \hyperlink{classvar_a6ad63ffe8ea9495201a7b2a824547518}{info} (std\+::string msg)
+\item 
+void \hyperlink{classvar_a56b3d498264760e7b1212d204e6a49d4}{warning} (std\+::string msg)
+\item 
+void \hyperlink{classvar_a2f23892af2d80d27ebb8032f89d875f2}{fatal} (std\+::string msg)
+\item 
+void \hyperlink{classvar_a381db77de9128014c9ddb5cfc7793f65}{verbose} (std\+::string msg, std\+::string name)
+\item 
+void \hyperlink{classvar_afe9c80c1fab5c210a628bb29df513935}{debug} (std\+::string msg, std\+::string name)
+\item 
+void \hyperlink{classvar_a52f41c560b167041c7d4e17a42021d5c}{info} (std\+::string msg, std\+::string name)
+\item 
+void \hyperlink{classvar_af8e180a414b085d50d35ba585bf7717f}{warning} (std\+::string msg, std\+::string name)
+\item 
+void \hyperlink{classvar_af190a03a038835391edf1b1173e117ab}{fatal} (std\+::string msg, std\+::string name)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{classvar_afffb29be23233ae232502023719da1d3}{m\+\_\+char}
+\item 
+int \hyperlink{classvar_afd0bde61955d8a7541d3dcedc22ec2ad}{m\+\_\+type}
+\item 
+int \hyperlink{classvar_a2796c70baa395a5e2c5457df760249d7}{m\+\_\+int}
+\item 
+float \hyperlink{classvar_adb803c54ed2edb812a77241d511385e6}{m\+\_\+float}
+\item 
+double \hyperlink{classvar_ad8590162a1dae61824b874c615cce311}{m\+\_\+double}
+\item 
+std\+::string \hyperlink{classvar_a81567a7f3af11ceee9a0624648e0e904}{m\+\_\+string}
+\item 
+\hyperlink{classMsgSvc}{Msg\+Svc} \hyperlink{classvar_a5dfdc5180270038b686ad3013874a026}{m\+\_\+log}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2006-\/10-\/26 
+\end{DoxyDate}
+
+
+Definition at line 19 of file var.\+h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classvar_ae4f9e2c747c3e72f245b148146b1855e}\label{classvar_ae4f9e2c747c3e72f245b148146b1855e}} 
+\index{var@{var}!Type@{Type}}
+\index{Type@{Type}!var@{var}}
+\subsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily enum \hyperlink{classvar_ae4f9e2c747c3e72f245b148146b1855e}{var\+::\+Type}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{U\+N\+K\+N\+O\+WN@{U\+N\+K\+N\+O\+WN}!var@{var}}\index{var@{var}!U\+N\+K\+N\+O\+WN@{U\+N\+K\+N\+O\+WN}}}\mbox{\Hypertarget{classvar_ae4f9e2c747c3e72f245b148146b1855ea0f04795086058cdfd618ce292cc10f7b}\label{classvar_ae4f9e2c747c3e72f245b148146b1855ea0f04795086058cdfd618ce292cc10f7b}} 
+U\+N\+K\+N\+O\+WN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+H\+AR@{C\+H\+AR}!var@{var}}\index{var@{var}!C\+H\+AR@{C\+H\+AR}}}\mbox{\Hypertarget{classvar_ae4f9e2c747c3e72f245b148146b1855eae9bfb9b218ebe0917ff49ad2dc74eea8}\label{classvar_ae4f9e2c747c3e72f245b148146b1855eae9bfb9b218ebe0917ff49ad2dc74eea8}} 
+C\+H\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+NT@{I\+NT}!var@{var}}\index{var@{var}!I\+NT@{I\+NT}}}\mbox{\Hypertarget{classvar_ae4f9e2c747c3e72f245b148146b1855eae8b4ab776b56b78d2f219c9666e6ffbf}\label{classvar_ae4f9e2c747c3e72f245b148146b1855eae8b4ab776b56b78d2f219c9666e6ffbf}} 
+I\+NT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+L\+O\+AT@{F\+L\+O\+AT}!var@{var}}\index{var@{var}!F\+L\+O\+AT@{F\+L\+O\+AT}}}\mbox{\Hypertarget{classvar_ae4f9e2c747c3e72f245b148146b1855ead10e07906d918cec495207e33b00256a}\label{classvar_ae4f9e2c747c3e72f245b148146b1855ead10e07906d918cec495207e33b00256a}} 
+F\+L\+O\+AT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+O\+U\+B\+LE@{D\+O\+U\+B\+LE}!var@{var}}\index{var@{var}!D\+O\+U\+B\+LE@{D\+O\+U\+B\+LE}}}\mbox{\Hypertarget{classvar_ae4f9e2c747c3e72f245b148146b1855ea645fb8aa32f88e2b580ab65fe3a0a234}\label{classvar_ae4f9e2c747c3e72f245b148146b1855ea645fb8aa32f88e2b580ab65fe3a0a234}} 
+D\+O\+U\+B\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+R\+I\+NG@{S\+T\+R\+I\+NG}!var@{var}}\index{var@{var}!S\+T\+R\+I\+NG@{S\+T\+R\+I\+NG}}}\mbox{\Hypertarget{classvar_ae4f9e2c747c3e72f245b148146b1855ea7a154d7312f6d12c9031819ad3dfef71}\label{classvar_ae4f9e2c747c3e72f245b148146b1855ea7a154d7312f6d12c9031819ad3dfef71}} 
+S\+T\+R\+I\+NG&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 22 of file var.\+h.
+
+
+\begin{DoxyCode}
+22             \{
+23     \hyperlink{classvar_ae4f9e2c747c3e72f245b148146b1855ea0f04795086058cdfd618ce292cc10f7b}{UNKNOWN},
+24     \hyperlink{classvar_ae4f9e2c747c3e72f245b148146b1855eae9bfb9b218ebe0917ff49ad2dc74eea8}{CHAR},
+25     \hyperlink{classvar_ae4f9e2c747c3e72f245b148146b1855eae8b4ab776b56b78d2f219c9666e6ffbf}{INT},
+26     \hyperlink{classvar_ae4f9e2c747c3e72f245b148146b1855ead10e07906d918cec495207e33b00256a}{FLOAT},
+27     \hyperlink{classvar_ae4f9e2c747c3e72f245b148146b1855ea645fb8aa32f88e2b580ab65fe3a0a234}{DOUBLE},
+28     \hyperlink{classvar_ae4f9e2c747c3e72f245b148146b1855ea7a154d7312f6d12c9031819ad3dfef71}{STRING}
+29   \};
+\end{DoxyCode}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvar_af87bf2817f89678071ac7588a85a7f36}\label{classvar_af87bf2817f89678071ac7588a85a7f36}} 
+\index{var@{var}!var@{var}}
+\index{var@{var}!var@{var}}
+\subsubsection{\texorpdfstring{var()}{var()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily var\+::var (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Standard constructor. 
+
+
+
+Definition at line 21 of file var.\+cpp.
+
+
+
+References m\+\_\+type, and U\+N\+K\+N\+O\+WN.
+
+
+\begin{DoxyCode}
+21            \{
+22   \hyperlink{classvar_afd0bde61955d8a7541d3dcedc22ec2ad}{m\_type}=\hyperlink{classvar_ae4f9e2c747c3e72f245b148146b1855ea0f04795086058cdfd618ce292cc10f7b}{UNKNOWN};
+23 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classvar_a4afcdfc96cfac4b68e92415698f7e9de}\label{classvar_a4afcdfc96cfac4b68e92415698f7e9de}} 
+\index{var@{var}!var@{var}}
+\index{var@{var}!var@{var}}
+\subsubsection{\texorpdfstring{var()}{var()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily var\+::var (\begin{DoxyParamCaption}\item[{char}]{ch }\end{DoxyParamCaption})}
+
+
+
+Definition at line 33 of file var.\+cpp.
+
+
+
+References C\+H\+AR, m\+\_\+char, and m\+\_\+type.
+
+
+\begin{DoxyCode}
+33                   \{
+34   \hyperlink{classvar_afd0bde61955d8a7541d3dcedc22ec2ad}{m\_type}=\hyperlink{classvar_ae4f9e2c747c3e72f245b148146b1855eae9bfb9b218ebe0917ff49ad2dc74eea8}{CHAR};
+35   \hyperlink{classvar_afffb29be23233ae232502023719da1d3}{m\_char} = ch;
+36 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classvar_a5fc966797c6c91705d714f5401b18eee}\label{classvar_a5fc966797c6c91705d714f5401b18eee}} 
+\index{var@{var}!var@{var}}
+\index{var@{var}!var@{var}}
+\subsubsection{\texorpdfstring{var()}{var()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily var\+::var (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Definition at line 41 of file var.\+cpp.
+
+
+
+References I\+NT, m\+\_\+int, and m\+\_\+type.
+
+
+\begin{DoxyCode}
+41                 \{
+42   \hyperlink{classvar_afd0bde61955d8a7541d3dcedc22ec2ad}{m\_type}=\hyperlink{classvar_ae4f9e2c747c3e72f245b148146b1855eae8b4ab776b56b78d2f219c9666e6ffbf}{INT};
+43   \hyperlink{classvar_a2796c70baa395a5e2c5457df760249d7}{m\_int} = i;
+44 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classvar_ab11a35ca2d25eed124494fc27f29f311}\label{classvar_ab11a35ca2d25eed124494fc27f29f311}} 
+\index{var@{var}!var@{var}}
+\index{var@{var}!var@{var}}
+\subsubsection{\texorpdfstring{var()}{var()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily var\+::var (\begin{DoxyParamCaption}\item[{float}]{f }\end{DoxyParamCaption})}
+
+
+
+Definition at line 49 of file var.\+cpp.
+
+
+
+References cat\+::f, F\+L\+O\+AT, m\+\_\+float, and m\+\_\+type.
+
+
+\begin{DoxyCode}
+49                    \{
+50   \hyperlink{classvar_afd0bde61955d8a7541d3dcedc22ec2ad}{m\_type}=\hyperlink{classvar_ae4f9e2c747c3e72f245b148146b1855ead10e07906d918cec495207e33b00256a}{FLOAT};
+51   \hyperlink{classvar_adb803c54ed2edb812a77241d511385e6}{m\_float} = \hyperlink{namespacecat_ac4e5e84140346d3c05a72261c63ef7b1}{f};
+52 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classvar_ad1a961ff2bb77b5e19d774a90974b17d}\label{classvar_ad1a961ff2bb77b5e19d774a90974b17d}} 
+\index{var@{var}!var@{var}}
+\index{var@{var}!var@{var}}
+\subsubsection{\texorpdfstring{var()}{var()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily var\+::var (\begin{DoxyParamCaption}\item[{double}]{d }\end{DoxyParamCaption})}
+
+
+
+Definition at line 57 of file var.\+cpp.
+
+
+
+References D\+O\+U\+B\+LE, m\+\_\+double, and m\+\_\+type.
+
+
+\begin{DoxyCode}
+57                    \{
+58   \hyperlink{classvar_afd0bde61955d8a7541d3dcedc22ec2ad}{m\_type}=\hyperlink{classvar_ae4f9e2c747c3e72f245b148146b1855ea645fb8aa32f88e2b580ab65fe3a0a234}{DOUBLE};
+59   \hyperlink{classvar_ad8590162a1dae61824b874c615cce311}{m\_double} = d;
+60 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classvar_a84b88cbf0dc21a204a458b33133325d2}\label{classvar_a84b88cbf0dc21a204a458b33133325d2}} 
+\index{var@{var}!var@{var}}
+\index{var@{var}!var@{var}}
+\subsubsection{\texorpdfstring{var()}{var()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily var\+::var (\begin{DoxyParamCaption}\item[{std\+::string}]{str }\end{DoxyParamCaption})}
+
+
+
+Definition at line 65 of file var.\+cpp.
+
+
+
+References m\+\_\+string, m\+\_\+type, and S\+T\+R\+I\+NG.
+
+
+\begin{DoxyCode}
+65                         \{
+66   \hyperlink{classvar_afd0bde61955d8a7541d3dcedc22ec2ad}{m\_type}=\hyperlink{classvar_ae4f9e2c747c3e72f245b148146b1855ea7a154d7312f6d12c9031819ad3dfef71}{STRING};
+67   \hyperlink{classvar_a81567a7f3af11ceee9a0624648e0e904}{m\_string} = str;
+68 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classvar_ac7d2944f98e9772ab540050ae22fe9d1}\label{classvar_ac7d2944f98e9772ab540050ae22fe9d1}} 
+\index{var@{var}!````~var@{$\sim$var}}
+\index{````~var@{$\sim$var}!var@{var}}
+\subsubsection{\texorpdfstring{$\sim$var()}{~var()}}
+{\footnotesize\ttfamily var\+::$\sim$var (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+
+
+Definition at line 27 of file var.\+cpp.
+
+
+\begin{DoxyCode}
+27 \{\} 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classvar_a90d3b799c7953db985d7488de79e247d}\label{classvar_a90d3b799c7953db985d7488de79e247d}} 
+\index{var@{var}!debug@{debug}}
+\index{debug@{debug}!var@{var}}
+\subsubsection{\texorpdfstring{debug()}{debug()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void var\+::debug (\begin{DoxyParamCaption}\item[{std\+::string}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 61 of file var.\+h.
+
+
+
+References Msg\+Svc\+::\+D\+E\+B\+UG, and Msg\+Svc\+::msg\+Svc().
+
+
+\begin{DoxyCode}
+61 \{ \hyperlink{classvar_a5dfdc5180270038b686ad3013874a026}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a1dbdcc82dce88370ec335883c83b38b0}{MsgSvc::DEBUG}   , msg, std::string(\textcolor{stringliteral}{"var"}) ); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classvar_afe9c80c1fab5c210a628bb29df513935}\label{classvar_afe9c80c1fab5c210a628bb29df513935}} 
+\index{var@{var}!debug@{debug}}
+\index{debug@{debug}!var@{var}}
+\subsubsection{\texorpdfstring{debug()}{debug()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void var\+::debug (\begin{DoxyParamCaption}\item[{std\+::string}]{msg,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 67 of file var.\+h.
+
+
+
+References Msg\+Svc\+::\+D\+E\+B\+UG, and Msg\+Svc\+::msg\+Svc().
+
+
+\begin{DoxyCode}
+67 \{ \hyperlink{classvar_a5dfdc5180270038b686ad3013874a026}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a1dbdcc82dce88370ec335883c83b38b0}{MsgSvc::DEBUG}   , msg, name ); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classvar_a2f23892af2d80d27ebb8032f89d875f2}\label{classvar_a2f23892af2d80d27ebb8032f89d875f2}} 
+\index{var@{var}!fatal@{fatal}}
+\index{fatal@{fatal}!var@{var}}
+\subsubsection{\texorpdfstring{fatal()}{fatal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void var\+::fatal (\begin{DoxyParamCaption}\item[{std\+::string}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 64 of file var.\+h.
+
+
+
+References Msg\+Svc\+::\+F\+A\+T\+AL, and Msg\+Svc\+::msg\+Svc().
+
+
+\begin{DoxyCode}
+64 \{ \hyperlink{classvar_a5dfdc5180270038b686ad3013874a026}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a59c73cb29edfc9cdf35845e2b1301363}{MsgSvc::FATAL}   , msg, std::string(\textcolor{stringliteral}{"var"}) ); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classvar_af190a03a038835391edf1b1173e117ab}\label{classvar_af190a03a038835391edf1b1173e117ab}} 
+\index{var@{var}!fatal@{fatal}}
+\index{fatal@{fatal}!var@{var}}
+\subsubsection{\texorpdfstring{fatal()}{fatal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void var\+::fatal (\begin{DoxyParamCaption}\item[{std\+::string}]{msg,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 70 of file var.\+h.
+
+
+
+References Msg\+Svc\+::\+F\+A\+T\+AL, and Msg\+Svc\+::msg\+Svc().
+
+
+\begin{DoxyCode}
+70 \{ \hyperlink{classvar_a5dfdc5180270038b686ad3013874a026}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a59c73cb29edfc9cdf35845e2b1301363}{MsgSvc::FATAL}   , msg, name ); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classvar_a6ad63ffe8ea9495201a7b2a824547518}\label{classvar_a6ad63ffe8ea9495201a7b2a824547518}} 
+\index{var@{var}!info@{info}}
+\index{info@{info}!var@{var}}
+\subsubsection{\texorpdfstring{info()}{info()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void var\+::info (\begin{DoxyParamCaption}\item[{std\+::string}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 62 of file var.\+h.
+
+
+
+References Msg\+Svc\+::\+I\+N\+FO, and Msg\+Svc\+::msg\+Svc().
+
+
+\begin{DoxyCode}
+62 \{ \hyperlink{classvar_a5dfdc5180270038b686ad3013874a026}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{MsgSvc::INFO}    , msg, std::string(\textcolor{stringliteral}{"var"}) ); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classvar_a52f41c560b167041c7d4e17a42021d5c}\label{classvar_a52f41c560b167041c7d4e17a42021d5c}} 
+\index{var@{var}!info@{info}}
+\index{info@{info}!var@{var}}
+\subsubsection{\texorpdfstring{info()}{info()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void var\+::info (\begin{DoxyParamCaption}\item[{std\+::string}]{msg,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 68 of file var.\+h.
+
+
+
+References Msg\+Svc\+::\+I\+N\+FO, and Msg\+Svc\+::msg\+Svc().
+
+
+\begin{DoxyCode}
+68 \{ \hyperlink{classvar_a5dfdc5180270038b686ad3013874a026}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{MsgSvc::INFO}    , msg, name ); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classvar_af5c2865eb834ce2d22991a3250d278ba}\label{classvar_af5c2865eb834ce2d22991a3250d278ba}} 
+\index{var@{var}!vchar@{vchar}}
+\index{vchar@{vchar}!var@{var}}
+\subsubsection{\texorpdfstring{vchar()}{vchar()}}
+{\footnotesize\ttfamily char var\+::vchar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 40 of file var.\+h.
+
+
+
+References m\+\_\+char.
+
+
+\begin{DoxyCode}
+40 \{ \textcolor{keywordflow}{return} \hyperlink{classvar_afffb29be23233ae232502023719da1d3}{m\_char}; \} 
+\end{DoxyCode}
+\mbox{\Hypertarget{classvar_aabcdbcace1882ed0c6506deabf4eddcb}\label{classvar_aabcdbcace1882ed0c6506deabf4eddcb}} 
+\index{var@{var}!vdouble@{vdouble}}
+\index{vdouble@{vdouble}!var@{var}}
+\subsubsection{\texorpdfstring{vdouble()}{vdouble()}}
+{\footnotesize\ttfamily double var\+::vdouble (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 43 of file var.\+h.
+
+
+
+References m\+\_\+double.
+
+
+\begin{DoxyCode}
+43 \{ \textcolor{keywordflow}{return} \hyperlink{classvar_ad8590162a1dae61824b874c615cce311}{m\_double}; \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classvar_a1fe5529702a2697eb8cf69e8f80b0d86}\label{classvar_a1fe5529702a2697eb8cf69e8f80b0d86}} 
+\index{var@{var}!vector@{vector}}
+\index{vector@{vector}!var@{var}}
+\subsubsection{\texorpdfstring{vector()}{vector()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{classvar}{var} $>$ var\+::vector (\begin{DoxyParamCaption}\item[{const char $\ast$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Definition at line 74 of file var.\+cpp.
+
+
+
+Referenced by vstring().
+
+
+\begin{DoxyCode}
+74                                                   \{
+75   va\_list pa;
+76   \hyperlink{var_8h_a2a1c35ad624b5ab1fedf9a5719b81b4e}{vars} varlist;
+77   va\_start(pa, format);
+78 \textcolor{comment}{/*  while (*format != '\(\backslash\)0') \{}
+79 \textcolor{comment}{    if (*format=='%') \{}
+80 \textcolor{comment}{      format++;}
+81 \textcolor{comment}{      switch (*format) \{}
+82 \textcolor{comment}{      case 'c' : // char }
+83 \textcolor{comment}{        varlist.push\_back( var((char)(va\_arg(pa,char))));}
+84 \textcolor{comment}{        break;}
+85 \textcolor{comment}{      case 'i' : // integer  }
+86 \textcolor{comment}{        varlist.push\_back( var((int)(va\_arg(pa,int))));}
+87 \textcolor{comment}{        break;}
+88 \textcolor{comment}{      case 'f' : // float }
+89 \textcolor{comment}{        varlist.push\_back( var((float)(va\_arg(pa,float))));}
+90 \textcolor{comment}{        break;}
+91 \textcolor{comment}{      case 'd' : // double }
+92 \textcolor{comment}{        varlist.push\_back( var((double)(va\_arg(pa,double))));}
+93 \textcolor{comment}{        break;}
+94 \textcolor{comment}{      case 's' : // string}
+95 \textcolor{comment}{        varlist.push\_back( var(std::string((va\_arg(pa,char*)))));}
+96 \textcolor{comment}{        break;}
+97 \textcolor{comment}{      default:}
+98 \textcolor{comment}{    std::cout<<"hello"<<std::endl;}
+99 \textcolor{comment}{    // nothing}
+100 \textcolor{comment}{//        application()->warning("Could not figure out the type of the variable
+       ("+std::string(format)+").","var::vector");}
+101 \textcolor{comment}{      \} // end switch }
+102 \textcolor{comment}{      ++format;}
+103 \textcolor{comment}{    \}}
+104 \textcolor{comment}{  \}*/}
+105   va\_end(pa);
+106   \textcolor{keywordflow}{return} varlist;
+107 \} 
+\end{DoxyCode}
+\mbox{\Hypertarget{classvar_a3e079680ce51addea659b23d303ceedc}\label{classvar_a3e079680ce51addea659b23d303ceedc}} 
+\index{var@{var}!verbose@{verbose}}
+\index{verbose@{verbose}!var@{var}}
+\subsubsection{\texorpdfstring{verbose()}{verbose()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void var\+::verbose (\begin{DoxyParamCaption}\item[{std\+::string}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 60 of file var.\+h.
+
+
+
+References Msg\+Svc\+::msg\+Svc(), and Msg\+Svc\+::\+V\+E\+R\+B\+O\+SE.
+
+
+\begin{DoxyCode}
+60 \{ \hyperlink{classvar_a5dfdc5180270038b686ad3013874a026}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926af655256b06494ade5ba830abe5401ec9}{MsgSvc::VERBOSE} , msg, std::string(\textcolor{stringliteral}{"var"}) ); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classvar_a381db77de9128014c9ddb5cfc7793f65}\label{classvar_a381db77de9128014c9ddb5cfc7793f65}} 
+\index{var@{var}!verbose@{verbose}}
+\index{verbose@{verbose}!var@{var}}
+\subsubsection{\texorpdfstring{verbose()}{verbose()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void var\+::verbose (\begin{DoxyParamCaption}\item[{std\+::string}]{msg,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 66 of file var.\+h.
+
+
+
+References Msg\+Svc\+::msg\+Svc(), and Msg\+Svc\+::\+V\+E\+R\+B\+O\+SE.
+
+
+\begin{DoxyCode}
+66 \{ \hyperlink{classvar_a5dfdc5180270038b686ad3013874a026}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926af655256b06494ade5ba830abe5401ec9}{MsgSvc::VERBOSE} , msg, name ); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classvar_ac811c23f3fcb941746c1dd419e68b501}\label{classvar_ac811c23f3fcb941746c1dd419e68b501}} 
+\index{var@{var}!vfloat@{vfloat}}
+\index{vfloat@{vfloat}!var@{var}}
+\subsubsection{\texorpdfstring{vfloat()}{vfloat()}}
+{\footnotesize\ttfamily float var\+::vfloat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 42 of file var.\+h.
+
+
+
+References m\+\_\+float.
+
+
+\begin{DoxyCode}
+42 \{ \textcolor{keywordflow}{return} \hyperlink{classvar_adb803c54ed2edb812a77241d511385e6}{m\_float}; \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classvar_a84535a30ae85f19acb935fcc98a03abf}\label{classvar_a84535a30ae85f19acb935fcc98a03abf}} 
+\index{var@{var}!vint@{vint}}
+\index{vint@{vint}!var@{var}}
+\subsubsection{\texorpdfstring{vint()}{vint()}}
+{\footnotesize\ttfamily int var\+::vint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 41 of file var.\+h.
+
+
+
+References m\+\_\+int.
+
+
+\begin{DoxyCode}
+41 \{ \textcolor{keywordflow}{return} \hyperlink{classvar_a2796c70baa395a5e2c5457df760249d7}{m\_int}; \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classvar_ada169cb1305db45a1de31071ce5033e2}\label{classvar_ada169cb1305db45a1de31071ce5033e2}} 
+\index{var@{var}!vstring@{vstring}}
+\index{vstring@{vstring}!var@{var}}
+\subsubsection{\texorpdfstring{vstring()}{vstring()}}
+{\footnotesize\ttfamily std\+::string var\+::vstring (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 44 of file var.\+h.
+
+
+
+References m\+\_\+string, and vector().
+
+
+\begin{DoxyCode}
+44 \{ \textcolor{keywordflow}{return} \hyperlink{classvar_a81567a7f3af11ceee9a0624648e0e904}{m\_string}; \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classvar_a56b3d498264760e7b1212d204e6a49d4}\label{classvar_a56b3d498264760e7b1212d204e6a49d4}} 
+\index{var@{var}!warning@{warning}}
+\index{warning@{warning}!var@{var}}
+\subsubsection{\texorpdfstring{warning()}{warning()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void var\+::warning (\begin{DoxyParamCaption}\item[{std\+::string}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 63 of file var.\+h.
+
+
+
+References Msg\+Svc\+::msg\+Svc(), and Msg\+Svc\+::\+W\+A\+R\+N\+I\+NG.
+
+
+\begin{DoxyCode}
+63 \{ \hyperlink{classvar_a5dfdc5180270038b686ad3013874a026}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a7cefae88f2ba26b2b05b676a383c834b}{MsgSvc::WARNING} , msg, std::string(\textcolor{stringliteral}{"var"}) ); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classvar_af8e180a414b085d50d35ba585bf7717f}\label{classvar_af8e180a414b085d50d35ba585bf7717f}} 
+\index{var@{var}!warning@{warning}}
+\index{warning@{warning}!var@{var}}
+\subsubsection{\texorpdfstring{warning()}{warning()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void var\+::warning (\begin{DoxyParamCaption}\item[{std\+::string}]{msg,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 69 of file var.\+h.
+
+
+
+References Msg\+Svc\+::msg\+Svc(), and Msg\+Svc\+::\+W\+A\+R\+N\+I\+NG.
+
+
+\begin{DoxyCode}
+69 \{ \hyperlink{classvar_a5dfdc5180270038b686ad3013874a026}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a7cefae88f2ba26b2b05b676a383c834b}{MsgSvc::WARNING} , msg, name ); \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classvar_afffb29be23233ae232502023719da1d3}\label{classvar_afffb29be23233ae232502023719da1d3}} 
+\index{var@{var}!m\+\_\+char@{m\+\_\+char}}
+\index{m\+\_\+char@{m\+\_\+char}!var@{var}}
+\subsubsection{\texorpdfstring{m\+\_\+char}{m\_char}}
+{\footnotesize\ttfamily char var\+::m\+\_\+char\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 51 of file var.\+h.
+
+
+
+Referenced by var(), and vchar().
+
+\mbox{\Hypertarget{classvar_ad8590162a1dae61824b874c615cce311}\label{classvar_ad8590162a1dae61824b874c615cce311}} 
+\index{var@{var}!m\+\_\+double@{m\+\_\+double}}
+\index{m\+\_\+double@{m\+\_\+double}!var@{var}}
+\subsubsection{\texorpdfstring{m\+\_\+double}{m\_double}}
+{\footnotesize\ttfamily double var\+::m\+\_\+double\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 55 of file var.\+h.
+
+
+
+Referenced by var(), and vdouble().
+
+\mbox{\Hypertarget{classvar_adb803c54ed2edb812a77241d511385e6}\label{classvar_adb803c54ed2edb812a77241d511385e6}} 
+\index{var@{var}!m\+\_\+float@{m\+\_\+float}}
+\index{m\+\_\+float@{m\+\_\+float}!var@{var}}
+\subsubsection{\texorpdfstring{m\+\_\+float}{m\_float}}
+{\footnotesize\ttfamily float var\+::m\+\_\+float\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 54 of file var.\+h.
+
+
+
+Referenced by var(), and vfloat().
+
+\mbox{\Hypertarget{classvar_a2796c70baa395a5e2c5457df760249d7}\label{classvar_a2796c70baa395a5e2c5457df760249d7}} 
+\index{var@{var}!m\+\_\+int@{m\+\_\+int}}
+\index{m\+\_\+int@{m\+\_\+int}!var@{var}}
+\subsubsection{\texorpdfstring{m\+\_\+int}{m\_int}}
+{\footnotesize\ttfamily int var\+::m\+\_\+int\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 53 of file var.\+h.
+
+
+
+Referenced by var(), and vint().
+
+\mbox{\Hypertarget{classvar_a5dfdc5180270038b686ad3013874a026}\label{classvar_a5dfdc5180270038b686ad3013874a026}} 
+\index{var@{var}!m\+\_\+log@{m\+\_\+log}}
+\index{m\+\_\+log@{m\+\_\+log}!var@{var}}
+\subsubsection{\texorpdfstring{m\+\_\+log}{m\_log}}
+{\footnotesize\ttfamily \hyperlink{classMsgSvc}{Msg\+Svc} var\+::m\+\_\+log\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 58 of file var.\+h.
+
+\mbox{\Hypertarget{classvar_a81567a7f3af11ceee9a0624648e0e904}\label{classvar_a81567a7f3af11ceee9a0624648e0e904}} 
+\index{var@{var}!m\+\_\+string@{m\+\_\+string}}
+\index{m\+\_\+string@{m\+\_\+string}!var@{var}}
+\subsubsection{\texorpdfstring{m\+\_\+string}{m\_string}}
+{\footnotesize\ttfamily std\+::string var\+::m\+\_\+string\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 56 of file var.\+h.
+
+
+
+Referenced by var(), and vstring().
+
+\mbox{\Hypertarget{classvar_afd0bde61955d8a7541d3dcedc22ec2ad}\label{classvar_afd0bde61955d8a7541d3dcedc22ec2ad}} 
+\index{var@{var}!m\+\_\+type@{m\+\_\+type}}
+\index{m\+\_\+type@{m\+\_\+type}!var@{var}}
+\subsubsection{\texorpdfstring{m\+\_\+type}{m\_type}}
+{\footnotesize\ttfamily int var\+::m\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 52 of file var.\+h.
+
+
+
+Referenced by var().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/inc/\hyperlink{var_8h}{var.\+h}\item 
+/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/src/\hyperlink{var_8cpp}{var.\+cpp}\end{DoxyCompactItemize}

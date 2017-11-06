@@ -1,0 +1,80 @@
+\hypertarget{namespaceA3PE__BitFlip}{}\section{A3\+P\+E\+\_\+\+Bit\+Flip Namespace Reference}
+\label{namespaceA3PE__BitFlip}\index{A3\+P\+E\+\_\+\+Bit\+Flip@{A3\+P\+E\+\_\+\+Bit\+Flip}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceA3PE__BitFlip_a29b0fbbb25f0545849d21cbc206a605a}{Edit} (cat, obj, panel, path)
+\item 
+def \hyperlink{namespaceA3PE__BitFlip_a92d3bf7ea8a6d5c0a9a07bd018abc40a}{Plot} (cat, obj, parent, \hyperlink{classObject_af99145335cc61ff6e2798ea17db009d2}{id})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespaceA3PE__BitFlip_a29b0fbbb25f0545849d21cbc206a605a}\label{namespaceA3PE__BitFlip_a29b0fbbb25f0545849d21cbc206a605a}} 
+\index{A3\+P\+E\+\_\+\+Bit\+Flip@{A3\+P\+E\+\_\+\+Bit\+Flip}!Edit@{Edit}}
+\index{Edit@{Edit}!A3\+P\+E\+\_\+\+Bit\+Flip@{A3\+P\+E\+\_\+\+Bit\+Flip}}
+\subsubsection{\texorpdfstring{Edit()}{Edit()}}
+{\footnotesize\ttfamily def A3\+P\+E\+\_\+\+Bit\+Flip.\+Edit (\begin{DoxyParamCaption}\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{panel,  }\item[{}]{path }\end{DoxyParamCaption})}
+
+
+
+Definition at line 20 of file A3\+P\+E\+\_\+\+Bit\+Flip.\+py.
+
+
+\begin{DoxyCode}
+20 \textcolor{keyword}{def }\hyperlink{namespaceA3PE__BitFlip_a29b0fbbb25f0545849d21cbc206a605a}{Edit} (cat, obj, panel, path):
+21     \textcolor{keywordflow}{return} \hyperlink{classA3PE__BitFlip}{A3PE\_BitFlip}(cat, obj, panel, path)
+22 
+23 \textcolor{comment}{#----------------------------------------------------------------------}
+24 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceA3PE__BitFlip_a92d3bf7ea8a6d5c0a9a07bd018abc40a}\label{namespaceA3PE__BitFlip_a92d3bf7ea8a6d5c0a9a07bd018abc40a}} 
+\index{A3\+P\+E\+\_\+\+Bit\+Flip@{A3\+P\+E\+\_\+\+Bit\+Flip}!Plot@{Plot}}
+\index{Plot@{Plot}!A3\+P\+E\+\_\+\+Bit\+Flip@{A3\+P\+E\+\_\+\+Bit\+Flip}}
+\subsubsection{\texorpdfstring{Plot()}{Plot()}}
+{\footnotesize\ttfamily def A3\+P\+E\+\_\+\+Bit\+Flip.\+Plot (\begin{DoxyParamCaption}\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{parent,  }\item[{}]{id }\end{DoxyParamCaption})}
+
+
+
+Definition at line 25 of file A3\+P\+E\+\_\+\+Bit\+Flip.\+py.
+
+
+
+References plotter.\+h1d(), and Object.\+title().
+
+
+\begin{DoxyCode}
+25 \textcolor{keyword}{def }\hyperlink{namespaceA3PE__BitFlip_a92d3bf7ea8a6d5c0a9a07bd018abc40a}{Plot}(cat, obj, parent, id):
+26     \textcolor{keyword}{from} mpl\_toolkits.mplot3d \textcolor{keyword}{import} Axes3D
+27     \textcolor{keyword}{from} matplotlib \textcolor{keyword}{import} cm
+28     \textcolor{keyword}{import} matplotlib \textcolor{keyword}{as} mpl
+29     \textcolor{keyword}{import} matplotlib.pyplot \textcolor{keyword}{as} plt
+30     \textcolor{keyword}{import} numpy \textcolor{keyword}{as} np
+31 
+32     plot=\hyperlink{namespaceplotter}{plotter}(parent,id)
+33     fig=plot.current()
+34     fig.suptitle(\textcolor{stringliteral}{'A3PE Bit Flip - Results'}, fontsize=14, fontweight=\textcolor{stringliteral}{'bold'})
+35 
+36     \textcolor{comment}{# plot histo root}
+37     p1=fig.add\_subplot(3,1,1)
+38     h1=\hyperlink{namespaceplotter_a5d9521541ff0c72bf439078efacf2f42}{h1d}(p1, obj.hist1d(0), facecolor=\textcolor{stringliteral}{'green'},linestyle=\textcolor{stringliteral}{'dashed'})
+39     p1.set\_title(obj.hist1d(0).title())
+40     p1.grid(\textcolor{keyword}{True})
+41 
+42     \textcolor{comment}{# plot histo root}
+43     p2=fig.add\_subplot(3,1,2)
+44     h2=obj.hist1d(1)
+45     \textcolor{keywordflow}{print} h2.xbins()
+46     p2.plot(h2.xbins(),h2.bins(),\textcolor{stringliteral}{'ro'},color=\textcolor{stringliteral}{'red'})
+47     p2.set\_title(obj.hist1d(1).title())
+48     p2.grid(\textcolor{keyword}{False})
+49 
+50     \textcolor{comment}{# plot histo root}
+51     p3=fig.add\_subplot(3,1,3)
+52     h3=\hyperlink{namespaceplotter_a5d9521541ff0c72bf439078efacf2f42}{h1d}(p3, obj.hist1d(2))
+53     p3.set\_title(obj.hist1d(2).title())
+54     p3.grid(\textcolor{keyword}{True})
+55 
+56     \textcolor{comment}{# return the plot that must be plotted}
+57     \textcolor{keywordflow}{return} plot
+58 \end{DoxyCode}

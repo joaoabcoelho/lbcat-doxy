@@ -1,0 +1,82 @@
+\hypertarget{CatSpecs_2src_2Python_8cpp}{}\section{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Specs/src/\+Python.cpp File Reference}
+\label{CatSpecs_2src_2Python_8cpp}\index{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Specs/src/\+Python.\+cpp@{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Specs/src/\+Python.\+cpp}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include \char`\"{}Element.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Specs\+Interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Specs\+Parallel\+Bus.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Specs\+I2c.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Specs\+Bus.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Specs\+Master.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Specs\+Slave.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$boost/python.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/python/suite/indexing/vector\+\_\+indexing\+\_\+suite.\+hpp$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{CatSpecs_2src_2Python_8cpp_ac638738161d138927158670707ec9502}{B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+LE} (lib\+Cat\+Specs)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{CatSpecs_2src_2Python_8cpp_ac638738161d138927158670707ec9502}\label{CatSpecs_2src_2Python_8cpp_ac638738161d138927158670707ec9502}} 
+\index{Cat\+Specs/src/\+Python.\+cpp@{Cat\+Specs/src/\+Python.\+cpp}!B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+LE@{B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+LE}}
+\index{B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+LE@{B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+LE}!Cat\+Specs/src/\+Python.\+cpp@{Cat\+Specs/src/\+Python.\+cpp}}
+\subsubsection{\texorpdfstring{B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E()}{BOOST\_PYTHON\_MODULE()}}
+{\footnotesize\ttfamily B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+LE (\begin{DoxyParamCaption}\item[{lib\+Cat\+Specs}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 21 of file Python.\+cpp.
+
+
+
+References Specs\+Slave\+::add\+I2c(), Specs\+Interface\+::address(), Specs\+Slave\+::detect(), Specs\+Master\+::help(), Specs\+Interface\+::help(), Specs\+Slave\+::init(), Specs\+Master\+::init(), Specs\+Interface\+::init(), Specs\+Master\+::master\+Dev\+I\+D(), Specs\+Interface\+::output\+Select(), Specs\+Master\+::pci\+Dev\+I\+D(), Specs\+Master\+::reset(), Specs\+Interface\+::reset(), Specs\+Slave\+::reset\+Internal(), Specs\+Slave\+::set\+Address(), Specs\+Interface\+::set\+Address(), Specs\+Master\+::set\+Master\+Dev\+I\+D(), Specs\+Interface\+::set\+Output\+Select(), Specs\+Master\+::set\+Pci\+Dev\+I\+D(), Specs\+Master\+::set\+Speed(), Specs\+Interface\+::specs\+Master(), Specs\+Interface\+::specs\+Slave(), Specs\+Master\+::speed(), Specs\+Master\+::update(), and Specs\+Interface\+::update().
+
+
+\begin{DoxyCode}
+22 \{
+23   class\_<SpecsMaster, bases <Element> >(\textcolor{stringliteral}{"SpecsMaster"})
+24     .def(\textcolor{stringliteral}{"setPciDevID"},&\hyperlink{classSpecsMaster_a3c55e5652286c35baa41fccd240c8cb5}{SpecsMaster::setPciDevID})
+25     .def(\textcolor{stringliteral}{"pciDevID"},   &\hyperlink{classSpecsMaster_af4c88071a81c706e2a30ec7786aea707}{SpecsMaster::pciDevID})
+26     .def(\textcolor{stringliteral}{"setMasterDevID"},&\hyperlink{classSpecsMaster_acb635bc974bb3f4528e769251c3b30a9}{SpecsMaster::setMasterDevID})
+27     .def(\textcolor{stringliteral}{"masterDevID"},&\hyperlink{classSpecsMaster_a7bbbc2994a3e17bb91a0651eaa241842}{SpecsMaster::masterDevID})
+28     .def(\textcolor{stringliteral}{"setSpeed"},&\hyperlink{classSpecsMaster_a25c7a250f74f4d1148240f3ab0df160b}{SpecsMaster::setSpeed})
+29     .def(\textcolor{stringliteral}{"speed"},&\hyperlink{classSpecsMaster_ad50f852711a25ab247b6bc0603db498d}{SpecsMaster::speed})
+30     .def(\textcolor{stringliteral}{"help"},&\hyperlink{classSpecsMaster_ad96a7533c46f01c0f67f330f6fdbf94a}{SpecsMaster::help})
+31     .def(\textcolor{stringliteral}{"init"},&\hyperlink{classSpecsMaster_a121457b9c5dff70caf24349c51d37cf5}{SpecsMaster::init})
+32     .def(\textcolor{stringliteral}{"reset"},&\hyperlink{classSpecsMaster_a0cbd251edefae5f154ec21b1b944d153}{SpecsMaster::reset})
+33     .def(\textcolor{stringliteral}{"update"},&\hyperlink{classSpecsMaster_abf060966e8205396e326dbbe6cfcc9e8}{SpecsMaster::update})
+34     ;
+35 
+36   class\_<SpecsInterface, bases <Interface> >(\textcolor{stringliteral}{"SpecsInterface"})
+37     .def(\textcolor{stringliteral}{"help"},  &\hyperlink{classSpecsInterface_a24bf2b5e2da6c675ba5de3b226481a73}{SpecsInterface::help})
+38     .def(\textcolor{stringliteral}{"init"},  &\hyperlink{classSpecsInterface_a99ec05cbe0d15892afbec6feaf33c89b}{SpecsInterface::init})
+39     .def(\textcolor{stringliteral}{"reset"}, &\hyperlink{classSpecsInterface_ade474eeef32f10c72926c9ba7d23f9a8}{SpecsInterface::reset})
+40     .def(\textcolor{stringliteral}{"update"},&\hyperlink{classSpecsInterface_af17ca5c8d48bea81f84e503b2994f5da}{SpecsInterface::update})
+41     .def(\textcolor{stringliteral}{"setAddress"},&\hyperlink{classSpecsInterface_aa92dff67cc80487ee3109b6aee2fa007}{SpecsInterface::setAddress})
+42     .def(\textcolor{stringliteral}{"address"},   &\hyperlink{classSpecsInterface_a0fa039a15b842a5ba783ce825b9915d8}{SpecsInterface::address})
+43     .def(\textcolor{stringliteral}{"setOutputSelect"},&\hyperlink{classSpecsInterface_a1907d360f2bda367cfb1d39e379c6493}{SpecsInterface::setOutputSelect})
+44     .def(\textcolor{stringliteral}{"outputSelect"},   &\hyperlink{classSpecsInterface_ab291ed03f4c2f0143e14c26ad5f648dd}{SpecsInterface::outputSelect})
+45     .def(\textcolor{stringliteral}{"specsMaster"},   &\hyperlink{classSpecsInterface_a3d497c965fb6ec06b49a54b7901a22b2}{SpecsInterface::specsMaster},
+46          return\_value\_policy<reference\_existing\_object>())
+47     .def(\textcolor{stringliteral}{"specsSlave"},   &\hyperlink{classSpecsInterface_a13cf39bddfa8ba21d6e6aa78e78f0e4f}{SpecsInterface::specsSlave}
+48          ,return\_value\_policy<reference\_existing\_object>())
+49     ;
+50   
+51   \textcolor{comment}{//  class\_<SpecsParallelBus, bases <SpecsInterface> >("SpecsParallelBus")}
+52   \textcolor{comment}{//    ;}
+53 
+54     \textcolor{comment}{//  class\_<SpecsI2c, bases <SpecsInterface> >("SpecsI2c")}
+55   \textcolor{comment}{//    ;}
+56 
+57   class\_<SpecsSlave, bases <SpecsInterface> >(\textcolor{stringliteral}{"SpecsSlave"})
+58     .def(\textcolor{stringliteral}{"setAddress"},&\hyperlink{classSpecsSlave_a1e5917c1f323cd7b4aabe4940c6baf12}{SpecsSlave::setAddress})
+59     .def(\textcolor{stringliteral}{"addI2c"},&\hyperlink{classSpecsSlave_af462b4d6e716ceb4bd454ad835938737}{SpecsSlave::addI2c})
+60     .def(\textcolor{stringliteral}{"detect"},&\hyperlink{classSpecsSlave_aa1411ca849bda04215518b08535185e2}{SpecsSlave::detect})
+61     .def(\textcolor{stringliteral}{"init"},&\hyperlink{classSpecsSlave_ab34b5117373a334027d3a5cf33287bb6}{SpecsSlave::init})
+62     .def(\textcolor{stringliteral}{"resetInternal"},&\hyperlink{classSpecsSlave_aa4f2493eabe522bb6651abcd67a6a690}{SpecsSlave::resetInternal})
+63     ;  
+64 \}
+\end{DoxyCode}

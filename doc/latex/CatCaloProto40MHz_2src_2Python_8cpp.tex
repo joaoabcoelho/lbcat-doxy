@@ -1,0 +1,232 @@
+\hypertarget{CatCaloProto40MHz_2src_2Python_8cpp}{}\section{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Calo\+Proto40\+M\+Hz/src/\+Python.cpp File Reference}
+\label{CatCaloProto40MHz_2src_2Python_8cpp}\index{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Calo\+Proto40\+M\+Hz/src/\+Python.\+cpp@{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Calo\+Proto40\+M\+Hz/src/\+Python.\+cpp}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include \char`\"{}Processus.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Element.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}A3\+P\+E.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Proto40\+M\+Hz\+\_\+v1.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Acquisition.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}A3\+P\+E\+\_\+\+Bit\+Flip.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Usb\+F\+T\+Interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Register\+Test.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Usb\+F\+T\+Interface\+Test.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$boost/python.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/python/suite/indexing/vector\+\_\+indexing\+\_\+suite.\+hpp$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{CatCaloProto40MHz_2src_2Python_8cpp_af793744b9236fc3e951260d9965db307}{B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+LE} (lib\+Cat\+Calo\+Proto40\+M\+Hz)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{CatCaloProto40MHz_2src_2Python_8cpp_af793744b9236fc3e951260d9965db307}\label{CatCaloProto40MHz_2src_2Python_8cpp_af793744b9236fc3e951260d9965db307}} 
+\index{Cat\+Calo\+Proto40\+M\+Hz/src/\+Python.\+cpp@{Cat\+Calo\+Proto40\+M\+Hz/src/\+Python.\+cpp}!B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+LE@{B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+LE}}
+\index{B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+LE@{B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+LE}!Cat\+Calo\+Proto40\+M\+Hz/src/\+Python.\+cpp@{Cat\+Calo\+Proto40\+M\+Hz/src/\+Python.\+cpp}}
+\subsubsection{\texorpdfstring{B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E()}{BOOST\_PYTHON\_MODULE()}}
+{\footnotesize\ttfamily B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+LE (\begin{DoxyParamCaption}\item[{lib\+Cat\+Calo\+Proto40\+M\+Hz}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 22 of file Python.\+cpp.
+
+
+
+References Proto40\+M\+Hz\+\_\+v1\+::a3pe(), A3\+P\+E\+::acq\+Reg(), A3\+P\+E\+::acquisition(), Acquisition\+::channels(), A3\+P\+E\+::clock\+Division(), A3\+P\+E\+::clock\+Division\+Reg(), Usb\+F\+T\+Interface\+::close(), A3\+P\+E\+::ctrl\+Reg(), A3\+P\+E\+::data\+Ready(), Acquisition\+::dead\+Time(), Acquisition\+::depth(), Usb\+F\+T\+Interface\+::device\+Desc(), A3\+P\+E\+::dump\+From\+A\+X(), A3\+P\+E\+::dump\+Pattern(), A3\+P\+E\+::dump\+Storage(), A3\+P\+E\+::dump\+To\+A\+X(), A3\+P\+E\+::dump\+Trigger(), A3\+P\+E\+::enable\+A\+D\+C(), A3\+P\+E\+::enable\+Storage(), Acquisition\+::execute(), A3\+P\+E\+\_\+\+Bit\+Flip\+::execute(), A3\+P\+E\+::fifo\+Depth(), A3\+P\+E\+::fifo\+Latency(), A3\+P\+E\+\_\+\+Bit\+Flip\+::file(), Acquisition\+::finalize(), A3\+P\+E\+\_\+\+Bit\+Flip\+::finalize(), A3\+P\+E\+::from\+A\+X\+Ram(), A3\+P\+E\+::from\+A\+X\+Reg(), Usb\+F\+T\+Interface\+::init(), Acquisition\+::initialize(), A3\+P\+E\+\_\+\+Bit\+Flip\+::initialize(), A3\+P\+E\+::internal\+A\+X\+Sequence(), A3\+P\+E\+::latency\+A\+X(), Usb\+F\+T\+Interface\+::latency\+Timer(), A3\+P\+E\+::length\+A\+X(), A3\+P\+E\+::load\+From\+A\+X(), A3\+P\+E\+::load\+Pattern(), A3\+P\+E\+::load\+Storage(), A3\+P\+E\+::load\+To\+A\+X(), A3\+P\+E\+::load\+Trigger(), Acquisition\+::max\+Range(), Usb\+F\+T\+Interface\+Test\+::mean(), Acquisition\+::min\+Range(), Acquisition\+::n\+Bins(), A3\+P\+E\+::n\+Trigger(), A3\+P\+E\+::pattern\+Ram(), Proto40\+M\+Hz\+\_\+v1\+::phaser0(), Proto40\+M\+Hz\+\_\+v1\+::phaser1(), Proto40\+M\+Hz\+\_\+v1\+::phaser2(), A3\+P\+E\+::pipeline(), Usb\+F\+T\+Interface\+::read(), A3\+P\+E\+::read\+Pattern\+Fifo\+Usb(), A3\+P\+E\+::read\+To\+A\+X\+Ram\+Usb(), A3\+P\+E\+::read\+Trigger\+Fifo\+Usb(), A3\+P\+E\+::reset(), A3\+P\+E\+::reset\+F\+E(), A3\+P\+E\+::reset\+From\+A\+X\+Ram(), A3\+P\+E\+::reset\+Latency\+Counter(), A3\+P\+E\+::reset\+Pattern\+Fifo(), A3\+P\+E\+::reset\+Reg(), A3\+P\+E\+::reset\+Sequence\+From\+To\+A\+X(), A3\+P\+E\+::reset\+S\+P\+I(), A3\+P\+E\+::reset\+Storage\+Fifo(), A3\+P\+E\+::reset\+To\+A\+X\+Ram(), A3\+P\+E\+::reset\+Trigger\+Fifo(), A3\+P\+E\+::reset\+Usb\+Phasers(), Usb\+F\+T\+Interface\+::rx\+Buffer(), Usb\+F\+T\+Interface\+::rx\+Time\+Out(), Acquisition\+::sample(), Usb\+F\+T\+Interface\+::serial\+Num(), A3\+P\+E\+::set\+Add\+From\+A\+X\+Ram(), Usb\+F\+T\+Interface\+Test\+::set\+Address(), A3\+P\+E\+::set\+Add\+To\+A\+X\+Ram(), Usb\+F\+T\+Interface\+::set\+Buffer(), Acquisition\+::set\+Channels(), A3\+P\+E\+::set\+Clock\+Division(), Acquisition\+::set\+Dead\+Time(), Acquisition\+::set\+Depth(), Usb\+F\+T\+Interface\+::set\+Device\+Desc(), A3\+P\+E\+::set\+Enable\+A\+D\+C(), A3\+P\+E\+::set\+Fifo\+Depth(), A3\+P\+E\+::set\+Fifo\+Latency(), A3\+P\+E\+\_\+\+Bit\+Flip\+::set\+File(), A3\+P\+E\+::set\+Internal\+A\+X\+Sequence(), A3\+P\+E\+::set\+Latency\+A\+X(), Usb\+F\+T\+Interface\+::set\+Latency\+Timer(), A3\+P\+E\+::set\+Length\+A\+X(), Acquisition\+::set\+Max\+Range(), Acquisition\+::set\+Min\+Range(), Acquisition\+::set\+N\+Bins(), A3\+P\+E\+::set\+N\+Trigger(), Usb\+F\+T\+Interface\+Test\+::set\+Param(), A3\+P\+E\+::set\+Pipeline(), A3\+P\+E\+::set\+Read\+Pattern\+Fifo\+Usb(), A3\+P\+E\+::set\+Read\+To\+A\+X\+Ram\+Usb(), A3\+P\+E\+::set\+Read\+Trigger\+Fifo\+Usb(), Acquisition\+::set\+Sample(), Usb\+F\+T\+Interface\+::set\+Serial\+Num(), A3\+P\+E\+::set\+Software\+Trigger(), Acquisition\+::set\+Store\+Sample(), Acquisition\+::set\+Store\+Tree(), Acquisition\+::set\+Store\+Trend(), Usb\+F\+T\+Interface\+::set\+Time\+Out(), Acquisition\+::set\+Trigger(), A3\+P\+E\+::set\+Trigger\+Delay(), A3\+P\+E\+::set\+Trigger\+Rate(), A3\+P\+E\+::setup\+Reg(), Usb\+F\+T\+Interface\+::set\+Word\+Size(), A3\+P\+E\+::set\+Write\+From\+A\+X\+Ram\+Usb(), A3\+P\+E\+::set\+Write\+Storage\+Fifo\+Usb(), Usb\+F\+T\+Interface\+Test\+::sigma(), A3\+P\+E\+::software\+Trigger(), A3\+P\+E\+::spare3\+Reg(), A3\+P\+E\+::start\+Sequence\+A\+X(), A3\+P\+E\+::status\+Reg(), A3\+P\+E\+::storage\+Ram(), Acquisition\+::store\+Sample(), Acquisition\+::store\+Tree(), Acquisition\+::store\+Trend(), A3\+P\+E\+::test\+Ram(), A3\+P\+E\+::to\+A\+X\+Ram(), A3\+P\+E\+::to\+A\+X\+Reg(), Acquisition\+::trigger(), A3\+P\+E\+::trigger(), A3\+P\+E\+::trigger\+Delay(), A3\+P\+E\+::trigger\+Ram(), A3\+P\+E\+::trigger\+Rate(), A3\+P\+E\+::trigger\+Reg(), Usb\+F\+T\+Interface\+::tx\+Buffer(), Usb\+F\+T\+Interface\+::tx\+Time\+Out(), Proto40\+M\+Hz\+\_\+v1\+::usb(), Usb\+F\+T\+Interface\+::word\+Size(), Usb\+F\+T\+Interface\+::write(), A3\+P\+E\+::write\+From\+A\+X\+Ram\+Usb(), A3\+P\+E\+::write\+Length\+Fifo\+Reg(), A3\+P\+E\+::write\+Storage\+Fifo\+Usb(), Usb\+F\+T\+Interface\+::\+W\+S\+\_\+\+Byte, Usb\+F\+T\+Interface\+::\+W\+S\+\_\+\+D\+Word, and Usb\+F\+T\+Interface\+::\+W\+S\+\_\+\+Word.
+
+
+\begin{DoxyCode}
+23 \{
+24   class\_<A3PE, bases <Element> >(\textcolor{stringliteral}{"A3PE"})
+25     .def(\textcolor{stringliteral}{"ctrlReg"}    ,&\hyperlink{classA3PE_ae5fc5dac92af2b34a41be388586647be}{A3PE::ctrlReg},return\_value\_policy<reference\_existing\_object>())
+26     .def(\textcolor{stringliteral}{"resetReg"}    ,&\hyperlink{classA3PE_afd34bfbfd92838717c7cdec856b2a0b2}{A3PE::resetReg},return\_value\_policy<reference\_existing\_object>())
+27     .def(\textcolor{stringliteral}{"setupReg"}    ,&\hyperlink{classA3PE_a94d96383e441153ed01e82cc12d2f593}{A3PE::setupReg},return\_value\_policy<reference\_existing\_object>())
+28     .def(\textcolor{stringliteral}{"statusReg"}    ,&\hyperlink{classA3PE_af260fc8bce78935b7bad57c987574683}{A3PE::statusReg},return\_value\_policy<reference\_existing\_object>())
+29     .def(\textcolor{stringliteral}{"acqReg"}    ,&\hyperlink{classA3PE_aca56dadafd70e670e75569ee03d91651}{A3PE::acqReg},return\_value\_policy<reference\_existing\_object>())
+30     .def(\textcolor{stringliteral}{"latencyReg"}    ,&\hyperlink{classA3PE_aca56dadafd70e670e75569ee03d91651}{A3PE::acqReg},return\_value\_policy<reference\_existing\_object>())
+31     .def(\textcolor{stringliteral}{"writeLengthFifoReg"}    ,&\hyperlink{classA3PE_a3b75531731fc939206cce076f7ac9f9a}{A3PE::writeLengthFifoReg},
+      return\_value\_policy<reference\_existing\_object>())
+32     .def(\textcolor{stringliteral}{"clockDivisionReg"}  ,&\hyperlink{classA3PE_a10cf30ff852d7580ba94dbee0c48e0d5}{A3PE::clockDivisionReg},
+      return\_value\_policy<reference\_existing\_object>())
+33     .def(\textcolor{stringliteral}{"triggerReg"}  ,&\hyperlink{classA3PE_a4bf922f391fee6753fb0d53e133603b7}{A3PE::triggerReg},return\_value\_policy<reference\_existing\_object>())
+34     .def(\textcolor{stringliteral}{"toAXReg"}  ,&\hyperlink{classA3PE_a43b0006fafa3aeae353abb2ac30e872c}{A3PE::toAXReg},return\_value\_policy<reference\_existing\_object>())
+35     .def(\textcolor{stringliteral}{"fromAXReg"}  ,&\hyperlink{classA3PE_a0b2fabe7e7941f33de210d9385b7afce}{A3PE::fromAXReg},return\_value\_policy<reference\_existing\_object>())
+36     .def(\textcolor{stringliteral}{"spare3Reg"}  ,&\hyperlink{classA3PE_a979a9ac462eb55e611f6de4e94bad18e}{A3PE::spare3Reg},return\_value\_policy<reference\_existing\_object>())
+37     .def(\textcolor{stringliteral}{"storageRam"}   ,&\hyperlink{classA3PE_af241373059bad4a3c376ab2ac98a7b29}{A3PE::storageRam},return\_value\_policy<reference\_existing\_object>()
+      )
+38     .def(\textcolor{stringliteral}{"patternRam"}   ,&\hyperlink{classA3PE_a94ef54086baa29f7f6638c13d8906e56}{A3PE::patternRam},return\_value\_policy<reference\_existing\_object>()
+      )
+39     .def(\textcolor{stringliteral}{"triggerRam"}   ,&\hyperlink{classA3PE_aad0f7ac467db22e5608ae6b0957665a1}{A3PE::triggerRam},return\_value\_policy<reference\_existing\_object>()
+      )
+40     .def(\textcolor{stringliteral}{"toAXRam"}      ,&\hyperlink{classA3PE_a16b16ac12705b9dd93d70fa172deb584}{A3PE::toAXRam},return\_value\_policy<reference\_existing\_object>())
+41     .def(\textcolor{stringliteral}{"fromAXRam"}    ,&\hyperlink{classA3PE_a7c9026a74c1954b2d250be05fbc1c8c5}{A3PE::fromAXRam},return\_value\_policy<reference\_existing\_object>())
+42     .def(\textcolor{stringliteral}{"testRam"}    ,&\hyperlink{classA3PE_a9327d0bd2efb5baa7c6b7de27bbc5997}{A3PE::testRam},return\_value\_policy<reference\_existing\_object>())
+43     .def(\textcolor{stringliteral}{"reset"}    ,&\hyperlink{classA3PE_a449775588222d544aeeaab190d553652}{A3PE::reset})
+44     .def(\textcolor{stringliteral}{"resetStorageFifo"}             ,&\hyperlink{classA3PE_a8e7074703227b118aa9230258f22b44c}{A3PE::resetStorageFifo})
+45     .def(\textcolor{stringliteral}{"resetTriggerFifo"}             ,&\hyperlink{classA3PE_ac81388bd2988192cf54034b245f69891}{A3PE::resetTriggerFifo})
+46     .def(\textcolor{stringliteral}{"resetPatternFifo"}             ,&\hyperlink{classA3PE_a4e5b677dd2872428abf3d64ef7a769c1}{A3PE::resetPatternFifo})
+47     .def(\textcolor{stringliteral}{"resetFromAXRam"}               ,&\hyperlink{classA3PE_aa10639563d06c0d09f3c0725710ff35d}{A3PE::resetFromAXRam})
+48     .def(\textcolor{stringliteral}{"resetToAXRam"}                 ,&\hyperlink{classA3PE_a31f72fac5a0f00bcf3a0db99bd5704ee}{A3PE::resetToAXRam})
+49     .def(\textcolor{stringliteral}{"resetSequenceFromToAX"}        ,&\hyperlink{classA3PE_a6015ba83a7b828efb1969291ab740eee}{A3PE::resetSequenceFromToAX})
+50     .def(\textcolor{stringliteral}{"resetUsbPhasers"}              ,&\hyperlink{classA3PE_a0ad1110ea755ffd0b277284d807a8794}{A3PE::resetUsbPhasers})
+51     .def(\textcolor{stringliteral}{"resetLatencyCounter"}          ,&\hyperlink{classA3PE_a44c50d822ac4f5d8f2b8ed75c5b90580}{A3PE::resetLatencyCounter})
+52     .def(\textcolor{stringliteral}{"resetFE"}                      ,&\hyperlink{classA3PE_a2cfdb2f37d3d786cbe1ff42fef37b276}{A3PE::resetFE})
+53     .def(\textcolor{stringliteral}{"resetSPI"}                     ,&\hyperlink{classA3PE_ae164123b49f8c4d1d119dbf201f0a839}{A3PE::resetSPI})
+54     .def(\textcolor{stringliteral}{"setEnableADC"} ,&\hyperlink{classA3PE_a0c90134c3440c8b8c8dc796c43893d64}{A3PE::setEnableADC})
+55     .def(\textcolor{stringliteral}{"enableADC"} ,&\hyperlink{classA3PE_a02608198bd28bc61882f27368fd90db1}{A3PE::enableADC})
+56     .def(\textcolor{stringliteral}{"setWriteStorageFifoUsb"} ,&\hyperlink{classA3PE_aa688f9dff8d2892464fcd13fdf3600ad}{A3PE::setWriteStorageFifoUsb})
+57     .def(\textcolor{stringliteral}{"writeStorageFifoUsb"} ,&\hyperlink{classA3PE_af15048318a126074e28df1c6120d5e0d}{A3PE::writeStorageFifoUsb})
+58     .def(\textcolor{stringliteral}{"setReadPatternFifoUsb"} ,&\hyperlink{classA3PE_a9d3ba9807ea65be0af7f23ffa2372d6b}{A3PE::setReadPatternFifoUsb})
+59     .def(\textcolor{stringliteral}{"readPatternFifoUsb"} ,&\hyperlink{classA3PE_a3bb47f43f9f98d8a0d825aadc04e5ab6}{A3PE::readPatternFifoUsb})
+60     .def(\textcolor{stringliteral}{"setReadTriggerFifoUsb"} ,&\hyperlink{classA3PE_a1d0dd1db3c493bc31aa56b55e7439e0e}{A3PE::setReadTriggerFifoUsb})
+61     .def(\textcolor{stringliteral}{"readTriggerFifoUsb"} ,&\hyperlink{classA3PE_a083315774486528a8b6c40e240fbf98f}{A3PE::readTriggerFifoUsb})
+62     .def(\textcolor{stringliteral}{"setReadToAXRamUsb"} ,&\hyperlink{classA3PE_a7ad649611d4cc5a7743db54aa3a4f943}{A3PE::setReadToAXRamUsb})
+63     .def(\textcolor{stringliteral}{"readToAXRamUsb"} ,&\hyperlink{classA3PE_af3152e461d446f442cfa7b69456ac276}{A3PE::readToAXRamUsb})
+64     .def(\textcolor{stringliteral}{"setWriteFromAXRamUsb"} ,&\hyperlink{classA3PE_aeb276fae7f19c45b4b4a3a5a2b99c337}{A3PE::setWriteFromAXRamUsb})
+65     .def(\textcolor{stringliteral}{"writeFromAXRamUsb"} ,&\hyperlink{classA3PE_a3b4333f547a2a36fc1f38bf4ca9afa89}{A3PE::writeFromAXRamUsb})
+66     .def(\textcolor{stringliteral}{"setSoftwareTrigger"} ,&\hyperlink{classA3PE_aac0ee532f78885a25eebddbad501417f}{A3PE::setSoftwareTrigger})
+67     .def(\textcolor{stringliteral}{"softwareTrigger"} ,&\hyperlink{classA3PE_acb2ccd6b78b39a0a9e360439b3b6f4c7}{A3PE::softwareTrigger})
+68     .def(\textcolor{stringliteral}{"setClockDivision"} ,&\hyperlink{classA3PE_acf354b2c85a7e20f7f037beb278dd79d}{A3PE::setClockDivision})
+69     .def(\textcolor{stringliteral}{"clockDivision"} ,&\hyperlink{classA3PE_a81e32c82ca14f85fd7f26cd9a54f7a38}{A3PE::clockDivision})
+70     .def(\textcolor{stringliteral}{"setTriggerDelay"} ,&\hyperlink{classA3PE_a6a63fc9503e0aa89ee9928fc7222ce0f}{A3PE::setTriggerDelay})
+71     \textcolor{comment}{//    .def("setSeqPulseDelay" ,&A3PE::setSeqPulseDelay)}
+72     .def(\textcolor{stringliteral}{"triggerDelay"} ,&\hyperlink{classA3PE_ac0aabc1457923b7ee7da0a2c91c46451}{A3PE::triggerDelay})
+73     \textcolor{comment}{//    .def("seqPulseDelay" ,&A3PE::seqPulseDelay)}
+74     .def(\textcolor{stringliteral}{"setTriggerRate"} ,&\hyperlink{classA3PE_a1ae8e5a69e17d6b3157779544fa14c75}{A3PE::setTriggerRate})
+75     .def(\textcolor{stringliteral}{"triggerRate"} ,&\hyperlink{classA3PE_ada46375753047d6a74acdec442044f39}{A3PE::triggerRate})
+76     .def(\textcolor{stringliteral}{"setNTrigger"} ,&\hyperlink{classA3PE_a81db44ddfc42b67ed08756b113b8e122}{A3PE::setNTrigger})
+77     .def(\textcolor{stringliteral}{"nTrigger"} ,&\hyperlink{classA3PE_a3398fa3ce59a4b1b946e7b4ab4912580}{A3PE::nTrigger})
+78     .def(\textcolor{stringliteral}{"setFifoLatency"}  ,&\hyperlink{classA3PE_a969469569005dfb130aca674de5dacff}{A3PE::setFifoLatency})
+79     .def(\textcolor{stringliteral}{"fifoLatency"}  ,&\hyperlink{classA3PE_a7f6959a6a38c16fa6609560827413764}{A3PE::fifoLatency})
+80     .def(\textcolor{stringliteral}{"setFifoDepth"}, &\hyperlink{classA3PE_a4d8f78a1b09b409f288b34d503c71146}{A3PE::setFifoDepth})
+81     .def(\textcolor{stringliteral}{"fifoDepth"}, &\hyperlink{classA3PE_a8bb523e4a7a5dbb6ab3c5549ebf6db86}{A3PE::fifoDepth})
+82     .def(\textcolor{stringliteral}{"acquisition"}, &\hyperlink{classA3PE_a035886b99761cc4f3c342ff0b4e44f59}{A3PE::acquisition})
+83     .def(\textcolor{stringliteral}{"trigger"}, &\hyperlink{classA3PE_a75cd0377eb653ed22c4d258ab359f3d6}{A3PE::trigger})
+84     .def(\textcolor{stringliteral}{"enableStorage"}, &\hyperlink{classA3PE_a2071d7922f140ee6705da954efb685f7}{A3PE::enableStorage})
+85     .def(\textcolor{stringliteral}{"dataReady"}, &\hyperlink{classA3PE_a55df064c578bbc1e80a3b5fc05933f27}{A3PE::dataReady})
+86     .def(\textcolor{stringliteral}{"dumpStorage"}, &\hyperlink{classA3PE_ad7999557f9d561dec67526730a3c97ef}{A3PE::dumpStorage})
+87     .def(\textcolor{stringliteral}{"dumpPattern"}, &\hyperlink{classA3PE_a23da04d3c7e632dfb64e5ed4e21a21f3}{A3PE::dumpPattern})
+88     .def(\textcolor{stringliteral}{"dumpTrigger"}, &\hyperlink{classA3PE_aeab7701d0d1f6fd910e952b631769d42}{A3PE::dumpTrigger})
+89     .def(\textcolor{stringliteral}{"dumpToAX"}, &\hyperlink{classA3PE_ad6b6f1ae4ac23e6d0827eee8cc2c98e4}{A3PE::dumpToAX})
+90     .def(\textcolor{stringliteral}{"dumpFromAX"}, &\hyperlink{classA3PE_a60a510251ec2b5fd800af2ba88e9fdac}{A3PE::dumpFromAX})
+91     .def(\textcolor{stringliteral}{"loadStorage"}, &\hyperlink{classA3PE_a8bd4a7a5dd8219f93386756c24a0f0b5}{A3PE::loadStorage})
+92     .def(\textcolor{stringliteral}{"loadPattern"}, &\hyperlink{classA3PE_a522cba0a4d976eec59222504af188fb2}{A3PE::loadPattern})
+93     .def(\textcolor{stringliteral}{"loadTrigger"}, &\hyperlink{classA3PE_a34a9499a0d9065a1b5772880d7e8d5c4}{A3PE::loadTrigger})
+94     .def(\textcolor{stringliteral}{"loadToAX"}, &\hyperlink{classA3PE_a40017b4138705690f8b04e336a7ffcdf}{A3PE::loadToAX})
+95     .def(\textcolor{stringliteral}{"loadFromAX"}, &\hyperlink{classA3PE_a65235f7d42e8f7fb6056f5629545d2aa}{A3PE::loadFromAX})
+96     .def(\textcolor{stringliteral}{"setInternalAXSequence"}, &\hyperlink{classA3PE_ad5f953a38661104a87834cc8a63252fa}{A3PE::setInternalAXSequence})
+97     .def(\textcolor{stringliteral}{"internalAXSequence"}, &\hyperlink{classA3PE_a4b9cf42bdd0a14e48807faa0956c59bd}{A3PE::internalAXSequence})
+98     .def(\textcolor{stringliteral}{"setLengthAX"}, &\hyperlink{classA3PE_a0300aa5c5ed02b82275c1de434196b9a}{A3PE::setLengthAX})
+99     .def(\textcolor{stringliteral}{"lengthAX"}, &\hyperlink{classA3PE_acb95104d817db2e4f97e250f7e45b43d}{A3PE::lengthAX})
+100     .def(\textcolor{stringliteral}{"setLatencyAX"}, &\hyperlink{classA3PE_a53882e1272e8146e51837904ea00f33c}{A3PE::setLatencyAX})
+101     .def(\textcolor{stringliteral}{"latencyAX"}, &\hyperlink{classA3PE_ab5970721a8172ae57b3da68040f58199}{A3PE::latencyAX})
+102     .def(\textcolor{stringliteral}{"setAddFromAXRam"}, &\hyperlink{classA3PE_a834fde5951d2c1bf6b41842520360fce}{A3PE::setAddFromAXRam})
+103     .def(\textcolor{stringliteral}{"setAddToAXRam"}, &\hyperlink{classA3PE_a54fe4da570ea8833fe2c981de1085387}{A3PE::setAddToAXRam})
+104     .def(\textcolor{stringliteral}{"startSequenceAX"}, &\hyperlink{classA3PE_a91ae249ca14676f8b0832487955fcf8c}{A3PE::startSequenceAX})
+105     .def(\textcolor{stringliteral}{"setPipeline"}, &\hyperlink{classA3PE_a5b3840fc8edd14427ac9fb4def3171d3}{A3PE::setPipeline})
+106     .def(\textcolor{stringliteral}{"pipeline"}, &\hyperlink{classA3PE_aeb22b2fcba4d14f234ad2d6dcef7948c}{A3PE::pipeline})
+107     ;
+108 
+109   class\_<Proto40MHz\_v1, bases <Element> >(\textcolor{stringliteral}{"Proto40MHz\_v1"})
+110     .def(\textcolor{stringliteral}{"usb"},&\hyperlink{classProto40MHz__v1_aee48500fba238c4caf8502db32ebb991}{Proto40MHz\_v1::usb},return\_value\_policy<reference\_existing\_object>())
+111     .def(\textcolor{stringliteral}{"phaser0"},&\hyperlink{classProto40MHz__v1_a545f205296c492530a50febd54584f73}{Proto40MHz\_v1::phaser0},
+      return\_value\_policy<reference\_existing\_object>())
+112     .def(\textcolor{stringliteral}{"phaser1"},&\hyperlink{classProto40MHz__v1_a9c4ef3187b86b74b05bdec3c167a405e}{Proto40MHz\_v1::phaser1},
+      return\_value\_policy<reference\_existing\_object>())
+113     .def(\textcolor{stringliteral}{"phaser2"},&\hyperlink{classProto40MHz__v1_a59defd14376765f7df8f87d594170527}{Proto40MHz\_v1::phaser2},
+      return\_value\_policy<reference\_existing\_object>())
+114     .def(\textcolor{stringliteral}{"a3pe"},   &\hyperlink{classProto40MHz__v1_a263cfc900aafa3ceee1af4b596a824de}{Proto40MHz\_v1::a3pe},return\_value\_policy<reference\_existing\_object>()
+      )
+115   ;
+116 
+117   class\_<Acquisition,bases <Processus> >(\textcolor{stringliteral}{"Acquisition"})
+118     .def(\textcolor{stringliteral}{"initialize"},&\hyperlink{classAcquisition_acffc6b70b80811657409f92e489584ba}{Acquisition::initialize})
+119     .def(\textcolor{stringliteral}{"execute"},&\hyperlink{classAcquisition_ae3b63064bee1b042914b63ae4135cbd8}{Acquisition::execute})
+120     .def(\textcolor{stringliteral}{"finalize"},&\hyperlink{classAcquisition_ab8ffcd86548280f0403b3ae6338f2499}{Acquisition::finalize})
+121     .def(\textcolor{stringliteral}{"setDepth"},&\hyperlink{classAcquisition_a303145d497f99da966fcfd95c00cd81e}{Acquisition::setDepth})
+122     .def(\textcolor{stringliteral}{"depth"},&\hyperlink{classAcquisition_a1ad973e21a067c0de0b6264d0eb5182b}{Acquisition::depth})
+123     .def(\textcolor{stringliteral}{"setChannels"},&\hyperlink{classAcquisition_a3ee93f665573b4622bd9cba92c0cc04e}{Acquisition::setChannels})
+124     .def(\textcolor{stringliteral}{"channels"},&\hyperlink{classAcquisition_a3041537afcb4dfe5c6940f0ef6829265}{Acquisition::channels})
+125     .def(\textcolor{stringliteral}{"setTrigger"},&\hyperlink{classAcquisition_acdb167b43f3babb59a98698aa5c5066f}{Acquisition::setTrigger})
+126     .def(\textcolor{stringliteral}{"trigger"},&\hyperlink{classAcquisition_a6f680938eb6a42d57dfa7466e8852af9}{Acquisition::trigger})
+127     .def(\textcolor{stringliteral}{"setStoreTree"},&\hyperlink{classAcquisition_a759193856d26354722e5f647e60e16de}{Acquisition::setStoreTree})
+128     .def(\textcolor{stringliteral}{"setStoreTrend"},&\hyperlink{classAcquisition_a1ceff272a1ad030dcd20c0dcddc65443}{Acquisition::setStoreTrend})
+129     .def(\textcolor{stringliteral}{"setStoreSample"},&\hyperlink{classAcquisition_af36a1b660244096b7d274f591f67b695}{Acquisition::setStoreSample})
+130     .def(\textcolor{stringliteral}{"storeTree"},&\hyperlink{classAcquisition_a8ab7e58ccb3fee54eb6850e5081fae10}{Acquisition::storeTree})
+131     .def(\textcolor{stringliteral}{"storeTrend"},&\hyperlink{classAcquisition_a5af693448daef6e9e054ab7f1aa50784}{Acquisition::storeTrend})
+132     .def(\textcolor{stringliteral}{"storeSample"},&\hyperlink{classAcquisition_a9af304e0fb2076cd4f92703708efe83e}{Acquisition::storeSample})
+133     .def(\textcolor{stringliteral}{"setDeadTime"},&\hyperlink{classAcquisition_a37e05315fc47958c290a7d938c61e067}{Acquisition::setDeadTime})
+134     .def(\textcolor{stringliteral}{"deadTime"},&\hyperlink{classAcquisition_a8fb2cd60a34993ab0952d719a8517831}{Acquisition::deadTime})
+135     .def(\textcolor{stringliteral}{"setSample"},&\hyperlink{classAcquisition_ade6fd6483b3e3737fe7dcdffb5065954}{Acquisition::setSample})
+136     .def(\textcolor{stringliteral}{"sample"},&\hyperlink{classAcquisition_a83181975c0746e5837d53933031e7b62}{Acquisition::sample})
+137     .def(\textcolor{stringliteral}{"setNBins"},&\hyperlink{classAcquisition_a6ee040a009aa48f848b1e12434135db9}{Acquisition::setNBins})
+138     .def(\textcolor{stringliteral}{"nBins"},&\hyperlink{classAcquisition_a3a3dad0de9535d5a29c0810a5bdc3ae3}{Acquisition::nBins})
+139     .def(\textcolor{stringliteral}{"setMinRange"},&\hyperlink{classAcquisition_a8a15ffc6e539a3ae12efe4bea1ca7587}{Acquisition::setMinRange})
+140     .def(\textcolor{stringliteral}{"minRange"},&\hyperlink{classAcquisition_a44f441710231748d2ca8f691647b2bcd}{Acquisition::minRange})
+141     .def(\textcolor{stringliteral}{"setMaxRange"},&\hyperlink{classAcquisition_a786da6cff5428020034be23e554e0e1b}{Acquisition::setMaxRange})
+142     .def(\textcolor{stringliteral}{"maxRange"},&\hyperlink{classAcquisition_a386f3ebc6b1d4956aa7e40b314ddb4eb}{Acquisition::maxRange})
+143     ;
+144 
+145   class\_<A3PE\_BitFlip,bases <Processus> >(\textcolor{stringliteral}{"A3PE\_BitFlip"})
+146     .def(\textcolor{stringliteral}{"initialize"},&\hyperlink{classA3PE__BitFlip_a88dc6cfe690a518e38ff6d89026e6e0c}{A3PE\_BitFlip::initialize})
+147     .def(\textcolor{stringliteral}{"execute"},&\hyperlink{classA3PE__BitFlip_affa7320fb39001a6e9b5696542fe4584}{A3PE\_BitFlip::execute})
+148     .def(\textcolor{stringliteral}{"finalize"},&\hyperlink{classA3PE__BitFlip_ab40772a001613a0e1932d1e356ccf717}{A3PE\_BitFlip::finalize})
+149     .def(\textcolor{stringliteral}{"setFile"},&\hyperlink{classA3PE__BitFlip_a079d34acd89f699395a9bbf6b4918205}{A3PE\_BitFlip::setFile})
+150     .def(\textcolor{stringliteral}{"file"},&\hyperlink{classA3PE__BitFlip_ace874c555080ce6cb68b6bf320977a5a}{A3PE\_BitFlip::file})
+151     ;
+152 
+153   enum\_<UsbFTInterface::WordSize>(\textcolor{stringliteral}{"WordSize"})
+154     .value(\textcolor{stringliteral}{"U8"}, \hyperlink{classUsbFTInterface_a057387f452eaac094fb77ba09cf1cf2ea32efe2feb6728578134aa9b85b97d1b9}{UsbFTInterface::WS\_Byte})
+155     .value(\textcolor{stringliteral}{"U16"}, \hyperlink{classUsbFTInterface_a057387f452eaac094fb77ba09cf1cf2ea83a39aef091bbcfb420ac32aafe55e0a}{UsbFTInterface::WS\_Word})
+156     .value(\textcolor{stringliteral}{"U32"}, \hyperlink{classUsbFTInterface_a057387f452eaac094fb77ba09cf1cf2eae8012559bbaaae91ac6208ed7b3ffe89}{UsbFTInterface::WS\_DWord})
+157     ;
+158 
+159   \hyperlink{classStatusCode}{StatusCode} (\hyperlink{classUsbFTInterface}{UsbFTInterface}::*write\_1)(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} int, boost::python::list) = (
+      &\hyperlink{classUsbFTInterface_a059296c0d7e5118f975f1dfa2e1f3fbb}{UsbFTInterface::write});
+160   \hyperlink{classStatusCode}{StatusCode} (\hyperlink{classUsbFTInterface}{UsbFTInterface}::*write\_2)(\hyperlink{classIOdata}{IOdata}*) = (&
+      \hyperlink{classUsbFTInterface_a059296c0d7e5118f975f1dfa2e1f3fbb}{UsbFTInterface::write});
+161   \hyperlink{classStatusCode}{StatusCode} (\hyperlink{classUsbFTInterface}{UsbFTInterface}::*read\_1)(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} int,\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} int, 
+      boost::python::list&) = (&\hyperlink{classUsbFTInterface_ab9daafce1d7878b95ba0655a570922e2}{UsbFTInterface::read});
+162   \hyperlink{classStatusCode}{StatusCode} (\hyperlink{classUsbFTInterface}{UsbFTInterface}::*read\_2)(\hyperlink{classIOdata}{IOdata}*) = (&
+      \hyperlink{classUsbFTInterface_ab9daafce1d7878b95ba0655a570922e2}{UsbFTInterface::read});
+163 
+164   class\_<UsbFTInterface, bases <Element> > (\textcolor{stringliteral}{"UsbFTInterface"})
+165     .def(\textcolor{stringliteral}{"init"}           ,&\hyperlink{classUsbFTInterface_a5371fe7b447850599eaec81a0ffa2ba0}{UsbFTInterface::init})
+166     .def(\textcolor{stringliteral}{"setSerialNum"}   ,&\hyperlink{classUsbFTInterface_aaabe44c3b717a98e7571de296085c3a4}{UsbFTInterface::setSerialNum})
+167     .def(\textcolor{stringliteral}{"setDeviceDesc"}  ,&\hyperlink{classUsbFTInterface_abb106a3d2c48826f96ec2ac10d029132}{UsbFTInterface::setDeviceDesc})
+168     .def(\textcolor{stringliteral}{"serialNum"}      ,&\hyperlink{classUsbFTInterface_ab4a2aa9664e903c57ae396faf643e7a3}{UsbFTInterface::serialNum})
+169     .def(\textcolor{stringliteral}{"deviceDesc"}     ,&\hyperlink{classUsbFTInterface_af353796fd68a869ea5c8e753aa65dc2c}{UsbFTInterface::deviceDesc})
+170     .def(\textcolor{stringliteral}{"setWordSize"}    ,&\hyperlink{classUsbFTInterface_a1666f09d2b8994f8d13d6bc66f43b530}{UsbFTInterface::setWordSize})
+171     .def(\textcolor{stringliteral}{"wordSize"}       ,&\hyperlink{classUsbFTInterface_add098ede127a2089e3ac8ea615ed6d46}{UsbFTInterface::wordSize})
+172     .def(\textcolor{stringliteral}{"close"}          ,&\hyperlink{classUsbFTInterface_ad555e20eb4b80da1d3cac5a8c6509bb5}{UsbFTInterface::close})
+173     .def(\textcolor{stringliteral}{"setLatencyTimer"},&\hyperlink{classUsbFTInterface_abe0147f74ac414d0bd2cb4a7a81024b9}{UsbFTInterface::setLatencyTimer})
+174     .def(\textcolor{stringliteral}{"latencyTimer"}   ,&\hyperlink{classUsbFTInterface_a4fa70ce4a4cd4f8f01cdeb4835f11276}{UsbFTInterface::latencyTimer})
+175     .def(\textcolor{stringliteral}{"setTimeOut"}     ,&\hyperlink{classUsbFTInterface_a62d90f80a81d1decd66f9b9f10cb8dc6}{UsbFTInterface::setTimeOut})
+176     .def(\textcolor{stringliteral}{"txTimeOut"}      ,&\hyperlink{classUsbFTInterface_acab2397cb42003a1ed8f69a0c6cae195}{UsbFTInterface::txTimeOut})
+177     .def(\textcolor{stringliteral}{"rxTimeOut"}      ,&\hyperlink{classUsbFTInterface_ad95ffb87539ca86882e26fa24b00de97}{UsbFTInterface::rxTimeOut})
+178     .def(\textcolor{stringliteral}{"setBuffer"}      ,&\hyperlink{classUsbFTInterface_aaa09fdc28deb45d0a65f5d42c06dd659}{UsbFTInterface::setBuffer})
+179     .def(\textcolor{stringliteral}{"txBuffer"}       ,&\hyperlink{classUsbFTInterface_acac73d3fc1587437656bb7fe24e10906}{UsbFTInterface::txBuffer})
+180     .def(\textcolor{stringliteral}{"rxBuffer"}       ,&\hyperlink{classUsbFTInterface_a836d1a8d181fd49e11235bb677e3fa7e}{UsbFTInterface::rxBuffer})
+181     .def(\textcolor{stringliteral}{"write"}          ,write\_1)
+182     .def(\textcolor{stringliteral}{"write"}          ,write\_2)
+183     .def(\textcolor{stringliteral}{"read"}           ,read\_1)
+184     .def(\textcolor{stringliteral}{"read"}           ,read\_2)
+185     ;
+186 
+187   class\_<UsbFTInterfaceTest, bases<Processus> > (\textcolor{stringliteral}{"UsbFTInterfaceTest"})
+188     .def(\textcolor{stringliteral}{"setAddress"}, &\hyperlink{classUsbFTInterfaceTest_ab9c65d9bc48f205d5dc75e7088474529}{UsbFTInterfaceTest::setAddress})
+189     .def(\textcolor{stringliteral}{"setParam"}, &\hyperlink{classUsbFTInterfaceTest_a7aec1fc4c65f7079140b69a627f015a3}{UsbFTInterfaceTest::setParam})
+190     .def(\textcolor{stringliteral}{"mean"}, &\hyperlink{classUsbFTInterfaceTest_a8b88ab4c18cff5e8da014ef6fcf39b90}{UsbFTInterfaceTest::mean})
+191     .def(\textcolor{stringliteral}{"sigma"}, &\hyperlink{classUsbFTInterfaceTest_a582fdf03be84fdd791a50a4129ce8938}{UsbFTInterfaceTest::sigma})
+192     ;
+193 
+194   class\_<RegisterTest, bases<Processus> > (\textcolor{stringliteral}{"RegisterTest"})
+195     .def(\textcolor{stringliteral}{"setAddress"}, &\hyperlink{classUsbFTInterfaceTest_ab9c65d9bc48f205d5dc75e7088474529}{UsbFTInterfaceTest::setAddress})
+196     .def(\textcolor{stringliteral}{"setParam"}, &\hyperlink{classUsbFTInterfaceTest_a7aec1fc4c65f7079140b69a627f015a3}{UsbFTInterfaceTest::setParam})
+197     .def(\textcolor{stringliteral}{"mean"}, &\hyperlink{classUsbFTInterfaceTest_a8b88ab4c18cff5e8da014ef6fcf39b90}{UsbFTInterfaceTest::mean})
+198     .def(\textcolor{stringliteral}{"sigma"}, &\hyperlink{classUsbFTInterfaceTest_a582fdf03be84fdd791a50a4129ce8938}{UsbFTInterfaceTest::sigma})
+199     ;
+200 
+201 \}
+\end{DoxyCode}

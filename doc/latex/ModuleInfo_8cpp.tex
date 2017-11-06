@@ -1,0 +1,69 @@
+\hypertarget{ModuleInfo_8cpp}{}\section{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/src/\+Module\+Info.cpp File Reference}
+\label{ModuleInfo_8cpp}\index{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/src/\+Module\+Info.\+cpp@{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/src/\+Module\+Info.\+cpp}}
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include \char`\"{}Module\+Info.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}sys/times.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sys/param.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}unistd.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}libgen.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$dlfcn.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ModuleInfo_8cpp_a2c01ef6d142cac1e586aa01fff8cc0c8}{S\+Y\+S\+T\+E\+M\+\_\+\+M\+O\+D\+U\+L\+E\+I\+N\+F\+O\+\_\+\+C\+PP}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{namespaceSystem_a21dca3f6170a2b0a0ea3028040ba21b3}{System\+::\+Image\+Handle} \hyperlink{ModuleInfo_8cpp_ac73543ab438ca67795d960da1ae04464}{Module\+Handle} = 0
+\item 
+static std\+::vector$<$ std\+::string $>$ \hyperlink{ModuleInfo_8cpp_abe8ab1121ca1a6673c03b03cd042b463}{s\+\_\+linked\+Modules}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{ModuleInfo_8cpp_a2c01ef6d142cac1e586aa01fff8cc0c8}\label{ModuleInfo_8cpp_a2c01ef6d142cac1e586aa01fff8cc0c8}} 
+\index{Module\+Info.\+cpp@{Module\+Info.\+cpp}!S\+Y\+S\+T\+E\+M\+\_\+\+M\+O\+D\+U\+L\+E\+I\+N\+F\+O\+\_\+\+C\+PP@{S\+Y\+S\+T\+E\+M\+\_\+\+M\+O\+D\+U\+L\+E\+I\+N\+F\+O\+\_\+\+C\+PP}}
+\index{S\+Y\+S\+T\+E\+M\+\_\+\+M\+O\+D\+U\+L\+E\+I\+N\+F\+O\+\_\+\+C\+PP@{S\+Y\+S\+T\+E\+M\+\_\+\+M\+O\+D\+U\+L\+E\+I\+N\+F\+O\+\_\+\+C\+PP}!Module\+Info.\+cpp@{Module\+Info.\+cpp}}
+\subsubsection{\texorpdfstring{S\+Y\+S\+T\+E\+M\+\_\+\+M\+O\+D\+U\+L\+E\+I\+N\+F\+O\+\_\+\+C\+PP}{SYSTEM\_MODULEINFO\_CPP}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+T\+E\+M\+\_\+\+M\+O\+D\+U\+L\+E\+I\+N\+F\+O\+\_\+\+C\+PP}
+
+
+
+Definition at line 14 of file Module\+Info.\+cpp.
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{ModuleInfo_8cpp_ac73543ab438ca67795d960da1ae04464}\label{ModuleInfo_8cpp_ac73543ab438ca67795d960da1ae04464}} 
+\index{Module\+Info.\+cpp@{Module\+Info.\+cpp}!Module\+Handle@{Module\+Handle}}
+\index{Module\+Handle@{Module\+Handle}!Module\+Info.\+cpp@{Module\+Info.\+cpp}}
+\subsubsection{\texorpdfstring{Module\+Handle}{ModuleHandle}}
+{\footnotesize\ttfamily \hyperlink{namespaceSystem_a21dca3f6170a2b0a0ea3028040ba21b3}{System\+::\+Image\+Handle} Module\+Handle = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 43 of file Module\+Info.\+cpp.
+
+
+
+Referenced by System\+::exe\+Handle(), System\+::module\+Handle(), and System\+::set\+Module\+Handle().
+
+\mbox{\Hypertarget{ModuleInfo_8cpp_abe8ab1121ca1a6673c03b03cd042b463}\label{ModuleInfo_8cpp_abe8ab1121ca1a6673c03b03cd042b463}} 
+\index{Module\+Info.\+cpp@{Module\+Info.\+cpp}!s\+\_\+linked\+Modules@{s\+\_\+linked\+Modules}}
+\index{s\+\_\+linked\+Modules@{s\+\_\+linked\+Modules}!Module\+Info.\+cpp@{Module\+Info.\+cpp}}
+\subsubsection{\texorpdfstring{s\+\_\+linked\+Modules}{s\_linkedModules}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ s\+\_\+linked\+Modules\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 44 of file Module\+Info.\+cpp.
+
+
+
+Referenced by System\+::linked\+Modules().
+

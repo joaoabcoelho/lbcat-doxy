@@ -1,0 +1,82 @@
+\hypertarget{namespaceUsbFTInterfaceTest}{}\section{Usb\+F\+T\+Interface\+Test Namespace Reference}
+\label{namespaceUsbFTInterfaceTest}\index{Usb\+F\+T\+Interface\+Test@{Usb\+F\+T\+Interface\+Test}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceUsbFTInterfaceTest_a35b8c3ee059d54e7722d0ad7a957c83c}{Edit} (cat, obj, panel, path)
+\item 
+def \hyperlink{namespaceUsbFTInterfaceTest_a3a50ab3c7d8a3428d3b89c0dee71f7c6}{Plot} (cat, obj, parent, \hyperlink{classObject_af99145335cc61ff6e2798ea17db009d2}{id})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespaceUsbFTInterfaceTest_a35b8c3ee059d54e7722d0ad7a957c83c}\label{namespaceUsbFTInterfaceTest_a35b8c3ee059d54e7722d0ad7a957c83c}} 
+\index{Usb\+F\+T\+Interface\+Test@{Usb\+F\+T\+Interface\+Test}!Edit@{Edit}}
+\index{Edit@{Edit}!Usb\+F\+T\+Interface\+Test@{Usb\+F\+T\+Interface\+Test}}
+\subsubsection{\texorpdfstring{Edit()}{Edit()}}
+{\footnotesize\ttfamily def Usb\+F\+T\+Interface\+Test.\+Edit (\begin{DoxyParamCaption}\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{panel,  }\item[{}]{path }\end{DoxyParamCaption})}
+
+
+
+Definition at line 43 of file Usb\+F\+T\+Interface\+Test.\+py.
+
+
+\begin{DoxyCode}
+43 \textcolor{keyword}{def }\hyperlink{namespaceUsbFTInterfaceTest_a35b8c3ee059d54e7722d0ad7a957c83c}{Edit} (cat, obj, panel, path):
+44     \textcolor{keywordflow}{return} \hyperlink{classUsbFTInterfaceTest}{UsbFTInterfaceTest}(cat, obj, panel, path)
+45 
+46 \textcolor{comment}{#----------------------------------------------------------------------}
+47 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceUsbFTInterfaceTest_a3a50ab3c7d8a3428d3b89c0dee71f7c6}\label{namespaceUsbFTInterfaceTest_a3a50ab3c7d8a3428d3b89c0dee71f7c6}} 
+\index{Usb\+F\+T\+Interface\+Test@{Usb\+F\+T\+Interface\+Test}!Plot@{Plot}}
+\index{Plot@{Plot}!Usb\+F\+T\+Interface\+Test@{Usb\+F\+T\+Interface\+Test}}
+\subsubsection{\texorpdfstring{Plot()}{Plot()}}
+{\footnotesize\ttfamily def Usb\+F\+T\+Interface\+Test.\+Plot (\begin{DoxyParamCaption}\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{parent,  }\item[{}]{id }\end{DoxyParamCaption})}
+
+
+
+Definition at line 48 of file Usb\+F\+T\+Interface\+Test.\+py.
+
+
+
+References Object.\+title().
+
+
+\begin{DoxyCode}
+48 \textcolor{keyword}{def }\hyperlink{namespaceUsbFTInterfaceTest_a3a50ab3c7d8a3428d3b89c0dee71f7c6}{Plot}(cat, obj, parent, id):
+49     \textcolor{keyword}{from} mpl\_toolkits.mplot3d \textcolor{keyword}{import} Axes3D
+50     \textcolor{keyword}{from} matplotlib \textcolor{keyword}{import} cm
+51     \textcolor{keyword}{import} matplotlib \textcolor{keyword}{as} mpl
+52     \textcolor{keyword}{import} matplotlib.pyplot \textcolor{keyword}{as} plt
+53     \textcolor{keyword}{import} numpy \textcolor{keyword}{as} np
+54 
+55     plot=\hyperlink{namespaceplotter}{plotter}(parent,id)
+56 
+57     fig=plot.current()    
+58     fig.suptitle(\textcolor{stringliteral}{'UsbFT Interface - Test Program'}, fontsize=14, fontweight=\textcolor{stringliteral}{'bold'})
+59     
+60     p=obj
+61     
+62     p1=fig.add\_subplot(2,2,1)
+63     p1.plot(p.data(0), \textcolor{stringliteral}{'bo'})
+64     p1.set\_title(\textcolor{stringliteral}{r'$\(\backslash\)sigma='}+str(p.sigma())+\textcolor{stringliteral}{'\(\backslash\) \(\backslash\)mu='}+str(p.mean())+\textcolor{stringliteral}{'$'})
+65     p1.set\_ylabel(\textcolor{stringliteral}{'Values'})
+66     
+67     plt.subplot(2,2,2)
+68     plt.hist(p.data().vector(0), 20)
+69     plt.title(p.data().title(0))
+70     plt.grid(\textcolor{keyword}{True})
+71     
+72     p3=fig.add\_subplot(2,2,3)
+73     p3.plot(p.data(3), \textcolor{stringliteral}{'bs'}, p.data(4), \textcolor{stringliteral}{'g^'})
+74     p3.set\_title(\textcolor{stringliteral}{r'Time (Write/Read)'})
+75     p3.set\_ylabel(\textcolor{stringliteral}{'Values'})
+76     
+77     p4=fig.add\_subplot(2,2,4)
+78     p4.plot(p.data(1), \textcolor{stringliteral}{'k'})
+79     p4.set\_title(\textcolor{stringliteral}{r'Errors (Write)'})
+80     p4.set\_ylabel(\textcolor{stringliteral}{'Values'})
+81     
+82     \textcolor{keywordflow}{return} plot
+83 \end{DoxyCode}

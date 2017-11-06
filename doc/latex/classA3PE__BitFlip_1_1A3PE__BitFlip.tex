@@ -1,0 +1,74 @@
+\hypertarget{classA3PE__BitFlip_1_1A3PE__BitFlip}{}\section{A3\+P\+E\+\_\+\+Bit\+Flip.\+A3\+P\+E\+\_\+\+Bit\+Flip Class Reference}
+\label{classA3PE__BitFlip_1_1A3PE__BitFlip}\index{A3\+P\+E\+\_\+\+Bit\+Flip.\+A3\+P\+E\+\_\+\+Bit\+Flip@{A3\+P\+E\+\_\+\+Bit\+Flip.\+A3\+P\+E\+\_\+\+Bit\+Flip}}
+Inheritance diagram for A3\+P\+E\+\_\+\+Bit\+Flip.\+A3\+P\+E\+\_\+\+Bit\+Flip\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classA3PE__BitFlip_1_1A3PE__BitFlip}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classA3PE__BitFlip_1_1A3PE__BitFlip_a3794bca914e1f66f162eff033c70b915}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, cat, obj, panel, path)
+\item 
+def \hyperlink{classA3PE__BitFlip_1_1A3PE__BitFlip_a6259691e444dd8ca8add74ddb359e4bc}{update} (self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file A3\+P\+E\+\_\+\+Bit\+Flip.\+py.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classA3PE__BitFlip_1_1A3PE__BitFlip_a3794bca914e1f66f162eff033c70b915}\label{classA3PE__BitFlip_1_1A3PE__BitFlip_a3794bca914e1f66f162eff033c70b915}} 
+\index{A3\+P\+E\+\_\+\+Bit\+Flip\+::\+A3\+P\+E\+\_\+\+Bit\+Flip@{A3\+P\+E\+\_\+\+Bit\+Flip\+::\+A3\+P\+E\+\_\+\+Bit\+Flip}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!A3\+P\+E\+\_\+\+Bit\+Flip\+::\+A3\+P\+E\+\_\+\+Bit\+Flip@{A3\+P\+E\+\_\+\+Bit\+Flip\+::\+A3\+P\+E\+\_\+\+Bit\+Flip}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def A3\+P\+E\+\_\+\+Bit\+Flip.\+A3\+P\+E\+\_\+\+Bit\+Flip.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{panel,  }\item[{}]{path }\end{DoxyParamCaption})}
+
+
+
+Definition at line 9 of file A3\+P\+E\+\_\+\+Bit\+Flip.\+py.
+
+
+
+References element.\+element.\+loadxrc(), proc.\+proc.\+loadxrc(), Test\+I2\+C.\+Test\+I2\+C.\+on\+Apply(), Test\+S\+P\+I.\+Test\+S\+P\+I.\+on\+Apply(), Test\+U\+S\+B.\+Test\+U\+S\+B.\+on\+Apply(), Storage\+Fifo.\+Storage\+Fifo.\+on\+Apply(), Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+on\+Apply(), Test\+Suite.\+Test\+Suite.\+on\+Apply(), Current\+Measurement.\+Current\+Measurement.\+on\+Apply(), A\+D\+C\+Measurement.\+Current\+Measurement.\+on\+Apply(), Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+on\+Apply(), Acquisition.\+Acquisition.\+on\+Apply(), object.\+object.\+panel, element.\+element.\+panel, proc.\+proc.\+panel, Log\+Frame.\+Log\+Frame.\+panel, Conf\+Frame.\+Conf\+Frame.\+panel, Graph\+Frame.\+Graph\+Frame.\+panel, App\+Frame.\+App\+Frame.\+panel, Croc.\+Croc.\+update(), A3\+P\+E\+\_\+\+Bit\+Flip.\+A3\+P\+E\+\_\+\+Bit\+Flip.\+update(), Croc.\+update(), Proto40\+M\+Hz\+\_\+v1.\+update(), Proto40\+M\+Hz\+\_\+v1.\+Proto40\+M\+Hz\+\_\+v1.\+update(), Proto\+F\+E\+B\+\_\+v1.\+Proto\+F\+E\+B\+\_\+v1.\+update(), Phaser.\+update(), Usb\+F\+T\+Interface.\+update(), M\+S\+Oxxxx.\+update(), I\+C\+E\+C\+A\+Lv3.\+update(), L\+S\+Delay\+Chip\+V1.\+update(), and A3\+P\+E.\+update().
+
+
+\begin{DoxyCode}
+9     \textcolor{keyword}{def }\hyperlink{classwrapper_1_1ModuleDictWrapper_a9a7a794150502f51df687831583e13b9}{\_\_init\_\_}(self, cat, obj, panel, path):
+10         proc.\_\_init\_\_(self,cat,obj,panel,path)
+11         self.loadxrc()
+12         self.update()
+13         self.panel.Bind(wx.EVT\_BUTTON, self.onApply, id=xrc.XRCID(\textcolor{stringliteral}{"Apply"}))
+14 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classA3PE__BitFlip_1_1A3PE__BitFlip_a6259691e444dd8ca8add74ddb359e4bc}\label{classA3PE__BitFlip_1_1A3PE__BitFlip_a6259691e444dd8ca8add74ddb359e4bc}} 
+\index{A3\+P\+E\+\_\+\+Bit\+Flip\+::\+A3\+P\+E\+\_\+\+Bit\+Flip@{A3\+P\+E\+\_\+\+Bit\+Flip\+::\+A3\+P\+E\+\_\+\+Bit\+Flip}!update@{update}}
+\index{update@{update}!A3\+P\+E\+\_\+\+Bit\+Flip\+::\+A3\+P\+E\+\_\+\+Bit\+Flip@{A3\+P\+E\+\_\+\+Bit\+Flip\+::\+A3\+P\+E\+\_\+\+Bit\+Flip}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily def A3\+P\+E\+\_\+\+Bit\+Flip.\+A3\+P\+E\+\_\+\+Bit\+Flip.\+update (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line 15 of file A3\+P\+E\+\_\+\+Bit\+Flip.\+py.
+
+
+
+Referenced by A3\+P\+E\+\_\+\+Bit\+Flip.\+A3\+P\+E\+\_\+\+Bit\+Flip.\+\_\+\+\_\+init\+\_\+\+\_\+(), Acquisition.\+Acquisition.\+\_\+\+\_\+init\+\_\+\+\_\+(), Emulate\+F\+E.\+Emulate\+F\+E.\+\_\+\+\_\+init\+\_\+\+\_\+(), App\+Frame.\+App\+Frame.\+delete\+Hardware(), Conf\+Frame.\+Conf\+Frame.\+on\+Change(), Graph\+Frame.\+Graph\+Frame.\+on\+Change(), Cfg\+Frame.\+Cfg\+Frame.\+on\+Change(), Conf\+Frame.\+Conf\+Frame.\+on\+Edit(), App\+Frame.\+App\+Frame.\+on\+Load(), Conf\+Frame.\+Conf\+Frame.\+on\+Re\+Load(), Graph\+Frame.\+Graph\+Frame.\+on\+Re\+Load(), Cfg\+Frame.\+Cfg\+Frame.\+on\+Re\+Load(), and App\+Frame.\+App\+Frame.\+on\+Re\+Load().
+
+
+\begin{DoxyCode}
+15     \textcolor{keyword}{def }update(self):
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Calo\+Proto40\+M\+Hz/python/proc/\hyperlink{A3PE__BitFlip_8py}{A3\+P\+E\+\_\+\+Bit\+Flip.\+py}\end{DoxyCompactItemize}

@@ -1,0 +1,429 @@
+\hypertarget{classRun}{}\section{Run Class Reference}
+\label{classRun}\index{Run@{Run}}
+
+
+{\ttfamily \#include $<$include/\+Run.\+h$>$}
+
+Inheritance diagram for Run\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classRun}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRun_ad9511732117430d7fcdc0c11796f0ef6}{Run} ()
+\begin{DoxyCompactList}\small\item\em Standard constructor. \end{DoxyCompactList}\item 
+\hyperlink{classRun_a45e6035b7001cde5d949b407faf0d8ca}{Run} (std\+::vector$<$ short $>$)
+\item 
+\hyperlink{classRun_aa9d670242947e1dc0e31ea68a7938611}{Run} (int, std\+::vector$<$ short $>$)
+\item 
+virtual \hyperlink{classRun_a7fa0ac1770a5067113aaa1928be3d742}{$\sim$\+Run} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classRun_a2b2687a21cbe4b0b528bdb802a0ee585}{decode\+Info} ()
+\item 
+unsigned long \hyperlink{classRun_aab2f7571f6348643011d538d05200f46}{number} ()
+\item 
+unsigned long \hyperlink{classRun_ae5f87d35674ded8f7a0d0ca3d842a7b4}{date} ()
+\item 
+void \hyperlink{classRun_a0ad734e3ee75d2b58631e5b237a55f5d}{set\+Number} (unsigned long run)
+\item 
+void \hyperlink{classRun_a391d15d3d908d3d011214dba1a075277}{set\+Spy} (std\+::vector$<$ short $>$)
+\item 
+void \hyperlink{classRun_ad6c534e3fdce5978250ca04791934680}{set\+Date} (unsigned long \hyperlink{classRun_ae5f87d35674ded8f7a0d0ca3d842a7b4}{date})
+\item 
+std\+::vector$<$ int $>$ \hyperlink{classRun_a01c526576b5b821696229b53f6afd624}{spy\+Evt} ()
+\item 
+std\+::vector$<$ int $>$ \hyperlink{classRun_a9ab05b137c79436688d59fba008f8078}{spy\+Channel} ()
+\item 
+std\+::vector$<$ short $>$ \hyperlink{classRun_af386b1e6d814454e347c5bd90b20bf2c}{spy\+Raw} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Class\+Def(\hyperlink{classRun}{Run}, 1) protected unsigned long \hyperlink{classRun_a841000f96566fdbe5772f16ef3963006}{m\+\_\+date}
+\item 
+std\+::vector$<$ short $>$ \hyperlink{classRun_a825ab81f2a93f291878235dc13536688}{m\+\_\+spy\+Raw}
+\item 
+int \hyperlink{classRun_a343bd5a0475c262da9b366933cf3a523}{m\+\_\+spy\+Size}
+\item 
+std\+::vector$<$ int $>$ \hyperlink{classRun_ae812e1695eafeb95fb54594047e98d95}{m\+\_\+spy\+Evt}
+\item 
+std\+::vector$<$ int $>$ \hyperlink{classRun_abe97602a3597cc941906069386a8d9aa}{m\+\_\+spy\+Channel}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Frederic Machefert 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2004-\/10-\/04 
+\end{DoxyDate}
+
+
+Definition at line 17 of file Run.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRun_ad9511732117430d7fcdc0c11796f0ef6}\label{classRun_ad9511732117430d7fcdc0c11796f0ef6}} 
+\index{Run@{Run}!Run@{Run}}
+\index{Run@{Run}!Run@{Run}}
+\subsubsection{\texorpdfstring{Run()}{Run()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Run\+::\+Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Standard constructor. 
+
+\mbox{\Hypertarget{classRun_a45e6035b7001cde5d949b407faf0d8ca}\label{classRun_a45e6035b7001cde5d949b407faf0d8ca}} 
+\index{Run@{Run}!Run@{Run}}
+\index{Run@{Run}!Run@{Run}}
+\subsubsection{\texorpdfstring{Run()}{Run()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Run\+::\+Run (\begin{DoxyParamCaption}\item[{std\+::vector$<$ short $>$}]{spy\+Info }\end{DoxyParamCaption})}
+
+
+
+Definition at line 31 of file Run.\+cpp.
+
+
+
+References m\+\_\+date, and set\+Spy().
+
+
+\begin{DoxyCode}
+31                                         \{
+32   \hyperlink{classRun_a391d15d3d908d3d011214dba1a075277}{setSpy} ( spyInfo );
+33   m\_run    = 0;
+34   TDatime today;
+35   \hyperlink{classRun_a841000f96566fdbe5772f16ef3963006}{m\_date}   = today.GetDate();
+36 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classRun_aa9d670242947e1dc0e31ea68a7938611}\label{classRun_aa9d670242947e1dc0e31ea68a7938611}} 
+\index{Run@{Run}!Run@{Run}}
+\index{Run@{Run}!Run@{Run}}
+\subsubsection{\texorpdfstring{Run()}{Run()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Run\+::\+Run (\begin{DoxyParamCaption}\item[{int}]{run,  }\item[{std\+::vector$<$ short $>$}]{spy\+Info }\end{DoxyParamCaption})}
+
+
+
+Definition at line 41 of file Run.\+cpp.
+
+
+
+References m\+\_\+date, shell\+::run(), and set\+Spy().
+
+
+\begin{DoxyCode}
+41                                                  \{
+42   \hyperlink{classRun_a391d15d3d908d3d011214dba1a075277}{setSpy} ( spyInfo );
+43   m\_run    = \hyperlink{namespaceshell_ac89ea08a5e75ecb222fe9e707b3ee102}{run} ;
+44   TDatime today;
+45   \hyperlink{classRun_a841000f96566fdbe5772f16ef3963006}{m\_date}   = today.GetDate();
+46 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classRun_a7fa0ac1770a5067113aaa1928be3d742}\label{classRun_a7fa0ac1770a5067113aaa1928be3d742}} 
+\index{Run@{Run}!````~Run@{$\sim$\+Run}}
+\index{````~Run@{$\sim$\+Run}!Run@{Run}}
+\subsubsection{\texorpdfstring{$\sim$\+Run()}{~Run()}}
+{\footnotesize\ttfamily Run\+::$\sim$\+Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+
+
+Definition at line 52 of file Run.\+cpp.
+
+
+\begin{DoxyCode}
+52 \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classRun_ae5f87d35674ded8f7a0d0ca3d842a7b4}\label{classRun_ae5f87d35674ded8f7a0d0ca3d842a7b4}} 
+\index{Run@{Run}!date@{date}}
+\index{date@{date}!Run@{Run}}
+\subsubsection{\texorpdfstring{date()}{date()}}
+{\footnotesize\ttfamily unsigned long Run\+::date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 33 of file Run.\+h.
+
+
+
+References m\+\_\+date.
+
+
+
+Referenced by set\+Date().
+
+
+\begin{DoxyCode}
+33                       \{
+34     \textcolor{keywordflow}{return} \hyperlink{classRun_a841000f96566fdbe5772f16ef3963006}{m\_date};
+35   \}  
+\end{DoxyCode}
+\mbox{\Hypertarget{classRun_a2b2687a21cbe4b0b528bdb802a0ee585}\label{classRun_a2b2687a21cbe4b0b528bdb802a0ee585}} 
+\index{Run@{Run}!decode\+Info@{decode\+Info}}
+\index{decode\+Info@{decode\+Info}!Run@{Run}}
+\subsubsection{\texorpdfstring{decode\+Info()}{decodeInfo()}}
+{\footnotesize\ttfamily void Run\+::decode\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 66 of file Run.\+cpp.
+
+
+
+References images\+::index, m\+\_\+spy\+Channel, m\+\_\+spy\+Evt, m\+\_\+spy\+Raw, and m\+\_\+spy\+Size.
+
+
+
+Referenced by set\+Spy().
+
+
+\begin{DoxyCode}
+66                      \{
+67   \hyperlink{classRun_ae812e1695eafeb95fb54594047e98d95}{m\_spyEvt}.reserve( \hyperlink{classRun_a343bd5a0475c262da9b366933cf3a523}{m\_spySize});
+68   \hyperlink{classRun_abe97602a3597cc941906069386a8d9aa}{m\_spyChannel}.reserve(\hyperlink{classRun_a343bd5a0475c262da9b366933cf3a523}{m\_spySize});
+69   \hyperlink{classRun_ae812e1695eafeb95fb54594047e98d95}{m\_spyEvt}.clear();
+70   \hyperlink{classRun_abe97602a3597cc941906069386a8d9aa}{m\_spyChannel}.clear();
+71   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} \hyperlink{namespaceimages_a54407fd574970b3178647ae096321a57}{index} = 0 ; \hyperlink{namespaceimages_a54407fd574970b3178647ae096321a57}{index} < \hyperlink{classRun_a343bd5a0475c262da9b366933cf3a523}{m\_spySize} ; ++\hyperlink{namespaceimages_a54407fd574970b3178647ae096321a57}{index})\{
+72     \hyperlink{classRun_ae812e1695eafeb95fb54594047e98d95}{m\_spyEvt}.push\_back(((\hyperlink{classRun_a825ab81f2a93f291878235dc13536688}{m\_spyRaw}[\hyperlink{namespaceimages_a54407fd574970b3178647ae096321a57}{index}]>>0xF)&0xFF));
+73     \hyperlink{classRun_abe97602a3597cc941906069386a8d9aa}{m\_spyChannel}.push\_back(\hyperlink{classRun_a825ab81f2a93f291878235dc13536688}{m\_spyRaw}[\hyperlink{namespaceimages_a54407fd574970b3178647ae096321a57}{index}]&0xF);
+74   \}
+75 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classRun_aab2f7571f6348643011d538d05200f46}\label{classRun_aab2f7571f6348643011d538d05200f46}} 
+\index{Run@{Run}!number@{number}}
+\index{number@{number}!Run@{Run}}
+\subsubsection{\texorpdfstring{number()}{number()}}
+{\footnotesize\ttfamily unsigned long Run\+::number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 29 of file Run.\+h.
+
+
+\begin{DoxyCode}
+29                         \{
+30     \textcolor{keywordflow}{return} m\_run;
+31   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classRun_ad6c534e3fdce5978250ca04791934680}\label{classRun_ad6c534e3fdce5978250ca04791934680}} 
+\index{Run@{Run}!set\+Date@{set\+Date}}
+\index{set\+Date@{set\+Date}!Run@{Run}}
+\subsubsection{\texorpdfstring{set\+Date()}{setDate()}}
+{\footnotesize\ttfamily void Run\+::set\+Date (\begin{DoxyParamCaption}\item[{unsigned long}]{date }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 44 of file Run.\+h.
+
+
+
+References date(), and m\+\_\+date.
+
+
+\begin{DoxyCode}
+44                                   \{
+45     \hyperlink{classRun_a841000f96566fdbe5772f16ef3963006}{m\_date}=\hyperlink{classRun_ae5f87d35674ded8f7a0d0ca3d842a7b4}{date};
+46   \}  
+\end{DoxyCode}
+\mbox{\Hypertarget{classRun_a0ad734e3ee75d2b58631e5b237a55f5d}\label{classRun_a0ad734e3ee75d2b58631e5b237a55f5d}} 
+\index{Run@{Run}!set\+Number@{set\+Number}}
+\index{set\+Number@{set\+Number}!Run@{Run}}
+\subsubsection{\texorpdfstring{set\+Number()}{setNumber()}}
+{\footnotesize\ttfamily void Run\+::set\+Number (\begin{DoxyParamCaption}\item[{unsigned long}]{run }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 37 of file Run.\+h.
+
+
+
+References shell\+::run(), and set\+Spy().
+
+
+\begin{DoxyCode}
+37                                    \{
+38     m\_run=\hyperlink{namespaceshell_ac89ea08a5e75ecb222fe9e707b3ee102}{run};
+39   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classRun_a391d15d3d908d3d011214dba1a075277}\label{classRun_a391d15d3d908d3d011214dba1a075277}} 
+\index{Run@{Run}!set\+Spy@{set\+Spy}}
+\index{set\+Spy@{set\+Spy}!Run@{Run}}
+\subsubsection{\texorpdfstring{set\+Spy()}{setSpy()}}
+{\footnotesize\ttfamily void Run\+::set\+Spy (\begin{DoxyParamCaption}\item[{std\+::vector$<$ short $>$}]{spy\+Info }\end{DoxyParamCaption})}
+
+
+
+Definition at line 57 of file Run.\+cpp.
+
+
+
+References decode\+Info(), m\+\_\+spy\+Raw, and m\+\_\+spy\+Size.
+
+
+
+Referenced by Run(), and set\+Number().
+
+
+\begin{DoxyCode}
+57                                              \{
+58   \hyperlink{classRun_a825ab81f2a93f291878235dc13536688}{m\_spyRaw} = spyInfo ;
+59   \hyperlink{classRun_a343bd5a0475c262da9b366933cf3a523}{m\_spySize}= \hyperlink{classRun_a825ab81f2a93f291878235dc13536688}{m\_spyRaw}.size();
+60   \hyperlink{classRun_a2b2687a21cbe4b0b528bdb802a0ee585}{decodeInfo}();
+61 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classRun_a9ab05b137c79436688d59fba008f8078}\label{classRun_a9ab05b137c79436688d59fba008f8078}} 
+\index{Run@{Run}!spy\+Channel@{spy\+Channel}}
+\index{spy\+Channel@{spy\+Channel}!Run@{Run}}
+\subsubsection{\texorpdfstring{spy\+Channel()}{spyChannel()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Run\+::spy\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get accessor to member m\+\_\+spy\+Channel \begin{DoxyReturn}{Returns}
+the current value of m\+\_\+spy\+Channel 
+\end{DoxyReturn}
+
+
+Definition at line 60 of file Run.\+h.
+
+
+
+References m\+\_\+spy\+Channel.
+
+
+\begin{DoxyCode}
+60                                  \{
+61     \textcolor{keywordflow}{return} \hyperlink{classRun_abe97602a3597cc941906069386a8d9aa}{m\_spyChannel};
+62   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classRun_a01c526576b5b821696229b53f6afd624}\label{classRun_a01c526576b5b821696229b53f6afd624}} 
+\index{Run@{Run}!spy\+Evt@{spy\+Evt}}
+\index{spy\+Evt@{spy\+Evt}!Run@{Run}}
+\subsubsection{\texorpdfstring{spy\+Evt()}{spyEvt()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Run\+::spy\+Evt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get accessor to member m\+\_\+spy\+Evt \begin{DoxyReturn}{Returns}
+the current value of m\+\_\+spy\+Evt 
+\end{DoxyReturn}
+
+
+Definition at line 52 of file Run.\+h.
+
+
+
+References m\+\_\+spy\+Evt.
+
+
+\begin{DoxyCode}
+52                              \{
+53     \textcolor{keywordflow}{return} \hyperlink{classRun_ae812e1695eafeb95fb54594047e98d95}{m\_spyEvt};
+54   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classRun_af386b1e6d814454e347c5bd90b20bf2c}\label{classRun_af386b1e6d814454e347c5bd90b20bf2c}} 
+\index{Run@{Run}!spy\+Raw@{spy\+Raw}}
+\index{spy\+Raw@{spy\+Raw}!Run@{Run}}
+\subsubsection{\texorpdfstring{spy\+Raw()}{spyRaw()}}
+{\footnotesize\ttfamily std\+::vector$<$ short $>$ Run\+::spy\+Raw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 64 of file Run.\+h.
+
+
+
+References m\+\_\+spy\+Raw.
+
+
+\begin{DoxyCode}
+64                                \{
+65     \textcolor{keywordflow}{return} \hyperlink{classRun_a825ab81f2a93f291878235dc13536688}{m\_spyRaw};
+66   \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classRun_a841000f96566fdbe5772f16ef3963006}\label{classRun_a841000f96566fdbe5772f16ef3963006}} 
+\index{Run@{Run}!m\+\_\+date@{m\+\_\+date}}
+\index{m\+\_\+date@{m\+\_\+date}!Run@{Run}}
+\subsubsection{\texorpdfstring{m\+\_\+date}{m\_date}}
+{\footnotesize\ttfamily Class\+Def (\hyperlink{classRun}{Run},1) protected unsigned long Run\+::m\+\_\+date}
+
+
+
+Definition at line 68 of file Run.\+h.
+
+
+
+Referenced by Class\+Imp(), date(), Run(), and set\+Date().
+
+\mbox{\Hypertarget{classRun_abe97602a3597cc941906069386a8d9aa}\label{classRun_abe97602a3597cc941906069386a8d9aa}} 
+\index{Run@{Run}!m\+\_\+spy\+Channel@{m\+\_\+spy\+Channel}}
+\index{m\+\_\+spy\+Channel@{m\+\_\+spy\+Channel}!Run@{Run}}
+\subsubsection{\texorpdfstring{m\+\_\+spy\+Channel}{m\_spyChannel}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Run\+::m\+\_\+spy\+Channel}
+
+
+
+Definition at line 78 of file Run.\+h.
+
+
+
+Referenced by decode\+Info(), and spy\+Channel().
+
+\mbox{\Hypertarget{classRun_ae812e1695eafeb95fb54594047e98d95}\label{classRun_ae812e1695eafeb95fb54594047e98d95}} 
+\index{Run@{Run}!m\+\_\+spy\+Evt@{m\+\_\+spy\+Evt}}
+\index{m\+\_\+spy\+Evt@{m\+\_\+spy\+Evt}!Run@{Run}}
+\subsubsection{\texorpdfstring{m\+\_\+spy\+Evt}{m\_spyEvt}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Run\+::m\+\_\+spy\+Evt}
+
+
+
+Definition at line 77 of file Run.\+h.
+
+
+
+Referenced by decode\+Info(), and spy\+Evt().
+
+\mbox{\Hypertarget{classRun_a825ab81f2a93f291878235dc13536688}\label{classRun_a825ab81f2a93f291878235dc13536688}} 
+\index{Run@{Run}!m\+\_\+spy\+Raw@{m\+\_\+spy\+Raw}}
+\index{m\+\_\+spy\+Raw@{m\+\_\+spy\+Raw}!Run@{Run}}
+\subsubsection{\texorpdfstring{m\+\_\+spy\+Raw}{m\_spyRaw}}
+{\footnotesize\ttfamily std\+::vector$<$short$>$ Run\+::m\+\_\+spy\+Raw}
+
+
+
+Definition at line 75 of file Run.\+h.
+
+
+
+Referenced by decode\+Info(), set\+Spy(), and spy\+Raw().
+
+\mbox{\Hypertarget{classRun_a343bd5a0475c262da9b366933cf3a523}\label{classRun_a343bd5a0475c262da9b366933cf3a523}} 
+\index{Run@{Run}!m\+\_\+spy\+Size@{m\+\_\+spy\+Size}}
+\index{m\+\_\+spy\+Size@{m\+\_\+spy\+Size}!Run@{Run}}
+\subsubsection{\texorpdfstring{m\+\_\+spy\+Size}{m\_spySize}}
+{\footnotesize\ttfamily int Run\+::m\+\_\+spy\+Size}
+
+
+
+Definition at line 76 of file Run.\+h.
+
+
+
+Referenced by Class\+Imp(), decode\+Info(), and set\+Spy().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Calo\+Event/inc/\hyperlink{Run_8h}{Run.\+h}\item 
+/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Calo\+Event/src/\hyperlink{Run_8cpp}{Run.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,511 @@
+\hypertarget{classMsgSvc}{}\section{Msg\+Svc Class Reference}
+\label{classMsgSvc}\index{Msg\+Svc@{Msg\+Svc}}
+
+
+{\ttfamily \#include $<$inc/\+Msg\+Svc.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926}{Msg\+Level} \{ \newline
+\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926af655256b06494ade5ba830abe5401ec9}{V\+E\+R\+B\+O\+SE} =-\/6, 
+\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a1dbdcc82dce88370ec335883c83b38b0}{D\+E\+B\+UG}, 
+\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{I\+N\+FO}, 
+\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a7cefae88f2ba26b2b05b676a383c834b}{W\+A\+R\+N\+I\+NG}, 
+\newline
+\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a35a9d7166e9896af4ec8fb33bf5f1772}{E\+RR}, 
+\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a59c73cb29edfc9cdf35845e2b1301363}{F\+A\+T\+AL}, 
+\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a9be9ae32fed8e1e6eba4a58692210fbd}{N\+O\+NE}
+ \}
+\item 
+enum \hyperlink{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2c}{Msg\+Color} \{ \newline
+\hyperlink{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2ca1dcf5030a7b8beb983fd3dc8308eb066}{B\+L\+UE}, 
+\hyperlink{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2ca0b06352b93e105a1b59d246e3ab1473f}{G\+R\+E\+EN}, 
+\hyperlink{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2ca7eb16ade63c14f1eca4a79c0d3316b1e}{W\+H\+I\+TE}, 
+\hyperlink{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2cab9a69d49c8dcce5f9df100509d2b0bf0}{M\+A\+G\+E\+N\+TA}, 
+\newline
+\hyperlink{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2cafc5827dd1cc81b88110254bfbdf1add2}{Y\+E\+L\+L\+OW}, 
+\hyperlink{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2ca5c5593ef0eafd0335e37f9060a0cc097}{R\+ED}, 
+\hyperlink{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2ca75e9a07cb216444b43234f5092559caf}{C\+Y\+AN}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMsgSvc_a67dd82487821da06312e20c1fc68b85a}{Msg\+Svc} ()
+\begin{DoxyCompactList}\small\item\em Standard constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classMsgSvc_a07f15da0052e8703a89b2fc66382fe0e}{$\sim$\+Msg\+Svc} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msg\+Svc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926}{Msg\+Svc\+::\+Msg\+Level}, std\+::string, std\+::string call=std\+::string(\char`\"{}\char`\"{}))
+\item 
+void \hyperlink{classMsgSvc_ab741c391e80fcbf13eb2e60e48dc7536}{set\+Line\+Length} (int linelength)
+\item 
+void \hyperlink{classMsgSvc_a50854fb6f9df98bc170f690941747b61}{set\+Call\+Size} (int call\+Size)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMsgSvc_ad16d082e1bed97d14344d4942664d370}{log} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926}{Msg\+Svc\+::\+Msg\+Level}, std\+::string, std\+::string)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classMsgSvc_a74b20f11493ffbe27801bc1857fd079e}{logtime} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classMsgSvc_abcd0a0eab83f97f7638bbcca4f69e950}{colors}
+\item 
+int \hyperlink{classMsgSvc_ab22aa5d8130cbb94246c4192440d41fb}{m\+\_\+call\+Size}
+\item 
+int \hyperlink{classMsgSvc_a63c500a8e8573e6e68e0c2966920ddaa}{m\+\_\+line\+Length}
+\item 
+std\+::string \hyperlink{classMsgSvc_a2bf08fec17ae56486896dc6934528442}{m\+\_\+origin}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Frederic Machefert 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2009-\/12-\/30 
+\end{DoxyDate}
+
+
+Definition at line 21 of file Msg\+Svc.\+h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2c}\label{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2c}} 
+\index{Msg\+Svc@{Msg\+Svc}!Msg\+Color@{Msg\+Color}}
+\index{Msg\+Color@{Msg\+Color}!Msg\+Svc@{Msg\+Svc}}
+\subsubsection{\texorpdfstring{Msg\+Color}{MsgColor}}
+{\footnotesize\ttfamily enum \hyperlink{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2c}{Msg\+Svc\+::\+Msg\+Color}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B\+L\+UE@{B\+L\+UE}!Msg\+Svc@{Msg\+Svc}}\index{Msg\+Svc@{Msg\+Svc}!B\+L\+UE@{B\+L\+UE}}}\mbox{\Hypertarget{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2ca1dcf5030a7b8beb983fd3dc8308eb066}\label{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2ca1dcf5030a7b8beb983fd3dc8308eb066}} 
+B\+L\+UE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G\+R\+E\+EN@{G\+R\+E\+EN}!Msg\+Svc@{Msg\+Svc}}\index{Msg\+Svc@{Msg\+Svc}!G\+R\+E\+EN@{G\+R\+E\+EN}}}\mbox{\Hypertarget{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2ca0b06352b93e105a1b59d246e3ab1473f}\label{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2ca0b06352b93e105a1b59d246e3ab1473f}} 
+G\+R\+E\+EN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{W\+H\+I\+TE@{W\+H\+I\+TE}!Msg\+Svc@{Msg\+Svc}}\index{Msg\+Svc@{Msg\+Svc}!W\+H\+I\+TE@{W\+H\+I\+TE}}}\mbox{\Hypertarget{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2ca7eb16ade63c14f1eca4a79c0d3316b1e}\label{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2ca7eb16ade63c14f1eca4a79c0d3316b1e}} 
+W\+H\+I\+TE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M\+A\+G\+E\+N\+TA@{M\+A\+G\+E\+N\+TA}!Msg\+Svc@{Msg\+Svc}}\index{Msg\+Svc@{Msg\+Svc}!M\+A\+G\+E\+N\+TA@{M\+A\+G\+E\+N\+TA}}}\mbox{\Hypertarget{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2cab9a69d49c8dcce5f9df100509d2b0bf0}\label{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2cab9a69d49c8dcce5f9df100509d2b0bf0}} 
+M\+A\+G\+E\+N\+TA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Y\+E\+L\+L\+OW@{Y\+E\+L\+L\+OW}!Msg\+Svc@{Msg\+Svc}}\index{Msg\+Svc@{Msg\+Svc}!Y\+E\+L\+L\+OW@{Y\+E\+L\+L\+OW}}}\mbox{\Hypertarget{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2cafc5827dd1cc81b88110254bfbdf1add2}\label{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2cafc5827dd1cc81b88110254bfbdf1add2}} 
+Y\+E\+L\+L\+OW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+ED@{R\+ED}!Msg\+Svc@{Msg\+Svc}}\index{Msg\+Svc@{Msg\+Svc}!R\+ED@{R\+ED}}}\mbox{\Hypertarget{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2ca5c5593ef0eafd0335e37f9060a0cc097}\label{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2ca5c5593ef0eafd0335e37f9060a0cc097}} 
+R\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+Y\+AN@{C\+Y\+AN}!Msg\+Svc@{Msg\+Svc}}\index{Msg\+Svc@{Msg\+Svc}!C\+Y\+AN@{C\+Y\+AN}}}\mbox{\Hypertarget{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2ca75e9a07cb216444b43234f5092559caf}\label{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2ca75e9a07cb216444b43234f5092559caf}} 
+C\+Y\+AN&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 25 of file Msg\+Svc.\+h.
+
+
+\begin{DoxyCode}
+25 \{\hyperlink{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2ca1dcf5030a7b8beb983fd3dc8308eb066}{BLUE}, \hyperlink{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2ca0b06352b93e105a1b59d246e3ab1473f}{GREEN},  \hyperlink{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2ca7eb16ade63c14f1eca4a79c0d3316b1e}{WHITE}, \hyperlink{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2cab9a69d49c8dcce5f9df100509d2b0bf0}{MAGENTA}, \hyperlink{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2cafc5827dd1cc81b88110254bfbdf1add2}{YELLOW}, \hyperlink{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2ca5c5593ef0eafd0335e37f9060a0cc097}{RED}, \hyperlink{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2ca75e9a07cb216444b43234f5092559caf}{CYAN}\};
+\end{DoxyCode}
+\mbox{\Hypertarget{classMsgSvc_ae671eb7301996cd049d2da8a65925926}\label{classMsgSvc_ae671eb7301996cd049d2da8a65925926}} 
+\index{Msg\+Svc@{Msg\+Svc}!Msg\+Level@{Msg\+Level}}
+\index{Msg\+Level@{Msg\+Level}!Msg\+Svc@{Msg\+Svc}}
+\subsubsection{\texorpdfstring{Msg\+Level}{MsgLevel}}
+{\footnotesize\ttfamily enum \hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926}{Msg\+Svc\+::\+Msg\+Level}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+E\+R\+B\+O\+SE@{V\+E\+R\+B\+O\+SE}!Msg\+Svc@{Msg\+Svc}}\index{Msg\+Svc@{Msg\+Svc}!V\+E\+R\+B\+O\+SE@{V\+E\+R\+B\+O\+SE}}}\mbox{\Hypertarget{classMsgSvc_ae671eb7301996cd049d2da8a65925926af655256b06494ade5ba830abe5401ec9}\label{classMsgSvc_ae671eb7301996cd049d2da8a65925926af655256b06494ade5ba830abe5401ec9}} 
+V\+E\+R\+B\+O\+SE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+E\+B\+UG@{D\+E\+B\+UG}!Msg\+Svc@{Msg\+Svc}}\index{Msg\+Svc@{Msg\+Svc}!D\+E\+B\+UG@{D\+E\+B\+UG}}}\mbox{\Hypertarget{classMsgSvc_ae671eb7301996cd049d2da8a65925926a1dbdcc82dce88370ec335883c83b38b0}\label{classMsgSvc_ae671eb7301996cd049d2da8a65925926a1dbdcc82dce88370ec335883c83b38b0}} 
+D\+E\+B\+UG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+N\+FO@{I\+N\+FO}!Msg\+Svc@{Msg\+Svc}}\index{Msg\+Svc@{Msg\+Svc}!I\+N\+FO@{I\+N\+FO}}}\mbox{\Hypertarget{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}\label{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}} 
+I\+N\+FO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{W\+A\+R\+N\+I\+NG@{W\+A\+R\+N\+I\+NG}!Msg\+Svc@{Msg\+Svc}}\index{Msg\+Svc@{Msg\+Svc}!W\+A\+R\+N\+I\+NG@{W\+A\+R\+N\+I\+NG}}}\mbox{\Hypertarget{classMsgSvc_ae671eb7301996cd049d2da8a65925926a7cefae88f2ba26b2b05b676a383c834b}\label{classMsgSvc_ae671eb7301996cd049d2da8a65925926a7cefae88f2ba26b2b05b676a383c834b}} 
+W\+A\+R\+N\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+RR@{E\+RR}!Msg\+Svc@{Msg\+Svc}}\index{Msg\+Svc@{Msg\+Svc}!E\+RR@{E\+RR}}}\mbox{\Hypertarget{classMsgSvc_ae671eb7301996cd049d2da8a65925926a35a9d7166e9896af4ec8fb33bf5f1772}\label{classMsgSvc_ae671eb7301996cd049d2da8a65925926a35a9d7166e9896af4ec8fb33bf5f1772}} 
+E\+RR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+A\+T\+AL@{F\+A\+T\+AL}!Msg\+Svc@{Msg\+Svc}}\index{Msg\+Svc@{Msg\+Svc}!F\+A\+T\+AL@{F\+A\+T\+AL}}}\mbox{\Hypertarget{classMsgSvc_ae671eb7301996cd049d2da8a65925926a59c73cb29edfc9cdf35845e2b1301363}\label{classMsgSvc_ae671eb7301996cd049d2da8a65925926a59c73cb29edfc9cdf35845e2b1301363}} 
+F\+A\+T\+AL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+O\+NE@{N\+O\+NE}!Msg\+Svc@{Msg\+Svc}}\index{Msg\+Svc@{Msg\+Svc}!N\+O\+NE@{N\+O\+NE}}}\mbox{\Hypertarget{classMsgSvc_ae671eb7301996cd049d2da8a65925926a9be9ae32fed8e1e6eba4a58692210fbd}\label{classMsgSvc_ae671eb7301996cd049d2da8a65925926a9be9ae32fed8e1e6eba4a58692210fbd}} 
+N\+O\+NE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 24 of file Msg\+Svc.\+h.
+
+
+\begin{DoxyCode}
+24 \{\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926af655256b06494ade5ba830abe5401ec9}{VERBOSE}=-6, \hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a1dbdcc82dce88370ec335883c83b38b0}{DEBUG}, \hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{INFO}, \hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a7cefae88f2ba26b2b05b676a383c834b}{WARNING}, \hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a35a9d7166e9896af4ec8fb33bf5f1772}{ERR}, \hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a59c73cb29edfc9cdf35845e2b1301363}{FATAL}, 
+      \hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a9be9ae32fed8e1e6eba4a58692210fbd}{NONE}\};
+\end{DoxyCode}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMsgSvc_a67dd82487821da06312e20c1fc68b85a}\label{classMsgSvc_a67dd82487821da06312e20c1fc68b85a}} 
+\index{Msg\+Svc@{Msg\+Svc}!Msg\+Svc@{Msg\+Svc}}
+\index{Msg\+Svc@{Msg\+Svc}!Msg\+Svc@{Msg\+Svc}}
+\subsubsection{\texorpdfstring{Msg\+Svc()}{MsgSvc()}}
+{\footnotesize\ttfamily Msg\+Svc\+::\+Msg\+Svc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Standard constructor. 
+
+
+
+Definition at line 19 of file Msg\+Svc.\+cpp.
+
+
+
+References colors.
+
+
+\begin{DoxyCode}
+19                  : 
+20   \hyperlink{classMsgSvc_ab22aa5d8130cbb94246c4192440d41fb}{m\_callSize}   (18),
+21   \hyperlink{classMsgSvc_a63c500a8e8573e6e68e0c2966920ddaa}{m\_lineLength} (200)\{
+22   \hyperlink{classMsgSvc_abcd0a0eab83f97f7638bbcca4f69e950}{colors}.push\_back(std::string(\textcolor{stringliteral}{"\(\backslash\)033[94m"}));
+23   \hyperlink{classMsgSvc_abcd0a0eab83f97f7638bbcca4f69e950}{colors}.push\_back(std::string(\textcolor{stringliteral}{"\(\backslash\)033[92m"}));
+24   \hyperlink{classMsgSvc_abcd0a0eab83f97f7638bbcca4f69e950}{colors}.push\_back(std::string(\textcolor{stringliteral}{"\(\backslash\)033[93m"}));
+25   \hyperlink{classMsgSvc_abcd0a0eab83f97f7638bbcca4f69e950}{colors}.push\_back(std::string(\textcolor{stringliteral}{"\(\backslash\)033[95m"}));
+26 \textcolor{comment}{//  colors.push\_back(std::string("\(\backslash\)033[47m \(\backslash\)033[7m \(\backslash\)033[45m"));}
+27   \hyperlink{classMsgSvc_abcd0a0eab83f97f7638bbcca4f69e950}{colors}.push\_back(std::string(\textcolor{stringliteral}{"\(\backslash\)033[33m"}));
+28   \hyperlink{classMsgSvc_abcd0a0eab83f97f7638bbcca4f69e950}{colors}.push\_back(std::string(\textcolor{stringliteral}{"\(\backslash\)033[91m"}));
+29 \textcolor{comment}{//  colors.push\_back(std::string("\(\backslash\)033[41m"));}
+30   \hyperlink{classMsgSvc_abcd0a0eab83f97f7638bbcca4f69e950}{colors}.push\_back(std::string(\textcolor{stringliteral}{"\(\backslash\)033[0m"}));
+31 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classMsgSvc_a07f15da0052e8703a89b2fc66382fe0e}\label{classMsgSvc_a07f15da0052e8703a89b2fc66382fe0e}} 
+\index{Msg\+Svc@{Msg\+Svc}!````~Msg\+Svc@{$\sim$\+Msg\+Svc}}
+\index{````~Msg\+Svc@{$\sim$\+Msg\+Svc}!Msg\+Svc@{Msg\+Svc}}
+\subsubsection{\texorpdfstring{$\sim$\+Msg\+Svc()}{~MsgSvc()}}
+{\footnotesize\ttfamily Msg\+Svc\+::$\sim$\+Msg\+Svc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+
+
+Definition at line 36 of file Msg\+Svc.\+cpp.
+
+
+\begin{DoxyCode}
+36                 \{
+37 \} 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMsgSvc_ad16d082e1bed97d14344d4942664d370}\label{classMsgSvc_ad16d082e1bed97d14344d4942664d370}} 
+\index{Msg\+Svc@{Msg\+Svc}!log@{log}}
+\index{log@{log}!Msg\+Svc@{Msg\+Svc}}
+\subsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily void Msg\+Svc\+::log (\begin{DoxyParamCaption}\item[{\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926}{Msg\+Svc\+::\+Msg\+Level}}]{level,  }\item[{std\+::string}]{msg,  }\item[{std\+::string}]{call }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 69 of file Msg\+Svc.\+cpp.
+
+
+
+References application(), B\+L\+UE, colors, C\+Y\+AN, D\+E\+B\+UG, E\+RR, F\+A\+T\+AL, G\+R\+E\+EN, I\+N\+FO, logtime(), m\+\_\+call\+Size, M\+A\+G\+E\+N\+TA, R\+ED, V\+E\+R\+B\+O\+SE, W\+A\+R\+N\+I\+NG, W\+H\+I\+TE, and Y\+E\+L\+L\+OW.
+
+
+
+Referenced by msg\+Svc(), and set\+Call\+Size().
+
+
+\begin{DoxyCode}
+71                                   \{
+72 
+73   \textcolor{keywordtype}{bool} isFatal=\textcolor{keyword}{false};   
+74   
+75   \textcolor{comment}{//#ifndef WIN32}
+76   std::string output(\hyperlink{classMsgSvc_abcd0a0eab83f97f7638bbcca4f69e950}{colors}[\hyperlink{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2ca1dcf5030a7b8beb983fd3dc8308eb066}{BLUE}]);
+77   output+=std::string(call,0,\hyperlink{classMsgSvc_ab22aa5d8130cbb94246c4192440d41fb}{m\_callSize});
+78   \textcolor{comment}{//#else}
+79   \textcolor{comment}{//  std::string output=std::string(call,0,m\_callSize);}
+80   \textcolor{comment}{//#endif}
+81 
+82 
+83 
+84   \textcolor{keywordtype}{int} clen=call.length();
+85 
+86   \textcolor{keywordflow}{if} (clen>0)
+87   \{
+88     \textcolor{keywordflow}{if} (clen>\hyperlink{classMsgSvc_ab22aa5d8130cbb94246c4192440d41fb}{m\_callSize}) output.replace(\hyperlink{classMsgSvc_ab22aa5d8130cbb94246c4192440d41fb}{m\_callSize}+5-3,3,\textcolor{stringliteral}{"..."});
+89     \textcolor{keywordflow}{if} (clen<\hyperlink{classMsgSvc_ab22aa5d8130cbb94246c4192440d41fb}{m\_callSize}) output.insert (clen+5,\hyperlink{classMsgSvc_ab22aa5d8130cbb94246c4192440d41fb}{m\_callSize}-clen,\textcolor{charliteral}{' '});
+90   \}
+91   
+92   std::string color;
+93   
+94   \textcolor{keywordflow}{switch}(level) \{       
+95   \textcolor{keywordflow}{case} \hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926af655256b06494ade5ba830abe5401ec9}{VERBOSE}:
+96 \textcolor{preprocessor}{#ifndef WIN32}
+97     color=\hyperlink{classMsgSvc_abcd0a0eab83f97f7638bbcca4f69e950}{colors}[\hyperlink{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2ca1dcf5030a7b8beb983fd3dc8308eb066}{BLUE}];
+98     output+=color;
+99 \textcolor{preprocessor}{#endif}
+100     output+=\textcolor{stringliteral}{" VERBOSE "};
+101     \textcolor{keywordflow}{break};
+102   \textcolor{keywordflow}{case} \hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a1dbdcc82dce88370ec335883c83b38b0}{DEBUG}:
+103 \textcolor{preprocessor}{#ifndef WIN32}
+104     color=\hyperlink{classMsgSvc_abcd0a0eab83f97f7638bbcca4f69e950}{colors}[\hyperlink{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2ca1dcf5030a7b8beb983fd3dc8308eb066}{BLUE}];
+105     output+=color;
+106 \textcolor{preprocessor}{#endif}
+107     output+=\textcolor{stringliteral}{" DEBUG   "};
+108     \textcolor{keywordflow}{break};
+109   \textcolor{keywordflow}{case} \hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{INFO}:
+110 \textcolor{preprocessor}{#ifndef WIN32}
+111     color=\hyperlink{classMsgSvc_abcd0a0eab83f97f7638bbcca4f69e950}{colors}[\hyperlink{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2ca0b06352b93e105a1b59d246e3ab1473f}{GREEN}];
+112     output+=color;
+113 \textcolor{preprocessor}{#endif}
+114     output+=\textcolor{stringliteral}{" INFO    "};
+115     \textcolor{keywordflow}{break};
+116   \textcolor{keywordflow}{case} \hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a7cefae88f2ba26b2b05b676a383c834b}{WARNING}:
+117 \textcolor{preprocessor}{#ifndef WIN32}
+118     color=\hyperlink{classMsgSvc_abcd0a0eab83f97f7638bbcca4f69e950}{colors}[\hyperlink{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2cafc5827dd1cc81b88110254bfbdf1add2}{YELLOW}];    
+119     output+=color;
+120 \textcolor{preprocessor}{#endif}
+121     output+=\textcolor{stringliteral}{" WARNING "};
+122     \textcolor{keywordflow}{break};
+123   \textcolor{keywordflow}{case} \hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a35a9d7166e9896af4ec8fb33bf5f1772}{ERR}:
+124 \textcolor{preprocessor}{#ifndef WIN32}
+125     color=\hyperlink{classMsgSvc_abcd0a0eab83f97f7638bbcca4f69e950}{colors}[\hyperlink{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2cab9a69d49c8dcce5f9df100509d2b0bf0}{MAGENTA}];    
+126     output+=color;
+127 \textcolor{preprocessor}{#endif}
+128     output+=\textcolor{stringliteral}{" ERROR   "};
+129     \textcolor{keywordflow}{break};
+130   \textcolor{keywordflow}{case} \hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a59c73cb29edfc9cdf35845e2b1301363}{FATAL}:
+131 \textcolor{preprocessor}{#ifndef WIN32}
+132     color=\hyperlink{classMsgSvc_abcd0a0eab83f97f7638bbcca4f69e950}{colors}[\hyperlink{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2ca5c5593ef0eafd0335e37f9060a0cc097}{RED}];
+133     output+=color;
+134 \textcolor{preprocessor}{#endif}
+135     output+=\textcolor{stringliteral}{" FATAL   "};
+136     isFatal=\textcolor{keyword}{true};
+137     \textcolor{keywordflow}{break};
+138   \textcolor{keywordflow}{default}:
+139 \textcolor{preprocessor}{#ifndef WIN32}
+140     color  = \hyperlink{classMsgSvc_abcd0a0eab83f97f7638bbcca4f69e950}{colors}[\hyperlink{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2ca75e9a07cb216444b43234f5092559caf}{CYAN}];
+141     output+=color;
+142 \textcolor{preprocessor}{#endif}
+143     output = call;
+144     \textcolor{keywordflow}{break};
+145   \}
+146 \textcolor{preprocessor}{#ifndef WIN32}
+147   output+=\hyperlink{classMsgSvc_abcd0a0eab83f97f7638bbcca4f69e950}{colors}[\hyperlink{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2ca7eb16ade63c14f1eca4a79c0d3316b1e}{WHITE}];
+148 \textcolor{preprocessor}{#endif}
+149   output+=\hyperlink{classMsgSvc_a74b20f11493ffbe27801bc1857fd079e}{logtime}();
+150 \textcolor{preprocessor}{#ifndef WIN32}
+151   output+=color;
+152 \textcolor{preprocessor}{#endif}
+153   output+=msg;
+154 \textcolor{preprocessor}{#ifndef WIN32}
+155   output+=\hyperlink{classMsgSvc_abcd0a0eab83f97f7638bbcca4f69e950}{colors}[\hyperlink{classMsgSvc_af95de99b5b2e7b6754b6d94ec5526d2ca7eb16ade63c14f1eca4a79c0d3316b1e}{WHITE}];
+156 \textcolor{preprocessor}{#endif}
+157   \textcolor{comment}{/*}
+158 \textcolor{comment}{    int linereturn=output.length();}
+159 \textcolor{comment}{}
+160 \textcolor{comment}{    while (linereturn>m\_lineLength)\{}
+161 \textcolor{comment}{    output.insert(m\_lineLength,"\(\backslash\)n");}
+162 \textcolor{comment}{    output.insert(m\_lineLength+1,9+m\_callSize,' ');}
+163 \textcolor{comment}{    linereturn-=m\_lineLength;   }
+164 \textcolor{comment}{    \}}
+165 \textcolor{comment}{  */}
+166   
+167   std::cout << output << std::endl;
+168   (*\hyperlink{Tools_8h_a27885a3c35afe79029fb830f32f66458}{application}() -> options() -> stream ()) << output << std::endl; ;
+169 
+170   \textcolor{keywordflow}{if} (isFatal) \{exit(0);\}
+171 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classMsgSvc_a74b20f11493ffbe27801bc1857fd079e}\label{classMsgSvc_a74b20f11493ffbe27801bc1857fd079e}} 
+\index{Msg\+Svc@{Msg\+Svc}!logtime@{logtime}}
+\index{logtime@{logtime}!Msg\+Svc@{Msg\+Svc}}
+\subsubsection{\texorpdfstring{logtime()}{logtime()}}
+{\footnotesize\ttfamily std\+::string Msg\+Svc\+::logtime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 54 of file Msg\+Svc.\+cpp.
+
+
+
+Referenced by log().
+
+
+\begin{DoxyCode}
+54                          \{
+55   time\_t rawtime;
+56   \textcolor{keyword}{struct }tm * timeinfo;
+57   
+58   time ( &rawtime );
+59   timeinfo = localtime ( &rawtime );
+60   \textcolor{keywordtype}{char}* timechar =  asctime (timeinfo) ;
+61   std::string timing = std::string(timechar,24) + \textcolor{stringliteral}{" "};
+62 
+63   \textcolor{keywordflow}{return} timing;
+64 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classMsgSvc_ad25f18047920cc59a314e5098259711c}\label{classMsgSvc_ad25f18047920cc59a314e5098259711c}} 
+\index{Msg\+Svc@{Msg\+Svc}!msg\+Svc@{msg\+Svc}}
+\index{msg\+Svc@{msg\+Svc}!Msg\+Svc@{Msg\+Svc}}
+\subsubsection{\texorpdfstring{msg\+Svc()}{msgSvc()}}
+{\footnotesize\ttfamily void Msg\+Svc\+::msg\+Svc (\begin{DoxyParamCaption}\item[{\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926}{Msg\+Svc\+::\+Msg\+Level}}]{level,  }\item[{std\+::string}]{msg,  }\item[{std\+::string}]{call = {\ttfamily std\+:\+:string(\char`\"{}\char`\"{})} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 42 of file Msg\+Svc.\+cpp.
+
+
+
+References application(), log(), and Application\+::options().
+
+
+
+Referenced by Object\+::debug(), var\+::debug(), D\+L\+L\+Mgr\+::debug(), D\+L\+L\+::debug(), Object\+::error(), export\+\_\+base(), Object\+::fatal(), var\+::fatal(), D\+L\+L\+Mgr\+::fatal(), D\+L\+L\+::fatal(), Object\+::info(), var\+::info(), D\+L\+L\+Mgr\+::info(), D\+L\+L\+::info(), Object\+::msg(), D\+L\+L\+::msg(), Object\+::msg\+Svc(), Options\+::print(), Object\+::verbose(), var\+::verbose(), D\+L\+L\+Mgr\+::verbose(), D\+L\+L\+::verbose(), Object\+::warning(), var\+::warning(), D\+L\+L\+Mgr\+::warning(), and D\+L\+L\+::warning().
+
+
+\begin{DoxyCode}
+44                                      \{
+45   \hyperlink{classOptions}{Options} *opt = \hyperlink{Tools_8h_a27885a3c35afe79029fb830f32f66458}{application}() ->\hyperlink{classApplication_ada7cc0e8db586985f1435aee0c79f47d}{options}() ;
+46   \textcolor{keyword}{const} \textcolor{keywordtype}{int} OUTLEVEL = opt -> logOutputLevel(); 
+47   \textcolor{keywordflow}{if} (level<OUTLEVEL) \textcolor{keywordflow}{return};
+48   \hyperlink{classMsgSvc_ad16d082e1bed97d14344d4942664d370}{log} ( level, msg, call);  
+49 \} 
+\end{DoxyCode}
+\mbox{\Hypertarget{classMsgSvc_a50854fb6f9df98bc170f690941747b61}\label{classMsgSvc_a50854fb6f9df98bc170f690941747b61}} 
+\index{Msg\+Svc@{Msg\+Svc}!set\+Call\+Size@{set\+Call\+Size}}
+\index{set\+Call\+Size@{set\+Call\+Size}!Msg\+Svc@{Msg\+Svc}}
+\subsubsection{\texorpdfstring{set\+Call\+Size()}{setCallSize()}}
+{\footnotesize\ttfamily void Msg\+Svc\+::set\+Call\+Size (\begin{DoxyParamCaption}\item[{int}]{call\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 33 of file Msg\+Svc.\+h.
+
+
+
+References log(), and m\+\_\+call\+Size.
+
+
+
+Referenced by export\+\_\+base().
+
+
+\begin{DoxyCode}
+33 \{ \hyperlink{classMsgSvc_ab22aa5d8130cbb94246c4192440d41fb}{m\_callSize}   = callSize  ; \} \textcolor{comment}{//< Set Msg call field size}
+\end{DoxyCode}
+\mbox{\Hypertarget{classMsgSvc_ab741c391e80fcbf13eb2e60e48dc7536}\label{classMsgSvc_ab741c391e80fcbf13eb2e60e48dc7536}} 
+\index{Msg\+Svc@{Msg\+Svc}!set\+Line\+Length@{set\+Line\+Length}}
+\index{set\+Line\+Length@{set\+Line\+Length}!Msg\+Svc@{Msg\+Svc}}
+\subsubsection{\texorpdfstring{set\+Line\+Length()}{setLineLength()}}
+{\footnotesize\ttfamily void Msg\+Svc\+::set\+Line\+Length (\begin{DoxyParamCaption}\item[{int}]{linelength }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 32 of file Msg\+Svc.\+h.
+
+
+
+References m\+\_\+line\+Length.
+
+
+
+Referenced by export\+\_\+base().
+
+
+\begin{DoxyCode}
+32 \{ \hyperlink{classMsgSvc_a63c500a8e8573e6e68e0c2966920ddaa}{m\_lineLength} = linelength ; \} \textcolor{comment}{//< Set Msg line length}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classMsgSvc_abcd0a0eab83f97f7638bbcca4f69e950}\label{classMsgSvc_abcd0a0eab83f97f7638bbcca4f69e950}} 
+\index{Msg\+Svc@{Msg\+Svc}!colors@{colors}}
+\index{colors@{colors}!Msg\+Svc@{Msg\+Svc}}
+\subsubsection{\texorpdfstring{colors}{colors}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Msg\+Svc\+::colors\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 40 of file Msg\+Svc.\+h.
+
+
+
+Referenced by log(), and Msg\+Svc().
+
+\mbox{\Hypertarget{classMsgSvc_ab22aa5d8130cbb94246c4192440d41fb}\label{classMsgSvc_ab22aa5d8130cbb94246c4192440d41fb}} 
+\index{Msg\+Svc@{Msg\+Svc}!m\+\_\+call\+Size@{m\+\_\+call\+Size}}
+\index{m\+\_\+call\+Size@{m\+\_\+call\+Size}!Msg\+Svc@{Msg\+Svc}}
+\subsubsection{\texorpdfstring{m\+\_\+call\+Size}{m\_callSize}}
+{\footnotesize\ttfamily int Msg\+Svc\+::m\+\_\+call\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 41 of file Msg\+Svc.\+h.
+
+
+
+Referenced by log(), and set\+Call\+Size().
+
+\mbox{\Hypertarget{classMsgSvc_a63c500a8e8573e6e68e0c2966920ddaa}\label{classMsgSvc_a63c500a8e8573e6e68e0c2966920ddaa}} 
+\index{Msg\+Svc@{Msg\+Svc}!m\+\_\+line\+Length@{m\+\_\+line\+Length}}
+\index{m\+\_\+line\+Length@{m\+\_\+line\+Length}!Msg\+Svc@{Msg\+Svc}}
+\subsubsection{\texorpdfstring{m\+\_\+line\+Length}{m\_lineLength}}
+{\footnotesize\ttfamily int Msg\+Svc\+::m\+\_\+line\+Length\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 42 of file Msg\+Svc.\+h.
+
+
+
+Referenced by set\+Line\+Length().
+
+\mbox{\Hypertarget{classMsgSvc_a2bf08fec17ae56486896dc6934528442}\label{classMsgSvc_a2bf08fec17ae56486896dc6934528442}} 
+\index{Msg\+Svc@{Msg\+Svc}!m\+\_\+origin@{m\+\_\+origin}}
+\index{m\+\_\+origin@{m\+\_\+origin}!Msg\+Svc@{Msg\+Svc}}
+\subsubsection{\texorpdfstring{m\+\_\+origin}{m\_origin}}
+{\footnotesize\ttfamily std\+::string Msg\+Svc\+::m\+\_\+origin\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 45 of file Msg\+Svc.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/inc/\hyperlink{MsgSvc_8h}{Msg\+Svc.\+h}\item 
+/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/src/\hyperlink{MsgSvc_8cpp}{Msg\+Svc.\+cpp}\end{DoxyCompactItemize}

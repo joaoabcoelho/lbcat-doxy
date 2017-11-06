@@ -1,0 +1,1307 @@
+\hypertarget{namespaceSystem}{}\section{System Namespace Reference}
+\label{namespaceSystem}\index{System@{System}}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void $\ast$ \hyperlink{namespaceSystem_a21dca3f6170a2b0a0ea3028040ba21b3}{Image\+Handle}
+\begin{DoxyCompactList}\small\item\em Definition of an image handle. \end{DoxyCompactList}\item 
+typedef void $\ast$ \hyperlink{namespaceSystem_a7490ee4911e28ad26aa0fcdd00a629df}{Process\+Handle}
+\begin{DoxyCompactList}\small\item\em Definition of the process handle. \end{DoxyCompactList}\item 
+typedef void $\ast$ \hyperlink{namespaceSystem_ad0b1bc3494d9fecebf85204f61224ac6}{Thread\+Handle}
+\begin{DoxyCompactList}\small\item\em A Thread handle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5}{Module\+Type} \{ \hyperlink{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5a674d015a465c28de6e2f385f071c25a2}{U\+N\+K\+N\+O\+WN}, 
+\hyperlink{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5a2caa15b2f0df35f7d8b6c3d3f9f52d44}{S\+H\+A\+R\+E\+D\+L\+IB}, 
+\hyperlink{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5a130859e092dc88d9e2eed92640885830}{E\+X\+E\+C\+U\+T\+A\+B\+LE}
+ \}
+\item 
+enum \hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7}{Info\+Type} \{ \newline
+\hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a06b65239d2b9cf972786593c95d864a6}{No\+Fetch}, 
+\hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7ad2436bf33fca09ddbc196b7145b3cca5}{Remain\+Time}, 
+\hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a3f922834570db4b74edefd683ee0424b}{Times}, 
+\hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7abf68053aed010d37fad9cb7247259406}{Process\+Basics}, 
+\newline
+\hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a09f7fed636a453ce56c03452d1cc3169}{Priority\+Boost}, 
+\hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a4aa1e712ac90a1de65e65af2bebd59dc}{Memory}, 
+\hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7ace0b09a8b0f5c6a1973163673cd11edb}{Quota}, 
+\hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a84af275c6c9199216bc0322a1aa67cb1}{System}, 
+\newline
+\hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a20de13f42ce0e8b367828515b481abf1}{Modules}, 
+\hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a6bf4eb18563020d8de7717f2e918a34e}{IO}
+ \}\begin{DoxyCompactList}\small\item\em Enumeration for fetching information. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1a}{Time\+Type} \{ \newline
+\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa64832eae7c2445025f46f1edffee0dc9}{Year}, 
+\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa9cb8038eade78dc7e9eea70e011bf486}{Month}, 
+\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aadfe8009835ec554da788b9f760d87b70}{Day}, 
+\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa7892c9d3e6ae2e92369991add3309b7f}{Hour}, 
+\newline
+\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa586582933928c3e070299d678e0e2b64}{Min}, 
+\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa6d191428f7f4db75520ed5e52a6951ea}{Sec}, 
+\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa1b7bae23a29567151c8b8103104c620a}{milli\+Sec}, 
+\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aac1b8171b8958dbf619ac6e53eea30ee8}{micro\+Sec}, 
+\newline
+\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa6f2f428d84545df4ed7b5b9022ed7e23}{nano\+Sec}
+ \}\begin{DoxyCompactList}\small\item\em Time type for conversion. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \& \hyperlink{namespaceSystem_add155d288552032434ee9e25d130ad72}{module\+Name} ()
+\begin{DoxyCompactList}\small\item\em Get the name of the (executable/\+D\+LL) file without file-\/type. \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{namespaceSystem_abbb9e2ab2f883bfe24805d89bef43792}{module\+Name\+Full} ()
+\begin{DoxyCompactList}\small\item\em Get the full name of the (executable/\+D\+LL) file. \end{DoxyCompactList}\item 
+const \hyperlink{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5}{Module\+Type} \hyperlink{namespaceSystem_aa0cb1193baa6883c2686a0a87d56d228}{module\+Type} ()
+\begin{DoxyCompactList}\small\item\em Get type of the module. \end{DoxyCompactList}\item 
+\hyperlink{namespaceSystem_a7490ee4911e28ad26aa0fcdd00a629df}{Process\+Handle} \hyperlink{namespaceSystem_a563f947d4a2921f4348ff4f8e909a9f2}{process\+Handle} ()
+\begin{DoxyCompactList}\small\item\em Handle to running process. \end{DoxyCompactList}\item 
+\hyperlink{namespaceSystem_a21dca3f6170a2b0a0ea3028040ba21b3}{Image\+Handle} \hyperlink{namespaceSystem_ab88d0de1d6850b6f95522e9c242eeab0}{module\+Handle} ()
+\begin{DoxyCompactList}\small\item\em Handle to currently executed module. \end{DoxyCompactList}\item 
+\hyperlink{namespaceSystem_a21dca3f6170a2b0a0ea3028040ba21b3}{Image\+Handle} \hyperlink{namespaceSystem_a89399871d8d0f573f39f97f7f4a6320b}{exe\+Handle} ()
+\begin{DoxyCompactList}\small\item\em Handle to the executable file running. \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{namespaceSystem_aff38aaecd202e69eab2707a36adc8df8}{exe\+Name} ()
+\begin{DoxyCompactList}\small\item\em Name of the executable file running. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::string $>$ \hyperlink{namespaceSystem_af1b504f8287b1957eeab91fb89cbd56f}{linked\+Modules} ()
+\begin{DoxyCompactList}\small\item\em Vector of names of linked modules. \end{DoxyCompactList}\item 
+void \hyperlink{namespaceSystem_af2318f71452b7e844f0b654a8bd93018}{set\+Module\+Handle} (\hyperlink{namespaceSystem_a21dca3f6170a2b0a0ea3028040ba21b3}{Image\+Handle} handle)
+\begin{DoxyCompactList}\small\item\em Attach module handle. \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{namespaceSystem_a89320a729880098922e8b505db1137ec}{host\+Name} ()
+\begin{DoxyCompactList}\small\item\em Host name. \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{namespaceSystem_a08f605cda93733c3b7593517ed18557c}{os\+Name} ()
+\begin{DoxyCompactList}\small\item\em OS name. \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{namespaceSystem_aee568b62f9bcad983dcb3f0c30631854}{os\+Version} ()
+\begin{DoxyCompactList}\small\item\em OS version. \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{namespaceSystem_a21d0ee3eb17ae5ed59b3c6c01efce8d9}{machine\+Type} ()
+\begin{DoxyCompactList}\small\item\em Machine type. \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{namespaceSystem_a8a4ea73b74e0f6b8225e571e21ba4e2f}{account\+Name} ()
+\begin{DoxyCompactList}\small\item\em User login name. \end{DoxyCompactList}\item 
+long \hyperlink{namespaceSystem_a45f2f8ee27a6b62a7eb104306db16dc9}{num\+Cmd\+Line\+Args} ()
+\begin{DoxyCompactList}\small\item\em Number of arguments passed to the commandline. \end{DoxyCompactList}\item 
+long \hyperlink{namespaceSystem_aacf2e08c0661f343a44dc174a6931bc6}{argc} ()
+\begin{DoxyCompactList}\small\item\em Number of arguments passed to the commandline (==\hyperlink{namespaceSystem_a45f2f8ee27a6b62a7eb104306db16dc9}{num\+Cmd\+Line\+Args()}); just to match argv call... \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::string $>$ \hyperlink{namespaceSystem_ac5277fb525c07b07bbd94a61e62bc0f5}{cmd\+Line\+Args} ()
+\begin{DoxyCompactList}\small\item\em Command line arguments including executable name as arg\mbox{[}0\mbox{]} as vector of strings. \end{DoxyCompactList}\item 
+char $\ast$$\ast$ \hyperlink{namespaceSystem_ae3520381fd902d4fce860586feeb6c27}{argv} ()
+\begin{DoxyCompactList}\small\item\em char$\ast$$\ast$ command line arguments including executable name as arg\mbox{[}0\mbox{]}; You may not modify them! \end{DoxyCompactList}\item 
+const std\+::string \hyperlink{namespaceSystem_af83af19ba6c1083e5643390dfd65f7aa}{get\+Env} (const char $\ast$\hyperlink{classvar}{var})
+\begin{DoxyCompactList}\small\item\em get a particular environment variable \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::string $>$ \hyperlink{namespaceSystem_a072d542bc6ae51093df9c93db06f4e2d}{get\+Env} ()
+\begin{DoxyCompactList}\small\item\em get all environment variables \end{DoxyCompactList}\item 
+int \hyperlink{namespaceSystem_acbc43cfe7bf59f05d1723317cc9c0098}{set\+Env} (const std\+::string \&name, const std\+::string \&value, int overwrite=1)
+\begin{DoxyCompactList}\small\item\em set an environment variables. \end{DoxyCompactList}\item 
+\hyperlink{namespaceSystem_ad0b1bc3494d9fecebf85204f61224ac6}{Thread\+Handle} \hyperlink{namespaceSystem_a44291b84679d3ed0cb8e9ffdc12b9d73}{thread\+Self} ()
+\begin{DoxyCompactList}\small\item\em thread handle \char`\"{}accessor\char`\"{} \end{DoxyCompactList}\item 
+\hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} \hyperlink{namespaceSystem_a1013a898a3fc9cf6844b8af2c99f2396}{adjust\+Time} (\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1a}{Time\+Type} typ, \hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} timevalue)
+\begin{DoxyCompactList}\small\item\em Convert time from OS native time to requested representation (Experts only) \end{DoxyCompactList}\item 
+\hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} \hyperlink{namespaceSystem_a98918aff92ea8947b8b5a3c48f0ab1fe}{ellapsed\+Time} (\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1a}{Time\+Type} typ=\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa1b7bae23a29567151c8b8103104c620a}{milli\+Sec}, \hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7}{Info\+Type} fetch=\hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a3f922834570db4b74edefd683ee0424b}{Times}, long pid=-\/1)
+\item 
+\hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} \hyperlink{namespaceSystem_a52400aecb0f63c891b51bc958ea064e9}{kernel\+Time} (\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1a}{Time\+Type} typ=\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa1b7bae23a29567151c8b8103104c620a}{milli\+Sec}, \hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7}{Info\+Type} fetch=\hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a3f922834570db4b74edefd683ee0424b}{Times}, long pid=-\/1)
+\item 
+\hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} \hyperlink{namespaceSystem_a8a8a351f0cd9f68163ff6b520cde55c1}{user\+Time} (\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1a}{Time\+Type} typ=\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa1b7bae23a29567151c8b8103104c620a}{milli\+Sec}, \hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7}{Info\+Type} fetch=\hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a3f922834570db4b74edefd683ee0424b}{Times}, long pid=-\/1)
+\item 
+\hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} \hyperlink{namespaceSystem_ada4da1a560bc9a436b2b04d3a15cd655}{cpu\+Time} (\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1a}{Time\+Type} typ=\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa1b7bae23a29567151c8b8103104c620a}{milli\+Sec}, \hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7}{Info\+Type} fetch=\hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a3f922834570db4b74edefd683ee0424b}{Times}, long pid=-\/1)
+\item 
+\hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} \hyperlink{namespaceSystem_a5c0293a51a0a32d5ea7907b9749a977f}{remaining\+Time} (\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1a}{Time\+Type} typ=\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa1b7bae23a29567151c8b8103104c620a}{milli\+Sec}, \hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7}{Info\+Type} fetch=\hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7ace0b09a8b0f5c6a1973163673cd11edb}{Quota}, long pid=-\/1)
+\item 
+\hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} \hyperlink{namespaceSystem_a90888edb3659d54b56e8c9744357202e}{creation\+Time} (\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1a}{Time\+Type} typ=\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa1b7bae23a29567151c8b8103104c620a}{milli\+Sec}, \hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7}{Info\+Type} fetch=\hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a3f922834570db4b74edefd683ee0424b}{Times}, long pid=-\/1)
+\item 
+\hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} \hyperlink{namespaceSystem_a1191eba9e2a1ac98985ec50e0820ab06}{system\+Start} (\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1a}{Time\+Type} typ=\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa6d191428f7f4db75520ed5e52a6951ea}{Sec})
+\item 
+\hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} \hyperlink{namespaceSystem_a96965372858744c96c7cdf155693d8a0}{up\+Time} (\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1a}{Time\+Type} typ=\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa7892c9d3e6ae2e92369991add3309b7f}{Hour})
+\item 
+\hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} \hyperlink{namespaceSystem_ac41cf56db5c2f85828309490742a93d6}{current\+Time} (\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1a}{Time\+Type} typ=\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa1b7bae23a29567151c8b8103104c620a}{milli\+Sec})
+\item 
+\hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} \hyperlink{namespaceSystem_ad25a2f7dd8fd06ea18ea328a7bd26e79}{tick\+Count} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Module\+Info\+: OS specific details to access at run-\/time the module configuration of the process.
+
+M.\+Frank
+
+Note\+: OS specific details as well as Gaudi details may not occur in this definition file, because this header is the used by both, the OS specific implementations and the gaudi specific implementation. Since e.\+g. I\+ID is defined in both, this would lead automatically to complete comilation failures.....
+
+\begin{DoxyAuthor}{Author}
+M.\+Frank
+\end{DoxyAuthor}
+Note\+: OS specific details for process timing
+
+Entrypoints\+:
+\begin{DoxyItemize}
+\item remaining\+Time returns the time the process could still execute
+\item ellapsed\+Time\+: returns ellapsed time since program start
+\item kernel\+Time\+: returns the amount of time the process has spent in kernel mode
+\item user\+Time\+: returns the amount of time the process has spent in user mode
+\item cpu\+Time\+: returns kernel+user time
+\end{DoxyItemize}
+
+On Windows NT Time is expressed as the amount of time that has elapsed since midnight on January 1, 1601 at Greenwich, England.
+
+On Unix time is expressed as the amount of time that has elapsed since midnight on January 1, 1970 at Greenwich, England.
+
+History \+:
+
+
+\begin{DoxyPre}
++---------+----------------------------------------------+--------+
+|    Date |                 Comment                      | Who    |
++---------+----------------------------------------------+--------+
+| 11/11/00| Initial version.                             | MF     |
++---------+----------------------------------------------+--------+
+\end{DoxyPre}
+ \begin{DoxyAuthor}{Author}
+\+: M.\+Frank 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+\+: 1.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{namespaceSystem_a21dca3f6170a2b0a0ea3028040ba21b3}\label{namespaceSystem_a21dca3f6170a2b0a0ea3028040ba21b3}} 
+\index{System@{System}!Image\+Handle@{Image\+Handle}}
+\index{Image\+Handle@{Image\+Handle}!System@{System}}
+\subsubsection{\texorpdfstring{Image\+Handle}{ImageHandle}}
+{\footnotesize\ttfamily typedef void$\ast$ \hyperlink{namespaceSystem_a21dca3f6170a2b0a0ea3028040ba21b3}{System\+::\+Image\+Handle}}
+
+
+
+Definition of an image handle. 
+
+
+
+Definition at line 30 of file Module\+Info.\+h.
+
+\mbox{\Hypertarget{namespaceSystem_a7490ee4911e28ad26aa0fcdd00a629df}\label{namespaceSystem_a7490ee4911e28ad26aa0fcdd00a629df}} 
+\index{System@{System}!Process\+Handle@{Process\+Handle}}
+\index{Process\+Handle@{Process\+Handle}!System@{System}}
+\subsubsection{\texorpdfstring{Process\+Handle}{ProcessHandle}}
+{\footnotesize\ttfamily typedef void$\ast$ \hyperlink{namespaceSystem_a7490ee4911e28ad26aa0fcdd00a629df}{System\+::\+Process\+Handle}}
+
+
+
+Definition of the process handle. 
+
+
+
+Definition at line 32 of file Module\+Info.\+h.
+
+\mbox{\Hypertarget{namespaceSystem_ad0b1bc3494d9fecebf85204f61224ac6}\label{namespaceSystem_ad0b1bc3494d9fecebf85204f61224ac6}} 
+\index{System@{System}!Thread\+Handle@{Thread\+Handle}}
+\index{Thread\+Handle@{Thread\+Handle}!System@{System}}
+\subsubsection{\texorpdfstring{Thread\+Handle}{ThreadHandle}}
+{\footnotesize\ttfamily typedef void$\ast$ \hyperlink{namespaceSystem_ad0b1bc3494d9fecebf85204f61224ac6}{System\+::\+Thread\+Handle}}
+
+
+
+A Thread handle. 
+
+
+
+Definition at line 63 of file System.\+h.
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7}\label{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7}} 
+\index{System@{System}!Info\+Type@{Info\+Type}}
+\index{Info\+Type@{Info\+Type}!System@{System}}
+\subsubsection{\texorpdfstring{Info\+Type}{InfoType}}
+{\footnotesize\ttfamily enum \hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7}{System\+::\+Info\+Type}}
+
+
+
+Enumeration for fetching information. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{No\+Fetch@{No\+Fetch}!System@{System}}\index{System@{System}!No\+Fetch@{No\+Fetch}}}\mbox{\Hypertarget{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a06b65239d2b9cf972786593c95d864a6}\label{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a06b65239d2b9cf972786593c95d864a6}} 
+No\+Fetch&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Remain\+Time@{Remain\+Time}!System@{System}}\index{System@{System}!Remain\+Time@{Remain\+Time}}}\mbox{\Hypertarget{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7ad2436bf33fca09ddbc196b7145b3cca5}\label{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7ad2436bf33fca09ddbc196b7145b3cca5}} 
+Remain\+Time&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Times@{Times}!System@{System}}\index{System@{System}!Times@{Times}}}\mbox{\Hypertarget{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a3f922834570db4b74edefd683ee0424b}\label{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a3f922834570db4b74edefd683ee0424b}} 
+Times&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Process\+Basics@{Process\+Basics}!System@{System}}\index{System@{System}!Process\+Basics@{Process\+Basics}}}\mbox{\Hypertarget{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7abf68053aed010d37fad9cb7247259406}\label{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7abf68053aed010d37fad9cb7247259406}} 
+Process\+Basics&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Priority\+Boost@{Priority\+Boost}!System@{System}}\index{System@{System}!Priority\+Boost@{Priority\+Boost}}}\mbox{\Hypertarget{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a09f7fed636a453ce56c03452d1cc3169}\label{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a09f7fed636a453ce56c03452d1cc3169}} 
+Priority\+Boost&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Memory@{Memory}!System@{System}}\index{System@{System}!Memory@{Memory}}}\mbox{\Hypertarget{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a4aa1e712ac90a1de65e65af2bebd59dc}\label{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a4aa1e712ac90a1de65e65af2bebd59dc}} 
+Memory&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Quota@{Quota}!System@{System}}\index{System@{System}!Quota@{Quota}}}\mbox{\Hypertarget{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7ace0b09a8b0f5c6a1973163673cd11edb}\label{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7ace0b09a8b0f5c6a1973163673cd11edb}} 
+Quota&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{System@{System}!System@{System}}\index{System@{System}!System@{System}}}\mbox{\Hypertarget{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a84af275c6c9199216bc0322a1aa67cb1}\label{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a84af275c6c9199216bc0322a1aa67cb1}} 
+System&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Modules@{Modules}!System@{System}}\index{System@{System}!Modules@{Modules}}}\mbox{\Hypertarget{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a20de13f42ce0e8b367828515b481abf1}\label{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a20de13f42ce0e8b367828515b481abf1}} 
+Modules&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IO@{IO}!System@{System}}\index{System@{System}!IO@{IO}}}\mbox{\Hypertarget{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a6bf4eb18563020d8de7717f2e918a34e}\label{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a6bf4eb18563020d8de7717f2e918a34e}} 
+IO&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 18 of file System\+Base.\+h.
+
+
+\begin{DoxyCode}
+18                   \{   \hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a06b65239d2b9cf972786593c95d864a6}{NoFetch}, 
+19                       \hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7ad2436bf33fca09ddbc196b7145b3cca5}{RemainTime}, 
+20                       \hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a3f922834570db4b74edefd683ee0424b}{Times}, 
+21                       \hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7abf68053aed010d37fad9cb7247259406}{ProcessBasics}, 
+22                       \hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a09f7fed636a453ce56c03452d1cc3169}{PriorityBoost}, 
+23                       \hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a4aa1e712ac90a1de65e65af2bebd59dc}{Memory}, 
+24                       \hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7ace0b09a8b0f5c6a1973163673cd11edb}{Quota},
+25                       \hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a84af275c6c9199216bc0322a1aa67cb1}{System}, 
+26                       \hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a20de13f42ce0e8b367828515b481abf1}{Modules}, 
+27                       \hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a6bf4eb18563020d8de7717f2e918a34e}{IO} \};
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5}\label{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5}} 
+\index{System@{System}!Module\+Type@{Module\+Type}}
+\index{Module\+Type@{Module\+Type}!System@{System}}
+\subsubsection{\texorpdfstring{Module\+Type}{ModuleType}}
+{\footnotesize\ttfamily enum \hyperlink{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5}{System\+::\+Module\+Type}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{U\+N\+K\+N\+O\+WN@{U\+N\+K\+N\+O\+WN}!System@{System}}\index{System@{System}!U\+N\+K\+N\+O\+WN@{U\+N\+K\+N\+O\+WN}}}\mbox{\Hypertarget{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5a674d015a465c28de6e2f385f071c25a2}\label{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5a674d015a465c28de6e2f385f071c25a2}} 
+U\+N\+K\+N\+O\+WN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+H\+A\+R\+E\+D\+L\+IB@{S\+H\+A\+R\+E\+D\+L\+IB}!System@{System}}\index{System@{System}!S\+H\+A\+R\+E\+D\+L\+IB@{S\+H\+A\+R\+E\+D\+L\+IB}}}\mbox{\Hypertarget{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5a2caa15b2f0df35f7d8b6c3d3f9f52d44}\label{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5a2caa15b2f0df35f7d8b6c3d3f9f52d44}} 
+S\+H\+A\+R\+E\+D\+L\+IB&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+X\+E\+C\+U\+T\+A\+B\+LE@{E\+X\+E\+C\+U\+T\+A\+B\+LE}!System@{System}}\index{System@{System}!E\+X\+E\+C\+U\+T\+A\+B\+LE@{E\+X\+E\+C\+U\+T\+A\+B\+LE}}}\mbox{\Hypertarget{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5a130859e092dc88d9e2eed92640885830}\label{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5a130859e092dc88d9e2eed92640885830}} 
+E\+X\+E\+C\+U\+T\+A\+B\+LE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 28 of file Module\+Info.\+h.
+
+
+\begin{DoxyCode}
+28 \{ \hyperlink{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5a674d015a465c28de6e2f385f071c25a2}{UNKNOWN}, \hyperlink{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5a2caa15b2f0df35f7d8b6c3d3f9f52d44}{SHAREDLIB}, \hyperlink{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5a130859e092dc88d9e2eed92640885830}{EXECUTABLE} \};
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceSystem_a15db094516c062b412df2453b4350f1a}\label{namespaceSystem_a15db094516c062b412df2453b4350f1a}} 
+\index{System@{System}!Time\+Type@{Time\+Type}}
+\index{Time\+Type@{Time\+Type}!System@{System}}
+\subsubsection{\texorpdfstring{Time\+Type}{TimeType}}
+{\footnotesize\ttfamily enum \hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1a}{System\+::\+Time\+Type}}
+
+
+
+Time type for conversion. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Year@{Year}!System@{System}}\index{System@{System}!Year@{Year}}}\mbox{\Hypertarget{namespaceSystem_a15db094516c062b412df2453b4350f1aa64832eae7c2445025f46f1edffee0dc9}\label{namespaceSystem_a15db094516c062b412df2453b4350f1aa64832eae7c2445025f46f1edffee0dc9}} 
+Year&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Month@{Month}!System@{System}}\index{System@{System}!Month@{Month}}}\mbox{\Hypertarget{namespaceSystem_a15db094516c062b412df2453b4350f1aa9cb8038eade78dc7e9eea70e011bf486}\label{namespaceSystem_a15db094516c062b412df2453b4350f1aa9cb8038eade78dc7e9eea70e011bf486}} 
+Month&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Day@{Day}!System@{System}}\index{System@{System}!Day@{Day}}}\mbox{\Hypertarget{namespaceSystem_a15db094516c062b412df2453b4350f1aadfe8009835ec554da788b9f760d87b70}\label{namespaceSystem_a15db094516c062b412df2453b4350f1aadfe8009835ec554da788b9f760d87b70}} 
+Day&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Hour@{Hour}!System@{System}}\index{System@{System}!Hour@{Hour}}}\mbox{\Hypertarget{namespaceSystem_a15db094516c062b412df2453b4350f1aa7892c9d3e6ae2e92369991add3309b7f}\label{namespaceSystem_a15db094516c062b412df2453b4350f1aa7892c9d3e6ae2e92369991add3309b7f}} 
+Hour&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Min@{Min}!System@{System}}\index{System@{System}!Min@{Min}}}\mbox{\Hypertarget{namespaceSystem_a15db094516c062b412df2453b4350f1aa586582933928c3e070299d678e0e2b64}\label{namespaceSystem_a15db094516c062b412df2453b4350f1aa586582933928c3e070299d678e0e2b64}} 
+Min&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Sec@{Sec}!System@{System}}\index{System@{System}!Sec@{Sec}}}\mbox{\Hypertarget{namespaceSystem_a15db094516c062b412df2453b4350f1aa6d191428f7f4db75520ed5e52a6951ea}\label{namespaceSystem_a15db094516c062b412df2453b4350f1aa6d191428f7f4db75520ed5e52a6951ea}} 
+Sec&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{milli\+Sec@{milli\+Sec}!System@{System}}\index{System@{System}!milli\+Sec@{milli\+Sec}}}\mbox{\Hypertarget{namespaceSystem_a15db094516c062b412df2453b4350f1aa1b7bae23a29567151c8b8103104c620a}\label{namespaceSystem_a15db094516c062b412df2453b4350f1aa1b7bae23a29567151c8b8103104c620a}} 
+milli\+Sec&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{micro\+Sec@{micro\+Sec}!System@{System}}\index{System@{System}!micro\+Sec@{micro\+Sec}}}\mbox{\Hypertarget{namespaceSystem_a15db094516c062b412df2453b4350f1aac1b8171b8958dbf619ac6e53eea30ee8}\label{namespaceSystem_a15db094516c062b412df2453b4350f1aac1b8171b8958dbf619ac6e53eea30ee8}} 
+micro\+Sec&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{nano\+Sec@{nano\+Sec}!System@{System}}\index{System@{System}!nano\+Sec@{nano\+Sec}}}\mbox{\Hypertarget{namespaceSystem_a15db094516c062b412df2453b4350f1aa6f2f428d84545df4ed7b5b9022ed7e23}\label{namespaceSystem_a15db094516c062b412df2453b4350f1aa6f2f428d84545df4ed7b5b9022ed7e23}} 
+nano\+Sec&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 53 of file Timing.\+h.
+
+
+\begin{DoxyCode}
+53 \{ \hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa64832eae7c2445025f46f1edffee0dc9}{Year}, \hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa9cb8038eade78dc7e9eea70e011bf486}{Month}, \hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aadfe8009835ec554da788b9f760d87b70}{Day}, \hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa7892c9d3e6ae2e92369991add3309b7f}{Hour}, \hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa586582933928c3e070299d678e0e2b64}{Min}, \hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa6d191428f7f4db75520ed5e52a6951ea}{Sec}, \hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa1b7bae23a29567151c8b8103104c620a}{milliSec}, 
+      \hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aac1b8171b8958dbf619ac6e53eea30ee8}{microSec}, \hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa6f2f428d84545df4ed7b5b9022ed7e23}{nanoSec} \};
+\end{DoxyCode}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespaceSystem_a8a4ea73b74e0f6b8225e571e21ba4e2f}\label{namespaceSystem_a8a4ea73b74e0f6b8225e571e21ba4e2f}} 
+\index{System@{System}!account\+Name@{account\+Name}}
+\index{account\+Name@{account\+Name}!System@{System}}
+\subsubsection{\texorpdfstring{account\+Name()}{accountName()}}
+{\footnotesize\ttfamily const std\+::string \& System\+::account\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+User login name. 
+
+
+
+Definition at line 88 of file System.\+cpp.
+
+
+
+Referenced by Application\+::\+Application(), and Server\+\_\+\+N\+I6008\+::\+Server\+\_\+\+N\+I6008().
+
+
+\begin{DoxyCode}
+88                                      \{
+89   \textcolor{keyword}{static} std::string account = \textcolor{stringliteral}{""};
+90   \textcolor{keywordflow}{if} ( account == \textcolor{stringliteral}{""} ) \{
+91     \textcolor{keyword}{const} \textcolor{keywordtype}{char}* acct = ::getlogin();
+92     \textcolor{keywordflow}{if} ( 0 == acct ) acct = ::getenv(\textcolor{stringliteral}{"LOGNAME"});
+93     \textcolor{keywordflow}{if} ( 0 == acct ) acct = ::getenv(\textcolor{stringliteral}{"USER"});
+94     account = (acct) ? acct : \textcolor{stringliteral}{"Unknown"};
+95   \}
+96   \textcolor{keywordflow}{return} account;
+97 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceSystem_a1013a898a3fc9cf6844b8af2c99f2396}\label{namespaceSystem_a1013a898a3fc9cf6844b8af2c99f2396}} 
+\index{System@{System}!adjust\+Time@{adjust\+Time}}
+\index{adjust\+Time@{adjust\+Time}!System@{System}}
+\subsubsection{\texorpdfstring{adjust\+Time()}{adjustTime()}}
+{\footnotesize\ttfamily \hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} System\+::adjust\+Time (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1a}{Time\+Type}}]{typ,  }\item[{\hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong}}]{timevalue }\end{DoxyParamCaption})}
+
+
+
+Convert time from OS native time to requested representation (Experts only) 
+
+\mbox{\Hypertarget{namespaceSystem_aacf2e08c0661f343a44dc174a6931bc6}\label{namespaceSystem_aacf2e08c0661f343a44dc174a6931bc6}} 
+\index{System@{System}!argc@{argc}}
+\index{argc@{argc}!System@{System}}
+\subsubsection{\texorpdfstring{argc()}{argc()}}
+{\footnotesize\ttfamily long System\+::argc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Number of arguments passed to the commandline (==\hyperlink{namespaceSystem_a45f2f8ee27a6b62a7eb104306db16dc9}{num\+Cmd\+Line\+Args()}); just to match argv call... 
+
+Number of arguments passed to the commandline. 
+
+Definition at line 105 of file System.\+cpp.
+
+
+
+References cmd\+Line\+Args().
+
+
+\begin{DoxyCode}
+105                      \{
+106   \textcolor{keywordflow}{return} \hyperlink{namespaceSystem_ac5277fb525c07b07bbd94a61e62bc0f5}{cmdLineArgs}().size();
+107 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceSystem_ae3520381fd902d4fce860586feeb6c27}\label{namespaceSystem_ae3520381fd902d4fce860586feeb6c27}} 
+\index{System@{System}!argv@{argv}}
+\index{argv@{argv}!System@{System}}
+\subsubsection{\texorpdfstring{argv()}{argv()}}
+{\footnotesize\ttfamily char $\ast$$\ast$ System\+::argv (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+char$\ast$$\ast$ command line arguments including executable name as arg\mbox{[}0\mbox{]}; You may not modify them! 
+
+Const char$\ast$$\ast$ command line arguments including executable name as arg\mbox{[}0\mbox{]}. added by I.\+B. 
+
+Definition at line 134 of file System.\+cpp.
+
+
+
+References cmd\+Line\+Args(), and s\+\_\+argv\+Chars.
+
+
+\begin{DoxyCode}
+134                        \{
+136   \textcolor{keywordflow}{if}( \hyperlink{System_8cpp_a05afb231f779de83550ec9b6564d14c5}{s\_argvChars}.empty() ) \{ \hyperlink{namespaceSystem_ac5277fb525c07b07bbd94a61e62bc0f5}{cmdLineArgs}(); \}  
+137   \textcolor{comment}{// We rely here on the fact that a vector's allocation table is contiguous}
+139   \textcolor{keywordflow}{return} (\textcolor{keywordtype}{char}**)&\hyperlink{System_8cpp_a05afb231f779de83550ec9b6564d14c5}{s\_argvChars}[0];
+140 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceSystem_ac5277fb525c07b07bbd94a61e62bc0f5}\label{namespaceSystem_ac5277fb525c07b07bbd94a61e62bc0f5}} 
+\index{System@{System}!cmd\+Line\+Args@{cmd\+Line\+Args}}
+\index{cmd\+Line\+Args@{cmd\+Line\+Args}!System@{System}}
+\subsubsection{\texorpdfstring{cmd\+Line\+Args()}{cmdLineArgs()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ System\+::cmd\+Line\+Args (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Command line arguments including executable name as arg\mbox{[}0\mbox{]} as vector of strings. 
+
+Const char$\ast$$\ast$ command line arguments including executable name as arg\mbox{[}0\mbox{]}. 
+
+Definition at line 110 of file System.\+cpp.
+
+
+
+References exe\+Name(), s\+\_\+argv\+Chars, and s\+\_\+argv\+Strings.
+
+
+
+Referenced by argc(), argv(), and num\+Cmd\+Line\+Args().
+
+
+\begin{DoxyCode}
+110                                                   \{
+111   \textcolor{keywordflow}{if} ( \hyperlink{System_8cpp_a05afb231f779de83550ec9b6564d14c5}{s\_argvChars}.size() == 0 )    \{
+112     \textcolor{keywordtype}{char} exe[1024];
+113     sprintf(exe, \textcolor{stringliteral}{"/proc/%d/cmdline"}, ::getpid());
+114     FILE *cmdLine = ::fopen(exe,\textcolor{stringliteral}{"r"});
+115     \textcolor{keywordtype}{char} cmd[1024];
+116     \textcolor{keywordflow}{if} ( cmdLine )   \{
+117       \textcolor{keywordtype}{long} len = fread(cmd, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{char}), \textcolor{keyword}{sizeof}(cmd), cmdLine);
+118       \textcolor{keywordflow}{if} ( len > 0 )   \{
+119         cmd[len] = 0;
+120         \textcolor{keywordflow}{for} ( \textcolor{keywordtype}{char}* token = cmd; token-cmd < len; token += strlen(token)+1 )  \{
+121           \hyperlink{System_8cpp_a0e3e7e0e9b26e5996e551f639a2295a7}{s\_argvStrings}.push\_back(token);
+122           \hyperlink{System_8cpp_a05afb231f779de83550ec9b6564d14c5}{s\_argvChars}.push\_back( \hyperlink{System_8cpp_a0e3e7e0e9b26e5996e551f639a2295a7}{s\_argvStrings}.back().c\_str());
+123         \}
+124         \hyperlink{System_8cpp_a0e3e7e0e9b26e5996e551f639a2295a7}{s\_argvStrings}[0] = \hyperlink{namespaceSystem_aff38aaecd202e69eab2707a36adc8df8}{exeName}();
+125         \hyperlink{System_8cpp_a05afb231f779de83550ec9b6564d14c5}{s\_argvChars}[0]   = \hyperlink{System_8cpp_a0e3e7e0e9b26e5996e551f639a2295a7}{s\_argvStrings}[0].c\_str();
+126       \}
+127     \}
+128     ::fclose(cmdLine);
+129   \}
+130   \textcolor{keywordflow}{return} \hyperlink{System_8cpp_a0e3e7e0e9b26e5996e551f639a2295a7}{s\_argvStrings};
+131 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceSystem_ada4da1a560bc9a436b2b04d3a15cd655}\label{namespaceSystem_ada4da1a560bc9a436b2b04d3a15cd655}} 
+\index{System@{System}!cpu\+Time@{cpu\+Time}}
+\index{cpu\+Time@{cpu\+Time}!System@{System}}
+\subsubsection{\texorpdfstring{cpu\+Time()}{cpuTime()}}
+{\footnotesize\ttfamily \hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} System\+::cpu\+Time (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1a}{Time\+Type}}]{typ = {\ttfamily \hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa1b7bae23a29567151c8b8103104c620a}{milli\+Sec}},  }\item[{\hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7}{Info\+Type}}]{fetch = {\ttfamily \hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a3f922834570db4b74edefd683ee0424b}{Times}},  }\item[{long}]{pid = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+Consumed C\+PU time of process in milli seconds. 
+\begin{DoxyParams}{Parameters}
+{\em typ} & Indicator or the unit the time will be returned. \\
+\hline
+{\em fetch} & Indicator of the information to be fetched. If Fetch\+\_\+\+None, the information will not be updated. \\
+\hline
+{\em pid} & Process ID of which the information will be returned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Requested value in the indicated units. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceSystem_a90888edb3659d54b56e8c9744357202e}\label{namespaceSystem_a90888edb3659d54b56e8c9744357202e}} 
+\index{System@{System}!creation\+Time@{creation\+Time}}
+\index{creation\+Time@{creation\+Time}!System@{System}}
+\subsubsection{\texorpdfstring{creation\+Time()}{creationTime()}}
+{\footnotesize\ttfamily \hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} System\+::creation\+Time (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1a}{Time\+Type}}]{typ = {\ttfamily \hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa1b7bae23a29567151c8b8103104c620a}{milli\+Sec}},  }\item[{\hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7}{Info\+Type}}]{fetch = {\ttfamily \hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a3f922834570db4b74edefd683ee0424b}{Times}},  }\item[{long}]{pid = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+Process Creation time. 
+\begin{DoxyParams}{Parameters}
+{\em typ} & Indicator or the unit the time will be returned. \\
+\hline
+{\em fetch} & Indicator of the information to be fetched. If Fetch\+\_\+\+None, the information will not be updated. \\
+\hline
+{\em pid} & Process ID of which the information will be returned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Requested value in the indicated units. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceSystem_ac41cf56db5c2f85828309490742a93d6}\label{namespaceSystem_ac41cf56db5c2f85828309490742a93d6}} 
+\index{System@{System}!current\+Time@{current\+Time}}
+\index{current\+Time@{current\+Time}!System@{System}}
+\subsubsection{\texorpdfstring{current\+Time()}{currentTime()}}
+{\footnotesize\ttfamily \hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} System\+::current\+Time (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1a}{Time\+Type}}]{typ = {\ttfamily \hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa1b7bae23a29567151c8b8103104c620a}{milli\+Sec}} }\end{DoxyParamCaption})}
+
+Retrieve absolute system time 
+\begin{DoxyParams}{Parameters}
+{\em typ} & Indicator or the unit the time will be returned. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Requested value in the indicated units. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceSystem_a98918aff92ea8947b8b5a3c48f0ab1fe}\label{namespaceSystem_a98918aff92ea8947b8b5a3c48f0ab1fe}} 
+\index{System@{System}!ellapsed\+Time@{ellapsed\+Time}}
+\index{ellapsed\+Time@{ellapsed\+Time}!System@{System}}
+\subsubsection{\texorpdfstring{ellapsed\+Time()}{ellapsedTime()}}
+{\footnotesize\ttfamily \hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} System\+::ellapsed\+Time (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1a}{Time\+Type}}]{typ = {\ttfamily \hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa1b7bae23a29567151c8b8103104c620a}{milli\+Sec}},  }\item[{\hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7}{Info\+Type}}]{fetch = {\ttfamily \hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a3f922834570db4b74edefd683ee0424b}{Times}},  }\item[{long}]{pid = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+Ellapsed time since start of process in milli seconds. 
+\begin{DoxyParams}{Parameters}
+{\em typ} & Indicator or the unit the time will be returned. \\
+\hline
+{\em timevalue} & Time value to be converted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Requested value in the indicated units. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceSystem_a89399871d8d0f573f39f97f7f4a6320b}\label{namespaceSystem_a89399871d8d0f573f39f97f7f4a6320b}} 
+\index{System@{System}!exe\+Handle@{exe\+Handle}}
+\index{exe\+Handle@{exe\+Handle}!System@{System}}
+\subsubsection{\texorpdfstring{exe\+Handle()}{exeHandle()}}
+{\footnotesize\ttfamily \hyperlink{namespaceSystem_a21dca3f6170a2b0a0ea3028040ba21b3}{System\+::\+Image\+Handle} System\+::exe\+Handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handle to the executable file running. 
+
+
+
+Definition at line 152 of file Module\+Info.\+cpp.
+
+
+
+References Module\+Handle, and process\+Handle().
+
+
+
+Referenced by exe\+Name().
+
+
+\begin{DoxyCode}
+152                                        \{
+153 \textcolor{preprocessor}{#ifdef WIN32}
+154   \textcolor{keywordflow}{if} ( \hyperlink{namespaceSystem_a563f947d4a2921f4348ff4f8e909a9f2}{processHandle}() )    \{
+155     \textcolor{keyword}{static} HINSTANCE handle = 0;
+156     \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_ad342ac907eb044443153a22f964bf0af}{DWORD}   cbNeeded;
+157     \textcolor{keywordflow}{if} ( 0 == handle && \_psApi.isValid() )    \{
+158       \textcolor{keywordflow}{if} ( \_psApi.EnumProcessModules( \hyperlink{namespaceSystem_a563f947d4a2921f4348ff4f8e909a9f2}{processHandle}(), &handle, \textcolor{keyword}{sizeof}(
+      \hyperlink{ModuleInfo_8cpp_ac73543ab438ca67795d960da1ae04464}{ModuleHandle}), &cbNeeded) )   \{
+159       \}
+160     \}
+161     \textcolor{keywordflow}{return} handle;
+162   \}
+163 \textcolor{preprocessor}{#elif defined(linux) || defined(\_\_APPLE\_\_)}
+164   \textcolor{comment}{// This does NOT work!}
+165   \textcolor{keyword}{static} Dl\_info infoBuf, *info = &infoBuf;
+166   \textcolor{keywordflow}{if} ( 0 == info ) \{
+167     \textcolor{keywordtype}{void}* handle = ::dlopen(0, RTLD\_LAZY);
+168     \textcolor{comment}{//printf("Exe handle:%X\(\backslash\)n", handle);}
+169     \textcolor{keywordflow}{if} ( 0 != handle ) \{
+170       \textcolor{keywordtype}{void}* func = ::dlsym(handle, \textcolor{stringliteral}{"main"});
+171       \textcolor{comment}{//printf("Exe:Func handle:%X\(\backslash\)n", func);}
+172       \textcolor{keywordflow}{if} ( 0 != func ) \{
+173         \textcolor{keywordflow}{if} ( 0 != ::dladdr(func, &infoBuf) ) \{
+174             \textcolor{comment}{//std::cout << "All OK" << std::endl;}
+175           info = &infoBuf;
+176         \}
+177       \}
+178     \}
+179   \}
+180   \textcolor{keywordflow}{return} info;
+181 \textcolor{preprocessor}{#elif \_\_hpux}
+182   \textcolor{comment}{// Don't know how to solve this .....}
+183 \textcolor{preprocessor}{#endif}
+184   \textcolor{keywordflow}{return} 0;
+185 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceSystem_aff38aaecd202e69eab2707a36adc8df8}\label{namespaceSystem_aff38aaecd202e69eab2707a36adc8df8}} 
+\index{System@{System}!exe\+Name@{exe\+Name}}
+\index{exe\+Name@{exe\+Name}!System@{System}}
+\subsubsection{\texorpdfstring{exe\+Name()}{exeName()}}
+{\footnotesize\ttfamily const std\+::string \& System\+::exe\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Name of the executable file running. 
+
+
+
+Definition at line 187 of file Module\+Info.\+cpp.
+
+
+
+References exe\+Handle(), and process\+Handle().
+
+
+
+Referenced by cmd\+Line\+Args().
+
+
+\begin{DoxyCode}
+187                                     \{
+188   \textcolor{keyword}{static} std::string module(\textcolor{stringliteral}{""});
+189   \textcolor{keywordflow}{if} ( module.length() == 0 )    \{
+190     \textcolor{keywordtype}{char} name[512] = \{\textcolor{stringliteral}{"Unknown.module"}\};
+191     name[0] = 0;
+192 \textcolor{preprocessor}{#ifdef WIN32}
+193     \textcolor{keywordflow}{if} ( \_psApi.isValid() && \hyperlink{namespaceSystem_a563f947d4a2921f4348ff4f8e909a9f2}{processHandle}() )   \{
+194       \_psApi.GetModuleFileNameExA( \hyperlink{namespaceSystem_a563f947d4a2921f4348ff4f8e909a9f2}{processHandle}(), (HINSTANCE)
+      \hyperlink{namespaceSystem_a89399871d8d0f573f39f97f7f4a6320b}{exeHandle}(), name,\textcolor{keyword}{sizeof}(name) );
+195     \}
+196 \textcolor{preprocessor}{#elif defined(linux) || defined(\_\_APPLE\_\_)}
+197     \textcolor{keywordtype}{char} cmd[512];
+198     ::sprintf(cmd, \textcolor{stringliteral}{"/proc/%d/exe"}, ::getpid());
+199     module = \textcolor{stringliteral}{"Unknown"};
+200     ::readlink(cmd, name, \textcolor{keyword}{sizeof}(name));
+201 \textcolor{preprocessor}{#elif \_\_hpux}
+202     ::realpath(((HMODULE*)\hyperlink{namespaceSystem_a89399871d8d0f573f39f97f7f4a6320b}{exeHandle}())->dsc.filename, name);
+203 \textcolor{preprocessor}{#endif}
+204     module = name;
+205   \}
+206   \textcolor{keywordflow}{return} module;
+207 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceSystem_af83af19ba6c1083e5643390dfd65f7aa}\label{namespaceSystem_af83af19ba6c1083e5643390dfd65f7aa}} 
+\index{System@{System}!get\+Env@{get\+Env}}
+\index{get\+Env@{get\+Env}!System@{System}}
+\subsubsection{\texorpdfstring{get\+Env()}{getEnv()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const std\+::string System\+::get\+Env (\begin{DoxyParamCaption}\item[{const char $\ast$}]{var }\end{DoxyParamCaption})}
+
+
+
+get a particular environment variable 
+
+get a particular env var, return \char`\"{}\+U\+N\+K\+N\+O\+W\+N\char`\"{} if not defined 
+
+Definition at line 143 of file System.\+cpp.
+
+
+
+Referenced by Application\+::bookkeeping(), and Application\+::load\+History\+File().
+
+
+\begin{DoxyCode}
+143                                               \{
+144   \textcolor{keywordtype}{char}* env;
+145   \textcolor{keywordflow}{if}  ( (env = getenv(\hyperlink{classvar}{var})) != 0 ) \{
+146     \textcolor{keywordflow}{return} env;
+147   \} \textcolor{keywordflow}{else} \{
+148     \textcolor{keywordflow}{return} \textcolor{stringliteral}{"UNKNOWN"};
+149   \}
+150 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceSystem_a072d542bc6ae51093df9c93db06f4e2d}\label{namespaceSystem_a072d542bc6ae51093df9c93db06f4e2d}} 
+\index{System@{System}!get\+Env@{get\+Env}}
+\index{get\+Env@{get\+Env}!System@{System}}
+\subsubsection{\texorpdfstring{get\+Env()}{getEnv()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ System\+::get\+Env (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get all environment variables 
+
+get all defined environment vars 
+
+Definition at line 153 of file System.\+cpp.
+
+
+
+References environ.
+
+
+\begin{DoxyCode}
+153                                           \{
+154   std::vector<std::string> \hyperlink{var_8h_a2a1c35ad624b5ab1fedf9a5719b81b4e}{vars};
+155   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; \hyperlink{System_8cpp_aa006daaf11f1e2e45a6ababaf463212b}{environ}[i] != 0; ++i) \{
+156     vars.push\_back(\hyperlink{System_8cpp_aa006daaf11f1e2e45a6ababaf463212b}{environ}[i]);
+157   \}
+158   \textcolor{keywordflow}{return} \hyperlink{var_8h_a2a1c35ad624b5ab1fedf9a5719b81b4e}{vars};
+159 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceSystem_a89320a729880098922e8b505db1137ec}\label{namespaceSystem_a89320a729880098922e8b505db1137ec}} 
+\index{System@{System}!host\+Name@{host\+Name}}
+\index{host\+Name@{host\+Name}!System@{System}}
+\subsubsection{\texorpdfstring{host\+Name()}{hostName()}}
+{\footnotesize\ttfamily const std\+::string \& System\+::host\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Host name. 
+
+
+
+Definition at line 39 of file System.\+cpp.
+
+
+
+Referenced by Application\+::\+Application(), Computer\+::\+Computer(), and Server\+\_\+\+N\+I6008\+::\+Server\+\_\+\+N\+I6008().
+
+
+\begin{DoxyCode}
+39                                   \{
+40   \textcolor{keyword}{static} std::string host = \textcolor{stringliteral}{""};
+41   \textcolor{keywordflow}{if} ( host == \textcolor{stringliteral}{""} ) \{
+42     \textcolor{keywordtype}{char} buffer[512];
+43     memset(buffer,0,\textcolor{keyword}{sizeof}(buffer));
+44     ::gethostname(buffer, \textcolor{keyword}{sizeof}(buffer));
+45     host = buffer;
+46   \}
+47   \textcolor{keywordflow}{return} host;
+48 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceSystem_a52400aecb0f63c891b51bc958ea064e9}\label{namespaceSystem_a52400aecb0f63c891b51bc958ea064e9}} 
+\index{System@{System}!kernel\+Time@{kernel\+Time}}
+\index{kernel\+Time@{kernel\+Time}!System@{System}}
+\subsubsection{\texorpdfstring{kernel\+Time()}{kernelTime()}}
+{\footnotesize\ttfamily \hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} System\+::kernel\+Time (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1a}{Time\+Type}}]{typ = {\ttfamily \hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa1b7bae23a29567151c8b8103104c620a}{milli\+Sec}},  }\item[{\hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7}{Info\+Type}}]{fetch = {\ttfamily \hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a3f922834570db4b74edefd683ee0424b}{Times}},  }\item[{long}]{pid = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+C\+PU kernel mode time of process in milli seconds. 
+\begin{DoxyParams}{Parameters}
+{\em typ} & Indicator or the unit the time will be returned. \\
+\hline
+{\em fetch} & Indicator of the information to be fetched. If Fetch\+\_\+\+None, the information will not be updated. \\
+\hline
+{\em pid} & Process ID of which the information will be returned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Requested value in the indicated units. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceSystem_af1b504f8287b1957eeab91fb89cbd56f}\label{namespaceSystem_af1b504f8287b1957eeab91fb89cbd56f}} 
+\index{System@{System}!linked\+Modules@{linked\+Modules}}
+\index{linked\+Modules@{linked\+Modules}!System@{System}}
+\subsubsection{\texorpdfstring{linked\+Modules()}{linkedModules()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ System\+::linked\+Modules (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Vector of names of linked modules. 
+
+
+
+Definition at line 209 of file Module\+Info.\+cpp.
+
+
+
+References process\+Handle(), and s\+\_\+linked\+Modules.
+
+
+\begin{DoxyCode}
+209                                                     \{
+210   \textcolor{keywordflow}{if} ( \hyperlink{ModuleInfo_8cpp_abe8ab1121ca1a6673c03b03cd042b463}{s\_linkedModules}.size() == 0 )    \{
+211 \textcolor{preprocessor}{#ifdef WIN32}
+212     \textcolor{keywordtype}{char}   name[255];  \textcolor{comment}{// Maximum file name length on NT 4.0}
+213     \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_ad342ac907eb044443153a22f964bf0af}{DWORD}  cbNeeded;
+214     HINSTANCE handle[1024];
+215     \textcolor{keywordflow}{if} ( \_psApi.isValid() )    \{
+216       \textcolor{keywordflow}{if} ( \_psApi.EnumProcessModules(\hyperlink{namespaceSystem_a563f947d4a2921f4348ff4f8e909a9f2}{processHandle}(),handle,\textcolor{keyword}{sizeof}(handle),&cbNeeded) )   \{
+217         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < cbNeeded/\textcolor{keyword}{sizeof}(\hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_aa8c0374618b33785ccb02f74bcfebc46}{HANDLE}); i++ )    \{
+218           \textcolor{keywordflow}{if} ( 0 < \_psApi.GetModuleFileNameExA( \hyperlink{namespaceSystem_a563f947d4a2921f4348ff4f8e909a9f2}{processHandle}(), handle[i], name, \textcolor{keyword}{sizeof}(name)
+      ) )   \{
+219             \hyperlink{ModuleInfo_8cpp_abe8ab1121ca1a6673c03b03cd042b463}{s\_linkedModules}.push\_back(name);
+220           \}
+221         \}
+222       \}
+223     \}
+224 \textcolor{preprocessor}{#elif defined(linux) || defined(\_\_APPLE\_\_)}
+225     \textcolor{keywordtype}{char} ff[512], cmd[1024], fname[1024], buf1[64], buf2[64], buf3[64], buf4[64];
+226     ::sprintf(ff, \textcolor{stringliteral}{"/proc/%d/maps"}, ::getpid());
+227     FILE* maps = ::fopen(ff, \textcolor{stringliteral}{"r"});
+228     \textcolor{keywordflow}{while}( ::fgets(cmd, \textcolor{keyword}{sizeof}(cmd), maps) ) \{
+229       \textcolor{keywordtype}{int} len;
+230       sscanf(cmd, \textcolor{stringliteral}{"%s %s %s %s %d %s"}, buf1, buf2, buf3, buf4, &len, fname);
+231       \textcolor{keywordflow}{if} ( len > 0 && strncmp(buf2,\textcolor{stringliteral}{"r-xp"},strlen(\textcolor{stringliteral}{"r-xp"})) == 0 ) \{
+232         \hyperlink{ModuleInfo_8cpp_abe8ab1121ca1a6673c03b03cd042b463}{s\_linkedModules}.push\_back(fname);
+233       \}
+234     \}
+235     ::fclose(maps);
+236 \textcolor{preprocessor}{#endif}
+237   \}
+238   \textcolor{keywordflow}{return} \hyperlink{ModuleInfo_8cpp_abe8ab1121ca1a6673c03b03cd042b463}{s\_linkedModules};
+239 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceSystem_a21d0ee3eb17ae5ed59b3c6c01efce8d9}\label{namespaceSystem_a21d0ee3eb17ae5ed59b3c6c01efce8d9}} 
+\index{System@{System}!machine\+Type@{machine\+Type}}
+\index{machine\+Type@{machine\+Type}!System@{System}}
+\subsubsection{\texorpdfstring{machine\+Type()}{machineType()}}
+{\footnotesize\ttfamily const std\+::string \& System\+::machine\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Machine type. 
+
+
+
+Definition at line 76 of file System.\+cpp.
+
+
+\begin{DoxyCode}
+76                                      \{
+77   \textcolor{keyword}{static} std::string mach = \textcolor{stringliteral}{""};
+78   \textcolor{keyword}{struct }utsname ut;
+79   \textcolor{keywordflow}{if} (uname(&ut) == 0) \{
+80     mach = ut.machine;
+81   \} \textcolor{keywordflow}{else} \{
+82     mach = \textcolor{stringliteral}{"UNKNOWN"};
+83   \}
+84   \textcolor{keywordflow}{return} mach;
+85 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceSystem_ab88d0de1d6850b6f95522e9c242eeab0}\label{namespaceSystem_ab88d0de1d6850b6f95522e9c242eeab0}} 
+\index{System@{System}!module\+Handle@{module\+Handle}}
+\index{module\+Handle@{module\+Handle}!System@{System}}
+\subsubsection{\texorpdfstring{module\+Handle()}{moduleHandle()}}
+{\footnotesize\ttfamily \hyperlink{namespaceSystem_a21dca3f6170a2b0a0ea3028040ba21b3}{System\+::\+Image\+Handle} System\+::module\+Handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handle to currently executed module. 
+
+
+
+Definition at line 128 of file Module\+Info.\+cpp.
+
+
+
+References Module\+Handle, and process\+Handle().
+
+
+
+Referenced by module\+Name(), and module\+Name\+Full().
+
+
+\begin{DoxyCode}
+128                                           \{
+129   \textcolor{keywordflow}{if} ( 0 == \hyperlink{ModuleInfo_8cpp_ac73543ab438ca67795d960da1ae04464}{ModuleHandle} )    \{
+130     \textcolor{keywordflow}{if} ( \hyperlink{namespaceSystem_a563f947d4a2921f4348ff4f8e909a9f2}{processHandle}() )    \{
+131 \textcolor{preprocessor}{#ifdef WIN32}
+132       \textcolor{keyword}{static} HINSTANCE handle = 0;
+133       \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_ad342ac907eb044443153a22f964bf0af}{DWORD}   cbNeeded;
+134       \textcolor{keywordflow}{if} ( 0 == handle && \_psApi.isValid() )    \{
+135         \textcolor{keywordflow}{if} ( \_psApi.EnumProcessModules( \hyperlink{namespaceSystem_a563f947d4a2921f4348ff4f8e909a9f2}{processHandle}(), &handle, \textcolor{keyword}{sizeof}(
+      \hyperlink{ModuleInfo_8cpp_ac73543ab438ca67795d960da1ae04464}{ModuleHandle}), &cbNeeded) )   \{
+136         \}
+137       \}
+138       \textcolor{keywordflow}{return} handle;
+139 \textcolor{preprocessor}{#elif defined(linux) || defined(\_\_APPLE\_\_)}
+140       \textcolor{keyword}{static} Dl\_info info;
+141       \textcolor{keywordflow}{if} ( 0 != ::dladdr((\textcolor{keywordtype}{void}*)\hyperlink{namespaceSystem_ab88d0de1d6850b6f95522e9c242eeab0}{System::moduleHandle}, &info) ) \{
+142     \textcolor{keywordflow}{return} &info;
+143       \}
+144 \textcolor{preprocessor}{#elif \_\_hpux}
+145       \textcolor{keywordflow}{return} 0;  \textcolor{comment}{// Don't know how to solve this .....}
+146 \textcolor{preprocessor}{#endif}
+147     \}
+148   \}
+149   \textcolor{keywordflow}{return} \hyperlink{ModuleInfo_8cpp_ac73543ab438ca67795d960da1ae04464}{ModuleHandle};
+150 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceSystem_add155d288552032434ee9e25d130ad72}\label{namespaceSystem_add155d288552032434ee9e25d130ad72}} 
+\index{System@{System}!module\+Name@{module\+Name}}
+\index{module\+Name@{module\+Name}!System@{System}}
+\subsubsection{\texorpdfstring{module\+Name()}{moduleName()}}
+{\footnotesize\ttfamily const std\+::string \& System\+::module\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the name of the (executable/\+D\+LL) file without file-\/type. 
+
+Retrieve base name of module. 
+
+Definition at line 47 of file Module\+Info.\+cpp.
+
+
+
+References module\+Handle(), and process\+Handle().
+
+
+\begin{DoxyCode}
+47                                       \{
+48   \textcolor{keyword}{static} std::string module(\textcolor{stringliteral}{""});
+49   \textcolor{keywordflow}{if} ( module == \textcolor{stringliteral}{""} )   \{
+50     \textcolor{keywordflow}{if} ( \hyperlink{namespaceSystem_a563f947d4a2921f4348ff4f8e909a9f2}{processHandle}() && \hyperlink{namespaceSystem_ab88d0de1d6850b6f95522e9c242eeab0}{moduleHandle}() )    \{
+51 \textcolor{preprocessor}{#ifdef WIN32}
+52       \textcolor{keywordtype}{char} \hyperlink{namespaceSystem_add155d288552032434ee9e25d130ad72}{moduleName}[256] = \{\textcolor{stringliteral}{"Unknown.module"}\};
+53       moduleName[0] = 0;
+54       \textcolor{keywordflow}{if} ( \_psApi.isValid() )   \{
+55         \_psApi.GetModuleBaseNameA( \hyperlink{namespaceSystem_a563f947d4a2921f4348ff4f8e909a9f2}{processHandle}(), (HINSTANCE)
+      \hyperlink{namespaceSystem_ab88d0de1d6850b6f95522e9c242eeab0}{moduleHandle}(), moduleName, \textcolor{keyword}{sizeof}(moduleName) );
+56       \}
+57       std::string mod = \hyperlink{namespaceSystem_add155d288552032434ee9e25d130ad72}{moduleName};
+58 \textcolor{preprocessor}{#elif defined(linux) || defined(\_\_APPLE\_\_)}
+59       std::string mod = ::basename((\textcolor{keywordtype}{char}*)((Dl\_info*)\hyperlink{namespaceSystem_ab88d0de1d6850b6f95522e9c242eeab0}{moduleHandle}())->dli\_fname);
+60 \textcolor{preprocessor}{#elif \_\_hpux}
+61       std::string mod = ::basename(((HMODULE*)\hyperlink{namespaceSystem_ab88d0de1d6850b6f95522e9c242eeab0}{moduleHandle}())->dsc.filename);
+62 \textcolor{preprocessor}{#endif}
+63       module = mod.substr(0, mod.rfind(\textcolor{charliteral}{'.'}));
+64     \}
+65   \}
+66   \textcolor{keywordflow}{return} module;
+67 \} 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceSystem_abbb9e2ab2f883bfe24805d89bef43792}\label{namespaceSystem_abbb9e2ab2f883bfe24805d89bef43792}} 
+\index{System@{System}!module\+Name\+Full@{module\+Name\+Full}}
+\index{module\+Name\+Full@{module\+Name\+Full}!System@{System}}
+\subsubsection{\texorpdfstring{module\+Name\+Full()}{moduleNameFull()}}
+{\footnotesize\ttfamily const std\+::string \& System\+::module\+Name\+Full (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the full name of the (executable/\+D\+LL) file. 
+
+Retrieve full name of module. 
+
+Definition at line 70 of file Module\+Info.\+cpp.
+
+
+
+References module\+Handle(), and process\+Handle().
+
+
+
+Referenced by module\+Type().
+
+
+\begin{DoxyCode}
+70                                           \{
+71   \textcolor{keyword}{static} std::string module(\textcolor{stringliteral}{""});
+72   \textcolor{keywordflow}{if} ( module == \textcolor{stringliteral}{""} )   \{
+73     \textcolor{keywordflow}{if} ( \hyperlink{namespaceSystem_a563f947d4a2921f4348ff4f8e909a9f2}{processHandle}() && \hyperlink{namespaceSystem_ab88d0de1d6850b6f95522e9c242eeab0}{moduleHandle}() )    \{
+74       \textcolor{keywordtype}{char} name[512] = \{\textcolor{stringliteral}{"Unknown.module"}\};
+75       name[0] = 0;
+76 \textcolor{preprocessor}{#ifdef WIN32}
+77       \textcolor{keywordflow}{if} ( \_psApi.isValid() )   \{
+78         \_psApi.GetModuleFileNameExA( \hyperlink{namespaceSystem_a563f947d4a2921f4348ff4f8e909a9f2}{processHandle}(), (HINSTANCE)
+      \hyperlink{namespaceSystem_ab88d0de1d6850b6f95522e9c242eeab0}{moduleHandle}(), name,\textcolor{keyword}{sizeof}(name) );
+79       \}
+80 \textcolor{preprocessor}{#elif defined(linux) || defined(\_\_APPLE\_\_)}
+81       ::realpath(((Dl\_info*)\hyperlink{namespaceSystem_ab88d0de1d6850b6f95522e9c242eeab0}{moduleHandle}())->dli\_fname, name);
+82 \textcolor{preprocessor}{#elif \_\_hpux}
+83       ::realpath(((HMODULE*)\hyperlink{namespaceSystem_ab88d0de1d6850b6f95522e9c242eeab0}{moduleHandle}())->dsc.filename, name);
+84 \textcolor{preprocessor}{#endif}
+85       module = name;
+86     \}
+87   \}
+88   \textcolor{keywordflow}{return} module;
+89 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceSystem_aa0cb1193baa6883c2686a0a87d56d228}\label{namespaceSystem_aa0cb1193baa6883c2686a0a87d56d228}} 
+\index{System@{System}!module\+Type@{module\+Type}}
+\index{module\+Type@{module\+Type}!System@{System}}
+\subsubsection{\texorpdfstring{module\+Type()}{moduleType()}}
+{\footnotesize\ttfamily const \hyperlink{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5}{System\+::\+Module\+Type} System\+::module\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get type of the module. 
+
+
+
+Definition at line 92 of file Module\+Info.\+cpp.
+
+
+
+References E\+X\+E\+C\+U\+T\+A\+B\+LE, module\+Name\+Full(), S\+H\+A\+R\+E\+D\+L\+IB, and U\+N\+K\+N\+O\+WN.
+
+
+\begin{DoxyCode}
+92                                             \{
+93   \textcolor{keyword}{static} \hyperlink{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5}{ModuleType} type = \hyperlink{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5a674d015a465c28de6e2f385f071c25a2}{UNKNOWN};
+94   \textcolor{keywordflow}{if} ( type == \hyperlink{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5a674d015a465c28de6e2f385f071c25a2}{UNKNOWN} )    \{
+95     \textcolor{keyword}{const} std::string& module = \hyperlink{namespaceSystem_abbb9e2ab2f883bfe24805d89bef43792}{moduleNameFull}();
+96     \textcolor{keywordtype}{int} loc = module.rfind(\textcolor{charliteral}{'.'})+1;
+97     \textcolor{keywordflow}{if} ( loc == 0 )
+98       type = \hyperlink{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5a130859e092dc88d9e2eed92640885830}{EXECUTABLE};
+99     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ( module[loc] == \textcolor{charliteral}{'e'} || module[loc] == \textcolor{charliteral}{'E'} )
+100       type = \hyperlink{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5a130859e092dc88d9e2eed92640885830}{EXECUTABLE};
+101 \textcolor{preprocessor}{#ifdef WIN32}
+102     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ( module[loc] == \textcolor{charliteral}{'d'} || module[loc] == \textcolor{charliteral}{'D'} )
+103 \textcolor{preprocessor}{#else}
+104     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ( module[loc] == \textcolor{charliteral}{'s'} && module[loc+1] == \textcolor{charliteral}{'o'} )
+105 \textcolor{preprocessor}{#endif}
+106       type = \hyperlink{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5a2caa15b2f0df35f7d8b6c3d3f9f52d44}{SHAREDLIB};
+107     \textcolor{keywordflow}{else}
+108       type = \hyperlink{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5a674d015a465c28de6e2f385f071c25a2}{UNKNOWN};
+109   \}
+110   \textcolor{keywordflow}{return} type;
+111 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceSystem_a45f2f8ee27a6b62a7eb104306db16dc9}\label{namespaceSystem_a45f2f8ee27a6b62a7eb104306db16dc9}} 
+\index{System@{System}!num\+Cmd\+Line\+Args@{num\+Cmd\+Line\+Args}}
+\index{num\+Cmd\+Line\+Args@{num\+Cmd\+Line\+Args}!System@{System}}
+\subsubsection{\texorpdfstring{num\+Cmd\+Line\+Args()}{numCmdLineArgs()}}
+{\footnotesize\ttfamily long System\+::num\+Cmd\+Line\+Args (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Number of arguments passed to the commandline. 
+
+
+
+Definition at line 100 of file System.\+cpp.
+
+
+
+References cmd\+Line\+Args().
+
+
+\begin{DoxyCode}
+100                               \{
+101   \textcolor{keywordflow}{return} \hyperlink{namespaceSystem_ac5277fb525c07b07bbd94a61e62bc0f5}{cmdLineArgs}().size();
+102 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceSystem_a08f605cda93733c3b7593517ed18557c}\label{namespaceSystem_a08f605cda93733c3b7593517ed18557c}} 
+\index{System@{System}!os\+Name@{os\+Name}}
+\index{os\+Name@{os\+Name}!System@{System}}
+\subsubsection{\texorpdfstring{os\+Name()}{osName()}}
+{\footnotesize\ttfamily const std\+::string \& System\+::os\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+OS name. 
+
+
+
+Definition at line 51 of file System.\+cpp.
+
+
+
+Referenced by Application\+::\+Application(), and Server\+\_\+\+N\+I6008\+::\+Server\+\_\+\+N\+I6008().
+
+
+\begin{DoxyCode}
+51                                 \{
+52   \textcolor{keyword}{static} std::string osname = \textcolor{stringliteral}{""};
+53   \textcolor{keyword}{struct }utsname ut;
+54   \textcolor{keywordflow}{if} (uname(&ut) == 0) \{
+55     osname = ut.sysname;
+56   \} \textcolor{keywordflow}{else} \{
+57     osname = \textcolor{stringliteral}{"UNKNOWN"};
+58   \}
+59   \textcolor{keywordflow}{return} osname;
+60 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceSystem_aee568b62f9bcad983dcb3f0c30631854}\label{namespaceSystem_aee568b62f9bcad983dcb3f0c30631854}} 
+\index{System@{System}!os\+Version@{os\+Version}}
+\index{os\+Version@{os\+Version}!System@{System}}
+\subsubsection{\texorpdfstring{os\+Version()}{osVersion()}}
+{\footnotesize\ttfamily const std\+::string \& System\+::os\+Version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+OS version. 
+
+
+
+Definition at line 64 of file System.\+cpp.
+
+
+
+Referenced by Application\+::\+Application(), and Server\+\_\+\+N\+I6008\+::\+Server\+\_\+\+N\+I6008().
+
+
+\begin{DoxyCode}
+64                                    \{
+65   \textcolor{keyword}{static} std::string osver = \textcolor{stringliteral}{""};
+66   \textcolor{keyword}{struct }utsname ut;
+67   \textcolor{keywordflow}{if} (uname(&ut) == 0) \{
+68     osver = ut.release;
+69   \} \textcolor{keywordflow}{else} \{
+70     osver = \textcolor{stringliteral}{"UNKNOWN"};
+71   \}
+72   \textcolor{keywordflow}{return} osver;
+73 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceSystem_a563f947d4a2921f4348ff4f8e909a9f2}\label{namespaceSystem_a563f947d4a2921f4348ff4f8e909a9f2}} 
+\index{System@{System}!process\+Handle@{process\+Handle}}
+\index{process\+Handle@{process\+Handle}!System@{System}}
+\subsubsection{\texorpdfstring{process\+Handle()}{processHandle()}}
+{\footnotesize\ttfamily void $\ast$ System\+::process\+Handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handle to running process. 
+
+Retrieve processhandle. 
+
+Definition at line 114 of file Module\+Info.\+cpp.
+
+
+
+References F\+A\+L\+SE.
+
+
+
+Referenced by exe\+Handle(), exe\+Name(), linked\+Modules(), module\+Handle(), module\+Name(), and module\+Name\+Full().
+
+
+\begin{DoxyCode}
+114                               \{
+115   \textcolor{keyword}{static} \textcolor{keywordtype}{long} pid = ::getpid();
+116 \textcolor{preprocessor}{#ifdef WIN32}
+117   \textcolor{keyword}{static} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_aa8c0374618b33785ccb02f74bcfebc46}{HANDLE} hP = ::OpenProcess(PROCESS\_QUERY\_INFORMATION|PROCESS\_VM\_READ,
+      \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_aa93f0eb578d23995850d61f7d61c55c1}{FALSE},pid);
+118 \textcolor{preprocessor}{#else}
+119   \textcolor{keyword}{static} \textcolor{keywordtype}{void}* hP = (\textcolor{keywordtype}{void}*)pid;
+120 \textcolor{preprocessor}{#endif}
+121   \textcolor{keywordflow}{return} hP;
+122 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceSystem_a5c0293a51a0a32d5ea7907b9749a977f}\label{namespaceSystem_a5c0293a51a0a32d5ea7907b9749a977f}} 
+\index{System@{System}!remaining\+Time@{remaining\+Time}}
+\index{remaining\+Time@{remaining\+Time}!System@{System}}
+\subsubsection{\texorpdfstring{remaining\+Time()}{remainingTime()}}
+{\footnotesize\ttfamily \hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} System\+::remaining\+Time (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1a}{Time\+Type}}]{typ = {\ttfamily \hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa1b7bae23a29567151c8b8103104c620a}{milli\+Sec}},  }\item[{\hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7}{Info\+Type}}]{fetch = {\ttfamily \hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7ace0b09a8b0f5c6a1973163673cd11edb}{Quota}},  }\item[{long}]{pid = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+Maximum processing time left for this process. 
+\begin{DoxyParams}{Parameters}
+{\em typ} & Indicator or the unit the time will be returned. \\
+\hline
+{\em fetch} & Indicator of the information to be fetched. If Fetch\+\_\+\+None, the information will not be updated. \\
+\hline
+{\em pid} & Process ID of which the information will be returned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Requested value in the indicated units. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceSystem_acbc43cfe7bf59f05d1723317cc9c0098}\label{namespaceSystem_acbc43cfe7bf59f05d1723317cc9c0098}} 
+\index{System@{System}!set\+Env@{set\+Env}}
+\index{set\+Env@{set\+Env}!System@{System}}
+\subsubsection{\texorpdfstring{set\+Env()}{setEnv()}}
+{\footnotesize\ttfamily int System\+::set\+Env (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const std\+::string \&}]{value,  }\item[{int}]{overwrite = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+set an environment variables. 
+
+Set an environment variables. If value is empty, the variable is removed from the environment. When overwrite is 0, the variable is not set if already present. Returns 0 on success, -\/1 on failure. See man 3 setenv.
+
+\begin{DoxyReturn}{Returns}
+0 if successful, -\/1 if not 
+\end{DoxyReturn}
+
+
+Definition at line 162 of file System.\+cpp.
+
+
+\begin{DoxyCode}
+163 \{
+164   \textcolor{comment}{// UNIX version}
+165   \textcolor{keywordflow}{return} value.empty() ?
+166     \textcolor{comment}{// remove if set to nothing (and return success)}
+167     ::unsetenv(name.c\_str()) , 0 :
+168     \textcolor{comment}{// set the value}
+169     ::setenv(name.c\_str(),value.c\_str(), overwrite);
+170 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceSystem_af2318f71452b7e844f0b654a8bd93018}\label{namespaceSystem_af2318f71452b7e844f0b654a8bd93018}} 
+\index{System@{System}!set\+Module\+Handle@{set\+Module\+Handle}}
+\index{set\+Module\+Handle@{set\+Module\+Handle}!System@{System}}
+\subsubsection{\texorpdfstring{set\+Module\+Handle()}{setModuleHandle()}}
+{\footnotesize\ttfamily void System\+::set\+Module\+Handle (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceSystem_a21dca3f6170a2b0a0ea3028040ba21b3}{System\+::\+Image\+Handle}}]{handle }\end{DoxyParamCaption})}
+
+
+
+Attach module handle. 
+
+
+
+Definition at line 124 of file Module\+Info.\+cpp.
+
+
+
+References Module\+Handle.
+
+
+\begin{DoxyCode}
+124                                                         \{
+125   \hyperlink{ModuleInfo_8cpp_ac73543ab438ca67795d960da1ae04464}{ModuleHandle} = handle;
+126 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceSystem_a1191eba9e2a1ac98985ec50e0820ab06}\label{namespaceSystem_a1191eba9e2a1ac98985ec50e0820ab06}} 
+\index{System@{System}!system\+Start@{system\+Start}}
+\index{system\+Start@{system\+Start}!System@{System}}
+\subsubsection{\texorpdfstring{system\+Start()}{systemStart()}}
+{\footnotesize\ttfamily \hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} System\+::system\+Start (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1a}{Time\+Type}}]{typ = {\ttfamily \hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa6d191428f7f4db75520ed5e52a6951ea}{Sec}} }\end{DoxyParamCaption})}
+
+Maximum processing time left for this process. 
+\begin{DoxyParams}{Parameters}
+{\em typ} & Indicator or the unit the time will be returned. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Requested value in the indicated units. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceSystem_a44291b84679d3ed0cb8e9ffdc12b9d73}\label{namespaceSystem_a44291b84679d3ed0cb8e9ffdc12b9d73}} 
+\index{System@{System}!thread\+Self@{thread\+Self}}
+\index{thread\+Self@{thread\+Self}!System@{System}}
+\subsubsection{\texorpdfstring{thread\+Self()}{threadSelf()}}
+{\footnotesize\ttfamily \hyperlink{namespaceSystem_ad0b1bc3494d9fecebf85204f61224ac6}{Thread\+Handle} System\+::thread\+Self (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+thread handle \char`\"{}accessor\char`\"{} 
+
+
+
+Definition at line 65 of file System.\+h.
+
+
+\begin{DoxyCode}
+65 \{ \textcolor{keywordflow}{return} (\textcolor{keywordtype}{void}*)0; \}
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceSystem_ad25a2f7dd8fd06ea18ea328a7bd26e79}\label{namespaceSystem_ad25a2f7dd8fd06ea18ea328a7bd26e79}} 
+\index{System@{System}!tick\+Count@{tick\+Count}}
+\index{tick\+Count@{tick\+Count}!System@{System}}
+\subsubsection{\texorpdfstring{tick\+Count()}{tickCount()}}
+{\footnotesize\ttfamily \hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} System\+::tick\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieve the number of ticks since system startup \begin{DoxyReturn}{Returns}
+Requested value in the indicated units. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceSystem_a96965372858744c96c7cdf155693d8a0}\label{namespaceSystem_a96965372858744c96c7cdf155693d8a0}} 
+\index{System@{System}!up\+Time@{up\+Time}}
+\index{up\+Time@{up\+Time}!System@{System}}
+\subsubsection{\texorpdfstring{up\+Time()}{upTime()}}
+{\footnotesize\ttfamily \hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} System\+::up\+Time (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1a}{Time\+Type}}]{typ = {\ttfamily \hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa7892c9d3e6ae2e92369991add3309b7f}{Hour}} }\end{DoxyParamCaption})}
+
+Maximum processing time left for this process. 
+\begin{DoxyParams}{Parameters}
+{\em typ} & Indicator or the unit the time will be returned. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Requested value in the indicated units. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceSystem_a8a8a351f0cd9f68163ff6b520cde55c1}\label{namespaceSystem_a8a8a351f0cd9f68163ff6b520cde55c1}} 
+\index{System@{System}!user\+Time@{user\+Time}}
+\index{user\+Time@{user\+Time}!System@{System}}
+\subsubsection{\texorpdfstring{user\+Time()}{userTime()}}
+{\footnotesize\ttfamily \hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} System\+::user\+Time (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1a}{Time\+Type}}]{typ = {\ttfamily \hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa1b7bae23a29567151c8b8103104c620a}{milli\+Sec}},  }\item[{\hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7}{Info\+Type}}]{fetch = {\ttfamily \hyperlink{namespaceSystem_a71a46d52920ca8e98fc4649949be58a7a3f922834570db4b74edefd683ee0424b}{Times}},  }\item[{long}]{pid = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+C\+PU user mode time of process in milli seconds. 
+\begin{DoxyParams}{Parameters}
+{\em typ} & Indicator or the unit the time will be returned. \\
+\hline
+{\em fetch} & Indicator of the information to be fetched. If Fetch\+\_\+\+None, the information will not be updated. \\
+\hline
+{\em pid} & Process ID of which the information will be returned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Requested value in the indicated units. 
+\end{DoxyReturn}

@@ -1,0 +1,70 @@
+\hypertarget{classtree_1_1MyTreeCtrl}{}\section{tree.\+My\+Tree\+Ctrl Class Reference}
+\label{classtree_1_1MyTreeCtrl}\index{tree.\+My\+Tree\+Ctrl@{tree.\+My\+Tree\+Ctrl}}
+Inheritance diagram for tree.\+My\+Tree\+Ctrl\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtree_1_1MyTreeCtrl}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classtree_1_1MyTreeCtrl_a72b5dacce1e55adbb3bcde63cd4dcf2d}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, parent, id, pos, size, style)
+\item 
+def \hyperlink{classtree_1_1MyTreeCtrl_a8073a87006e33820096e0b2ea305af5c}{On\+Compare\+Items} (self, item1, item2)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file tree.\+py.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtree_1_1MyTreeCtrl_a72b5dacce1e55adbb3bcde63cd4dcf2d}\label{classtree_1_1MyTreeCtrl_a72b5dacce1e55adbb3bcde63cd4dcf2d}} 
+\index{tree\+::\+My\+Tree\+Ctrl@{tree\+::\+My\+Tree\+Ctrl}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!tree\+::\+My\+Tree\+Ctrl@{tree\+::\+My\+Tree\+Ctrl}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def tree.\+My\+Tree\+Ctrl.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{parent,  }\item[{}]{id,  }\item[{}]{pos,  }\item[{}]{size,  }\item[{}]{style }\end{DoxyParamCaption})}
+
+
+
+Definition at line 9 of file tree.\+py.
+
+
+\begin{DoxyCode}
+9     \textcolor{keyword}{def }\hyperlink{classwrapper_1_1ModuleDictWrapper_a9a7a794150502f51df687831583e13b9}{\_\_init\_\_}(self, parent, id, pos, size, style):
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtree_1_1MyTreeCtrl_a8073a87006e33820096e0b2ea305af5c}\label{classtree_1_1MyTreeCtrl_a8073a87006e33820096e0b2ea305af5c}} 
+\index{tree\+::\+My\+Tree\+Ctrl@{tree\+::\+My\+Tree\+Ctrl}!On\+Compare\+Items@{On\+Compare\+Items}}
+\index{On\+Compare\+Items@{On\+Compare\+Items}!tree\+::\+My\+Tree\+Ctrl@{tree\+::\+My\+Tree\+Ctrl}}
+\subsubsection{\texorpdfstring{On\+Compare\+Items()}{OnCompareItems()}}
+{\footnotesize\ttfamily def tree.\+My\+Tree\+Ctrl.\+On\+Compare\+Items (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{item1,  }\item[{}]{item2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 14 of file tree.\+py.
+
+
+\begin{DoxyCode}
+14     \textcolor{keyword}{def }OnCompareItems(self, item1, item2):
+15         t1 = self.GetItemText(item1)
+16         t2 = self.GetItemText(item2)
+17 \textcolor{comment}{#        self.log.WriteText('compare: ' + t1 + ' <> ' + t2 + '\(\backslash\)n')}
+18         \textcolor{keywordflow}{if} t1 < t2: \textcolor{keywordflow}{return} -1
+19         \textcolor{keywordflow}{if} t1 == t2: \textcolor{keywordflow}{return} 0
+20         \textcolor{keywordflow}{return} 1
+21 
+22 \textcolor{comment}{#---------------------------------------------------------------------------}
+23 
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Python/python/\hyperlink{tree_8py}{tree.\+py}\end{DoxyCompactItemize}

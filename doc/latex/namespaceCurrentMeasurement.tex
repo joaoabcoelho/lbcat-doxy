@@ -1,0 +1,101 @@
+\hypertarget{namespaceCurrentMeasurement}{}\section{Current\+Measurement Namespace Reference}
+\label{namespaceCurrentMeasurement}\index{Current\+Measurement@{Current\+Measurement}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceCurrentMeasurement_a7057dd96433e4643ae9a6d3b924378a0}{Edit} (cat, obj, panel, path)
+\item 
+def \hyperlink{namespaceCurrentMeasurement_abb4e5049746f99263fabbdb1e62b35df}{create\+Plot} (cat, obj, run)
+\item 
+def \hyperlink{namespaceCurrentMeasurement_a7de64b4b34fccae5633afcb56d04363f}{update\+Plot} (fig, obj)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespaceCurrentMeasurement_abb4e5049746f99263fabbdb1e62b35df}\label{namespaceCurrentMeasurement_abb4e5049746f99263fabbdb1e62b35df}} 
+\index{Current\+Measurement@{Current\+Measurement}!create\+Plot@{create\+Plot}}
+\index{create\+Plot@{create\+Plot}!Current\+Measurement@{Current\+Measurement}}
+\subsubsection{\texorpdfstring{create\+Plot()}{createPlot()}}
+{\footnotesize\ttfamily def Current\+Measurement.\+create\+Plot (\begin{DoxyParamCaption}\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{run }\end{DoxyParamCaption})}
+
+
+
+Definition at line 47 of file Current\+Measurement.\+py.
+
+
+
+References number\+Of\+Devices().
+
+
+\begin{DoxyCode}
+47 \textcolor{keyword}{def }\hyperlink{namespaceCurrentMeasurement_abb4e5049746f99263fabbdb1e62b35df}{createPlot}(cat, obj, run):
+48     fig = plt.figure(figsize=(10,10))
+49     fig.suptitle(\textcolor{stringliteral}{"Run "}+str(run), fontsize=14, fontweight=\textcolor{stringliteral}{'bold'})
+50     ndevices = obj.element().numberOfDevices()
+51     c=[\textcolor{stringliteral}{'r','}b','g','c']
+52     \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(ndevices):
+53         \textcolor{keywordflow}{for} ch \textcolor{keywordflow}{in} range(4):
+54             ax = fig.add\_subplot(4,ndevices,ndevices*ch+1+i)
+55             lines, = ax.plot([],[], color = c[ch], marker=\textcolor{stringliteral}{'^'})
+56             \textcolor{keywordflow}{if} ch==0: plt.title(\textcolor{stringliteral}{"Dev "}+str(i+1))
+57             \textcolor{keywordflow}{if} i==0: plt.ylabel(\textcolor{stringliteral}{"voltage (V)"})
+58             \textcolor{keywordflow}{if} ch==3: plt.xlabel(\textcolor{stringliteral}{"time (s)"})
+59             ax.set\_autoscaley\_on(\textcolor{keyword}{False})
+60             ax.set\_ylim(0.,0.25)
+61             ax.grid()        
+62     fig.show()    
+63     \textcolor{keywordflow}{return} fig
+64 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceCurrentMeasurement_a7057dd96433e4643ae9a6d3b924378a0}\label{namespaceCurrentMeasurement_a7057dd96433e4643ae9a6d3b924378a0}} 
+\index{Current\+Measurement@{Current\+Measurement}!Edit@{Edit}}
+\index{Edit@{Edit}!Current\+Measurement@{Current\+Measurement}}
+\subsubsection{\texorpdfstring{Edit()}{Edit()}}
+{\footnotesize\ttfamily def Current\+Measurement.\+Edit (\begin{DoxyParamCaption}\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{panel,  }\item[{}]{path }\end{DoxyParamCaption})}
+
+
+
+Definition at line 42 of file Current\+Measurement.\+py.
+
+
+\begin{DoxyCode}
+42 \textcolor{keyword}{def }\hyperlink{namespaceCurrentMeasurement_a7057dd96433e4643ae9a6d3b924378a0}{Edit} (cat, obj, panel, path):
+43     \textcolor{keywordflow}{return} \hyperlink{classCurrentMeasurement}{CurrentMeasurement}(cat, obj, panel, path)
+44 
+45 \textcolor{comment}{#----------------------------------------------------------------------}
+46 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceCurrentMeasurement_a7de64b4b34fccae5633afcb56d04363f}\label{namespaceCurrentMeasurement_a7de64b4b34fccae5633afcb56d04363f}} 
+\index{Current\+Measurement@{Current\+Measurement}!update\+Plot@{update\+Plot}}
+\index{update\+Plot@{update\+Plot}!Current\+Measurement@{Current\+Measurement}}
+\subsubsection{\texorpdfstring{update\+Plot()}{updatePlot()}}
+{\footnotesize\ttfamily def Current\+Measurement.\+update\+Plot (\begin{DoxyParamCaption}\item[{}]{fig,  }\item[{}]{obj }\end{DoxyParamCaption})}
+
+
+
+Definition at line 65 of file Current\+Measurement.\+py.
+
+
+
+References number\+Of\+Devices().
+
+
+\begin{DoxyCode}
+65 \textcolor{keyword}{def }\hyperlink{namespaceCurrentMeasurement_a7de64b4b34fccae5633afcb56d04363f}{updatePlot}(fig, obj):
+66     ndevices = obj.element().numberOfDevices()
+67     c=[\textcolor{stringliteral}{'r','}b','g','c']
+68     \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(ndevices):
+69         \textcolor{keywordflow}{for} ch \textcolor{keywordflow}{in} range(4):
+70             ax = fig.add\_subplot(4,ndevices,ndevices*ch+1+i)
+71             lines, = ax.plot([],[], color = c[ch], marker=\textcolor{stringliteral}{'^'})
+72             lines.set\_xdata(obj.data(0+5*i))
+73             lines.set\_ydata(obj.data(ch+1+5*i))
+74             ax.relim()
+75             ax.autoscale\_view()
+76             ax.set\_ylim(bottom=0.)
+77 
+78     fig.canvas.draw()
+79     fig.canvas.flush\_events()
+80 
+81 \textcolor{comment}{#----------------------------------------------------------------------}
+82 \end{DoxyCode}

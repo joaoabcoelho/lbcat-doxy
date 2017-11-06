@@ -1,0 +1,92 @@
+\hypertarget{namespaceStorageFifoAcquisition}{}\section{Storage\+Fifo\+Acquisition Namespace Reference}
+\label{namespaceStorageFifoAcquisition}\index{Storage\+Fifo\+Acquisition@{Storage\+Fifo\+Acquisition}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceStorageFifoAcquisition_a9eb0b14d8e1902c81fd20c05da11afe2}{Edit} (cat, obj, panel, path)
+\item 
+def \hyperlink{namespaceStorageFifoAcquisition_aa7203dc3db90e957b8d5fb13aeef23ce}{Plot} (cat, obj, parent, \hyperlink{classObject_af99145335cc61ff6e2798ea17db009d2}{id})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespaceStorageFifoAcquisition_a9eb0b14d8e1902c81fd20c05da11afe2}\label{namespaceStorageFifoAcquisition_a9eb0b14d8e1902c81fd20c05da11afe2}} 
+\index{Storage\+Fifo\+Acquisition@{Storage\+Fifo\+Acquisition}!Edit@{Edit}}
+\index{Edit@{Edit}!Storage\+Fifo\+Acquisition@{Storage\+Fifo\+Acquisition}}
+\subsubsection{\texorpdfstring{Edit()}{Edit()}}
+{\footnotesize\ttfamily def Storage\+Fifo\+Acquisition.\+Edit (\begin{DoxyParamCaption}\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{panel,  }\item[{}]{path }\end{DoxyParamCaption})}
+
+
+
+Definition at line 41 of file Storage\+Fifo\+Acquisition.\+py.
+
+
+\begin{DoxyCode}
+41 \textcolor{keyword}{def }\hyperlink{namespaceStorageFifoAcquisition_a9eb0b14d8e1902c81fd20c05da11afe2}{Edit} (cat, obj, panel, path):
+42     \textcolor{keywordflow}{return} \hyperlink{classStorageFifoAcquisition}{StorageFifoAcquisition}(cat, obj, panel, path)
+43 
+44 \textcolor{comment}{#----------------------------------------------------------------------}
+45 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceStorageFifoAcquisition_aa7203dc3db90e957b8d5fb13aeef23ce}\label{namespaceStorageFifoAcquisition_aa7203dc3db90e957b8d5fb13aeef23ce}} 
+\index{Storage\+Fifo\+Acquisition@{Storage\+Fifo\+Acquisition}!Plot@{Plot}}
+\index{Plot@{Plot}!Storage\+Fifo\+Acquisition@{Storage\+Fifo\+Acquisition}}
+\subsubsection{\texorpdfstring{Plot()}{Plot()}}
+{\footnotesize\ttfamily def Storage\+Fifo\+Acquisition.\+Plot (\begin{DoxyParamCaption}\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{parent,  }\item[{}]{id }\end{DoxyParamCaption})}
+
+
+
+Definition at line 46 of file Storage\+Fifo\+Acquisition.\+py.
+
+
+
+References plotter.\+h1d().
+
+
+\begin{DoxyCode}
+46 \textcolor{keyword}{def }\hyperlink{namespaceStorageFifoAcquisition_aa7203dc3db90e957b8d5fb13aeef23ce}{Plot}(cat, obj, parent, id):
+47     \textcolor{keyword}{from} mpl\_toolkits.mplot3d \textcolor{keyword}{import} Axes3D
+48     \textcolor{keyword}{import} matplotlib.ticker \textcolor{keyword}{as} ticker
+49     \textcolor{keyword}{from} matplotlib \textcolor{keyword}{import} cm
+50     \textcolor{keyword}{import} matplotlib \textcolor{keyword}{as} mpl
+51     \textcolor{keyword}{import} matplotlib.pyplot \textcolor{keyword}{as} plt
+52     \textcolor{keyword}{import} numpy \textcolor{keyword}{as} np
+53 
+54     plot=\hyperlink{namespaceplotter}{plotter}(parent,id)
+55     fig=plot.current()
+56 
+57     title = \textcolor{stringliteral}{'Acquisition Channel(s) '}
+58 
+59     channels=obj.channels()
+60     nch=0
+61     \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(0,8): 
+62         \textcolor{keywordflow}{if} (channels>>i&1): 
+63             nch+=1
+64             title+=\textcolor{stringliteral}{' '}+str(i)
+65 
+66     fig.suptitle(title, fontsize=14, fontweight=\textcolor{stringliteral}{'bold'})
+67 
+68     depth= obj.depth() 
+69 
+70     index=0
+71     \textcolor{keywordflow}{for} c \textcolor{keywordflow}{in} range(0,nch):
+72         \textcolor{keywordflow}{for} d \textcolor{keywordflow}{in} range(0,depth):
+73             pl=fig.add\_subplot(depth+2,nch,c+d*nch+1)   
+74             h=\hyperlink{namespaceplotter_a5d9521541ff0c72bf439078efacf2f42}{h1d}(pl,obj.hist1d(index), facecolor=\textcolor{stringliteral}{'red'},linestyle=\textcolor{stringliteral}{'dashed'})
+75             pl.xaxis.set\_ticks([obj.hist1d(index).minX(),(obj.hist1d(index).maxX()-obj.hist1d(index).minX()
+      )/2.,obj.hist1d(index).maxX()])
+76 \textcolor{comment}{#           formatter = ticker.FormatStrFormatter('%1.2f')}
+77 \textcolor{comment}{#           pl.xaxis.set\_major\_formatter(formatter)}
+78             index+=1
+79             pl.grid(\textcolor{keyword}{True})
+80         pl=fig.add\_subplot(depth+2,nch,c+depth*nch+1)   
+81         h=\hyperlink{namespaceplotter_a5d9521541ff0c72bf439078efacf2f42}{h1d}(pl,obj.hist1d(index), facecolor=\textcolor{stringliteral}{'blue'},linestyle=\textcolor{stringliteral}{'dashed'})
+82         index+=1
+83         pl.grid(\textcolor{keyword}{False})
+84         pl=fig.add\_subplot(depth+2,nch,c+(depth+1)*nch+1)   
+85         h=\hyperlink{namespaceplotter_a5d9521541ff0c72bf439078efacf2f42}{h1d}(pl,obj.hist1d(index), facecolor=\textcolor{stringliteral}{'green'},linestyle=\textcolor{stringliteral}{'dashed'})
+86         index+=1
+87         pl.grid(\textcolor{keyword}{False})
+88 
+89     \textcolor{keywordflow}{return} plot
+90 \end{DoxyCode}

@@ -1,0 +1,1460 @@
+\hypertarget{classServer__NI6008}{}\section{Server\+\_\+\+N\+I6008 Class Reference}
+\label{classServer__NI6008}\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+
+
+{\ttfamily \#include $<$inc/\+Server\+\_\+\+N\+I6008.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25be}{Msg\+Level} \{ \newline
+\hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea58fcd852dfcff4011a32756eda28852b}{V\+E\+R\+B\+O\+SE} =-\/6, 
+\hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bead3eef0ad5b826981e274ce214fd3a6d3}{D\+E\+B\+UG}, 
+\hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea218489470a9743b7d475e86e13ea219d}{I\+N\+FO}, 
+\hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bead7775b9a40b2a58fe2547fe9c2617093}{W\+A\+R\+N\+I\+NG}, 
+\newline
+\hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea23728be8768fe4c119fb61ad427ed5ba}{E\+RR}, 
+\hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea678aa96ea2189f7d6ab602160fa49b8b}{F\+A\+T\+AL}, 
+\hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea26813832bb3e07669c3f2e68e2b9690e}{N\+O\+NE}
+ \}
+\item 
+enum \hyperlink{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9}{Msg\+Color} \{ \newline
+\hyperlink{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9a87f786fd497d96c2772b919191814893}{B\+L\+UE}, 
+\hyperlink{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9a68bc466d3117463d6348299d532b2d45}{G\+R\+E\+EN}, 
+\hyperlink{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9aa89fb8138b784b74e19d3c91a4e57999}{W\+H\+I\+TE}, 
+\hyperlink{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9a63a33102efe5a43b2004daeb24ac9393}{M\+A\+G\+E\+N\+TA}, 
+\newline
+\hyperlink{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9a5595845a9cce91475fd2c84dfc0244a1}{Y\+E\+L\+L\+OW}, 
+\hyperlink{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9ac0ceda8a3474b33193dd1d704d24ecb0}{R\+ED}, 
+\hyperlink{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9a17e88e209cae3fc66ebd0ede07ec4431}{C\+Y\+AN}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classServer__NI6008_afdb7ded0c7463c53829529aa9864c9da}{Server\+\_\+\+N\+I6008} (int)
+\item 
+virtual \hyperlink{classServer__NI6008_a1c9bf761d7bae3ee267363fb851171b7}{$\sim$\+Server\+\_\+\+N\+I6008} ()
+\begin{DoxyCompactList}\small\item\em Standard constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classServer__NI6008_a7bcfa6ba683c63b68c624644ccfb8597}{error} (const char $\ast$)
+\item 
+void \hyperlink{classServer__NI6008_ae3ac1bbf922a2475f41dfd97482af152}{start} ()
+\item 
+int \hyperlink{classServer__NI6008_ac659132ba000bf628a5f5b696ae133ee}{cmd} ()
+\item 
+int \hyperlink{classServer__NI6008_a94705879717d5bcf129899e96be81675}{AI} (const char $\ast$, double\mbox{[}$\,$\mbox{]})
+\item 
+int \hyperlink{classServer__NI6008_adde2efeb68363f67abb6d76c7ca2d761}{AO} (const char $\ast$, double\mbox{[}$\,$\mbox{]})
+\item 
+int \hyperlink{classServer__NI6008_a53ef808ed00d7b7105b62c2ce34faaec}{A\+O0} (double)
+\item 
+int \hyperlink{classServer__NI6008_a130bb6bca52d5c779491c51975e6ffda}{A\+O1} (double)
+\item 
+int \hyperlink{classServer__NI6008_a76b7491d11244e43a2fdb6d4783bd0f8}{DI} (const char $\ast$, unsigned char\mbox{[}$\,$\mbox{]})
+\item 
+int \hyperlink{classServer__NI6008_a0495ec12779e4b9bfdda3d60c0ef20aa}{Reset} ()
+\item 
+void \hyperlink{classServer__NI6008_aae0469228b36fc7085223ad301ffe073}{status} ()
+\item 
+int \hyperlink{classServer__NI6008_af47694911afff2feb37a091d9fcab4fa}{send} (std\+::string word)
+\item 
+void \hyperlink{classServer__NI6008_a140d5f91d6c0f4fb963ecf747e44df78}{msg\+Svc} (\hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25be}{Msg\+Level}, std\+::string, std\+::string call=std\+::string(\char`\"{}\char`\"{}))
+\item 
+void \hyperlink{classServer__NI6008_adc52659db137940242998e8e0b980c03}{set\+Line\+Length} (int length)
+\item 
+void \hyperlink{classServer__NI6008_ae2eab1871efb0ec0a7c0c72f56604e13}{set\+Call\+Size} (int size)
+\item 
+void \hyperlink{classServer__NI6008_ab83d0f144d5bb34f3a22aabef37de440}{log} (\hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25be}{Msg\+Level}, std\+::string, std\+::string)
+\item 
+void \hyperlink{classServer__NI6008_a120ec56f6af12d56683322f56a8d7878}{set\+A\+I\+Range} (double min=-\/10., double max=10.)
+\item 
+void \hyperlink{classServer__NI6008_aec1596005b4c75cc2c13d87ab3d9d120}{set\+A\+O\+Range} (double min=0., double max=5.)
+\item 
+void \hyperlink{classServer__NI6008_ade018df1c5afac06e6d528536635ba48}{set\+Timeout} (double timeout=10.\+0)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classServer__NI6008_aab6f8e71661f6234a72d539dedbd53d2}{logtime} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classServer__NI6008_a79b2fe632095d34e1c6320a1ffe2d561}{sockfd}
+\item 
+int \hyperlink{classServer__NI6008_a37e3d77925f6c6c9d7dee4dc1c8560d6}{newsockfd}
+\item 
+int \hyperlink{classServer__NI6008_ae70c386215b3945d98eba610022db813}{portno}
+\item 
+std\+::string \hyperlink{classServer__NI6008_a9c73f187e64f7d753a8eabd9d1b6e9cd}{ni6008}
+\item 
+socklen\+\_\+t \hyperlink{classServer__NI6008_a7870880eba646269208e0c75de3e63bc}{clilen}
+\item 
+char \hyperlink{classServer__NI6008_a2ebf359e55794c1d5ce59900e90b54e6}{buffer} \mbox{[}256\mbox{]}
+\item 
+struct sockaddr\+\_\+in serv\+\_\+addr \hyperlink{classServer__NI6008_a8f65891da026492eba6d3642df9e0357}{cli\+\_\+addr}
+\item 
+int \hyperlink{classServer__NI6008_a5573d5feeef8372e2b31a54d6a5a19aa}{n}
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classServer__NI6008_a79fecc3f96756f6a519785663bb11d07}{colors}
+\item 
+int \hyperlink{classServer__NI6008_a9aa5c02fb85f20452a3f8e0f9dcc33fd}{call\+Size}
+\item 
+int \hyperlink{classServer__NI6008_a88ff64de4d8715d849b06c2457d13e17}{line\+Length}
+\item 
+double \hyperlink{classServer__NI6008_af0fea276566b46d56f235bece151af78}{m\+\_\+ai\+Min}
+\item 
+double \hyperlink{classServer__NI6008_aa871878e7792bd5dc002f64ef7575dd4}{m\+\_\+ai\+Max}
+\item 
+double \hyperlink{classServer__NI6008_ad650503ceebacea17688e04065130eaa}{m\+\_\+ao\+Min}
+\item 
+double \hyperlink{classServer__NI6008_a228a5d51f43daaf9eaea8e77cfa3334e}{m\+\_\+ao\+Max}
+\item 
+double \hyperlink{classServer__NI6008_a782b89c4483096900a3c02f1b1fc2c2f}{m\+\_\+timeout}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Frédéric Machefert 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2016-\/05-\/28 
+\end{DoxyDate}
+
+
+Definition at line 103 of file Server\+\_\+\+N\+I6008.\+h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9}\label{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!Msg\+Color@{Msg\+Color}}
+\index{Msg\+Color@{Msg\+Color}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{Msg\+Color}{MsgColor}}
+{\footnotesize\ttfamily enum \hyperlink{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9}{Server\+\_\+\+N\+I6008\+::\+Msg\+Color}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B\+L\+UE@{B\+L\+UE}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!B\+L\+UE@{B\+L\+UE}}}\mbox{\Hypertarget{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9a87f786fd497d96c2772b919191814893}\label{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9a87f786fd497d96c2772b919191814893}} 
+B\+L\+UE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G\+R\+E\+EN@{G\+R\+E\+EN}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!G\+R\+E\+EN@{G\+R\+E\+EN}}}\mbox{\Hypertarget{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9a68bc466d3117463d6348299d532b2d45}\label{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9a68bc466d3117463d6348299d532b2d45}} 
+G\+R\+E\+EN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{W\+H\+I\+TE@{W\+H\+I\+TE}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!W\+H\+I\+TE@{W\+H\+I\+TE}}}\mbox{\Hypertarget{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9aa89fb8138b784b74e19d3c91a4e57999}\label{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9aa89fb8138b784b74e19d3c91a4e57999}} 
+W\+H\+I\+TE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M\+A\+G\+E\+N\+TA@{M\+A\+G\+E\+N\+TA}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!M\+A\+G\+E\+N\+TA@{M\+A\+G\+E\+N\+TA}}}\mbox{\Hypertarget{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9a63a33102efe5a43b2004daeb24ac9393}\label{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9a63a33102efe5a43b2004daeb24ac9393}} 
+M\+A\+G\+E\+N\+TA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Y\+E\+L\+L\+OW@{Y\+E\+L\+L\+OW}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!Y\+E\+L\+L\+OW@{Y\+E\+L\+L\+OW}}}\mbox{\Hypertarget{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9a5595845a9cce91475fd2c84dfc0244a1}\label{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9a5595845a9cce91475fd2c84dfc0244a1}} 
+Y\+E\+L\+L\+OW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+ED@{R\+ED}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!R\+ED@{R\+ED}}}\mbox{\Hypertarget{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9ac0ceda8a3474b33193dd1d704d24ecb0}\label{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9ac0ceda8a3474b33193dd1d704d24ecb0}} 
+R\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+Y\+AN@{C\+Y\+AN}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!C\+Y\+AN@{C\+Y\+AN}}}\mbox{\Hypertarget{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9a17e88e209cae3fc66ebd0ede07ec4431}\label{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9a17e88e209cae3fc66ebd0ede07ec4431}} 
+C\+Y\+AN&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 130 of file Server\+\_\+\+N\+I6008.\+h.
+
+
+\begin{DoxyCode}
+130 \{\hyperlink{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9a87f786fd497d96c2772b919191814893}{BLUE}, \hyperlink{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9a68bc466d3117463d6348299d532b2d45}{GREEN},  \hyperlink{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9aa89fb8138b784b74e19d3c91a4e57999}{WHITE}, \hyperlink{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9a63a33102efe5a43b2004daeb24ac9393}{MAGENTA}, \hyperlink{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9a5595845a9cce91475fd2c84dfc0244a1}{YELLOW}, \hyperlink{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9ac0ceda8a3474b33193dd1d704d24ecb0}{RED}, \hyperlink{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9a17e88e209cae3fc66ebd0ede07ec4431}{CYAN}\};
+\end{DoxyCode}
+\mbox{\Hypertarget{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25be}\label{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25be}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!Msg\+Level@{Msg\+Level}}
+\index{Msg\+Level@{Msg\+Level}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{Msg\+Level}{MsgLevel}}
+{\footnotesize\ttfamily enum \hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25be}{Server\+\_\+\+N\+I6008\+::\+Msg\+Level}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+E\+R\+B\+O\+SE@{V\+E\+R\+B\+O\+SE}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!V\+E\+R\+B\+O\+SE@{V\+E\+R\+B\+O\+SE}}}\mbox{\Hypertarget{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea58fcd852dfcff4011a32756eda28852b}\label{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea58fcd852dfcff4011a32756eda28852b}} 
+V\+E\+R\+B\+O\+SE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+E\+B\+UG@{D\+E\+B\+UG}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!D\+E\+B\+UG@{D\+E\+B\+UG}}}\mbox{\Hypertarget{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bead3eef0ad5b826981e274ce214fd3a6d3}\label{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bead3eef0ad5b826981e274ce214fd3a6d3}} 
+D\+E\+B\+UG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+N\+FO@{I\+N\+FO}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!I\+N\+FO@{I\+N\+FO}}}\mbox{\Hypertarget{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea218489470a9743b7d475e86e13ea219d}\label{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea218489470a9743b7d475e86e13ea219d}} 
+I\+N\+FO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{W\+A\+R\+N\+I\+NG@{W\+A\+R\+N\+I\+NG}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!W\+A\+R\+N\+I\+NG@{W\+A\+R\+N\+I\+NG}}}\mbox{\Hypertarget{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bead7775b9a40b2a58fe2547fe9c2617093}\label{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bead7775b9a40b2a58fe2547fe9c2617093}} 
+W\+A\+R\+N\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+RR@{E\+RR}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!E\+RR@{E\+RR}}}\mbox{\Hypertarget{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea23728be8768fe4c119fb61ad427ed5ba}\label{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea23728be8768fe4c119fb61ad427ed5ba}} 
+E\+RR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+A\+T\+AL@{F\+A\+T\+AL}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!F\+A\+T\+AL@{F\+A\+T\+AL}}}\mbox{\Hypertarget{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea678aa96ea2189f7d6ab602160fa49b8b}\label{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea678aa96ea2189f7d6ab602160fa49b8b}} 
+F\+A\+T\+AL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+O\+NE@{N\+O\+NE}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!N\+O\+NE@{N\+O\+NE}}}\mbox{\Hypertarget{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea26813832bb3e07669c3f2e68e2b9690e}\label{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea26813832bb3e07669c3f2e68e2b9690e}} 
+N\+O\+NE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 129 of file Server\+\_\+\+N\+I6008.\+h.
+
+
+\begin{DoxyCode}
+129 \{\hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea58fcd852dfcff4011a32756eda28852b}{VERBOSE}=-6, \hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bead3eef0ad5b826981e274ce214fd3a6d3}{DEBUG}, \hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea218489470a9743b7d475e86e13ea219d}{INFO}, \hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bead7775b9a40b2a58fe2547fe9c2617093}{WARNING}, \hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea23728be8768fe4c119fb61ad427ed5ba}{ERR}, \hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea678aa96ea2189f7d6ab602160fa49b8b}{FATAL}, 
+      \hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea26813832bb3e07669c3f2e68e2b9690e}{NONE}\};
+\end{DoxyCode}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classServer__NI6008_afdb7ded0c7463c53829529aa9864c9da}\label{classServer__NI6008_afdb7ded0c7463c53829529aa9864c9da}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{Server\+\_\+\+N\+I6008()}{Server\_NI6008()}}
+{\footnotesize\ttfamily Server\+\_\+\+N\+I6008\+::\+Server\+\_\+\+N\+I6008 (\begin{DoxyParamCaption}\item[{int}]{port }\end{DoxyParamCaption})}
+
+
+
+Definition at line 25 of file Server\+\_\+\+N\+I6008.\+cpp.
+
+
+
+References account\+Name(), colors, host\+Name(), I\+N\+FO, itos(), msg\+Svc(), os\+Name(), os\+Version(), portno, start(), and W\+A\+R\+N\+I\+NG.
+
+
+\begin{DoxyCode}
+25                                     :
+26   \hyperlink{classServer__NI6008_a9aa5c02fb85f20452a3f8e0f9dcc33fd}{callSize}   (18),
+27   \hyperlink{classServer__NI6008_a88ff64de4d8715d849b06c2457d13e17}{lineLength} (200),
+28   \hyperlink{classServer__NI6008_af0fea276566b46d56f235bece151af78}{m\_aiMin}(-10.0),
+29   \hyperlink{classServer__NI6008_aa871878e7792bd5dc002f64ef7575dd4}{m\_aiMax}(10.0),
+30   \hyperlink{classServer__NI6008_ad650503ceebacea17688e04065130eaa}{m\_aoMin}(0.0),
+31   \hyperlink{classServer__NI6008_a228a5d51f43daaf9eaea8e77cfa3334e}{m\_aoMax}(5.0),
+32   \hyperlink{classServer__NI6008_a782b89c4483096900a3c02f1b1fc2c2f}{m\_timeout}(10.0)
+33 \{
+34   \hyperlink{classServer__NI6008_ae70c386215b3945d98eba610022db813}{portno} = port;
+35   
+36   \hyperlink{classServer__NI6008_a79fecc3f96756f6a519785663bb11d07}{colors}.push\_back(std::string(\textcolor{stringliteral}{"\(\backslash\)033[94m"}));
+37   \hyperlink{classServer__NI6008_a79fecc3f96756f6a519785663bb11d07}{colors}.push\_back(std::string(\textcolor{stringliteral}{"\(\backslash\)033[92m"}));
+38   \hyperlink{classServer__NI6008_a79fecc3f96756f6a519785663bb11d07}{colors}.push\_back(std::string(\textcolor{stringliteral}{"\(\backslash\)033[93m"}));
+39   \hyperlink{classServer__NI6008_a79fecc3f96756f6a519785663bb11d07}{colors}.push\_back(std::string(\textcolor{stringliteral}{"\(\backslash\)033[95m"}));
+40   \hyperlink{classServer__NI6008_a79fecc3f96756f6a519785663bb11d07}{colors}.push\_back(std::string(\textcolor{stringliteral}{"\(\backslash\)033[33m"}));
+41   \hyperlink{classServer__NI6008_a79fecc3f96756f6a519785663bb11d07}{colors}.push\_back(std::string(\textcolor{stringliteral}{"\(\backslash\)033[91m"}));
+42   \hyperlink{classServer__NI6008_a79fecc3f96756f6a519785663bb11d07}{colors}.push\_back(std::string(\textcolor{stringliteral}{"\(\backslash\)033[0m"}));
+43 
+44   std::string \_accountName = \hyperlink{Server__NI6008_8h_a7894fd47557b61653dcc5a4c1c385f26}{accountName}();
+45   std::string \_hostName    = \hyperlink{Server__NI6008_8h_a72fcadf4b16349ce02f8ad73ddd9106d}{hostName}();
+46   std::string \_osName      = \hyperlink{Server__NI6008_8h_a4f1b6c167d6683c2f7acce89653a8f5b}{osName}();
+47   std::string \_osVersion   = \hyperlink{Server__NI6008_8h_adc93e5765e618d6c29e8797076352385}{osVersion}();
+48 
+49   \hyperlink{classServer__NI6008_a140d5f91d6c0f4fb963ecf747e44df78}{msgSvc}(\hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea218489470a9743b7d475e86e13ea219d}{INFO},\textcolor{stringliteral}{""},\textcolor{stringliteral}{""});
+50   \hyperlink{classServer__NI6008_a140d5f91d6c0f4fb963ecf747e44df78}{msgSvc}(\hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea218489470a9743b7d475e86e13ea219d}{INFO},\textcolor{stringliteral}{"                          ***********************************************"},\textcolor{stringliteral}{""});
+51   \hyperlink{classServer__NI6008_a140d5f91d6c0f4fb963ecf747e44df78}{msgSvc}(\hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea218489470a9743b7d475e86e13ea219d}{INFO},\textcolor{stringliteral}{"                          *               C      A      T               *"},\textcolor{stringliteral}{""});
+52   \hyperlink{classServer__NI6008_a140d5f91d6c0f4fb963ecf747e44df78}{msgSvc}(\hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea218489470a9743b7d475e86e13ea219d}{INFO},\textcolor{stringliteral}{"                          *                                             *"},\textcolor{stringliteral}{""});
+53   \hyperlink{classServer__NI6008_a140d5f91d6c0f4fb963ecf747e44df78}{msgSvc}(\hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea218489470a9743b7d475e86e13ea219d}{INFO},\textcolor{stringliteral}{"                          *          |\(\backslash\)\(\backslash\)-''-/|.\_\_\_..--''\(\backslash\)"`-.\_            *"},\textcolor{stringliteral}{""});
+54   \hyperlink{classServer__NI6008_a140d5f91d6c0f4fb963ecf747e44df78}{msgSvc}(\hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea218489470a9743b7d475e86e13ea219d}{INFO},\textcolor{stringliteral}{"                          *          `6\_ 6  )   `-.  (     ).`-.\_\_.`)   *"},\textcolor{stringliteral}{""});
+55   \hyperlink{classServer__NI6008_a140d5f91d6c0f4fb963ecf747e44df78}{msgSvc}(\hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea218489470a9743b7d475e86e13ea219d}{INFO},\textcolor{stringliteral}{"                          *          (\_Y\_.)'  .\_   )  `.\_ `. ``-..-'    *"},\textcolor{stringliteral}{""});
+56   \hyperlink{classServer__NI6008_a140d5f91d6c0f4fb963ecf747e44df78}{msgSvc}(\hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea218489470a9743b7d475e86e13ea219d}{INFO},\textcolor{stringliteral}{"                          *         \_..`--'\_..-  \_/ /--'\_.' ,'          *"},\textcolor{stringliteral}{""});
+57   \hyperlink{classServer__NI6008_a140d5f91d6c0f4fb963ecf747e44df78}{msgSvc}(\hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea218489470a9743b7d475e86e13ea219d}{INFO},\textcolor{stringliteral}{"                          *     (il),-''  (li),' ((!.-'                 *"},\textcolor{stringliteral}{""});
+58   \hyperlink{classServer__NI6008_a140d5f91d6c0f4fb963ecf747e44df78}{msgSvc}(\hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea218489470a9743b7d475e86e13ea219d}{INFO},\textcolor{stringliteral}{"                          ***********************************************"},\textcolor{stringliteral}{""});
+59   \hyperlink{classServer__NI6008_a140d5f91d6c0f4fb963ecf747e44df78}{msgSvc}(\hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea218489470a9743b7d475e86e13ea219d}{INFO},\textcolor{stringliteral}{""},\textcolor{stringliteral}{""});
+60   \hyperlink{classServer__NI6008_a140d5f91d6c0f4fb963ecf747e44df78}{msgSvc}(\hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea218489470a9743b7d475e86e13ea219d}{INFO},\textcolor{stringliteral}{"Application running on "}+
+61          \_accountName+\textcolor{stringliteral}{"@"}+
+62          \_hostName+\textcolor{stringliteral}{" ("}+
+63          \_osName+\textcolor{stringliteral}{" - "}+
+64          \_osVersion+\textcolor{stringliteral}{")"},\textcolor{stringliteral}{""});
+65   
+66   \hyperlink{classServer__NI6008_a140d5f91d6c0f4fb963ecf747e44df78}{msgSvc}(\hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea218489470a9743b7d475e86e13ea219d}{INFO}, \textcolor{stringliteral}{"Connecting port "}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(port),\textcolor{stringliteral}{"Server\_NI6008"});
+67 
+68 \textcolor{preprocessor}{#ifdef NODAQ}
+69   \hyperlink{classServer__NI6008_a140d5f91d6c0f4fb963ecf747e44df78}{msgSvc}(\hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bead7775b9a40b2a58fe2547fe9c2617093}{WARNING},\textcolor{stringliteral}{"NO HARDWARE - FAKE ACQUISITION"});
+70 \textcolor{preprocessor}{#endif  }
+71   \hyperlink{classServer__NI6008_ae3ac1bbf922a2475f41dfd97482af152}{start}();
+72 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classServer__NI6008_a1c9bf761d7bae3ee267363fb851171b7}\label{classServer__NI6008_a1c9bf761d7bae3ee267363fb851171b7}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!````~Server\+\_\+\+N\+I6008@{$\sim$\+Server\+\_\+\+N\+I6008}}
+\index{````~Server\+\_\+\+N\+I6008@{$\sim$\+Server\+\_\+\+N\+I6008}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{$\sim$\+Server\+\_\+\+N\+I6008()}{~Server\_NI6008()}}
+{\footnotesize\ttfamily Server\+\_\+\+N\+I6008\+::$\sim$\+Server\+\_\+\+N\+I6008 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Standard constructor. 
+
+Destructor 
+
+Definition at line 77 of file Server\+\_\+\+N\+I6008.\+cpp.
+
+
+\begin{DoxyCode}
+77                              \{
+78 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classServer__NI6008_a94705879717d5bcf129899e96be81675}\label{classServer__NI6008_a94705879717d5bcf129899e96be81675}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!AI@{AI}}
+\index{AI@{AI}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{A\+I()}{AI()}}
+{\footnotesize\ttfamily int Server\+\_\+\+N\+I6008\+::\+AI (\begin{DoxyParamCaption}\item[{const char $\ast$}]{,  }\item[{double}]{\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 368 of file Server\+\_\+\+N\+I6008.\+cpp.
+
+
+
+References D\+A\+Qmx\+Err\+Chk, error(), and m\+\_\+timeout.
+
+
+
+Referenced by cmd().
+
+
+\begin{DoxyCode}
+368                                                     \{
+369     \textcolor{comment}{// Task parameters}
+370     int32       \hyperlink{classServer__NI6008_a7bcfa6ba683c63b68c624644ccfb8597}{error} = 0;
+371     TaskHandle  taskHandle = 0;
+372     \textcolor{keywordtype}{char}        errBuff[2048]=\{\textcolor{charliteral}{'\(\backslash\)0'}\};
+373     \textcolor{keywordtype}{char} chan[80];
+374     sprintf(chan,\textcolor{stringliteral}{"%s/ai0,%s/ai1,%s/ai2,%s/ai3"}, dev, dev, dev, dev);
+375 
+376     \textcolor{comment}{//    std::cout<<chan<<std::endl;}
+377 
+378     \textcolor{comment}{// Channel parameters}
+379     float64     min = -10.0;
+380     float64     max = 10.0;
+381 
+382     \textcolor{comment}{// Timing parameters}
+383     uInt64      samplesPerChan = 4;
+384 
+385     \textcolor{comment}{// Data read parameters}
+386     int32       pointsToRead = 1;
+387     int32       pointsRead;
+388     float64     timeout = \hyperlink{classServer__NI6008_a782b89c4483096900a3c02f1b1fc2c2f}{m\_timeout};
+389 
+390 \textcolor{preprocessor}{#ifndef NODAQ}
+391     
+392     \hyperlink{Server__NI6008_8cpp_a9e1338726dd5c84c9ea7f855cba19ad4}{DAQmxErrChk} (DAQmxBaseCreateTask(\textcolor{stringliteral}{""},&taskHandle));
+393     \hyperlink{Server__NI6008_8cpp_a9e1338726dd5c84c9ea7f855cba19ad4}{DAQmxErrChk} (
+394          DAQmxBaseCreateAIVoltageChan(taskHandle,
+395                           chan,
+396                           \textcolor{stringliteral}{""},
+397                           DAQmx\_Val\_Cfg\_Default,
+398                           min,max,
+399                           DAQmx\_Val\_Volts,
+400                           NULL));
+401     \hyperlink{Server__NI6008_8cpp_a9e1338726dd5c84c9ea7f855cba19ad4}{DAQmxErrChk} (DAQmxBaseStartTask(taskHandle));
+402     \hyperlink{Server__NI6008_8cpp_a9e1338726dd5c84c9ea7f855cba19ad4}{DAQmxErrChk} (DAQmxBaseReadAnalogF64(taskHandle,
+403                     pointsToRead,
+404                     timeout,
+405                     DAQmx\_Val\_GroupByChannel,
+406                     \hyperlink{namespaceshell_a5ea2525995cedc3efd69ea8a7f034d1e}{data},
+407                     samplesPerChan,
+408                     &pointsRead,
+409                     NULL));
+410 Error:
+411     \textcolor{keywordflow}{if}( DAQmxFailed(error) )
+412         DAQmxBaseGetExtendedErrorInfo(errBuff,2048);
+413     \textcolor{keywordflow}{if}( taskHandle!=0 ) \{
+414         DAQmxBaseStopTask(taskHandle);
+415         DAQmxBaseClearTask(taskHandle);
+416     \}
+417     \textcolor{keywordflow}{if}( DAQmxFailed(error) )
+418     printf (\textcolor{stringliteral}{"DAQmxBase Error %ld: %s\(\backslash\)n"}, error, errBuff);
+419 \textcolor{preprocessor}{#endif}
+420     sprintf(errBuff,\textcolor{stringliteral}{"Readout AI: Ch %s - Val = %2.4f %2.4f %2.4f %2.4f"}, chan, 
+      \hyperlink{namespaceshell_a5ea2525995cedc3efd69ea8a7f034d1e}{data}[0], \hyperlink{namespaceshell_a5ea2525995cedc3efd69ea8a7f034d1e}{data}[1], \hyperlink{namespaceshell_a5ea2525995cedc3efd69ea8a7f034d1e}{data}[2], \hyperlink{namespaceshell_a5ea2525995cedc3efd69ea8a7f034d1e}{data}[3]);
+421     std::cout<<errBuff<<std::endl;
+422     \textcolor{keywordflow}{return} 0;
+423 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classServer__NI6008_adde2efeb68363f67abb6d76c7ca2d761}\label{classServer__NI6008_adde2efeb68363f67abb6d76c7ca2d761}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!AO@{AO}}
+\index{AO@{AO}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{A\+O()}{AO()}}
+{\footnotesize\ttfamily int Server\+\_\+\+N\+I6008\+::\+AO (\begin{DoxyParamCaption}\item[{const char $\ast$}]{,  }\item[{double}]{\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 428 of file Server\+\_\+\+N\+I6008.\+cpp.
+
+
+
+References D\+A\+Qmx\+Err\+Chk, error(), m\+\_\+ao\+Max, m\+\_\+ao\+Min, and m\+\_\+timeout.
+
+
+
+Referenced by cmd().
+
+
+\begin{DoxyCode}
+428                                                     \{
+429   \textcolor{comment}{// Task parameters}
+430   \textcolor{keywordtype}{int}         code  = 0;
+431   int32       \hyperlink{classServer__NI6008_a7bcfa6ba683c63b68c624644ccfb8597}{error} = 0;
+432   TaskHandle  taskHandle = 0;
+433   \textcolor{keywordtype}{char}        errBuff[2048]=\{\textcolor{charliteral}{'\(\backslash\)0'}\};
+434   \textcolor{keywordtype}{char} chan[80];
+435   sprintf(chan,\textcolor{stringliteral}{"%s/ao0,%s/ao1"}, dev, dev);
+436   \textcolor{comment}{//  char        chan[] = "Dev1/ao0,Dev1/ao1";}
+437   
+438   \textcolor{comment}{// Channel parameters}
+439   float64     min = \hyperlink{classServer__NI6008_ad650503ceebacea17688e04065130eaa}{m\_aoMin};
+440   float64     max = \hyperlink{classServer__NI6008_a228a5d51f43daaf9eaea8e77cfa3334e}{m\_aoMax};
+441   \textcolor{comment}{// Timing parameters}
+442   uInt64      samplesPerChan = 1;
+443   \textcolor{comment}{// Data write parameters}
+444   int32       pointsWritten;
+445 
+446 \textcolor{preprocessor}{#ifndef NODAQ}
+447   
+448   \hyperlink{Server__NI6008_8cpp_a9e1338726dd5c84c9ea7f855cba19ad4}{DAQmxErrChk} (DAQmxBaseCreateTask(\textcolor{stringliteral}{""},&taskHandle));
+449   \hyperlink{Server__NI6008_8cpp_a9e1338726dd5c84c9ea7f855cba19ad4}{DAQmxErrChk} (DAQmxBaseCreateAOVoltageChan(taskHandle,
+450                         chan,
+451                         \textcolor{stringliteral}{""},
+452                         min,max,
+453                         DAQmx\_Val\_Volts,
+454                         NULL));
+455   \hyperlink{Server__NI6008_8cpp_a9e1338726dd5c84c9ea7f855cba19ad4}{DAQmxErrChk} (DAQmxBaseStartTask(taskHandle));
+456   
+457   \hyperlink{Server__NI6008_8cpp_a9e1338726dd5c84c9ea7f855cba19ad4}{DAQmxErrChk} (DAQmxBaseWriteAnalogF64(taskHandle,
+458                        samplesPerChan,
+459                        0,
+460                        \hyperlink{classServer__NI6008_a782b89c4483096900a3c02f1b1fc2c2f}{m\_timeout},
+461                        DAQmx\_Val\_GroupByChannel,
+462                        \hyperlink{namespaceshell_a5ea2525995cedc3efd69ea8a7f034d1e}{data},
+463                        &pointsWritten,NULL)
+464            );
+465 Error:
+466     \textcolor{keywordflow}{if}( DAQmxFailed(error) )
+467         DAQmxBaseGetExtendedErrorInfo(errBuff,2048);
+468     \textcolor{keywordflow}{if}( taskHandle!=0 ) \{
+469         DAQmxBaseStopTask(taskHandle);
+470         DAQmxBaseClearTask(taskHandle);
+471     \}
+472     \textcolor{keywordflow}{if}( DAQmxFailed(error) )
+473         printf (\textcolor{stringliteral}{"DAQmxBase Error %ld: %s\(\backslash\)n"}, error, errBuff);
+474 \textcolor{preprocessor}{#endif}
+475     sprintf(errBuff,\textcolor{stringliteral}{"Setting AO: Ch %s - Val = %2.2f %2.2f"}, chan, \hyperlink{namespaceshell_a5ea2525995cedc3efd69ea8a7f034d1e}{data}[0], 
+      \hyperlink{namespaceshell_a5ea2525995cedc3efd69ea8a7f034d1e}{data}[1]);
+476     std::cout<<errBuff<<std::endl;
+477     \textcolor{keywordflow}{return} 0;
+478 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classServer__NI6008_a53ef808ed00d7b7105b62c2ce34faaec}\label{classServer__NI6008_a53ef808ed00d7b7105b62c2ce34faaec}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!A\+O0@{A\+O0}}
+\index{A\+O0@{A\+O0}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{A\+O0()}{AO0()}}
+{\footnotesize\ttfamily int Server\+\_\+\+N\+I6008\+::\+A\+O0 (\begin{DoxyParamCaption}\item[{double}]{data }\end{DoxyParamCaption})}
+
+
+
+Definition at line 554 of file Server\+\_\+\+N\+I6008.\+cpp.
+
+
+
+References D\+A\+Qmx\+Err\+Chk, error(), I\+N\+FO, m\+\_\+ao\+Max, m\+\_\+ao\+Min, m\+\_\+timeout, and msg\+Svc().
+
+
+\begin{DoxyCode}
+554                                  \{
+555   \textcolor{comment}{// Task parameters}
+556   \textcolor{keywordtype}{int}         code  = 0;
+557   int32       \hyperlink{classServer__NI6008_a7bcfa6ba683c63b68c624644ccfb8597}{error} = 0;
+558   TaskHandle  taskHandle = 0;
+559   \textcolor{keywordtype}{char}        errBuff[2048]=\{\textcolor{charliteral}{'\(\backslash\)0'}\};
+560   \textcolor{keywordtype}{char}        chan[] = \textcolor{stringliteral}{"Dev1/ao0\(\backslash\)0"};
+561   \textcolor{comment}{// Channel parameters}
+562   float64     min = \hyperlink{classServer__NI6008_ad650503ceebacea17688e04065130eaa}{m\_aoMin};
+563   float64     max = \hyperlink{classServer__NI6008_a228a5d51f43daaf9eaea8e77cfa3334e}{m\_aoMax};
+564   \textcolor{comment}{// Timing parameters}
+565   uInt64      samplesPerChan = 1;
+566   \textcolor{comment}{// Data write parameters}
+567   int32       pointsWritten;
+568 
+569 \textcolor{preprocessor}{#ifndef NODAQ}
+570   
+571   \hyperlink{Server__NI6008_8cpp_a9e1338726dd5c84c9ea7f855cba19ad4}{DAQmxErrChk} (DAQmxBaseCreateTask(\textcolor{stringliteral}{""},&taskHandle));
+572   \hyperlink{Server__NI6008_8cpp_a9e1338726dd5c84c9ea7f855cba19ad4}{DAQmxErrChk} (DAQmxBaseCreateAOVoltageChan(taskHandle,
+573                         chan,
+574                         \textcolor{stringliteral}{""},
+575                         min,max,
+576                         DAQmx\_Val\_Volts,
+577                         NULL));
+578   \hyperlink{Server__NI6008_8cpp_a9e1338726dd5c84c9ea7f855cba19ad4}{DAQmxErrChk} (DAQmxBaseStartTask(taskHandle));
+579   
+580   \hyperlink{Server__NI6008_8cpp_a9e1338726dd5c84c9ea7f855cba19ad4}{DAQmxErrChk} (DAQmxBaseWriteAnalogF64(taskHandle,
+581                        samplesPerChan,
+582                        0,
+583                        \hyperlink{classServer__NI6008_a782b89c4483096900a3c02f1b1fc2c2f}{m\_timeout},
+584                        DAQmx\_Val\_GroupByChannel,
+585                        &\hyperlink{namespaceshell_a5ea2525995cedc3efd69ea8a7f034d1e}{data},
+586                        &pointsWritten,NULL)
+587            );
+588   \hyperlink{classServer__NI6008_a140d5f91d6c0f4fb963ecf747e44df78}{msgSvc}(\hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea218489470a9743b7d475e86e13ea219d}{INFO},\textcolor{stringliteral}{"Processing AO "}+std::string(chan)+\textcolor{stringliteral}{"."});
+589   \textcolor{keywordflow}{return} code;
+590 
+591 Error:
+592     \textcolor{keywordflow}{if}( DAQmxFailed(error) )
+593         DAQmxBaseGetExtendedErrorInfo(errBuff,2048);
+594     \textcolor{keywordflow}{if}( taskHandle!=0 ) \{
+595         DAQmxBaseStopTask(taskHandle);
+596         DAQmxBaseClearTask(taskHandle);
+597     \}
+598     \textcolor{keywordflow}{if}( DAQmxFailed(error) )
+599         printf (\textcolor{stringliteral}{"DAQmxBase Error %ld: %s\(\backslash\)n"}, error, errBuff);
+600 \textcolor{preprocessor}{#endif}
+601     \textcolor{keywordflow}{return} 0;
+602 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classServer__NI6008_a130bb6bca52d5c779491c51975e6ffda}\label{classServer__NI6008_a130bb6bca52d5c779491c51975e6ffda}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!A\+O1@{A\+O1}}
+\index{A\+O1@{A\+O1}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{A\+O1()}{AO1()}}
+{\footnotesize\ttfamily int Server\+\_\+\+N\+I6008\+::\+A\+O1 (\begin{DoxyParamCaption}\item[{double}]{data }\end{DoxyParamCaption})}
+
+
+
+Definition at line 607 of file Server\+\_\+\+N\+I6008.\+cpp.
+
+
+
+References D\+A\+Qmx\+Err\+Chk, error(), I\+N\+FO, m\+\_\+ao\+Max, m\+\_\+ao\+Min, m\+\_\+timeout, and msg\+Svc().
+
+
+\begin{DoxyCode}
+607                                  \{
+608   \textcolor{comment}{// Task parameters}
+609   \textcolor{keywordtype}{int}         code  = 0;
+610   int32       \hyperlink{classServer__NI6008_a7bcfa6ba683c63b68c624644ccfb8597}{error} = 0;
+611   TaskHandle  taskHandle = 0;
+612   \textcolor{keywordtype}{char}        errBuff[2048]=\{\textcolor{charliteral}{'\(\backslash\)0'}\};
+613   \textcolor{keywordtype}{char}        chan[] = \textcolor{stringliteral}{"Dev1/ao1"};
+614   \textcolor{comment}{// Channel parameters}
+615   float64     min = \hyperlink{classServer__NI6008_ad650503ceebacea17688e04065130eaa}{m\_aoMin};
+616   float64     max = \hyperlink{classServer__NI6008_a228a5d51f43daaf9eaea8e77cfa3334e}{m\_aoMax};
+617   \textcolor{comment}{// Timing parameters}
+618   uInt64      samplesPerChan = 1;
+619   \textcolor{comment}{// Data write parameters}
+620   int32       pointsWritten;
+621 
+622 \textcolor{preprocessor}{  #ifndef NODAQ}
+623   \hyperlink{Server__NI6008_8cpp_a9e1338726dd5c84c9ea7f855cba19ad4}{DAQmxErrChk} (DAQmxBaseCreateTask(\textcolor{stringliteral}{""},&taskHandle));
+624   \hyperlink{Server__NI6008_8cpp_a9e1338726dd5c84c9ea7f855cba19ad4}{DAQmxErrChk} (DAQmxBaseCreateAOVoltageChan(taskHandle,
+625                         chan,
+626                         \textcolor{stringliteral}{""},
+627                         min,max,
+628                         DAQmx\_Val\_Volts,
+629                         NULL));
+630   \hyperlink{Server__NI6008_8cpp_a9e1338726dd5c84c9ea7f855cba19ad4}{DAQmxErrChk} (DAQmxBaseStartTask(taskHandle));
+631   
+632   \hyperlink{Server__NI6008_8cpp_a9e1338726dd5c84c9ea7f855cba19ad4}{DAQmxErrChk} (DAQmxBaseWriteAnalogF64(taskHandle,
+633                        samplesPerChan,
+634                        0,
+635                        \hyperlink{classServer__NI6008_a782b89c4483096900a3c02f1b1fc2c2f}{m\_timeout},
+636                        DAQmx\_Val\_GroupByChannel,
+637                        &\hyperlink{namespaceshell_a5ea2525995cedc3efd69ea8a7f034d1e}{data},
+638                        &pointsWritten,NULL)
+639            );
+640   \hyperlink{classServer__NI6008_a140d5f91d6c0f4fb963ecf747e44df78}{msgSvc}(\hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea218489470a9743b7d475e86e13ea219d}{INFO},\textcolor{stringliteral}{"Processing AO1 "}+std::string(chan)+\textcolor{stringliteral}{"."});
+641 \textcolor{preprocessor}{#endif}
+642   \textcolor{keywordflow}{return} code;
+643 
+644 \textcolor{preprocessor}{#ifndef NODAQ}
+645 Error:
+646     \textcolor{keywordflow}{if}( DAQmxFailed(error) )
+647         DAQmxBaseGetExtendedErrorInfo(errBuff,2048);
+648     \textcolor{keywordflow}{if}( taskHandle!=0 ) \{
+649         DAQmxBaseStopTask(taskHandle);
+650         DAQmxBaseClearTask(taskHandle);
+651     \}
+652     \textcolor{keywordflow}{if}( DAQmxFailed(error) )
+653         printf (\textcolor{stringliteral}{"DAQmxBase Error %ld: %s\(\backslash\)n"}, error, errBuff);
+654     \textcolor{keywordflow}{return} 0;
+655 \textcolor{preprocessor}{#endif}
+656 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classServer__NI6008_ac659132ba000bf628a5f5b696ae133ee}\label{classServer__NI6008_ac659132ba000bf628a5f5b696ae133ee}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!cmd@{cmd}}
+\index{cmd@{cmd}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{cmd()}{cmd()}}
+{\footnotesize\ttfamily int Server\+\_\+\+N\+I6008\+::cmd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 223 of file Server\+\_\+\+N\+I6008.\+cpp.
+
+
+
+References A\+I(), A\+O(), buffer, shell\+::data(), D\+I(), error(), msg\+Svc(), n, newsockfd, Reset(), send(), set\+A\+I\+Range(), set\+A\+O\+Range(), set\+Timeout(), cat\+::size, sockfd, and W\+A\+R\+N\+I\+NG.
+
+
+
+Referenced by start().
+
+
+\begin{DoxyCode}
+223                       \{
+224   \hyperlink{classServer__NI6008_a5573d5feeef8372e2b31a54d6a5a19aa}{n} = read(\hyperlink{classServer__NI6008_a37e3d77925f6c6c9d7dee4dc1c8560d6}{newsockfd},\hyperlink{classServer__NI6008_a2ebf359e55794c1d5ce59900e90b54e6}{buffer},255);
+225   \textcolor{keywordflow}{if} (\hyperlink{classServer__NI6008_a5573d5feeef8372e2b31a54d6a5a19aa}{n} < 0) \{
+226     \hyperlink{classServer__NI6008_a7bcfa6ba683c63b68c624644ccfb8597}{error}(\textcolor{stringliteral}{"ERROR reading from socket"});
+227   \}
+228  
+229   \textcolor{keywordtype}{char}   result[4096];
+230   \textcolor{keywordtype}{int}    \hyperlink{namespacecat_a3eae50bb86a614752045105e00365a46}{size} = 0 ;
+231   
+232   std::string newcmd = std::string(\hyperlink{classServer__NI6008_a2ebf359e55794c1d5ce59900e90b54e6}{buffer});
+233   std::string delimiter = \textcolor{stringliteral}{" "};
+234   \textcolor{keywordtype}{size\_t} pos = 0;
+235   \textcolor{keywordtype}{int} cmdsize = 0;
+236   std::vector<std::string> cmdvec;
+237   \textcolor{keywordflow}{while} ((pos = newcmd.find(delimiter)) != std::string::npos) \{
+238     cmdvec.push\_back(newcmd.substr(0, pos));
+239     newcmd.erase(0, pos + delimiter.length());
+240     cmdsize++;
+241   \}
+242   cmdvec.push\_back(newcmd);
+243   cmdsize++;
+244   \textcolor{comment}{//  for (int i =0 ; i<cmdsize; i++) std::cout<<" command: "<<cmdvec[i]<<" "<<cmdsize<<std::endl;}
+245   
+246   \textcolor{keywordtype}{bool} understood = \textcolor{keyword}{false};
+247   std::string instr = cmdvec[1];
+248   std::transform(instr.begin(), instr.end(),instr.begin(), ::tolower);
+249   size = -1 ; 
+250   \textcolor{comment}{// Server status}
+251   \textcolor{keywordflow}{if} ( instr==\textcolor{stringliteral}{"status"})\{
+252     \textcolor{comment}{//    status();}
+253     understood = \textcolor{keyword}{true};
+254   \}
+255   \textcolor{comment}{// Time out}
+256   \textcolor{keywordflow}{if} ( instr==\textcolor{stringliteral}{"timeout"} && cmdsize==2 )\{
+257     \hyperlink{classServer__NI6008_ade018df1c5afac06e6d528536635ba48}{setTimeout}(atof(cmdvec[2].c\_str()));
+258     \textcolor{comment}{//    status();}
+259     understood = \textcolor{keyword}{true};
+260   \}
+261   \textcolor{comment}{// AI}
+262   \textcolor{keywordflow}{if} ( instr==\textcolor{stringliteral}{"ai"} && cmdsize==2 )\{
+263     \textcolor{keyword}{const} \textcolor{keywordtype}{char}* dev = cmdvec[0].c\_str();
+264     \textcolor{keywordtype}{double} \hyperlink{namespaceshell_a5ea2525995cedc3efd69ea8a7f034d1e}{data}[4];
+265     \hyperlink{classServer__NI6008_a94705879717d5bcf129899e96be81675}{AI}(dev, data);
+266     size = sprintf(result,\textcolor{stringliteral}{"%f %f %f %f"}, data[0], data[1], data[2], data[3]);
+267     \textcolor{keywordflow}{if} ( write(\hyperlink{classServer__NI6008_a37e3d77925f6c6c9d7dee4dc1c8560d6}{newsockfd}, result, size)<0 ) \hyperlink{classServer__NI6008_a7bcfa6ba683c63b68c624644ccfb8597}{error}(\textcolor{stringliteral}{"ERROR writing to socket"});
+268     understood = \textcolor{keyword}{true}; 
+269   \}
+270   \textcolor{comment}{// AI range }
+271   \textcolor{keywordflow}{if} ( instr==\textcolor{stringliteral}{"airange"} && cmdsize==4 )\{
+272     \hyperlink{classServer__NI6008_a120ec56f6af12d56683322f56a8d7878}{setAIRange}(atof(cmdvec[2].c\_str()), atof(cmdvec[3].c\_str()));
+273     \textcolor{comment}{//    status();}
+274     understood = \textcolor{keyword}{true};
+275   \}
+276   \textcolor{comment}{// AO}
+277   \textcolor{keywordflow}{if} ( instr==\textcolor{stringliteral}{"ao"} && cmdsize==4)\{
+278     \textcolor{keyword}{const} \textcolor{keywordtype}{char}* dev = cmdvec[0].c\_str();
+279     \textcolor{keywordtype}{double} data[2];
+280     data[0]=atof(cmdvec[2].c\_str());
+281     data[1]=atof(cmdvec[3].c\_str());
+282     \textcolor{comment}{//    std::cout<<data[0]<<" "<<data[1]<<std::endl;}
+283     \hyperlink{classServer__NI6008_adde2efeb68363f67abb6d76c7ca2d761}{AO}(dev, data);
+284     size = sprintf(result,\textcolor{stringliteral}{"AO set."});
+285     \textcolor{keywordflow}{if} ( write(\hyperlink{classServer__NI6008_a37e3d77925f6c6c9d7dee4dc1c8560d6}{newsockfd}, result, size)<0 ) \hyperlink{classServer__NI6008_a7bcfa6ba683c63b68c624644ccfb8597}{error}(\textcolor{stringliteral}{"ERROR writing to socket"});
+286     understood = \textcolor{keyword}{true};
+287   \}
+288   \textcolor{comment}{// // AO0}
+289   \textcolor{comment}{// if ( instr=="ao0" && cmdsize==1)\{}
+290   \textcolor{comment}{//   double data;}
+291   \textcolor{comment}{//   data=atof(cmdvec[1].c\_str());}
+292   \textcolor{comment}{//   AO0(data);}
+293   \textcolor{comment}{//   size = sprintf(result,"AO0 set.");}
+294   \textcolor{comment}{//   if ( write(newsockfd, result, size)<0 ) error("ERROR writing to socket");}
+295   \textcolor{comment}{// \}}
+296   \textcolor{comment}{// // AO1}
+297   \textcolor{comment}{// if ( instr=="ao1" && cmdsize==1)\{}
+298   \textcolor{comment}{//   double data;}
+299   \textcolor{comment}{//   data=atof(cmdvec[1].c\_str());}
+300   \textcolor{comment}{//   AO1(data);}
+301   \textcolor{comment}{//   size = sprintf(result,"AO1 set.");}
+302   \textcolor{comment}{//   if ( write(newsockfd, result, size)<0 ) error("ERROR writing to socket");}
+303   \textcolor{comment}{// \}}
+304   \textcolor{comment}{// AO range }
+305   \textcolor{keywordflow}{if} ( instr==\textcolor{stringliteral}{"aorange"} && cmdsize==4 )\{
+306     \hyperlink{classServer__NI6008_aec1596005b4c75cc2c13d87ab3d9d120}{setAORange}(atof(cmdvec[2].c\_str()), atof(cmdvec[3].c\_str()));
+307     \textcolor{comment}{//    status();}
+308     understood = \textcolor{keyword}{true};
+309   \}
+310   \textcolor{comment}{// DI}
+311   \textcolor{keywordflow}{if} ( instr==\textcolor{stringliteral}{"di"})\{
+312     \textcolor{keyword}{const} \textcolor{keywordtype}{char}* dev = cmdvec[0].c\_str();
+313     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} idata[2];
+314     \hyperlink{classServer__NI6008_a76b7491d11244e43a2fdb6d4783bd0f8}{DI}(dev, idata);
+315     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} data = idata[0]+256*idata[1];
+316     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} data2 = 
+317       (data>>3&1)+2*(data>>2&1)+4*(data>>1&1)+8*(data&1)+
+318       16*(data>>11&1)+32*(data>>10&1)+64*(data>>9&1)+128*(data>>8&1)+
+319       256*(data>>7&1)+512*(data>>6&1)+1024*(data>>5&1)+2048*(data>>4&1);
+320 
+321     size = sprintf(result,\textcolor{stringliteral}{"%d %d - %d / %d -> %i%i%i%i%i%i%i%i%i%i%i%i "}, idata[0], idata[1], data, data2, 
+       
+322            data>>11&1, data>>10& 1, data>>9&1, data>>8&1,
+323            data>>7&1, data>>6&1, data>>5&1, data>>4&1,
+324            data>>3&1, data>>2&1, data>>1&1, data&1
+325            );
+326     std::cout<< \textcolor{stringliteral}{"digit :"} << result<< std::endl;
+327     \textcolor{keywordflow}{if} ( write(\hyperlink{classServer__NI6008_a37e3d77925f6c6c9d7dee4dc1c8560d6}{newsockfd}, result, size)<0 ) \hyperlink{classServer__NI6008_a7bcfa6ba683c63b68c624644ccfb8597}{error}(\textcolor{stringliteral}{"ERROR writing to socket"});
+328     understood = \textcolor{keyword}{true};
+329   \}
+330   \textcolor{comment}{// DI}
+331   \textcolor{keywordflow}{if} ( instr==\textcolor{stringliteral}{"reset"})\{
+332     \hyperlink{classServer__NI6008_a0495ec12779e4b9bfdda3d60c0ef20aa}{Reset}();
+333     \textcolor{keywordflow}{if} ( write(\hyperlink{classServer__NI6008_a37e3d77925f6c6c9d7dee4dc1c8560d6}{newsockfd}, result, size)<0 ) \hyperlink{classServer__NI6008_a7bcfa6ba683c63b68c624644ccfb8597}{error}(\textcolor{stringliteral}{"ERROR writing to socket"});
+334     understood = \textcolor{keyword}{true}; 
+335   \}
+336   \textcolor{comment}{// Stop}
+337   \textcolor{keywordflow}{if} ( instr==\textcolor{stringliteral}{"stop"})\{
+338     \hyperlink{classServer__NI6008_a140d5f91d6c0f4fb963ecf747e44df78}{msgSvc}(\hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bead7775b9a40b2a58fe2547fe9c2617093}{WARNING}, \textcolor{stringliteral}{"Closing the server connection."});
+339     \hyperlink{classServer__NI6008_a5573d5feeef8372e2b31a54d6a5a19aa}{n} = \hyperlink{classServer__NI6008_af47694911afff2feb37a091d9fcab4fa}{send}(\textcolor{stringliteral}{"exit"});
+340     \textcolor{keywordflow}{if} (\hyperlink{classServer__NI6008_a5573d5feeef8372e2b31a54d6a5a19aa}{n} < 0) \hyperlink{classServer__NI6008_a7bcfa6ba683c63b68c624644ccfb8597}{error}(\textcolor{stringliteral}{"ERROR writing to socket"});
+341     close(\hyperlink{classServer__NI6008_a37e3d77925f6c6c9d7dee4dc1c8560d6}{newsockfd});
+342     close(\hyperlink{classServer__NI6008_a79b2fe632095d34e1c6320a1ffe2d561}{sockfd});
+343     exit(0);
+344   \}
+345   \textcolor{keywordflow}{if} (!understood)\{
+346     size = sprintf(result,\textcolor{stringliteral}{"Instruction not understood."});
+347     \textcolor{keywordflow}{if} ( write(\hyperlink{classServer__NI6008_a37e3d77925f6c6c9d7dee4dc1c8560d6}{newsockfd}, result, size)<0 ) \hyperlink{classServer__NI6008_a7bcfa6ba683c63b68c624644ccfb8597}{error}(\textcolor{stringliteral}{"ERROR writing to socket"});
+348   \}
+349   \textcolor{keywordflow}{return} 0; 
+350 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classServer__NI6008_a76b7491d11244e43a2fdb6d4783bd0f8}\label{classServer__NI6008_a76b7491d11244e43a2fdb6d4783bd0f8}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!DI@{DI}}
+\index{DI@{DI}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{D\+I()}{DI()}}
+{\footnotesize\ttfamily int Server\+\_\+\+N\+I6008\+::\+DI (\begin{DoxyParamCaption}\item[{const char $\ast$}]{,  }\item[{unsigned char}]{\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 483 of file Server\+\_\+\+N\+I6008.\+cpp.
+
+
+
+References D\+A\+Qmx\+Err\+Chk, error(), and m\+\_\+timeout.
+
+
+
+Referenced by cmd().
+
+
+\begin{DoxyCode}
+483                                                                \{
+484   \textcolor{comment}{// Task parameters}
+485   \textcolor{keywordtype}{int}          code  = 0;
+486   int32        \hyperlink{classServer__NI6008_a7bcfa6ba683c63b68c624644ccfb8597}{error} = 0;
+487   TaskHandle   taskHandle = 0;
+488   int32        i;
+489   \textcolor{keyword}{const} uInt32 num\_ports = 2;
+490   \textcolor{keywordtype}{char}         errBuff[2048];
+491 
+492   \textcolor{comment}{// Channel parameters}
+493   \textcolor{keywordtype}{char} chan1[32];
+494   \textcolor{keywordtype}{char} chan2[32];
+495 
+496   sprintf(chan1,\textcolor{stringliteral}{"%s/port0"}, dev);
+497   sprintf(chan2,\textcolor{stringliteral}{"%s/port1"}, dev);
+498   \textcolor{comment}{//  char         chan1[] = "Dev1/port0";}
+499   \textcolor{comment}{//  char         chan2[] = "Dev1/port1";}
+500 
+501   \textcolor{comment}{// Read parameters}
+502   int32        read;
+503 
+504 \textcolor{preprocessor}{#ifndef NODAQ}
+505   \textcolor{comment}{// Create Digital Input (DI) Task and Channel}
+506   \hyperlink{Server__NI6008_8cpp_a9e1338726dd5c84c9ea7f855cba19ad4}{DAQmxErrChk} (DAQmxBaseCreateTask (\textcolor{stringliteral}{""}, &taskHandle));
+507   \hyperlink{Server__NI6008_8cpp_a9e1338726dd5c84c9ea7f855cba19ad4}{DAQmxErrChk} (DAQmxBaseCreateDIChan(taskHandle,chan1,\textcolor{stringliteral}{""},DAQmx\_Val\_ChanForAllLines));
+508   \hyperlink{Server__NI6008_8cpp_a9e1338726dd5c84c9ea7f855cba19ad4}{DAQmxErrChk} (DAQmxBaseCreateDIChan(taskHandle,chan2,\textcolor{stringliteral}{""},DAQmx\_Val\_ChanForAllLines));
+509 
+510   \textcolor{comment}{// Start Task (configure port)}
+511   \hyperlink{Server__NI6008_8cpp_a9e1338726dd5c84c9ea7f855cba19ad4}{DAQmxErrChk} (DAQmxBaseStartTask (taskHandle));
+512 
+513   \textcolor{comment}{// Read from port}
+514   \hyperlink{Server__NI6008_8cpp_a9e1338726dd5c84c9ea7f855cba19ad4}{DAQmxErrChk} (
+515     code = DAQmxBaseReadDigitalU8(
+516       taskHandle,
+517       1,
+518       \hyperlink{classServer__NI6008_a782b89c4483096900a3c02f1b1fc2c2f}{m\_timeout},
+519       DAQmx\_Val\_GroupByChannel,
+520       r\_data,
+521       num\_ports,
+522       &read,
+523       NULL)
+524   );
+525   \textcolor{comment}{// msgSvc(INFO,"Processing DI "+std::string(chan1)+"/"+std::string(chan2)+}
+526   \textcolor{comment}{//   " ->"+ itos(r\_data[0])+", "+itos(r\_data[1]));}
+527 
+528 Error:
+529 
+530    \textcolor{keywordflow}{if} (DAQmxFailed (error))
+531       DAQmxBaseGetExtendedErrorInfo (errBuff, 2048);
+532    \textcolor{keywordflow}{if} (taskHandle != 0)\{
+533       DAQmxBaseStopTask (taskHandle);
+534       DAQmxBaseClearTask (taskHandle);
+535    \}
+536    \textcolor{keywordflow}{if} (error)printf (\textcolor{stringliteral}{"DAQmxBase Error %ld: %s\(\backslash\)n"}, error, errBuff);
+537 \textcolor{preprocessor}{#endif   }
+538    sprintf(errBuff,\textcolor{stringliteral}{"Reading DI: Ch %s %s - Val = %3i %3i"}, chan1, chan2, r\_data[0], r\_data[1]);
+539     std::cout<<errBuff<<std::endl;
+540    \textcolor{keywordflow}{return} 0;
+541 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classServer__NI6008_a7bcfa6ba683c63b68c624644ccfb8597}\label{classServer__NI6008_a7bcfa6ba683c63b68c624644ccfb8597}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!error@{error}}
+\index{error@{error}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily void Server\+\_\+\+N\+I6008\+::error (\begin{DoxyParamCaption}\item[{const char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+
+
+Definition at line 83 of file Server\+\_\+\+N\+I6008.\+cpp.
+
+
+
+Referenced by A\+I(), A\+O(), A\+O0(), A\+O1(), cmd(), D\+I(), and start().
+
+
+\begin{DoxyCode}
+84 \{
+85     perror(msg);
+86     exit(1);
+87 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classServer__NI6008_ab83d0f144d5bb34f3a22aabef37de440}\label{classServer__NI6008_ab83d0f144d5bb34f3a22aabef37de440}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!log@{log}}
+\index{log@{log}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily void Server\+\_\+\+N\+I6008\+::log (\begin{DoxyParamCaption}\item[{\hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25be}{Msg\+Level}}]{level,  }\item[{std\+::string}]{msg,  }\item[{std\+::string}]{call }\end{DoxyParamCaption})}
+
+
+
+Definition at line 118 of file Server\+\_\+\+N\+I6008.\+cpp.
+
+
+
+References B\+L\+UE, call\+Size, colors, C\+Y\+AN, D\+E\+B\+UG, E\+RR, F\+A\+T\+AL, G\+R\+E\+EN, I\+N\+FO, logtime(), M\+A\+G\+E\+N\+TA, R\+ED, V\+E\+R\+B\+O\+SE, W\+A\+R\+N\+I\+NG, W\+H\+I\+TE, and Y\+E\+L\+L\+OW.
+
+
+
+Referenced by msg\+Svc(), and set\+Call\+Size().
+
+
+\begin{DoxyCode}
+120                                   \{
+121 
+122   \textcolor{keywordtype}{bool} isFatal=\textcolor{keyword}{false};   
+123   
+124   \textcolor{comment}{//#ifndef WIN32}
+125   std::string output(\hyperlink{classServer__NI6008_a79fecc3f96756f6a519785663bb11d07}{colors}[\hyperlink{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9a87f786fd497d96c2772b919191814893}{BLUE}]);
+126   output+=std::string(call,0,\hyperlink{classServer__NI6008_a9aa5c02fb85f20452a3f8e0f9dcc33fd}{callSize});
+127   \textcolor{comment}{//#else}
+128   \textcolor{comment}{//  std::string output=std::string(call,0,callSize);}
+129   \textcolor{comment}{//#endif}
+130 
+131 
+132 
+133   \textcolor{keywordtype}{int} clen=call.length();
+134 
+135   \textcolor{keywordflow}{if} (clen>0)
+136   \{
+137     \textcolor{keywordflow}{if} (clen>\hyperlink{classServer__NI6008_a9aa5c02fb85f20452a3f8e0f9dcc33fd}{callSize}) output.replace(\hyperlink{classServer__NI6008_a9aa5c02fb85f20452a3f8e0f9dcc33fd}{callSize}+5-3,3,\textcolor{stringliteral}{"..."});
+138     \textcolor{keywordflow}{if} (clen<\hyperlink{classServer__NI6008_a9aa5c02fb85f20452a3f8e0f9dcc33fd}{callSize}) output.insert (clen+5,\hyperlink{classServer__NI6008_a9aa5c02fb85f20452a3f8e0f9dcc33fd}{callSize}-clen,\textcolor{charliteral}{' '});
+139   \}
+140   
+141   std::string color;
+142   
+143   \textcolor{keywordflow}{switch}(level) \{       
+144   \textcolor{keywordflow}{case} \hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea58fcd852dfcff4011a32756eda28852b}{VERBOSE}:
+145     color=\hyperlink{classServer__NI6008_a79fecc3f96756f6a519785663bb11d07}{colors}[\hyperlink{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9a87f786fd497d96c2772b919191814893}{BLUE}];
+146     output+=color;
+147     output+=\textcolor{stringliteral}{" VERBOSE "};
+148     \textcolor{keywordflow}{break};
+149   \textcolor{keywordflow}{case} \hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bead3eef0ad5b826981e274ce214fd3a6d3}{DEBUG}:
+150     color=\hyperlink{classServer__NI6008_a79fecc3f96756f6a519785663bb11d07}{colors}[\hyperlink{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9a87f786fd497d96c2772b919191814893}{BLUE}];
+151     output+=color;
+152     output+=\textcolor{stringliteral}{" DEBUG   "};
+153     \textcolor{keywordflow}{break};
+154   \textcolor{keywordflow}{case} \hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea218489470a9743b7d475e86e13ea219d}{INFO}:
+155     color=\hyperlink{classServer__NI6008_a79fecc3f96756f6a519785663bb11d07}{colors}[\hyperlink{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9a68bc466d3117463d6348299d532b2d45}{GREEN}];
+156     output+=color;
+157     output+=\textcolor{stringliteral}{" INFO    "};
+158     \textcolor{keywordflow}{break};
+159   \textcolor{keywordflow}{case} \hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bead7775b9a40b2a58fe2547fe9c2617093}{WARNING}:
+160     color=\hyperlink{classServer__NI6008_a79fecc3f96756f6a519785663bb11d07}{colors}[\hyperlink{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9a5595845a9cce91475fd2c84dfc0244a1}{YELLOW}];    
+161     output+=color;
+162     output+=\textcolor{stringliteral}{" WARNING "};
+163     \textcolor{keywordflow}{break};
+164   \textcolor{keywordflow}{case} \hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea23728be8768fe4c119fb61ad427ed5ba}{ERR}:
+165     color=\hyperlink{classServer__NI6008_a79fecc3f96756f6a519785663bb11d07}{colors}[\hyperlink{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9a63a33102efe5a43b2004daeb24ac9393}{MAGENTA}];    
+166     output+=color;
+167     output+=\textcolor{stringliteral}{" ERROR   "};
+168     \textcolor{keywordflow}{break};
+169   \textcolor{keywordflow}{case} \hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea678aa96ea2189f7d6ab602160fa49b8b}{FATAL}:
+170     color=\hyperlink{classServer__NI6008_a79fecc3f96756f6a519785663bb11d07}{colors}[\hyperlink{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9ac0ceda8a3474b33193dd1d704d24ecb0}{RED}];
+171     output+=color;
+172     output+=\textcolor{stringliteral}{" FATAL   "};
+173     isFatal=\textcolor{keyword}{true};
+174     \textcolor{keywordflow}{break};
+175   \textcolor{keywordflow}{default}:
+176     color  = \hyperlink{classServer__NI6008_a79fecc3f96756f6a519785663bb11d07}{colors}[\hyperlink{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9a17e88e209cae3fc66ebd0ede07ec4431}{CYAN}];
+177     output+=color;
+178     output = call;
+179     \textcolor{keywordflow}{break};
+180   \}
+181   output+=\hyperlink{classServer__NI6008_a79fecc3f96756f6a519785663bb11d07}{colors}[\hyperlink{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9aa89fb8138b784b74e19d3c91a4e57999}{WHITE}];
+182   output+=\hyperlink{classServer__NI6008_aab6f8e71661f6234a72d539dedbd53d2}{logtime}();
+183   output+=color;
+184   output+=msg;
+185   output+=\hyperlink{classServer__NI6008_a79fecc3f96756f6a519785663bb11d07}{colors}[\hyperlink{classServer__NI6008_abee9aec1c5054cd3223d4a1e5e4a7ad9aa89fb8138b784b74e19d3c91a4e57999}{WHITE}];
+186   
+187   std::cout << output << std::endl;
+188 
+189   \textcolor{keywordflow}{if} (isFatal) \{exit(0);\}
+190 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classServer__NI6008_aab6f8e71661f6234a72d539dedbd53d2}\label{classServer__NI6008_aab6f8e71661f6234a72d539dedbd53d2}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!logtime@{logtime}}
+\index{logtime@{logtime}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{logtime()}{logtime()}}
+{\footnotesize\ttfamily std\+::string Server\+\_\+\+N\+I6008\+::logtime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 103 of file Server\+\_\+\+N\+I6008.\+cpp.
+
+
+
+Referenced by log().
+
+
+\begin{DoxyCode}
+103                                 \{
+104   time\_t rawtime;
+105   \textcolor{keyword}{struct }tm * timeinfo;
+106   
+107   time ( &rawtime );
+108   timeinfo = localtime ( &rawtime );
+109   \textcolor{keywordtype}{char}* timechar =  asctime (timeinfo) ;
+110   std::string timing = std::string(timechar,24) + \textcolor{stringliteral}{" "};
+111 
+112   \textcolor{keywordflow}{return} timing;
+113 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classServer__NI6008_a140d5f91d6c0f4fb963ecf747e44df78}\label{classServer__NI6008_a140d5f91d6c0f4fb963ecf747e44df78}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!msg\+Svc@{msg\+Svc}}
+\index{msg\+Svc@{msg\+Svc}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{msg\+Svc()}{msgSvc()}}
+{\footnotesize\ttfamily void Server\+\_\+\+N\+I6008\+::msg\+Svc (\begin{DoxyParamCaption}\item[{\hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25be}{Msg\+Level}}]{level,  }\item[{std\+::string}]{msg,  }\item[{std\+::string}]{call = {\ttfamily std\+:\+:string(\char`\"{}\char`\"{})} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 92 of file Server\+\_\+\+N\+I6008.\+cpp.
+
+
+
+References D\+E\+B\+UG, and log().
+
+
+
+Referenced by A\+O0(), A\+O1(), cmd(), Reset(), Server\+\_\+\+N\+I6008(), set\+A\+I\+Range(), and set\+A\+O\+Range().
+
+
+\begin{DoxyCode}
+94                                      \{
+95   \textcolor{keyword}{const} \textcolor{keywordtype}{int} OUTLEVEL = \hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bead3eef0ad5b826981e274ce214fd3a6d3}{DEBUG};
+96   \textcolor{keywordflow}{if} (level<OUTLEVEL) \textcolor{keywordflow}{return};
+97   \hyperlink{classServer__NI6008_ab83d0f144d5bb34f3a22aabef37de440}{log} ( level, msg, call);  
+98 \} 
+\end{DoxyCode}
+\mbox{\Hypertarget{classServer__NI6008_a0495ec12779e4b9bfdda3d60c0ef20aa}\label{classServer__NI6008_a0495ec12779e4b9bfdda3d60c0ef20aa}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!Reset@{Reset}}
+\index{Reset@{Reset}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily int Server\+\_\+\+N\+I6008\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 546 of file Server\+\_\+\+N\+I6008.\+cpp.
+
+
+
+References I\+N\+FO, and msg\+Svc().
+
+
+
+Referenced by cmd().
+
+
+\begin{DoxyCode}
+546                         \{
+547   \hyperlink{classServer__NI6008_a140d5f91d6c0f4fb963ecf747e44df78}{msgSvc}(\hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea218489470a9743b7d475e86e13ea219d}{INFO},\textcolor{stringliteral}{"Reset has not been implemented yet."});
+548   \textcolor{keywordflow}{return} 0;
+549 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classServer__NI6008_af47694911afff2feb37a091d9fcab4fa}\label{classServer__NI6008_af47694911afff2feb37a091d9fcab4fa}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!send@{send}}
+\index{send@{send}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily int Server\+\_\+\+N\+I6008\+::send (\begin{DoxyParamCaption}\item[{std\+::string}]{word }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 117 of file Server\+\_\+\+N\+I6008.\+h.
+
+
+
+Referenced by cmd(), and status().
+
+
+\begin{DoxyCode}
+117                              \{
+118     \textcolor{comment}{/*}
+119 \textcolor{comment}{    char buffer[]=word.c\_str()); }
+120 \textcolor{comment}{    std::cout<<"sending : "<<buffer<<" "<<sizeof(buffer)<<std::endl;}
+121 \textcolor{comment}{    int size = -1;}
+122 \textcolor{comment}{    size = write(newsockfd, buffer, sizeof(buffer));}
+123 \textcolor{comment}{    if (size<0) error("ERROR writing to socket");}
+124 \textcolor{comment}{    return size;}
+125 \textcolor{comment}{    */}
+126     \textcolor{keywordflow}{return} 0;
+127   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classServer__NI6008_a120ec56f6af12d56683322f56a8d7878}\label{classServer__NI6008_a120ec56f6af12d56683322f56a8d7878}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!set\+A\+I\+Range@{set\+A\+I\+Range}}
+\index{set\+A\+I\+Range@{set\+A\+I\+Range}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{set\+A\+I\+Range()}{setAIRange()}}
+{\footnotesize\ttfamily void Server\+\_\+\+N\+I6008\+::set\+A\+I\+Range (\begin{DoxyParamCaption}\item[{double}]{min = {\ttfamily -\/10.},  }\item[{double}]{max = {\ttfamily 10.} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 138 of file Server\+\_\+\+N\+I6008.\+h.
+
+
+
+References F\+A\+T\+AL, ftos(), m\+\_\+ai\+Max, m\+\_\+ai\+Min, and msg\+Svc().
+
+
+
+Referenced by cmd().
+
+
+\begin{DoxyCode}
+138                                                   \{
+139     \textcolor{keywordflow}{if} (min<-10.0&&max>10.0)\{
+140     \hyperlink{classServer__NI6008_a140d5f91d6c0f4fb963ecf747e44df78}{msgSvc}(\hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea678aa96ea2189f7d6ab602160fa49b8b}{FATAL},\textcolor{stringliteral}{"Cannot set such range: "}+\hyperlink{Server__NI6008_8h_ad2603c89b82a1609399d9c9257f947f7}{ftos}(min)+\textcolor{stringliteral}{","}+\hyperlink{Server__NI6008_8h_ad2603c89b82a1609399d9c9257f947f7}{ftos}(max),\textcolor{stringliteral}{"setAORange"});
+141     \}
+142     \hyperlink{classServer__NI6008_af0fea276566b46d56f235bece151af78}{m\_aiMin} = min;
+143     \hyperlink{classServer__NI6008_aa871878e7792bd5dc002f64ef7575dd4}{m\_aiMax} = max;
+144   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classServer__NI6008_aec1596005b4c75cc2c13d87ab3d9d120}\label{classServer__NI6008_aec1596005b4c75cc2c13d87ab3d9d120}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!set\+A\+O\+Range@{set\+A\+O\+Range}}
+\index{set\+A\+O\+Range@{set\+A\+O\+Range}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{set\+A\+O\+Range()}{setAORange()}}
+{\footnotesize\ttfamily void Server\+\_\+\+N\+I6008\+::set\+A\+O\+Range (\begin{DoxyParamCaption}\item[{double}]{min = {\ttfamily 0.},  }\item[{double}]{max = {\ttfamily 5.} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 146 of file Server\+\_\+\+N\+I6008.\+h.
+
+
+
+References F\+A\+T\+AL, ftos(), m\+\_\+ao\+Max, m\+\_\+ao\+Min, and msg\+Svc().
+
+
+
+Referenced by cmd().
+
+
+\begin{DoxyCode}
+146                                                \{
+147     \textcolor{keywordflow}{if} (min<-10.0&&max>10.0)\{
+148     \hyperlink{classServer__NI6008_a140d5f91d6c0f4fb963ecf747e44df78}{msgSvc}(\hyperlink{classServer__NI6008_af1e3e3bac26355a746b5d2e548fe25bea678aa96ea2189f7d6ab602160fa49b8b}{FATAL},\textcolor{stringliteral}{"Cannot set such range: "}+\hyperlink{Server__NI6008_8h_ad2603c89b82a1609399d9c9257f947f7}{ftos}(min)+\textcolor{stringliteral}{","}+\hyperlink{Server__NI6008_8h_ad2603c89b82a1609399d9c9257f947f7}{ftos}(max),\textcolor{stringliteral}{"setAORange"});
+149     \}
+150     \hyperlink{classServer__NI6008_ad650503ceebacea17688e04065130eaa}{m\_aoMin} = min;
+151     \hyperlink{classServer__NI6008_a228a5d51f43daaf9eaea8e77cfa3334e}{m\_aoMax} = max;
+152   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classServer__NI6008_ae2eab1871efb0ec0a7c0c72f56604e13}\label{classServer__NI6008_ae2eab1871efb0ec0a7c0c72f56604e13}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!set\+Call\+Size@{set\+Call\+Size}}
+\index{set\+Call\+Size@{set\+Call\+Size}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{set\+Call\+Size()}{setCallSize()}}
+{\footnotesize\ttfamily void Server\+\_\+\+N\+I6008\+::set\+Call\+Size (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 135 of file Server\+\_\+\+N\+I6008.\+h.
+
+
+
+References call\+Size, log(), and cat\+::size.
+
+
+\begin{DoxyCode}
+135 \{ \hyperlink{classServer__NI6008_a9aa5c02fb85f20452a3f8e0f9dcc33fd}{callSize}   = \hyperlink{namespacecat_a3eae50bb86a614752045105e00365a46}{size}  ; \} \textcolor{comment}{//< Set Msg call field size}
+\end{DoxyCode}
+\mbox{\Hypertarget{classServer__NI6008_adc52659db137940242998e8e0b980c03}\label{classServer__NI6008_adc52659db137940242998e8e0b980c03}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!set\+Line\+Length@{set\+Line\+Length}}
+\index{set\+Line\+Length@{set\+Line\+Length}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{set\+Line\+Length()}{setLineLength()}}
+{\footnotesize\ttfamily void Server\+\_\+\+N\+I6008\+::set\+Line\+Length (\begin{DoxyParamCaption}\item[{int}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 134 of file Server\+\_\+\+N\+I6008.\+h.
+
+
+
+References line\+Length.
+
+
+\begin{DoxyCode}
+134 \{ \hyperlink{classServer__NI6008_a88ff64de4d8715d849b06c2457d13e17}{lineLength} = length ; \} \textcolor{comment}{//< Set Msg line length}
+\end{DoxyCode}
+\mbox{\Hypertarget{classServer__NI6008_ade018df1c5afac06e6d528536635ba48}\label{classServer__NI6008_ade018df1c5afac06e6d528536635ba48}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!set\+Timeout@{set\+Timeout}}
+\index{set\+Timeout@{set\+Timeout}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{set\+Timeout()}{setTimeout()}}
+{\footnotesize\ttfamily void Server\+\_\+\+N\+I6008\+::set\+Timeout (\begin{DoxyParamCaption}\item[{double}]{timeout = {\ttfamily 10.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 154 of file Server\+\_\+\+N\+I6008.\+h.
+
+
+
+References m\+\_\+timeout.
+
+
+
+Referenced by cmd().
+
+
+\begin{DoxyCode}
+154                                         \{
+155     \hyperlink{classServer__NI6008_a782b89c4483096900a3c02f1b1fc2c2f}{m\_timeout} = timeout;
+156   \}  
+\end{DoxyCode}
+\mbox{\Hypertarget{classServer__NI6008_ae3ac1bbf922a2475f41dfd97482af152}\label{classServer__NI6008_ae3ac1bbf922a2475f41dfd97482af152}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!start@{start}}
+\index{start@{start}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Server\+\_\+\+N\+I6008\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 195 of file Server\+\_\+\+N\+I6008.\+cpp.
+
+
+
+References buffer, cli\+\_\+addr, clilen, cmd(), error(), newsockfd, portno, and sockfd.
+
+
+
+Referenced by Server\+\_\+\+N\+I6008().
+
+
+\begin{DoxyCode}
+195                          \{
+196   \hyperlink{classServer__NI6008_a79b2fe632095d34e1c6320a1ffe2d561}{sockfd} = socket(AF\_INET, SOCK\_STREAM, 0);
+197   \textcolor{keywordflow}{if} (\hyperlink{classServer__NI6008_a79b2fe632095d34e1c6320a1ffe2d561}{sockfd} < 0) 
+198     \hyperlink{classServer__NI6008_a7bcfa6ba683c63b68c624644ccfb8597}{error}(\textcolor{stringliteral}{"ERROR opening socket"});
+199   bzero((\textcolor{keywordtype}{char} *) &serv\_addr, \textcolor{keyword}{sizeof}(serv\_addr));
+200   serv\_addr.sin\_family = AF\_INET;
+201   serv\_addr.sin\_addr.s\_addr = INADDR\_ANY;
+202   serv\_addr.sin\_port = htons(\hyperlink{classServer__NI6008_ae70c386215b3945d98eba610022db813}{portno});
+203   \textcolor{keywordflow}{if} (bind(\hyperlink{classServer__NI6008_a79b2fe632095d34e1c6320a1ffe2d561}{sockfd}, (\textcolor{keyword}{struct} sockaddr *) &serv\_addr,
+204        \textcolor{keyword}{sizeof}(serv\_addr)) < 0) 
+205     \hyperlink{classServer__NI6008_a7bcfa6ba683c63b68c624644ccfb8597}{error}(\textcolor{stringliteral}{"ERROR on binding"});
+206   listen(\hyperlink{classServer__NI6008_a79b2fe632095d34e1c6320a1ffe2d561}{sockfd},5);
+207   \hyperlink{classServer__NI6008_a7870880eba646269208e0c75de3e63bc}{clilen} = \textcolor{keyword}{sizeof}(\hyperlink{classServer__NI6008_a8f65891da026492eba6d3642df9e0357}{cli\_addr});
+208   \hyperlink{classServer__NI6008_a37e3d77925f6c6c9d7dee4dc1c8560d6}{newsockfd} = accept(\hyperlink{classServer__NI6008_a79b2fe632095d34e1c6320a1ffe2d561}{sockfd}, 
+209              (\textcolor{keyword}{struct} sockaddr *) &\hyperlink{classServer__NI6008_a8f65891da026492eba6d3642df9e0357}{cli\_addr}, 
+210              &\hyperlink{classServer__NI6008_a7870880eba646269208e0c75de3e63bc}{clilen});
+211   \textcolor{keywordflow}{if} (\hyperlink{classServer__NI6008_a37e3d77925f6c6c9d7dee4dc1c8560d6}{newsockfd} < 0) \hyperlink{classServer__NI6008_a7bcfa6ba683c63b68c624644ccfb8597}{error}(\textcolor{stringliteral}{"ERROR on accept"});
+212      \textcolor{keywordflow}{while}(1) \{
+213        bzero(\hyperlink{classServer__NI6008_a2ebf359e55794c1d5ce59900e90b54e6}{buffer},256);
+214        \hyperlink{classServer__NI6008_ac659132ba000bf628a5f5b696ae133ee}{cmd}();
+215      \}
+216   close(\hyperlink{classServer__NI6008_a37e3d77925f6c6c9d7dee4dc1c8560d6}{newsockfd});
+217   close(\hyperlink{classServer__NI6008_a79b2fe632095d34e1c6320a1ffe2d561}{sockfd});
+218 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classServer__NI6008_aae0469228b36fc7085223ad301ffe073}\label{classServer__NI6008_aae0469228b36fc7085223ad301ffe073}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!status@{status}}
+\index{status@{status}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{status()}{status()}}
+{\footnotesize\ttfamily void Server\+\_\+\+N\+I6008\+::status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 355 of file Server\+\_\+\+N\+I6008.\+cpp.
+
+
+
+References ftos(), itos(), m\+\_\+ai\+Max, m\+\_\+ai\+Min, m\+\_\+ao\+Max, m\+\_\+ao\+Min, m\+\_\+timeout, portno, and send().
+
+
+\begin{DoxyCode}
+355                            \{
+356   \hyperlink{classServer__NI6008_af47694911afff2feb37a091d9fcab4fa}{send}(std::string(\textcolor{stringliteral}{"Port   : "}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(\hyperlink{classServer__NI6008_ae70c386215b3945d98eba610022db813}{portno})));
+357   \hyperlink{classServer__NI6008_af47694911afff2feb37a091d9fcab4fa}{send}(std::string(\textcolor{stringliteral}{"   - Timeout = "}+\hyperlink{Tools_8h_ae78000c70889d75d67813c6cb83010a6}{ftos}(\hyperlink{classServer__NI6008_a782b89c4483096900a3c02f1b1fc2c2f}{m\_timeout})));
+358   \hyperlink{classServer__NI6008_af47694911afff2feb37a091d9fcab4fa}{send}(std::string(\textcolor{stringliteral}{"   - AI"}));
+359   \hyperlink{classServer__NI6008_af47694911afff2feb37a091d9fcab4fa}{send}(std::string(\textcolor{stringliteral}{"       . min = "}+\hyperlink{Tools_8h_ae78000c70889d75d67813c6cb83010a6}{ftos}(\hyperlink{classServer__NI6008_af0fea276566b46d56f235bece151af78}{m\_aiMin})));
+360   \hyperlink{classServer__NI6008_af47694911afff2feb37a091d9fcab4fa}{send}(std::string(\textcolor{stringliteral}{"       . max = "}+\hyperlink{Tools_8h_ae78000c70889d75d67813c6cb83010a6}{ftos}(\hyperlink{classServer__NI6008_aa871878e7792bd5dc002f64ef7575dd4}{m\_aiMax})));
+361   \hyperlink{classServer__NI6008_af47694911afff2feb37a091d9fcab4fa}{send}(std::string(\textcolor{stringliteral}{"   - AO"}));
+362   \hyperlink{classServer__NI6008_af47694911afff2feb37a091d9fcab4fa}{send}(std::string(\textcolor{stringliteral}{"       . min = "}+\hyperlink{Tools_8h_ae78000c70889d75d67813c6cb83010a6}{ftos}(\hyperlink{classServer__NI6008_ad650503ceebacea17688e04065130eaa}{m\_aoMin})));  
+363   \hyperlink{classServer__NI6008_af47694911afff2feb37a091d9fcab4fa}{send}(std::string(\textcolor{stringliteral}{"       . max = "}+\hyperlink{Tools_8h_ae78000c70889d75d67813c6cb83010a6}{ftos}(\hyperlink{classServer__NI6008_a228a5d51f43daaf9eaea8e77cfa3334e}{m\_aoMax})));
+364 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classServer__NI6008_a2ebf359e55794c1d5ce59900e90b54e6}\label{classServer__NI6008_a2ebf359e55794c1d5ce59900e90b54e6}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!buffer@{buffer}}
+\index{buffer@{buffer}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily char Server\+\_\+\+N\+I6008\+::buffer\mbox{[}256\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 162 of file Server\+\_\+\+N\+I6008.\+h.
+
+
+
+Referenced by cmd(), and start().
+
+\mbox{\Hypertarget{classServer__NI6008_a9aa5c02fb85f20452a3f8e0f9dcc33fd}\label{classServer__NI6008_a9aa5c02fb85f20452a3f8e0f9dcc33fd}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!call\+Size@{call\+Size}}
+\index{call\+Size@{call\+Size}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{call\+Size}{callSize}}
+{\footnotesize\ttfamily int Server\+\_\+\+N\+I6008\+::call\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 166 of file Server\+\_\+\+N\+I6008.\+h.
+
+
+
+Referenced by log(), and set\+Call\+Size().
+
+\mbox{\Hypertarget{classServer__NI6008_a8f65891da026492eba6d3642df9e0357}\label{classServer__NI6008_a8f65891da026492eba6d3642df9e0357}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!cli\+\_\+addr@{cli\+\_\+addr}}
+\index{cli\+\_\+addr@{cli\+\_\+addr}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{cli\+\_\+addr}{cli\_addr}}
+{\footnotesize\ttfamily struct sockaddr\+\_\+in serv\+\_\+addr Server\+\_\+\+N\+I6008\+::cli\+\_\+addr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 163 of file Server\+\_\+\+N\+I6008.\+h.
+
+
+
+Referenced by start().
+
+\mbox{\Hypertarget{classServer__NI6008_a7870880eba646269208e0c75de3e63bc}\label{classServer__NI6008_a7870880eba646269208e0c75de3e63bc}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!clilen@{clilen}}
+\index{clilen@{clilen}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{clilen}{clilen}}
+{\footnotesize\ttfamily socklen\+\_\+t Server\+\_\+\+N\+I6008\+::clilen\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 161 of file Server\+\_\+\+N\+I6008.\+h.
+
+
+
+Referenced by start().
+
+\mbox{\Hypertarget{classServer__NI6008_a79fecc3f96756f6a519785663bb11d07}\label{classServer__NI6008_a79fecc3f96756f6a519785663bb11d07}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!colors@{colors}}
+\index{colors@{colors}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{colors}{colors}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Server\+\_\+\+N\+I6008\+::colors\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 165 of file Server\+\_\+\+N\+I6008.\+h.
+
+
+
+Referenced by log(), and Server\+\_\+\+N\+I6008().
+
+\mbox{\Hypertarget{classServer__NI6008_a88ff64de4d8715d849b06c2457d13e17}\label{classServer__NI6008_a88ff64de4d8715d849b06c2457d13e17}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!line\+Length@{line\+Length}}
+\index{line\+Length@{line\+Length}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{line\+Length}{lineLength}}
+{\footnotesize\ttfamily int Server\+\_\+\+N\+I6008\+::line\+Length\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 167 of file Server\+\_\+\+N\+I6008.\+h.
+
+
+
+Referenced by set\+Line\+Length().
+
+\mbox{\Hypertarget{classServer__NI6008_aa871878e7792bd5dc002f64ef7575dd4}\label{classServer__NI6008_aa871878e7792bd5dc002f64ef7575dd4}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!m\+\_\+ai\+Max@{m\+\_\+ai\+Max}}
+\index{m\+\_\+ai\+Max@{m\+\_\+ai\+Max}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{m\+\_\+ai\+Max}{m\_aiMax}}
+{\footnotesize\ttfamily double Server\+\_\+\+N\+I6008\+::m\+\_\+ai\+Max\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 170 of file Server\+\_\+\+N\+I6008.\+h.
+
+
+
+Referenced by set\+A\+I\+Range(), and status().
+
+\mbox{\Hypertarget{classServer__NI6008_af0fea276566b46d56f235bece151af78}\label{classServer__NI6008_af0fea276566b46d56f235bece151af78}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!m\+\_\+ai\+Min@{m\+\_\+ai\+Min}}
+\index{m\+\_\+ai\+Min@{m\+\_\+ai\+Min}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{m\+\_\+ai\+Min}{m\_aiMin}}
+{\footnotesize\ttfamily double Server\+\_\+\+N\+I6008\+::m\+\_\+ai\+Min\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 170 of file Server\+\_\+\+N\+I6008.\+h.
+
+
+
+Referenced by set\+A\+I\+Range(), and status().
+
+\mbox{\Hypertarget{classServer__NI6008_a228a5d51f43daaf9eaea8e77cfa3334e}\label{classServer__NI6008_a228a5d51f43daaf9eaea8e77cfa3334e}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!m\+\_\+ao\+Max@{m\+\_\+ao\+Max}}
+\index{m\+\_\+ao\+Max@{m\+\_\+ao\+Max}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{m\+\_\+ao\+Max}{m\_aoMax}}
+{\footnotesize\ttfamily double Server\+\_\+\+N\+I6008\+::m\+\_\+ao\+Max\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 171 of file Server\+\_\+\+N\+I6008.\+h.
+
+
+
+Referenced by A\+O(), A\+O0(), A\+O1(), set\+A\+O\+Range(), and status().
+
+\mbox{\Hypertarget{classServer__NI6008_ad650503ceebacea17688e04065130eaa}\label{classServer__NI6008_ad650503ceebacea17688e04065130eaa}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!m\+\_\+ao\+Min@{m\+\_\+ao\+Min}}
+\index{m\+\_\+ao\+Min@{m\+\_\+ao\+Min}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{m\+\_\+ao\+Min}{m\_aoMin}}
+{\footnotesize\ttfamily double Server\+\_\+\+N\+I6008\+::m\+\_\+ao\+Min\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 171 of file Server\+\_\+\+N\+I6008.\+h.
+
+
+
+Referenced by A\+O(), A\+O0(), A\+O1(), set\+A\+O\+Range(), and status().
+
+\mbox{\Hypertarget{classServer__NI6008_a782b89c4483096900a3c02f1b1fc2c2f}\label{classServer__NI6008_a782b89c4483096900a3c02f1b1fc2c2f}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!m\+\_\+timeout@{m\+\_\+timeout}}
+\index{m\+\_\+timeout@{m\+\_\+timeout}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{m\+\_\+timeout}{m\_timeout}}
+{\footnotesize\ttfamily double Server\+\_\+\+N\+I6008\+::m\+\_\+timeout\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 172 of file Server\+\_\+\+N\+I6008.\+h.
+
+
+
+Referenced by A\+I(), A\+O(), A\+O0(), A\+O1(), D\+I(), set\+Timeout(), and status().
+
+\mbox{\Hypertarget{classServer__NI6008_a5573d5feeef8372e2b31a54d6a5a19aa}\label{classServer__NI6008_a5573d5feeef8372e2b31a54d6a5a19aa}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!n@{n}}
+\index{n@{n}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{n}{n}}
+{\footnotesize\ttfamily int Server\+\_\+\+N\+I6008\+::n\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 164 of file Server\+\_\+\+N\+I6008.\+h.
+
+
+
+Referenced by cmd().
+
+\mbox{\Hypertarget{classServer__NI6008_a37e3d77925f6c6c9d7dee4dc1c8560d6}\label{classServer__NI6008_a37e3d77925f6c6c9d7dee4dc1c8560d6}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!newsockfd@{newsockfd}}
+\index{newsockfd@{newsockfd}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{newsockfd}{newsockfd}}
+{\footnotesize\ttfamily int Server\+\_\+\+N\+I6008\+::newsockfd\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 159 of file Server\+\_\+\+N\+I6008.\+h.
+
+
+
+Referenced by cmd(), and start().
+
+\mbox{\Hypertarget{classServer__NI6008_a9c73f187e64f7d753a8eabd9d1b6e9cd}\label{classServer__NI6008_a9c73f187e64f7d753a8eabd9d1b6e9cd}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!ni6008@{ni6008}}
+\index{ni6008@{ni6008}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{ni6008}{ni6008}}
+{\footnotesize\ttfamily std\+::string Server\+\_\+\+N\+I6008\+::ni6008\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 160 of file Server\+\_\+\+N\+I6008.\+h.
+
+\mbox{\Hypertarget{classServer__NI6008_ae70c386215b3945d98eba610022db813}\label{classServer__NI6008_ae70c386215b3945d98eba610022db813}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!portno@{portno}}
+\index{portno@{portno}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{portno}{portno}}
+{\footnotesize\ttfamily int Server\+\_\+\+N\+I6008\+::portno\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 159 of file Server\+\_\+\+N\+I6008.\+h.
+
+
+
+Referenced by Server\+\_\+\+N\+I6008(), start(), and status().
+
+\mbox{\Hypertarget{classServer__NI6008_a79b2fe632095d34e1c6320a1ffe2d561}\label{classServer__NI6008_a79b2fe632095d34e1c6320a1ffe2d561}} 
+\index{Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}!sockfd@{sockfd}}
+\index{sockfd@{sockfd}!Server\+\_\+\+N\+I6008@{Server\+\_\+\+N\+I6008}}
+\subsubsection{\texorpdfstring{sockfd}{sockfd}}
+{\footnotesize\ttfamily int Server\+\_\+\+N\+I6008\+::sockfd\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 159 of file Server\+\_\+\+N\+I6008.\+h.
+
+
+
+Referenced by cmd(), and start().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+N\+I/inc/\hyperlink{Server__NI6008_8h}{Server\+\_\+\+N\+I6008.\+h}\item 
+/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+N\+I/src/\hyperlink{Server__NI6008_8cpp}{Server\+\_\+\+N\+I6008.\+cpp}\end{DoxyCompactItemize}

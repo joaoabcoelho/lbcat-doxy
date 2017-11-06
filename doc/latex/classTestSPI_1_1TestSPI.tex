@@ -1,0 +1,194 @@
+\hypertarget{classTestSPI_1_1TestSPI}{}\section{Test\+S\+P\+I.\+Test\+S\+PI Class Reference}
+\label{classTestSPI_1_1TestSPI}\index{Test\+S\+P\+I.\+Test\+S\+PI@{Test\+S\+P\+I.\+Test\+S\+PI}}
+Inheritance diagram for Test\+S\+P\+I.\+Test\+S\+PI\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classTestSPI_1_1TestSPI}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classTestSPI_1_1TestSPI_abe1733d29b3ba96fda6ef9b2dd69f5f5}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, cat, obj, panel, path)
+\item 
+def \hyperlink{classTestSPI_1_1TestSPI_afb81e2aa5e79d416c526e5a468a233c7}{on\+Apply} (self, event)
+\item 
+def \hyperlink{classTestSPI_1_1TestSPI_a3decf34e1dd0ad00ae1a53d5daf690b1}{update} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTestSPI_1_1TestSPI_a914dccdc9e80b9440a840e19317d41e2}{s1}
+\item 
+\hyperlink{classTestSPI_1_1TestSPI_a9f001dfe102a7589fc88c9eb1aed91cc}{s2}
+\item 
+\hyperlink{classTestSPI_1_1TestSPI_aa4a1d8242e115a02b76a296993bf387e}{s3}
+\item 
+\hyperlink{classTestSPI_1_1TestSPI_a89c7f85cbef3c989e7a1f127988a403e}{s4}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 9 of file Test\+S\+P\+I.\+py.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTestSPI_1_1TestSPI_abe1733d29b3ba96fda6ef9b2dd69f5f5}\label{classTestSPI_1_1TestSPI_abe1733d29b3ba96fda6ef9b2dd69f5f5}} 
+\index{Test\+S\+P\+I\+::\+Test\+S\+PI@{Test\+S\+P\+I\+::\+Test\+S\+PI}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!Test\+S\+P\+I\+::\+Test\+S\+PI@{Test\+S\+P\+I\+::\+Test\+S\+PI}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def Test\+S\+P\+I.\+Test\+S\+P\+I.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{panel,  }\item[{}]{path }\end{DoxyParamCaption})}
+
+
+
+Definition at line 10 of file Test\+S\+P\+I.\+py.
+
+
+
+References element.\+element.\+loadxrc(), and proc.\+proc.\+loadxrc().
+
+
+\begin{DoxyCode}
+10     \textcolor{keyword}{def }\hyperlink{classwrapper_1_1ModuleDictWrapper_a9a7a794150502f51df687831583e13b9}{\_\_init\_\_}(self, cat, obj, panel, path):
+11         proc.\_\_init\_\_(self,cat,obj,panel,path)
+12         self.loadxrc()
+13         self.s1=self.getControl(\textcolor{stringliteral}{"s1"})
+14         self.s2=self.getControl(\textcolor{stringliteral}{"s2"})
+15         self.s3=self.getControl(\textcolor{stringliteral}{"s3"})
+16         self.s4=self.getControl(\textcolor{stringliteral}{"s4"})
+17         self.update()
+18         self.panel.Bind(wx.EVT\_BUTTON, self.onApply, id=xrc.XRCID(\textcolor{stringliteral}{"Apply"}))
+19 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classTestSPI_1_1TestSPI_afb81e2aa5e79d416c526e5a468a233c7}\label{classTestSPI_1_1TestSPI_afb81e2aa5e79d416c526e5a468a233c7}} 
+\index{Test\+S\+P\+I\+::\+Test\+S\+PI@{Test\+S\+P\+I\+::\+Test\+S\+PI}!on\+Apply@{on\+Apply}}
+\index{on\+Apply@{on\+Apply}!Test\+S\+P\+I\+::\+Test\+S\+PI@{Test\+S\+P\+I\+::\+Test\+S\+PI}}
+\subsubsection{\texorpdfstring{on\+Apply()}{onApply()}}
+{\footnotesize\ttfamily def Test\+S\+P\+I.\+Test\+S\+P\+I.\+on\+Apply (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{event }\end{DoxyParamCaption})}
+
+
+
+Definition at line 20 of file Test\+S\+P\+I.\+py.
+
+
+
+References object.\+object.\+obj, Cfg\+Frame.\+Cfg\+Frame.\+obj, Storage\+Fifo.\+Storage\+Fifo.\+s1, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s1, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s1, Test\+I2\+C.\+Test\+I2\+C.\+s1, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s2, Storage\+Fifo.\+Storage\+Fifo.\+s2, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s2, Test\+I2\+C.\+Test\+I2\+C.\+s2, Storage\+Fifo.\+Storage\+Fifo.\+s3, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s3, Test\+I2\+C.\+Test\+I2\+C.\+s3, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s3, Test\+I2\+C.\+Test\+I2\+C.\+s4, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s4, Storage\+Fifo.\+Storage\+Fifo.\+s4, and Test\+S\+P\+I.\+Test\+S\+P\+I.\+s4.
+
+
+
+Referenced by A3\+P\+E\+\_\+\+Bit\+Flip.\+A3\+P\+E\+\_\+\+Bit\+Flip.\+\_\+\+\_\+init\+\_\+\+\_\+(), and Emulate\+F\+E.\+Emulate\+F\+E.\+\_\+\+\_\+init\+\_\+\+\_\+().
+
+
+\begin{DoxyCode}
+20     \textcolor{keyword}{def }onApply(self, event):
+21         v1 = float(self.s1.GetValue())
+22         v2 = float(self.s2.GetValue())
+23         v3 = float(self.s3.GetValue())
+24         v4 = float(self.s4.GetValue())
+25         self.obj.setSigma(v1,v2,v3,v4)
+26 
+\end{DoxyCode}
+\mbox{\Hypertarget{classTestSPI_1_1TestSPI_a3decf34e1dd0ad00ae1a53d5daf690b1}\label{classTestSPI_1_1TestSPI_a3decf34e1dd0ad00ae1a53d5daf690b1}} 
+\index{Test\+S\+P\+I\+::\+Test\+S\+PI@{Test\+S\+P\+I\+::\+Test\+S\+PI}!update@{update}}
+\index{update@{update}!Test\+S\+P\+I\+::\+Test\+S\+PI@{Test\+S\+P\+I\+::\+Test\+S\+PI}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily def Test\+S\+P\+I.\+Test\+S\+P\+I.\+update (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line 27 of file Test\+S\+P\+I.\+py.
+
+
+
+References object.\+object.\+obj, Cfg\+Frame.\+Cfg\+Frame.\+obj, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s1, Test\+I2\+C.\+Test\+I2\+C.\+s1, Storage\+Fifo.\+Storage\+Fifo.\+s1, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s1, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s2, Test\+I2\+C.\+Test\+I2\+C.\+s2, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s2, Storage\+Fifo.\+Storage\+Fifo.\+s2, Test\+I2\+C.\+Test\+I2\+C.\+s3, Storage\+Fifo.\+Storage\+Fifo.\+s3, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s3, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s3, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s4, Storage\+Fifo.\+Storage\+Fifo.\+s4, Test\+I2\+C.\+Test\+I2\+C.\+s4, and Test\+S\+P\+I.\+Test\+S\+P\+I.\+s4.
+
+
+
+Referenced by App\+Frame.\+App\+Frame.\+delete\+Hardware(), Conf\+Frame.\+Conf\+Frame.\+on\+Change(), Graph\+Frame.\+Graph\+Frame.\+on\+Change(), Cfg\+Frame.\+Cfg\+Frame.\+on\+Change(), Conf\+Frame.\+Conf\+Frame.\+on\+Edit(), App\+Frame.\+App\+Frame.\+on\+Load(), Conf\+Frame.\+Conf\+Frame.\+on\+Re\+Load(), Graph\+Frame.\+Graph\+Frame.\+on\+Re\+Load(), Cfg\+Frame.\+Cfg\+Frame.\+on\+Re\+Load(), and App\+Frame.\+App\+Frame.\+on\+Re\+Load().
+
+
+\begin{DoxyCode}
+27     \textcolor{keyword}{def }update(self):
+28         v1=self.obj.sigma(0)
+29         v2=self.obj.sigma(1)
+30         v3=self.obj.sigma(2)
+31         v4=self.obj.sigma(3)
+32 
+33         self.s1.SetValue(str(v1))
+34         self.s2.SetValue(str(v2))
+35         self.s3.SetValue(str(v3))
+36         self.s4.SetValue(str(v4))        
+37 
+38 \textcolor{comment}{#----------------------------------------------------------------------}
+39 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classTestSPI_1_1TestSPI_a914dccdc9e80b9440a840e19317d41e2}\label{classTestSPI_1_1TestSPI_a914dccdc9e80b9440a840e19317d41e2}} 
+\index{Test\+S\+P\+I\+::\+Test\+S\+PI@{Test\+S\+P\+I\+::\+Test\+S\+PI}!s1@{s1}}
+\index{s1@{s1}!Test\+S\+P\+I\+::\+Test\+S\+PI@{Test\+S\+P\+I\+::\+Test\+S\+PI}}
+\subsubsection{\texorpdfstring{s1}{s1}}
+{\footnotesize\ttfamily Test\+S\+P\+I.\+Test\+S\+P\+I.\+s1}
+
+
+
+Definition at line 13 of file Test\+S\+P\+I.\+py.
+
+
+
+Referenced by Test\+S\+P\+I.\+Test\+S\+P\+I.\+on\+Apply(), Test\+U\+S\+B.\+Test\+U\+S\+B.\+on\+Apply(), Test\+Suite.\+Test\+Suite.\+on\+Apply(), A\+D\+C\+Measurement.\+Current\+Measurement.\+on\+Apply(), Current\+Measurement.\+Current\+Measurement.\+on\+Apply(), Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+on\+Apply(), Test\+U\+S\+B.\+Test\+U\+S\+B.\+update(), Test\+S\+P\+I.\+Test\+S\+P\+I.\+update(), Test\+Suite.\+Test\+Suite.\+update(), A\+D\+C\+Measurement.\+Current\+Measurement.\+update(), Current\+Measurement.\+Current\+Measurement.\+update(), and Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+update().
+
+\mbox{\Hypertarget{classTestSPI_1_1TestSPI_a9f001dfe102a7589fc88c9eb1aed91cc}\label{classTestSPI_1_1TestSPI_a9f001dfe102a7589fc88c9eb1aed91cc}} 
+\index{Test\+S\+P\+I\+::\+Test\+S\+PI@{Test\+S\+P\+I\+::\+Test\+S\+PI}!s2@{s2}}
+\index{s2@{s2}!Test\+S\+P\+I\+::\+Test\+S\+PI@{Test\+S\+P\+I\+::\+Test\+S\+PI}}
+\subsubsection{\texorpdfstring{s2}{s2}}
+{\footnotesize\ttfamily Test\+S\+P\+I.\+Test\+S\+P\+I.\+s2}
+
+
+
+Definition at line 14 of file Test\+S\+P\+I.\+py.
+
+
+
+Referenced by Test\+S\+P\+I.\+Test\+S\+P\+I.\+on\+Apply(), Test\+U\+S\+B.\+Test\+U\+S\+B.\+on\+Apply(), Test\+Suite.\+Test\+Suite.\+on\+Apply(), A\+D\+C\+Measurement.\+Current\+Measurement.\+on\+Apply(), Current\+Measurement.\+Current\+Measurement.\+on\+Apply(), Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+on\+Apply(), Test\+U\+S\+B.\+Test\+U\+S\+B.\+update(), Test\+S\+P\+I.\+Test\+S\+P\+I.\+update(), Test\+Suite.\+Test\+Suite.\+update(), A\+D\+C\+Measurement.\+Current\+Measurement.\+update(), Current\+Measurement.\+Current\+Measurement.\+update(), and Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+update().
+
+\mbox{\Hypertarget{classTestSPI_1_1TestSPI_aa4a1d8242e115a02b76a296993bf387e}\label{classTestSPI_1_1TestSPI_aa4a1d8242e115a02b76a296993bf387e}} 
+\index{Test\+S\+P\+I\+::\+Test\+S\+PI@{Test\+S\+P\+I\+::\+Test\+S\+PI}!s3@{s3}}
+\index{s3@{s3}!Test\+S\+P\+I\+::\+Test\+S\+PI@{Test\+S\+P\+I\+::\+Test\+S\+PI}}
+\subsubsection{\texorpdfstring{s3}{s3}}
+{\footnotesize\ttfamily Test\+S\+P\+I.\+Test\+S\+P\+I.\+s3}
+
+
+
+Definition at line 15 of file Test\+S\+P\+I.\+py.
+
+
+
+Referenced by Test\+S\+P\+I.\+Test\+S\+P\+I.\+on\+Apply(), Test\+U\+S\+B.\+Test\+U\+S\+B.\+on\+Apply(), Test\+Suite.\+Test\+Suite.\+on\+Apply(), A\+D\+C\+Measurement.\+Current\+Measurement.\+on\+Apply(), Current\+Measurement.\+Current\+Measurement.\+on\+Apply(), Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+on\+Apply(), Test\+U\+S\+B.\+Test\+U\+S\+B.\+update(), Test\+S\+P\+I.\+Test\+S\+P\+I.\+update(), Test\+Suite.\+Test\+Suite.\+update(), A\+D\+C\+Measurement.\+Current\+Measurement.\+update(), Current\+Measurement.\+Current\+Measurement.\+update(), and Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+update().
+
+\mbox{\Hypertarget{classTestSPI_1_1TestSPI_a89c7f85cbef3c989e7a1f127988a403e}\label{classTestSPI_1_1TestSPI_a89c7f85cbef3c989e7a1f127988a403e}} 
+\index{Test\+S\+P\+I\+::\+Test\+S\+PI@{Test\+S\+P\+I\+::\+Test\+S\+PI}!s4@{s4}}
+\index{s4@{s4}!Test\+S\+P\+I\+::\+Test\+S\+PI@{Test\+S\+P\+I\+::\+Test\+S\+PI}}
+\subsubsection{\texorpdfstring{s4}{s4}}
+{\footnotesize\ttfamily Test\+S\+P\+I.\+Test\+S\+P\+I.\+s4}
+
+
+
+Definition at line 16 of file Test\+S\+P\+I.\+py.
+
+
+
+Referenced by Test\+S\+P\+I.\+Test\+S\+P\+I.\+on\+Apply(), Test\+U\+S\+B.\+Test\+U\+S\+B.\+on\+Apply(), Test\+Suite.\+Test\+Suite.\+on\+Apply(), A\+D\+C\+Measurement.\+Current\+Measurement.\+on\+Apply(), Current\+Measurement.\+Current\+Measurement.\+on\+Apply(), Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+on\+Apply(), Test\+U\+S\+B.\+Test\+U\+S\+B.\+update(), Test\+S\+P\+I.\+Test\+S\+P\+I.\+update(), Test\+Suite.\+Test\+Suite.\+update(), A\+D\+C\+Measurement.\+Current\+Measurement.\+update(), Current\+Measurement.\+Current\+Measurement.\+update(), and Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+update().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Calo\+Upgrade/python/proc/\hyperlink{TestSPI_8py}{Test\+S\+P\+I.\+py}\end{DoxyCompactItemize}

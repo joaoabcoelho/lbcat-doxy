@@ -1,0 +1,2545 @@
+\hypertarget{classApplication}{}\section{Application Class Reference}
+\label{classApplication}\index{Application@{Application}}
+
+
+{\ttfamily \#include $<$Application.\+h$>$}
+
+Inheritance diagram for Application\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classApplication}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classAttrib_a69e171d7cc6417835a5a306d3c764235}{Attribut} \{ \newline
+\hyperlink{classAttrib_a69e171d7cc6417835a5a306d3c764235a3a8da2ab97dda18aebab196fe4100531}{U\+N\+D\+E\+F\+I\+N\+ED}, 
+\hyperlink{classAttrib_a69e171d7cc6417835a5a306d3c764235a2bfb2af57b87031d190a05fe25dd92ed}{P\+A\+S\+S\+I\+VE}, 
+\hyperlink{classAttrib_a69e171d7cc6417835a5a306d3c764235a3b1fec929c0370d1436f2f06e298fb0d}{A\+C\+T\+I\+VE}, 
+\hyperlink{classAttrib_a69e171d7cc6417835a5a306d3c764235aa27c16b480a369ea4d18b07b2516bbc7}{I\+N\+T\+E\+R\+F\+A\+CE}, 
+\newline
+\hyperlink{classAttrib_a69e171d7cc6417835a5a306d3c764235a1420a5b8c0540b2af210b6975eded7f9}{IO}, 
+\hyperlink{classAttrib_a69e171d7cc6417835a5a306d3c764235a0af3b0d0ac323c1704e6c69cf90add28}{I\+O\+D\+A\+TA}, 
+\hyperlink{classAttrib_a69e171d7cc6417835a5a306d3c764235a7788bc5dd333fd8ce18562b269c9dab1}{E\+L\+E\+M\+E\+NT}, 
+\hyperlink{classAttrib_a69e171d7cc6417835a5a306d3c764235a61ceb22149f365f1780d18f9d1459423}{H\+A\+R\+D\+W\+A\+RE}, 
+\newline
+\hyperlink{classAttrib_a69e171d7cc6417835a5a306d3c764235a75250e29692496e73effca2c0330977f}{P\+R\+O\+C\+E\+S\+S\+US}, 
+\hyperlink{classAttrib_a69e171d7cc6417835a5a306d3c764235a103a67cd0b8f07ef478fa45d4356e27b}{S\+O\+F\+T\+W\+A\+RE}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classApplication_afa8cc05ce6b6092be5ecdfdae44e05f8}{Application} ()
+\begin{DoxyCompactList}\small\item\em Standard constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classApplication_a748bca84fefb9c12661cfaa2f623748d}{$\sim$\+Application} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classApplication_a86b8cbb104f3e04516ef574e5822ff82}{initialize} ()
+\item 
+\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classApplication_a7fdd5bfee44e49896292f8964037384d}{run} (std\+::string proc\+Name, \hyperlink{classElement}{Element} $\ast$element=0, int n\+Evt=1)
+\item 
+\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classApplication_a5e2b592eebe6f2f8780d2c129bf14560}{finalize} ()
+\item 
+\hyperlink{classOptions}{Options} $\ast$ \hyperlink{classApplication_ada7cc0e8db586985f1435aee0c79f47d}{options} ()
+\item 
+\hyperlink{classComputer}{Computer} $\ast$ \hyperlink{classApplication_ac5eb8a8e693d1b93426d7aabc6606d8b}{computer} ()
+\item 
+\hyperlink{classDLLMgr}{D\+L\+L\+Mgr} $\ast$ \hyperlink{classApplication_a0133c161bf55544f268ca039e174060b}{dll\+Mgr} ()
+\item 
+\hyperlink{classProcDataBase}{Proc\+Data\+Base} $\ast$ \hyperlink{classApplication_aa5c28af1a7e1c41dada2db2a4d03c57d}{proc\+Db} ()
+\item 
+\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classApplication_ab5d46fc4784a4c821e974f5a47ec933d}{load\+History\+File} ()
+\item 
+\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classApplication_ad5faa0fa744706190844bbc4be58b700}{bookkeeping} ()
+\item 
+void \hyperlink{classApplication_af168aa3579262d65adc0bd4531361a53}{banner} ()
+\item 
+void \hyperlink{classApplication_a3c8a98d6c10a5b054800488df16cdbcb}{exit} ()
+\item 
+void \hyperlink{classApplication_a0f0a9e376d9f1716e01e86c94ae3499f}{set\+Current} (\hyperlink{classHierarchy}{Hierarchy} $\ast$\hyperlink{classApplication_af25c880ff1e95d863ed058396754a76e}{current})
+\item 
+\hyperlink{classHierarchy}{Hierarchy} $\ast$ \hyperlink{classApplication_af25c880ff1e95d863ed058396754a76e}{current} ()
+\item 
+\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classApplication_a29aa0687ea27762ce36ab4195bf5d77f}{cd} (std\+::string path)
+\item 
+std\+::string \hyperlink{classApplication_a095248805e26b553466b7fafc6517d8f}{hostname} ()
+\item 
+void \hyperlink{classApplication_ab4a53c51303b155b738970bec9a6ce89}{tree\+Recursive} (\hyperlink{classHierarchy}{Hierarchy} $\ast$, std\+::string)
+\item 
+\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classApplication_a552c6df459660f2d80e6d0ac6ce8279b}{create} (std\+::string, std\+::string)
+\item 
+\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classApplication_accaba6b75f26c92e7604df43c853390b}{make\+Dir} (std\+::string)
+\item 
+\hyperlink{classState}{State} $\ast$ \hyperlink{classApplication_adfc9b92559f61c92224abf03f51cef47}{state} ()
+\item 
+\hyperlink{classConfig}{Config} $\ast$ \hyperlink{classApplication_ae79819f7743d6f402fce87665c1dc9a6}{config} ()
+\item 
+void \hyperlink{classApplication_a4a86c9bbf7851753c7b2bc03211092fb}{set\+State} (std\+::string \hyperlink{classApplication_adfc9b92559f61c92224abf03f51cef47}{state}=std\+::string(\char`\"{}\char`\"{}))
+\item 
+void \hyperlink{classApplication_a46614964f765fd5374b216582b599bcb}{set\+Config} ()
+\item 
+char $\ast$ \hyperlink{classApplication_ad429c4d2322f706e3564c1ee05d38ff1}{status} ()
+\item 
+void \hyperlink{classApplication_ab21cc0c86ca4e63d1fbd348d709dcddc}{network} (std\+::string)
+\item 
+void \hyperlink{classApplication_a1712ebe326b3d1855b839c59f52633d8}{server} ()
+\item 
+void \hyperlink{classApplication_a8ed8a66653bb6e665e05a735519c5d5b}{set\+Processus} (\hyperlink{classProcessus}{Processus} $\ast$\hyperlink{classApplication_a8d0918e800a5de01795bc2669d74ed82}{processus})
+\item 
+\hyperlink{classProcessus}{Processus} $\ast$ \hyperlink{classApplication_a8d0918e800a5de01795bc2669d74ed82}{processus} ()
+\item 
+\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classApplication_abfbf40397efe6ff0627d2ce1a55381ce}{run\+Svc} ()
+\item 
+void \hyperlink{classApplication_a95ea0ef35377c259687752aedc4b9321}{set\+Run\+Svc} (\hyperlink{Application_8h_a59643f52f9391fa83f137814aaae27ef}{Run\+Svc} svc)
+\item 
+\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classApplication_a6344c22495ff3e87d77d0c47aea3bf00}{plot\+Svc} ()
+\item 
+void \hyperlink{classApplication_ac11402510105adf9a9ccf3daa25ea7d4}{set\+Plot\+Svc} (\hyperlink{Application_8h_abaa10d33ca2837dfcf8ba9bff40cdbb6}{Plot\+Svc} svc)
+\item 
+void \hyperlink{classApplication_a48ecc3d76b3f2390ae1ba76d13f8bd54}{set\+Version} (std\+::string \hyperlink{classApplication_a060ac7b6d3a6cb111a9ed39bfd0350d1}{version})
+\item 
+std\+::string \hyperlink{classApplication_a060ac7b6d3a6cb111a9ed39bfd0350d1}{version} ()
+\item 
+void \hyperlink{classApplication_a451a04a80f59a76fb13b6fae6c07439a}{set\+Ctrl} (std\+::string control)
+\item 
+std\+::string \hyperlink{classApplication_a3eb11c9a1985a3a9d2ec51df957f7c2f}{ctrl} ()
+\item 
+\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classApplication_a35eca6b5e618b508a0736d032e2a9203}{svc\+Running} ()
+\item 
+\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classApplication_a61dcc20b7f4b7c19b697db7516a62afa}{prepare} (std\+::string proc\+Name, \hyperlink{classElement}{Element} $\ast$element=0, int n\+Evt=1)
+\item 
+\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classApplication_ab38055646202ef49c9ee2eda6d48076f}{loop} ()
+\item 
+\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classApplication_a1a36a06d48d94a9a8fdc29a77d2cb9f0}{terminate} ()
+\item 
+\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classApplication_a297f55c288c32cbdadadcbbc26ae7692}{svc\+Plot} ()
+\item 
+std\+::string \hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name} () const
+\item 
+std\+::string \hyperlink{classObject_a84f99f70f144a83e1582d1d0f84e4e62}{type} ()
+\item 
+unsigned char \hyperlink{classObject_af99145335cc61ff6e2798ea17db009d2}{id} ()
+\item 
+std\+::string \hyperlink{classObject_a73a0f1a41828fdd8303dd662446fb6c3}{title} ()
+\item 
+void \hyperlink{classObject_a3f9d5537ebce0c0f2bf6ae4d92426f3c}{msg\+Svc} (int level, std\+::string \hyperlink{classObject_a58b2d0618c2d08cf2383012611528d97}{msg}, std\+::string \hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name})
+\item 
+void \hyperlink{classObject_a58b2d0618c2d08cf2383012611528d97}{msg} (std\+::string mymsg)
+\item 
+void \hyperlink{classObject_ac5d59299273cee27aacf7de00d2e7034}{msg} (std\+::string mymsg, std\+::string \hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name})
+\item 
+void \hyperlink{classObject_a83d2db2df682907ea1115ad721c1c4a1}{verbose} (std\+::string mymsg)
+\item 
+void \hyperlink{classObject_a2d4120195317e2a3c6532e8bb9f3da68}{verbose} (std\+::string mymsg, std\+::string \hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name})
+\item 
+void \hyperlink{classObject_aac010553f022165573714b7014a15f0d}{debug} (std\+::string mymsg)
+\item 
+void \hyperlink{classObject_a6c9a0397ca804e04d675ed05683f5420}{debug} (std\+::string mymsg, std\+::string \hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name})
+\item 
+void \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info} (std\+::string mymsg)
+\item 
+void \hyperlink{classObject_a1ca123253dfd30fc28b156f521dcbdae}{info} (std\+::string mymsg, std\+::string \hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name})
+\item 
+void \hyperlink{classObject_a65cd4fda577711660821fd2cd5a3b4c9}{warning} (std\+::string mymsg)
+\item 
+void \hyperlink{classObject_a11f101db4dd73d9391b0231818881d86}{warning} (std\+::string mymsg, std\+::string \hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name})
+\item 
+void \hyperlink{classObject_a204a95f57818c0f811933917a30eff45}{error} (std\+::string mymsg)
+\item 
+void \hyperlink{classObject_ad7f6c457733082efa2f9ff5f5c8e119a}{error} (std\+::string mymsg, std\+::string \hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name})
+\item 
+void \hyperlink{classObject_aad5a16aac7516ce65bd5ec02ab07fc80}{fatal} (std\+::string mymsg)
+\item 
+void \hyperlink{classObject_ae62acd3d09f716220f75f252dc38bc9a}{fatal} (std\+::string mymsg, std\+::string \hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name})
+\item 
+void \hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{set\+Name} (std\+::string \hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name})
+\item 
+void \hyperlink{classObject_aae534cc9d982bcb9b99fd505f2e103a5}{set\+Type} (std\+::string \hyperlink{classObject_a84f99f70f144a83e1582d1d0f84e4e62}{type})
+\item 
+void \hyperlink{classObject_a398fe08cba594a0ce6891d59fe4f159f}{set\+Id} (unsigned char \hyperlink{classObject_af99145335cc61ff6e2798ea17db009d2}{id})
+\item 
+void \hyperlink{classObject_a89557dbbad5bcaa02652f5d7fa35d20f}{set\+Title} (std\+::string \hyperlink{classObject_a73a0f1a41828fdd8303dd662446fb6c3}{title})
+\item 
+void \hyperlink{classObject_a870c5af919958c2136623b2d7816d123}{set\+Dll\+Name} (std\+::string \hyperlink{classObject_a2e3947f2870094c332d7454117f3ec63}{dll\+Name})
+\item 
+std\+::string \hyperlink{classObject_a2e3947f2870094c332d7454117f3ec63}{dll\+Name} ()
+\item 
+bool \hyperlink{classAttrib_a704f26af560909ad22065083bb7d4c34}{is} (int attribut)
+\item 
+void \hyperlink{classAttrib_a235f773af19c900264a190b00a3b4ad7}{add} (int attribut)
+\item 
+void \hyperlink{classAttrib_a7d4ef7e32d93cb287792b87b857e79f3}{remove} (int attribut)
+\item 
+std\+::string \hyperlink{classAttrib_aee7bbf16b144887f196e1341b24f8a26}{attributs} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classApplication_ac6ecd97be07092147986a7a5965c54ec}{m\+\_\+account\+Name}
+\item 
+std\+::string \hyperlink{classApplication_a20094c2bf311e2046942eeeec4a11f02}{m\+\_\+host\+Name}
+\item 
+std\+::string \hyperlink{classApplication_a59f90c6ff4ee3db646ca656c71cc77e7}{m\+\_\+os\+Name}
+\item 
+std\+::string \hyperlink{classApplication_a17949f767d2598e92acb0885bb399dc0}{m\+\_\+os\+Version}
+\item 
+std\+::string \hyperlink{classApplication_a84f3f07f42ad77ad46cc8ef42d609948}{m\+\_\+prompt}
+\item 
+std\+::string \hyperlink{classApplication_acbbdbd17a3a66782c54dbbe58a9ca8d8}{m\+\_\+version}
+\item 
+bool \hyperlink{classApplication_ae316ea43e74cc0d536dcbb16b2fbb974}{m\+\_\+is\+Running}
+\item 
+\hyperlink{classHierarchy}{Hierarchy} $\ast$ \hyperlink{classApplication_ab0fd877a3c66c41b22109863e1719ccd}{m\+\_\+current}
+\item 
+std\+::string \hyperlink{classAttrib_a3414521d7a82476e874b25a5407b5e63}{m\+\_\+attrib\+String} \mbox{[}10\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classOptions}{Options} $\ast$ \hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\+\_\+options}
+\item 
+\hyperlink{classDLLMgr}{D\+L\+L\+Mgr} $\ast$ \hyperlink{classApplication_a66b06cbeb824fe00ecd11499fcf01c55}{m\+\_\+dll\+Mgr}
+\item 
+\hyperlink{classProcDataBase}{Proc\+Data\+Base} $\ast$ \hyperlink{classApplication_af030cefeb69586f01e965606d5dd8919}{m\+\_\+proc\+Db}
+\item 
+\hyperlink{classComputer}{Computer} $\ast$ \hyperlink{classApplication_a17c9fd27b6abbc18abb6d5de5d7648ef}{m\+\_\+computer}
+\item 
+\hyperlink{classProcessus}{Processus} $\ast$ \hyperlink{classApplication_ab5eb4b3d3bef5ab9fce9c69401ce5786}{m\+\_\+processus}
+\item 
+\hyperlink{classState}{State} $\ast$ \hyperlink{classApplication_a0ef9832e2d286716e597a1ff21ffcab4}{m\+\_\+state}
+\item 
+\hyperlink{classConfig}{Config} $\ast$ \hyperlink{classApplication_ae05f3e253ea871a194c3d30fd1d3b0c3}{m\+\_\+config}
+\item 
+\hyperlink{Application_8h_a59643f52f9391fa83f137814aaae27ef}{Run\+Svc} \hyperlink{classApplication_ad2c061af424280151c86b9b56d9724d3}{m\+\_\+run\+Svc}
+\item 
+\hyperlink{Application_8h_abaa10d33ca2837dfcf8ba9bff40cdbb6}{Plot\+Svc} \hyperlink{classApplication_a30d5600ea5e4f36b14f25f903ee3256e}{m\+\_\+plot\+Svc}
+\item 
+\hyperlink{classServer}{Server} $\ast$ \hyperlink{classApplication_a5e6085b0f322d5036177b16113a75b56}{m\+\_\+server}
+\item 
+bool \hyperlink{classApplication_a7dc2bb72356cd9186eaad49eb506995a}{m\+\_\+network}
+\item 
+std\+::string \hyperlink{classApplication_aa371ed989ed34038df400c4d1b41b37f}{m\+\_\+ctrl}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classApplication}{Application} main class
+
+\begin{DoxyAuthor}{Author}
+Frederic Machefert 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2006-\/10-\/23 
+\end{DoxyDate}
+
+
+Definition at line 58 of file Application.\+h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classAttrib_a69e171d7cc6417835a5a306d3c764235}\label{classAttrib_a69e171d7cc6417835a5a306d3c764235}} 
+\index{Application@{Application}!Attribut@{Attribut}}
+\index{Attribut@{Attribut}!Application@{Application}}
+\subsubsection{\texorpdfstring{Attribut}{Attribut}}
+{\footnotesize\ttfamily enum \hyperlink{classAttrib_a69e171d7cc6417835a5a306d3c764235}{Attrib\+::\+Attribut}\hspace{0.3cm}{\ttfamily [inherited]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{U\+N\+D\+E\+F\+I\+N\+ED@{U\+N\+D\+E\+F\+I\+N\+ED}!Application@{Application}}\index{Application@{Application}!U\+N\+D\+E\+F\+I\+N\+ED@{U\+N\+D\+E\+F\+I\+N\+ED}}}\mbox{\Hypertarget{classAttrib_a69e171d7cc6417835a5a306d3c764235a3a8da2ab97dda18aebab196fe4100531}\label{classAttrib_a69e171d7cc6417835a5a306d3c764235a3a8da2ab97dda18aebab196fe4100531}} 
+U\+N\+D\+E\+F\+I\+N\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\+A\+S\+S\+I\+VE@{P\+A\+S\+S\+I\+VE}!Application@{Application}}\index{Application@{Application}!P\+A\+S\+S\+I\+VE@{P\+A\+S\+S\+I\+VE}}}\mbox{\Hypertarget{classAttrib_a69e171d7cc6417835a5a306d3c764235a2bfb2af57b87031d190a05fe25dd92ed}\label{classAttrib_a69e171d7cc6417835a5a306d3c764235a2bfb2af57b87031d190a05fe25dd92ed}} 
+P\+A\+S\+S\+I\+VE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+C\+T\+I\+VE@{A\+C\+T\+I\+VE}!Application@{Application}}\index{Application@{Application}!A\+C\+T\+I\+VE@{A\+C\+T\+I\+VE}}}\mbox{\Hypertarget{classAttrib_a69e171d7cc6417835a5a306d3c764235a3b1fec929c0370d1436f2f06e298fb0d}\label{classAttrib_a69e171d7cc6417835a5a306d3c764235a3b1fec929c0370d1436f2f06e298fb0d}} 
+A\+C\+T\+I\+VE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+N\+T\+E\+R\+F\+A\+CE@{I\+N\+T\+E\+R\+F\+A\+CE}!Application@{Application}}\index{Application@{Application}!I\+N\+T\+E\+R\+F\+A\+CE@{I\+N\+T\+E\+R\+F\+A\+CE}}}\mbox{\Hypertarget{classAttrib_a69e171d7cc6417835a5a306d3c764235aa27c16b480a369ea4d18b07b2516bbc7}\label{classAttrib_a69e171d7cc6417835a5a306d3c764235aa27c16b480a369ea4d18b07b2516bbc7}} 
+I\+N\+T\+E\+R\+F\+A\+CE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IO@{IO}!Application@{Application}}\index{Application@{Application}!IO@{IO}}}\mbox{\Hypertarget{classAttrib_a69e171d7cc6417835a5a306d3c764235a1420a5b8c0540b2af210b6975eded7f9}\label{classAttrib_a69e171d7cc6417835a5a306d3c764235a1420a5b8c0540b2af210b6975eded7f9}} 
+IO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+O\+D\+A\+TA@{I\+O\+D\+A\+TA}!Application@{Application}}\index{Application@{Application}!I\+O\+D\+A\+TA@{I\+O\+D\+A\+TA}}}\mbox{\Hypertarget{classAttrib_a69e171d7cc6417835a5a306d3c764235a0af3b0d0ac323c1704e6c69cf90add28}\label{classAttrib_a69e171d7cc6417835a5a306d3c764235a0af3b0d0ac323c1704e6c69cf90add28}} 
+I\+O\+D\+A\+TA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+L\+E\+M\+E\+NT@{E\+L\+E\+M\+E\+NT}!Application@{Application}}\index{Application@{Application}!E\+L\+E\+M\+E\+NT@{E\+L\+E\+M\+E\+NT}}}\mbox{\Hypertarget{classAttrib_a69e171d7cc6417835a5a306d3c764235a7788bc5dd333fd8ce18562b269c9dab1}\label{classAttrib_a69e171d7cc6417835a5a306d3c764235a7788bc5dd333fd8ce18562b269c9dab1}} 
+E\+L\+E\+M\+E\+NT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{H\+A\+R\+D\+W\+A\+RE@{H\+A\+R\+D\+W\+A\+RE}!Application@{Application}}\index{Application@{Application}!H\+A\+R\+D\+W\+A\+RE@{H\+A\+R\+D\+W\+A\+RE}}}\mbox{\Hypertarget{classAttrib_a69e171d7cc6417835a5a306d3c764235a61ceb22149f365f1780d18f9d1459423}\label{classAttrib_a69e171d7cc6417835a5a306d3c764235a61ceb22149f365f1780d18f9d1459423}} 
+H\+A\+R\+D\+W\+A\+RE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\+R\+O\+C\+E\+S\+S\+US@{P\+R\+O\+C\+E\+S\+S\+US}!Application@{Application}}\index{Application@{Application}!P\+R\+O\+C\+E\+S\+S\+US@{P\+R\+O\+C\+E\+S\+S\+US}}}\mbox{\Hypertarget{classAttrib_a69e171d7cc6417835a5a306d3c764235a75250e29692496e73effca2c0330977f}\label{classAttrib_a69e171d7cc6417835a5a306d3c764235a75250e29692496e73effca2c0330977f}} 
+P\+R\+O\+C\+E\+S\+S\+US&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+O\+F\+T\+W\+A\+RE@{S\+O\+F\+T\+W\+A\+RE}!Application@{Application}}\index{Application@{Application}!S\+O\+F\+T\+W\+A\+RE@{S\+O\+F\+T\+W\+A\+RE}}}\mbox{\Hypertarget{classAttrib_a69e171d7cc6417835a5a306d3c764235a103a67cd0b8f07ef478fa45d4356e27b}\label{classAttrib_a69e171d7cc6417835a5a306d3c764235a103a67cd0b8f07ef478fa45d4356e27b}} 
+S\+O\+F\+T\+W\+A\+RE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 29 of file Attrib.\+h.
+
+
+\begin{DoxyCode}
+29                 \{
+30     \hyperlink{classAttrib_a69e171d7cc6417835a5a306d3c764235a3a8da2ab97dda18aebab196fe4100531}{UNDEFINED},
+31     \hyperlink{classAttrib_a69e171d7cc6417835a5a306d3c764235a2bfb2af57b87031d190a05fe25dd92ed}{PASSIVE},
+32     \hyperlink{classAttrib_a69e171d7cc6417835a5a306d3c764235a3b1fec929c0370d1436f2f06e298fb0d}{ACTIVE},
+33     \hyperlink{classAttrib_a69e171d7cc6417835a5a306d3c764235aa27c16b480a369ea4d18b07b2516bbc7}{INTERFACE},
+34     \hyperlink{classAttrib_a69e171d7cc6417835a5a306d3c764235a1420a5b8c0540b2af210b6975eded7f9}{IO},
+35     \hyperlink{classAttrib_a69e171d7cc6417835a5a306d3c764235a0af3b0d0ac323c1704e6c69cf90add28}{IODATA},
+36     \hyperlink{classAttrib_a69e171d7cc6417835a5a306d3c764235a7788bc5dd333fd8ce18562b269c9dab1}{ELEMENT},
+37     \hyperlink{classAttrib_a69e171d7cc6417835a5a306d3c764235a61ceb22149f365f1780d18f9d1459423}{HARDWARE},
+38     \hyperlink{classAttrib_a69e171d7cc6417835a5a306d3c764235a75250e29692496e73effca2c0330977f}{PROCESSUS},
+39     \hyperlink{classAttrib_a69e171d7cc6417835a5a306d3c764235a103a67cd0b8f07ef478fa45d4356e27b}{SOFTWARE} 
+40   \}; \textcolor{comment}{// array m\_attribString must be changed into Attrib::Attrib if this enu is modified. }
+\end{DoxyCode}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classApplication_afa8cc05ce6b6092be5ecdfdae44e05f8}\label{classApplication_afa8cc05ce6b6092be5ecdfdae44e05f8}} 
+\index{Application@{Application}!Application@{Application}}
+\index{Application@{Application}!Application@{Application}}
+\subsubsection{\texorpdfstring{Application()}{Application()}}
+{\footnotesize\ttfamily Application\+::\+Application (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Standard constructor. 
+
+
+
+Definition at line 29 of file Application.\+cpp.
+
+
+
+References System\+::account\+Name(), System\+::host\+Name(), m\+\_\+account\+Name, m\+\_\+computer, m\+\_\+config, m\+\_\+dll\+Mgr, m\+\_\+host\+Name, m\+\_\+options, m\+\_\+os\+Name, m\+\_\+os\+Version, m\+\_\+proc\+Db, m\+\_\+state, System\+::os\+Name(), System\+::os\+Version(), set\+Application(), and set\+Current().
+
+
+\begin{DoxyCode}
+29                            :
+30   \hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}  (0),
+31   \hyperlink{classApplication_a66b06cbeb824fe00ecd11499fcf01c55}{m\_dllMgr}   (0),
+32   \hyperlink{classApplication_af030cefeb69586f01e965606d5dd8919}{m\_procDb}   (0),
+33   \hyperlink{classApplication_a17c9fd27b6abbc18abb6d5de5d7648ef}{m\_computer} (0),
+34   \hyperlink{classApplication_ab5eb4b3d3bef5ab9fce9c69401ce5786}{m\_processus}(0),
+35   \hyperlink{classApplication_a0ef9832e2d286716e597a1ff21ffcab4}{m\_state}    (0),
+36   \hyperlink{classApplication_ae05f3e253ea871a194c3d30fd1d3b0c3}{m\_config}   (0),
+37   \hyperlink{classApplication_a5e6085b0f322d5036177b16113a75b56}{m\_server}   (0)
+38 \{
+39   \hyperlink{Tools_8h_a71443363ed67070e753a3c172f694834}{setApplication}(\textcolor{keyword}{this});
+40   \hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}     = \textcolor{keyword}{new} \hyperlink{classOptions}{Options}  ();
+41   \hyperlink{classApplication_ac6ecd97be07092147986a7a5965c54ec}{m\_accountName} = \hyperlink{namespaceSystem_a8a4ea73b74e0f6b8225e571e21ba4e2f}{System::accountName}();
+42   \hyperlink{classApplication_a20094c2bf311e2046942eeeec4a11f02}{m\_hostName}    = \hyperlink{namespaceSystem_a89320a729880098922e8b505db1137ec}{System::hostName}();
+43   \hyperlink{classApplication_a59f90c6ff4ee3db646ca656c71cc77e7}{m\_osName}      = \hyperlink{namespaceSystem_a08f605cda93733c3b7593517ed18557c}{System::osName}();
+44   \hyperlink{classApplication_a17949f767d2598e92acb0885bb399dc0}{m\_osVersion}   = \hyperlink{namespaceSystem_aee568b62f9bcad983dcb3f0c30631854}{System::osVersion}();
+45   \hyperlink{classApplication_a66b06cbeb824fe00ecd11499fcf01c55}{m\_dllMgr}      = \textcolor{keyword}{new} \hyperlink{classDLLMgr}{DLLMgr}   ();
+46   \hyperlink{classApplication_af030cefeb69586f01e965606d5dd8919}{m\_procDb}      = \textcolor{keyword}{new} \hyperlink{classProcDataBase}{ProcDataBase} ();
+47   \hyperlink{classApplication_a17c9fd27b6abbc18abb6d5de5d7648ef}{m\_computer}    = \textcolor{keyword}{new} \hyperlink{namespaceComputer}{Computer} ();
+48   \hyperlink{classApplication_a0ef9832e2d286716e597a1ff21ffcab4}{m\_state}       = \textcolor{keyword}{new} \hyperlink{classState}{State}();
+49   \hyperlink{classApplication_ae05f3e253ea871a194c3d30fd1d3b0c3}{m\_config}      = \textcolor{keyword}{new} \hyperlink{classConfig}{Config}();
+50   \hyperlink{classApplication_a0f0a9e376d9f1716e01e86c94ae3499f}{setCurrent} ( (\hyperlink{classHierarchy}{Hierarchy}*) (\hyperlink{classApplication_a17c9fd27b6abbc18abb6d5de5d7648ef}{m\_computer}) );
+51 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_a748bca84fefb9c12661cfaa2f623748d}\label{classApplication_a748bca84fefb9c12661cfaa2f623748d}} 
+\index{Application@{Application}!````~Application@{$\sim$\+Application}}
+\index{````~Application@{$\sim$\+Application}!Application@{Application}}
+\subsubsection{\texorpdfstring{$\sim$\+Application()}{~Application()}}
+{\footnotesize\ttfamily Application\+::$\sim$\+Application (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+
+
+Definition at line 56 of file Application.\+cpp.
+
+
+
+References m\+\_\+config, m\+\_\+dll\+Mgr, m\+\_\+options, m\+\_\+proc\+Db, m\+\_\+server, and m\+\_\+state.
+
+
+\begin{DoxyCode}
+56                           \{
+57   \textcolor{keywordflow}{if} (  0!=\hyperlink{classApplication_a5e6085b0f322d5036177b16113a75b56}{m\_server} ) \{
+58     \textcolor{keyword}{delete} \hyperlink{classApplication_a5e6085b0f322d5036177b16113a75b56}{m\_server};
+59     \hyperlink{classApplication_a5e6085b0f322d5036177b16113a75b56}{m\_server} = 0;
+60   \}
+61   \textcolor{keyword}{delete} \hyperlink{classApplication_a0ef9832e2d286716e597a1ff21ffcab4}{m\_state};
+62   \textcolor{keyword}{delete} \hyperlink{classApplication_ae05f3e253ea871a194c3d30fd1d3b0c3}{m\_config};
+63   \textcolor{keyword}{delete} \hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options};
+64   \textcolor{keyword}{delete} \hyperlink{classApplication_a66b06cbeb824fe00ecd11499fcf01c55}{m\_dllMgr};
+65   \textcolor{keyword}{delete} \hyperlink{classApplication_af030cefeb69586f01e965606d5dd8919}{m\_procDb};
+66   \textcolor{comment}{//  delete m\_computer;}
+67 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAttrib_a235f773af19c900264a190b00a3b4ad7}\label{classAttrib_a235f773af19c900264a190b00a3b4ad7}} 
+\index{Application@{Application}!add@{add}}
+\index{add@{add}!Application@{Application}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Attrib\+::add (\begin{DoxyParamCaption}\item[{int}]{attribut }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+Add an attribut 
+
+Definition at line 67 of file Attrib.\+h.
+
+
+
+References Attrib\+::m\+\_\+attributs, and Attrib\+::\+U\+N\+D\+E\+F\+I\+N\+ED.
+
+
+
+Referenced by A3\+P\+E\+::\+A3\+P\+E(), Attrib\+::\+Attrib(), Specs\+Mezzanine\+::cmdline(), Computer\+::\+Computer(), C\+U\+\_\+v1\+::\+C\+U\+\_\+v1(), export\+\_\+obj(), F\+E\+B\+\_\+v1\+::\+F\+E\+B\+\_\+v1(), Fe\+P\+G\+A\+::\+Fe\+P\+G\+A(), I\+C\+E\+C\+A\+Lv3\+::\+I\+C\+E\+C\+A\+Lv3(), I\+C\+Phaser\+::\+I\+C\+Phaser(), initialize(), Interface\+::\+Interface(), I\+Odata\+::\+I\+Odata(), I\+Oobject\+::\+I\+Oobject(), M\+S\+Oxxxx\+::\+M\+S\+Oxxxx(), Phaser\+::\+Phaser(), Processus\+::\+Processus(), Proto40\+M\+Hz\+\_\+v1\+::\+Proto40\+M\+Hz\+\_\+v1(), Attrib\+::remove(), Seq\+P\+G\+A\+::\+Seq\+P\+G\+A(), Test\+I2\+C\+::set\+Address(), Test\+S\+P\+I\+::set\+Address(), Specs\+Slave\+::set\+Address(), Specs\+Master\+::\+Specs\+Master(), and Specs\+Slave\+::\+Specs\+Slave().
+
+
+\begin{DoxyCode}
+67                             \{
+68     \textcolor{keywordflow}{if} (attribut!=\hyperlink{classAttrib_a69e171d7cc6417835a5a306d3c764235a3a8da2ab97dda18aebab196fe4100531}{Attrib::UNDEFINED}) \textcolor{keyword}{remove}(\hyperlink{classAttrib_a69e171d7cc6417835a5a306d3c764235a3a8da2ab97dda18aebab196fe4100531}{Attrib::UNDEFINED});
+69     \textcolor{keywordtype}{bool} duplicate = false ;
+70     std::vector<int>::const\_iterator iter ;
+71     \textcolor{keywordflow}{for} ( iter  = \hyperlink{classAttrib_ac4bd58a0cc6b38a3b711d609a3d3aacc}{m\_attributs}.begin() ;
+72           iter != \hyperlink{classAttrib_ac4bd58a0cc6b38a3b711d609a3d3aacc}{m\_attributs}.end()   ;
+73           ++iter ) \{
+74       \textcolor{keywordflow}{if} ( attribut == (*iter) ) \{
+75         duplicate = true ;
+76       \}
+77     \}
+78     \textcolor{keywordflow}{if} (!duplicate) \{
+79       \hyperlink{classAttrib_ac4bd58a0cc6b38a3b711d609a3d3aacc}{m\_attributs}.push\_back( attribut );
+80     \}
+81   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classAttrib_aee7bbf16b144887f196e1341b24f8a26}\label{classAttrib_aee7bbf16b144887f196e1341b24f8a26}} 
+\index{Application@{Application}!attributs@{attributs}}
+\index{attributs@{attributs}!Application@{Application}}
+\subsubsection{\texorpdfstring{attributs()}{attributs()}}
+{\footnotesize\ttfamily std\+::string Attrib\+::attributs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+Print the \hyperlink{classAttrib}{Attrib} of an \hyperlink{classObject}{Object} 
+
+Definition at line 54 of file Attrib.\+cpp.
+
+
+
+References images\+::index, Attrib\+::m\+\_\+attrib\+String, and Attrib\+::m\+\_\+attributs.
+
+
+
+Referenced by export\+\_\+obj(), and Attrib\+::remove().
+
+
+\begin{DoxyCode}
+54                             \{
+55   std::string output;
+56   std::vector<int>::iterator iter ;
+57   \textcolor{keywordflow}{for} ( \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \hyperlink{namespaceimages_a54407fd574970b3178647ae096321a57}{index} = 0 ; \hyperlink{namespaceimages_a54407fd574970b3178647ae096321a57}{index} < \hyperlink{classAttrib_ac4bd58a0cc6b38a3b711d609a3d3aacc}{m\_attributs}.size() ; ++
+      \hyperlink{namespaceimages_a54407fd574970b3178647ae096321a57}{index} ) \{
+58     \textcolor{keywordflow}{if} ( \hyperlink{classAttrib_ac4bd58a0cc6b38a3b711d609a3d3aacc}{m\_attributs}.size() - \hyperlink{namespaceimages_a54407fd574970b3178647ae096321a57}{index} > 1 ) \{
+59       output.append(\hyperlink{classAttrib_a3414521d7a82476e874b25a5407b5e63}{m\_attribString}[\hyperlink{classAttrib_ac4bd58a0cc6b38a3b711d609a3d3aacc}{m\_attributs}[\hyperlink{namespaceimages_a54407fd574970b3178647ae096321a57}{index}]]);
+60       output.append(\textcolor{stringliteral}{":"});
+61     \}
+62     \textcolor{keywordflow}{else} \{
+63       output.append(\hyperlink{classAttrib_a3414521d7a82476e874b25a5407b5e63}{m\_attribString}[\hyperlink{classAttrib_ac4bd58a0cc6b38a3b711d609a3d3aacc}{m\_attributs}[index]]);
+64     \}
+65   \}
+66   \textcolor{keywordflow}{return} output;
+67 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_af168aa3579262d65adc0bd4531361a53}\label{classApplication_af168aa3579262d65adc0bd4531361a53}} 
+\index{Application@{Application}!banner@{banner}}
+\index{banner@{banner}!Application@{Application}}
+\subsubsection{\texorpdfstring{banner()}{banner()}}
+{\footnotesize\ttfamily void Application\+::banner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Banner of the \hyperlink{classApplication}{Application} 
+
+Definition at line 103 of file Application.\+cpp.
+
+
+
+References m\+\_\+account\+Name, m\+\_\+host\+Name, m\+\_\+os\+Name, m\+\_\+os\+Version, and Object\+::msg\+Svc().
+
+
+
+Referenced by initialize().
+
+
+\begin{DoxyCode}
+103                            \{
+104 \textcolor{preprocessor}{#ifdef \_WIN32}
+105   \textcolor{comment}{//  system("cls");}
+106 \textcolor{preprocessor}{#else}
+107   \textcolor{comment}{//  system("clear");}
+108 \textcolor{preprocessor}{#endif}
+109   \hyperlink{classObject_a3f9d5537ebce0c0f2bf6ae4d92426f3c}{msgSvc}(0,\textcolor{stringliteral}{""},\textcolor{stringliteral}{""});
+110   \hyperlink{classObject_a3f9d5537ebce0c0f2bf6ae4d92426f3c}{msgSvc}(0,\textcolor{stringliteral}{"                          ***********************************************"},\textcolor{stringliteral}{""});
+111   \hyperlink{classObject_a3f9d5537ebce0c0f2bf6ae4d92426f3c}{msgSvc}(0,\textcolor{stringliteral}{"                          *               C      A      T               *"},\textcolor{stringliteral}{""});
+112   \hyperlink{classObject_a3f9d5537ebce0c0f2bf6ae4d92426f3c}{msgSvc}(0,\textcolor{stringliteral}{"                          *                                             *"},\textcolor{stringliteral}{""});
+113   \hyperlink{classObject_a3f9d5537ebce0c0f2bf6ae4d92426f3c}{msgSvc}(0,\textcolor{stringliteral}{"                          *          |\(\backslash\)\(\backslash\)-''-/|.\_\_\_..--''\(\backslash\)"`-.\_            *"},\textcolor{stringliteral}{""});
+114   \hyperlink{classObject_a3f9d5537ebce0c0f2bf6ae4d92426f3c}{msgSvc}(0,\textcolor{stringliteral}{"                          *          `6\_ 6  )   `-.  (     ).`-.\_\_.`)   *"},\textcolor{stringliteral}{""});
+115   \hyperlink{classObject_a3f9d5537ebce0c0f2bf6ae4d92426f3c}{msgSvc}(0,\textcolor{stringliteral}{"                          *          (\_Y\_.)'  .\_   )  `.\_ `. ``-..-'    *"},\textcolor{stringliteral}{""});
+116   \hyperlink{classObject_a3f9d5537ebce0c0f2bf6ae4d92426f3c}{msgSvc}(0,\textcolor{stringliteral}{"                          *         \_..`--'\_..-  \_/ /--'\_.' ,'          *"},\textcolor{stringliteral}{""});
+117   \hyperlink{classObject_a3f9d5537ebce0c0f2bf6ae4d92426f3c}{msgSvc}(0,\textcolor{stringliteral}{"                          *     (il),-''  (li),' ((!.-'                 *"},\textcolor{stringliteral}{""});
+118   \hyperlink{classObject_a3f9d5537ebce0c0f2bf6ae4d92426f3c}{msgSvc}(0,\textcolor{stringliteral}{"                          ***********************************************"},\textcolor{stringliteral}{""});
+119   \hyperlink{classObject_a3f9d5537ebce0c0f2bf6ae4d92426f3c}{msgSvc}(0,\textcolor{stringliteral}{""},\textcolor{stringliteral}{""});
+120   \hyperlink{classObject_a3f9d5537ebce0c0f2bf6ae4d92426f3c}{msgSvc}(0,\textcolor{stringliteral}{"Application running on "}+
+121      \hyperlink{classApplication_ac6ecd97be07092147986a7a5965c54ec}{m\_accountName}+\textcolor{stringliteral}{"@"}+
+122      \hyperlink{classApplication_a20094c2bf311e2046942eeeec4a11f02}{m\_hostName}+\textcolor{stringliteral}{" ("}+
+123      \hyperlink{classApplication_a59f90c6ff4ee3db646ca656c71cc77e7}{m\_osName}+\textcolor{stringliteral}{" - "}+
+124      \hyperlink{classApplication_a17949f767d2598e92acb0885bb399dc0}{m\_osVersion}+\textcolor{stringliteral}{")"},\textcolor{stringliteral}{""});
+125 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_ad5faa0fa744706190844bbc4be58b700}\label{classApplication_ad5faa0fa744706190844bbc4be58b700}} 
+\index{Application@{Application}!bookkeeping@{bookkeeping}}
+\index{bookkeeping@{bookkeeping}!Application@{Application}}
+\subsubsection{\texorpdfstring{bookkeeping()}{bookkeeping()}}
+{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} Application\+::bookkeeping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+write bookkeeping file \begin{DoxyReturn}{Returns}
+\hyperlink{classStatusCode}{Status\+Code} 
+\end{DoxyReturn}
+
+
+Definition at line 170 of file Application.\+cpp.
+
+
+
+References application(), Status\+Code\+::\+F\+A\+I\+L\+U\+RE, System\+::get\+Env(), options(), Options\+::run\+Number(), Status\+Code\+::\+S\+U\+C\+C\+E\+SS, and Object\+::warning().
+
+
+
+Referenced by prepare().
+
+
+\begin{DoxyCode}
+170                                       \{
+171   std::string filename = \hyperlink{namespaceSystem_af83af19ba6c1083e5643390dfd65f7aa}{System::getEnv}(\textcolor{stringliteral}{"CATPATH"});
+172   filename.append(\textcolor{stringliteral}{"/.cathist"});
+173   std::ofstream last;
+174   last.open( filename.c\_str() );
+175   \textcolor{keywordflow}{if} ( last.fail() ) \{
+176     \hyperlink{classObject_a65cd4fda577711660821fd2cd5a3b4c9}{warning}(\textcolor{stringliteral}{"Cannot do the bookkeeping"},\textcolor{stringliteral}{"Application::bookkeeping"});
+177     \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
+178   \}
+179   \textcolor{keywordflow}{else} \{
+180     last << \hyperlink{Tools_8h_a27885a3c35afe79029fb830f32f66458}{application}()->\hyperlink{classApplication_ada7cc0e8db586985f1435aee0c79f47d}{options}()->\hyperlink{classOptions_a2d9447919fe90f9ce8df5530526cbb27}{runNumber}();
+181   \}
+182   last.close();
+183   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
+184 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_a29aa0687ea27762ce36ab4195bf5d77f}\label{classApplication_a29aa0687ea27762ce36ab4195bf5d77f}} 
+\index{Application@{Application}!cd@{cd}}
+\index{cd@{cd}!Application@{Application}}
+\subsubsection{\texorpdfstring{cd()}{cd()}}
+{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} Application\+::cd (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 158 of file Application.\+h.
+
+
+
+References Hierarchy\+::child(), Status\+Code\+::\+F\+A\+I\+L\+U\+RE, and Status\+Code\+::\+S\+U\+C\+C\+E\+SS.
+
+
+
+Referenced by export\+\_\+obj().
+
+
+\begin{DoxyCode}
+158                                  \{
+159     \hyperlink{classHierarchy}{Hierarchy}* newcurrent = \hyperlink{classApplication_ab0fd877a3c66c41b22109863e1719ccd}{m\_current}->\hyperlink{classHierarchy_a1e207f973c694b538bf90107b4868817}{child}(path);
+160     \textcolor{keywordflow}{if} (0!=newcurrent) \{
+161       \hyperlink{classApplication_a0f0a9e376d9f1716e01e86c94ae3499f}{setCurrent}(newcurrent);
+162       \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
+163     \}
+164     \textcolor{keywordflow}{else} \{
+165       \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
+166     \}
+167   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_ac5eb8a8e693d1b93426d7aabc6606d8b}\label{classApplication_ac5eb8a8e693d1b93426d7aabc6606d8b}} 
+\index{Application@{Application}!computer@{computer}}
+\index{computer@{computer}!Application@{Application}}
+\subsubsection{\texorpdfstring{computer()}{computer()}}
+{\footnotesize\ttfamily \hyperlink{classComputer}{Computer}$\ast$ Application\+::computer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get accessor to member m\+\_\+computer \begin{DoxyReturn}{Returns}
+the current value of m\+\_\+computer 
+\end{DoxyReturn}
+
+
+Definition at line 94 of file Application.\+h.
+
+
+
+Referenced by export\+\_\+obj().
+
+
+\begin{DoxyCode}
+94                         \{
+95     \textcolor{comment}{//    info("Computer"+ itos((int)(m\_computer)));}
+96     \textcolor{keywordflow}{return} \hyperlink{classApplication_a17c9fd27b6abbc18abb6d5de5d7648ef}{m\_computer};
+97   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_ae79819f7743d6f402fce87665c1dc9a6}\label{classApplication_ae79819f7743d6f402fce87665c1dc9a6}} 
+\index{Application@{Application}!config@{config}}
+\index{config@{config}!Application@{Application}}
+\subsubsection{\texorpdfstring{config()}{config()}}
+{\footnotesize\ttfamily \hyperlink{classConfig}{Config} $\ast$ Application\+::config (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+return current \hyperlink{classApplication}{Application} \hyperlink{classState}{State} 
+
+Definition at line 214 of file Application.\+cpp.
+
+
+
+References m\+\_\+config.
+
+
+
+Referenced by Server\+::start().
+
+
+\begin{DoxyCode}
+214                               \{
+215   \textcolor{keywordflow}{return} \hyperlink{classApplication_ae05f3e253ea871a194c3d30fd1d3b0c3}{m\_config};
+216 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_a552c6df459660f2d80e6d0ac6ce8279b}\label{classApplication_a552c6df459660f2d80e6d0ac6ce8279b}} 
+\index{Application@{Application}!create@{create}}
+\index{create@{create}!Application@{Application}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} Application\+::create (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 326 of file Application.\+cpp.
+
+
+
+References Hierarchy\+::add\+Child(), D\+L\+L\+Mgr\+::create\+Element(), Status\+Code\+::\+F\+A\+I\+L\+U\+RE, m\+\_\+current, m\+\_\+dll\+Mgr, shell\+::obj(), set\+Current(), Object\+::set\+Name(), Hierarchy\+::set\+Parent(), Status\+Code\+::\+S\+U\+C\+C\+E\+SS, and Object\+::warning().
+
+
+
+Referenced by export\+\_\+obj().
+
+
+\begin{DoxyCode}
+327 \{
+328   \hyperlink{classElement}{Element} *\hyperlink{namespaceshell_a7c2aab80550f476d91e0d8f0c350a635}{obj} = \hyperlink{classApplication_a66b06cbeb824fe00ecd11499fcf01c55}{m\_dllMgr}->\hyperlink{classDLLMgr_a8cc61eaf98a6aa3cb99fee7226477053}{createElement}(\hyperlink{classObject_a84f99f70f144a83e1582d1d0f84e4e62}{type});
+329   \textcolor{keywordflow}{if} ( !obj ) \{
+330     \hyperlink{classObject_a65cd4fda577711660821fd2cd5a3b4c9}{warning}(\textcolor{stringliteral}{"Type '"} + \hyperlink{classObject_a84f99f70f144a83e1582d1d0f84e4e62}{type} + \textcolor{stringliteral}{"'  not understood"});
+331     \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
+332   \}
+333   obj->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}( \hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name} );
+334   obj->\hyperlink{classHierarchy_a585ad1aeec16077a0e532ab8b4fc557b}{setParent}(\hyperlink{classApplication_ab0fd877a3c66c41b22109863e1719ccd}{m\_current});
+335   \hyperlink{classApplication_ab0fd877a3c66c41b22109863e1719ccd}{m\_current}->\hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}( obj );
+336   \hyperlink{classApplication_a0f0a9e376d9f1716e01e86c94ae3499f}{setCurrent}( obj );
+337   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
+338 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_a3eb11c9a1985a3a9d2ec51df957f7c2f}\label{classApplication_a3eb11c9a1985a3a9d2ec51df957f7c2f}} 
+\index{Application@{Application}!ctrl@{ctrl}}
+\index{ctrl@{ctrl}!Application@{Application}}
+\subsubsection{\texorpdfstring{ctrl()}{ctrl()}}
+{\footnotesize\ttfamily std\+::string Application\+::ctrl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 314 of file Application.\+h.
+
+
+
+Referenced by export\+\_\+obj(), and svc\+Running().
+
+
+\begin{DoxyCode}
+314                    \{
+315     \textcolor{keywordflow}{return} \hyperlink{classApplication_aa371ed989ed34038df400c4d1b41b37f}{m\_ctrl};
+316   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_af25c880ff1e95d863ed058396754a76e}\label{classApplication_af25c880ff1e95d863ed058396754a76e}} 
+\index{Application@{Application}!current@{current}}
+\index{current@{current}!Application@{Application}}
+\subsubsection{\texorpdfstring{current()}{current()}}
+{\footnotesize\ttfamily \hyperlink{classHierarchy}{Hierarchy}$\ast$ Application\+::current (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get accessor to member m\+\_\+current \begin{DoxyReturn}{Returns}
+the current value of m\+\_\+current 
+\end{DoxyReturn}
+
+
+Definition at line 149 of file Application.\+h.
+
+
+
+Referenced by export\+\_\+obj(), and set\+Config().
+
+
+\begin{DoxyCode}
+149                         \{
+150     \textcolor{keywordflow}{return} \hyperlink{classApplication_ab0fd877a3c66c41b22109863e1719ccd}{m\_current};
+151   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classObject_aac010553f022165573714b7014a15f0d}\label{classObject_aac010553f022165573714b7014a15f0d}} 
+\index{Application@{Application}!debug@{debug}}
+\index{debug@{debug}!Application@{Application}}
+\subsubsection{\texorpdfstring{debug()}{debug()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Object\+::debug (\begin{DoxyParamCaption}\item[{std\+::string}]{mymsg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line 37 of file Object.\+h.
+
+
+
+References Msg\+Svc\+::\+D\+E\+B\+UG, Object\+::m\+\_\+log, Object\+::m\+\_\+name, and Msg\+Svc\+::msg\+Svc().
+
+
+
+Referenced by A3\+P\+E\+::\+A3\+P\+E(), A3\+P\+E\+::acquisition(), Specs\+Mezzanine\+::add\+Bus(), Hierarchy\+::add\+Child(), Specs\+Slave\+::add\+I2c(), L\+S\+Delay\+Chip\+V1\+::config\+Reg\+Bulk\+Read(), L\+S\+Delay\+Chip\+V1\+::config\+Reg\+Bulk\+Write(), A3\+P\+E\+::data\+Ready(), D\+C\+U\+::\+D\+C\+U(), Hierarchy\+::del\+Child(), Specs\+Slave\+::detect(), Storage\+Fifo\+Acquisition\+::execute(), Storage\+Fifo\+::execute(), A3\+P\+E\+\_\+\+Bit\+Flip\+::execute(), Acquisition\+::execute(), Emulate\+F\+E\+::execute(), export\+\_\+obj(), Fe\+P\+G\+A\+::\+Fe\+P\+G\+A(), Specs\+Glue\+::i2c\+Clk\+Mode(), Fe\+P\+G\+A\+::i2c\+Read(), Seq\+P\+G\+A\+::i2c\+Read(), Fe\+P\+G\+A\+::i2c\+Write(), Seq\+P\+G\+A\+::i2c\+Write(), I\+C\+E\+C\+A\+Lv3\+::\+I\+C\+E\+C\+A\+Lv3(), I\+C\+Phaser\+::\+I\+C\+Phaser(), Specs\+Slave\+::init(), Specs\+Master\+::init(), Storage\+Fifo\+Acquisition\+::initialize(), Storage\+Fifo\+::initialize(), A3\+P\+E\+\_\+\+Bit\+Flip\+::initialize(), Acquisition\+::initialize(), Emulate\+F\+E\+::initialize(), A3\+P\+E\+::internal\+A\+X\+Sequence(), Specs\+Glue\+::led(), Specs\+Mezzanine\+::led(), M\+S\+Oxxxx\+::\+M\+S\+Oxxxx(), Phaser\+::\+Phaser(), Data\+::purge(), Phaser\+::read(), I\+C\+Phaser\+::read(), C\+U\+\_\+v1\+::reset(), F\+E\+B\+\_\+v1\+::reset(), Proto40\+M\+Hz\+\_\+v1\+::reset(), Specs\+Master\+::reset(), Specs\+Slave\+::reset(), F\+E\+B\+\_\+v1\+::reset\+Usb(), Seq\+P\+G\+A\+::\+Seq\+P\+G\+A(), A3\+P\+E\+::set\+Add\+From\+A\+X\+Ram(), A3\+P\+E\+::set\+Add\+To\+A\+X\+Ram(), A3\+P\+E\+::set\+A\+X\+Ram\+Usb(), Element\+::set\+Connection(), Specs\+Glue\+::set\+I2c\+Clk\+Mode(), A3\+P\+E\+::set\+Latency\+A\+X(), Specs\+Glue\+::set\+Led(), Specs\+Mezzanine\+::set\+Led(), A3\+P\+E\+::set\+Length\+A\+X(), A3\+P\+E\+::set\+Read\+To\+A\+X\+Ram\+Usb(), Specs\+Master\+::set\+Speed(), A3\+P\+E\+::set\+Write\+From\+A\+X\+Ram\+Usb(), Specs\+Bus\+::\+Specs\+Bus(), Specs\+I2c\+::\+Specs\+I2c(), Specs\+Master\+::\+Specs\+Master(), Specs\+Mezzanine\+::\+Specs\+Mezzanine(), Specs\+Parallel\+Bus\+::\+Specs\+Parallel\+Bus(), Specs\+Slave\+::\+Specs\+Slave(), L\+S\+Delay\+Chip\+V1\+::spi\+B\+E\+R\+Test(), I\+C\+E\+C\+A\+Lv3\+::spi\+Read(), I\+C\+E\+C\+A\+Lv3\+::spi\+Write(), A3\+P\+E\+::trigger(), Server\+::update\+Config(), Server\+::update\+State(), Phaser\+::write(), I\+C\+Phaser\+::write(), and Hierarchy\+::$\sim$\+Hierarchy().
+
+
+\begin{DoxyCode}
+37 \{ \hyperlink{classObject_a0d269813dd7ac1f24bc143031e2963f2}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a1dbdcc82dce88370ec335883c83b38b0}{MsgSvc::DEBUG}   , mymsg, \hyperlink{classObject_a8b83c95c705d2c3ba0d081fe1710f48d}{m\_name} ); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classObject_a6c9a0397ca804e04d675ed05683f5420}\label{classObject_a6c9a0397ca804e04d675ed05683f5420}} 
+\index{Application@{Application}!debug@{debug}}
+\index{debug@{debug}!Application@{Application}}
+\subsubsection{\texorpdfstring{debug()}{debug()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Object\+::debug (\begin{DoxyParamCaption}\item[{std\+::string}]{mymsg,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line 45 of file Object.\+h.
+
+
+
+References Msg\+Svc\+::\+D\+E\+B\+UG, Object\+::m\+\_\+log, and Msg\+Svc\+::msg\+Svc().
+
+
+\begin{DoxyCode}
+45 \{ \hyperlink{classObject_a0d269813dd7ac1f24bc143031e2963f2}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a1dbdcc82dce88370ec335883c83b38b0}{MsgSvc::DEBUG}   , mymsg, \hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name} ); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_a0133c161bf55544f268ca039e174060b}\label{classApplication_a0133c161bf55544f268ca039e174060b}} 
+\index{Application@{Application}!dll\+Mgr@{dll\+Mgr}}
+\index{dll\+Mgr@{dll\+Mgr}!Application@{Application}}
+\subsubsection{\texorpdfstring{dll\+Mgr()}{dllMgr()}}
+{\footnotesize\ttfamily \hyperlink{classDLLMgr}{D\+L\+L\+Mgr}$\ast$ Application\+::dll\+Mgr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get accessor to member m\+\_\+dll\+Mgr \begin{DoxyReturn}{Returns}
+the current value of m\+\_\+dll\+Mgr 
+\end{DoxyReturn}
+
+
+Definition at line 103 of file Application.\+h.
+
+
+
+Referenced by export\+\_\+obj().
+
+
+\begin{DoxyCode}
+103                     \{
+104     \textcolor{keywordflow}{return} \hyperlink{classApplication_a66b06cbeb824fe00ecd11499fcf01c55}{m\_dllMgr};
+105   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classObject_a2e3947f2870094c332d7454117f3ec63}\label{classObject_a2e3947f2870094c332d7454117f3ec63}} 
+\index{Application@{Application}!dll\+Name@{dll\+Name}}
+\index{dll\+Name@{dll\+Name}!Application@{Application}}
+\subsubsection{\texorpdfstring{dll\+Name()}{dllName()}}
+{\footnotesize\ttfamily std\+::string Object\+::dll\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+Get accessor to member m\+\_\+dll\+Name \begin{DoxyReturn}{Returns}
+the current value of m\+\_\+dll\+Name 
+\end{DoxyReturn}
+
+
+Definition at line 74 of file Object.\+h.
+
+
+
+References Object\+::m\+\_\+dll\+Name.
+
+
+
+Referenced by export\+\_\+obj(), and Object\+::set\+Dll\+Name().
+
+
+\begin{DoxyCode}
+74                        \{
+75     \textcolor{keywordflow}{return} \hyperlink{classObject_a01afbeacebb8db6831559972ec362eb3}{m\_dllName};
+76   \}  
+\end{DoxyCode}
+\mbox{\Hypertarget{classObject_a204a95f57818c0f811933917a30eff45}\label{classObject_a204a95f57818c0f811933917a30eff45}} 
+\index{Application@{Application}!error@{error}}
+\index{error@{error}!Application@{Application}}
+\subsubsection{\texorpdfstring{error()}{error()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Object\+::error (\begin{DoxyParamCaption}\item[{std\+::string}]{mymsg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line 40 of file Object.\+h.
+
+
+
+References Msg\+Svc\+::\+E\+RR, Object\+::m\+\_\+log, Object\+::m\+\_\+name, and Msg\+Svc\+::msg\+Svc().
+
+
+
+Referenced by A3\+P\+E\+::clock\+Division(), N\+I6008\+::cmd(), A3\+P\+E\+::enable\+Storage(), A3\+P\+E\+\_\+\+Bit\+Flip\+::execute(), export\+\_\+obj(), A3\+P\+E\+::fifo\+Depth(), A3\+P\+E\+::fifo\+Latency(), F\+E\+B\+\_\+v1\+::gbt\+Status(), Register\+::get\+Bit(), M\+S\+Oxxxx\+::get\+Statistics(), N\+I6008\+::init(), Specs\+Master\+::init(), Usb\+F\+T\+Interface\+::init(), Usb\+F\+T\+M\+L\+Interface\+::init(), A3\+P\+E\+::latency\+A\+X(), A3\+P\+E\+::length\+A\+X(), A3\+P\+E\+::n\+Trigger(), M\+S\+Oxxxx\+::open(), I\+C\+E\+C\+A\+Lv3\+::parse\+Parameter\+List(), A3\+P\+E\+::pipeline(), Usb\+F\+T\+Interface\+::read(), Usb\+F\+T\+M\+L\+Interface\+::read(), M\+S\+Oxxxx\+::recv(), A3\+P\+E\+::reset(), M\+S\+Oxxxx\+::send(), A3\+P\+E\+::set\+Add\+From\+A\+X\+Ram(), A3\+P\+E\+::set\+Add\+To\+A\+X\+Ram(), I\+C\+E\+C\+A\+Lv3\+::set\+Analog\+Ch(), A3\+P\+E\+::set\+A\+X\+Ram\+Usb(), Register\+::set\+Bit(), A3\+P\+E\+::set\+Clock\+Division(), A3\+P\+E\+::set\+Fifo\+Depth(), A3\+P\+E\+::set\+Fifo\+Latency(), A3\+P\+E\+::set\+Latency\+A\+X(), A3\+P\+E\+::set\+Length\+A\+X(), A3\+P\+E\+::set\+N\+Trigger(), A3\+P\+E\+::set\+Pipeline(), A3\+P\+E\+::set\+Read\+Pattern\+Fifo\+Usb(), A3\+P\+E\+::set\+Read\+To\+A\+X\+Ram\+Usb(), A3\+P\+E\+::set\+Read\+Trigger\+Fifo\+Usb(), A3\+P\+E\+::set\+Software\+Trigger(), A3\+P\+E\+::set\+Trigger\+Delay(), A3\+P\+E\+::set\+Trigger\+Rate(), A3\+P\+E\+::set\+Write\+From\+A\+X\+Ram\+Usb(), A3\+P\+E\+::set\+Write\+Storage\+Fifo\+Usb(), I\+C\+E\+C\+A\+Lv3\+::spi\+F\+E\+R\+Test(), I\+C\+E\+C\+A\+Lv3\+::spi\+Write\+Safe(), A3\+P\+E\+::start\+Sequence\+A\+X(), A3\+P\+E\+::trigger\+Delay(), A3\+P\+E\+::trigger\+Rate(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Read(), Usb\+F\+T\+Interface\+::usb\+Read(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Read\+U16(), Usb\+F\+T\+Interface\+::usb\+Read\+U16(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Read\+U32(), Usb\+F\+T\+Interface\+::usb\+Read\+U32(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Read\+U8(), Usb\+F\+T\+Interface\+::usb\+Read\+U8(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write(), Usb\+F\+T\+Interface\+::usb\+Write(), Usb\+F\+T\+Interface\+::usb\+Write\+Read(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+Read(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+U16(), Usb\+F\+T\+Interface\+::usb\+Write\+U16(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+U32(), Usb\+F\+T\+Interface\+::usb\+Write\+U32(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+U8(), Usb\+F\+T\+Interface\+::usb\+Write\+U8(), Usb\+F\+T\+M\+L\+Interface\+::write(), and Usb\+F\+T\+Interface\+::write().
+
+
+\begin{DoxyCode}
+40 \{ \hyperlink{classObject_a0d269813dd7ac1f24bc143031e2963f2}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a35a9d7166e9896af4ec8fb33bf5f1772}{MsgSvc::ERR}     , mymsg, \hyperlink{classObject_a8b83c95c705d2c3ba0d081fe1710f48d}{m\_name} ); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classObject_ad7f6c457733082efa2f9ff5f5c8e119a}\label{classObject_ad7f6c457733082efa2f9ff5f5c8e119a}} 
+\index{Application@{Application}!error@{error}}
+\index{error@{error}!Application@{Application}}
+\subsubsection{\texorpdfstring{error()}{error()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Object\+::error (\begin{DoxyParamCaption}\item[{std\+::string}]{mymsg,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line 48 of file Object.\+h.
+
+
+
+References Msg\+Svc\+::\+E\+RR, Object\+::m\+\_\+log, and Msg\+Svc\+::msg\+Svc().
+
+
+\begin{DoxyCode}
+48 \{ \hyperlink{classObject_a0d269813dd7ac1f24bc143031e2963f2}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a35a9d7166e9896af4ec8fb33bf5f1772}{MsgSvc::ERR}     , mymsg, \hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name} ); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_a3c8a98d6c10a5b054800488df16cdbcb}\label{classApplication_a3c8a98d6c10a5b054800488df16cdbcb}} 
+\index{Application@{Application}!exit@{exit}}
+\index{exit@{exit}!Application@{Application}}
+\subsubsection{\texorpdfstring{exit()}{exit()}}
+{\footnotesize\ttfamily void Application\+::exit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+exit the \hyperlink{classApplication}{Application} \mbox{\Hypertarget{classObject_aad5a16aac7516ce65bd5ec02ab07fc80}\label{classObject_aad5a16aac7516ce65bd5ec02ab07fc80}} 
+\index{Application@{Application}!fatal@{fatal}}
+\index{fatal@{fatal}!Application@{Application}}
+\subsubsection{\texorpdfstring{fatal()}{fatal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Object\+::fatal (\begin{DoxyParamCaption}\item[{std\+::string}]{mymsg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line 41 of file Object.\+h.
+
+
+
+References Msg\+Svc\+::\+F\+A\+T\+AL, Object\+::m\+\_\+log, Object\+::m\+\_\+name, and Msg\+Svc\+::msg\+Svc().
+
+
+
+Referenced by export\+\_\+obj(), Usb\+M\+L\+I2c\+Bus\+::init(), Usb\+M\+L\+Spi\+Bus\+::init(), Usb\+I2c\+Bus\+::init(), Usb\+Spi\+Bus\+::init(), Specs\+Slave\+::init(), I\+Oobject\+::init(), Usb\+F\+T\+M\+L\+Interface\+::init(), Usb\+F\+T\+Interface\+::init(), and Element\+::set\+Connection().
+
+
+\begin{DoxyCode}
+41 \{ \hyperlink{classObject_a0d269813dd7ac1f24bc143031e2963f2}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a59c73cb29edfc9cdf35845e2b1301363}{MsgSvc::FATAL}   , mymsg, \hyperlink{classObject_a8b83c95c705d2c3ba0d081fe1710f48d}{m\_name} ); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classObject_ae62acd3d09f716220f75f252dc38bc9a}\label{classObject_ae62acd3d09f716220f75f252dc38bc9a}} 
+\index{Application@{Application}!fatal@{fatal}}
+\index{fatal@{fatal}!Application@{Application}}
+\subsubsection{\texorpdfstring{fatal()}{fatal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Object\+::fatal (\begin{DoxyParamCaption}\item[{std\+::string}]{mymsg,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line 49 of file Object.\+h.
+
+
+
+References Msg\+Svc\+::\+F\+A\+T\+AL, Object\+::m\+\_\+log, and Msg\+Svc\+::msg\+Svc().
+
+
+\begin{DoxyCode}
+49 \{ \hyperlink{classObject_a0d269813dd7ac1f24bc143031e2963f2}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a59c73cb29edfc9cdf35845e2b1301363}{MsgSvc::FATAL}   , mymsg, \hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name} ); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_a5e2b592eebe6f2f8780d2c129bf14560}\label{classApplication_a5e2b592eebe6f2f8780d2c129bf14560}} 
+\index{Application@{Application}!finalize@{finalize}}
+\index{finalize@{finalize}!Application@{Application}}
+\subsubsection{\texorpdfstring{finalize()}{finalize()}}
+{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} Application\+::finalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Finalize the application 
+
+Definition at line 142 of file Application.\+cpp.
+
+
+
+References Status\+Code\+::\+S\+U\+C\+C\+E\+SS.
+
+
+
+Referenced by export\+\_\+obj().
+
+
+\begin{DoxyCode}
+142                                    \{
+143   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
+144 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_a095248805e26b553466b7fafc6517d8f}\label{classApplication_a095248805e26b553466b7fafc6517d8f}} 
+\index{Application@{Application}!hostname@{hostname}}
+\index{hostname@{hostname}!Application@{Application}}
+\subsubsection{\texorpdfstring{hostname()}{hostname()}}
+{\footnotesize\ttfamily std\+::string Application\+::hostname (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+get the hostname of the computer 
+
+Definition at line 173 of file Application.\+h.
+
+
+
+References shell\+::create().
+
+
+
+Referenced by export\+\_\+obj(), initialize(), and N\+I6008\+::\+N\+I6008().
+
+
+\begin{DoxyCode}
+173                       \{
+174     \textcolor{keywordflow}{return} \hyperlink{classApplication_a20094c2bf311e2046942eeeec4a11f02}{m\_hostName};
+175   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classObject_af99145335cc61ff6e2798ea17db009d2}\label{classObject_af99145335cc61ff6e2798ea17db009d2}} 
+\index{Application@{Application}!id@{id}}
+\index{id@{id}!Application@{Application}}
+\subsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily unsigned char Object\+::id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line 30 of file Object.\+h.
+
+
+
+References Object\+::m\+\_\+id.
+
+
+
+Referenced by export\+\_\+obj(), and Object\+::set\+Id().
+
+
+\begin{DoxyCode}
+30 \{ \textcolor{keywordflow}{return} \hyperlink{classObject_aca74b9dbfed7b5556ea2d56c65b6b6b0}{m\_id};         \} \textcolor{comment}{//< Get Object m\_id }
+\end{DoxyCode}
+\mbox{\Hypertarget{classObject_a644fd329ea4cb85f54fa6846484b84a8}\label{classObject_a644fd329ea4cb85f54fa6846484b84a8}} 
+\index{Application@{Application}!info@{info}}
+\index{info@{info}!Application@{Application}}
+\subsubsection{\texorpdfstring{info()}{info()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Object\+::info (\begin{DoxyParamCaption}\item[{std\+::string}]{mymsg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line 38 of file Object.\+h.
+
+
+
+References Msg\+Svc\+::\+I\+N\+FO, Object\+::m\+\_\+log, Object\+::m\+\_\+name, and Msg\+Svc\+::msg\+Svc().
+
+
+
+Referenced by N\+I6008\+::add\+Device(), F\+E\+B\+\_\+v1\+::calib\+Cte(), check\+Cmd(), Hierarchy\+::clear(), F\+E\+B\+\_\+v1\+::clock80\+M\+Hz\+Falling\+Edge(), F\+E\+B\+\_\+v1\+::clock\+Falling\+Edge(), Usb\+F\+T\+Interface\+::close(), Usb\+F\+T\+M\+L\+Interface\+::close(), Processus\+::close\+Root\+File(), Server\+::cmdline(), Specs\+Mezzanine\+::cmdline(), Specs\+Slave\+::detect(), F\+E\+B\+\_\+v1\+::disable\+Subtract(), I\+Odata\+::dump(), A3\+P\+E\+::dump\+From\+A\+X(), A3\+P\+E\+::dump\+Pattern(), A3\+P\+E\+::dump\+Storage(), A3\+P\+E\+::dump\+To\+A\+X(), A3\+P\+E\+::dump\+Trigger(), Processus\+::end\+Processing(), Phaser\+Ramp\+Exec\+::execute(), export\+\_\+obj(), Phaser\+Ramp\+Exec\+::finalize(), F\+E\+B\+\_\+v1\+::gain4(), F\+E\+B\+\_\+v1\+::gbt80\+M\+Hz\+Clk\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+Data\+Path(), F\+E\+B\+\_\+v1\+::gbt\+D\+L\+L\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+D\+L\+L\+Reset(), F\+E\+B\+\_\+v1\+::gbt\+Enable\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+Mode(), F\+E\+B\+\_\+v1\+::gbt\+Status(), F\+E\+B\+\_\+v1\+::gbt\+Term\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+Track\+Mode(), I\+C\+E\+C\+A\+Lv3\+::get\+Analog\+Ch(), I\+C\+E\+C\+A\+Lv3\+::get\+Delay\+Line\+Ch(), I\+C\+E\+C\+A\+Lv3\+::get\+Main\+Reg(), F\+E\+B\+\_\+v1\+::global\+Pseudo\+P\+M\+Enable(), Croc\+::help(), R\+A\+M\+::help(), Specs\+Glue\+::help(), Usb\+M\+L\+I2c\+Bus\+::help(), Usb\+M\+L\+Spi\+Bus\+::help(), C\+U\+\_\+v1\+::help(), Usb\+I2c\+Bus\+::help(), Usb\+Spi\+Bus\+::help(), F\+E\+B\+\_\+v1\+::help(), I\+Oobject\+::help(), Proto40\+M\+Hz\+\_\+v1\+::help(), Specs\+Mezzanine\+::help(), Fe\+P\+G\+A\+::help(), Seq\+P\+G\+A\+::help(), Computer\+::help(), N\+I6008\+::help(), Specs\+Parallel\+Bus\+::help(), Specs\+Master\+::help(), Usb\+F\+T\+M\+L\+Interface\+::help(), Usb\+F\+T\+Interface\+::help(), Phaser\+::help(), I\+C\+Phaser\+::help(), A3\+P\+E\+::help(), M\+S\+Oxxxx\+::id(), Croc\+::init(), Computer\+::init(), N\+I6008\+::init(), Specs\+Parallel\+Bus\+::init(), Specs\+Slave\+::init(), Specs\+Master\+::init(), Usb\+F\+T\+Interface\+::init(), Usb\+F\+T\+M\+L\+Interface\+::init(), Storage\+Fifo\+Acquisition\+::initialize(), Storage\+Fifo\+::initialize(), A3\+P\+E\+\_\+\+Bit\+Flip\+::initialize(), Acquisition\+::initialize(), Emulate\+F\+E\+::initialize(), Current\+Measurement\+::initialize(), A\+D\+C\+Measurement\+::initialize(), Phaser\+Ramp\+Exec\+::initialize(), F\+E\+B\+\_\+v1\+::inject\+Mode\+F\+E(), is\+Int(), F\+E\+B\+\_\+v1\+::latency(), F\+E\+B\+\_\+v1\+::latency\+L\+L\+T(), A3\+P\+E\+::load\+From\+A\+X(), load\+History\+File(), A3\+P\+E\+::load\+Pattern(), A3\+P\+E\+::load\+Storage(), A3\+P\+E\+::load\+To\+A\+X(), A3\+P\+E\+::load\+Trigger(), loop(), F\+E\+B\+\_\+v1\+::mask\+L\+L\+T(), network(), F\+E\+B\+\_\+v1\+::old\+Subtract(), M\+S\+Oxxxx\+::open(), Processus\+::open\+Root\+File(), Data\+::print(), F\+E\+B\+\_\+v1\+::probe\+Enable(), Proc\+Data\+Base\+::\+Proc\+Data\+Base(), F\+E\+B\+\_\+v1\+::pseudo\+A\+D\+C\+Enable(), F\+E\+B\+\_\+v1\+::pseudo\+P\+M\+Enable(), Usb\+Spi\+Bus\+::read(), Usb\+F\+T\+M\+L\+Interface\+::read(), F\+E\+B\+\_\+v1\+::read\+Fifo\+Inject\+F\+E(), F\+E\+B\+\_\+v1\+::read\+Fifo\+L\+L\+T(), F\+E\+B\+\_\+v1\+::read\+Fifo\+L\+L\+T\+F\+E(), F\+E\+B\+\_\+v1\+::read\+Fifo\+Spy\+F\+E(), M\+S\+Oxxxx\+::recv(), Croc\+::reset(), Usb\+I2c\+Bus\+::reset(), Usb\+M\+L\+I2c\+Bus\+::reset(), Usb\+M\+L\+Spi\+Bus\+::reset(), Usb\+Spi\+Bus\+::reset(), Fe\+P\+G\+A\+::reset(), Seq\+P\+G\+A\+::reset(), Computer\+::reset(), Specs\+Parallel\+Bus\+::reset(), Specs\+Master\+::reset(), N\+I6008\+::reset(), Usb\+F\+T\+M\+L\+Interface\+::reset(), Usb\+F\+T\+Interface\+::reset(), A3\+P\+E\+::reset(), A3\+P\+E\+::reset\+Acquisition\+Write\+Counter(), F\+E\+B\+\_\+v1\+::reset\+F\+E(), A3\+P\+E\+::reset\+F\+E(), F\+E\+B\+\_\+v1\+::reset\+Fifo\+Inject\+F\+E(), F\+E\+B\+\_\+v1\+::reset\+Fifo\+Spy\+F\+E(), A3\+P\+E\+::reset\+From\+A\+X\+Ram(), Specs\+Slave\+::reset\+Internal(), A3\+P\+E\+::reset\+Latency\+Counter(), A3\+P\+E\+::reset\+Pattern\+Fifo(), A3\+P\+E\+::reset\+Sequence\+From\+To\+A\+X(), A3\+P\+E\+::reset\+S\+P\+I(), A3\+P\+E\+::reset\+Storage\+Fifo(), A3\+P\+E\+::reset\+To\+A\+X\+Ram(), A3\+P\+E\+::reset\+Trigger\+Fifo(), Seq\+P\+G\+A\+::reset\+Usb(), Fe\+P\+G\+A\+::reset\+Usb(), A3\+P\+E\+::reset\+Usb\+Phasers(), M\+S\+Oxxxx\+::send(), Server\+::\+Server(), server(), F\+E\+B\+\_\+v1\+::set\+Calib\+Cte(), F\+E\+B\+\_\+v1\+::set\+Clock80\+M\+Hz\+Falling\+Edge(), A3\+P\+E\+::set\+Clock\+Division(), F\+E\+B\+\_\+v1\+::set\+Clock\+Falling\+Edge(), Usb\+Spi\+Bus\+::set\+Data\+Length(), F\+E\+B\+\_\+v1\+::set\+Disable\+Subtract(), A3\+P\+E\+::set\+Enable\+A\+D\+C(), A3\+P\+E\+::set\+Fifo\+Depth(), A3\+P\+E\+::set\+Fifo\+Latency(), F\+E\+B\+\_\+v1\+::set\+Gain4(), F\+E\+B\+\_\+v1\+::set\+Gbt80\+M\+Hz\+Clk\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Clock\+Strength(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Data\+Path(), F\+E\+B\+\_\+v1\+::set\+Gbt\+D\+L\+L\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Enable\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Mode(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Term\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Track\+Mode(), F\+E\+B\+\_\+v1\+::set\+Global\+Pseudo\+P\+M\+Enable(), F\+E\+B\+\_\+v1\+::set\+Inject\+Mode\+F\+E(), A3\+P\+E\+::set\+Internal\+A\+X\+Sequence(), F\+E\+B\+\_\+v1\+::set\+Latency(), A3\+P\+E\+::set\+N\+Trigger(), F\+E\+B\+\_\+v1\+::set\+Old\+Subtract(), F\+E\+B\+\_\+v1\+::set\+Output\+Eport(), Phaser\+::set\+Phase(), I\+C\+Phaser\+::set\+Phase(), A3\+P\+E\+::set\+Pipeline(), F\+E\+B\+\_\+v1\+::set\+Probe\+Enable(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+A\+D\+C\+Enable(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+P\+M\+Enable(), A3\+P\+E\+::set\+Read\+Pattern\+Fifo\+Usb(), A3\+P\+E\+::set\+Read\+Trigger\+Fifo\+Usb(), A3\+P\+E\+::set\+Software\+Trigger(), F\+E\+B\+\_\+v1\+::set\+Spare\+For\+Trig\+Enable(), F\+E\+B\+\_\+v1\+::set\+Spy\+Mode\+F\+E(), Processus\+::set\+State(), F\+E\+B\+\_\+v1\+::set\+Threshold(), A3\+P\+E\+::set\+Trigger\+Delay(), A3\+P\+E\+::set\+Trigger\+Rate(), A3\+P\+E\+::set\+Write\+Storage\+Fifo\+Usb(), L\+S\+Delay\+Chip\+V1\+::show\+Config(), F\+E\+B\+\_\+v1\+::spare\+For\+Trig\+Enable(), Specs\+I2c\+::\+Specs\+I2c(), I\+C\+E\+C\+A\+Lv3\+::spi\+F\+E\+R\+Test(), F\+E\+B\+\_\+v1\+::spy\+Mode\+F\+E(), F\+E\+B\+\_\+v1\+::spy\+Mode\+Seq(), Server\+::start(), Processus\+::start\+Processing(), F\+E\+B\+\_\+v1\+::status\+Register(), F\+E\+B\+\_\+v1\+::stop\+Inj\+Loop(), svc\+Running(), terminate(), F\+E\+B\+\_\+v1\+::test\+Duration(), Seq\+P\+G\+A\+::test\+Sequence(), Fe\+P\+G\+A\+::test\+Sequence(), F\+E\+B\+\_\+v1\+::threshold(), Hierarchy\+::tree(), Croc\+::update(), Usb\+I2c\+Bus\+::update(), Usb\+Spi\+Bus\+::update(), Usb\+M\+L\+I2c\+Bus\+::update(), Usb\+M\+L\+Spi\+Bus\+::update(), C\+U\+\_\+v1\+::update(), Proto40\+M\+Hz\+\_\+v1\+::update(), Computer\+::update(), F\+E\+B\+\_\+v1\+::update(), Specs\+Parallel\+Bus\+::update(), N\+I6008\+::update(), Usb\+F\+T\+Interface\+::update(), Usb\+F\+T\+M\+L\+Interface\+::update(), Usb\+F\+T\+Interface\+::\+Usb\+F\+T\+Interface(), Usb\+F\+T\+M\+L\+Interface\+::\+Usb\+F\+T\+M\+L\+Interface(), Usb\+Spi\+Bus\+::write(), F\+E\+B\+\_\+v1\+::write\+Data\+Fifo\+Inject\+F\+E(), F\+E\+B\+\_\+v1\+::write\+Fifo\+Inject\+F\+E(), and N\+I6008\+::$\sim$\+N\+I6008().
+
+
+\begin{DoxyCode}
+38 \{ \hyperlink{classObject_a0d269813dd7ac1f24bc143031e2963f2}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{MsgSvc::INFO}    , mymsg, \hyperlink{classObject_a8b83c95c705d2c3ba0d081fe1710f48d}{m\_name} ); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classObject_a1ca123253dfd30fc28b156f521dcbdae}\label{classObject_a1ca123253dfd30fc28b156f521dcbdae}} 
+\index{Application@{Application}!info@{info}}
+\index{info@{info}!Application@{Application}}
+\subsubsection{\texorpdfstring{info()}{info()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Object\+::info (\begin{DoxyParamCaption}\item[{std\+::string}]{mymsg,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line 46 of file Object.\+h.
+
+
+
+References Msg\+Svc\+::\+I\+N\+FO, Object\+::m\+\_\+log, and Msg\+Svc\+::msg\+Svc().
+
+
+\begin{DoxyCode}
+46 \{ \hyperlink{classObject_a0d269813dd7ac1f24bc143031e2963f2}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{MsgSvc::INFO}    , mymsg, \hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name} ); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_a86b8cbb104f3e04516ef574e5822ff82}\label{classApplication_a86b8cbb104f3e04516ef574e5822ff82}} 
+\index{Application@{Application}!initialize@{initialize}}
+\index{initialize@{initialize}!Application@{Application}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} Application\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initialize the \hyperlink{classApplication}{Application} 
+
+Definition at line 72 of file Application.\+cpp.
+
+
+
+References Attrib\+::add(), banner(), hostname(), load\+History\+File(), m\+\_\+config, m\+\_\+ctrl, m\+\_\+network, m\+\_\+server, m\+\_\+state, set\+Config(), Object\+::set\+Name(), set\+State(), Object\+::set\+Type(), Attrib\+::\+S\+O\+F\+T\+W\+A\+RE, and Status\+Code\+::\+S\+U\+C\+C\+E\+SS.
+
+
+
+Referenced by export\+\_\+obj().
+
+
+\begin{DoxyCode}
+72                                      \{
+73   \hyperlink{classObject_aae534cc9d982bcb9b99fd505f2e103a5}{setType}(\textcolor{stringliteral}{"SOFTWARE"});
+74   \hyperlink{classAttrib_a235f773af19c900264a190b00a3b4ad7}{add}(\hyperlink{classAttrib_a69e171d7cc6417835a5a306d3c764235a103a67cd0b8f07ef478fa45d4356e27b}{Attrib::SOFTWARE});
+75 
+76   \hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName} ( \hyperlink{classApplication_a095248805e26b553466b7fafc6517d8f}{hostname}() );
+77 
+78   \hyperlink{classApplication_a7dc2bb72356cd9186eaad49eb506995a}{m\_network}=\textcolor{keyword}{false};
+79   \hyperlink{classApplication_a5e6085b0f322d5036177b16113a75b56}{m\_server}=0;
+80 
+81   \hyperlink{classApplication_aa371ed989ed34038df400c4d1b41b37f}{m\_ctrl}=std::string(\textcolor{stringliteral}{""});
+82 
+83   \hyperlink{classApplication_a0ef9832e2d286716e597a1ff21ffcab4}{m\_state}  = \textcolor{keyword}{new} \hyperlink{classState}{State}();
+84   \hyperlink{classApplication_ae05f3e253ea871a194c3d30fd1d3b0c3}{m\_config} = \textcolor{keyword}{new} \hyperlink{classConfig}{Config}();
+85 
+86   \textcolor{comment}{/*}
+87 \textcolor{comment}{    setRunSvc ( *svcRunning );}
+88 \textcolor{comment}{    setPlotSvc (*svcPlot );}
+89 \textcolor{comment}{  */}
+90 
+91   \hyperlink{classApplication_a4a86c9bbf7851753c7b2bc03211092fb}{setState} ( \textcolor{stringliteral}{"READY"} );
+92   \hyperlink{classApplication_a46614964f765fd5374b216582b599bcb}{setConfig}( );
+93 
+94   \hyperlink{classApplication_af168aa3579262d65adc0bd4531361a53}{banner}  ();
+95   \hyperlink{classApplication_ab5d46fc4784a4c821e974f5a47ec933d}{loadHistoryFile}();
+96 
+97   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
+98 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classAttrib_a704f26af560909ad22065083bb7d4c34}\label{classAttrib_a704f26af560909ad22065083bb7d4c34}} 
+\index{Application@{Application}!is@{is}}
+\index{is@{is}!Application@{Application}}
+\subsubsection{\texorpdfstring{is()}{is()}}
+{\footnotesize\ttfamily bool Attrib\+::is (\begin{DoxyParamCaption}\item[{int}]{attribut }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+Test for an attribut 
+
+Definition at line 50 of file Attrib.\+h.
+
+
+
+References Attrib\+::m\+\_\+attributs.
+
+
+
+Referenced by export\+\_\+obj(), and Element\+::set\+Connection().
+
+
+\begin{DoxyCode}
+51   \{
+52     std::vector<int>::const\_iterator iter ;
+53     \textcolor{keywordflow}{for} ( iter  = \hyperlink{classAttrib_ac4bd58a0cc6b38a3b711d609a3d3aacc}{m\_attributs}.begin() ;
+54           iter != \hyperlink{classAttrib_ac4bd58a0cc6b38a3b711d609a3d3aacc}{m\_attributs}.end()   ;
+55           ++iter ) \{
+56       \textcolor{keywordflow}{if} ( attribut == (*iter) ) \{
+57         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+58       \}
+59     \}
+60     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+61   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_ab5d46fc4784a4c821e974f5a47ec933d}\label{classApplication_ab5d46fc4784a4c821e974f5a47ec933d}} 
+\index{Application@{Application}!load\+History\+File@{load\+History\+File}}
+\index{load\+History\+File@{load\+History\+File}!Application@{Application}}
+\subsubsection{\texorpdfstring{load\+History\+File()}{loadHistoryFile()}}
+{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} Application\+::load\+History\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Load History file if it exists \begin{DoxyReturn}{Returns}
+\hyperlink{classStatusCode}{Status\+Code} 
+\end{DoxyReturn}
+
+
+Definition at line 149 of file Application.\+cpp.
+
+
+
+References application(), Status\+Code\+::\+F\+A\+I\+L\+U\+RE, System\+::get\+Env(), Object\+::info(), itos(), options(), Options\+::set\+Run\+Number(), and Status\+Code\+::\+S\+U\+C\+C\+E\+SS.
+
+
+
+Referenced by initialize().
+
+
+\begin{DoxyCode}
+149                                        \{
+150   \textcolor{comment}{// Load last session parameters}
+151   std::string filename = \hyperlink{namespaceSystem_af83af19ba6c1083e5643390dfd65f7aa}{System::getEnv}(\textcolor{stringliteral}{"CATPATH"});
+152   filename.append(\textcolor{stringliteral}{"/.cathist"});
+153   std::ifstream last;
+154   last.open( filename.c\_str() );
+155   \textcolor{keywordflow}{if} ( !last.fail() ) \{
+156     \textcolor{keywordtype}{int} nrun;
+157     last >> nrun;
+158     \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"Recovering last run number : "}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(nrun)+\textcolor{stringliteral}{". Will start from "}+
+      \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(nrun+1)+\textcolor{stringliteral}{"."},\textcolor{stringliteral}{"Application:loadHistoryFile"});
+159     \hyperlink{Tools_8h_a27885a3c35afe79029fb830f32f66458}{application}()->\hyperlink{classApplication_ada7cc0e8db586985f1435aee0c79f47d}{options}()->\hyperlink{classOptions_aed19a55eb2c418f333bc97615cf4a3a8}{setRunNumber}( nrun+1 );
+160   \}
+161   \textcolor{keywordflow}{else} \{
+162     \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"No history file found."},\textcolor{stringliteral}{"Application:loadHistoryFile"});
+163     \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
+164   \}
+165   last.close();
+166   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
+167 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_ab38055646202ef49c9ee2eda6d48076f}\label{classApplication_ab38055646202ef49c9ee2eda6d48076f}} 
+\index{Application@{Application}!loop@{loop}}
+\index{loop@{loop}!Application@{Application}}
+\subsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} Application\+::loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 460 of file Application.\+cpp.
+
+
+
+References Processus\+::execute(), Status\+Code\+::\+F\+A\+I\+L\+U\+RE, Options\+::inc\+N\+Errors(), Options\+::inc\+N\+Evt(), Object\+::info(), itos(), m\+\_\+options, m\+\_\+processus, Options\+::n\+Errors(), State\+::n\+Event, Options\+::n\+Evt(), Options\+::print\+Freq(), state(), Options\+::stop\+On\+Error(), Status\+Code\+::\+S\+U\+C\+C\+E\+SS, and Object\+::warning().
+
+
+
+Referenced by export\+\_\+obj(), and svc\+Running().
+
+
+\begin{DoxyCode}
+460                                \{
+461   \hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->\hyperlink{classOptions_aa950f9861182c76c4005668e0b7f012a}{incNEvt}();
+462   \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} currentNEvt = \hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->\hyperlink{classOptions_ad769b256263a4ac24dd6f989ae724ab7}{nEvt}();
+463   \hyperlink{classApplication_adfc9b92559f61c92224abf03f51cef47}{state}()->\hyperlink{classState_af9d335bba28d6946043a07b047556690}{nEvent}++;
+464   \textcolor{keywordflow}{if}( \hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->\hyperlink{classOptions_a67021ffef9f666bba4696f89807b2a70}{printFreq}()>0) \{
+465     \textcolor{keywordflow}{if} ( 0 == currentNEvt % \hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->\hyperlink{classOptions_a67021ffef9f666bba4696f89807b2a70}{printFreq}() ) \{
+466       \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"[Processing evt "}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(currentNEvt)+\textcolor{stringliteral}{"]"},\textcolor{stringliteral}{"Application::loop"});
+467     \}
+468   \}
+469   \textcolor{keywordflow}{if} ( (\hyperlink{classApplication_ab5eb4b3d3bef5ab9fce9c69401ce5786}{m\_processus}->\hyperlink{classProcessus_a63767a63a1fb0055c5aa45b21a4a5d58}{execute}()).isFailure() ) \{
+470     \hyperlink{classObject_a65cd4fda577711660821fd2cd5a3b4c9}{warning}(\textcolor{stringliteral}{"An Error occured ["}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(\hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->\hyperlink{classOptions_acc6474323f0bbe17fa844e9a086b90b8}{nErrors}())+\textcolor{stringliteral}{"]."},\textcolor{stringliteral}{"
+      Application::loop"});
+471     \hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->\hyperlink{classOptions_ae5d12fb2571255033ef6b35300921b39}{incNErrors}();
+472     \textcolor{keywordflow}{if} (\hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->\hyperlink{classOptions_afcd7b27fdf474050d912571e09525efe}{stopOnError}()) \{
+473       \hyperlink{classObject_a65cd4fda577711660821fd2cd5a3b4c9}{warning}(\textcolor{stringliteral}{"Program automatically Stopped after "} +
+474           \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos} ( currentNEvt ) + \textcolor{stringliteral}{" event(s)."},\textcolor{stringliteral}{"Application::loop"});
+475       \textcolor{comment}{//      m\_options->setNEvt(m\_options->nEvtMax());}
+476       \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
+477     \}
+478   \}
+479   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
+480 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_accaba6b75f26c92e7604df43c853390b}\label{classApplication_accaba6b75f26c92e7604df43c853390b}} 
+\index{Application@{Application}!make\+Dir@{make\+Dir}}
+\index{make\+Dir@{make\+Dir}!Application@{Application}}
+\subsubsection{\texorpdfstring{make\+Dir()}{makeDir()}}
+{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} Application\+::make\+Dir (\begin{DoxyParamCaption}\item[{std\+::string}]{directory }\end{DoxyParamCaption})}
+
+
+
+Definition at line 189 of file Application.\+cpp.
+
+
+
+References Status\+Code\+::\+F\+A\+I\+L\+U\+RE, Status\+Code\+::\+S\+U\+C\+C\+E\+SS, and Object\+::warning().
+
+
+
+Referenced by prepare().
+
+
+\begin{DoxyCode}
+189                                                      \{
+190   \textcolor{keywordflow}{if} (mkdir(directory.c\_str(), 0777) == -1) \{ \textcolor{comment}{// Create the directory}
+191     \hyperlink{classObject_a65cd4fda577711660821fd2cd5a3b4c9}{warning}(\textcolor{stringliteral}{"Could not create directory "}+directory+\textcolor{stringliteral}{". Error "}+strerror(errno),\textcolor{stringliteral}{"Application:makeDir"}
+      );
+192     \textcolor{keywordflow}{return}(\hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE});
+193   \}
+194   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
+195 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classObject_a58b2d0618c2d08cf2383012611528d97}\label{classObject_a58b2d0618c2d08cf2383012611528d97}} 
+\index{Application@{Application}!msg@{msg}}
+\index{msg@{msg}!Application@{Application}}
+\subsubsection{\texorpdfstring{msg()}{msg()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Object\+::msg (\begin{DoxyParamCaption}\item[{std\+::string}]{mymsg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line 35 of file Object.\+h.
+
+
+
+References Object\+::m\+\_\+log, Object\+::m\+\_\+name, Msg\+Svc\+::msg\+Svc(), and Msg\+Svc\+::\+N\+O\+NE.
+
+
+
+Referenced by export\+\_\+obj().
+
+
+\begin{DoxyCode}
+35 \{ \hyperlink{classObject_a0d269813dd7ac1f24bc143031e2963f2}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a9be9ae32fed8e1e6eba4a58692210fbd}{MsgSvc::NONE}    , mymsg, \hyperlink{classObject_a8b83c95c705d2c3ba0d081fe1710f48d}{m\_name} ); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classObject_ac5d59299273cee27aacf7de00d2e7034}\label{classObject_ac5d59299273cee27aacf7de00d2e7034}} 
+\index{Application@{Application}!msg@{msg}}
+\index{msg@{msg}!Application@{Application}}
+\subsubsection{\texorpdfstring{msg()}{msg()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Object\+::msg (\begin{DoxyParamCaption}\item[{std\+::string}]{mymsg,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line 43 of file Object.\+h.
+
+
+
+References Object\+::m\+\_\+log, Msg\+Svc\+::msg\+Svc(), and Msg\+Svc\+::\+N\+O\+NE.
+
+
+\begin{DoxyCode}
+43 \{ \hyperlink{classObject_a0d269813dd7ac1f24bc143031e2963f2}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a9be9ae32fed8e1e6eba4a58692210fbd}{MsgSvc::NONE}    , mymsg, \hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name} ); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classObject_a3f9d5537ebce0c0f2bf6ae4d92426f3c}\label{classObject_a3f9d5537ebce0c0f2bf6ae4d92426f3c}} 
+\index{Application@{Application}!msg\+Svc@{msg\+Svc}}
+\index{msg\+Svc@{msg\+Svc}!Application@{Application}}
+\subsubsection{\texorpdfstring{msg\+Svc()}{msgSvc()}}
+{\footnotesize\ttfamily void Object\+::msg\+Svc (\begin{DoxyParamCaption}\item[{int}]{level,  }\item[{std\+::string}]{msg,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line 33 of file Object.\+h.
+
+
+
+References Object\+::m\+\_\+log, and Msg\+Svc\+::msg\+Svc().
+
+
+
+Referenced by banner(), export\+\_\+obj(), Specs\+Mezzanine\+::help(), D\+C\+U\+::read\+Mode(), D\+C\+U\+::set\+H\+I\+R(), D\+C\+U\+::set\+L\+I\+R(), Processus\+::set\+State(), and Hierarchy\+::tree().
+
+
+\begin{DoxyCode}
+33 \{ \hyperlink{classObject_a0d269813dd7ac1f24bc143031e2963f2}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} ( (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926}{MsgSvc::MsgLevel})(level), \hyperlink{classObject_a58b2d0618c2d08cf2383012611528d97}{msg}, 
+      \hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name} ); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classObject_a300f4c05dd468c7bb8b3c968868443c1}\label{classObject_a300f4c05dd468c7bb8b3c968868443c1}} 
+\index{Application@{Application}!name@{name}}
+\index{name@{name}!Application@{Application}}
+\subsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily std\+::string Object\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line 28 of file Object.\+h.
+
+
+
+References Object\+::m\+\_\+name.
+
+
+
+Referenced by Specs\+Mezzanine\+::add\+Bus(), Hierarchy\+::add\+Child(), Specs\+Slave\+::add\+I2c(), Hierarchy\+::child(), Hierarchy\+::child\+Typed(), Hierarchy\+::clear(), A3\+P\+E\+::clock\+Division(), Usb\+F\+T\+M\+L\+Interface\+::close(), Usb\+F\+T\+Interface\+::close(), Element\+::connection(), Specs\+Slave\+::detect(), I\+Odata\+::dump(), A3\+P\+E\+::enable\+Storage(), export\+\_\+obj(), export\+\_\+proc(), A3\+P\+E\+::fifo\+Depth(), A3\+P\+E\+::fifo\+Latency(), Register\+::get\+Bit(), Croc\+::help(), R\+A\+M\+::help(), Usb\+M\+L\+Spi\+Bus\+::help(), Usb\+M\+L\+I2c\+Bus\+::help(), Usb\+I2c\+Bus\+::help(), C\+U\+\_\+v1\+::help(), Usb\+Spi\+Bus\+::help(), I\+Oobject\+::help(), Proto40\+M\+Hz\+\_\+v1\+::help(), F\+E\+B\+\_\+v1\+::help(), Fe\+P\+G\+A\+::help(), Seq\+P\+G\+A\+::help(), Computer\+::help(), N\+I6008\+::help(), Specs\+Parallel\+Bus\+::help(), Usb\+F\+T\+Interface\+::help(), Usb\+F\+T\+M\+L\+Interface\+::help(), Phaser\+::help(), I\+C\+Phaser\+::help(), A3\+P\+E\+::help(), Data\+::hist2d(), Croc\+::init(), Computer\+::init(), N\+I6008\+::init(), Specs\+Parallel\+Bus\+::init(), Specs\+Slave\+::init(), Specs\+Master\+::init(), Usb\+F\+T\+M\+L\+Interface\+::init(), Usb\+F\+T\+Interface\+::init(), Storage\+Fifo\+::initialize(), Storage\+Fifo\+Acquisition\+::initialize(), A3\+P\+E\+\_\+\+Bit\+Flip\+::initialize(), Acquisition\+::initialize(), Emulate\+F\+E\+::initialize(), Current\+Measurement\+::initialize(), A\+D\+C\+Measurement\+::initialize(), Phaser\+Ramp\+Exec\+::initialize(), A3\+P\+E\+::latency\+A\+X(), A3\+P\+E\+::length\+A\+X(), network(), A3\+P\+E\+::n\+Trigger(), Processus\+::open\+Root\+File(), Hierarchy\+::path(), Hierarchy\+::path\+Typed(), A3\+P\+E\+::pipeline(), Test\+Suite\+::\+Plot(), Test\+I2\+C\+::\+Plot(), Test\+S\+P\+I\+::\+Plot(), Test\+U\+S\+B\+::\+Plot(), Phaser\+::read(), I\+C\+Phaser\+::read(), Croc\+::reset(), Usb\+M\+L\+I2c\+Bus\+::reset(), Usb\+M\+L\+Spi\+Bus\+::reset(), Usb\+I2c\+Bus\+::reset(), Usb\+Spi\+Bus\+::reset(), C\+U\+\_\+v1\+::reset(), Proto40\+M\+Hz\+\_\+v1\+::reset(), F\+E\+B\+\_\+v1\+::reset(), Computer\+::reset(), Specs\+Parallel\+Bus\+::reset(), Specs\+Master\+::reset(), Specs\+Slave\+::reset(), N\+I6008\+::reset(), Usb\+F\+T\+M\+L\+Interface\+::reset(), Usb\+F\+T\+Interface\+::reset(), A3\+P\+E\+::reset(), Specs\+Slave\+::reset\+Internal(), F\+E\+B\+\_\+v1\+::reset\+Usb(), A3\+P\+E\+::set\+Add\+From\+A\+X\+Ram(), A3\+P\+E\+::set\+Add\+To\+A\+X\+Ram(), Register\+::set\+Bit(), A3\+P\+E\+::set\+Clock\+Division(), set\+Config(), Element\+::set\+Connection(), A3\+P\+E\+::set\+Fifo\+Depth(), A3\+P\+E\+::set\+Fifo\+Latency(), A3\+P\+E\+::set\+Latency\+A\+X(), A3\+P\+E\+::set\+Length\+A\+X(), Object\+::set\+Name(), A3\+P\+E\+::set\+N\+Trigger(), A3\+P\+E\+::set\+Pipeline(), Specs\+Master\+::set\+Speed(), Processus\+::set\+State(), A3\+P\+E\+::set\+Trigger\+Delay(), A3\+P\+E\+::set\+Trigger\+Rate(), Specs\+Bus\+::\+Specs\+Bus(), Specs\+I2c\+::\+Specs\+I2c(), Specs\+Parallel\+Bus\+::\+Specs\+Parallel\+Bus(), Server\+::start(), Processus\+::start\+Processing(), terminate(), Hierarchy\+::tree(), A3\+P\+E\+::trigger\+Delay(), A3\+P\+E\+::trigger\+Rate(), Croc\+::update(), Usb\+I2c\+Bus\+::update(), Usb\+Spi\+Bus\+::update(), Usb\+M\+L\+Spi\+Bus\+::update(), Usb\+M\+L\+I2c\+Bus\+::update(), C\+U\+\_\+v1\+::update(), Proto40\+M\+Hz\+\_\+v1\+::update(), Computer\+::update(), F\+E\+B\+\_\+v1\+::update(), Specs\+Parallel\+Bus\+::update(), N\+I6008\+::update(), Usb\+F\+T\+Interface\+::update(), Usb\+F\+T\+M\+L\+Interface\+::update(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Read\+U16(), Usb\+F\+T\+Interface\+::usb\+Read\+U16(), Usb\+F\+T\+Interface\+::usb\+Read\+U32(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Read\+U32(), Usb\+F\+T\+Interface\+::usb\+Read\+U8(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Read\+U8(), Usb\+F\+T\+Interface\+::usb\+Write\+Read(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+Read(), Usb\+F\+T\+Interface\+::usb\+Write\+U16(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+U16(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+U32(), Usb\+F\+T\+Interface\+::usb\+Write\+U32(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+U8(), Usb\+F\+T\+Interface\+::usb\+Write\+U8(), Phaser\+::write(), I\+C\+Phaser\+::write(), and Hierarchy\+::$\sim$\+Hierarchy().
+
+
+\begin{DoxyCode}
+28 \{ \textcolor{keywordflow}{return} \hyperlink{classObject_a8b83c95c705d2c3ba0d081fe1710f48d}{m\_name}; \} \textcolor{comment}{//< Get Object m\_name}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_ab21cc0c86ca4e63d1fbd348d709dcddc}\label{classApplication_ab21cc0c86ca4e63d1fbd348d709dcddc}} 
+\index{Application@{Application}!network@{network}}
+\index{network@{network}!Application@{Application}}
+\subsubsection{\texorpdfstring{network()}{network()}}
+{\footnotesize\ttfamily void Application\+::network (\begin{DoxyParamCaption}\item[{std\+::string}]{name = {\ttfamily std\+:\+:string(\char`\"{}\char`\"{})} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 282 of file Application.\+cpp.
+
+
+
+References application(), Object\+::info(), m\+\_\+network, m\+\_\+server, Object\+::name(), set\+Config(), Object\+::set\+Name(), set\+State(), and Server\+::start().
+
+
+\begin{DoxyCode}
+282                                                           \{
+283   \textcolor{keywordflow}{if} ( \hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name}.compare(\textcolor{stringliteral}{""})==0 ) \{
+284     \hyperlink{Tools_8h_a27885a3c35afe79029fb830f32f66458}{application}()->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName} ( \hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name} );
+285   \}
+286   \textcolor{keywordflow}{if} (!\hyperlink{classApplication_a7dc2bb72356cd9186eaad49eb506995a}{m\_network}) \{
+287     \hyperlink{classApplication_a7dc2bb72356cd9186eaad49eb506995a}{m\_network} = \textcolor{keyword}{true};
+288     \hyperlink{classApplication_a5e6085b0f322d5036177b16113a75b56}{m\_server} = \textcolor{keyword}{new} \hyperlink{classServer}{Server} ( \textcolor{keyword}{this} );
+289     \hyperlink{classApplication_a5e6085b0f322d5036177b16113a75b56}{m\_server}->\hyperlink{classServer_a039cc5b24c26fa5bb8145335f27bb28e}{start}();
+290     \textcolor{keywordflow}{if} ( \hyperlink{classApplication_a7dc2bb72356cd9186eaad49eb506995a}{m\_network} ) \{
+291       \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"Update server information."},\textcolor{stringliteral}{"Application::network"});
+292       \hyperlink{classApplication_a46614964f765fd5374b216582b599bcb}{setConfig} ();
+293       \hyperlink{classApplication_a4a86c9bbf7851753c7b2bc03211092fb}{setState}  (\textcolor{stringliteral}{"READY"});
+294     \}
+295   \}
+296   \textcolor{keywordflow}{else} \{
+297     \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"Stop network connection."},\textcolor{stringliteral}{"Application::network"});
+298     \hyperlink{classApplication_a7dc2bb72356cd9186eaad49eb506995a}{m\_network} = \textcolor{keyword}{false};
+299     \textcolor{keyword}{delete} \hyperlink{classApplication_a5e6085b0f322d5036177b16113a75b56}{m\_server};
+300     \hyperlink{classApplication_a5e6085b0f322d5036177b16113a75b56}{m\_server} = 0;
+301   \}
+302 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_ada7cc0e8db586985f1435aee0c79f47d}\label{classApplication_ada7cc0e8db586985f1435aee0c79f47d}} 
+\index{Application@{Application}!options@{options}}
+\index{options@{options}!Application@{Application}}
+\subsubsection{\texorpdfstring{options()}{options()}}
+{\footnotesize\ttfamily \hyperlink{classOptions}{Options}$\ast$ Application\+::options (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get accessor to member m\+\_\+options \begin{DoxyReturn}{Returns}
+the current value of m\+\_\+options 
+\end{DoxyReturn}
+
+
+Definition at line 86 of file Application.\+h.
+
+
+
+Referenced by bookkeeping(), Acquisition\+::execute(), A\+D\+C\+Measurement\+::execute(), Current\+Measurement\+::execute(), export\+\_\+obj(), Acquisition\+::initialize(), Current\+Measurement\+::initialize(), A\+D\+C\+Measurement\+::initialize(), load\+History\+File(), and Msg\+Svc\+::msg\+Svc().
+
+
+\begin{DoxyCode}
+86                       \{
+87     \textcolor{keywordflow}{return} \hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options};
+88   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_a6344c22495ff3e87d77d0c47aea3bf00}\label{classApplication_a6344c22495ff3e87d77d0c47aea3bf00}} 
+\index{Application@{Application}!plot\+Svc@{plot\+Svc}}
+\index{plot\+Svc@{plot\+Svc}!Application@{Application}}
+\subsubsection{\texorpdfstring{plot\+Svc()}{plotSvc()}}
+{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} Application\+::plot\+Svc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Execute plot service \begin{DoxyReturn}{Returns}
+the result 
+\end{DoxyReturn}
+
+
+Definition at line 273 of file Application.\+h.
+
+
+\begin{DoxyCode}
+273                         \{
+274     \hyperlink{Application_8h_abaa10d33ca2837dfcf8ba9bff40cdbb6}{PlotSvc} svc = \hyperlink{classApplication_a30d5600ea5e4f36b14f25f903ee3256e}{m\_plotSvc};
+275     \textcolor{keywordflow}{return} svc();
+276   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_a61dcc20b7f4b7c19b697db7516a62afa}\label{classApplication_a61dcc20b7f4b7c19b697db7516a62afa}} 
+\index{Application@{Application}!prepare@{prepare}}
+\index{prepare@{prepare}!Application@{Application}}
+\subsubsection{\texorpdfstring{prepare()}{prepare()}}
+{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} Application\+::prepare (\begin{DoxyParamCaption}\item[{std\+::string}]{proc\+Name,  }\item[{\hyperlink{classElement}{Element} $\ast$}]{element = {\ttfamily 0},  }\item[{int}]{n\+Evt = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 393 of file Application.\+cpp.
+
+
+
+References bookkeeping(), Processus\+::clean(), Processus\+::clone(), Options\+::data\+Storage(), Status\+Code\+::\+F\+A\+I\+L\+U\+RE, Options\+::log\+Storage(), m\+\_\+current, m\+\_\+options, m\+\_\+processus, make\+Dir(), proc\+Db(), shell\+::process(), Proc\+Data\+Base\+::proc\+List(), Processus\+::set\+Element(), Options\+::set\+N\+Errors(), Options\+::set\+N\+Evt(), Options\+::set\+N\+Evt\+Max(), set\+State(), Options\+::set\+Storage\+File(), Options\+::set\+Stream(), Options\+::set\+Time\+Max(), Processus\+::start\+Processing(), Processus\+::storage(), Options\+::storage\+File(), Options\+::storage\+Full\+Path(), Status\+Code\+::\+S\+U\+C\+C\+E\+SS, Object\+::verbose(), and Object\+::warning().
+
+
+
+Referenced by export\+\_\+obj(), and run().
+
+
+\begin{DoxyCode}
+395                                                \{
+396 
+397   \hyperlink{classObject_a83d2db2df682907ea1115ad721c1c4a1}{verbose}(\textcolor{stringliteral}{"Prepare for a new run."},\textcolor{stringliteral}{"Application::prepare"});
+398 
+399   \textcolor{keywordflow}{if} (0==element) element = \textcolor{keyword}{dynamic\_cast<}\hyperlink{classElement}{Element}*\textcolor{keyword}{>}(\hyperlink{classApplication_ab0fd877a3c66c41b22109863e1719ccd}{m\_current});
+400 
+401   std::list<Processus*> listproc = \hyperlink{classApplication_aa5c28af1a7e1c41dada2db2a4d03c57d}{procDb}()->\hyperlink{classProcDataBase_a8145de34e9857f3f6eebd2572740f198}{procList} ( element );
+402   std::list<Processus*>::iterator \hyperlink{namespaceproc}{proc};
+403 
+404   \hyperlink{classProcessus}{Processus} *\hyperlink{namespaceshell_ae1ffb966b730c62592e1093acd8d9e29}{process} = 0;
+405 
+406   \textcolor{keywordflow}{for} (proc=listproc.begin(); proc!=listproc.end(); ++proc) \{
+407     \textcolor{keywordflow}{if} ( procName.compare( (*proc)->name() ) == 0 ) \{
+408       process = (*proc)->\hyperlink{classProcessus_aca8856f6d6d7b7e1fe941f298dcbb502}{clone}();
+409       \textcolor{comment}{//--------------------}
+410       \textcolor{comment}{// Did not chose to make copies : use original processus !}
+411       \textcolor{comment}{//      info("orig="+itos((int)(*proc)));}
+412       \textcolor{comment}{//      process = (*proc)->clone();}
+413       \textcolor{comment}{//      info("orig="+itos((int)(process)));}
+414       \textcolor{keywordflow}{break};
+415     \}
+416   \}
+417   \textcolor{keywordflow}{if} ( 0==process) \{
+418     \hyperlink{classObject_a65cd4fda577711660821fd2cd5a3b4c9}{warning}(\textcolor{stringliteral}{"Processus "} + procName + \textcolor{stringliteral}{" not found."},\textcolor{stringliteral}{"Application::prepare"});
+419     \hyperlink{classApplication_a4a86c9bbf7851753c7b2bc03211092fb}{setState} ( \textcolor{stringliteral}{"READY"} );
+420     \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
+421   \}
+422   \textcolor{keywordflow}{if} (0!=\hyperlink{classApplication_ab5eb4b3d3bef5ab9fce9c69401ce5786}{m\_processus}) \{
+423     \hyperlink{classApplication_ab5eb4b3d3bef5ab9fce9c69401ce5786}{m\_processus}->\hyperlink{classProcessus_aaeb17673b98d2b39f3aa780e335e0968}{clean}();
+424     \textcolor{comment}{//--------------------}
+425     \textcolor{comment}{// did not chose to make copies}
+426     \textcolor{comment}{//    delete m\_processus;}
+427   \}
+428   \hyperlink{classApplication_ab5eb4b3d3bef5ab9fce9c69401ce5786}{m\_processus} = \hyperlink{namespaceshell_ae1ffb966b730c62592e1093acd8d9e29}{process};
+429   \hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->\hyperlink{classOptions_a45368b495036869c67fe0e6bf9abc4e6}{setNErrors} ( 0 );
+430   \hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->\hyperlink{classOptions_ae6a0fdaa736948f5040deb3eb6889268}{setNEvt} ( 0 );
+431   \textcolor{comment}{//  unsigned long currentNEvtMax  = m\_options->nEvtMax();}
+432   \hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->\hyperlink{classOptions_a6d732c0591188469287581bac8a4e3cd}{setNEvtMax} ( nEvent );
+433   \textcolor{keywordflow}{if} (nEvent<0) \{
+434     \hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->\hyperlink{classOptions_aaa921f68319ea83b5c5a13e37a831c7a}{setTimeMax}(\textcolor{keywordtype}{int}(((\textcolor{keywordtype}{double})(CLOCKS\_PER\_SEC))/1.e11*(clock()-nEvent)));
+435     \textcolor{comment}{//    info("Time max is ", itos(m\_options->timeMax()));}
+436   \}
+437   \hyperlink{classApplication_ad5faa0fa744706190844bbc4be58b700}{bookkeeping}();
+438   \textcolor{keywordflow}{if} (\hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->\hyperlink{classOptions_aed7799d10139fa542055b982cb820192}{dataStorage}() || \hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->
+      \hyperlink{classOptions_a33735fffe17485937ab7579d8716b7ee}{logStorage}()) \{
+439     \textcolor{keywordflow}{if} (\hyperlink{classApplication_accaba6b75f26c92e7604df43c853390b}{makeDir}(\hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->\hyperlink{classOptions_aa5fe6b85088f3012226869480790a383}{storageFullPath}()).isFailure()) \{
+440       \hyperlink{classObject_a65cd4fda577711660821fd2cd5a3b4c9}{warning}(\textcolor{stringliteral}{"Could not create storage directory "}+\hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->
+      \hyperlink{classOptions_aa5fe6b85088f3012226869480790a383}{storageFullPath}(),\textcolor{stringliteral}{"Application::prepare"});
+441       \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
+442     \}
+443   \}
+444   \textcolor{keywordflow}{if} (\hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->\hyperlink{classOptions_aed7799d10139fa542055b982cb820192}{dataStorage}() || \hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->
+      \hyperlink{classOptions_a33735fffe17485937ab7579d8716b7ee}{logStorage}()) \{
+445     \hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->\hyperlink{classOptions_ac163281337998af5ca3b7a9617337fef}{setStorageFile} ( \hyperlink{classApplication_ab5eb4b3d3bef5ab9fce9c69401ce5786}{m\_processus}->
+      \hyperlink{classProcessus_a33fa1a0b54a636e5cdd680669fd9ea51}{storage}() );
+446     \textcolor{keywordflow}{if} (\hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->\hyperlink{classOptions_a33735fffe17485937ab7579d8716b7ee}{logStorage}()) \{\hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->
+      \hyperlink{classOptions_af7df7a64e597f0bed79ca979f8144daa}{setStream}(\hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->\hyperlink{classOptions_a6661fe4edd501f7e97527b8f9354ef84}{storageFile}()); \}
+447   \}
+448   \hyperlink{classApplication_ab5eb4b3d3bef5ab9fce9c69401ce5786}{m\_processus}->\hyperlink{classProcessus_a8ddef94227d83d9dae2cd49aebc33353}{setElement}( element );
+449   \textcolor{keywordflow}{if} ( (\hyperlink{classApplication_ab5eb4b3d3bef5ab9fce9c69401ce5786}{m\_processus}->\hyperlink{classProcessus_a09319bde9bed93e290f69b4e04585543}{startProcessing}()).isFailure() ) \{
+450     \hyperlink{classObject_a65cd4fda577711660821fd2cd5a3b4c9}{warning}(\textcolor{stringliteral}{"Program initialization interrupted."},\textcolor{stringliteral}{"Application::prepare"});
+451     \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
+452   \}
+453   \hyperlink{classApplication_a4a86c9bbf7851753c7b2bc03211092fb}{setState} ( \textcolor{stringliteral}{"RUNNING"} );
+454   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
+455 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_aa5c28af1a7e1c41dada2db2a4d03c57d}\label{classApplication_aa5c28af1a7e1c41dada2db2a4d03c57d}} 
+\index{Application@{Application}!proc\+Db@{proc\+Db}}
+\index{proc\+Db@{proc\+Db}!Application@{Application}}
+\subsubsection{\texorpdfstring{proc\+Db()}{procDb()}}
+{\footnotesize\ttfamily \hyperlink{classProcDataBase}{Proc\+Data\+Base}$\ast$ Application\+::proc\+Db (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get accessor to member m\+\_\+proc\+Db \begin{DoxyReturn}{Returns}
+the current value of m\+\_\+proc\+Db 
+\end{DoxyReturn}
+
+
+Definition at line 111 of file Application.\+h.
+
+
+
+Referenced by Computer\+::\+Computer(), export\+\_\+obj(), D\+L\+L\+::init(), prepare(), D\+L\+L\+::print(), set\+Config(), Server\+::start(), and Computer\+::$\sim$\+Computer().
+
+
+\begin{DoxyCode}
+111                           \{
+112     \textcolor{keywordflow}{return} \hyperlink{classApplication_af030cefeb69586f01e965606d5dd8919}{m\_procDb};
+113   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_a8d0918e800a5de01795bc2669d74ed82}\label{classApplication_a8d0918e800a5de01795bc2669d74ed82}} 
+\index{Application@{Application}!processus@{processus}}
+\index{processus@{processus}!Application@{Application}}
+\subsubsection{\texorpdfstring{processus()}{processus()}}
+{\footnotesize\ttfamily \hyperlink{classProcessus}{Processus}$\ast$ Application\+::processus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get accessor to member m\+\_\+processus \begin{DoxyReturn}{Returns}
+the current value of m\+\_\+processus 
+\end{DoxyReturn}
+
+
+Definition at line 248 of file Application.\+h.
+
+
+\begin{DoxyCode}
+248                           \{
+249     \textcolor{keywordflow}{return} \hyperlink{classApplication_ab5eb4b3d3bef5ab9fce9c69401ce5786}{m\_processus};
+250   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classAttrib_a7d4ef7e32d93cb287792b87b857e79f3}\label{classAttrib_a7d4ef7e32d93cb287792b87b857e79f3}} 
+\index{Application@{Application}!remove@{remove}}
+\index{remove@{remove}!Application@{Application}}
+\subsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily void Attrib\+::remove (\begin{DoxyParamCaption}\item[{int}]{attribut }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+Remove an attribut 
+
+Definition at line 86 of file Attrib.\+h.
+
+
+
+References Attrib\+::add(), Attrib\+::attributs(), Attrib\+::m\+\_\+attributs, and Attrib\+::\+U\+N\+D\+E\+F\+I\+N\+ED.
+
+
+
+Referenced by export\+\_\+obj().
+
+
+\begin{DoxyCode}
+86                                \{
+87     std::vector<int>::iterator iter , toremove ;
+88     \textcolor{keywordflow}{for} ( iter  = \hyperlink{classAttrib_ac4bd58a0cc6b38a3b711d609a3d3aacc}{m\_attributs}.begin() ;
+89           iter != \hyperlink{classAttrib_ac4bd58a0cc6b38a3b711d609a3d3aacc}{m\_attributs}.end()   ;
+90           ++iter ) \{
+91       \textcolor{keywordflow}{if} ( attribut == (*iter) ) \{
+92         toremove = iter;
+93       \}
+94     \}
+95     \hyperlink{classAttrib_ac4bd58a0cc6b38a3b711d609a3d3aacc}{m\_attributs}.erase (toremove);
+96     \textcolor{keywordflow}{if}(0==\hyperlink{classAttrib_ac4bd58a0cc6b38a3b711d609a3d3aacc}{m\_attributs}.size()) \hyperlink{classAttrib_a235f773af19c900264a190b00a3b4ad7}{add}(\hyperlink{classAttrib_a69e171d7cc6417835a5a306d3c764235a3a8da2ab97dda18aebab196fe4100531}{Attrib::UNDEFINED});
+97   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_a7fdd5bfee44e49896292f8964037384d}\label{classApplication_a7fdd5bfee44e49896292f8964037384d}} 
+\index{Application@{Application}!run@{run}}
+\index{run@{run}!Application@{Application}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} Application\+::run (\begin{DoxyParamCaption}\item[{std\+::string}]{proc\+Name,  }\item[{\hyperlink{classElement}{Element} $\ast$}]{element = {\ttfamily 0},  }\item[{int}]{n\+Evt = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+Execute the \hyperlink{classApplication}{Application} 
+
+Definition at line 130 of file Application.\+cpp.
+
+
+
+References Status\+Code\+::\+F\+A\+I\+L\+U\+RE, prepare(), status(), svc\+Running(), and terminate().
+
+
+
+Referenced by export\+\_\+obj().
+
+
+\begin{DoxyCode}
+132                                            \{
+133   \textcolor{keywordflow}{if} ( \hyperlink{classApplication_a61dcc20b7f4b7c19b697db7516a62afa}{prepare}(procName, element, nEvent).isFailure() ) \textcolor{keywordflow}{return} 
+      \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
+134   \hyperlink{classStatusCode}{StatusCode} \hyperlink{classApplication_ad429c4d2322f706e3564c1ee05d38ff1}{status} = \hyperlink{classApplication_a35eca6b5e618b508a0736d032e2a9203}{svcRunning}();
+135   \textcolor{keywordflow}{if} (\hyperlink{classApplication_a1a36a06d48d94a9a8fdc29a77d2cb9f0}{terminate}().isFailure()) \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
+136   \textcolor{keywordflow}{return} \hyperlink{classApplication_ad429c4d2322f706e3564c1ee05d38ff1}{status};
+137 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_abfbf40397efe6ff0627d2ce1a55381ce}\label{classApplication_abfbf40397efe6ff0627d2ce1a55381ce}} 
+\index{Application@{Application}!run\+Svc@{run\+Svc}}
+\index{run\+Svc@{run\+Svc}!Application@{Application}}
+\subsubsection{\texorpdfstring{run\+Svc()}{runSvc()}}
+{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} Application\+::run\+Svc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Execute processing service \begin{DoxyReturn}{Returns}
+the result of the processing 
+\end{DoxyReturn}
+
+
+Definition at line 256 of file Application.\+h.
+
+
+\begin{DoxyCode}
+256                        \{
+257     \hyperlink{Application_8h_a59643f52f9391fa83f137814aaae27ef}{RunSvc} svc = \hyperlink{classApplication_ad2c061af424280151c86b9b56d9724d3}{m\_runSvc};
+258     \textcolor{keywordflow}{return} svc();
+259   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_a1712ebe326b3d1855b839c59f52633d8}\label{classApplication_a1712ebe326b3d1855b839c59f52633d8}} 
+\index{Application@{Application}!server@{server}}
+\index{server@{server}!Application@{Application}}
+\subsubsection{\texorpdfstring{server()}{server()}}
+{\footnotesize\ttfamily void Application\+::server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 308 of file Application.\+cpp.
+
+
+
+References Object\+::info(), m\+\_\+server, set\+Config(), set\+State(), and Server\+::start().
+
+
+\begin{DoxyCode}
+308                             \{
+309   \textcolor{keywordflow}{if} ( 0 != \hyperlink{classApplication_a5e6085b0f322d5036177b16113a75b56}{m\_server} ) \{
+310     \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"Delete CAT server."},\textcolor{stringliteral}{"Application::server"});
+311     \textcolor{keyword}{delete} \hyperlink{classApplication_a5e6085b0f322d5036177b16113a75b56}{m\_server};
+312     \hyperlink{classApplication_a5e6085b0f322d5036177b16113a75b56}{m\_server} = 0;
+313   \}
+314   \textcolor{keywordflow}{else} \{
+315     \hyperlink{classApplication_a5e6085b0f322d5036177b16113a75b56}{m\_server} = \textcolor{keyword}{new} \hyperlink{classServer}{Server} ( \textcolor{keyword}{this} );
+316     \hyperlink{classApplication_a5e6085b0f322d5036177b16113a75b56}{m\_server}->\hyperlink{classServer_a039cc5b24c26fa5bb8145335f27bb28e}{start}();
+317     \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"Update server information."},\textcolor{stringliteral}{"Application::server"});
+318     \hyperlink{classApplication_a46614964f765fd5374b216582b599bcb}{setConfig} ();
+319     \hyperlink{classApplication_a4a86c9bbf7851753c7b2bc03211092fb}{setState}  ();
+320   \}
+321 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_a46614964f765fd5374b216582b599bcb}\label{classApplication_a46614964f765fd5374b216582b599bcb}} 
+\index{Application@{Application}!set\+Config@{set\+Config}}
+\index{set\+Config@{set\+Config}!Application@{Application}}
+\subsubsection{\texorpdfstring{set\+Config()}{setConfig()}}
+{\footnotesize\ttfamily void Application\+::set\+Config (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Set accessor to member m\+\_\+config and perform network publication 
+
+Definition at line 236 of file Application.\+cpp.
+
+
+
+References Hierarchy\+::children(), Config\+::config, current(), m\+\_\+config, m\+\_\+current, m\+\_\+server, Object\+::name(), proc\+Db(), Proc\+Data\+Base\+::proc\+List(), Object\+::type(), Server\+::update\+Config(), and Object\+::warning().
+
+
+
+Referenced by initialize(), network(), and server().
+
+
+\begin{DoxyCode}
+236                              \{
+237   \textcolor{keywordflow}{if} ( 0 != \hyperlink{classApplication_a5e6085b0f322d5036177b16113a75b56}{m\_server} ) \{
+238     \textcolor{comment}{// current element}
+239     \hyperlink{classElement}{Element}* \hyperlink{namespaceelement}{element}=\textcolor{keyword}{dynamic\_cast<}\hyperlink{classElement}{Element}*\textcolor{keyword}{>}(\hyperlink{classApplication_ab0fd877a3c66c41b22109863e1719ccd}{m\_current});
+240     \textcolor{keywordflow}{if} (0==element)
+241       \{
+242     \hyperlink{classObject_a65cd4fda577711660821fd2cd5a3b4c9}{warning}(\textcolor{stringliteral}{"Cannot find the Element at the current position of the Hierarchy"},
+243         \textcolor{stringliteral}{"Application::setConfig"});
+244       \}
+245     std::string \hyperlink{classApplication_af25c880ff1e95d863ed058396754a76e}{current}=\hyperlink{classApplication_ab0fd877a3c66c41b22109863e1719ccd}{m\_current}->\hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name}();
+246     current.append(\textcolor{stringliteral}{"["});
+247     current.append(\hyperlink{classApplication_ab0fd877a3c66c41b22109863e1719ccd}{m\_current}->\hyperlink{classObject_a84f99f70f144a83e1582d1d0f84e4e62}{type}());
+248     current.append(\textcolor{stringliteral}{"] "});
+249     \textcolor{comment}{//    strcpy(m\_config->currentElement,current.c\_str());}
+250 
+251     \textcolor{comment}{// reachable processus list}
+252     std::list<Processus*> listproc = \hyperlink{classApplication_aa5c28af1a7e1c41dada2db2a4d03c57d}{procDb}()->\hyperlink{classProcDataBase_a8145de34e9857f3f6eebd2572740f198}{procList} ( element );
+253     std::list<Processus*>::iterator \hyperlink{namespaceproc}{proc};
+254     \textcolor{keywordflow}{for} (proc=listproc.begin(); proc!=listproc.end(); ++proc) \{
+255       \textcolor{keywordflow}{if} ( proc!=listproc.begin() ) \{ current.append(\textcolor{stringliteral}{":"}); \}
+256       current.append((*proc)->name());
+257     \}
+258     current.append(\textcolor{stringliteral}{" "});
+259     \textcolor{comment}{//    strcpy(m\_config->procList,process.c\_str());}
+260 
+261     \textcolor{comment}{// list of children}
+262     std::vector<Hierarchy*> list = \hyperlink{classApplication_ab0fd877a3c66c41b22109863e1719ccd}{m\_current}->\hyperlink{classHierarchy_aa9a76f69e98e052ee1a6e32cea006288}{children} ();
+263     std::vector<Hierarchy*>::iterator iter;
+264     \textcolor{keywordflow}{for} (iter=list.begin(); iter!=list.end(); ++iter) \{
+265       \textcolor{keywordflow}{if} ( iter!=list.begin() ) \{ current.append(\textcolor{stringliteral}{":"}); \}
+266       current.append((*iter)->name());
+267       current.append(\textcolor{stringliteral}{"["});
+268       current.append((*iter)->type());
+269       current.append(\textcolor{stringliteral}{"]"});
+270     \}
+271 
+272     \textcolor{comment}{// finally ...update !}
+273     strcpy(\hyperlink{classApplication_ae05f3e253ea871a194c3d30fd1d3b0c3}{m\_config}->\hyperlink{classConfig_a4f977190294b342f444cacd04f0e909b}{config},current.c\_str());
+274     \hyperlink{classApplication_a5e6085b0f322d5036177b16113a75b56}{m\_server}->\hyperlink{classServer_af58d60a5587813e2aab7fc9016dfa01a}{updateConfig}();
+275   \}
+276 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_a451a04a80f59a76fb13b6fae6c07439a}\label{classApplication_a451a04a80f59a76fb13b6fae6c07439a}} 
+\index{Application@{Application}!set\+Ctrl@{set\+Ctrl}}
+\index{set\+Ctrl@{set\+Ctrl}!Application@{Application}}
+\subsubsection{\texorpdfstring{set\+Ctrl()}{setCtrl()}}
+{\footnotesize\ttfamily void Application\+::set\+Ctrl (\begin{DoxyParamCaption}\item[{std\+::string}]{control }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 306 of file Application.\+h.
+
+
+
+Referenced by export\+\_\+obj().
+
+
+\begin{DoxyCode}
+306                                    \{
+307     \hyperlink{classApplication_aa371ed989ed34038df400c4d1b41b37f}{m\_ctrl} = control;
+308   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_a0f0a9e376d9f1716e01e86c94ae3499f}\label{classApplication_a0f0a9e376d9f1716e01e86c94ae3499f}} 
+\index{Application@{Application}!set\+Current@{set\+Current}}
+\index{set\+Current@{set\+Current}!Application@{Application}}
+\subsubsection{\texorpdfstring{set\+Current()}{setCurrent()}}
+{\footnotesize\ttfamily void Application\+::set\+Current (\begin{DoxyParamCaption}\item[{\hyperlink{classHierarchy}{Hierarchy} $\ast$}]{current }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set accessor to member m\+\_\+current 
+\begin{DoxyParams}{Parameters}
+{\em current} & the new value for m\+\_\+current \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 141 of file Application.\+h.
+
+
+
+Referenced by Application(), create(), and export\+\_\+obj().
+
+
+\begin{DoxyCode}
+141                                        \{
+142     \hyperlink{classApplication_ab0fd877a3c66c41b22109863e1719ccd}{m\_current} = \hyperlink{classApplication_af25c880ff1e95d863ed058396754a76e}{current};
+143   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classObject_a870c5af919958c2136623b2d7816d123}\label{classObject_a870c5af919958c2136623b2d7816d123}} 
+\index{Application@{Application}!set\+Dll\+Name@{set\+Dll\+Name}}
+\index{set\+Dll\+Name@{set\+Dll\+Name}!Application@{Application}}
+\subsubsection{\texorpdfstring{set\+Dll\+Name()}{setDllName()}}
+{\footnotesize\ttfamily void Object\+::set\+Dll\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{dll\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+Set accessor to member m\+\_\+dll\+Name 
+\begin{DoxyParams}{Parameters}
+{\em dll\+Name} & the new value for m\+\_\+dll\+Name \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 66 of file Object.\+h.
+
+
+
+References Object\+::dll\+Name(), and Object\+::m\+\_\+dll\+Name.
+
+
+
+Referenced by D\+L\+L\+::create\+Element(), D\+L\+L\+::create\+Processus(), and Object\+::\+Object().
+
+
+\begin{DoxyCode}
+66                                       \{
+67     \hyperlink{classObject_a01afbeacebb8db6831559972ec362eb3}{m\_dllName} = \hyperlink{classObject_a2e3947f2870094c332d7454117f3ec63}{dllName};
+68   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classObject_a398fe08cba594a0ce6891d59fe4f159f}\label{classObject_a398fe08cba594a0ce6891d59fe4f159f}} 
+\index{Application@{Application}!set\+Id@{set\+Id}}
+\index{set\+Id@{set\+Id}!Application@{Application}}
+\subsubsection{\texorpdfstring{set\+Id()}{setId()}}
+{\footnotesize\ttfamily void Object\+::set\+Id (\begin{DoxyParamCaption}\item[{unsigned char}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line 53 of file Object.\+h.
+
+
+
+References Object\+::id(), and Object\+::m\+\_\+id.
+
+
+
+Referenced by A3\+P\+E\+::\+A3\+P\+E(), D\+C\+U\+::\+D\+C\+U(), export\+\_\+obj(), Fe\+P\+G\+A\+::\+Fe\+P\+G\+A(), I\+C\+E\+C\+A\+Lv3\+::\+I\+C\+E\+C\+A\+Lv3(), I\+C\+Phaser\+::\+I\+C\+Phaser(), M\+S\+Oxxxx\+::\+M\+S\+Oxxxx(), Object\+::\+Object(), Phaser\+::\+Phaser(), Seq\+P\+G\+A\+::\+Seq\+P\+G\+A(), Specs\+Bus\+::\+Specs\+Bus(), Specs\+I2c\+::\+Specs\+I2c(), Specs\+Interface\+::\+Specs\+Interface(), Specs\+Master\+::\+Specs\+Master(), Specs\+Parallel\+Bus\+::\+Specs\+Parallel\+Bus(), and Specs\+Slave\+::\+Specs\+Slave().
+
+
+\begin{DoxyCode}
+53 \{ \hyperlink{classObject_aca74b9dbfed7b5556ea2d56c65b6b6b0}{m\_id}    = \hyperlink{classObject_af99145335cc61ff6e2798ea17db009d2}{id}    ; \} \textcolor{comment}{//< Set Object m\_id}
+\end{DoxyCode}
+\mbox{\Hypertarget{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}\label{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}} 
+\index{Application@{Application}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!Application@{Application}}
+\subsubsection{\texorpdfstring{set\+Name()}{setName()}}
+{\footnotesize\ttfamily void Object\+::set\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line 51 of file Object.\+h.
+
+
+
+References Object\+::m\+\_\+name, and Object\+::name().
+
+
+
+Referenced by A3\+P\+E\+::\+A3\+P\+E(), A3\+P\+E\+\_\+\+Bit\+Flip\+::\+A3\+P\+E\+\_\+\+Bit\+Flip(), Acquisition\+::\+Acquisition(), A\+D\+C\+Measurement\+::\+A\+D\+C\+Measurement(), Computer\+::\+Computer(), create(), Croc\+::\+Croc(), C\+U\+\_\+v1\+::\+C\+U\+\_\+v1(), Current\+Measurement\+::\+Current\+Measurement(), Emulate\+F\+E\+::\+Emulate\+F\+E(), export\+\_\+obj(), F\+E\+B\+\_\+v1\+::\+F\+E\+B\+\_\+v1(), Fe\+P\+G\+A\+::\+Fe\+P\+G\+A(), I\+C\+E\+C\+A\+Lv3\+::\+I\+C\+E\+C\+A\+Lv3(), I\+C\+Phaser\+::\+I\+C\+Phaser(), initialize(), Interface\+::\+Interface(), I\+Odata\+::\+I\+Odata(), I\+Oobject\+::\+I\+Oobject(), network(), N\+I6008\+::\+N\+I6008(), Object\+::\+Object(), Phaser\+Ramp\+Exec\+::\+Phaser\+Ramp\+Exec(), Proto40\+M\+Hz\+\_\+v1\+::\+Proto40\+M\+Hz\+\_\+v1(), R\+A\+M\+::\+R\+A\+M(), Register\+::\+Register(), Register\+Test\+::\+Register\+Test(), Seq\+P\+G\+A\+::\+Seq\+P\+G\+A(), Specs\+Bus\+::\+Specs\+Bus(), Specs\+Glue\+::\+Specs\+Glue(), Specs\+I2c\+::\+Specs\+I2c(), Specs\+Master\+::\+Specs\+Master(), Specs\+Mezzanine\+::\+Specs\+Mezzanine(), Specs\+Parallel\+Bus\+::\+Specs\+Parallel\+Bus(), Storage\+Fifo\+::\+Storage\+Fifo(), Storage\+Fifo\+Acquisition\+::\+Storage\+Fifo\+Acquisition(), Test\+I2\+C\+::\+Test\+I2\+C(), Test\+S\+P\+I\+::\+Test\+S\+P\+I(), Test\+Suite\+::\+Test\+Suite(), Test\+U\+S\+B\+::\+Test\+U\+S\+B(), Usb\+F\+T\+Interface\+::\+Usb\+F\+T\+Interface(), Usb\+F\+T\+Interface\+Test\+::\+Usb\+F\+T\+Interface\+Test(), Usb\+F\+T\+M\+L\+Interface\+::\+Usb\+F\+T\+M\+L\+Interface(), Usb\+I2c\+Bus\+::\+Usb\+I2c\+Bus(), Usb\+M\+L\+I2c\+Bus\+::\+Usb\+M\+L\+I2c\+Bus(), Usb\+M\+L\+Spi\+Bus\+::\+Usb\+M\+L\+Spi\+Bus(), and Usb\+Spi\+Bus\+::\+Usb\+Spi\+Bus().
+
+
+\begin{DoxyCode}
+51 \{ \hyperlink{classObject_a8b83c95c705d2c3ba0d081fe1710f48d}{m\_name}  = \hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name}  ; \} \textcolor{comment}{//< Set Object m\_name}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_ac11402510105adf9a9ccf3daa25ea7d4}\label{classApplication_ac11402510105adf9a9ccf3daa25ea7d4}} 
+\index{Application@{Application}!set\+Plot\+Svc@{set\+Plot\+Svc}}
+\index{set\+Plot\+Svc@{set\+Plot\+Svc}!Application@{Application}}
+\subsubsection{\texorpdfstring{set\+Plot\+Svc()}{setPlotSvc()}}
+{\footnotesize\ttfamily void Application\+::set\+Plot\+Svc (\begin{DoxyParamCaption}\item[{\hyperlink{Application_8h_abaa10d33ca2837dfcf8ba9bff40cdbb6}{Plot\+Svc}}]{svc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set accessor to plot service 
+\begin{DoxyParams}{Parameters}
+{\em svc} & the new value for service \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 282 of file Application.\+h.
+
+
+\begin{DoxyCode}
+282                                  \{
+283     \hyperlink{classApplication_a30d5600ea5e4f36b14f25f903ee3256e}{m\_plotSvc} = svc;
+284   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_a8ed8a66653bb6e665e05a735519c5d5b}\label{classApplication_a8ed8a66653bb6e665e05a735519c5d5b}} 
+\index{Application@{Application}!set\+Processus@{set\+Processus}}
+\index{set\+Processus@{set\+Processus}!Application@{Application}}
+\subsubsection{\texorpdfstring{set\+Processus()}{setProcessus()}}
+{\footnotesize\ttfamily void Application\+::set\+Processus (\begin{DoxyParamCaption}\item[{\hyperlink{classProcessus}{Processus} $\ast$}]{processus }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set accessor to member m\+\_\+processus 
+\begin{DoxyParams}{Parameters}
+{\em processus} & the new value for m\+\_\+processus \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 240 of file Application.\+h.
+
+
+\begin{DoxyCode}
+240                                            \{
+241     \hyperlink{classApplication_ab5eb4b3d3bef5ab9fce9c69401ce5786}{m\_processus} = \hyperlink{classApplication_a8d0918e800a5de01795bc2669d74ed82}{processus};
+242   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_a95ea0ef35377c259687752aedc4b9321}\label{classApplication_a95ea0ef35377c259687752aedc4b9321}} 
+\index{Application@{Application}!set\+Run\+Svc@{set\+Run\+Svc}}
+\index{set\+Run\+Svc@{set\+Run\+Svc}!Application@{Application}}
+\subsubsection{\texorpdfstring{set\+Run\+Svc()}{setRunSvc()}}
+{\footnotesize\ttfamily void Application\+::set\+Run\+Svc (\begin{DoxyParamCaption}\item[{\hyperlink{Application_8h_a59643f52f9391fa83f137814aaae27ef}{Run\+Svc}}]{svc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set accessor to processing service instance 
+\begin{DoxyParams}{Parameters}
+{\em svc} & the new value for service \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 265 of file Application.\+h.
+
+
+\begin{DoxyCode}
+265                                \{
+266     \hyperlink{classApplication_ad2c061af424280151c86b9b56d9724d3}{m\_runSvc} = svc;
+267   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_a4a86c9bbf7851753c7b2bc03211092fb}\label{classApplication_a4a86c9bbf7851753c7b2bc03211092fb}} 
+\index{Application@{Application}!set\+State@{set\+State}}
+\index{set\+State@{set\+State}!Application@{Application}}
+\subsubsection{\texorpdfstring{set\+State()}{setState()}}
+{\footnotesize\ttfamily void Application\+::set\+State (\begin{DoxyParamCaption}\item[{std\+::string}]{state = {\ttfamily std\+:\+:string(\char`\"{}\char`\"{})} }\end{DoxyParamCaption})}
+
+Set accessor to member m\+\_\+state and perform network publication 
+\begin{DoxyParams}{Parameters}
+{\em status} & the new value for m\+\_\+status \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 221 of file Application.\+cpp.
+
+
+
+References m\+\_\+options, m\+\_\+server, m\+\_\+state, State\+::n\+Errors, Options\+::n\+Errors(), State\+::n\+Event, State\+::n\+Event\+Max, Options\+::n\+Evt(), Options\+::n\+Evt\+Max(), State\+::n\+Run, Options\+::run\+Number(), State\+::status, and Server\+::update\+State().
+
+
+
+Referenced by initialize(), network(), prepare(), server(), svc\+Running(), and terminate().
+
+
+\begin{DoxyCode}
+221                                             \{
+222   \textcolor{keywordflow}{if} ( 0 != \hyperlink{classApplication_a5e6085b0f322d5036177b16113a75b56}{m\_server} ) \{
+223     \hyperlink{classApplication_a0ef9832e2d286716e597a1ff21ffcab4}{m\_state}->\hyperlink{classState_aa29a124a8d6060a02bd2468480d7bbd3}{nRun}      = \hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->\hyperlink{classOptions_a2d9447919fe90f9ce8df5530526cbb27}{runNumber}();
+224     \hyperlink{classApplication_a0ef9832e2d286716e597a1ff21ffcab4}{m\_state}->\hyperlink{classState_ac57f536cfe9e9819dfc891ed00dabfe3}{nEventMax} = \hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->\hyperlink{classOptions_ad1f3b03d734c806a2feca418b26bcc9b}{nEvtMax}();
+225     \hyperlink{classApplication_a0ef9832e2d286716e597a1ff21ffcab4}{m\_state}->\hyperlink{classState_af9d335bba28d6946043a07b047556690}{nEvent}    = \hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->\hyperlink{classOptions_ad769b256263a4ac24dd6f989ae724ab7}{nEvt}();
+226     \hyperlink{classApplication_a0ef9832e2d286716e597a1ff21ffcab4}{m\_state}->\hyperlink{classState_a0dc7f2525107b9b294f50c23da27cc2a}{nErrors}   = \hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->\hyperlink{classOptions_acc6474323f0bbe17fa844e9a086b90b8}{nErrors}();
+227     \textcolor{keywordflow}{if} (\hyperlink{classApplication_ad429c4d2322f706e3564c1ee05d38ff1}{status}.compare(\textcolor{stringliteral}{""})!=0) strcpy(\hyperlink{classApplication_a0ef9832e2d286716e597a1ff21ffcab4}{m\_state}->\hyperlink{classState_aaec062c78d5602d066a7960a2e08e1cd}{status},\hyperlink{classApplication_ad429c4d2322f706e3564c1ee05d38ff1}{status}.c\_str());
+228     \textcolor{comment}{// and ... update !}
+229     \hyperlink{classApplication_a5e6085b0f322d5036177b16113a75b56}{m\_server}->\hyperlink{classServer_abaa0b878f4f96454339f1989ec12cc6b}{updateState}();
+230   \}
+231 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classObject_a89557dbbad5bcaa02652f5d7fa35d20f}\label{classObject_a89557dbbad5bcaa02652f5d7fa35d20f}} 
+\index{Application@{Application}!set\+Title@{set\+Title}}
+\index{set\+Title@{set\+Title}!Application@{Application}}
+\subsubsection{\texorpdfstring{set\+Title()}{setTitle()}}
+{\footnotesize\ttfamily void Object\+::set\+Title (\begin{DoxyParamCaption}\item[{std\+::string}]{title }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line 54 of file Object.\+h.
+
+
+
+References Object\+::m\+\_\+title, and Object\+::title().
+
+
+
+Referenced by A3\+P\+E\+\_\+\+Bit\+Flip\+::\+A3\+P\+E\+\_\+\+Bit\+Flip(), Acquisition\+::\+Acquisition(), A\+D\+C\+Measurement\+::\+A\+D\+C\+Measurement(), Current\+Measurement\+::\+Current\+Measurement(), Emulate\+F\+E\+::\+Emulate\+F\+E(), export\+\_\+obj(), Histo1\+D\+::\+Histo1\+D(), Histo2\+D\+::\+Histo2\+D(), Object\+::\+Object(), Phaser\+Ramp\+Exec\+::\+Phaser\+Ramp\+Exec(), Register\+Test\+::\+Register\+Test(), Storage\+Fifo\+::\+Storage\+Fifo(), Storage\+Fifo\+Acquisition\+::\+Storage\+Fifo\+Acquisition(), Test\+I2\+C\+::\+Test\+I2\+C(), Test\+S\+P\+I\+::\+Test\+S\+P\+I(), Test\+Suite\+::\+Test\+Suite(), Test\+U\+S\+B\+::\+Test\+U\+S\+B(), and Usb\+F\+T\+Interface\+Test\+::\+Usb\+F\+T\+Interface\+Test().
+
+
+\begin{DoxyCode}
+54 \{ \hyperlink{classObject_affbeea1953eb5163573b92fad8f75727}{m\_title} = \hyperlink{classObject_a73a0f1a41828fdd8303dd662446fb6c3}{title} ; \} \textcolor{comment}{//< Set Object m\_title}
+\end{DoxyCode}
+\mbox{\Hypertarget{classObject_aae534cc9d982bcb9b99fd505f2e103a5}\label{classObject_aae534cc9d982bcb9b99fd505f2e103a5}} 
+\index{Application@{Application}!set\+Type@{set\+Type}}
+\index{set\+Type@{set\+Type}!Application@{Application}}
+\subsubsection{\texorpdfstring{set\+Type()}{setType()}}
+{\footnotesize\ttfamily void Object\+::set\+Type (\begin{DoxyParamCaption}\item[{std\+::string}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line 52 of file Object.\+h.
+
+
+
+References Object\+::m\+\_\+type, and Object\+::type().
+
+
+
+Referenced by A3\+P\+E\+::\+A3\+P\+E(), A3\+P\+E\+\_\+\+Bit\+Flip\+::\+A3\+P\+E\+\_\+\+Bit\+Flip(), Acquisition\+::\+Acquisition(), A\+D\+C\+Measurement\+::\+A\+D\+C\+Measurement(), Computer\+::\+Computer(), Croc\+::\+Croc(), C\+U\+\_\+v1\+::\+C\+U\+\_\+v1(), Current\+Measurement\+::\+Current\+Measurement(), D\+C\+U\+::\+D\+C\+U(), Emulate\+F\+E\+::\+Emulate\+F\+E(), export\+\_\+obj(), F\+E\+B\+\_\+v1\+::\+F\+E\+B\+\_\+v1(), Fe\+P\+G\+A\+::\+Fe\+P\+G\+A(), I\+C\+E\+C\+A\+Lv3\+::\+I\+C\+E\+C\+A\+Lv3(), I\+C\+Phaser\+::\+I\+C\+Phaser(), initialize(), Interface\+::\+Interface(), I\+Odata\+::\+I\+Odata(), I\+Oobject\+::\+I\+Oobject(), M\+S\+Oxxxx\+::\+M\+S\+Oxxxx(), N\+I6008\+::\+N\+I6008(), Object\+::\+Object(), Phaser\+::\+Phaser(), Phaser\+Ramp\+Exec\+::\+Phaser\+Ramp\+Exec(), Proto40\+M\+Hz\+\_\+v1\+::\+Proto40\+M\+Hz\+\_\+v1(), R\+A\+M\+::\+R\+A\+M(), Register\+::\+Register(), Register\+Test\+::\+Register\+Test(), Seq\+P\+G\+A\+::\+Seq\+P\+G\+A(), Specs\+Bus\+::\+Specs\+Bus(), Specs\+Glue\+::\+Specs\+Glue(), Specs\+I2c\+::\+Specs\+I2c(), Specs\+Master\+::\+Specs\+Master(), Specs\+Mezzanine\+::\+Specs\+Mezzanine(), Specs\+Parallel\+Bus\+::\+Specs\+Parallel\+Bus(), Specs\+Slave\+::\+Specs\+Slave(), Storage\+Fifo\+::\+Storage\+Fifo(), Storage\+Fifo\+Acquisition\+::\+Storage\+Fifo\+Acquisition(), Test\+I2\+C\+::\+Test\+I2\+C(), Test\+S\+P\+I\+::\+Test\+S\+P\+I(), Test\+Suite\+::\+Test\+Suite(), Test\+U\+S\+B\+::\+Test\+U\+S\+B(), Usb\+F\+T\+Interface\+::\+Usb\+F\+T\+Interface(), Usb\+F\+T\+Interface\+Test\+::\+Usb\+F\+T\+Interface\+Test(), Usb\+F\+T\+M\+L\+Interface\+::\+Usb\+F\+T\+M\+L\+Interface(), Usb\+I2c\+Bus\+::\+Usb\+I2c\+Bus(), Usb\+M\+L\+I2c\+Bus\+::\+Usb\+M\+L\+I2c\+Bus(), Usb\+M\+L\+Spi\+Bus\+::\+Usb\+M\+L\+Spi\+Bus(), and Usb\+Spi\+Bus\+::\+Usb\+Spi\+Bus().
+
+
+\begin{DoxyCode}
+52 \{ \hyperlink{classObject_a457a600fe8c00eb1034374f75110a78c}{m\_type}  = \hyperlink{classObject_a84f99f70f144a83e1582d1d0f84e4e62}{type}  ; \} \textcolor{comment}{//< Set Object m\_type}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_a48ecc3d76b3f2390ae1ba76d13f8bd54}\label{classApplication_a48ecc3d76b3f2390ae1ba76d13f8bd54}} 
+\index{Application@{Application}!set\+Version@{set\+Version}}
+\index{set\+Version@{set\+Version}!Application@{Application}}
+\subsubsection{\texorpdfstring{set\+Version()}{setVersion()}}
+{\footnotesize\ttfamily void Application\+::set\+Version (\begin{DoxyParamCaption}\item[{std\+::string}]{version }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set accessor to member m\+\_\+version 
+\begin{DoxyParams}{Parameters}
+{\em version} & the new value for m\+\_\+version \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 290 of file Application.\+h.
+
+
+\begin{DoxyCode}
+290                                       \{
+291     \hyperlink{classApplication_acbbdbd17a3a66782c54dbbe58a9ca8d8}{m\_version} = \hyperlink{classApplication_a060ac7b6d3a6cb111a9ed39bfd0350d1}{version};
+292   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_adfc9b92559f61c92224abf03f51cef47}\label{classApplication_adfc9b92559f61c92224abf03f51cef47}} 
+\index{Application@{Application}!state@{state}}
+\index{state@{state}!Application@{Application}}
+\subsubsection{\texorpdfstring{state()}{state()}}
+{\footnotesize\ttfamily \hyperlink{classState}{State} $\ast$ Application\+::state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+return current \hyperlink{classApplication}{Application} \hyperlink{classState}{State} 
+
+Definition at line 200 of file Application.\+cpp.
+
+
+
+References m\+\_\+state.
+
+
+
+Referenced by loop(), and Server\+::start().
+
+
+\begin{DoxyCode}
+200                             \{
+201   \textcolor{comment}{/*}
+202 \textcolor{comment}{    info("nRun    "+itos(m\_state->nRun),"Application::state");}
+203 \textcolor{comment}{    info("nEvtMax "+itos(m\_state->nEventMax),"Application::state");}
+204 \textcolor{comment}{    info("nEvt    "+itos(m\_state->nEvent),"Application::state");}
+205 \textcolor{comment}{    info("nErrors "+itos(m\_state->nErrors),"Application::state");}
+206 \textcolor{comment}{    info("status  "+std::string(m\_state->status) ,"Application::state");}
+207 \textcolor{comment}{  */}
+208   \textcolor{keywordflow}{return} \hyperlink{classApplication_a0ef9832e2d286716e597a1ff21ffcab4}{m\_state};
+209 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_ad429c4d2322f706e3564c1ee05d38ff1}\label{classApplication_ad429c4d2322f706e3564c1ee05d38ff1}} 
+\index{Application@{Application}!status@{status}}
+\index{status@{status}!Application@{Application}}
+\subsubsection{\texorpdfstring{status()}{status()}}
+{\footnotesize\ttfamily char$\ast$ Application\+::status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get accessor to member m\+\_\+status \begin{DoxyReturn}{Returns}
+the current value of m\+\_\+status 
+\end{DoxyReturn}
+
+
+Definition at line 220 of file Application.\+h.
+
+
+
+References shell\+::network().
+
+
+
+Referenced by run().
+
+
+\begin{DoxyCode}
+220                   \{
+221     \textcolor{keywordflow}{return} \hyperlink{classApplication_a0ef9832e2d286716e597a1ff21ffcab4}{m\_state}->\hyperlink{classState_aaec062c78d5602d066a7960a2e08e1cd}{status};
+222   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_a297f55c288c32cbdadadcbbc26ae7692}\label{classApplication_a297f55c288c32cbdadadcbbc26ae7692}} 
+\index{Application@{Application}!svc\+Plot@{svc\+Plot}}
+\index{svc\+Plot@{svc\+Plot}!Application@{Application}}
+\subsubsection{\texorpdfstring{svc\+Plot()}{svcPlot()}}
+{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} Application\+::svc\+Plot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 384 of file Application.\+cpp.
+
+
+
+References Status\+Code\+::\+F\+A\+I\+L\+U\+RE, and Object\+::warning().
+
+
+\begin{DoxyCode}
+384                                   \{
+385   \hyperlink{classObject_a65cd4fda577711660821fd2cd5a3b4c9}{warning}(\textcolor{stringliteral}{"No implementation in cmd mode yet."},\textcolor{stringliteral}{"Application::svcPlot"});
+386   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
+387 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_a35eca6b5e618b508a0736d032e2a9203}\label{classApplication_a35eca6b5e618b508a0736d032e2a9203}} 
+\index{Application@{Application}!svc\+Running@{svc\+Running}}
+\index{svc\+Running@{svc\+Running}!Application@{Application}}
+\subsubsection{\texorpdfstring{svc\+Running()}{svcRunning()}}
+{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} Application\+::svc\+Running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 343 of file Application.\+cpp.
+
+
+
+References ctrl(), Status\+Code\+::\+F\+A\+I\+L\+U\+RE, Object\+::info(), Status\+Code\+::is\+Failure(), loop(), m\+\_\+options, Options\+::n\+Evt(), Options\+::n\+Evt\+Max(), set\+State(), Status\+Code\+::\+S\+U\+C\+C\+E\+SS, and Object\+::warning().
+
+
+
+Referenced by run().
+
+
+\begin{DoxyCode}
+343                                      \{
+344   \textcolor{keywordflow}{while} ( \hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->\hyperlink{classOptions_ad769b256263a4ac24dd6f989ae724ab7}{nEvt}() < \hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->\hyperlink{classOptions_ad1f3b03d734c806a2feca418b26bcc9b}{nEvtMax}() ) \{
+345     \textcolor{keywordflow}{if} ( \hyperlink{classApplication_ab38055646202ef49c9ee2eda6d48076f}{loop}().\hyperlink{classStatusCode_a5dd22dc6eb2c52fc4cabc58f6dea2eb7}{isFailure}() )
+346       \{
+347     \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
+348     \textcolor{keywordflow}{break};
+349       \}
+350     std::string control = \hyperlink{classApplication_a3eb11c9a1985a3a9d2ec51df957f7c2f}{ctrl}();
+351     \textcolor{keywordflow}{if} ( 0 == control.compare(\textcolor{stringliteral}{"pause"}) ) \{
+352       \hyperlink{classApplication_a4a86c9bbf7851753c7b2bc03211092fb}{setState} ( \textcolor{stringliteral}{"PAUSE"} );
+353       \hyperlink{classObject_a65cd4fda577711660821fd2cd5a3b4c9}{warning}(\textcolor{stringliteral}{"Pause."},\textcolor{stringliteral}{"Application::svcRunning"});
+354       \textcolor{keywordtype}{bool} pause = \textcolor{keyword}{true};
+355       \textcolor{keywordflow}{while} ( pause ) \{
+356     std::string newctrl = \hyperlink{classApplication_a3eb11c9a1985a3a9d2ec51df957f7c2f}{ctrl}();
+357     \textcolor{keywordtype}{int} delay = 1000; \textcolor{comment}{// delay in loop in ms}
+358     usleep( 1000 * delay );
+359     \textcolor{keywordflow}{if} ( 0==newctrl.compare (\textcolor{stringliteral}{"stop"}) ) \{
+360       pause = \textcolor{keyword}{false};
+361     \}
+362     \textcolor{keywordflow}{if} ( 0==newctrl.compare (\textcolor{stringliteral}{"resume"}) ) \{
+363       \hyperlink{classApplication_a4a86c9bbf7851753c7b2bc03211092fb}{setState} ( \textcolor{stringliteral}{"RUNNING"} );
+364       pause = \textcolor{keyword}{false};
+365     \}
+366     newctrl.clear();
+367       \}
+368       control.clear();
+369     \}
+370     \textcolor{keywordflow}{if} ( 0 == control.compare(\textcolor{stringliteral}{"stop"}) ) \{
+371       \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"User interruption."},\textcolor{stringliteral}{"Application::svcRunning"});
+372       control.clear();
+373       \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
+374       \textcolor{keywordflow}{break};
+375     \}
+376   \}
+377   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
+378 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_a1a36a06d48d94a9a8fdc29a77d2cb9f0}\label{classApplication_a1a36a06d48d94a9a8fdc29a77d2cb9f0}} 
+\index{Application@{Application}!terminate@{terminate}}
+\index{terminate@{terminate}!Application@{Application}}
+\subsubsection{\texorpdfstring{terminate()}{terminate()}}
+{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} Application\+::terminate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 485 of file Application.\+cpp.
+
+
+
+References Processus\+::end\+Processing(), Options\+::inc\+Run\+Number(), Object\+::info(), itos(), Options\+::log\+Storage(), m\+\_\+options, m\+\_\+processus, Object\+::name(), Options\+::n\+Evt(), Options\+::run\+Number\+Management(), Options\+::set\+N\+Evt(), set\+State(), Options\+::set\+Stream(), Status\+Code\+::\+S\+U\+C\+C\+E\+SS, and Object\+::title().
+
+
+
+Referenced by export\+\_\+obj(), and run().
+
+
+\begin{DoxyCode}
+485                                     \{
+486   \hyperlink{classApplication_ab5eb4b3d3bef5ab9fce9c69401ce5786}{m\_processus}->\hyperlink{classProcessus_a5e4da662989d356b89d490b89c7afbfd}{endProcessing}();
+487   \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"Processus "} + \hyperlink{classApplication_ab5eb4b3d3bef5ab9fce9c69401ce5786}{m\_processus}->\hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name}() +\textcolor{stringliteral}{" '"} +
+488        std::string(\hyperlink{classApplication_ab5eb4b3d3bef5ab9fce9c69401ce5786}{m\_processus}->\hyperlink{classObject_a73a0f1a41828fdd8303dd662446fb6c3}{title}().c\_str()) +
+489        \textcolor{stringliteral}{"' completed ["} +
+490        \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}( \hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->\hyperlink{classOptions_ad769b256263a4ac24dd6f989ae724ab7}{nEvt}() ) + \textcolor{stringliteral}{" events]"},
+491        \textcolor{stringliteral}{"Application::svcRunning"});
+492   \textcolor{keywordflow}{if} ( \hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->\hyperlink{classOptions_a33735fffe17485937ab7579d8716b7ee}{logStorage}()) \{
+493     \hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->\hyperlink{classOptions_af7df7a64e597f0bed79ca979f8144daa}{setStream}();
+494   \}
+495   \textcolor{comment}{//  graphSvc();}
+496   \textcolor{comment}{//  m\_options->setNEvtMax ( currentNEvtMax );}
+497   \textcolor{keywordflow}{if} (\hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->\hyperlink{classOptions_a7654a2c3d67baae08f61edc18bec367e}{runNumberManagement}() ) \hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->
+      \hyperlink{classOptions_a0bf512fc9126cd76acabaa4c3b65d7fb}{incRunNumber} ( );
+498   \hyperlink{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}{m\_options}->\hyperlink{classOptions_ae6a0fdaa736948f5040deb3eb6889268}{setNEvt} ( 0 );
+499   \hyperlink{classApplication_a4a86c9bbf7851753c7b2bc03211092fb}{setState} ( \textcolor{stringliteral}{"READY"} );
+500 \textcolor{preprocessor}{#ifdef \_NETWORK\_}
+501   \hyperlink{classApplication_ab5eb4b3d3bef5ab9fce9c69401ce5786}{m\_processus}->updateServices();
+502 \textcolor{preprocessor}{#endif}
+503   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
+504 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classObject_a73a0f1a41828fdd8303dd662446fb6c3}\label{classObject_a73a0f1a41828fdd8303dd662446fb6c3}} 
+\index{Application@{Application}!title@{title}}
+\index{title@{title}!Application@{Application}}
+\subsubsection{\texorpdfstring{title()}{title()}}
+{\footnotesize\ttfamily std\+::string Object\+::title (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line 31 of file Object.\+h.
+
+
+
+References Object\+::m\+\_\+title.
+
+
+
+Referenced by export\+\_\+obj(), export\+\_\+proc(), Data\+::hist2d(), Storage\+Fifo\+Acquisition\+::initialize(), Acquisition\+::initialize(), Current\+Measurement\+::initialize(), A\+D\+C\+Measurement\+::initialize(), A3\+P\+E\+\_\+\+Bit\+Flip\+::\+Plot(), Usb\+F\+T\+Interface\+Test\+::\+Plot(), Test\+Suite\+::\+Plot(), Test\+S\+P\+I\+::\+Plot(), Test\+U\+S\+B\+::\+Plot(), Test\+I2\+C\+::\+Plot(), Object\+::set\+Title(), and terminate().
+
+
+\begin{DoxyCode}
+31 \{ \textcolor{keywordflow}{return} \hyperlink{classObject_affbeea1953eb5163573b92fad8f75727}{m\_title};      \} \textcolor{comment}{// < Get Object m\_title}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_ab4a53c51303b155b738970bec9a6ce89}\label{classApplication_ab4a53c51303b155b738970bec9a6ce89}} 
+\index{Application@{Application}!tree\+Recursive@{tree\+Recursive}}
+\index{tree\+Recursive@{tree\+Recursive}!Application@{Application}}
+\subsubsection{\texorpdfstring{tree\+Recursive()}{treeRecursive()}}
+{\footnotesize\ttfamily void Application\+::tree\+Recursive (\begin{DoxyParamCaption}\item[{\hyperlink{classHierarchy}{Hierarchy} $\ast$}]{,  }\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classObject_a84f99f70f144a83e1582d1d0f84e4e62}\label{classObject_a84f99f70f144a83e1582d1d0f84e4e62}} 
+\index{Application@{Application}!type@{type}}
+\index{type@{type}!Application@{Application}}
+\subsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily std\+::string Object\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line 29 of file Object.\+h.
+
+
+
+References Object\+::m\+\_\+type.
+
+
+
+Referenced by D\+L\+L\+Mgr\+::destroy(), D\+L\+L\+::destroy(), I\+Odata\+::dump(), export\+\_\+obj(), Usb\+M\+L\+I2c\+Bus\+::init(), Usb\+M\+L\+Spi\+Bus\+::init(), Usb\+I2c\+Bus\+::init(), Usb\+Spi\+Bus\+::init(), Storage\+Fifo\+::initialize(), Storage\+Fifo\+Acquisition\+::initialize(), A3\+P\+E\+\_\+\+Bit\+Flip\+::initialize(), Acquisition\+::initialize(), Emulate\+F\+E\+::initialize(), Phaser\+Ramp\+Exec\+::initialize(), Proc\+Data\+Base\+::list(), Hierarchy\+::parent(), Hierarchy\+::path\+Typed(), D\+L\+L\+::print(), Proc\+Data\+Base\+::proc\+List(), set\+Config(), Element\+::set\+Connection(), Emulate\+F\+E\+::set\+Generation\+Type(), Object\+::set\+Type(), and Hierarchy\+::tree().
+
+
+\begin{DoxyCode}
+29 \{ \textcolor{keywordflow}{return} \hyperlink{classObject_a457a600fe8c00eb1034374f75110a78c}{m\_type};       \} \textcolor{comment}{//< Get Object m\_type}
+\end{DoxyCode}
+\mbox{\Hypertarget{classObject_a83d2db2df682907ea1115ad721c1c4a1}\label{classObject_a83d2db2df682907ea1115ad721c1c4a1}} 
+\index{Application@{Application}!verbose@{verbose}}
+\index{verbose@{verbose}!Application@{Application}}
+\subsubsection{\texorpdfstring{verbose()}{verbose()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Object\+::verbose (\begin{DoxyParamCaption}\item[{std\+::string}]{mymsg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line 36 of file Object.\+h.
+
+
+
+References Object\+::m\+\_\+log, Object\+::m\+\_\+name, Msg\+Svc\+::msg\+Svc(), and Msg\+Svc\+::\+V\+E\+R\+B\+O\+SE.
+
+
+
+Referenced by D\+C\+U\+::acquire(), export\+\_\+obj(), D\+C\+U\+::init(), prepare(), Usb\+F\+T\+Interface\+::read(), Usb\+F\+T\+M\+L\+Interface\+::read(), D\+C\+U\+::read\+Mode(), D\+C\+U\+::reset(), D\+C\+U\+::set\+H\+I\+R(), D\+C\+U\+::set\+L\+I\+R(), Specs\+Interface\+::specs\+Read\+I2c(), Specs\+Interface\+::specs\+Read\+Parallel(), Specs\+Interface\+::specs\+Read\+Register(), Specs\+Interface\+::specs\+Write\+I2c(), Specs\+Interface\+::specs\+Write\+Parallel(), Specs\+Interface\+::specs\+Write\+Register(), Usb\+F\+T\+Interface\+::usb\+Read(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Read(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Read\+U16(), Usb\+F\+T\+Interface\+::usb\+Read\+U16(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Read\+U32(), Usb\+F\+T\+Interface\+::usb\+Read\+U32(), Usb\+F\+T\+Interface\+::usb\+Read\+U8(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Read\+U8(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write(), Usb\+F\+T\+Interface\+::usb\+Write(), Usb\+F\+T\+Interface\+::usb\+Write\+Read(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+Read(), Usb\+F\+T\+Interface\+::usb\+Write\+U16(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+U16(), Usb\+F\+T\+Interface\+::usb\+Write\+U32(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+U32(), Usb\+F\+T\+Interface\+::usb\+Write\+U8(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+U8(), wait(), Usb\+F\+T\+M\+L\+Interface\+::write(), and Usb\+F\+T\+Interface\+::write().
+
+
+\begin{DoxyCode}
+36 \{ \hyperlink{classObject_a0d269813dd7ac1f24bc143031e2963f2}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926af655256b06494ade5ba830abe5401ec9}{MsgSvc::VERBOSE} , mymsg, \hyperlink{classObject_a8b83c95c705d2c3ba0d081fe1710f48d}{m\_name} ); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classObject_a2d4120195317e2a3c6532e8bb9f3da68}\label{classObject_a2d4120195317e2a3c6532e8bb9f3da68}} 
+\index{Application@{Application}!verbose@{verbose}}
+\index{verbose@{verbose}!Application@{Application}}
+\subsubsection{\texorpdfstring{verbose()}{verbose()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Object\+::verbose (\begin{DoxyParamCaption}\item[{std\+::string}]{mymsg,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line 44 of file Object.\+h.
+
+
+
+References Object\+::m\+\_\+log, Msg\+Svc\+::msg\+Svc(), and Msg\+Svc\+::\+V\+E\+R\+B\+O\+SE.
+
+
+\begin{DoxyCode}
+44 \{ \hyperlink{classObject_a0d269813dd7ac1f24bc143031e2963f2}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926af655256b06494ade5ba830abe5401ec9}{MsgSvc::VERBOSE} , mymsg, \hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name} ); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classApplication_a060ac7b6d3a6cb111a9ed39bfd0350d1}\label{classApplication_a060ac7b6d3a6cb111a9ed39bfd0350d1}} 
+\index{Application@{Application}!version@{version}}
+\index{version@{version}!Application@{Application}}
+\subsubsection{\texorpdfstring{version()}{version()}}
+{\footnotesize\ttfamily std\+::string Application\+::version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get accessor to member m\+\_\+version \begin{DoxyReturn}{Returns}
+the current value of m\+\_\+version 
+\end{DoxyReturn}
+
+
+Definition at line 298 of file Application.\+h.
+
+
+\begin{DoxyCode}
+298                        \{
+299     \textcolor{keywordflow}{return} \hyperlink{classApplication_acbbdbd17a3a66782c54dbbe58a9ca8d8}{m\_version};
+300   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classObject_a65cd4fda577711660821fd2cd5a3b4c9}\label{classObject_a65cd4fda577711660821fd2cd5a3b4c9}} 
+\index{Application@{Application}!warning@{warning}}
+\index{warning@{warning}!Application@{Application}}
+\subsubsection{\texorpdfstring{warning()}{warning()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Object\+::warning (\begin{DoxyParamCaption}\item[{std\+::string}]{mymsg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line 39 of file Object.\+h.
+
+
+
+References Object\+::m\+\_\+log, Object\+::m\+\_\+name, Msg\+Svc\+::msg\+Svc(), and Msg\+Svc\+::\+W\+A\+R\+N\+I\+NG.
+
+
+
+Referenced by D\+C\+U\+::acquire(), A3\+P\+E\+::acquisition(), Plot\+::add(), bookkeeping(), check\+Cmd(), Hierarchy\+::child(), Hierarchy\+::child\+Typed(), Usb\+Spi\+Bus\+::clock\+Divider(), L\+S\+Delay\+Chip\+V1\+::config\+Reg\+Bulk\+Read(), L\+S\+Delay\+Chip\+V1\+::config\+Reg\+Bulk\+Write(), Element\+::connection(), D\+C\+U\+::convert(), create(), Specs\+Glue\+::date(), Specs\+Mezzanine\+::date(), Specs\+Slave\+::detect(), N\+I6008\+::device(), A3\+P\+E\+\_\+\+Bit\+Flip\+::execute(), Acquisition\+::execute(), Usb\+F\+T\+Interface\+Test\+::execute(), export\+\_\+obj(), F\+E\+B\+\_\+v1\+::gbt\+Acknowledge\+Config(), F\+E\+B\+\_\+v1\+::gbt\+Clock\+Strength(), F\+E\+B\+\_\+v1\+::gbt\+D\+L\+L\+Reset(), L\+S\+Delay\+Chip\+V1\+::get\+Config\+Reg(), Specs\+Glue\+::i2c\+Clk\+Mode(), D\+C\+U\+::init(), Specs\+Slave\+::init(), Storage\+Fifo\+::initialize(), Storage\+Fifo\+Acquisition\+::initialize(), A3\+P\+E\+\_\+\+Bit\+Flip\+::initialize(), Acquisition\+::initialize(), Emulate\+F\+E\+::initialize(), Test\+I2\+C\+::initialize(), Test\+S\+P\+I\+::initialize(), Test\+U\+S\+B\+::initialize(), Specs\+Glue\+::led(), Specs\+Mezzanine\+::led(), A3\+P\+E\+::load\+Trigger(), loop(), make\+Dir(), Data\+::name(), prepare(), Usb\+I2c\+Bus\+::read(), Phaser\+::read(), I\+C\+Phaser\+::read(), Usb\+Spi\+Bus\+::read(), D\+C\+U\+::read\+Mode(), D\+C\+U\+::reset(), Specs\+Slave\+::reset(), Specs\+Master\+::reset(), I\+C\+Phaser\+::reset(), Specs\+Slave\+::reset\+Internal(), Server\+::\+Server(), F\+E\+B\+\_\+v1\+::set\+Calib\+Cte(), Storage\+Fifo\+Acquisition\+::set\+Channels(), Acquisition\+::set\+Channels(), Usb\+Spi\+Bus\+::set\+Clock\+Divider(), F\+E\+B\+\_\+v1\+::set\+Clock\+Falling\+Edge(), set\+Config(), L\+S\+Delay\+Chip\+V1\+::set\+Config\+Reg(), Storage\+Fifo\+Acquisition\+::set\+Depth(), Acquisition\+::set\+Depth(), A3\+P\+E\+::set\+Enable\+A\+D\+C(), F\+E\+B\+\_\+v1\+::set\+Gain4(), F\+E\+B\+\_\+v1\+::set\+Gbt80\+M\+Hz\+Clk\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Clock\+Strength(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Data\+Path(), F\+E\+B\+\_\+v1\+::set\+Gbt\+D\+L\+L\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Enable\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Mode(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Term\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Track\+Mode(), D\+C\+U\+::set\+H\+I\+R(), Specs\+Glue\+::set\+I2c\+Clk\+Mode(), Specs\+Mezzanine\+::set\+Led(), D\+C\+U\+::set\+L\+I\+R(), F\+E\+B\+\_\+v1\+::set\+Output\+Eport(), A3\+P\+E\+::set\+Pipeline(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+A\+D\+C\+Enable(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+P\+M\+Enable(), R\+A\+M\+::set\+Size(), Specs\+Master\+::set\+Speed(), F\+E\+B\+\_\+v1\+::set\+Stop\+Inj\+Loop(), F\+E\+B\+\_\+v1\+::set\+Test\+Duration(), I\+Odata\+::set\+U16(), I\+Odata\+::set\+U32(), I\+Odata\+::set\+U8(), Test\+Suite\+::sigma(), Specs\+Interface\+::specs\+Read\+I2c(), Specs\+Interface\+::specs\+Read\+Parallel(), Specs\+Interface\+::specs\+Read\+Register(), Specs\+Interface\+::specs\+Write\+I2c(), Specs\+Interface\+::specs\+Write\+Parallel(), Specs\+Interface\+::specs\+Write\+Register(), L\+S\+Delay\+Chip\+V1\+::spi\+B\+E\+R\+Test(), I\+C\+E\+C\+A\+Lv3\+::spi\+F\+E\+R\+Test(), I\+C\+E\+C\+A\+Lv3\+::spi\+Read(), I\+C\+E\+C\+A\+Lv3\+::spi\+Write(), I\+C\+E\+C\+A\+Lv3\+::spi\+Write\+Safe(), Server\+::start(), I\+C\+Phaser\+::status(), svc\+Plot(), svc\+Running(), Data\+::title(), Server\+::update\+Config(), Server\+::update\+State(), Data\+::vector\+Ptr(), Usb\+I2c\+Bus\+::write(), Phaser\+::write(), I\+C\+Phaser\+::write(), Usb\+Spi\+Bus\+::write(), F\+E\+B\+\_\+v1\+::write\+Fifo\+Inject\+F\+E(), and F\+E\+B\+\_\+v1\+::write\+Fifo\+L\+L\+T\+F\+E().
+
+
+\begin{DoxyCode}
+39 \{ \hyperlink{classObject_a0d269813dd7ac1f24bc143031e2963f2}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a7cefae88f2ba26b2b05b676a383c834b}{MsgSvc::WARNING} , mymsg, \hyperlink{classObject_a8b83c95c705d2c3ba0d081fe1710f48d}{m\_name} ); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classObject_a11f101db4dd73d9391b0231818881d86}\label{classObject_a11f101db4dd73d9391b0231818881d86}} 
+\index{Application@{Application}!warning@{warning}}
+\index{warning@{warning}!Application@{Application}}
+\subsubsection{\texorpdfstring{warning()}{warning()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Object\+::warning (\begin{DoxyParamCaption}\item[{std\+::string}]{mymsg,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line 47 of file Object.\+h.
+
+
+
+References Object\+::m\+\_\+log, Msg\+Svc\+::msg\+Svc(), and Msg\+Svc\+::\+W\+A\+R\+N\+I\+NG.
+
+
+\begin{DoxyCode}
+47 \{ \hyperlink{classObject_a0d269813dd7ac1f24bc143031e2963f2}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a7cefae88f2ba26b2b05b676a383c834b}{MsgSvc::WARNING} , mymsg, \hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name} ); \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classApplication_ac6ecd97be07092147986a7a5965c54ec}\label{classApplication_ac6ecd97be07092147986a7a5965c54ec}} 
+\index{Application@{Application}!m\+\_\+account\+Name@{m\+\_\+account\+Name}}
+\index{m\+\_\+account\+Name@{m\+\_\+account\+Name}!Application@{Application}}
+\subsubsection{\texorpdfstring{m\+\_\+account\+Name}{m\_accountName}}
+{\footnotesize\ttfamily std\+::string Application\+::m\+\_\+account\+Name\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 351 of file Application.\+h.
+
+
+
+Referenced by Application(), and banner().
+
+\mbox{\Hypertarget{classAttrib_a3414521d7a82476e874b25a5407b5e63}\label{classAttrib_a3414521d7a82476e874b25a5407b5e63}} 
+\index{Application@{Application}!m\+\_\+attrib\+String@{m\+\_\+attrib\+String}}
+\index{m\+\_\+attrib\+String@{m\+\_\+attrib\+String}!Application@{Application}}
+\subsubsection{\texorpdfstring{m\+\_\+attrib\+String}{m\_attribString}}
+{\footnotesize\ttfamily std\+::string Attrib\+::m\+\_\+attrib\+String\mbox{[}10\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line 105 of file Attrib.\+h.
+
+
+
+Referenced by Attrib\+::\+Attrib(), and Attrib\+::attributs().
+
+\mbox{\Hypertarget{classApplication_a17c9fd27b6abbc18abb6d5de5d7648ef}\label{classApplication_a17c9fd27b6abbc18abb6d5de5d7648ef}} 
+\index{Application@{Application}!m\+\_\+computer@{m\+\_\+computer}}
+\index{m\+\_\+computer@{m\+\_\+computer}!Application@{Application}}
+\subsubsection{\texorpdfstring{m\+\_\+computer}{m\_computer}}
+{\footnotesize\ttfamily \hyperlink{classComputer}{Computer}$\ast$ Application\+::m\+\_\+computer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 364 of file Application.\+h.
+
+
+
+Referenced by Application().
+
+\mbox{\Hypertarget{classApplication_ae05f3e253ea871a194c3d30fd1d3b0c3}\label{classApplication_ae05f3e253ea871a194c3d30fd1d3b0c3}} 
+\index{Application@{Application}!m\+\_\+config@{m\+\_\+config}}
+\index{m\+\_\+config@{m\+\_\+config}!Application@{Application}}
+\subsubsection{\texorpdfstring{m\+\_\+config}{m\_config}}
+{\footnotesize\ttfamily \hyperlink{classConfig}{Config}$\ast$ Application\+::m\+\_\+config\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 369 of file Application.\+h.
+
+
+
+Referenced by Application(), config(), initialize(), set\+Config(), and $\sim$\+Application().
+
+\mbox{\Hypertarget{classApplication_aa371ed989ed34038df400c4d1b41b37f}\label{classApplication_aa371ed989ed34038df400c4d1b41b37f}} 
+\index{Application@{Application}!m\+\_\+ctrl@{m\+\_\+ctrl}}
+\index{m\+\_\+ctrl@{m\+\_\+ctrl}!Application@{Application}}
+\subsubsection{\texorpdfstring{m\+\_\+ctrl}{m\_ctrl}}
+{\footnotesize\ttfamily std\+::string Application\+::m\+\_\+ctrl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 376 of file Application.\+h.
+
+
+
+Referenced by initialize().
+
+\mbox{\Hypertarget{classApplication_ab0fd877a3c66c41b22109863e1719ccd}\label{classApplication_ab0fd877a3c66c41b22109863e1719ccd}} 
+\index{Application@{Application}!m\+\_\+current@{m\+\_\+current}}
+\index{m\+\_\+current@{m\+\_\+current}!Application@{Application}}
+\subsubsection{\texorpdfstring{m\+\_\+current}{m\_current}}
+{\footnotesize\ttfamily \hyperlink{classHierarchy}{Hierarchy}$\ast$ Application\+::m\+\_\+current\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 358 of file Application.\+h.
+
+
+
+Referenced by create(), prepare(), and set\+Config().
+
+\mbox{\Hypertarget{classApplication_a66b06cbeb824fe00ecd11499fcf01c55}\label{classApplication_a66b06cbeb824fe00ecd11499fcf01c55}} 
+\index{Application@{Application}!m\+\_\+dll\+Mgr@{m\+\_\+dll\+Mgr}}
+\index{m\+\_\+dll\+Mgr@{m\+\_\+dll\+Mgr}!Application@{Application}}
+\subsubsection{\texorpdfstring{m\+\_\+dll\+Mgr}{m\_dllMgr}}
+{\footnotesize\ttfamily \hyperlink{classDLLMgr}{D\+L\+L\+Mgr}$\ast$ Application\+::m\+\_\+dll\+Mgr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 362 of file Application.\+h.
+
+
+
+Referenced by Application(), create(), and $\sim$\+Application().
+
+\mbox{\Hypertarget{classApplication_a20094c2bf311e2046942eeeec4a11f02}\label{classApplication_a20094c2bf311e2046942eeeec4a11f02}} 
+\index{Application@{Application}!m\+\_\+host\+Name@{m\+\_\+host\+Name}}
+\index{m\+\_\+host\+Name@{m\+\_\+host\+Name}!Application@{Application}}
+\subsubsection{\texorpdfstring{m\+\_\+host\+Name}{m\_hostName}}
+{\footnotesize\ttfamily std\+::string Application\+::m\+\_\+host\+Name\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 352 of file Application.\+h.
+
+
+
+Referenced by Application(), and banner().
+
+\mbox{\Hypertarget{classApplication_ae316ea43e74cc0d536dcbb16b2fbb974}\label{classApplication_ae316ea43e74cc0d536dcbb16b2fbb974}} 
+\index{Application@{Application}!m\+\_\+is\+Running@{m\+\_\+is\+Running}}
+\index{m\+\_\+is\+Running@{m\+\_\+is\+Running}!Application@{Application}}
+\subsubsection{\texorpdfstring{m\+\_\+is\+Running}{m\_isRunning}}
+{\footnotesize\ttfamily bool Application\+::m\+\_\+is\+Running\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 357 of file Application.\+h.
+
+\mbox{\Hypertarget{classApplication_a7dc2bb72356cd9186eaad49eb506995a}\label{classApplication_a7dc2bb72356cd9186eaad49eb506995a}} 
+\index{Application@{Application}!m\+\_\+network@{m\+\_\+network}}
+\index{m\+\_\+network@{m\+\_\+network}!Application@{Application}}
+\subsubsection{\texorpdfstring{m\+\_\+network}{m\_network}}
+{\footnotesize\ttfamily bool Application\+::m\+\_\+network\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 375 of file Application.\+h.
+
+
+
+Referenced by initialize(), and network().
+
+\mbox{\Hypertarget{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}\label{classApplication_a3b0c74bf1ba99a5042990e3fefaa8963}} 
+\index{Application@{Application}!m\+\_\+options@{m\+\_\+options}}
+\index{m\+\_\+options@{m\+\_\+options}!Application@{Application}}
+\subsubsection{\texorpdfstring{m\+\_\+options}{m\_options}}
+{\footnotesize\ttfamily \hyperlink{classOptions}{Options}$\ast$ Application\+::m\+\_\+options\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 361 of file Application.\+h.
+
+
+
+Referenced by Application(), loop(), prepare(), set\+State(), svc\+Running(), terminate(), and $\sim$\+Application().
+
+\mbox{\Hypertarget{classApplication_a59f90c6ff4ee3db646ca656c71cc77e7}\label{classApplication_a59f90c6ff4ee3db646ca656c71cc77e7}} 
+\index{Application@{Application}!m\+\_\+os\+Name@{m\+\_\+os\+Name}}
+\index{m\+\_\+os\+Name@{m\+\_\+os\+Name}!Application@{Application}}
+\subsubsection{\texorpdfstring{m\+\_\+os\+Name}{m\_osName}}
+{\footnotesize\ttfamily std\+::string Application\+::m\+\_\+os\+Name\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 353 of file Application.\+h.
+
+
+
+Referenced by Application(), and banner().
+
+\mbox{\Hypertarget{classApplication_a17949f767d2598e92acb0885bb399dc0}\label{classApplication_a17949f767d2598e92acb0885bb399dc0}} 
+\index{Application@{Application}!m\+\_\+os\+Version@{m\+\_\+os\+Version}}
+\index{m\+\_\+os\+Version@{m\+\_\+os\+Version}!Application@{Application}}
+\subsubsection{\texorpdfstring{m\+\_\+os\+Version}{m\_osVersion}}
+{\footnotesize\ttfamily std\+::string Application\+::m\+\_\+os\+Version\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 354 of file Application.\+h.
+
+
+
+Referenced by Application(), and banner().
+
+\mbox{\Hypertarget{classApplication_a30d5600ea5e4f36b14f25f903ee3256e}\label{classApplication_a30d5600ea5e4f36b14f25f903ee3256e}} 
+\index{Application@{Application}!m\+\_\+plot\+Svc@{m\+\_\+plot\+Svc}}
+\index{m\+\_\+plot\+Svc@{m\+\_\+plot\+Svc}!Application@{Application}}
+\subsubsection{\texorpdfstring{m\+\_\+plot\+Svc}{m\_plotSvc}}
+{\footnotesize\ttfamily \hyperlink{Application_8h_abaa10d33ca2837dfcf8ba9bff40cdbb6}{Plot\+Svc} Application\+::m\+\_\+plot\+Svc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 372 of file Application.\+h.
+
+\mbox{\Hypertarget{classApplication_af030cefeb69586f01e965606d5dd8919}\label{classApplication_af030cefeb69586f01e965606d5dd8919}} 
+\index{Application@{Application}!m\+\_\+proc\+Db@{m\+\_\+proc\+Db}}
+\index{m\+\_\+proc\+Db@{m\+\_\+proc\+Db}!Application@{Application}}
+\subsubsection{\texorpdfstring{m\+\_\+proc\+Db}{m\_procDb}}
+{\footnotesize\ttfamily \hyperlink{classProcDataBase}{Proc\+Data\+Base}$\ast$ Application\+::m\+\_\+proc\+Db\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 363 of file Application.\+h.
+
+
+
+Referenced by Application(), and $\sim$\+Application().
+
+\mbox{\Hypertarget{classApplication_ab5eb4b3d3bef5ab9fce9c69401ce5786}\label{classApplication_ab5eb4b3d3bef5ab9fce9c69401ce5786}} 
+\index{Application@{Application}!m\+\_\+processus@{m\+\_\+processus}}
+\index{m\+\_\+processus@{m\+\_\+processus}!Application@{Application}}
+\subsubsection{\texorpdfstring{m\+\_\+processus}{m\_processus}}
+{\footnotesize\ttfamily \hyperlink{classProcessus}{Processus}$\ast$ Application\+::m\+\_\+processus\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 366 of file Application.\+h.
+
+
+
+Referenced by loop(), prepare(), and terminate().
+
+\mbox{\Hypertarget{classApplication_a84f3f07f42ad77ad46cc8ef42d609948}\label{classApplication_a84f3f07f42ad77ad46cc8ef42d609948}} 
+\index{Application@{Application}!m\+\_\+prompt@{m\+\_\+prompt}}
+\index{m\+\_\+prompt@{m\+\_\+prompt}!Application@{Application}}
+\subsubsection{\texorpdfstring{m\+\_\+prompt}{m\_prompt}}
+{\footnotesize\ttfamily std\+::string Application\+::m\+\_\+prompt\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 355 of file Application.\+h.
+
+\mbox{\Hypertarget{classApplication_ad2c061af424280151c86b9b56d9724d3}\label{classApplication_ad2c061af424280151c86b9b56d9724d3}} 
+\index{Application@{Application}!m\+\_\+run\+Svc@{m\+\_\+run\+Svc}}
+\index{m\+\_\+run\+Svc@{m\+\_\+run\+Svc}!Application@{Application}}
+\subsubsection{\texorpdfstring{m\+\_\+run\+Svc}{m\_runSvc}}
+{\footnotesize\ttfamily \hyperlink{Application_8h_a59643f52f9391fa83f137814aaae27ef}{Run\+Svc} Application\+::m\+\_\+run\+Svc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 371 of file Application.\+h.
+
+\mbox{\Hypertarget{classApplication_a5e6085b0f322d5036177b16113a75b56}\label{classApplication_a5e6085b0f322d5036177b16113a75b56}} 
+\index{Application@{Application}!m\+\_\+server@{m\+\_\+server}}
+\index{m\+\_\+server@{m\+\_\+server}!Application@{Application}}
+\subsubsection{\texorpdfstring{m\+\_\+server}{m\_server}}
+{\footnotesize\ttfamily \hyperlink{classServer}{Server}$\ast$ Application\+::m\+\_\+server\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 374 of file Application.\+h.
+
+
+
+Referenced by initialize(), network(), server(), set\+Config(), set\+State(), and $\sim$\+Application().
+
+\mbox{\Hypertarget{classApplication_a0ef9832e2d286716e597a1ff21ffcab4}\label{classApplication_a0ef9832e2d286716e597a1ff21ffcab4}} 
+\index{Application@{Application}!m\+\_\+state@{m\+\_\+state}}
+\index{m\+\_\+state@{m\+\_\+state}!Application@{Application}}
+\subsubsection{\texorpdfstring{m\+\_\+state}{m\_state}}
+{\footnotesize\ttfamily \hyperlink{classState}{State}$\ast$ Application\+::m\+\_\+state\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 368 of file Application.\+h.
+
+
+
+Referenced by Application(), initialize(), set\+State(), state(), and $\sim$\+Application().
+
+\mbox{\Hypertarget{classApplication_acbbdbd17a3a66782c54dbbe58a9ca8d8}\label{classApplication_acbbdbd17a3a66782c54dbbe58a9ca8d8}} 
+\index{Application@{Application}!m\+\_\+version@{m\+\_\+version}}
+\index{m\+\_\+version@{m\+\_\+version}!Application@{Application}}
+\subsubsection{\texorpdfstring{m\+\_\+version}{m\_version}}
+{\footnotesize\ttfamily std\+::string Application\+::m\+\_\+version\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 356 of file Application.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/inc/\hyperlink{Application_8h}{Application.\+h}\item 
+/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/src/\hyperlink{Application_8cpp}{Application.\+cpp}\end{DoxyCompactItemize}

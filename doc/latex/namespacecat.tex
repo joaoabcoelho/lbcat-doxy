@@ -1,0 +1,177 @@
+\hypertarget{namespacecat}{}\section{cat Namespace Reference}
+\label{namespacecat}\index{cat@{cat}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacecat_ae0aa242aa488082b980de81f7a588f5e}{reset\+\_\+file} (\hyperlink{namespacecat_a3eae50bb86a614752045105e00365a46}{size}, max\+\_\+size, reason)
+\item 
+def \hyperlink{namespacecat_abd324a9da9ba2b9c5ae75515174616cd}{safe\+\_\+getsize} (\hyperlink{namespacecat_a5be1540f4d9418c1650b9bafbe8efa5a}{hist\+\_\+file})
+\item 
+def \hyperlink{namespacecat_a1d47acf33be14b333391a3a1478cf147}{main} (argv=None)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacecat_a5be1540f4d9418c1650b9bafbe8efa5a}{hist\+\_\+file} = os.\+path.\+expandvars(\char`\"{}\$C\+A\+T\+P\+A\+TH/.cathistory\char`\"{})
+\item 
+int \hyperlink{namespacecat_ad56fd90da4261a3734b29a9a5e2d9a4e}{max\+\_\+size\+\_\+bytes} = 10000
+\item 
+int \hyperlink{namespacecat_a8e9446761b014effec3f2ec3748ae6c4}{max\+\_\+size\+\_\+lines} = 100
+\item 
+int \hyperlink{namespacecat_a0a8f4dfbf66e37f285191b2b6c7e2e0f}{lines} = 0
+\item 
+def \hyperlink{namespacecat_a3eae50bb86a614752045105e00365a46}{size} = \hyperlink{namespacecat_abd324a9da9ba2b9c5ae75515174616cd}{safe\+\_\+getsize}(\hyperlink{namespacecat_a5be1540f4d9418c1650b9bafbe8efa5a}{hist\+\_\+file})
+\item 
+\hyperlink{namespacecat_ac4e5e84140346d3c05a72261c63ef7b1}{f} = open(\hyperlink{namespacecat_a5be1540f4d9418c1650b9bafbe8efa5a}{hist\+\_\+file},\textquotesingle{}a\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}CAT : package for electronics and data processing\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacecat_a1d47acf33be14b333391a3a1478cf147}\label{namespacecat_a1d47acf33be14b333391a3a1478cf147}} 
+\index{cat@{cat}!main@{main}}
+\index{main@{main}!cat@{cat}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily def cat.\+main (\begin{DoxyParamCaption}\item[{}]{argv = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 67 of file cat.\+py.
+
+
+
+References gui.\+main().
+
+
+\begin{DoxyCode}
+67 \textcolor{keyword}{def }\hyperlink{Server__NI6008_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}(argv=None):
+68   \textcolor{keywordflow}{if} argv \textcolor{keywordflow}{is} \textcolor{keywordtype}{None}:
+69     argv = sys.argv
+70     args=\hyperlink{namespacearguments}{arguments}(argv)
+71 
+72   \textcolor{keywordflow}{if} (args.shellMode):
+73     \textcolor{keywordflow}{print} \textcolor{stringliteral}{'starting shell...'}
+74     cat=\hyperlink{classApplication}{Application}()
+75     \hyperlink{namespaceshell}{shell}(cat,args)
+76   \textcolor{keywordflow}{else}:
+77     \textcolor{keyword}{import} gui
+78     \textcolor{keywordflow}{print} \textcolor{stringliteral}{'starting gui...'}
+79     \hyperlink{namespacegui_a24d9f88c60ee52fd5381ea6f83ca2adb}{gui.main}(args)
+80 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacecat_ae0aa242aa488082b980de81f7a588f5e}\label{namespacecat_ae0aa242aa488082b980de81f7a588f5e}} 
+\index{cat@{cat}!reset\+\_\+file@{reset\+\_\+file}}
+\index{reset\+\_\+file@{reset\+\_\+file}!cat@{cat}}
+\subsubsection{\texorpdfstring{reset\+\_\+file()}{reset\_file()}}
+{\footnotesize\ttfamily def cat.\+reset\+\_\+file (\begin{DoxyParamCaption}\item[{}]{size,  }\item[{}]{max\+\_\+size,  }\item[{}]{reason }\end{DoxyParamCaption})}
+
+
+
+Definition at line 22 of file cat.\+py.
+
+
+\begin{DoxyCode}
+22 \textcolor{keyword}{def }\hyperlink{namespacecat_ae0aa242aa488082b980de81f7a588f5e}{reset\_file}(size,max\_size,reason):
+23         \textcolor{keywordflow}{try}:
+24                 \textcolor{keywordflow}{print} \textcolor{stringliteral}{"Resetting history file %s because it exceeded %s %s; it has %s."} % (hist\_file,
+      max\_size,reason,size,)
+25                 f = open(hist\_file,\textcolor{stringliteral}{'w'})
+26                 f.close()
+27         \textcolor{keywordflow}{except} IOError, e:
+28                 \textcolor{keywordflow}{print} \textcolor{stringliteral}{"Couldn't reset history file %s [%s]."} % (hist\_file,e,)
+29 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacecat_abd324a9da9ba2b9c5ae75515174616cd}\label{namespacecat_abd324a9da9ba2b9c5ae75515174616cd}} 
+\index{cat@{cat}!safe\+\_\+getsize@{safe\+\_\+getsize}}
+\index{safe\+\_\+getsize@{safe\+\_\+getsize}!cat@{cat}}
+\subsubsection{\texorpdfstring{safe\+\_\+getsize()}{safe\_getsize()}}
+{\footnotesize\ttfamily def cat.\+safe\+\_\+getsize (\begin{DoxyParamCaption}\item[{}]{hist\+\_\+file }\end{DoxyParamCaption})}
+
+
+
+Definition at line 30 of file cat.\+py.
+
+
+\begin{DoxyCode}
+30 \textcolor{keyword}{def }\hyperlink{namespacecat_abd324a9da9ba2b9c5ae75515174616cd}{safe\_getsize}(hist\_file):
+31         \textcolor{keywordflow}{try}:
+32                 size = getsize(hist\_file)
+33         \textcolor{keywordflow}{except} OSError:
+34                 size = 0
+35         \textcolor{keywordflow}{return} size
+36 
+\end{DoxyCode}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacecat_ac4e5e84140346d3c05a72261c63ef7b1}\label{namespacecat_ac4e5e84140346d3c05a72261c63ef7b1}} 
+\index{cat@{cat}!f@{f}}
+\index{f@{f}!cat@{cat}}
+\subsubsection{\texorpdfstring{f}{f}}
+{\footnotesize\ttfamily cat.\+f = open(\hyperlink{namespacecat_a5be1540f4d9418c1650b9bafbe8efa5a}{hist\+\_\+file},\textquotesingle{}a\textquotesingle{})}
+
+
+
+Definition at line 54 of file cat.\+py.
+
+
+
+Referenced by M\+S\+Oxxxx.\+ftos(), and var.\+var().
+
+\mbox{\Hypertarget{namespacecat_a5be1540f4d9418c1650b9bafbe8efa5a}\label{namespacecat_a5be1540f4d9418c1650b9bafbe8efa5a}} 
+\index{cat@{cat}!hist\+\_\+file@{hist\+\_\+file}}
+\index{hist\+\_\+file@{hist\+\_\+file}!cat@{cat}}
+\subsubsection{\texorpdfstring{hist\+\_\+file}{hist\_file}}
+{\footnotesize\ttfamily cat.\+hist\+\_\+file = os.\+path.\+expandvars(\char`\"{}\$C\+A\+T\+P\+A\+TH/.cathistory\char`\"{})}
+
+
+
+Definition at line 11 of file cat.\+py.
+
+\mbox{\Hypertarget{namespacecat_a0a8f4dfbf66e37f285191b2b6c7e2e0f}\label{namespacecat_a0a8f4dfbf66e37f285191b2b6c7e2e0f}} 
+\index{cat@{cat}!lines@{lines}}
+\index{lines@{lines}!cat@{cat}}
+\subsubsection{\texorpdfstring{lines}{lines}}
+{\footnotesize\ttfamily cat.\+lines = 0}
+
+
+
+Definition at line 37 of file cat.\+py.
+
+\mbox{\Hypertarget{namespacecat_ad56fd90da4261a3734b29a9a5e2d9a4e}\label{namespacecat_ad56fd90da4261a3734b29a9a5e2d9a4e}} 
+\index{cat@{cat}!max\+\_\+size\+\_\+bytes@{max\+\_\+size\+\_\+bytes}}
+\index{max\+\_\+size\+\_\+bytes@{max\+\_\+size\+\_\+bytes}!cat@{cat}}
+\subsubsection{\texorpdfstring{max\+\_\+size\+\_\+bytes}{max\_size\_bytes}}
+{\footnotesize\ttfamily int cat.\+max\+\_\+size\+\_\+bytes = 10000}
+
+
+
+Definition at line 12 of file cat.\+py.
+
+\mbox{\Hypertarget{namespacecat_a8e9446761b014effec3f2ec3748ae6c4}\label{namespacecat_a8e9446761b014effec3f2ec3748ae6c4}} 
+\index{cat@{cat}!max\+\_\+size\+\_\+lines@{max\+\_\+size\+\_\+lines}}
+\index{max\+\_\+size\+\_\+lines@{max\+\_\+size\+\_\+lines}!cat@{cat}}
+\subsubsection{\texorpdfstring{max\+\_\+size\+\_\+lines}{max\_size\_lines}}
+{\footnotesize\ttfamily int cat.\+max\+\_\+size\+\_\+lines = 100}
+
+
+
+Definition at line 13 of file cat.\+py.
+
+\mbox{\Hypertarget{namespacecat_a3eae50bb86a614752045105e00365a46}\label{namespacecat_a3eae50bb86a614752045105e00365a46}} 
+\index{cat@{cat}!size@{size}}
+\index{size@{size}!cat@{cat}}
+\subsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily def cat.\+size = \hyperlink{namespacecat_abd324a9da9ba2b9c5ae75515174616cd}{safe\+\_\+getsize}(\hyperlink{namespacecat_a5be1540f4d9418c1650b9bafbe8efa5a}{hist\+\_\+file})}
+
+
+
+Definition at line 38 of file cat.\+py.
+
+
+
+Referenced by check\+Cmd(), Server\+\_\+\+N\+I6008.\+cmd(), I\+Odata.\+def\+Data\+U16(), I\+Odata.\+def\+Data\+U32(), I\+Odata.\+def\+Data\+U8(), Server\+\_\+\+N\+I6008.\+set\+Call\+Size(), Register\+Test.\+set\+Param(), Usb\+F\+T\+Interface\+Test.\+set\+Param(), and stoi().
+

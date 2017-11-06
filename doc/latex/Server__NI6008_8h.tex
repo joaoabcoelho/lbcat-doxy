@@ -1,0 +1,237 @@
+\hypertarget{Server__NI6008_8h}{}\section{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+N\+I/inc/\+Server\+\_\+\+N\+I6008.h File Reference}
+\label{Server__NI6008_8h}\index{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+N\+I/inc/\+Server\+\_\+\+N\+I6008.\+h@{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+N\+I/inc/\+Server\+\_\+\+N\+I6008.\+h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$sys/utsname.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$sys/socket.\+h$>$}\newline
+{\ttfamily \#include $<$netinet/in.\+h$>$}\newline
+{\ttfamily \#include $<$N\+I\+D\+A\+Qmx\+Base.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classServer__NI6008}{Server\+\_\+\+N\+I6008}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{Server__NI6008_8h_a20f271409637c91b02c586644cb542e0}{itos} (int i)
+\item 
+std\+::string \hyperlink{Server__NI6008_8h_ad2603c89b82a1609399d9c9257f947f7}{ftos} (float f)
+\item 
+const std\+::string \& \hyperlink{Server__NI6008_8h_a72fcadf4b16349ce02f8ad73ddd9106d}{host\+Name} ()
+\begin{DoxyCompactList}\small\item\em Host name. \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{Server__NI6008_8h_a4f1b6c167d6683c2f7acce89653a8f5b}{os\+Name} ()
+\begin{DoxyCompactList}\small\item\em OS name. \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{Server__NI6008_8h_adc93e5765e618d6c29e8797076352385}{os\+Version} ()
+\begin{DoxyCompactList}\small\item\em OS version. \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{Server__NI6008_8h_a86853b52d0d56f10dbf10a14d4d38a8c}{machine\+Type} ()
+\begin{DoxyCompactList}\small\item\em Machine type. \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{Server__NI6008_8h_a7894fd47557b61653dcc5a4c1c385f26}{account\+Name} ()
+\begin{DoxyCompactList}\small\item\em User login name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{Server__NI6008_8h_a7894fd47557b61653dcc5a4c1c385f26}\label{Server__NI6008_8h_a7894fd47557b61653dcc5a4c1c385f26}} 
+\index{Server\+\_\+\+N\+I6008.\+h@{Server\+\_\+\+N\+I6008.\+h}!account\+Name@{account\+Name}}
+\index{account\+Name@{account\+Name}!Server\+\_\+\+N\+I6008.\+h@{Server\+\_\+\+N\+I6008.\+h}}
+\subsubsection{\texorpdfstring{account\+Name()}{accountName()}}
+{\footnotesize\ttfamily const std\+::string\& account\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+User login name. 
+
+
+
+Definition at line 85 of file Server\+\_\+\+N\+I6008.\+h.
+
+
+
+Referenced by Application\+::\+Application(), and Server\+\_\+\+N\+I6008\+::\+Server\+\_\+\+N\+I6008().
+
+
+\begin{DoxyCode}
+85                                \{
+86   \textcolor{keyword}{static} std::string account = \textcolor{stringliteral}{""};
+87   \textcolor{keywordflow}{if} ( account == \textcolor{stringliteral}{""} ) \{
+88     \textcolor{keyword}{const} \textcolor{keywordtype}{char}* acct = ::getlogin();
+89     \textcolor{keywordflow}{if} ( 0 == acct ) acct = ::getenv(\textcolor{stringliteral}{"LOGNAME"});
+90     \textcolor{keywordflow}{if} ( 0 == acct ) acct = ::getenv(\textcolor{stringliteral}{"USER"});
+91     account = (acct) ? acct : \textcolor{stringliteral}{"Unknown"};
+92   \}
+93   \textcolor{keywordflow}{return} account;
+94 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{Server__NI6008_8h_ad2603c89b82a1609399d9c9257f947f7}\label{Server__NI6008_8h_ad2603c89b82a1609399d9c9257f947f7}} 
+\index{Server\+\_\+\+N\+I6008.\+h@{Server\+\_\+\+N\+I6008.\+h}!ftos@{ftos}}
+\index{ftos@{ftos}!Server\+\_\+\+N\+I6008.\+h@{Server\+\_\+\+N\+I6008.\+h}}
+\subsubsection{\texorpdfstring{ftos()}{ftos()}}
+{\footnotesize\ttfamily std\+::string ftos (\begin{DoxyParamCaption}\item[{float}]{ }\end{DoxyParamCaption})}
+
+Conversion from float to std\+::string 
+
+Definition at line 28 of file Server\+\_\+\+N\+I6008.\+h.
+
+
+
+Referenced by Processus\+::end\+Processing(), Phaser\+Ramp\+Exec\+::finalize(), Server\+\_\+\+N\+I6008\+::set\+A\+I\+Range(), Server\+\_\+\+N\+I6008\+::set\+A\+O\+Range(), and Server\+\_\+\+N\+I6008\+::status().
+
+
+\begin{DoxyCode}
+28                        \{    
+29   \textcolor{keywordtype}{char} val[20];
+30   sprintf(val,\textcolor{stringliteral}{"%f"},\hyperlink{namespacecat_ac4e5e84140346d3c05a72261c63ef7b1}{f});
+31   std::string str(val);
+32   \textcolor{keywordflow}{return} str;
+33 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{Server__NI6008_8h_a72fcadf4b16349ce02f8ad73ddd9106d}\label{Server__NI6008_8h_a72fcadf4b16349ce02f8ad73ddd9106d}} 
+\index{Server\+\_\+\+N\+I6008.\+h@{Server\+\_\+\+N\+I6008.\+h}!host\+Name@{host\+Name}}
+\index{host\+Name@{host\+Name}!Server\+\_\+\+N\+I6008.\+h@{Server\+\_\+\+N\+I6008.\+h}}
+\subsubsection{\texorpdfstring{host\+Name()}{hostName()}}
+{\footnotesize\ttfamily const std\+::string\& host\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Host name. 
+
+
+
+Definition at line 36 of file Server\+\_\+\+N\+I6008.\+h.
+
+
+
+Referenced by Application\+::\+Application(), Computer\+::\+Computer(), and Server\+\_\+\+N\+I6008\+::\+Server\+\_\+\+N\+I6008().
+
+
+\begin{DoxyCode}
+36                             \{
+37   \textcolor{keyword}{static} std::string host = \textcolor{stringliteral}{""};
+38   \textcolor{keywordflow}{if} ( host == \textcolor{stringliteral}{""} ) \{
+39     \textcolor{keywordtype}{char} buffer[512];
+40     memset(buffer,0,\textcolor{keyword}{sizeof}(buffer));
+41     ::gethostname(buffer, \textcolor{keyword}{sizeof}(buffer));
+42     host = buffer;
+43   \}
+44   \textcolor{keywordflow}{return} host;
+45 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{Server__NI6008_8h_a20f271409637c91b02c586644cb542e0}\label{Server__NI6008_8h_a20f271409637c91b02c586644cb542e0}} 
+\index{Server\+\_\+\+N\+I6008.\+h@{Server\+\_\+\+N\+I6008.\+h}!itos@{itos}}
+\index{itos@{itos}!Server\+\_\+\+N\+I6008.\+h@{Server\+\_\+\+N\+I6008.\+h}}
+\subsubsection{\texorpdfstring{itos()}{itos()}}
+{\footnotesize\ttfamily std\+::string itos (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+Conversion from int (long) to std\+::string 
+
+Definition at line 21 of file Server\+\_\+\+N\+I6008.\+h.
+
+
+
+Referenced by D\+C\+U\+::acquire(), F\+E\+B\+\_\+v1\+::calib\+Cte(), M\+S\+Oxxxx\+::channel\+Display(), M\+S\+Oxxxx\+::channel\+Display\+Name(), M\+S\+Oxxxx\+::channel\+Offset(), M\+S\+Oxxxx\+::channel\+Scale(), I\+C\+E\+C\+A\+Lv3\+::check\+Ch\+Number(), L\+S\+Delay\+Chip\+V1\+::check\+Config\+Addr(), L\+S\+Delay\+Chip\+V1\+::check\+Status\+Addr(), F\+E\+B\+\_\+v1\+::clock80\+M\+Hz\+Falling\+Edge(), F\+E\+B\+\_\+v1\+::clock\+Falling\+Edge(), Usb\+F\+T\+Interface\+::close(), Usb\+F\+T\+M\+L\+Interface\+::close(), Specs\+Mezzanine\+::cmdline(), Specs\+Slave\+::detect(), F\+E\+B\+\_\+v1\+::disable\+Subtract(), I\+Odata\+::dump(), A3\+P\+E\+::dump\+From\+A\+X(), Processus\+::end\+Processing(), Acquisition\+::execute(), Phaser\+Ramp\+Exec\+::execute(), F\+E\+B\+\_\+v1\+::\+F\+E\+B\+\_\+v1(), Phaser\+Ramp\+Exec\+::finalize(), F\+E\+B\+\_\+v1\+::gain4(), F\+E\+B\+\_\+v1\+::gbt80\+M\+Hz\+Clk\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+Acknowledge\+Config(), F\+E\+B\+\_\+v1\+::gbt\+Data\+Path(), F\+E\+B\+\_\+v1\+::gbt\+D\+L\+L\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+D\+L\+L\+Reset(), F\+E\+B\+\_\+v1\+::gbt\+Enable\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+Mode(), F\+E\+B\+\_\+v1\+::gbt\+Status(), F\+E\+B\+\_\+v1\+::gbt\+Term\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+Track\+Mode(), Emulate\+F\+E\+::generate\+File(), I\+C\+E\+C\+A\+Lv3\+::get\+Analog\+Ch(), L\+S\+Delay\+Chip\+V1\+::get\+Config\+Reg(), I\+C\+E\+C\+A\+Lv3\+::get\+Delay\+Line\+Ch(), I\+C\+E\+C\+A\+Lv3\+::get\+Main\+Reg(), F\+E\+B\+\_\+v1\+::global\+Pseudo\+P\+M\+Enable(), N\+I6008\+::init(), Specs\+Slave\+::init(), Specs\+Master\+::init(), Usb\+F\+T\+M\+L\+Interface\+::init(), Usb\+F\+T\+Interface\+::init(), A3\+P\+E\+\_\+\+Bit\+Flip\+::initialize(), Current\+Measurement\+::initialize(), F\+E\+B\+\_\+v1\+::inject\+Mode\+F\+E(), F\+E\+B\+\_\+v1\+::latency(), F\+E\+B\+\_\+v1\+::latency\+L\+L\+T(), A3\+P\+E\+::load\+From\+A\+X(), Application\+::load\+History\+File(), A3\+P\+E\+::load\+Pattern(), A3\+P\+E\+::load\+Storage(), A3\+P\+E\+::load\+To\+A\+X(), A3\+P\+E\+::load\+Trigger(), Application\+::loop(), F\+E\+B\+\_\+v1\+::mask\+L\+L\+T(), Data\+::name(), F\+E\+B\+\_\+v1\+::old\+Subtract(), M\+S\+Oxxxx\+::open(), D\+L\+L\+::print(), F\+E\+B\+\_\+v1\+::probe\+Enable(), F\+E\+B\+\_\+v1\+::pseudo\+A\+D\+C\+Enable(), F\+E\+B\+\_\+v1\+::pseudo\+P\+M\+Enable(), Phaser\+::read(), I\+C\+Phaser\+::read(), Usb\+Spi\+Bus\+::read(), Usb\+F\+T\+M\+L\+Interface\+::read(), Usb\+F\+T\+Interface\+::read(), Specs\+Master\+::reset(), Specs\+Slave\+::reset(), F\+E\+B\+\_\+v1\+::reset\+F\+E(), F\+E\+B\+\_\+v1\+::reset\+Fifo\+Inject\+F\+E(), F\+E\+B\+\_\+v1\+::reset\+Fifo\+Spy\+F\+E(), Specs\+Slave\+::reset\+Internal(), Server\+\_\+\+N\+I6008\+::\+Server\+\_\+\+N\+I6008(), A3\+P\+E\+::set\+Add\+From\+A\+X\+Ram(), A3\+P\+E\+::set\+Add\+To\+A\+X\+Ram(), A3\+P\+E\+::set\+A\+X\+Ram\+Usb(), F\+E\+B\+\_\+v1\+::set\+Calib\+Cte(), F\+E\+B\+\_\+v1\+::set\+Clock80\+M\+Hz\+Falling\+Edge(), A3\+P\+E\+::set\+Clock\+Division(), F\+E\+B\+\_\+v1\+::set\+Clock\+Falling\+Edge(), L\+S\+Delay\+Chip\+V1\+::set\+Config\+Reg(), Usb\+Spi\+Bus\+::set\+Data\+Length(), F\+E\+B\+\_\+v1\+::set\+Disable\+Subtract(), A3\+P\+E\+::set\+Enable\+A\+D\+C(), A3\+P\+E\+::set\+Fifo\+Depth(), A3\+P\+E\+::set\+Fifo\+Latency(), F\+E\+B\+\_\+v1\+::set\+Gain4(), F\+E\+B\+\_\+v1\+::set\+Gbt80\+M\+Hz\+Clk\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Clock\+Strength(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Data\+Path(), F\+E\+B\+\_\+v1\+::set\+Gbt\+D\+L\+L\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Enable\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Mode(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Term\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Track\+Mode(), F\+E\+B\+\_\+v1\+::set\+Global\+Pseudo\+P\+M\+Enable(), F\+E\+B\+\_\+v1\+::set\+Inject\+Mode\+F\+E(), A3\+P\+E\+::set\+Internal\+A\+X\+Sequence(), F\+E\+B\+\_\+v1\+::set\+Latency(), A3\+P\+E\+::set\+Latency\+A\+X(), A3\+P\+E\+::set\+Length\+A\+X(), A3\+P\+E\+::set\+N\+Trigger(), F\+E\+B\+\_\+v1\+::set\+Old\+Subtract(), F\+E\+B\+\_\+v1\+::set\+Output\+Eport(), Phaser\+::set\+Phase(), I\+C\+Phaser\+::set\+Phase(), A3\+P\+E\+::set\+Pipeline(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+A\+D\+C\+Enable(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+P\+M\+Enable(), R\+A\+M\+::set\+Size(), A3\+P\+E\+::set\+Software\+Trigger(), F\+E\+B\+\_\+v1\+::set\+Spare\+For\+Trig\+Enable(), Specs\+Master\+::set\+Speed(), F\+E\+B\+\_\+v1\+::set\+Spy\+Mode\+F\+E(), F\+E\+B\+\_\+v1\+::set\+Stop\+Inj\+Loop(), F\+E\+B\+\_\+v1\+::set\+Test\+Duration(), F\+E\+B\+\_\+v1\+::set\+Threshold(), A3\+P\+E\+::set\+Trigger\+Delay(), A3\+P\+E\+::set\+Trigger\+Rate(), I\+Odata\+::set\+U16(), I\+Odata\+::set\+U32(), I\+Odata\+::set\+U8(), M\+S\+Oxxxx\+::setup\+Avg\+Voltage(), M\+S\+Oxxxx\+::setup\+Delta\+Time(), M\+S\+Oxxxx\+::setup\+Jitter(), L\+S\+Delay\+Chip\+V1\+::show\+Config(), Test\+Suite\+::sigma(), F\+E\+B\+\_\+v1\+::spare\+For\+Trig\+Enable(), Specs\+I2c\+::\+Specs\+I2c(), Specs\+Interface\+::specs\+Read\+I2c(), Specs\+Interface\+::specs\+Read\+Parallel(), Specs\+Interface\+::specs\+Read\+Register(), Specs\+Interface\+::specs\+Write\+I2c(), Specs\+Interface\+::specs\+Write\+Parallel(), Specs\+Interface\+::specs\+Write\+Register(), L\+S\+Delay\+Chip\+V1\+::spi\+B\+E\+R\+Test(), F\+E\+B\+\_\+v1\+::spy\+Mode\+F\+E(), F\+E\+B\+\_\+v1\+::spy\+Mode\+Seq(), Server\+\_\+\+N\+I6008\+::status(), F\+E\+B\+\_\+v1\+::status\+Register(), F\+E\+B\+\_\+v1\+::stop\+Inj\+Loop(), Options\+::storage\+Full\+Path(), Application\+::terminate(), F\+E\+B\+\_\+v1\+::test\+Duration(), F\+E\+B\+\_\+v1\+::threshold(), Data\+::title(), M\+S\+Oxxxx\+::trigger\+Config(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Read(), Usb\+F\+T\+Interface\+::usb\+Read(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Read\+U16(), Usb\+F\+T\+Interface\+::usb\+Read\+U16(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Read\+U32(), Usb\+F\+T\+Interface\+::usb\+Read\+U32(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Read\+U8(), Usb\+F\+T\+Interface\+::usb\+Read\+U8(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write(), Usb\+F\+T\+Interface\+::usb\+Write(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+Read(), Usb\+F\+T\+Interface\+::usb\+Write\+Read(), Usb\+F\+T\+Interface\+::usb\+Write\+U16(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+U16(), Usb\+F\+T\+Interface\+::usb\+Write\+U32(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+U32(), Usb\+F\+T\+Interface\+::usb\+Write\+U8(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+U8(), Data\+::vector\+Ptr(), M\+S\+Oxxxx\+::waveform\+Capture(), Phaser\+::write(), I\+C\+Phaser\+::write(), Usb\+Spi\+Bus\+::write(), Usb\+F\+T\+Interface\+::write(), and Usb\+F\+T\+M\+L\+Interface\+::write().
+
+
+\begin{DoxyCode}
+21                      \{  
+22   \textcolor{keywordtype}{char} val[20];
+23   sprintf(val,\textcolor{stringliteral}{"%d"},i);
+24   std::string str(val);
+25   \textcolor{keywordflow}{return} str;
+26 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{Server__NI6008_8h_a86853b52d0d56f10dbf10a14d4d38a8c}\label{Server__NI6008_8h_a86853b52d0d56f10dbf10a14d4d38a8c}} 
+\index{Server\+\_\+\+N\+I6008.\+h@{Server\+\_\+\+N\+I6008.\+h}!machine\+Type@{machine\+Type}}
+\index{machine\+Type@{machine\+Type}!Server\+\_\+\+N\+I6008.\+h@{Server\+\_\+\+N\+I6008.\+h}}
+\subsubsection{\texorpdfstring{machine\+Type()}{machineType()}}
+{\footnotesize\ttfamily const std\+::string\& machine\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Machine type. 
+
+
+
+Definition at line 73 of file Server\+\_\+\+N\+I6008.\+h.
+
+
+\begin{DoxyCode}
+73                                \{
+74   \textcolor{keyword}{static} std::string mach = \textcolor{stringliteral}{""};
+75   \textcolor{keyword}{struct }utsname ut;
+76   \textcolor{keywordflow}{if} (uname(&ut) == 0) \{
+77     mach = ut.machine;
+78   \} \textcolor{keywordflow}{else} \{
+79     mach = \textcolor{stringliteral}{"UNKNOWN"};
+80   \}
+81   \textcolor{keywordflow}{return} mach;
+82 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{Server__NI6008_8h_a4f1b6c167d6683c2f7acce89653a8f5b}\label{Server__NI6008_8h_a4f1b6c167d6683c2f7acce89653a8f5b}} 
+\index{Server\+\_\+\+N\+I6008.\+h@{Server\+\_\+\+N\+I6008.\+h}!os\+Name@{os\+Name}}
+\index{os\+Name@{os\+Name}!Server\+\_\+\+N\+I6008.\+h@{Server\+\_\+\+N\+I6008.\+h}}
+\subsubsection{\texorpdfstring{os\+Name()}{osName()}}
+{\footnotesize\ttfamily const std\+::string\& os\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+OS name. 
+
+
+
+Definition at line 48 of file Server\+\_\+\+N\+I6008.\+h.
+
+
+
+Referenced by Application\+::\+Application(), and Server\+\_\+\+N\+I6008\+::\+Server\+\_\+\+N\+I6008().
+
+
+\begin{DoxyCode}
+48                           \{
+49   \textcolor{keyword}{static} std::string osname = \textcolor{stringliteral}{""};
+50   \textcolor{keyword}{struct }utsname ut;
+51   \textcolor{keywordflow}{if} (uname(&ut) == 0) \{
+52     osname = ut.sysname;
+53   \} \textcolor{keywordflow}{else} \{
+54     osname = \textcolor{stringliteral}{"UNKNOWN"};
+55   \}
+56   \textcolor{keywordflow}{return} osname;
+57 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{Server__NI6008_8h_adc93e5765e618d6c29e8797076352385}\label{Server__NI6008_8h_adc93e5765e618d6c29e8797076352385}} 
+\index{Server\+\_\+\+N\+I6008.\+h@{Server\+\_\+\+N\+I6008.\+h}!os\+Version@{os\+Version}}
+\index{os\+Version@{os\+Version}!Server\+\_\+\+N\+I6008.\+h@{Server\+\_\+\+N\+I6008.\+h}}
+\subsubsection{\texorpdfstring{os\+Version()}{osVersion()}}
+{\footnotesize\ttfamily const std\+::string\& os\+Version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+OS version. 
+
+
+
+Definition at line 61 of file Server\+\_\+\+N\+I6008.\+h.
+
+
+
+Referenced by Application\+::\+Application(), and Server\+\_\+\+N\+I6008\+::\+Server\+\_\+\+N\+I6008().
+
+
+\begin{DoxyCode}
+61                              \{
+62   \textcolor{keyword}{static} std::string osver = \textcolor{stringliteral}{""};
+63   \textcolor{keyword}{struct }utsname ut;
+64   \textcolor{keywordflow}{if} (uname(&ut) == 0) \{
+65     osver = ut.release;
+66   \} \textcolor{keywordflow}{else} \{
+67     osver = \textcolor{stringliteral}{"UNKNOWN"};
+68   \}
+69   \textcolor{keywordflow}{return} osver;
+70 \}
+\end{DoxyCode}

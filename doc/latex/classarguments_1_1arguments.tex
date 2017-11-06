@@ -1,0 +1,234 @@
+\hypertarget{classarguments_1_1arguments}{}\section{arguments.\+arguments Class Reference}
+\label{classarguments_1_1arguments}\index{arguments.\+arguments@{arguments.\+arguments}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classarguments_1_1arguments_a96d8df876c5b1c1fa7fa2060d2040b93}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, argv=None)
+\item 
+def \hyperlink{classarguments_1_1arguments_a05c504158f7fdfeb8824820da75d6f4e}{decode} (self, argv)
+\item 
+def \hyperlink{classarguments_1_1arguments_a772086f564c9ebb8e2955439c4d3dff1}{printout} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classarguments_1_1arguments_acb4e4112cd5350ff6a02489afe2ff105}{banner}
+\item 
+\hyperlink{classarguments_1_1arguments_a95bc3c2f1cb1beb822d776e202131b4f}{file}
+\item 
+\hyperlink{classarguments_1_1arguments_a0682389c6c09efe728929cb9e32fb329}{bkg\+Mode}
+\item 
+\hyperlink{classarguments_1_1arguments_aa3da800e3d6dbadd4cfa43fea9ad8d78}{output}
+\item 
+\hyperlink{classarguments_1_1arguments_a7eb3f133bfc7a375dd8c8dd6294504b6}{shell\+Mode}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file arguments.\+py.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classarguments_1_1arguments_a96d8df876c5b1c1fa7fa2060d2040b93}\label{classarguments_1_1arguments_a96d8df876c5b1c1fa7fa2060d2040b93}} 
+\index{arguments\+::arguments@{arguments\+::arguments}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!arguments\+::arguments@{arguments\+::arguments}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def arguments.\+arguments.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{argv = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 21 of file arguments.\+py.
+
+
+\begin{DoxyCode}
+21     \textcolor{keyword}{def }\hyperlink{classwrapper_1_1ModuleDictWrapper_a9a7a794150502f51df687831583e13b9}{\_\_init\_\_}(self, argv=None):
+22         self.banner=\textcolor{keyword}{False}
+23         self.file=\textcolor{stringliteral}{""}
+24         self.bkgMode=\textcolor{keyword}{False}
+25         self.output=\textcolor{stringliteral}{"INFO"}
+26         self.shellMode=\textcolor{keyword}{True}
+27         self.decode(argv)
+28 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classarguments_1_1arguments_a05c504158f7fdfeb8824820da75d6f4e}\label{classarguments_1_1arguments_a05c504158f7fdfeb8824820da75d6f4e}} 
+\index{arguments\+::arguments@{arguments\+::arguments}!decode@{decode}}
+\index{decode@{decode}!arguments\+::arguments@{arguments\+::arguments}}
+\subsubsection{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily def arguments.\+arguments.\+decode (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{argv }\end{DoxyParamCaption})}
+
+
+
+Definition at line 29 of file arguments.\+py.
+
+
+
+References arguments.\+arguments.\+banner, arguments.\+arguments.\+file, Phaser\+Ramp\+Exec.\+file, arguments.\+arguments.\+output, and arguments.\+arguments.\+shell\+Mode.
+
+
+\begin{DoxyCode}
+29     \textcolor{keyword}{def }decode(self, argv):
+30         \textcolor{keywordflow}{if} argv==\textcolor{keywordtype}{None}:
+31                 argv = sys.argv
+32         \textcolor{comment}{# parse command line options}
+33         \textcolor{keywordflow}{try}:
+34             \textcolor{keywordflow}{try}:
+35                 opts, args = getopt.getopt(argv[1:],\textcolor{stringliteral}{"bf:ghqo:sv"},
+36                                            [\textcolor{stringliteral}{"banner"},\textcolor{stringliteral}{"file="},\textcolor{stringliteral}{"gui"},\textcolor{stringliteral}{"help"},\textcolor{stringliteral}{"quit"},\textcolor{stringliteral}{"output="},\textcolor{stringliteral}{"shell"},\textcolor{stringliteral}{"version
+      "}])
+37             \textcolor{keywordflow}{except} getopt.error, msg:
+38                 \textcolor{keywordflow}{raise} Usage(msg)
+39             \textcolor{comment}{# check argument}
+40             \textcolor{keywordflow}{if} (len(args)>2):
+41                 \textcolor{keywordflow}{raise} Usage(\textcolor{stringliteral}{"Too many arguments."})
+42             vers=\hyperlink{classversion_1_1version}{version.version}()
+43             \textcolor{comment}{# process options}
+44             \textcolor{keywordflow}{for} o, a \textcolor{keywordflow}{in} opts:
+45                 \textcolor{keywordflow}{if} o \textcolor{keywordflow}{in} (\textcolor{stringliteral}{"-b"}, \textcolor{stringliteral}{"--banner"}):
+46                     self.banner=\textcolor{keyword}{False}
+47                 \textcolor{keywordflow}{if} o \textcolor{keywordflow}{in} (\textcolor{stringliteral}{"-f"}, \textcolor{stringliteral}{"--file"}):
+48                     self.file=a
+49                     \textcolor{keywordflow}{if} (\textcolor{keyword}{False}==os.path.exists(a)):
+50                         \textcolor{keywordflow}{raise} Usage(\textcolor{stringliteral}{"File "}+a+\textcolor{stringliteral}{" does not exists."})
+51                         \textcolor{keywordflow}{return} 2
+52                 \textcolor{keywordflow}{if} o \textcolor{keywordflow}{in} (\textcolor{stringliteral}{"-g"}, \textcolor{stringliteral}{"--gui"}):
+53                     self.shellMode=\textcolor{keyword}{False}
+54                     \textcolor{keywordflow}{return}
+55                 \textcolor{keywordflow}{if} o \textcolor{keywordflow}{in} (\textcolor{stringliteral}{"-h"}, \textcolor{stringliteral}{"--help"}):
+56                     \textcolor{keywordflow}{print} \_\_doc\_\_
+57                     \textcolor{keywordflow}{return} 2
+58                 \textcolor{keywordflow}{if} o \textcolor{keywordflow}{in} (\textcolor{stringliteral}{"-s"}, \textcolor{stringliteral}{"--shell"}):
+59                     self.shellMode=\textcolor{keyword}{True}
+60                     \textcolor{keywordflow}{return}
+61                 \textcolor{keywordflow}{if} o \textcolor{keywordflow}{in} (\textcolor{stringliteral}{"-q"}, \textcolor{stringliteral}{"--quit"}):
+62                     \textcolor{keywordflow}{print} \textcolor{stringliteral}{"Not implemented."}
+63                     \textcolor{keywordflow}{return} 2
+64                 \textcolor{keywordflow}{if} o \textcolor{keywordflow}{in} (\textcolor{stringliteral}{"-o"}, \textcolor{stringliteral}{"--output"}):
+65                     self.output=a
+66                     \textcolor{keywordflow}{return}
+67                 \textcolor{keywordflow}{if} o \textcolor{keywordflow}{in} (\textcolor{stringliteral}{"-v"}, \textcolor{stringliteral}{"--version"}):
+68                     vers.info()
+69                     \textcolor{keywordflow}{return} 2
+70         \textcolor{keywordflow}{except} Usage, err:
+71             \textcolor{keywordflow}{print} >>sys.stderr, err.msg
+72             \textcolor{keywordflow}{print} \_\_doc\_\_
+73 
+\end{DoxyCode}
+\mbox{\Hypertarget{classarguments_1_1arguments_a772086f564c9ebb8e2955439c4d3dff1}\label{classarguments_1_1arguments_a772086f564c9ebb8e2955439c4d3dff1}} 
+\index{arguments\+::arguments@{arguments\+::arguments}!printout@{printout}}
+\index{printout@{printout}!arguments\+::arguments@{arguments\+::arguments}}
+\subsubsection{\texorpdfstring{printout()}{printout()}}
+{\footnotesize\ttfamily def arguments.\+arguments.\+printout (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line 74 of file arguments.\+py.
+
+
+
+References arguments.\+arguments.\+banner, arguments.\+arguments.\+bkg\+Mode, arguments.\+arguments.\+file, Phaser\+Ramp\+Exec.\+file, arguments.\+arguments.\+output, and arguments.\+arguments.\+shell\+Mode.
+
+
+\begin{DoxyCode}
+74     \textcolor{keyword}{def }printout(self):
+75         \textcolor{keywordflow}{print} \textcolor{stringliteral}{"Cat options are : "}
+76         \textcolor{keywordflow}{if} (self.banner):
+77             \textcolor{keywordflow}{print} \textcolor{stringliteral}{"   Banner          : True"}
+78         \textcolor{keywordflow}{else}:
+79             \textcolor{keywordflow}{print} \textcolor{stringliteral}{"   Banner          : False"}
+80         \textcolor{keywordflow}{print} \textcolor{stringliteral}{"   File            ="},self.file
+81         \textcolor{keywordflow}{if} (self.bkgMode):
+82             \textcolor{keywordflow}{print} \textcolor{stringliteral}{"   Background mode : True"}
+83         \textcolor{keywordflow}{else}:
+84             \textcolor{keywordflow}{print} \textcolor{stringliteral}{"   Background mode : False"}
+85         \textcolor{keywordflow}{print} \textcolor{stringliteral}{"   OutputLevel     ="},self.output
+86         \textcolor{keywordflow}{if} (self.shellMode):
+87             \textcolor{keywordflow}{print} \textcolor{stringliteral}{"   Shell mode      : True"}
+88         \textcolor{keywordflow}{else}:
+89             \textcolor{keywordflow}{print} \textcolor{stringliteral}{"   Shell mode      : False"}
+90 
+91 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classarguments_1_1arguments_acb4e4112cd5350ff6a02489afe2ff105}\label{classarguments_1_1arguments_acb4e4112cd5350ff6a02489afe2ff105}} 
+\index{arguments\+::arguments@{arguments\+::arguments}!banner@{banner}}
+\index{banner@{banner}!arguments\+::arguments@{arguments\+::arguments}}
+\subsubsection{\texorpdfstring{banner}{banner}}
+{\footnotesize\ttfamily arguments.\+arguments.\+banner}
+
+
+
+Definition at line 22 of file arguments.\+py.
+
+
+
+Referenced by arguments.\+arguments.\+decode(), and arguments.\+arguments.\+printout().
+
+\mbox{\Hypertarget{classarguments_1_1arguments_a0682389c6c09efe728929cb9e32fb329}\label{classarguments_1_1arguments_a0682389c6c09efe728929cb9e32fb329}} 
+\index{arguments\+::arguments@{arguments\+::arguments}!bkg\+Mode@{bkg\+Mode}}
+\index{bkg\+Mode@{bkg\+Mode}!arguments\+::arguments@{arguments\+::arguments}}
+\subsubsection{\texorpdfstring{bkg\+Mode}{bkgMode}}
+{\footnotesize\ttfamily arguments.\+arguments.\+bkg\+Mode}
+
+
+
+Definition at line 24 of file arguments.\+py.
+
+
+
+Referenced by arguments.\+arguments.\+printout().
+
+\mbox{\Hypertarget{classarguments_1_1arguments_a95bc3c2f1cb1beb822d776e202131b4f}\label{classarguments_1_1arguments_a95bc3c2f1cb1beb822d776e202131b4f}} 
+\index{arguments\+::arguments@{arguments\+::arguments}!file@{file}}
+\index{file@{file}!arguments\+::arguments@{arguments\+::arguments}}
+\subsubsection{\texorpdfstring{file}{file}}
+{\footnotesize\ttfamily arguments.\+arguments.\+file}
+
+
+
+Definition at line 23 of file arguments.\+py.
+
+
+
+Referenced by arguments.\+arguments.\+decode(), and arguments.\+arguments.\+printout().
+
+\mbox{\Hypertarget{classarguments_1_1arguments_aa3da800e3d6dbadd4cfa43fea9ad8d78}\label{classarguments_1_1arguments_aa3da800e3d6dbadd4cfa43fea9ad8d78}} 
+\index{arguments\+::arguments@{arguments\+::arguments}!output@{output}}
+\index{output@{output}!arguments\+::arguments@{arguments\+::arguments}}
+\subsubsection{\texorpdfstring{output}{output}}
+{\footnotesize\ttfamily arguments.\+arguments.\+output}
+
+
+
+Definition at line 25 of file arguments.\+py.
+
+
+
+Referenced by arguments.\+arguments.\+decode(), and arguments.\+arguments.\+printout().
+
+\mbox{\Hypertarget{classarguments_1_1arguments_a7eb3f133bfc7a375dd8c8dd6294504b6}\label{classarguments_1_1arguments_a7eb3f133bfc7a375dd8c8dd6294504b6}} 
+\index{arguments\+::arguments@{arguments\+::arguments}!shell\+Mode@{shell\+Mode}}
+\index{shell\+Mode@{shell\+Mode}!arguments\+::arguments@{arguments\+::arguments}}
+\subsubsection{\texorpdfstring{shell\+Mode}{shellMode}}
+{\footnotesize\ttfamily arguments.\+arguments.\+shell\+Mode}
+
+
+
+Definition at line 26 of file arguments.\+py.
+
+
+
+Referenced by arguments.\+arguments.\+decode(), and arguments.\+arguments.\+printout().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Python/python/\hyperlink{arguments_8py}{arguments.\+py}\end{DoxyCompactItemize}

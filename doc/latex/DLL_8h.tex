@@ -1,0 +1,102 @@
+\hypertarget{DLL_8h}{}\section{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/inc/\+D\+LL.h File Reference}
+\label{DLL_8h}\index{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/inc/\+D\+L\+L.\+h@{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/inc/\+D\+L\+L.\+h}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$dlfcn.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Status\+Code.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Tools.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Element.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Processus.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classDLL}{D\+LL}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{DLL_8h_a305b6b6f2ad931d8d60959fe60f04ce2}{D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+LL}(x)~extern \char`\"{}C\char`\"{} void x\#\#\+\_\+dll( \hyperlink{classDLL}{D\+LL}$\ast$ dll )
+\item 
+\#define \hyperlink{DLL_8h_a3cf59a4b090c171501973779974e42a2}{D\+E\+C\+L\+A\+R\+E\+\_\+\+E\+L\+E\+M\+E\+NT}(x,  y)~dll-\/$>$add\+Element   (\#x,\#y);
+\item 
+\#define \hyperlink{DLL_8h_aef2212dc8e888f762b7c0e2b2fcb0cdf}{D\+E\+C\+L\+A\+R\+E\+\_\+\+P\+R\+O\+C\+E\+S\+S\+US}(x,  y)~dll-\/$>$add\+Processus   (\#x,\#y);
+\item 
+\#define \hyperlink{DLL_8h_ac47bf0136a0c5e760f11c1d73e220aec}{D\+E\+C\+L\+A\+R\+E\+\_\+\+O\+B\+J\+E\+CT}(x,  y)~dll-\/$>$add\+Object   (\#x,\#y);
+\item 
+\#define \hyperlink{DLL_8h_a42fe2ab0204631cd6bce21486b0ee739}{F\+A\+C\+T\+O\+RY}(type,  x)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{DLL_8h_a305b6b6f2ad931d8d60959fe60f04ce2}\label{DLL_8h_a305b6b6f2ad931d8d60959fe60f04ce2}} 
+\index{D\+L\+L.\+h@{D\+L\+L.\+h}!D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+LL@{D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+LL}}
+\index{D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+LL@{D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+LL}!D\+L\+L.\+h@{D\+L\+L.\+h}}
+\subsubsection{\texorpdfstring{D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+LL}{DECLARE\_DLL}}
+{\footnotesize\ttfamily \#define D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+LL(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~extern \char`\"{}C\char`\"{} void x\#\#\+\_\+dll( \hyperlink{classDLL}{D\+LL}$\ast$ dll )}
+
+
+
+Definition at line 23 of file D\+L\+L.\+h.
+
+\mbox{\Hypertarget{DLL_8h_a3cf59a4b090c171501973779974e42a2}\label{DLL_8h_a3cf59a4b090c171501973779974e42a2}} 
+\index{D\+L\+L.\+h@{D\+L\+L.\+h}!D\+E\+C\+L\+A\+R\+E\+\_\+\+E\+L\+E\+M\+E\+NT@{D\+E\+C\+L\+A\+R\+E\+\_\+\+E\+L\+E\+M\+E\+NT}}
+\index{D\+E\+C\+L\+A\+R\+E\+\_\+\+E\+L\+E\+M\+E\+NT@{D\+E\+C\+L\+A\+R\+E\+\_\+\+E\+L\+E\+M\+E\+NT}!D\+L\+L.\+h@{D\+L\+L.\+h}}
+\subsubsection{\texorpdfstring{D\+E\+C\+L\+A\+R\+E\+\_\+\+E\+L\+E\+M\+E\+NT}{DECLARE\_ELEMENT}}
+{\footnotesize\ttfamily \#define D\+E\+C\+L\+A\+R\+E\+\_\+\+E\+L\+E\+M\+E\+NT(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})~dll-\/$>$add\+Element   (\#x,\#y);}
+
+
+
+Definition at line 26 of file D\+L\+L.\+h.
+
+
+
+Referenced by D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+L\+L().
+
+\mbox{\Hypertarget{DLL_8h_ac47bf0136a0c5e760f11c1d73e220aec}\label{DLL_8h_ac47bf0136a0c5e760f11c1d73e220aec}} 
+\index{D\+L\+L.\+h@{D\+L\+L.\+h}!D\+E\+C\+L\+A\+R\+E\+\_\+\+O\+B\+J\+E\+CT@{D\+E\+C\+L\+A\+R\+E\+\_\+\+O\+B\+J\+E\+CT}}
+\index{D\+E\+C\+L\+A\+R\+E\+\_\+\+O\+B\+J\+E\+CT@{D\+E\+C\+L\+A\+R\+E\+\_\+\+O\+B\+J\+E\+CT}!D\+L\+L.\+h@{D\+L\+L.\+h}}
+\subsubsection{\texorpdfstring{D\+E\+C\+L\+A\+R\+E\+\_\+\+O\+B\+J\+E\+CT}{DECLARE\_OBJECT}}
+{\footnotesize\ttfamily \#define D\+E\+C\+L\+A\+R\+E\+\_\+\+O\+B\+J\+E\+CT(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})~dll-\/$>$add\+Object   (\#x,\#y);}
+
+
+
+Definition at line 32 of file D\+L\+L.\+h.
+
+\mbox{\Hypertarget{DLL_8h_aef2212dc8e888f762b7c0e2b2fcb0cdf}\label{DLL_8h_aef2212dc8e888f762b7c0e2b2fcb0cdf}} 
+\index{D\+L\+L.\+h@{D\+L\+L.\+h}!D\+E\+C\+L\+A\+R\+E\+\_\+\+P\+R\+O\+C\+E\+S\+S\+US@{D\+E\+C\+L\+A\+R\+E\+\_\+\+P\+R\+O\+C\+E\+S\+S\+US}}
+\index{D\+E\+C\+L\+A\+R\+E\+\_\+\+P\+R\+O\+C\+E\+S\+S\+US@{D\+E\+C\+L\+A\+R\+E\+\_\+\+P\+R\+O\+C\+E\+S\+S\+US}!D\+L\+L.\+h@{D\+L\+L.\+h}}
+\subsubsection{\texorpdfstring{D\+E\+C\+L\+A\+R\+E\+\_\+\+P\+R\+O\+C\+E\+S\+S\+US}{DECLARE\_PROCESSUS}}
+{\footnotesize\ttfamily \#define D\+E\+C\+L\+A\+R\+E\+\_\+\+P\+R\+O\+C\+E\+S\+S\+US(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})~dll-\/$>$add\+Processus   (\#x,\#y);}
+
+
+
+Definition at line 29 of file D\+L\+L.\+h.
+
+
+
+Referenced by D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+L\+L().
+
+\mbox{\Hypertarget{DLL_8h_a42fe2ab0204631cd6bce21486b0ee739}\label{DLL_8h_a42fe2ab0204631cd6bce21486b0ee739}} 
+\index{D\+L\+L.\+h@{D\+L\+L.\+h}!F\+A\+C\+T\+O\+RY@{F\+A\+C\+T\+O\+RY}}
+\index{F\+A\+C\+T\+O\+RY@{F\+A\+C\+T\+O\+RY}!D\+L\+L.\+h@{D\+L\+L.\+h}}
+\subsubsection{\texorpdfstring{F\+A\+C\+T\+O\+RY}{FACTORY}}
+{\footnotesize\ttfamily \#define F\+A\+C\+T\+O\+RY(\begin{DoxyParamCaption}\item[{}]{type,  }\item[{}]{x }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{extern} \textcolor{stringliteral}{"C"} type* x##\_create() \{ \(\backslash\)
+  return (\textcolor{keyword}{new} x) ; \(\backslash\)
+\} \(\backslash\)
+extern \textcolor{stringliteral}{"C"} \textcolor{keywordtype}{void} x##\_destroy(type* \hyperlink{namespaceprogressbar_ae52c2f9f5dc12ba745ab6156965df610}{p}) \{ \(\backslash\)
+  delete \hyperlink{namespaceprogressbar_ae52c2f9f5dc12ba745ab6156965df610}{p}; \(\backslash\)
+\}
+\end{DoxyCode}
+
+
+Definition at line 43 of file D\+L\+L.\+h.
+
+
+
+Referenced by D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+L\+L().
+

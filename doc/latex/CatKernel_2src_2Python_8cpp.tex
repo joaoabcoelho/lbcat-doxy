@@ -1,0 +1,479 @@
+\hypertarget{CatKernel_2src_2Python_8cpp}{}\section{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/src/\+Python.cpp File Reference}
+\label{CatKernel_2src_2Python_8cpp}\index{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/src/\+Python.\+cpp@{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/src/\+Python.\+cpp}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$boost/python/class.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/python/module.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/python/def.\+hpp$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{CatKernel_2src_2Python_8cpp_a492375e938b24561d4a125d80b0b115d}{export\+\_\+base} ()
+\item 
+void \hyperlink{CatKernel_2src_2Python_8cpp_a42b880fc73cbbc5141f4b5270ed8abf0}{export\+\_\+obj} ()
+\item 
+void \hyperlink{CatKernel_2src_2Python_8cpp_a7da606f0ac9c587ba144c1896a9dfc05}{export\+\_\+proc} ()
+\item 
+\hyperlink{CatKernel_2src_2Python_8cpp_a50ddad57d54d0690d22688a06f748c66}{B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+LE} (lib\+Cat\+Kernel)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{CatKernel_2src_2Python_8cpp_a50ddad57d54d0690d22688a06f748c66}\label{CatKernel_2src_2Python_8cpp_a50ddad57d54d0690d22688a06f748c66}} 
+\index{Cat\+Kernel/src/\+Python.\+cpp@{Cat\+Kernel/src/\+Python.\+cpp}!B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+LE@{B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+LE}}
+\index{B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+LE@{B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+LE}!Cat\+Kernel/src/\+Python.\+cpp@{Cat\+Kernel/src/\+Python.\+cpp}}
+\subsubsection{\texorpdfstring{B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E()}{BOOST\_PYTHON\_MODULE()}}
+{\footnotesize\ttfamily B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+LE (\begin{DoxyParamCaption}\item[{lib\+Cat\+Kernel}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 40 of file Python.\+cpp.
+
+
+
+References export\+\_\+base(), export\+\_\+obj(), and export\+\_\+proc().
+
+
+\begin{DoxyCode}
+41 \{
+42   \hyperlink{CatKernel_2src_2Python_8cpp_a492375e938b24561d4a125d80b0b115d}{export\_base}();
+43   \hyperlink{CatKernel_2src_2Python_8cpp_a42b880fc73cbbc5141f4b5270ed8abf0}{export\_obj}();
+44   \hyperlink{CatKernel_2src_2Python_8cpp_a7da606f0ac9c587ba144c1896a9dfc05}{export\_proc}();
+45 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{CatKernel_2src_2Python_8cpp_a492375e938b24561d4a125d80b0b115d}\label{CatKernel_2src_2Python_8cpp_a492375e938b24561d4a125d80b0b115d}} 
+\index{Cat\+Kernel/src/\+Python.\+cpp@{Cat\+Kernel/src/\+Python.\+cpp}!export\+\_\+base@{export\+\_\+base}}
+\index{export\+\_\+base@{export\+\_\+base}!Cat\+Kernel/src/\+Python.\+cpp@{Cat\+Kernel/src/\+Python.\+cpp}}
+\subsubsection{\texorpdfstring{export\+\_\+base()}{export\_base()}}
+{\footnotesize\ttfamily void export\+\_\+base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 17 of file Python\+\_\+\+Base.\+cpp.
+
+
+
+References D\+L\+L\+Mgr\+::create\+Element(), D\+L\+L\+Mgr\+::create\+Processus(), Options\+::current\+Path(), Options\+::data\+File(), Options\+::data\+File\+Full\+Name(), Options\+::data\+Storage(), Msg\+Svc\+::\+D\+E\+B\+UG, Options\+::def\+File(), D\+L\+L\+Mgr\+::destroy(), D\+L\+L\+Mgr\+::dll(), D\+L\+L\+Mgr\+::dlls(), Msg\+Svc\+::\+E\+RR, Status\+Code\+::\+F\+A\+I\+L\+U\+RE, Msg\+Svc\+::\+F\+A\+T\+AL, Options\+::inc\+N\+Errors(), Options\+::inc\+N\+Evt(), Options\+::inc\+Run\+Number(), Msg\+Svc\+::\+I\+N\+FO, Status\+Code\+::is\+Failure(), Status\+Code\+::is\+Success(), D\+L\+L\+Mgr\+::library\+Of\+Object(), Proc\+Data\+Base\+::list(), D\+L\+L\+Mgr\+::load(), Options\+::log\+Def\+File(), Options\+::log\+File(), Options\+::log\+Output\+Level(), Options\+::log\+Storage(), Msg\+Svc\+::msg\+Svc(), Options\+::n\+Errors(), Options\+::n\+Evt(), Options\+::n\+Evt\+Max(), Msg\+Svc\+::\+N\+O\+NE, Options\+::plot\+Freq(), D\+L\+L\+Mgr\+::print(), D\+L\+L\+::print(), Options\+::print(), Options\+::print\+Freq(), Options\+::run\+Number(), Options\+::run\+Number\+Management(), Msg\+Svc\+::set\+Call\+Size(), Options\+::set\+Current\+Path(), Options\+::set\+Data\+Storage(), Options\+::set\+Def\+File(), Msg\+Svc\+::set\+Line\+Length(), Options\+::set\+Log\+Def\+File(), Options\+::set\+Log\+Output\+Level(), Options\+::set\+Log\+Storage(), Options\+::set\+N\+Errors(), Options\+::set\+N\+Evt(), Options\+::set\+N\+Evt\+Max(), Options\+::set\+Plot\+Freq(), Options\+::set\+Print\+Freq(), Options\+::set\+Run\+Number(), Options\+::set\+Run\+Number\+Management(), Options\+::set\+Stop\+On\+Error(), Options\+::set\+Storage\+Dir(), Options\+::set\+Storage\+File(), Options\+::set\+Storage\+Path(), Options\+::set\+Stream(), Options\+::stop\+On\+Error(), Options\+::storage\+Dir(), Options\+::storage\+File(), Options\+::storage\+File\+Full\+Name(), Options\+::storage\+Full\+Path(), Options\+::storage\+Path(), Status\+Code\+::\+S\+U\+C\+C\+E\+SS, D\+L\+L\+Mgr\+::unload(), Msg\+Svc\+::\+V\+E\+R\+B\+O\+SE, and Msg\+Svc\+::\+W\+A\+R\+N\+I\+NG.
+
+
+
+Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
+
+
+\begin{DoxyCode}
+18 \{
+19   enum\_<MsgSvc::MsgLevel>(\textcolor{stringliteral}{"MsgLevel"})
+20     .value(\textcolor{stringliteral}{"VERBOSE"}, \hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926af655256b06494ade5ba830abe5401ec9}{MsgSvc::VERBOSE})
+21     .value(\textcolor{stringliteral}{"DEBUG"},   \hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a1dbdcc82dce88370ec335883c83b38b0}{MsgSvc::DEBUG})
+22     .value(\textcolor{stringliteral}{"INFO"},    \hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{MsgSvc::INFO})
+23     .value(\textcolor{stringliteral}{"WARNING"}, \hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a7cefae88f2ba26b2b05b676a383c834b}{MsgSvc::WARNING})
+24     .value(\textcolor{stringliteral}{"ERROR"},   \hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a35a9d7166e9896af4ec8fb33bf5f1772}{MsgSvc::ERR})
+25     .value(\textcolor{stringliteral}{"FATAL"},   \hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a59c73cb29edfc9cdf35845e2b1301363}{MsgSvc::FATAL})
+26     .value(\textcolor{stringliteral}{"NONE"},    \hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a9be9ae32fed8e1e6eba4a58692210fbd}{MsgSvc::NONE})
+27     ;
+28   
+29   class\_<MsgSvc>(\textcolor{stringliteral}{"MsgSvc"})
+30     .def(\textcolor{stringliteral}{"msgSvc"},&\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{MsgSvc::msgSvc})
+31     .def(\textcolor{stringliteral}{"setLineLength"},&\hyperlink{classMsgSvc_ab741c391e80fcbf13eb2e60e48dc7536}{MsgSvc::setLineLength})
+32     .def(\textcolor{stringliteral}{"setCallSize"},&\hyperlink{classMsgSvc_a50854fb6f9df98bc170f690941747b61}{MsgSvc::setCallSize})
+33     ;
+34   
+35   enum\_<StatusCode::Type>(\textcolor{stringliteral}{"Code"})
+36     .value(\textcolor{stringliteral}{"FAILURE"},\hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE})
+37     .value(\textcolor{stringliteral}{"SUCCESS"},\hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS})
+38     ;
+39   
+40   class\_<StatusCode>(\textcolor{stringliteral}{"StatusCode"})
+41     .def(\textcolor{stringliteral}{"isSuccess"}, &\hyperlink{classStatusCode_acfe5ce8b2bb7d3d651fb0108c18c05c3}{StatusCode::isSuccess})
+42     .def(\textcolor{stringliteral}{"isFailure"}, &\hyperlink{classStatusCode_a5dd22dc6eb2c52fc4cabc58f6dea2eb7}{StatusCode::isFailure})
+43     ;
+44   
+45   class\_<Options>(\textcolor{stringliteral}{"Options"})
+46     .def(\textcolor{stringliteral}{"setLogOutputLevel"}, &\hyperlink{classOptions_a5d8ab053c941a944a53c0bfe871058a1}{Options::setLogOutputLevel})
+47     .def(\textcolor{stringliteral}{"logOutputLevel"},    &\hyperlink{classOptions_a2d11716f34070dd7991648a26eb5d244}{Options::logOutputLevel})
+48     .def(\textcolor{stringliteral}{"setPrintFreq"},      &\hyperlink{classOptions_adac15a8dbae0183ae7cecc09ebba6887}{Options::setPrintFreq})
+49     .def(\textcolor{stringliteral}{"printFreq"},         &\hyperlink{classOptions_a67021ffef9f666bba4696f89807b2a70}{Options::printFreq})
+50     .def(\textcolor{stringliteral}{"setRunNumber"},      &\hyperlink{classOptions_aed19a55eb2c418f333bc97615cf4a3a8}{Options::setRunNumber})
+51     .def(\textcolor{stringliteral}{"runNumber"},         &\hyperlink{classOptions_a2d9447919fe90f9ce8df5530526cbb27}{Options::runNumber})
+52     .def(\textcolor{stringliteral}{"setNEvt"},             &\hyperlink{classOptions_ae6a0fdaa736948f5040deb3eb6889268}{Options::setNEvt})
+53     .def(\textcolor{stringliteral}{"nEvt"},                &\hyperlink{classOptions_ad769b256263a4ac24dd6f989ae724ab7}{Options::nEvt})
+54     .def(\textcolor{stringliteral}{"setNEvtMax"},          &\hyperlink{classOptions_a6d732c0591188469287581bac8a4e3cd}{Options::setNEvtMax})
+55     .def(\textcolor{stringliteral}{"nEvtMax"},             &\hyperlink{classOptions_ad1f3b03d734c806a2feca418b26bcc9b}{Options::nEvtMax})
+56     .def(\textcolor{stringliteral}{"setPlotFreq"},         &\hyperlink{classOptions_a7df298047f1506fa2244cf096da96409}{Options::setPlotFreq})
+57     .def(\textcolor{stringliteral}{"plotFreq"},            &\hyperlink{classOptions_a1e20abb20c1a2187f9455b39cd9d26ae}{Options::plotFreq})
+58     .def(\textcolor{stringliteral}{"setNErrors"},          &\hyperlink{classOptions_a45368b495036869c67fe0e6bf9abc4e6}{Options::setNErrors})
+59     .def(\textcolor{stringliteral}{"nErrors"},             &\hyperlink{classOptions_acc6474323f0bbe17fa844e9a086b90b8}{Options::nErrors})
+60     .def(\textcolor{stringliteral}{"setRunNumberMgr"},   &\hyperlink{classOptions_a7bf3fb2833021f8900eb105b0a9c02c5}{Options::setRunNumberManagement})
+61     .def(\textcolor{stringliteral}{"runNumberMgr"},      &\hyperlink{classOptions_a7654a2c3d67baae08f61edc18bec367e}{Options::runNumberManagement})
+62     .def(\textcolor{stringliteral}{"setCurrentPath"},    &\hyperlink{classOptions_a3cebd8308183414ef2e0de0e7922c87a}{Options::setCurrentPath})
+63     .def(\textcolor{stringliteral}{"currentPath"},       &\hyperlink{classOptions_ab9cf7442a712fe8593f6cf5cfff36a5d}{Options::currentPath})
+64     .def(\textcolor{stringliteral}{"setStoragePath"},    &\hyperlink{classOptions_a8c32e222956c77ed2ec5387318f91394}{Options::setStoragePath})
+65     .def(\textcolor{stringliteral}{"storagePath"},       &\hyperlink{classOptions_a3992b9247441a3e60e55c8c5fe32b394}{Options::storagePath})
+66     .def(\textcolor{stringliteral}{"storageFullPath"},   &\hyperlink{classOptions_aa5fe6b85088f3012226869480790a383}{Options::storageFullPath})
+67     .def(\textcolor{stringliteral}{"setStorageDir"},     &\hyperlink{classOptions_aed5e6919526bcfa5cf4961230bd20e37}{Options::setStorageDir})
+68     .def(\textcolor{stringliteral}{"storageDir"},          &\hyperlink{classOptions_a5e8026ed2674f8f5db444b52fea27fda}{Options::storageDir})
+69     .def(\textcolor{stringliteral}{"setStorageFile"},    &\hyperlink{classOptions_ac163281337998af5ca3b7a9617337fef}{Options::setStorageFile})
+70     .def(\textcolor{stringliteral}{"storageFile"},         &\hyperlink{classOptions_a6661fe4edd501f7e97527b8f9354ef84}{Options::storageFile})
+71     .def(\textcolor{stringliteral}{"storageFileFullName"},&\hyperlink{classOptions_a68c501133588cd4b1c80219adb926e8d}{Options::storageFileFullName})
+72     .def(\textcolor{stringliteral}{"dataFileFullName"},  &\hyperlink{classOptions_ab1cd9f237e9c18fd72323c74565453f8}{Options::dataFileFullName})
+73     .def(\textcolor{stringliteral}{"dataFile"},            &\hyperlink{classOptions_a166984c16a957bf2e8e0f0a1ce39eb73}{Options::dataFile})
+74     .def(\textcolor{stringliteral}{"logFile"},             &\hyperlink{classOptions_a739a9b788fc937ad55d10d6b47ff1e8c}{Options::logFile})
+75     .def(\textcolor{stringliteral}{"setDataStorage"},    &\hyperlink{classOptions_ae6f39f4b0b4bd260fbb5a2f0b5f4786e}{Options::setDataStorage})
+76     .def(\textcolor{stringliteral}{"dataStorage"},         &\hyperlink{classOptions_aed7799d10139fa542055b982cb820192}{Options::dataStorage})
+77     .def(\textcolor{stringliteral}{"setLogStorage"},     &\hyperlink{classOptions_a96f0288f5317cf371589f4db07e913b0}{Options::setLogStorage})
+78     .def(\textcolor{stringliteral}{"logStorage"},        &\hyperlink{classOptions_a33735fffe17485937ab7579d8716b7ee}{Options::logStorage})
+79     .def(\textcolor{stringliteral}{"setLogDefFile"},     &\hyperlink{classOptions_a52e2995912a71f51c230dd6bf28b6a94}{Options::setLogDefFile})
+80     .def(\textcolor{stringliteral}{"logDefFile"},        &\hyperlink{classOptions_a5d362ec7f7969bd72c3c94b8e3d5ba97}{Options::logDefFile})
+81     .def(\textcolor{stringliteral}{"setDefFile"},        &\hyperlink{classOptions_a3c8bed9867ac5805489d78061e55bd1a}{Options::setDefFile})
+82     .def(\textcolor{stringliteral}{"defFile"},             &\hyperlink{classOptions_aca5ce5262ca717eaad5ff9db92ad1948}{Options::defFile})
+83     .def(\textcolor{stringliteral}{"incRunNumber"},      &\hyperlink{classOptions_a0bf512fc9126cd76acabaa4c3b65d7fb}{Options::incRunNumber})
+84     .def(\textcolor{stringliteral}{"incNEvt"},             &\hyperlink{classOptions_aa950f9861182c76c4005668e0b7f012a}{Options::incNEvt})
+85     .def(\textcolor{stringliteral}{"incNErrors"},          &\hyperlink{classOptions_ae5d12fb2571255033ef6b35300921b39}{Options::incNErrors})
+86     .def(\textcolor{stringliteral}{"setStream"},         &\hyperlink{classOptions_af7df7a64e597f0bed79ca979f8144daa}{Options::setStream})     
+87     .def(\textcolor{stringliteral}{"stopOnError"},       &\hyperlink{classOptions_afcd7b27fdf474050d912571e09525efe}{Options::stopOnError})
+88     .def(\textcolor{stringliteral}{"setStopOnError"},    &\hyperlink{classOptions_a0d362af154c7d2e30a7bf340eb061fa5}{Options::setStopOnError})
+89     .def(\textcolor{stringliteral}{"dump"},              &\hyperlink{classOptions_a3f4593f64bc8c8afc3ade9237adb83e1}{Options::print})
+90     ;
+91 
+92   std::vector<Processus*> (\hyperlink{classProcDataBase}{ProcDataBase}::*listElement)(\hyperlink{classElement}{Element}*) = (&
+      \hyperlink{classProcDataBase_a813dbc8f9e7c4d69074a01394f04fc98}{ProcDataBase::list});
+93   std::vector<Processus*> (\hyperlink{classProcDataBase}{ProcDataBase}::*listFull)( )        = (&
+      \hyperlink{classProcDataBase_a813dbc8f9e7c4d69074a01394f04fc98}{ProcDataBase::list});
+94 
+95   class\_<ProcDataBase>(\textcolor{stringliteral}{"ProcDb"})
+96     .def(\textcolor{stringliteral}{"list"}, listElement)
+97     .def(\textcolor{stringliteral}{"list"}, listFull   )
+98     ;
+99 
+100   class\_<DLL>(\textcolor{stringliteral}{"DLL"})
+101     .def(\textcolor{stringliteral}{"info"},&\hyperlink{classDLL_ae45f8b4b291e9da806f4921dd7468cfc}{DLL::print})
+102     ;
+103 
+104   class\_< std::vector< DLL* > >(\textcolor{stringliteral}{"DLLPtrVec"})
+105     .def(vector\_indexing\_suite< std::vector< DLL* > >())
+106     ;
+107 
+108   \hyperlink{classStatusCode}{StatusCode} (\hyperlink{classDLLMgr}{DLLMgr}::*destroyElement)  (\hyperlink{classElement}{Element}*)     = (&
+      \hyperlink{classDLLMgr_abc9c97bab16c8f261626ed401d67c8c8}{DLLMgr::destroy});
+109   \hyperlink{classStatusCode}{StatusCode} (\hyperlink{classDLLMgr}{DLLMgr}::*destroyProcessus)(\hyperlink{classProcessus}{Processus}*)   = (&
+      \hyperlink{classDLLMgr_abc9c97bab16c8f261626ed401d67c8c8}{DLLMgr::destroy});
+110 
+111   class\_<DLLMgr>(\textcolor{stringliteral}{"DLLMgr"})
+112     .def(\textcolor{stringliteral}{"load"}, &\hyperlink{classDLLMgr_a3c92bec62ace09dd00959c31bb2475d6}{DLLMgr::load})
+113     .def(\textcolor{stringliteral}{"unload"}, &\hyperlink{classDLLMgr_a0e4b881509f638f94cb4d6612578157b}{DLLMgr::unload})
+114     .def(\textcolor{stringliteral}{"info"},&\hyperlink{classDLLMgr_a223c039ca2d098fd825d52b22a9feeb4}{DLLMgr::print})
+115     .def(\textcolor{stringliteral}{"dll"}, &\hyperlink{classDLLMgr_a0241372eb2e136f61e609a04426636bd}{DLLMgr::dll},return\_value\_policy<reference\_existing\_object>())
+116     .def(\textcolor{stringliteral}{"dlls"}, &\hyperlink{classDLLMgr_a40a2b326bd4f01e58b4afa78a3773898}{DLLMgr::dlls})
+117     .def(\textcolor{stringliteral}{"dllOfObject"}, &\hyperlink{classDLLMgr_a7e8c992899b7357158aef047a2f15c51}{DLLMgr::libraryOfObject},
+      return\_value\_policy<reference\_existing\_object>())
+118     .def(\textcolor{stringliteral}{"createElement"}, &\hyperlink{classDLLMgr_a8cc61eaf98a6aa3cb99fee7226477053}{DLLMgr::createElement},
+      return\_value\_policy<reference\_existing\_object>())
+119     .def(\textcolor{stringliteral}{"createProcessus"},&\hyperlink{classDLLMgr_a04161fedb24bb6ae8469848d97804c39}{DLLMgr::createProcessus},
+      return\_value\_policy<reference\_existing\_object>())
+120     .def(\textcolor{stringliteral}{"destroy"},destroyElement)
+121     .def(\textcolor{stringliteral}{"destroy"},destroyProcessus)
+122     ;
+123 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{CatKernel_2src_2Python_8cpp_a42b880fc73cbbc5141f4b5270ed8abf0}\label{CatKernel_2src_2Python_8cpp_a42b880fc73cbbc5141f4b5270ed8abf0}} 
+\index{Cat\+Kernel/src/\+Python.\+cpp@{Cat\+Kernel/src/\+Python.\+cpp}!export\+\_\+obj@{export\+\_\+obj}}
+\index{export\+\_\+obj@{export\+\_\+obj}!Cat\+Kernel/src/\+Python.\+cpp@{Cat\+Kernel/src/\+Python.\+cpp}}
+\subsubsection{\texorpdfstring{export\+\_\+obj()}{export\_obj()}}
+{\footnotesize\ttfamily void export\+\_\+obj (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 27 of file Python\+\_\+\+Obj.\+cpp.
+
+
+
+References Attrib\+::add(), Hierarchy\+::add\+Child(), Attrib\+::attributs(), Application\+::cd(), Hierarchy\+::child(), Hierarchy\+::children(), Hierarchy\+::child\+Typed(), Hierarchy\+::clear(), Application\+::computer(), Element\+::connection(), Application\+::create(), Application\+::ctrl(), Application\+::current(), Object\+::debug(), Hierarchy\+::del\+Child(), Application\+::dll\+Mgr(), Object\+::dll\+Name(), Object\+::error(), Object\+::fatal(), Application\+::finalize(), Hierarchy\+::has\+Children(), Element\+::help(), Computer\+::help(), Application\+::hostname(), Object\+::id(), Object\+::info(), Element\+::init(), Computer\+::init(), Application\+::initialize(), Attrib\+::is(), Application\+::loop(), Object\+::msg(), Object\+::msg\+Svc(), Object\+::name(), Hierarchy\+::number\+Of\+Children(), Application\+::options(), Hierarchy\+::origin(), Hierarchy\+::parent(), Hierarchy\+::path(), Hierarchy\+::path\+Typed(), Application\+::prepare(), Application\+::proc\+Db(), Element\+::recursive\+Init\+Communications(), Element\+::recursive\+Init\+Element(), Attrib\+::remove(), Element\+::reset(), Computer\+::reset(), Application\+::run(), Element\+::set\+Connection(), Application\+::set\+Ctrl(), Application\+::set\+Current(), Object\+::set\+Id(), Object\+::set\+Name(), Hierarchy\+::set\+Parent(), Object\+::set\+Title(), Object\+::set\+Type(), Application\+::terminate(), Object\+::title(), Hierarchy\+::tree(), Object\+::type(), Element\+::update(), Computer\+::update(), Object\+::verbose(), and Object\+::warning().
+
+
+
+Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
+
+
+\begin{DoxyCode}
+28 \{
+29   class\_<Attrib>(\textcolor{stringliteral}{"Attrib"})
+30     .def(\textcolor{stringliteral}{"is"},     &\hyperlink{classAttrib_a704f26af560909ad22065083bb7d4c34}{Attrib::is})
+31     .def(\textcolor{stringliteral}{"add"},    &\hyperlink{classAttrib_a235f773af19c900264a190b00a3b4ad7}{Attrib::add})
+32     .def(\textcolor{stringliteral}{"remove"}, &\hyperlink{classAttrib_a7d4ef7e32d93cb287792b87b857e79f3}{Attrib::remove})
+33     .def(\textcolor{stringliteral}{"attributs"}, &\hyperlink{classAttrib_aee7bbf16b144887f196e1341b24f8a26}{Attrib::attributs})
+34     ;
+35 
+36   void (\hyperlink{classObject}{Object}::*msgx1)(std::string)                = (&\hyperlink{classObject_a58b2d0618c2d08cf2383012611528d97}{Object::msg});
+37   void (\hyperlink{classObject}{Object}::*msgx2)(std::string, std::string)   = (&\hyperlink{classObject_a58b2d0618c2d08cf2383012611528d97}{Object::msg});
+38   void (\hyperlink{classObject}{Object}::*verbosex1)(std::string)                = (&
+      \hyperlink{classObject_a83d2db2df682907ea1115ad721c1c4a1}{Object::verbose});
+39   void (\hyperlink{classObject}{Object}::*verbosex2)(std::string, std::string)   = (&
+      \hyperlink{classObject_a83d2db2df682907ea1115ad721c1c4a1}{Object::verbose});
+40   void (\hyperlink{classObject}{Object}::*debugx1)(std::string)                = (&\hyperlink{classObject_aac010553f022165573714b7014a15f0d}{Object::debug});
+41   void (\hyperlink{classObject}{Object}::*debugx2)(std::string, std::string)   = (&\hyperlink{classObject_aac010553f022165573714b7014a15f0d}{Object::debug});
+42   void (\hyperlink{classObject}{Object}::*infox1)(std::string)                = (&\hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{Object::info});
+43   void (\hyperlink{classObject}{Object}::*infox2)(std::string, std::string)   = (&\hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{Object::info});
+44   void (\hyperlink{classObject}{Object}::*warningx1)(std::string)                = (&
+      \hyperlink{classObject_a65cd4fda577711660821fd2cd5a3b4c9}{Object::warning});
+45   void (\hyperlink{classObject}{Object}::*warningx2)(std::string, std::string)   = (&
+      \hyperlink{classObject_a65cd4fda577711660821fd2cd5a3b4c9}{Object::warning});
+46   void (\hyperlink{classObject}{Object}::*errorx1)(std::string)                = (&\hyperlink{classObject_a204a95f57818c0f811933917a30eff45}{Object::error});
+47   void (\hyperlink{classObject}{Object}::*errorx2)(std::string, std::string)   = (&\hyperlink{classObject_a204a95f57818c0f811933917a30eff45}{Object::error});
+48   void (\hyperlink{classObject}{Object}::*fatalx1)(std::string)                = (&\hyperlink{classObject_aad5a16aac7516ce65bd5ec02ab07fc80}{Object::fatal});
+49   void (\hyperlink{classObject}{Object}::*fatalx2)(std::string, std::string)   = (&\hyperlink{classObject_aad5a16aac7516ce65bd5ec02ab07fc80}{Object::fatal});
+50   
+51   class\_<Object, bases <Attrib> >(\textcolor{stringliteral}{"Object"})
+52     .def(\textcolor{stringliteral}{"name"},  &\hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{Object::name})
+53     .def(\textcolor{stringliteral}{"type"},  &\hyperlink{classObject_a84f99f70f144a83e1582d1d0f84e4e62}{Object::type})
+54     .def(\textcolor{stringliteral}{"id"},    &\hyperlink{classObject_af99145335cc61ff6e2798ea17db009d2}{Object::id})
+55     .def(\textcolor{stringliteral}{"title"}, &\hyperlink{classObject_a73a0f1a41828fdd8303dd662446fb6c3}{Object::title})
+56     .def(\textcolor{stringliteral}{"dllName"},   &\hyperlink{classObject_a2e3947f2870094c332d7454117f3ec63}{Object::dllName})
+57     .def(\textcolor{stringliteral}{"setName"},  &\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{Object::setName})
+58     .def(\textcolor{stringliteral}{"setType"},  &\hyperlink{classObject_aae534cc9d982bcb9b99fd505f2e103a5}{Object::setType})
+59     .def(\textcolor{stringliteral}{"setId"},    &\hyperlink{classObject_a398fe08cba594a0ce6891d59fe4f159f}{Object::setId})
+60     .def(\textcolor{stringliteral}{"setTitle"}, &\hyperlink{classObject_a89557dbbad5bcaa02652f5d7fa35d20f}{Object::setTitle})
+61     .def(\textcolor{stringliteral}{"msgSvc"},&\hyperlink{classObject_a3f9d5537ebce0c0f2bf6ae4d92426f3c}{Object::msgSvc})
+62     .def(\textcolor{stringliteral}{"msg"}, msgx1)
+63     .def(\textcolor{stringliteral}{"msg"}, msgx2)
+64     .def(\textcolor{stringliteral}{"verbose"}, verbosex1)
+65     .def(\textcolor{stringliteral}{"verbose"}, verbosex2)
+66     .def(\textcolor{stringliteral}{"debug"}, debugx1)
+67     .def(\textcolor{stringliteral}{"debug"}, debugx2)
+68     .def(\textcolor{stringliteral}{"info"}, infox1)
+69     .def(\textcolor{stringliteral}{"info"}, infox2)
+70     .def(\textcolor{stringliteral}{"warning"}, warningx1)
+71     .def(\textcolor{stringliteral}{"warning"}, warningx2)
+72     .def(\textcolor{stringliteral}{"error"}, errorx1)
+73     .def(\textcolor{stringliteral}{"error"}, errorx2)
+74     .def(\textcolor{stringliteral}{"fatal"}, fatalx1)
+75     .def(\textcolor{stringliteral}{"fatal"}, fatalx2)
+76     ;
+77 
+78   class\_<Application, bases <Object> >(\textcolor{stringliteral}{"Application"})
+79     .def(\textcolor{stringliteral}{"initialize"}, &\hyperlink{classApplication_a86b8cbb104f3e04516ef574e5822ff82}{Application::initialize})
+80     .def(\textcolor{stringliteral}{"run"},        &\hyperlink{classApplication_a7fdd5bfee44e49896292f8964037384d}{Application::run})
+81     .def(\textcolor{stringliteral}{"finalize"},   &\hyperlink{classApplication_a5e2b592eebe6f2f8780d2c129bf14560}{Application::finalize})
+82     .def(\textcolor{stringliteral}{"create"},     &\hyperlink{classApplication_a552c6df459660f2d80e6d0ac6ce8279b}{Application::create})
+83     .def(\textcolor{stringliteral}{"cd"},         &\hyperlink{classApplication_a29aa0687ea27762ce36ab4195bf5d77f}{Application::cd})
+84     .def(\textcolor{stringliteral}{"options"},    &\hyperlink{classApplication_ada7cc0e8db586985f1435aee0c79f47d}{Application::options}, 
+85          return\_value\_policy<reference\_existing\_object>())
+86     .def(\textcolor{stringliteral}{"hostname"},   &\hyperlink{classApplication_a095248805e26b553466b7fafc6517d8f}{Application::hostname})
+87     .def(\textcolor{stringliteral}{"setCurrent"}, &\hyperlink{classApplication_a0f0a9e376d9f1716e01e86c94ae3499f}{Application::setCurrent})
+88     .def(\textcolor{stringliteral}{"current"},    &\hyperlink{classApplication_af25c880ff1e95d863ed058396754a76e}{Application::current},
+89          return\_value\_policy<reference\_existing\_object>())
+90     .def(\textcolor{stringliteral}{"computer"},   &\hyperlink{classApplication_ac5eb8a8e693d1b93426d7aabc6606d8b}{Application::computer},
+91          return\_value\_policy<reference\_existing\_object>())
+92     .def(\textcolor{stringliteral}{"dllMgr"},     &\hyperlink{classApplication_a0133c161bf55544f268ca039e174060b}{Application::dllMgr},
+93          return\_value\_policy<reference\_existing\_object>())
+94     .def(\textcolor{stringliteral}{"procDb"},     &\hyperlink{classApplication_aa5c28af1a7e1c41dada2db2a4d03c57d}{Application::procDb},
+95          return\_value\_policy<reference\_existing\_object>())
+96     .def(\textcolor{stringliteral}{"ctrl"},       &\hyperlink{classApplication_a3eb11c9a1985a3a9d2ec51df957f7c2f}{Application::ctrl})
+97     .def(\textcolor{stringliteral}{"setCtrl"},    &\hyperlink{classApplication_a451a04a80f59a76fb13b6fae6c07439a}{Application::setCtrl})
+98     .def(\textcolor{stringliteral}{"prepare"},    &\hyperlink{classApplication_a61dcc20b7f4b7c19b697db7516a62afa}{Application::prepare})
+99     .def(\textcolor{stringliteral}{"loop"},       &\hyperlink{classApplication_ab38055646202ef49c9ee2eda6d48076f}{Application::loop})
+100     .def(\textcolor{stringliteral}{"terminate"},  &\hyperlink{classApplication_a1a36a06d48d94a9a8fdc29a77d2cb9f0}{Application::terminate})
+101     ;    
+102 
+103   \hyperlink{classHierarchy}{Hierarchy}* (\hyperlink{classHierarchy}{Hierarchy}::*parentx0)()              = (&
+      \hyperlink{classHierarchy_a1c7bec8257e717f9c1465e06ebf845fc}{Hierarchy::parent});
+104   \hyperlink{classHierarchy}{Hierarchy}* (\hyperlink{classHierarchy}{Hierarchy}::*parentx1)(std::string)   = (&
+      \hyperlink{classHierarchy_a1c7bec8257e717f9c1465e06ebf845fc}{Hierarchy::parent});
+105   void       (\hyperlink{classHierarchy}{Hierarchy}::*delChildx0)(\hyperlink{classHierarchy}{Hierarchy}*)  = (&
+      \hyperlink{classHierarchy_a2b2b359fac003233f65786a616766bde}{Hierarchy::delChild});
+106   void       (\hyperlink{classHierarchy}{Hierarchy}::*delChildx1)(std::string) = (&
+      \hyperlink{classHierarchy_a2b2b359fac003233f65786a616766bde}{Hierarchy::delChild});  
+107   void       (\hyperlink{classHierarchy}{Hierarchy}::*treex0)()                = (&\hyperlink{classHierarchy_a594c294c5f60c230e106d522ed008212}{Hierarchy::tree});
+108 
+109   class\_< std::vector<Hierarchy*> >(\textcolor{stringliteral}{"HierarchyPtrVec"})
+110     .def(vector\_indexing\_suite< std::vector<Hierarchy*> >())
+111     ;
+112 
+113   class\_<Hierarchy, bases<Object> >(\textcolor{stringliteral}{"Hierarchy"})
+114     .def(\textcolor{stringliteral}{"clear"}, &\hyperlink{classHierarchy_af4d43b0765b402670eed2d62c73405af}{Hierarchy::clear})
+115     .def(\textcolor{stringliteral}{"setParent"}, &\hyperlink{classHierarchy_a585ad1aeec16077a0e532ab8b4fc557b}{Hierarchy::setParent})
+116     .def(\textcolor{stringliteral}{"parent"}, parentx0,return\_value\_policy<reference\_existing\_object>())
+117     .def(\textcolor{stringliteral}{"parent"}, parentx1,return\_value\_policy<reference\_existing\_object>())
+118     .def(\textcolor{stringliteral}{"origin"}, &\hyperlink{classHierarchy_aee461dc930ce3871636ff87f075b1b83}{Hierarchy::origin},return\_value\_policy<reference\_existing\_object>())
+119     .def(\textcolor{stringliteral}{"addChild"}, &\hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{Hierarchy::addChild})
+120     .def(\textcolor{stringliteral}{"children"}, &\hyperlink{classHierarchy_aa9a76f69e98e052ee1a6e32cea006288}{Hierarchy::children})
+121     .def(\textcolor{stringliteral}{"child"}, &\hyperlink{classHierarchy_a1e207f973c694b538bf90107b4868817}{Hierarchy::child},return\_value\_policy<reference\_existing\_object>())
+122     .def(\textcolor{stringliteral}{"childTyped"}, &\hyperlink{classHierarchy_a0c15a5276a3b80b4354d6bd8a01e0708}{Hierarchy::childTyped},
+      return\_value\_policy<reference\_existing\_object>())
+123     .def(\textcolor{stringliteral}{"numberOfChildren"}, &\hyperlink{classHierarchy_ab16e84de65fd84e14001a6cf941c8be4}{Hierarchy::numberOfChildren})
+124     .def(\textcolor{stringliteral}{"hasChildren"}, &\hyperlink{classHierarchy_a255174fe4d316d2a3f430dcb9dab29f1}{Hierarchy::hasChildren})
+125     .def(\textcolor{stringliteral}{"delChild"}, delChildx0)
+126     .def(\textcolor{stringliteral}{"delChild"}, delChildx1)
+127     .def(\textcolor{stringliteral}{"path"}, &\hyperlink{classHierarchy_aa7990fa7caf132d83e361ce033c6c65a}{Hierarchy::path})
+128     .def(\textcolor{stringliteral}{"pathTyped"}, &\hyperlink{classHierarchy_a1efd56cd164d328d2002e53a10a19b8c}{Hierarchy::pathTyped})
+129     .def(\textcolor{stringliteral}{"tree"}, treex0)
+130     ;  
+131 
+132   class\_<ElementWrap, boost::noncopyable, bases<Hierarchy> >(\textcolor{stringliteral}{"Element"})
+133     .def(\textcolor{stringliteral}{"help"},pure\_virtual(&\hyperlink{classElement_a32c0de27acb08e17251cef88c3e9303a}{Element::help}))
+134     .def(\textcolor{stringliteral}{"init"},pure\_virtual(&\hyperlink{classElement_af42754b5cabc198869222725218d695c}{Element::init}))
+135     .def(\textcolor{stringliteral}{"reset"},pure\_virtual(&\hyperlink{classElement_a69efffa22f06909d768149715565cb56}{Element::reset}))
+136     .def(\textcolor{stringliteral}{"update"},pure\_virtual(&\hyperlink{classElement_a4e6c83efae95616ebddd03c793a26661}{Element::update}))
+137     .def(\textcolor{stringliteral}{"recursiveInitElement"},&\hyperlink{classElement_a3c0abcb36f8906688bb7e32608df7086}{Element::recursiveInitElement})
+138     .def(\textcolor{stringliteral}{"recursiveInitCommunications"},&\hyperlink{classElement_a82119ed37dff76508a2746a853ec35ba}{Element::recursiveInitCommunications}
+      )
+139     .def(\textcolor{stringliteral}{"setConnection"},&\hyperlink{classElement_ab476b4b1df5954141ceb14f072433b89}{Element::setConnection})
+140     .def(\textcolor{stringliteral}{"connection"},&\hyperlink{classElement_af57444353c1ddf9fa0109801e97debf7}{Element::connection},
+      return\_value\_policy<reference\_existing\_object>())
+141     ;
+142 
+143   class\_<Computer, bases<Element> >(\textcolor{stringliteral}{"Computer"})
+144     .def(\textcolor{stringliteral}{"help"},&\hyperlink{classComputer_aeca79382f17fcfb43320902de5f20aca}{Computer::help})
+145     .def(\textcolor{stringliteral}{"init"},&\hyperlink{classComputer_a47ed8b470445d545bffefca31296e754}{Computer::init})
+146     .def(\textcolor{stringliteral}{"reset"},&\hyperlink{classComputer_aeab90cbacbef385685717c249a07929d}{Computer::reset})
+147     .def(\textcolor{stringliteral}{"update"},&\hyperlink{classComputer_aaad6dfbfcc6843d73f49e0fc1535563e}{Computer::update})
+148     ;  
+149 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{CatKernel_2src_2Python_8cpp_a7da606f0ac9c587ba144c1896a9dfc05}\label{CatKernel_2src_2Python_8cpp_a7da606f0ac9c587ba144c1896a9dfc05}} 
+\index{Cat\+Kernel/src/\+Python.\+cpp@{Cat\+Kernel/src/\+Python.\+cpp}!export\+\_\+proc@{export\+\_\+proc}}
+\index{export\+\_\+proc@{export\+\_\+proc}!Cat\+Kernel/src/\+Python.\+cpp@{Cat\+Kernel/src/\+Python.\+cpp}}
+\subsubsection{\texorpdfstring{export\+\_\+proc()}{export\_proc()}}
+{\footnotesize\ttfamily void export\+\_\+proc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 29 of file Python\+\_\+\+Proc.\+cpp.
+
+
+
+References Histo1\+D\+::bins(), Histo2\+D\+::bins(), Histo1\+D\+::centers(), Processus\+::data(), Histo1\+D\+::edges(), Processus\+::element(), Processus\+::end\+Processing(), Processus\+::execute(), Processus\+::finalize(), Data\+::hist1d(), Processus\+::hist1d(), Data\+::hist2d(), Processus\+::hist2d(), Processus\+::initialize(), Proc\+Data\+Base\+::list(), Histo2\+D\+::max\+X(), Histo1\+D\+::max\+X(), Histo1\+D\+::max\+Y(), Histo2\+D\+::max\+Y(), Histo2\+D\+::max\+Z(), Histo2\+D\+::min\+X(), Histo1\+D\+::min\+X(), Histo1\+D\+::min\+Y(), Histo2\+D\+::min\+Y(), Histo2\+D\+::min\+Z(), Object\+::name(), Histo1\+D\+::n\+Bin(), Histo2\+D\+::nxbins(), Histo2\+D\+::nybins(), Histo1\+D\+::overflow(), Data\+::print(), Processus\+::set\+Element(), Test\+Suite\+::set\+Sigma(), Processus\+::set\+Storage(), Test\+Suite\+::sigma(), Processus\+::start\+Processing(), Processus\+::storage(), Object\+::title(), Histo1\+D\+::underflow(), Data\+::vector(), Histo2\+D\+::xbins(), and Histo2\+D\+::ybins().
+
+
+
+Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
+
+
+\begin{DoxyCode}
+30 \{
+31   class\_< std::vector<Processus*> >(\textcolor{stringliteral}{"ProcessusPtrVec"})
+32     .def(vector\_indexing\_suite< std::vector<Processus*> >())
+33     ;
+34 
+35   std::vector<Processus*> (\hyperlink{classProcDataBase}{ProcDataBase}::*listElement)(\hyperlink{classElement}{Element}*) = (&
+      \hyperlink{classProcDataBase_a813dbc8f9e7c4d69074a01394f04fc98}{ProcDataBase::list});
+36   std::vector<Processus*> (\hyperlink{classProcDataBase}{ProcDataBase}::*listFull)( )        = (&
+      \hyperlink{classProcDataBase_a813dbc8f9e7c4d69074a01394f04fc98}{ProcDataBase::list});
+37 
+38   \textcolor{comment}{//  class\_<ProcDataBase>("ProcDb")}
+39   \textcolor{comment}{//    .def("list", listElement)}
+40   \textcolor{comment}{//    .def("list", listFull   )}
+41   \textcolor{comment}{//   ;}
+42 
+43   class\_< std::vector<Histo1D*> >(\textcolor{stringliteral}{"Histo1DPtrVec"})
+44     .def(vector\_indexing\_suite< std::vector<Histo1D*> >())
+45     ;
+46 
+47   class\_< std::vector<double> >(\textcolor{stringliteral}{"DoubleVec"})
+48     .def(vector\_indexing\_suite< std::vector<double> >())
+49     ;
+50 
+51   class\_<Histo1D, bases<Object> >(\textcolor{stringliteral}{"Histo1D"}, init<TH1D*>())
+52     .def(\textcolor{stringliteral}{"bins"},&\hyperlink{classHisto1D_aaa8cd492ee25a3ad1b1694349fb1024c}{Histo1D::bins})
+53     .def(\textcolor{stringliteral}{"xbins"},&\hyperlink{classHisto1D_a07fd41679a3255cdd44d4dcf8865adb7}{Histo1D::centers})
+54     .def(\textcolor{stringliteral}{"edges"},&\hyperlink{classHisto1D_a8c74413d35bce2e244defd470b6b4ebf}{Histo1D::edges})
+55     .def(\textcolor{stringliteral}{"minX"},&\hyperlink{classHisto1D_abe9bf76799889414686794502e777b67}{Histo1D::minX})
+56     .def(\textcolor{stringliteral}{"maxX"},&\hyperlink{classHisto1D_a54c7464513d1382c7c66fa880bfe568e}{Histo1D::maxX})
+57     .def(\textcolor{stringliteral}{"minY"},&\hyperlink{classHisto1D_a122c7071e060672dd2c08ad92212b3a2}{Histo1D::minY})
+58     .def(\textcolor{stringliteral}{"maxY"},&\hyperlink{classHisto1D_a60a1095ac5fbab109d20c54c2ee569a3}{Histo1D::maxY})
+59     .def(\textcolor{stringliteral}{"nbins"},&\hyperlink{classHisto1D_a7f3cf7364ae6e1eb9ba08b5ffe897d8f}{Histo1D::nBin})
+60     .def(\textcolor{stringliteral}{"overflow"},&\hyperlink{classHisto1D_a5d13018047a4ffb15e662f44a0a3f520}{Histo1D::overflow})
+61     .def(\textcolor{stringliteral}{"underflow"},&\hyperlink{classHisto1D_a3bac7a207b9ed5f828001119b2f14869}{Histo1D::underflow})
+62     \textcolor{comment}{//    .def("overflow",&Histo1D::overflow)}
+63     ;
+64 
+65   class\_< std::vector< std::pair < unsigned int , Histo1D* > > >(\textcolor{stringliteral}{"PairIntHisto1DVec"})
+66     .def(vector\_indexing\_suite< std::vector< std::pair < unsigned int , Histo1D* > > >())
+67     ;
+68   \textcolor{comment}{/*}
+69 \textcolor{comment}{  class\_< std::vector< std::vector<double> > > ("VecVecDouble")}
+70 \textcolor{comment}{    .def(vector\_indexing\_suite< std::vector< std::vector < double > > >())}
+71 \textcolor{comment}{    ;}
+72 \textcolor{comment}{  */}
+73   class\_<Histo2D, bases<Object> >(\textcolor{stringliteral}{"Histo2D"}, init<TH2D*>())
+74     .def(\textcolor{stringliteral}{"bins"},&\hyperlink{classHisto2D_ab3d44a1cb12119a2244065af2b1f7099}{Histo2D::bins})
+75     .def(\textcolor{stringliteral}{"xbins"},&\hyperlink{classHisto2D_a8f42529a5fba07c339e547bf504dd418}{Histo2D::xbins})
+76     .def(\textcolor{stringliteral}{"ybins"},&\hyperlink{classHisto2D_a0ae225e33eb9837137b10a159ac1d4f2}{Histo2D::ybins})
+77     .def(\textcolor{stringliteral}{"minX"},&\hyperlink{classHisto2D_ae5a3ff63669999c9fda448db61e5bb57}{Histo2D::minX})
+78     .def(\textcolor{stringliteral}{"maxX"},&\hyperlink{classHisto2D_aae04c13ac492562532b4d3f82979a0f4}{Histo2D::maxX})
+79     .def(\textcolor{stringliteral}{"minY"},&\hyperlink{classHisto2D_ae946ecc8e7b4efc2e1454cd75c7d8aca}{Histo2D::minY})
+80     .def(\textcolor{stringliteral}{"maxY"},&\hyperlink{classHisto2D_a7bfc748b81257716316a38e628c5832f}{Histo2D::maxY})
+81     .def(\textcolor{stringliteral}{"minY"},&\hyperlink{classHisto2D_a68cfc2d92fbc5ce2efa1d6b5781ea621}{Histo2D::minZ})
+82     .def(\textcolor{stringliteral}{"maxY"},&\hyperlink{classHisto2D_ad6ccf8ddd4e4b5930f39284059577570}{Histo2D::maxZ})
+83     .def(\textcolor{stringliteral}{"nxbins"},&\hyperlink{classHisto2D_aac422991db96030ce7ca3952e4d277f2}{Histo2D::nxbins})
+84     .def(\textcolor{stringliteral}{"nybins"},&\hyperlink{classHisto2D_a17ee49d9e1c5d62edc887f4f63f68db6}{Histo2D::nybins})
+85     \textcolor{comment}{/*}
+86 \textcolor{comment}{    .def("overflow",&Histo1D::overflow)}
+87 \textcolor{comment}{    .def("underflow",&Histo1D::underflow)}
+88 \textcolor{comment}{    */}
+89     ;
+90   \textcolor{comment}{/*}
+91 \textcolor{comment}{  class\_<Plot, bases<Object> >("Plot")}
+92 \textcolor{comment}{    .def("histos", &Plot::histos)}
+93 \textcolor{comment}{    .def("histo1d",&Plot::histo1d)}
+94 \textcolor{comment}{    .def("format", &Plot::format)}
+95 \textcolor{comment}{    .def("pos",    &Plot::pos)}
+96 \textcolor{comment}{    .def("make",   &Plot::make)}
+97 \textcolor{comment}{    .def("draw",   &Plot::draw)}
+98 \textcolor{comment}{    ;}
+99 \textcolor{comment}{  */}
+100   std::vector<double> (\hyperlink{classData}{Data}::*vectorx0)(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int})  = (&\hyperlink{classData_a94e00cdd58c1d6f11487f1ac47fee4bc}{Data::vector});
+101   std::vector<double> (\hyperlink{classData}{Data}::*vectorx1)(std::string)   = (&\hyperlink{classData_a94e00cdd58c1d6f11487f1ac47fee4bc}{Data::vector});
+102 
+103   \hyperlink{classHisto1D}{Histo1D}* (\hyperlink{classData}{Data}::*hist1dx0)(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int})  = (&\hyperlink{classData_a476a66728ccfc553909d15b36c22492a}{Data::hist1d});
+104   \hyperlink{classHisto1D}{Histo1D}* (\hyperlink{classData}{Data}::*hist1dx1)(std::string)   = (&\hyperlink{classData_a476a66728ccfc553909d15b36c22492a}{Data::hist1d});
+105   \hyperlink{classHisto2D}{Histo2D}* (\hyperlink{classData}{Data}::*hist2dx0)(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int})  = (&\hyperlink{classData_ab717ebe242192605ad509b76df35e855}{Data::hist2d});
+106   \hyperlink{classHisto2D}{Histo2D}* (\hyperlink{classData}{Data}::*hist2dx1)(std::string)   = (&\hyperlink{classData_ab717ebe242192605ad509b76df35e855}{Data::hist2d});
+107 
+108   class\_<Data, bases<Object> >(\textcolor{stringliteral}{"Data"})
+109     .def(\textcolor{stringliteral}{"name"},  &\hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{Data::name})
+110     .def(\textcolor{stringliteral}{"title"}, &\hyperlink{classObject_a73a0f1a41828fdd8303dd662446fb6c3}{Data::title})
+111     .def(\textcolor{stringliteral}{"vector"},vectorx0)
+112     .def(\textcolor{stringliteral}{"vector"},vectorx1)
+113     .def(\textcolor{stringliteral}{"info"},   &\hyperlink{classData_a779ce878d01483220b49ad9e513d7366}{Data::print})
+114     .def(\textcolor{stringliteral}{"hist1d"},hist1dx0,return\_value\_policy<reference\_existing\_object>())
+115     .def(\textcolor{stringliteral}{"hist1d"},hist1dx1,return\_value\_policy<reference\_existing\_object>())
+116     .def(\textcolor{stringliteral}{"hist2d"},hist2dx0,return\_value\_policy<reference\_existing\_object>())
+117     .def(\textcolor{stringliteral}{"hist2d"},hist2dx1,return\_value\_policy<reference\_existing\_object>())
+118     ;
+119   
+120   \hyperlink{classData}{Data}* (\hyperlink{classProcessus}{Processus}::*datax0)                   ()              = (&
+      \hyperlink{classProcessus_a16e45f329fbce935aeef0ff3cb508228}{Processus::data});
+121   std::vector<double> (\hyperlink{classProcessus}{Processus}::*datax1)     (std::string)   = (&
+      \hyperlink{classProcessus_a16e45f329fbce935aeef0ff3cb508228}{Processus::data});
+122   std::vector<double> (\hyperlink{classProcessus}{Processus}::*datax2)     (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int})  = (&
+      \hyperlink{classProcessus_a16e45f329fbce935aeef0ff3cb508228}{Processus::data});
+123 
+124   \hyperlink{classHisto1D}{Histo1D}* (\hyperlink{classProcessus}{Processus}::*datax3)                (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int})  = (&
+      \hyperlink{classProcessus_a409227db936baff03c0462c1bcfe8069}{Processus::hist1d});
+125   \hyperlink{classHisto2D}{Histo2D}* (\hyperlink{classProcessus}{Processus}::*datax4)                (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int})  = (&
+      \hyperlink{classProcessus_a73b5118cb5f2b5eaad33286183b86cfc}{Processus::hist2d});
+126 
+127   class\_<ProcessusWrap, boost::noncopyable, bases<Object> >(\textcolor{stringliteral}{"Processus"})
+128     .def(\textcolor{stringliteral}{"initialize"},pure\_virtual(&\hyperlink{classProcessus_aee88ad7b77ae7319cf8b128e9dd2ea11}{Processus::initialize}))
+129     .def(\textcolor{stringliteral}{"execute"},pure\_virtual(&\hyperlink{classProcessus_a63767a63a1fb0055c5aa45b21a4a5d58}{Processus::execute}))
+130     .def(\textcolor{stringliteral}{"finalize"},pure\_virtual(&\hyperlink{classProcessus_aba93d691f031bdb18ae4b8afb1b2e856}{Processus::finalize}))
+131     .def(\textcolor{stringliteral}{"startProcessing"},&\hyperlink{classProcessus_a09319bde9bed93e290f69b4e04585543}{Processus::startProcessing})
+132     .def(\textcolor{stringliteral}{"endProcessing"},&\hyperlink{classProcessus_a5e4da662989d356b89d490b89c7afbfd}{Processus::endProcessing})
+133     .def(\textcolor{stringliteral}{"setStorage"},&\hyperlink{classProcessus_ad57a29b33f9021eda9f6929136f1784f}{Processus::setStorage})
+134     .def(\textcolor{stringliteral}{"storage"},&\hyperlink{classProcessus_a33fa1a0b54a636e5cdd680669fd9ea51}{Processus::storage})
+135     .def(\textcolor{stringliteral}{"setElement"},&\hyperlink{classProcessus_a8ddef94227d83d9dae2cd49aebc33353}{Processus::setElement})
+136     .def(\textcolor{stringliteral}{"element"},&\hyperlink{classProcessus_a6fe155527431a7190b7d44d600b9608d}{Processus::element},return\_value\_policy<reference\_existing\_object>())
+137     .def(\textcolor{stringliteral}{"data"},datax0,return\_value\_policy<reference\_existing\_object>())
+138     .def(\textcolor{stringliteral}{"data"},datax1)
+139     .def(\textcolor{stringliteral}{"data"},datax2)
+140     .def(\textcolor{stringliteral}{"hist1d"},datax3,return\_value\_policy<reference\_existing\_object>())
+141     .def(\textcolor{stringliteral}{"hist2d"},datax4,return\_value\_policy<reference\_existing\_object>())
+142     ;
+143 
+144   class\_<TestSuite, bases<Processus> > (\textcolor{stringliteral}{"TestSuite"})
+145     .def(\textcolor{stringliteral}{"setSigma"}, &\hyperlink{classTestSuite_aea5b144ea26479d5255efffab4c125f4}{TestSuite::setSigma}) 
+146     .def(\textcolor{stringliteral}{"sigma"},    &\hyperlink{classTestSuite_a9c74de1a21bc0998253da5e9befe6a42}{TestSuite::sigma}) 
+147     ;  
+148 \}
+\end{DoxyCode}

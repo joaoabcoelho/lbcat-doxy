@@ -1,0 +1,152 @@
+\hypertarget{namespaceTestSuite}{}\section{Test\+Suite Namespace Reference}
+\label{namespaceTestSuite}\index{Test\+Suite@{Test\+Suite}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceTestSuite_a7b3d5b63aa0a4de85e213ad4484861e1}{Edit} (cat, obj, panel, path)
+\item 
+def \hyperlink{namespaceTestSuite_a346397453a7f5becbc4ee14a3b2b5801}{create\+Plots} (cat, obj, run)
+\item 
+def \hyperlink{namespaceTestSuite_afd38321f5736c9a017d24fcee3206fed}{update\+Plots} (figs, obj)
+\item 
+def \hyperlink{namespaceTestSuite_a2ea7dee6a6c49e8e2fb533cb0a6a4c83}{Plot} (cat, obj, parent, \hyperlink{classObject_af99145335cc61ff6e2798ea17db009d2}{id})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespaceTestSuite_a346397453a7f5becbc4ee14a3b2b5801}\label{namespaceTestSuite_a346397453a7f5becbc4ee14a3b2b5801}} 
+\index{Test\+Suite@{Test\+Suite}!create\+Plots@{create\+Plots}}
+\index{create\+Plots@{create\+Plots}!Test\+Suite@{Test\+Suite}}
+\subsubsection{\texorpdfstring{create\+Plots()}{createPlots()}}
+{\footnotesize\ttfamily def Test\+Suite.\+create\+Plots (\begin{DoxyParamCaption}\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{run }\end{DoxyParamCaption})}
+
+
+
+Definition at line 46 of file Test\+Suite.\+py.
+
+
+\begin{DoxyCode}
+46 \textcolor{keyword}{def }\hyperlink{namespaceTestSuite_a346397453a7f5becbc4ee14a3b2b5801}{createPlots}(cat, obj, run):
+47     fig = plt.figure(figsize=(10,10))
+48     fig.suptitle(\textcolor{stringliteral}{"Run "}+str(run), fontsize=14, fontweight=\textcolor{stringliteral}{'bold'})
+49     \textcolor{keywordflow}{for} vplot \textcolor{keywordflow}{in} [1,2,3]:
+50         ax = fig.add\_subplot(3,1,vplot)
+51     fig.show()    
+52     \textcolor{keywordflow}{return} [fig]
+53 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceTestSuite_a7b3d5b63aa0a4de85e213ad4484861e1}\label{namespaceTestSuite_a7b3d5b63aa0a4de85e213ad4484861e1}} 
+\index{Test\+Suite@{Test\+Suite}!Edit@{Edit}}
+\index{Edit@{Edit}!Test\+Suite@{Test\+Suite}}
+\subsubsection{\texorpdfstring{Edit()}{Edit()}}
+{\footnotesize\ttfamily def Test\+Suite.\+Edit (\begin{DoxyParamCaption}\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{panel,  }\item[{}]{path }\end{DoxyParamCaption})}
+
+
+
+Definition at line 41 of file Test\+Suite.\+py.
+
+
+\begin{DoxyCode}
+41 \textcolor{keyword}{def }\hyperlink{namespaceTestSuite_a7b3d5b63aa0a4de85e213ad4484861e1}{Edit} (cat, obj, panel, path):
+42     \textcolor{keywordflow}{return} \hyperlink{classTestSuite}{TestSuite}(cat, obj, panel, path)
+43 
+44 \textcolor{comment}{#----------------------------------------------------------------------}
+45 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceTestSuite_a2ea7dee6a6c49e8e2fb533cb0a6a4c83}\label{namespaceTestSuite_a2ea7dee6a6c49e8e2fb533cb0a6a4c83}} 
+\index{Test\+Suite@{Test\+Suite}!Plot@{Plot}}
+\index{Plot@{Plot}!Test\+Suite@{Test\+Suite}}
+\subsubsection{\texorpdfstring{Plot()}{Plot()}}
+{\footnotesize\ttfamily def Test\+Suite.\+Plot (\begin{DoxyParamCaption}\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{parent,  }\item[{}]{id }\end{DoxyParamCaption})}
+
+
+
+Definition at line 83 of file Test\+Suite.\+py.
+
+
+
+References plotter.\+h1d(), Object.\+name(), and Object.\+title().
+
+
+\begin{DoxyCode}
+83 \textcolor{keyword}{def }\hyperlink{namespaceTestSuite_a2ea7dee6a6c49e8e2fb533cb0a6a4c83}{Plot}(cat, obj, parent, id):
+84     \textcolor{keyword}{from} mpl\_toolkits.mplot3d \textcolor{keyword}{import} Axes3D
+85     \textcolor{keyword}{from} matplotlib \textcolor{keyword}{import} cm
+86     \textcolor{keyword}{import} matplotlib \textcolor{keyword}{as} mpl
+87     \textcolor{keyword}{import} matplotlib.pyplot \textcolor{keyword}{as} plt
+88     \textcolor{keyword}{import} numpy \textcolor{keyword}{as} np
+89 
+90     plot=\hyperlink{namespaceplotter}{plotter}(parent,id)
+91     fig=plot.current()
+92     fig.suptitle(\textcolor{stringliteral}{'TestSuite - Plot capabilities'}, fontsize=14, fontweight=\textcolor{stringliteral}{'bold'})
+93     
+94     \textcolor{comment}{# plot of data set 0}
+95     p1=fig.add\_subplot(2,3,1)
+96     p1.plot(obj.data(0), \textcolor{stringliteral}{'bo'}, obj.data().vector(1),\textcolor{stringliteral}{'k'})
+97     p1.set\_title(\textcolor{stringliteral}{r'$\(\backslash\)sigma\_0='}+str(obj.sigma(0))+\textcolor{stringliteral}{'$'})
+98     
+99     \textcolor{comment}{# plot of data set 1}
+100     p2=fig.add\_subplot(2,3,2)
+101     p2.plot(obj.data(1), \textcolor{stringliteral}{'r--'})
+102     p2.set\_title(\textcolor{stringliteral}{r'$\(\backslash\)sigma\_1='}+str(obj.sigma(1))+\textcolor{stringliteral}{'$'})
+103     
+104     \textcolor{comment}{# plot of data set 0 (histogram)}
+105     plt.subplot(2,3,3)
+106     n, bins, h=plt.hist(obj.data().vector(0), 10)
+107     plt.title(obj.data().title(0))    
+108     plt.grid(\textcolor{keyword}{True})
+109 
+110     \textcolor{comment}{# plot of data set 1 (histogram)    }
+111     plt.subplot(2,3,4)
+112     plt.hist(obj.data().vector(1), 20)
+113     plt.title(obj.data().name(1)+\textcolor{stringliteral}{" : "}+obj.data().title(1))
+114     plt.grid(\textcolor{keyword}{True})
+115 
+116     \textcolor{comment}{# plot histo root}
+117     p5=fig.add\_subplot(2,3,5)
+118     h1=\hyperlink{namespaceplotter_a5d9521541ff0c72bf439078efacf2f42}{h1d}(p5, obj.hist1d(0), facecolor=\textcolor{stringliteral}{'red'},linestyle=\textcolor{stringliteral}{'dashed'})
+119     p5.grid(\textcolor{keyword}{True})
+120 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceTestSuite_afd38321f5736c9a017d24fcee3206fed}\label{namespaceTestSuite_afd38321f5736c9a017d24fcee3206fed}} 
+\index{Test\+Suite@{Test\+Suite}!update\+Plots@{update\+Plots}}
+\index{update\+Plots@{update\+Plots}!Test\+Suite@{Test\+Suite}}
+\subsubsection{\texorpdfstring{update\+Plots()}{updatePlots()}}
+{\footnotesize\ttfamily def Test\+Suite.\+update\+Plots (\begin{DoxyParamCaption}\item[{}]{figs,  }\item[{}]{obj }\end{DoxyParamCaption})}
+
+
+
+Definition at line 54 of file Test\+Suite.\+py.
+
+
+\begin{DoxyCode}
+54 \textcolor{keyword}{def }\hyperlink{namespaceTestSuite_afd38321f5736c9a017d24fcee3206fed}{updatePlots}(figs, obj):
+55     fig = figs[0]
+56     ax1 = fig.add\_subplot(3,1,1)
+57     lines, = ax1.plot([],[], \textcolor{stringliteral}{'bo'})
+58     \textcolor{comment}{#Autoscale on unknown axis and known lims on the other}
+59     ax1.set\_autoscaley\_on(\textcolor{keyword}{True})
+60 \textcolor{comment}{#    ax.set\_xlim(self.min\_x, self.max\_x)}
+61     \textcolor{comment}{#Other stuff}
+62     ax1.grid()        
+63     lines.set\_xdata(obj.data(0))
+64     lines.set\_ydata(obj.data(1))
+65     \textcolor{comment}{#Need both of these in order to rescale}
+66     ax1.relim()
+67     ax1.autoscale\_view()
+68 
+69     \textcolor{comment}{# plot histo root}
+70     ax2=fig.add\_subplot(3,1,2)
+71     h1 = ax2.hist(obj.data(0))
+72     ax2.relim()
+73     ax2.autoscale\_view()
+74 
+75     \textcolor{comment}{#We need to draw *and* flush}
+76     fig.canvas.draw()
+77     fig.canvas.flush\_events()
+78     fig.show()
+79     \textcolor{keywordflow}{return} fig
+80     
+81 \textcolor{comment}{#----------------------------------------------------------------------}
+82 
+\end{DoxyCode}

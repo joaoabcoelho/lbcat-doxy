@@ -1,0 +1,668 @@
+\hypertarget{classDLLMgr}{}\section{D\+L\+L\+Mgr Class Reference}
+\label{classDLLMgr}\index{D\+L\+L\+Mgr@{D\+L\+L\+Mgr}}
+
+
+{\ttfamily \#include $<$inc/\+D\+L\+L\+Mgr.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDLLMgr_a3751927270f2acc954d9171e1f109876}{D\+L\+L\+Mgr} ()
+\begin{DoxyCompactList}\small\item\em Standard constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classDLLMgr_a80e79a573af874023318064ad9d32e74}{$\sim$\+D\+L\+L\+Mgr} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classDLLMgr_a3c92bec62ace09dd00959c31bb2475d6}{load} (std\+::string)
+\item 
+\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classDLLMgr_a0e4b881509f638f94cb4d6612578157b}{unload} (std\+::string)
+\item 
+\hyperlink{classDLL}{D\+LL} $\ast$ \hyperlink{classDLLMgr_a0241372eb2e136f61e609a04426636bd}{dll} (std\+::string)
+\item 
+std\+::vector$<$ \hyperlink{classDLL}{D\+LL} $\ast$ $>$ \hyperlink{classDLLMgr_a40a2b326bd4f01e58b4afa78a3773898}{dlls} (std\+::string)
+\item 
+\hyperlink{classDLL}{D\+LL} $\ast$ \hyperlink{classDLLMgr_a7e8c992899b7357158aef047a2f15c51}{library\+Of\+Object} (std\+::string)
+\item 
+\hyperlink{classElement}{Element} $\ast$ \hyperlink{classDLLMgr_a8cc61eaf98a6aa3cb99fee7226477053}{create\+Element} (std\+::string)
+\item 
+\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classDLLMgr_abc9c97bab16c8f261626ed401d67c8c8}{destroy} (\hyperlink{classElement}{Element} $\ast$)
+\item 
+\hyperlink{classProcessus}{Processus} $\ast$ \hyperlink{classDLLMgr_a04161fedb24bb6ae8469848d97804c39}{create\+Processus} (std\+::string)
+\item 
+\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classDLLMgr_a8f0923cc39c9f73d272f38bcbcf7ca18}{destroy} (\hyperlink{classProcessus}{Processus} $\ast$)
+\item 
+void \hyperlink{classDLLMgr_a223c039ca2d098fd825d52b22a9feeb4}{print} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classDLLMgr_a47c406fbca0df2aaa8569e0e99927d32}{verbose} (std\+::string msg)
+\item 
+void \hyperlink{classDLLMgr_ad5f2427768e6cfe25c255e7899e4203f}{debug} (std\+::string msg)
+\item 
+void \hyperlink{classDLLMgr_a14b8e15b87602027c0a11f91173bebed}{info} (std\+::string msg)
+\item 
+void \hyperlink{classDLLMgr_ad8a177de233cda457b5566e4ff3bb50e}{warning} (std\+::string msg)
+\item 
+void \hyperlink{classDLLMgr_ac45919d4588b964a7ca3a8e2abed3cc2}{fatal} (std\+::string msg)
+\item 
+void \hyperlink{classDLLMgr_a7a7c039320f83aac50f315ed608d67e3}{verbose} (std\+::string msg, std\+::string name)
+\item 
+void \hyperlink{classDLLMgr_aef993dc0eea2972286957dda940ccdf2}{debug} (std\+::string msg, std\+::string name)
+\item 
+void \hyperlink{classDLLMgr_ac6468f1f9079b683ce5fe60e1d697dda}{info} (std\+::string msg, std\+::string name)
+\item 
+void \hyperlink{classDLLMgr_a84fc9787ced567adb5695fc1d7c275b8}{warning} (std\+::string msg, std\+::string name)
+\item 
+void \hyperlink{classDLLMgr_add7f622101c74721181402ba26072668}{fatal} (std\+::string msg, std\+::string name)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMsgSvc}{Msg\+Svc} \hyperlink{classDLLMgr_a64b523faed64378451ee76f6fbf0800d}{m\+\_\+log}
+\item 
+std\+::vector$<$ \hyperlink{classDLL}{D\+LL} $\ast$ $>$ \hyperlink{classDLLMgr_a5bd713edea21d64f32aa71162bca581a}{m\+\_\+dlls}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Manager of the \hyperlink{classDLL}{D\+LL} for the \hyperlink{classApplication}{Application}
+
+\begin{DoxyAuthor}{Author}
+Frederic Machefert 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2006-\/10-\/25 
+\end{DoxyDate}
+
+
+Definition at line 19 of file D\+L\+L\+Mgr.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDLLMgr_a3751927270f2acc954d9171e1f109876}\label{classDLLMgr_a3751927270f2acc954d9171e1f109876}} 
+\index{D\+L\+L\+Mgr@{D\+L\+L\+Mgr}!D\+L\+L\+Mgr@{D\+L\+L\+Mgr}}
+\index{D\+L\+L\+Mgr@{D\+L\+L\+Mgr}!D\+L\+L\+Mgr@{D\+L\+L\+Mgr}}
+\subsubsection{\texorpdfstring{D\+L\+L\+Mgr()}{DLLMgr()}}
+{\footnotesize\ttfamily D\+L\+L\+Mgr\+::\+D\+L\+L\+Mgr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Standard constructor. 
+
+
+
+Definition at line 20 of file D\+L\+L\+Mgr.\+cpp.
+
+
+\begin{DoxyCode}
+20                  \{
+21 
+22 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classDLLMgr_a80e79a573af874023318064ad9d32e74}\label{classDLLMgr_a80e79a573af874023318064ad9d32e74}} 
+\index{D\+L\+L\+Mgr@{D\+L\+L\+Mgr}!````~D\+L\+L\+Mgr@{$\sim$\+D\+L\+L\+Mgr}}
+\index{````~D\+L\+L\+Mgr@{$\sim$\+D\+L\+L\+Mgr}!D\+L\+L\+Mgr@{D\+L\+L\+Mgr}}
+\subsubsection{\texorpdfstring{$\sim$\+D\+L\+L\+Mgr()}{~DLLMgr()}}
+{\footnotesize\ttfamily D\+L\+L\+Mgr\+::$\sim$\+D\+L\+L\+Mgr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+
+
+Definition at line 26 of file D\+L\+L\+Mgr.\+cpp.
+
+
+\begin{DoxyCode}
+26 \{\} 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDLLMgr_a8cc61eaf98a6aa3cb99fee7226477053}\label{classDLLMgr_a8cc61eaf98a6aa3cb99fee7226477053}} 
+\index{D\+L\+L\+Mgr@{D\+L\+L\+Mgr}!create\+Element@{create\+Element}}
+\index{create\+Element@{create\+Element}!D\+L\+L\+Mgr@{D\+L\+L\+Mgr}}
+\subsubsection{\texorpdfstring{create\+Element()}{createElement()}}
+{\footnotesize\ttfamily \hyperlink{classElement}{Element} $\ast$ D\+L\+L\+Mgr\+::create\+Element (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+Build an element from the manager 
+
+Definition at line 128 of file D\+L\+L\+Mgr.\+cpp.
+
+
+
+References D\+L\+L\+::create\+Element(), and library\+Of\+Object().
+
+
+
+Referenced by Application\+::create(), dlls(), and export\+\_\+base().
+
+
+\begin{DoxyCode}
+128                                                 \{
+129   \hyperlink{classDLL}{DLL}* lib = \hyperlink{classDLLMgr_a7e8c992899b7357158aef047a2f15c51}{libraryOfObject}(name);
+130   \textcolor{keywordflow}{if} ( 0!=lib )\{
+131     \textcolor{keywordflow}{return} lib->\hyperlink{classDLL_a20cd236b93830729cad8fcec092e5e18}{createElement}( name );
+132   \}
+133   \textcolor{keywordflow}{return} NULL;
+134 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classDLLMgr_a04161fedb24bb6ae8469848d97804c39}\label{classDLLMgr_a04161fedb24bb6ae8469848d97804c39}} 
+\index{D\+L\+L\+Mgr@{D\+L\+L\+Mgr}!create\+Processus@{create\+Processus}}
+\index{create\+Processus@{create\+Processus}!D\+L\+L\+Mgr@{D\+L\+L\+Mgr}}
+\subsubsection{\texorpdfstring{create\+Processus()}{createProcessus()}}
+{\footnotesize\ttfamily \hyperlink{classProcessus}{Processus} $\ast$ D\+L\+L\+Mgr\+::create\+Processus (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+create a processus from the manager 
+
+Definition at line 139 of file D\+L\+L\+Mgr.\+cpp.
+
+
+
+References D\+L\+L\+::create\+Processus(), and library\+Of\+Object().
+
+
+
+Referenced by dlls(), and export\+\_\+base().
+
+
+\begin{DoxyCode}
+139                                                     \{
+140   \hyperlink{classDLL}{DLL}* lib = \hyperlink{classDLLMgr_a7e8c992899b7357158aef047a2f15c51}{libraryOfObject}(name);
+141   \textcolor{keywordflow}{if} ( 0!=lib )\{
+142     \textcolor{keywordflow}{return} lib->\hyperlink{classDLL_a9136bcd5e5ca7894bd337241803735c3}{createProcessus}( name );
+143   \}
+144   \textcolor{keywordflow}{return} NULL;
+145 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classDLLMgr_ad5f2427768e6cfe25c255e7899e4203f}\label{classDLLMgr_ad5f2427768e6cfe25c255e7899e4203f}} 
+\index{D\+L\+L\+Mgr@{D\+L\+L\+Mgr}!debug@{debug}}
+\index{debug@{debug}!D\+L\+L\+Mgr@{D\+L\+L\+Mgr}}
+\subsubsection{\texorpdfstring{debug()}{debug()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void D\+L\+L\+Mgr\+::debug (\begin{DoxyParamCaption}\item[{std\+::string}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 85 of file D\+L\+L\+Mgr.\+h.
+
+
+
+References Msg\+Svc\+::\+D\+E\+B\+UG, and Msg\+Svc\+::msg\+Svc().
+
+
+\begin{DoxyCode}
+85 \{ \hyperlink{classDLLMgr_a64b523faed64378451ee76f6fbf0800d}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a1dbdcc82dce88370ec335883c83b38b0}{MsgSvc::DEBUG}   , msg, std::string(\textcolor{stringliteral}{"DLL"}) ); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classDLLMgr_aef993dc0eea2972286957dda940ccdf2}\label{classDLLMgr_aef993dc0eea2972286957dda940ccdf2}} 
+\index{D\+L\+L\+Mgr@{D\+L\+L\+Mgr}!debug@{debug}}
+\index{debug@{debug}!D\+L\+L\+Mgr@{D\+L\+L\+Mgr}}
+\subsubsection{\texorpdfstring{debug()}{debug()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void D\+L\+L\+Mgr\+::debug (\begin{DoxyParamCaption}\item[{std\+::string}]{msg,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 91 of file D\+L\+L\+Mgr.\+h.
+
+
+
+References Msg\+Svc\+::\+D\+E\+B\+UG, and Msg\+Svc\+::msg\+Svc().
+
+
+\begin{DoxyCode}
+91 \{ \hyperlink{classDLLMgr_a64b523faed64378451ee76f6fbf0800d}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a1dbdcc82dce88370ec335883c83b38b0}{MsgSvc::DEBUG}   , msg, name ); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classDLLMgr_abc9c97bab16c8f261626ed401d67c8c8}\label{classDLLMgr_abc9c97bab16c8f261626ed401d67c8c8}} 
+\index{D\+L\+L\+Mgr@{D\+L\+L\+Mgr}!destroy@{destroy}}
+\index{destroy@{destroy}!D\+L\+L\+Mgr@{D\+L\+L\+Mgr}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} D\+L\+L\+Mgr\+::destroy (\begin{DoxyParamCaption}\item[{\hyperlink{classElement}{Element} $\ast$}]{element }\end{DoxyParamCaption})}
+
+Delete an element from the manager 
+
+Definition at line 150 of file D\+L\+L\+Mgr.\+cpp.
+
+
+
+References D\+L\+L\+::destroy(), Status\+Code\+::\+F\+A\+I\+L\+U\+RE, library\+Of\+Object(), Status\+Code\+::\+S\+U\+C\+C\+E\+SS, and Object\+::type().
+
+
+
+Referenced by dlls(), and export\+\_\+base().
+
+
+\begin{DoxyCode}
+150                                               \{
+151   \hyperlink{classDLL}{DLL}* mydll = \hyperlink{classDLLMgr_a7e8c992899b7357158aef047a2f15c51}{libraryOfObject}( element->\hyperlink{classObject_a84f99f70f144a83e1582d1d0f84e4e62}{type} () );
+152   \textcolor{keywordflow}{if} ( 0 != mydll ) \{
+153     mydll->\hyperlink{classDLL_abbe40e8f9065dfcfef3df9decb60087b}{destroy}(element);
+154     \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
+155   \}
+156   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
+157 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classDLLMgr_a8f0923cc39c9f73d272f38bcbcf7ca18}\label{classDLLMgr_a8f0923cc39c9f73d272f38bcbcf7ca18}} 
+\index{D\+L\+L\+Mgr@{D\+L\+L\+Mgr}!destroy@{destroy}}
+\index{destroy@{destroy}!D\+L\+L\+Mgr@{D\+L\+L\+Mgr}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} D\+L\+L\+Mgr\+::destroy (\begin{DoxyParamCaption}\item[{\hyperlink{classProcessus}{Processus} $\ast$}]{proc }\end{DoxyParamCaption})}
+
+Delete a processus from the manager 
+
+Definition at line 162 of file D\+L\+L\+Mgr.\+cpp.
+
+
+
+References D\+L\+L\+::destroy(), Status\+Code\+::\+F\+A\+I\+L\+U\+RE, library\+Of\+Object(), Status\+Code\+::\+S\+U\+C\+C\+E\+SS, and Object\+::type().
+
+
+\begin{DoxyCode}
+162                                              \{
+163   \hyperlink{classDLL}{DLL}* mydll = \hyperlink{classDLLMgr_a7e8c992899b7357158aef047a2f15c51}{libraryOfObject}(proc->\hyperlink{classObject_a84f99f70f144a83e1582d1d0f84e4e62}{type}());
+164   \textcolor{keywordflow}{if} ( 0 != mydll ) \{
+165     mydll->\hyperlink{classDLL_abbe40e8f9065dfcfef3df9decb60087b}{destroy}(proc);
+166     \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
+167   \}
+168   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
+169 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classDLLMgr_a0241372eb2e136f61e609a04426636bd}\label{classDLLMgr_a0241372eb2e136f61e609a04426636bd}} 
+\index{D\+L\+L\+Mgr@{D\+L\+L\+Mgr}!dll@{dll}}
+\index{dll@{dll}!D\+L\+L\+Mgr@{D\+L\+L\+Mgr}}
+\subsubsection{\texorpdfstring{dll()}{dll()}}
+{\footnotesize\ttfamily \hyperlink{classDLL}{D\+LL} $\ast$ D\+L\+L\+Mgr\+::dll (\begin{DoxyParamCaption}\item[{std\+::string}]{lib }\end{DoxyParamCaption})}
+
+find dll objects from its name 
+
+Definition at line 113 of file D\+L\+L\+Mgr.\+cpp.
+
+
+
+References m\+\_\+dlls.
+
+
+
+Referenced by export\+\_\+base(), and load().
+
+
+\begin{DoxyCode}
+113                                  \{
+114   std::vector<DLL*>::const\_iterator iter ;
+115   \textcolor{keywordflow}{for} ( iter = \hyperlink{classDLLMgr_a5bd713edea21d64f32aa71162bca581a}{m\_dlls}.begin() ; 
+116         iter != \hyperlink{classDLLMgr_a5bd713edea21d64f32aa71162bca581a}{m\_dlls}.end()  ; 
+117         ++iter ) \{
+118     \textcolor{keywordflow}{if} ( 0==lib.compare( (*iter)->name() ) )\{
+119       \textcolor{keywordflow}{return} (*iter);
+120     \}
+121   \}
+122   \textcolor{keywordflow}{return} NULL;
+123 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classDLLMgr_a40a2b326bd4f01e58b4afa78a3773898}\label{classDLLMgr_a40a2b326bd4f01e58b4afa78a3773898}} 
+\index{D\+L\+L\+Mgr@{D\+L\+L\+Mgr}!dlls@{dlls}}
+\index{dlls@{dlls}!D\+L\+L\+Mgr@{D\+L\+L\+Mgr}}
+\subsubsection{\texorpdfstring{dlls()}{dlls()}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classDLL}{D\+LL}$\ast$$>$ D\+L\+L\+Mgr\+::dlls (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+find dll objects from its name 
+
+Definition at line 45 of file D\+L\+L\+Mgr.\+h.
+
+
+
+References create\+Element(), create\+Processus(), destroy(), library\+Of\+Object(), m\+\_\+dlls, and print().
+
+
+
+Referenced by export\+\_\+base().
+
+
+\begin{DoxyCode}
+46   \{
+47     \textcolor{keywordflow}{return} \hyperlink{classDLLMgr_a5bd713edea21d64f32aa71162bca581a}{m\_dlls};
+48   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classDLLMgr_ac45919d4588b964a7ca3a8e2abed3cc2}\label{classDLLMgr_ac45919d4588b964a7ca3a8e2abed3cc2}} 
+\index{D\+L\+L\+Mgr@{D\+L\+L\+Mgr}!fatal@{fatal}}
+\index{fatal@{fatal}!D\+L\+L\+Mgr@{D\+L\+L\+Mgr}}
+\subsubsection{\texorpdfstring{fatal()}{fatal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void D\+L\+L\+Mgr\+::fatal (\begin{DoxyParamCaption}\item[{std\+::string}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 88 of file D\+L\+L\+Mgr.\+h.
+
+
+
+References Msg\+Svc\+::\+F\+A\+T\+AL, and Msg\+Svc\+::msg\+Svc().
+
+
+\begin{DoxyCode}
+88 \{ \hyperlink{classDLLMgr_a64b523faed64378451ee76f6fbf0800d}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a59c73cb29edfc9cdf35845e2b1301363}{MsgSvc::FATAL}   , msg, std::string(\textcolor{stringliteral}{"DLL"}) ); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classDLLMgr_add7f622101c74721181402ba26072668}\label{classDLLMgr_add7f622101c74721181402ba26072668}} 
+\index{D\+L\+L\+Mgr@{D\+L\+L\+Mgr}!fatal@{fatal}}
+\index{fatal@{fatal}!D\+L\+L\+Mgr@{D\+L\+L\+Mgr}}
+\subsubsection{\texorpdfstring{fatal()}{fatal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void D\+L\+L\+Mgr\+::fatal (\begin{DoxyParamCaption}\item[{std\+::string}]{msg,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 94 of file D\+L\+L\+Mgr.\+h.
+
+
+
+References Msg\+Svc\+::\+F\+A\+T\+AL, and Msg\+Svc\+::msg\+Svc().
+
+
+\begin{DoxyCode}
+94 \{ \hyperlink{classDLLMgr_a64b523faed64378451ee76f6fbf0800d}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a59c73cb29edfc9cdf35845e2b1301363}{MsgSvc::FATAL}   , msg, name ); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classDLLMgr_a14b8e15b87602027c0a11f91173bebed}\label{classDLLMgr_a14b8e15b87602027c0a11f91173bebed}} 
+\index{D\+L\+L\+Mgr@{D\+L\+L\+Mgr}!info@{info}}
+\index{info@{info}!D\+L\+L\+Mgr@{D\+L\+L\+Mgr}}
+\subsubsection{\texorpdfstring{info()}{info()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void D\+L\+L\+Mgr\+::info (\begin{DoxyParamCaption}\item[{std\+::string}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 86 of file D\+L\+L\+Mgr.\+h.
+
+
+
+References Msg\+Svc\+::\+I\+N\+FO, and Msg\+Svc\+::msg\+Svc().
+
+
+
+Referenced by load().
+
+
+\begin{DoxyCode}
+86 \{ \hyperlink{classDLLMgr_a64b523faed64378451ee76f6fbf0800d}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{MsgSvc::INFO}    , msg, std::string(\textcolor{stringliteral}{"DLL"}) ); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classDLLMgr_ac6468f1f9079b683ce5fe60e1d697dda}\label{classDLLMgr_ac6468f1f9079b683ce5fe60e1d697dda}} 
+\index{D\+L\+L\+Mgr@{D\+L\+L\+Mgr}!info@{info}}
+\index{info@{info}!D\+L\+L\+Mgr@{D\+L\+L\+Mgr}}
+\subsubsection{\texorpdfstring{info()}{info()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void D\+L\+L\+Mgr\+::info (\begin{DoxyParamCaption}\item[{std\+::string}]{msg,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 92 of file D\+L\+L\+Mgr.\+h.
+
+
+
+References Msg\+Svc\+::\+I\+N\+FO, and Msg\+Svc\+::msg\+Svc().
+
+
+\begin{DoxyCode}
+92 \{ \hyperlink{classDLLMgr_a64b523faed64378451ee76f6fbf0800d}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{MsgSvc::INFO}    , msg, name ); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classDLLMgr_a7e8c992899b7357158aef047a2f15c51}\label{classDLLMgr_a7e8c992899b7357158aef047a2f15c51}} 
+\index{D\+L\+L\+Mgr@{D\+L\+L\+Mgr}!library\+Of\+Object@{library\+Of\+Object}}
+\index{library\+Of\+Object@{library\+Of\+Object}!D\+L\+L\+Mgr@{D\+L\+L\+Mgr}}
+\subsubsection{\texorpdfstring{library\+Of\+Object()}{libraryOfObject()}}
+{\footnotesize\ttfamily \hyperlink{classDLL}{D\+LL} $\ast$ D\+L\+L\+Mgr\+::library\+Of\+Object (\begin{DoxyParamCaption}\item[{std\+::string}]{obj }\end{DoxyParamCaption})}
+
+find \hyperlink{classDLL}{D\+LL} which contains objects type 
+
+Definition at line 98 of file D\+L\+L\+Mgr.\+cpp.
+
+
+
+References m\+\_\+dlls.
+
+
+
+Referenced by create\+Element(), create\+Processus(), destroy(), dlls(), and export\+\_\+base().
+
+
+\begin{DoxyCode}
+98                                              \{
+99   std::vector<DLL*>::const\_iterator iter ;
+100   \textcolor{keywordflow}{for} ( iter = \hyperlink{classDLLMgr_a5bd713edea21d64f32aa71162bca581a}{m\_dlls}.begin() ; 
+101         iter != \hyperlink{classDLLMgr_a5bd713edea21d64f32aa71162bca581a}{m\_dlls}.end()  ; 
+102         ++iter ) \{
+103     \textcolor{keywordflow}{if} ( (*iter)->containsObject( \hyperlink{namespaceshell_a7c2aab80550f476d91e0d8f0c350a635}{obj} ) )\{
+104       \textcolor{keywordflow}{return} (*iter);
+105     \}
+106   \}
+107   \textcolor{keywordflow}{return} NULL;
+108 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classDLLMgr_a3c92bec62ace09dd00959c31bb2475d6}\label{classDLLMgr_a3c92bec62ace09dd00959c31bb2475d6}} 
+\index{D\+L\+L\+Mgr@{D\+L\+L\+Mgr}!load@{load}}
+\index{load@{load}!D\+L\+L\+Mgr@{D\+L\+L\+Mgr}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} D\+L\+L\+Mgr\+::load (\begin{DoxyParamCaption}\item[{std\+::string}]{library }\end{DoxyParamCaption})}
+
+load a \hyperlink{classDLL}{D\+LL} and stores its entry point 
+
+Definition at line 32 of file D\+L\+L\+Mgr.\+cpp.
+
+
+
+References dll(), Status\+Code\+::\+F\+A\+I\+L\+U\+RE, info(), Status\+Code\+::is\+Success(), D\+L\+L\+::load(), m\+\_\+dlls, D\+L\+L\+::object\+List(), Status\+Code\+::\+S\+U\+C\+C\+E\+SS, and warning().
+
+
+
+Referenced by export\+\_\+base().
+
+
+\begin{DoxyCode}
+32                                             \{
+33   \textcolor{comment}{// load library}
+34   \hyperlink{classDLLMgr_a14b8e15b87602027c0a11f91173bebed}{info}(\textcolor{stringliteral}{"Loading dll "}+library+\textcolor{stringliteral}{"."},\textcolor{stringliteral}{"DLLMgr::load"});
+35 
+36   \hyperlink{classDLL}{DLL} *mydll = \textcolor{keyword}{new} \hyperlink{classDLL}{DLL} ();
+37   \textcolor{comment}{// look if we can load the library}
+38   \textcolor{keywordflow}{if} ( mydll->\hyperlink{classDLL_a64166d3479edf7e44fd539841e70fb3a}{load} ( library ).\hyperlink{classStatusCode_acfe5ce8b2bb7d3d651fb0108c18c05c3}{isSuccess}() )\{
+39     \hyperlink{classDLLMgr_a14b8e15b87602027c0a11f91173bebed}{info}(\textcolor{stringliteral}{"Library "}+library+\textcolor{stringliteral}{" loaded."});
+40     \textcolor{comment}{// look for duplication of library}
+41     \textcolor{keywordflow}{if} ( 0!=\hyperlink{classDLLMgr_a0241372eb2e136f61e609a04426636bd}{dll}(library) )\{
+42       \hyperlink{classDLLMgr_ad8a177de233cda457b5566e4ff3bb50e}{warning}(\textcolor{stringliteral}{"DLL "}+library+\textcolor{stringliteral}{" already loaded. Cannot load library."},\textcolor{stringliteral}{"DLLMgr::loadDLL"});
+43       \textcolor{keyword}{delete} mydll;
+44       \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
+45     \}
+46     \textcolor{comment}{// look for duplication of objects}
+47     std::vector<std::string> list = mydll->\hyperlink{classDLL_a7d378e5aceb5b06e0fd7df6bc07f9ee5}{objectList}();
+48     std::vector<DLL*>::const\_iterator iter ;
+49     std::vector<std::string>::const\_iterator objs ;
+50     \textcolor{keywordflow}{for} ( objs=list.begin() ; 
+51           objs!=list.end()  ;
+52           ++objs ) \{
+53       \textcolor{keywordflow}{for} ( iter = \hyperlink{classDLLMgr_a5bd713edea21d64f32aa71162bca581a}{m\_dlls}.begin() ; 
+54             iter != \hyperlink{classDLLMgr_a5bd713edea21d64f32aa71162bca581a}{m\_dlls}.end() ; 
+55             ++iter ) \{
+56         \textcolor{keywordflow}{if} ( (*iter)->containsObject( *objs ) )\{
+57           \hyperlink{classDLLMgr_ad8a177de233cda457b5566e4ff3bb50e}{warning}(\textcolor{stringliteral}{"The DLL "}+library+\textcolor{stringliteral}{" contains an object ("}+
+58                  (*objs) +\textcolor{stringliteral}{" which has already been loaded from "}+
+59                  (*iter)->name()+\textcolor{stringliteral}{". Cannot load library."},
+60           \textcolor{stringliteral}{"DLLMgr::loadDLL"});
+61           \textcolor{keyword}{delete} mydll;
+62           \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
+63         \}
+64       \}
+65     \}
+66      \textcolor{comment}{// everything is ok. definitely keep the new library in the manager     }
+67      \hyperlink{classDLLMgr_a5bd713edea21d64f32aa71162bca581a}{m\_dlls}.push\_back ( mydll );
+68      \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
+69    \}
+70    \textcolor{comment}{// could not even find the library}
+71    \hyperlink{classDLLMgr_ad8a177de233cda457b5566e4ff3bb50e}{warning}(\textcolor{stringliteral}{"The DLL "}+library+\textcolor{stringliteral}{" could not be properly loaded."},\textcolor{stringliteral}{"DLLMgr::loadDLL"});
+72    \textcolor{keyword}{delete} mydll;
+73    \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
+74 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classDLLMgr_a223c039ca2d098fd825d52b22a9feeb4}\label{classDLLMgr_a223c039ca2d098fd825d52b22a9feeb4}} 
+\index{D\+L\+L\+Mgr@{D\+L\+L\+Mgr}!print@{print}}
+\index{print@{print}!D\+L\+L\+Mgr@{D\+L\+L\+Mgr}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void D\+L\+L\+Mgr\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 174 of file D\+L\+L\+Mgr.\+cpp.
+
+
+
+References m\+\_\+dlls.
+
+
+
+Referenced by dlls(), and export\+\_\+base().
+
+
+\begin{DoxyCode}
+175 \{
+176   std::vector<DLL*>::iterator iter ;
+177   \textcolor{keywordflow}{for} ( iter = \hyperlink{classDLLMgr_a5bd713edea21d64f32aa71162bca581a}{m\_dlls}.begin() ; 
+178         iter != \hyperlink{classDLLMgr_a5bd713edea21d64f32aa71162bca581a}{m\_dlls}.end()  ; 
+179         ++iter ) \{(*iter)->print();\}
+180 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classDLLMgr_a0e4b881509f638f94cb4d6612578157b}\label{classDLLMgr_a0e4b881509f638f94cb4d6612578157b}} 
+\index{D\+L\+L\+Mgr@{D\+L\+L\+Mgr}!unload@{unload}}
+\index{unload@{unload}!D\+L\+L\+Mgr@{D\+L\+L\+Mgr}}
+\subsubsection{\texorpdfstring{unload()}{unload()}}
+{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} D\+L\+L\+Mgr\+::unload (\begin{DoxyParamCaption}\item[{std\+::string}]{lib }\end{DoxyParamCaption})}
+
+unload a \hyperlink{classDLL}{D\+LL} and removes its entry point from the list 
+
+Definition at line 79 of file D\+L\+L\+Mgr.\+cpp.
+
+
+
+References m\+\_\+dlls.
+
+
+
+Referenced by export\+\_\+base().
+
+
+\begin{DoxyCode}
+79                                           \{
+80   std::vector<DLL*>::iterator dlltoremove;
+81   std::vector<DLL*>::iterator iter ;
+82   \textcolor{keywordflow}{for} ( iter = \hyperlink{classDLLMgr_a5bd713edea21d64f32aa71162bca581a}{m\_dlls}.begin() ; 
+83         iter != \hyperlink{classDLLMgr_a5bd713edea21d64f32aa71162bca581a}{m\_dlls}.end()  ; 
+84         ++iter ) \{
+85     \textcolor{keywordflow}{if} ( 0==lib.compare((*iter)->name()) ) \{
+86       (*iter)->unload();
+87       dlltoremove = iter;
+88     \}
+89     \textcolor{keyword}{delete} *dlltoremove;
+90     \hyperlink{classDLLMgr_a5bd713edea21d64f32aa71162bca581a}{m\_dlls}.erase(dlltoremove);
+91   \}
+92   \textcolor{keywordflow}{return} NULL;
+93 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classDLLMgr_a47c406fbca0df2aaa8569e0e99927d32}\label{classDLLMgr_a47c406fbca0df2aaa8569e0e99927d32}} 
+\index{D\+L\+L\+Mgr@{D\+L\+L\+Mgr}!verbose@{verbose}}
+\index{verbose@{verbose}!D\+L\+L\+Mgr@{D\+L\+L\+Mgr}}
+\subsubsection{\texorpdfstring{verbose()}{verbose()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void D\+L\+L\+Mgr\+::verbose (\begin{DoxyParamCaption}\item[{std\+::string}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 84 of file D\+L\+L\+Mgr.\+h.
+
+
+
+References Msg\+Svc\+::msg\+Svc(), and Msg\+Svc\+::\+V\+E\+R\+B\+O\+SE.
+
+
+\begin{DoxyCode}
+84 \{ \hyperlink{classDLLMgr_a64b523faed64378451ee76f6fbf0800d}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926af655256b06494ade5ba830abe5401ec9}{MsgSvc::VERBOSE} , msg, std::string(\textcolor{stringliteral}{"DLL"}) ); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classDLLMgr_a7a7c039320f83aac50f315ed608d67e3}\label{classDLLMgr_a7a7c039320f83aac50f315ed608d67e3}} 
+\index{D\+L\+L\+Mgr@{D\+L\+L\+Mgr}!verbose@{verbose}}
+\index{verbose@{verbose}!D\+L\+L\+Mgr@{D\+L\+L\+Mgr}}
+\subsubsection{\texorpdfstring{verbose()}{verbose()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void D\+L\+L\+Mgr\+::verbose (\begin{DoxyParamCaption}\item[{std\+::string}]{msg,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 90 of file D\+L\+L\+Mgr.\+h.
+
+
+
+References Msg\+Svc\+::msg\+Svc(), and Msg\+Svc\+::\+V\+E\+R\+B\+O\+SE.
+
+
+\begin{DoxyCode}
+90 \{ \hyperlink{classDLLMgr_a64b523faed64378451ee76f6fbf0800d}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926af655256b06494ade5ba830abe5401ec9}{MsgSvc::VERBOSE}  , msg, name ); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classDLLMgr_ad8a177de233cda457b5566e4ff3bb50e}\label{classDLLMgr_ad8a177de233cda457b5566e4ff3bb50e}} 
+\index{D\+L\+L\+Mgr@{D\+L\+L\+Mgr}!warning@{warning}}
+\index{warning@{warning}!D\+L\+L\+Mgr@{D\+L\+L\+Mgr}}
+\subsubsection{\texorpdfstring{warning()}{warning()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void D\+L\+L\+Mgr\+::warning (\begin{DoxyParamCaption}\item[{std\+::string}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 87 of file D\+L\+L\+Mgr.\+h.
+
+
+
+References Msg\+Svc\+::msg\+Svc(), and Msg\+Svc\+::\+W\+A\+R\+N\+I\+NG.
+
+
+
+Referenced by load().
+
+
+\begin{DoxyCode}
+87 \{ \hyperlink{classDLLMgr_a64b523faed64378451ee76f6fbf0800d}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a7cefae88f2ba26b2b05b676a383c834b}{MsgSvc::WARNING} , msg, std::string(\textcolor{stringliteral}{"DLL"}) ); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classDLLMgr_a84fc9787ced567adb5695fc1d7c275b8}\label{classDLLMgr_a84fc9787ced567adb5695fc1d7c275b8}} 
+\index{D\+L\+L\+Mgr@{D\+L\+L\+Mgr}!warning@{warning}}
+\index{warning@{warning}!D\+L\+L\+Mgr@{D\+L\+L\+Mgr}}
+\subsubsection{\texorpdfstring{warning()}{warning()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void D\+L\+L\+Mgr\+::warning (\begin{DoxyParamCaption}\item[{std\+::string}]{msg,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 93 of file D\+L\+L\+Mgr.\+h.
+
+
+
+References Msg\+Svc\+::msg\+Svc(), and Msg\+Svc\+::\+W\+A\+R\+N\+I\+NG.
+
+
+\begin{DoxyCode}
+93 \{ \hyperlink{classDLLMgr_a64b523faed64378451ee76f6fbf0800d}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a7cefae88f2ba26b2b05b676a383c834b}{MsgSvc::WARNING} , msg, name ); \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classDLLMgr_a5bd713edea21d64f32aa71162bca581a}\label{classDLLMgr_a5bd713edea21d64f32aa71162bca581a}} 
+\index{D\+L\+L\+Mgr@{D\+L\+L\+Mgr}!m\+\_\+dlls@{m\+\_\+dlls}}
+\index{m\+\_\+dlls@{m\+\_\+dlls}!D\+L\+L\+Mgr@{D\+L\+L\+Mgr}}
+\subsubsection{\texorpdfstring{m\+\_\+dlls}{m\_dlls}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classDLL}{D\+LL}$\ast$$>$ D\+L\+L\+Mgr\+::m\+\_\+dlls\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 96 of file D\+L\+L\+Mgr.\+h.
+
+
+
+Referenced by dll(), dlls(), library\+Of\+Object(), load(), print(), and unload().
+
+\mbox{\Hypertarget{classDLLMgr_a64b523faed64378451ee76f6fbf0800d}\label{classDLLMgr_a64b523faed64378451ee76f6fbf0800d}} 
+\index{D\+L\+L\+Mgr@{D\+L\+L\+Mgr}!m\+\_\+log@{m\+\_\+log}}
+\index{m\+\_\+log@{m\+\_\+log}!D\+L\+L\+Mgr@{D\+L\+L\+Mgr}}
+\subsubsection{\texorpdfstring{m\+\_\+log}{m\_log}}
+{\footnotesize\ttfamily \hyperlink{classMsgSvc}{Msg\+Svc} D\+L\+L\+Mgr\+::m\+\_\+log\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 82 of file D\+L\+L\+Mgr.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/inc/\hyperlink{DLLMgr_8h}{D\+L\+L\+Mgr.\+h}\item 
+/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/src/\hyperlink{DLLMgr_8cpp}{D\+L\+L\+Mgr.\+cpp}\end{DoxyCompactItemize}

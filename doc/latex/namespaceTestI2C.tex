@@ -1,0 +1,159 @@
+\hypertarget{namespaceTestI2C}{}\section{Test\+I2C Namespace Reference}
+\label{namespaceTestI2C}\index{Test\+I2C@{Test\+I2C}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceTestI2C_a297b4dc00ac23a510d82a60f41fa54bf}{Edit} (cat, obj, panel, path)
+\item 
+def \hyperlink{namespaceTestI2C_a9424711d097f77b29b742a87a2bae514}{create\+Plots} (cat, obj, run)
+\item 
+def \hyperlink{namespaceTestI2C_aa9a08a8ebd38789a067a3b54cdc231b5}{update\+Plots} (figs, obj)
+\item 
+def \hyperlink{namespaceTestI2C_a4c750a8d76615040e7e0203c9f2c4dd7}{Plot} (cat, obj, parent, \hyperlink{classObject_af99145335cc61ff6e2798ea17db009d2}{id})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespaceTestI2C_a9424711d097f77b29b742a87a2bae514}\label{namespaceTestI2C_a9424711d097f77b29b742a87a2bae514}} 
+\index{Test\+I2C@{Test\+I2C}!create\+Plots@{create\+Plots}}
+\index{create\+Plots@{create\+Plots}!Test\+I2C@{Test\+I2C}}
+\subsubsection{\texorpdfstring{create\+Plots()}{createPlots()}}
+{\footnotesize\ttfamily def Test\+I2\+C.\+create\+Plots (\begin{DoxyParamCaption}\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{run }\end{DoxyParamCaption})}
+
+
+
+Definition at line 45 of file Test\+I2\+C.\+py.
+
+
+\begin{DoxyCode}
+45 \textcolor{keyword}{def }\hyperlink{namespaceTestI2C_a9424711d097f77b29b742a87a2bae514}{createPlots}(cat, obj, run):
+46     fig = plt.figure(figsize=(10,10))
+47     fig.suptitle(\textcolor{stringliteral}{"Run "}+str(run), fontsize=14, fontweight=\textcolor{stringliteral}{'bold'})
+48     \textcolor{keywordflow}{for} vplot \textcolor{keywordflow}{in} [1,2]:
+49         ax = fig.add\_subplot(2,1,vplot)
+50     fig.show()    
+51     \textcolor{keywordflow}{return} [fig]
+52 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceTestI2C_a297b4dc00ac23a510d82a60f41fa54bf}\label{namespaceTestI2C_a297b4dc00ac23a510d82a60f41fa54bf}} 
+\index{Test\+I2C@{Test\+I2C}!Edit@{Edit}}
+\index{Edit@{Edit}!Test\+I2C@{Test\+I2C}}
+\subsubsection{\texorpdfstring{Edit()}{Edit()}}
+{\footnotesize\ttfamily def Test\+I2\+C.\+Edit (\begin{DoxyParamCaption}\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{panel,  }\item[{}]{path }\end{DoxyParamCaption})}
+
+
+
+Definition at line 40 of file Test\+I2\+C.\+py.
+
+
+\begin{DoxyCode}
+40 \textcolor{keyword}{def }\hyperlink{namespaceTestI2C_a297b4dc00ac23a510d82a60f41fa54bf}{Edit} (cat, obj, panel, path):
+41     \textcolor{keywordflow}{return} \hyperlink{classTestI2C}{TestI2C}(cat, obj, panel, path)
+42 
+43 \textcolor{comment}{#----------------------------------------------------------------------}
+44 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceTestI2C_a4c750a8d76615040e7e0203c9f2c4dd7}\label{namespaceTestI2C_a4c750a8d76615040e7e0203c9f2c4dd7}} 
+\index{Test\+I2C@{Test\+I2C}!Plot@{Plot}}
+\index{Plot@{Plot}!Test\+I2C@{Test\+I2C}}
+\subsubsection{\texorpdfstring{Plot()}{Plot()}}
+{\footnotesize\ttfamily def Test\+I2\+C.\+Plot (\begin{DoxyParamCaption}\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{parent,  }\item[{}]{id }\end{DoxyParamCaption})}
+
+
+
+Definition at line 89 of file Test\+I2\+C.\+py.
+
+
+
+References plotter.\+h1d(), Object.\+name(), and Object.\+title().
+
+
+\begin{DoxyCode}
+89 \textcolor{keyword}{def }\hyperlink{namespaceTestI2C_a4c750a8d76615040e7e0203c9f2c4dd7}{Plot}(cat, obj, parent, id):
+90     \textcolor{keyword}{from} mpl\_toolkits.mplot3d \textcolor{keyword}{import} Axes3D
+91     \textcolor{keyword}{from} matplotlib \textcolor{keyword}{import} cm
+92     \textcolor{keyword}{import} matplotlib \textcolor{keyword}{as} mpl
+93     \textcolor{keyword}{import} matplotlib.pyplot \textcolor{keyword}{as} plt
+94     \textcolor{keyword}{import} numpy \textcolor{keyword}{as} np
+95 
+96     plot=\hyperlink{namespaceplotter}{plotter}(parent,id)
+97     fig=plot.current()
+98     fig.suptitle(\textcolor{stringliteral}{'TestSuite - Plot capabilities'}, fontsize=14, fontweight=\textcolor{stringliteral}{'bold'})
+99     
+100     \textcolor{comment}{# plot of data set 0}
+101     p1=fig.add\_subplot(2,3,1)
+102     p1.plot(obj.data(0), \textcolor{stringliteral}{'bo'}, obj.data().vector(1),\textcolor{stringliteral}{'k'})
+103     p1.set\_title(\textcolor{stringliteral}{r'$\(\backslash\)sigma\_0='}+str(obj.sigma(0))+\textcolor{stringliteral}{'$'})
+104     
+105     \textcolor{comment}{# plot of data set 1}
+106     p2=fig.add\_subplot(2,3,2)
+107     p2.plot(obj.data(1), \textcolor{stringliteral}{'r--'})
+108     p2.set\_title(\textcolor{stringliteral}{r'$\(\backslash\)sigma\_1='}+str(obj.sigma(1))+\textcolor{stringliteral}{'$'})
+109     
+110     \textcolor{comment}{# plot of data set 0 (histogram)}
+111     plt.subplot(2,3,3)
+112     n, bins, h=plt.hist(obj.data().vector(0), 10)
+113     plt.title(obj.data().title(0))    
+114     plt.grid(\textcolor{keyword}{True})
+115 
+116     \textcolor{comment}{# plot of data set 1 (histogram)    }
+117     plt.subplot(2,3,4)
+118     plt.hist(obj.data().vector(1), 20)
+119     plt.title(obj.data().name(1)+\textcolor{stringliteral}{" : "}+obj.data().title(1))
+120     plt.grid(\textcolor{keyword}{True})
+121 
+122     \textcolor{comment}{# plot histo root}
+123     p5=fig.add\_subplot(2,3,5)
+124     h1=\hyperlink{namespaceplotter_a5d9521541ff0c72bf439078efacf2f42}{h1d}(p5, obj.hist1d(0), facecolor=\textcolor{stringliteral}{'red'},linestyle=\textcolor{stringliteral}{'dashed'})
+125     p5.grid(\textcolor{keyword}{True})
+126 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceTestI2C_aa9a08a8ebd38789a067a3b54cdc231b5}\label{namespaceTestI2C_aa9a08a8ebd38789a067a3b54cdc231b5}} 
+\index{Test\+I2C@{Test\+I2C}!update\+Plots@{update\+Plots}}
+\index{update\+Plots@{update\+Plots}!Test\+I2C@{Test\+I2C}}
+\subsubsection{\texorpdfstring{update\+Plots()}{updatePlots()}}
+{\footnotesize\ttfamily def Test\+I2\+C.\+update\+Plots (\begin{DoxyParamCaption}\item[{}]{figs,  }\item[{}]{obj }\end{DoxyParamCaption})}
+
+
+
+Definition at line 53 of file Test\+I2\+C.\+py.
+
+
+\begin{DoxyCode}
+53 \textcolor{keyword}{def }\hyperlink{namespaceTestI2C_aa9a08a8ebd38789a067a3b54cdc231b5}{updatePlots}(figs, obj):
+54     fig = figs[0]
+55     ax1 = fig.add\_subplot(2,1,1)
+56     lines, = ax1.plot([],[], \textcolor{stringliteral}{'bo'})
+57     \textcolor{comment}{#Autoscale on unknown axis and known lims on the other}
+58     ax1.set\_autoscaley\_on(\textcolor{keyword}{True})
+59 \textcolor{comment}{#    ax.set\_xlim(self.min\_x, self.max\_x)}
+60     \textcolor{comment}{#Other stuff}
+61     ax1.grid()        
+62     lines.set\_xdata(obj.data(0))
+63     lines.set\_ydata(obj.data(1))
+64     \textcolor{comment}{#Need both of these in order to rescale}
+65     ax1.relim()
+66     ax1.autoscale\_view()
+67 
+68     ax2 = fig.add\_subplot(2,1,2)
+69     lines, = ax2.plot([],[], \textcolor{stringliteral}{'bo'})
+70     \textcolor{comment}{#Autoscale on unknown axis and known lims on the other}
+71     ax2.set\_autoscaley\_on(\textcolor{keyword}{True})
+72 \textcolor{comment}{#    ax.set\_xlim(self.min\_x, self.max\_x)}
+73     \textcolor{comment}{#Other stuff}
+74     ax2.grid()        
+75     lines.set\_xdata(obj.data(2))
+76     lines.set\_ydata(obj.data(3))
+77     \textcolor{comment}{#Need both of these in order to rescale}
+78     ax2.relim()
+79     ax2.autoscale\_view()
+80 
+81     \textcolor{comment}{#We need to draw *and* flush}
+82     fig.canvas.draw()
+83     fig.canvas.flush\_events()
+84     fig.show()
+85     \textcolor{keywordflow}{return} fig
+86     
+87 \textcolor{comment}{#----------------------------------------------------------------------}
+88 
+\end{DoxyCode}
