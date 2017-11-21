@@ -97,6 +97,60 @@ float \hyperlink{classAcquisition_a386f3ebc6b1d4956aa7e40b314ddb4eb}{max\+Range}
 \item 
 \hyperlink{classA3PE}{A3\+PE} $\ast$ \hyperlink{classAcquisition_a8af496b6202d2509814e3b02197a5e73}{a3pe} ()
 \item 
+\hyperlink{classAcquisition_aa7d3138495a4a8888c21b33f4d657732}{Acquisition} ()
+\begin{DoxyCompactList}\small\item\em Standard constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classAcquisition_af697b51bd72afcfe8f9f3f368743d20d}{$\sim$\+Acquisition} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classStatusCode}{Status\+Code} \hyperlink{classAcquisition_aa73eec1ec46deae89bd3c25551bad86e}{initialize} ()
+\item 
+virtual \hyperlink{classStatusCode}{Status\+Code} \hyperlink{classAcquisition_a6cae797f591c2c576ebf17411e5212c9}{execute} ()
+\item 
+virtual \hyperlink{classStatusCode}{Status\+Code} \hyperlink{classAcquisition_a92b4b55e8c7d53610e7eda6d5b9c74a4}{finalize} ()
+\item 
+\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classAcquisition_a303145d497f99da966fcfd95c00cd81e}{set\+Depth} (unsigned int)
+\item 
+unsigned int \hyperlink{classAcquisition_a1ad973e21a067c0de0b6264d0eb5182b}{depth} ()
+\item 
+\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classAcquisition_a3ee93f665573b4622bd9cba92c0cc04e}{set\+Channels} (unsigned int)
+\item 
+unsigned int \hyperlink{classAcquisition_a3041537afcb4dfe5c6940f0ef6829265}{channels} ()
+\item 
+\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classAcquisition_acdb167b43f3babb59a98698aa5c5066f}{set\+Trigger} (bool trig)
+\item 
+bool \hyperlink{classAcquisition_a6f680938eb6a42d57dfa7466e8852af9}{trigger} ()
+\item 
+void \hyperlink{classAcquisition_a759193856d26354722e5f647e60e16de}{set\+Store\+Tree} (bool store\+\_\+tree)
+\item 
+bool \hyperlink{classAcquisition_a8ab7e58ccb3fee54eb6850e5081fae10}{store\+Tree} ()
+\item 
+void \hyperlink{classAcquisition_a1ceff272a1ad030dcd20c0dcddc65443}{set\+Store\+Trend} (bool store\+\_\+hist)
+\item 
+bool \hyperlink{classAcquisition_a5af693448daef6e9e054ab7f1aa50784}{store\+Trend} ()
+\item 
+void \hyperlink{classAcquisition_af36a1b660244096b7d274f591f67b695}{set\+Store\+Sample} (bool store\+\_\+sample)
+\item 
+bool \hyperlink{classAcquisition_a9af304e0fb2076cd4f92703708efe83e}{store\+Sample} ()
+\item 
+void \hyperlink{classAcquisition_a37e05315fc47958c290a7d938c61e067}{set\+Dead\+Time} (int deadtime)
+\item 
+int \hyperlink{classAcquisition_a8fb2cd60a34993ab0952d719a8517831}{dead\+Time} ()
+\item 
+void \hyperlink{classAcquisition_ade6fd6483b3e3737fe7dcdffb5065954}{set\+Sample} (int nsample)
+\item 
+int \hyperlink{classAcquisition_a83181975c0746e5837d53933031e7b62}{sample} ()
+\item 
+void \hyperlink{classAcquisition_a6ee040a009aa48f848b1e12434135db9}{set\+N\+Bins} (int nbins)
+\item 
+int \hyperlink{classAcquisition_a3a3dad0de9535d5a29c0810a5bdc3ae3}{n\+Bins} ()
+\item 
+void \hyperlink{classAcquisition_a8a15ffc6e539a3ae12efe4bea1ca7587}{set\+Min\+Range} (float minrange)
+\item 
+float \hyperlink{classAcquisition_a44f441710231748d2ca8f691647b2bcd}{min\+Range} ()
+\item 
+void \hyperlink{classAcquisition_a786da6cff5428020034be23e554e0e1b}{set\+Max\+Range} (float maxrange)
+\item 
+float \hyperlink{classAcquisition_a386f3ebc6b1d4956aa7e40b314ddb4eb}{max\+Range} ()
+\item 
 \hyperlink{classStatusCode}{Status\+Code} \hyperlink{classProcessus_a09319bde9bed93e290f69b4e04585543}{start\+Processing} ()
 \item 
 \hyperlink{classStatusCode}{Status\+Code} \hyperlink{classProcessus_a5e4da662989d356b89d490b89c7afbfd}{end\+Processing} ()
@@ -219,6 +273,10 @@ std\+::string \hyperlink{classAttrib_aee7bbf16b144887f196e1341b24f8a26}{attribut
 \hyperlink{classAcquisition_1_1Acquisition}{Acquisition} $\ast$ \hyperlink{classAcquisition_a4b1b690ef27f20b3e1ad9383f2f57628}{clone} ()
 \item 
 unsigned int \hyperlink{classAcquisition_a76fe7c020f7097e5d479867ba783ba31}{decode\+Format} (unsigned int, unsigned int, \hyperlink{classRAM}{R\+AM} $\ast$)
+\item 
+\hyperlink{classAcquisition_1_1Acquisition}{Acquisition} $\ast$ \hyperlink{classAcquisition_a4b1b690ef27f20b3e1ad9383f2f57628}{clone} ()
+\item 
+unsigned int \hyperlink{classAcquisition_a76fe7c020f7097e5d479867ba783ba31}{decode\+Format} (unsigned int, unsigned int, \hyperlink{classRAM}{R\+AM} $\ast$)
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -236,7 +294,7 @@ bool \hyperlink{classAcquisition_a08f70edd83751dbdab4c8190dc4b9188}{m\+\_\+store
 \item 
 bool \hyperlink{classAcquisition_a987cc1d04007cf1f5acc1accfd0909e5}{m\+\_\+store\+\_\+sample}
 \item 
-T\+Tree $\ast$ \hyperlink{classAcquisition_a70f10db9c972f22a60bd2b82750168da}{m\+\_\+tree}
+T\+Tree $\ast$ \hyperlink{classAcquisition_aa88a923232e8b7e08f5c1b5411497fc5}{m\+\_\+tree}
 \item 
 Int\+\_\+t \hyperlink{classAcquisition_afd35e220e0bfda7e763584524273aeb0}{m\+\_\+run\+Number}
 \item 
@@ -244,9 +302,9 @@ Int\+\_\+t \hyperlink{classAcquisition_a32a70daa3f653eae5eafc46dbd0e11a6}{m\+\_\
 \item 
 Int\+\_\+t \hyperlink{classAcquisition_a154e5423720ab1f2c4ab5cd125cb4e80}{m\+\_\+sample}
 \item 
-Int\+\_\+t \hyperlink{classAcquisition_a1123502b520aec97ee8a71039abaa3fb}{m\+\_\+channel} \mbox{[}8\mbox{]}
+Int\+\_\+t \hyperlink{classAcquisition_a9233a189179591c0c2f2639a3e6c13f6}{m\+\_\+channel} \mbox{[}8\mbox{]}
 \item 
-Int\+\_\+t \hyperlink{classAcquisition_ad323c9602565eec8e41f573d441745e2}{m\+\_\+ch\+Enable} \mbox{[}8\mbox{]}
+Int\+\_\+t \hyperlink{classAcquisition_a217269bc403d9fd271a1701c98afb30e}{m\+\_\+ch\+Enable} \mbox{[}8\mbox{]}
 \item 
 Int\+\_\+t \hyperlink{classAcquisition_a1860c7a03a65ea7a778d30dd4a40e1e1}{m\+\_\+nch}
 \item 
@@ -264,15 +322,15 @@ int \hyperlink{classAcquisition_a26628424533a2dd74d24712a14637a72}{m\+\_\+depth}
 \item 
 bool \hyperlink{classAcquisition_a953bdc1bf56206b6df33b648af32a24f}{m\+\_\+trig}
 \item 
-T\+H1D $\ast$ \hyperlink{classAcquisition_a88963f722bfcde824882f6312a44e825}{m\+\_\+a} \mbox{[}8\mbox{]}
+T\+H1D $\ast$ \hyperlink{classAcquisition_aedfd2a4842b08fdf85176bf672030430}{m\+\_\+a} \mbox{[}8\mbox{]}
 \item 
-T\+H1D $\ast$ \hyperlink{classAcquisition_a15d71455f658e21a12ef4c153c21df65}{m\+\_\+s} \mbox{[}8\mbox{]}
+T\+H1D $\ast$ \hyperlink{classAcquisition_ad7f531c3d3fc58d1a2a5eab954db0ca7}{m\+\_\+s} \mbox{[}8\mbox{]}
 \item 
-T\+H1D $\ast$ \hyperlink{classAcquisition_a53bcc000575de30eba6b7db8209be2cc}{m\+\_\+hsample} \mbox{[}8\mbox{]}
+T\+H1D $\ast$ \hyperlink{classAcquisition_ad0078b0c53eb14f13fdd16763df3be8e}{m\+\_\+hsample} \mbox{[}8\mbox{]}
 \item 
-double \hyperlink{classAcquisition_a8f0ef9898c1e63fb6f13c14508d3180d}{v} \mbox{[}8 $\ast$\hyperlink{classAcquisition_a7d95ba9a5593451a73754ed44f6bcd1c}{m\+\_\+depthmax}\mbox{]}
+double \hyperlink{classAcquisition_ac855680c9bb5f8f14d505d5f41f1a076}{v} \mbox{[}8 $\ast$\hyperlink{classAcquisition_a82cdfc89b37f20530bf112e13a5c5e5c}{m\+\_\+depthmax}\mbox{]}
 \item 
-double \hyperlink{classAcquisition_a841316dcf4f210ad52b144b187f2b7b6}{v2} \mbox{[}8 $\ast$\hyperlink{classAcquisition_a7d95ba9a5593451a73754ed44f6bcd1c}{m\+\_\+depthmax}\mbox{]}
+double \hyperlink{classAcquisition_a8d2cd605d4982223356a14423d735c84}{v2} \mbox{[}8 $\ast$\hyperlink{classAcquisition_a82cdfc89b37f20530bf112e13a5c5e5c}{m\+\_\+depthmax}\mbox{]}
 \item 
 unsigned int \hyperlink{classAcquisition_a26d0f1a44309ffac49c365b7ee568ab2}{m\+\_\+nsample}
 \item 
@@ -283,11 +341,13 @@ float \hyperlink{classAcquisition_a06b3ea027ebdcb15f64a6517ceb99b76}{m\+\_\+min\
 float \hyperlink{classAcquisition_a45478629e9db582470b4b158edb46616}{m\+\_\+max\+Range}
 \item 
 int \hyperlink{classAcquisition_a5f7fe20506e7d860ed61935255adfe17}{m\+\_\+deadtime}
+\item 
+\hyperlink{classFEB__v1}{F\+E\+B\+\_\+v1} $\ast$ \hyperlink{classAcquisition_ad4820003ddd62f0ca886c2e6a3690120}{m\+\_\+board}
 \end{DoxyCompactItemize}
 \subsection*{Static Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-static const unsigned int \hyperlink{classAcquisition_a7d95ba9a5593451a73754ed44f6bcd1c}{m\+\_\+depthmax} = 512
+static const unsigned int \hyperlink{classAcquisition_a82cdfc89b37f20530bf112e13a5c5e5c}{m\+\_\+depthmax} = 512
 \end{DoxyCompactItemize}
 
 
@@ -406,7 +466,7 @@ Definition at line 34 of file Processus.\+h.
 \mbox{\Hypertarget{classAcquisition_aa7d3138495a4a8888c21b33f4d657732}\label{classAcquisition_aa7d3138495a4a8888c21b33f4d657732}} 
 \index{Acquisition@{Acquisition}!Acquisition@{Acquisition}}
 \index{Acquisition@{Acquisition}!Acquisition@{Acquisition}}
-\subsubsection{\texorpdfstring{Acquisition()}{Acquisition()}}
+\subsubsection{\texorpdfstring{Acquisition()}{Acquisition()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \hyperlink{classAcquisition_1_1Acquisition}{Acquisition\+::\+Acquisition} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -448,7 +508,7 @@ Referenced by clone().
 \mbox{\Hypertarget{classAcquisition_a3b0205ba385e2da70abb5a351c4dbf0f}\label{classAcquisition_a3b0205ba385e2da70abb5a351c4dbf0f}} 
 \index{Acquisition@{Acquisition}!````~Acquisition@{$\sim$\+Acquisition}}
 \index{````~Acquisition@{$\sim$\+Acquisition}!Acquisition@{Acquisition}}
-\subsubsection{\texorpdfstring{$\sim$\+Acquisition()}{~Acquisition()}}
+\subsubsection{\texorpdfstring{$\sim$\+Acquisition()}{~Acquisition()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily Acquisition\+::$\sim$\+Acquisition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
@@ -463,6 +523,26 @@ Definition at line 42 of file Acquisition.\+cpp.
 \begin{DoxyCode}
 42 \{\} 
 \end{DoxyCode}
+\mbox{\Hypertarget{classAcquisition_aa7d3138495a4a8888c21b33f4d657732}\label{classAcquisition_aa7d3138495a4a8888c21b33f4d657732}} 
+\index{Acquisition@{Acquisition}!Acquisition@{Acquisition}}
+\index{Acquisition@{Acquisition}!Acquisition@{Acquisition}}
+\subsubsection{\texorpdfstring{Acquisition()}{Acquisition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classAcquisition_1_1Acquisition}{Acquisition\+::\+Acquisition} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Standard constructor. 
+
+\mbox{\Hypertarget{classAcquisition_af697b51bd72afcfe8f9f3f368743d20d}\label{classAcquisition_af697b51bd72afcfe8f9f3f368743d20d}} 
+\index{Acquisition@{Acquisition}!````~Acquisition@{$\sim$\+Acquisition}}
+\index{````~Acquisition@{$\sim$\+Acquisition}!Acquisition@{Acquisition}}
+\subsubsection{\texorpdfstring{$\sim$\+Acquisition()}{~Acquisition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual Acquisition\+::$\sim$\+Acquisition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
 
 
 \subsection{Member Function Documentation}
@@ -619,7 +699,25 @@ Referenced by export\+\_\+obj(), and Attrib\+::remove().
 \mbox{\Hypertarget{classAcquisition_a3041537afcb4dfe5c6940f0ef6829265}\label{classAcquisition_a3041537afcb4dfe5c6940f0ef6829265}} 
 \index{Acquisition@{Acquisition}!channels@{channels}}
 \index{channels@{channels}!Acquisition@{Acquisition}}
-\subsubsection{\texorpdfstring{channels()}{channels()}}
+\subsubsection{\texorpdfstring{channels()}{channels()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily unsigned int Acquisition\+::channels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 32 of file Acquisition.\+h.
+
+
+
+References m\+\_\+channels.
+
+
+\begin{DoxyCode}
+32 \{\textcolor{keywordflow}{return} \hyperlink{classAcquisition_aedc8b29f322ef00540797fbd0d5112d1}{m\_channels};\};
+\end{DoxyCode}
+\mbox{\Hypertarget{classAcquisition_a3041537afcb4dfe5c6940f0ef6829265}\label{classAcquisition_a3041537afcb4dfe5c6940f0ef6829265}} 
+\index{Acquisition@{Acquisition}!channels@{channels}}
+\index{channels@{channels}!Acquisition@{Acquisition}}
+\subsubsection{\texorpdfstring{channels()}{channels()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily unsigned int Acquisition\+::channels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -672,7 +770,31 @@ Referenced by Application\+::prepare().
 \mbox{\Hypertarget{classAcquisition_a4b1b690ef27f20b3e1ad9383f2f57628}\label{classAcquisition_a4b1b690ef27f20b3e1ad9383f2f57628}} 
 \index{Acquisition@{Acquisition}!clone@{clone}}
 \index{clone@{clone}!Acquisition@{Acquisition}}
-\subsubsection{\texorpdfstring{clone()}{clone()}}
+\subsubsection{\texorpdfstring{clone()}{clone()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classAcquisition_1_1Acquisition}{Acquisition}$\ast$ Acquisition\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+processus termination virtual function 
+
+Implements \hyperlink{classProcessus_aca8856f6d6d7b7e1fe941f298dcbb502}{Processus}.
+
+
+
+Definition at line 94 of file Acquisition.\+h.
+
+
+
+References Acquisition(), decode\+Format(), m\+\_\+channel, m\+\_\+channels, m\+\_\+ch\+Enable, m\+\_\+depth, m\+\_\+depthmax, m\+\_\+evt\+Number, m\+\_\+nch, m\+\_\+run\+Number, m\+\_\+sample, m\+\_\+store\+\_\+hist, m\+\_\+store\+\_\+sample, m\+\_\+store\+\_\+tree, m\+\_\+timestamp, and m\+\_\+tree.
+
+
+\begin{DoxyCode}
+94                       \{
+95     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \hyperlink{classAcquisition_aa7d3138495a4a8888c21b33f4d657732}{Acquisition} (*\textcolor{keyword}{this});
+96   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classAcquisition_a4b1b690ef27f20b3e1ad9383f2f57628}\label{classAcquisition_a4b1b690ef27f20b3e1ad9383f2f57628}} 
+\index{Acquisition@{Acquisition}!clone@{clone}}
+\index{clone@{clone}!Acquisition@{Acquisition}}
+\subsubsection{\texorpdfstring{clone()}{clone()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{classAcquisition_1_1Acquisition}{Acquisition}$\ast$ Acquisition\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
 processus termination virtual function 
@@ -852,7 +974,25 @@ References Status\+Code\+::\+F\+A\+I\+L\+U\+RE, and Status\+Code\+::\+S\+U\+C\+C
 \mbox{\Hypertarget{classAcquisition_a8fb2cd60a34993ab0952d719a8517831}\label{classAcquisition_a8fb2cd60a34993ab0952d719a8517831}} 
 \index{Acquisition@{Acquisition}!dead\+Time@{dead\+Time}}
 \index{dead\+Time@{dead\+Time}!Acquisition@{Acquisition}}
-\subsubsection{\texorpdfstring{dead\+Time()}{deadTime()}}
+\subsubsection{\texorpdfstring{dead\+Time()}{deadTime()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Acquisition\+::dead\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 65 of file Acquisition.\+h.
+
+
+
+References m\+\_\+deadtime.
+
+
+\begin{DoxyCode}
+65 \{\textcolor{keywordflow}{return} \hyperlink{classAcquisition_a5f7fe20506e7d860ed61935255adfe17}{m\_deadtime};\}
+\end{DoxyCode}
+\mbox{\Hypertarget{classAcquisition_a8fb2cd60a34993ab0952d719a8517831}\label{classAcquisition_a8fb2cd60a34993ab0952d719a8517831}} 
+\index{Acquisition@{Acquisition}!dead\+Time@{dead\+Time}}
+\index{dead\+Time@{dead\+Time}!Acquisition@{Acquisition}}
+\subsubsection{\texorpdfstring{dead\+Time()}{deadTime()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily int Acquisition\+::dead\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -887,7 +1027,7 @@ References Msg\+Svc\+::\+D\+E\+B\+UG, Object\+::m\+\_\+log, Object\+::m\+\_\+nam
 
 
 
-Referenced by A3\+P\+E\+::\+A3\+P\+E(), A3\+P\+E\+::acquisition(), Specs\+Mezzanine\+::add\+Bus(), Hierarchy\+::add\+Child(), Specs\+Slave\+::add\+I2c(), L\+S\+Delay\+Chip\+V1\+::config\+Reg\+Bulk\+Read(), L\+S\+Delay\+Chip\+V1\+::config\+Reg\+Bulk\+Write(), A3\+P\+E\+::data\+Ready(), D\+C\+U\+::\+D\+C\+U(), Hierarchy\+::del\+Child(), Specs\+Slave\+::detect(), Storage\+Fifo\+Acquisition\+::execute(), Storage\+Fifo\+::execute(), A3\+P\+E\+\_\+\+Bit\+Flip\+::execute(), execute(), Emulate\+F\+E\+::execute(), export\+\_\+obj(), Fe\+P\+G\+A\+::\+Fe\+P\+G\+A(), Specs\+Glue\+::i2c\+Clk\+Mode(), Fe\+P\+G\+A\+::i2c\+Read(), Seq\+P\+G\+A\+::i2c\+Read(), Fe\+P\+G\+A\+::i2c\+Write(), Seq\+P\+G\+A\+::i2c\+Write(), I\+C\+E\+C\+A\+Lv3\+::\+I\+C\+E\+C\+A\+Lv3(), I\+C\+Phaser\+::\+I\+C\+Phaser(), Specs\+Slave\+::init(), Specs\+Master\+::init(), Storage\+Fifo\+Acquisition\+::initialize(), Storage\+Fifo\+::initialize(), A3\+P\+E\+\_\+\+Bit\+Flip\+::initialize(), initialize(), Emulate\+F\+E\+::initialize(), A3\+P\+E\+::internal\+A\+X\+Sequence(), Specs\+Glue\+::led(), Specs\+Mezzanine\+::led(), M\+S\+Oxxxx\+::\+M\+S\+Oxxxx(), Phaser\+::\+Phaser(), Data\+::purge(), Phaser\+::read(), I\+C\+Phaser\+::read(), C\+U\+\_\+v1\+::reset(), F\+E\+B\+\_\+v1\+::reset(), Proto40\+M\+Hz\+\_\+v1\+::reset(), Specs\+Master\+::reset(), Specs\+Slave\+::reset(), F\+E\+B\+\_\+v1\+::reset\+Usb(), Seq\+P\+G\+A\+::\+Seq\+P\+G\+A(), A3\+P\+E\+::set\+Add\+From\+A\+X\+Ram(), A3\+P\+E\+::set\+Add\+To\+A\+X\+Ram(), A3\+P\+E\+::set\+A\+X\+Ram\+Usb(), Element\+::set\+Connection(), Specs\+Glue\+::set\+I2c\+Clk\+Mode(), A3\+P\+E\+::set\+Latency\+A\+X(), Specs\+Glue\+::set\+Led(), Specs\+Mezzanine\+::set\+Led(), A3\+P\+E\+::set\+Length\+A\+X(), A3\+P\+E\+::set\+Read\+To\+A\+X\+Ram\+Usb(), Specs\+Master\+::set\+Speed(), A3\+P\+E\+::set\+Write\+From\+A\+X\+Ram\+Usb(), Specs\+Bus\+::\+Specs\+Bus(), Specs\+I2c\+::\+Specs\+I2c(), Specs\+Master\+::\+Specs\+Master(), Specs\+Mezzanine\+::\+Specs\+Mezzanine(), Specs\+Parallel\+Bus\+::\+Specs\+Parallel\+Bus(), Specs\+Slave\+::\+Specs\+Slave(), L\+S\+Delay\+Chip\+V1\+::spi\+B\+E\+R\+Test(), I\+C\+E\+C\+A\+Lv3\+::spi\+Read(), I\+C\+E\+C\+A\+Lv3\+::spi\+Write(), A3\+P\+E\+::trigger(), Server\+::update\+Config(), Server\+::update\+State(), Phaser\+::write(), I\+C\+Phaser\+::write(), and Hierarchy\+::$\sim$\+Hierarchy().
+Referenced by A3\+P\+E\+::\+A3\+P\+E(), A3\+P\+E\+::acquisition(), Specs\+Mezzanine\+::add\+Bus(), Hierarchy\+::add\+Child(), Specs\+Slave\+::add\+I2c(), L\+S\+Delay\+Chip\+V1\+::config\+Reg\+Bulk\+Read(), L\+S\+Delay\+Chip\+V1\+::config\+Reg\+Bulk\+Write(), A3\+P\+E\+::data\+Ready(), D\+C\+U\+::\+D\+C\+U(), Hierarchy\+::del\+Child(), Specs\+Slave\+::detect(), Storage\+Fifo\+Acquisition\+::execute(), Storage\+Fifo\+::execute(), A3\+P\+E\+\_\+\+Bit\+Flip\+::execute(), execute(), Emulate\+F\+E\+::execute(), export\+\_\+obj(), Fe\+P\+G\+A\+::\+Fe\+P\+G\+A(), Specs\+Glue\+::i2c\+Clk\+Mode(), Fe\+P\+G\+A\+::i2c\+Read(), Seq\+P\+G\+A\+::i2c\+Read(), Fe\+P\+G\+A\+::i2c\+Write(), Seq\+P\+G\+A\+::i2c\+Write(), I\+C\+E\+C\+A\+Lv3\+::\+I\+C\+E\+C\+A\+Lv3(), I\+C\+Phaser\+::\+I\+C\+Phaser(), Specs\+Slave\+::init(), Specs\+Master\+::init(), Storage\+Fifo\+::initialize(), Storage\+Fifo\+Acquisition\+::initialize(), A3\+P\+E\+\_\+\+Bit\+Flip\+::initialize(), initialize(), Emulate\+F\+E\+::initialize(), A3\+P\+E\+::internal\+A\+X\+Sequence(), Specs\+Glue\+::led(), Specs\+Mezzanine\+::led(), M\+S\+Oxxxx\+::\+M\+S\+Oxxxx(), Phaser\+::\+Phaser(), Data\+::purge(), Phaser\+::read(), I\+C\+Phaser\+::read(), F\+E\+B\+\_\+v1\+::read\+Fifo\+Spy\+F\+E(), C\+U\+\_\+v1\+::reset(), F\+E\+B\+\_\+v1\+::reset(), Proto40\+M\+Hz\+\_\+v1\+::reset(), Specs\+Master\+::reset(), Specs\+Slave\+::reset(), F\+E\+B\+\_\+v1\+::reset\+Fifo\+Spy\+F\+E(), F\+E\+B\+\_\+v1\+::reset\+Usb(), Seq\+P\+G\+A\+::\+Seq\+P\+G\+A(), A3\+P\+E\+::set\+Add\+From\+A\+X\+Ram(), A3\+P\+E\+::set\+Add\+To\+A\+X\+Ram(), A3\+P\+E\+::set\+A\+X\+Ram\+Usb(), Element\+::set\+Connection(), Specs\+Glue\+::set\+I2c\+Clk\+Mode(), A3\+P\+E\+::set\+Latency\+A\+X(), Specs\+Glue\+::set\+Led(), Specs\+Mezzanine\+::set\+Led(), A3\+P\+E\+::set\+Length\+A\+X(), A3\+P\+E\+::set\+Read\+To\+A\+X\+Ram\+Usb(), Specs\+Master\+::set\+Speed(), A3\+P\+E\+::set\+Write\+From\+A\+X\+Ram\+Usb(), Specs\+Bus\+::\+Specs\+Bus(), Specs\+I2c\+::\+Specs\+I2c(), Specs\+Master\+::\+Specs\+Master(), Specs\+Mezzanine\+::\+Specs\+Mezzanine(), Specs\+Parallel\+Bus\+::\+Specs\+Parallel\+Bus(), Specs\+Slave\+::\+Specs\+Slave(), L\+S\+Delay\+Chip\+V1\+::spi\+B\+E\+R\+Test(), I\+C\+E\+C\+A\+Lv3\+::spi\+Read(), I\+C\+E\+C\+A\+Lv3\+::spi\+Write(), F\+E\+B\+\_\+v1\+::test\+Duration(), Seq\+P\+G\+A\+::test\+Sequence(), A3\+P\+E\+::trigger(), Server\+::update\+Config(), Server\+::update\+State(), Phaser\+::write(), I\+C\+Phaser\+::write(), and Hierarchy\+::$\sim$\+Hierarchy().
 
 
 \begin{DoxyCode}
@@ -914,7 +1054,13 @@ References Msg\+Svc\+::\+D\+E\+B\+UG, Object\+::m\+\_\+log, and Msg\+Svc\+::msg\
 \mbox{\Hypertarget{classAcquisition_a76fe7c020f7097e5d479867ba783ba31}\label{classAcquisition_a76fe7c020f7097e5d479867ba783ba31}} 
 \index{Acquisition@{Acquisition}!decode\+Format@{decode\+Format}}
 \index{decode\+Format@{decode\+Format}!Acquisition@{Acquisition}}
-\subsubsection{\texorpdfstring{decode\+Format()}{decodeFormat()}}
+\subsubsection{\texorpdfstring{decode\+Format()}{decodeFormat()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily unsigned int Acquisition\+::decode\+Format (\begin{DoxyParamCaption}\item[{unsigned}]{int,  }\item[{unsigned}]{int,  }\item[{\hyperlink{classRAM}{R\+AM} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classAcquisition_a76fe7c020f7097e5d479867ba783ba31}\label{classAcquisition_a76fe7c020f7097e5d479867ba783ba31}} 
+\index{Acquisition@{Acquisition}!decode\+Format@{decode\+Format}}
+\index{decode\+Format@{decode\+Format}!Acquisition@{Acquisition}}
+\subsubsection{\texorpdfstring{decode\+Format()}{decodeFormat()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily unsigned int Acquisition\+::decode\+Format (\begin{DoxyParamCaption}\item[{unsigned int}]{channel,  }\item[{unsigned int}]{evt,  }\item[{\hyperlink{classRAM}{R\+AM} $\ast$}]{ram }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 
@@ -965,7 +1111,25 @@ Referenced by clone(), and execute().
 \mbox{\Hypertarget{classAcquisition_a1ad973e21a067c0de0b6264d0eb5182b}\label{classAcquisition_a1ad973e21a067c0de0b6264d0eb5182b}} 
 \index{Acquisition@{Acquisition}!depth@{depth}}
 \index{depth@{depth}!Acquisition@{Acquisition}}
-\subsubsection{\texorpdfstring{depth()}{depth()}}
+\subsubsection{\texorpdfstring{depth()}{depth()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily unsigned int Acquisition\+::depth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 29 of file Acquisition.\+h.
+
+
+
+References m\+\_\+depth, and set\+Channels().
+
+
+\begin{DoxyCode}
+29 \{\textcolor{keywordflow}{return} \hyperlink{classAcquisition_a26628424533a2dd74d24712a14637a72}{m\_depth};\};
+\end{DoxyCode}
+\mbox{\Hypertarget{classAcquisition_a1ad973e21a067c0de0b6264d0eb5182b}\label{classAcquisition_a1ad973e21a067c0de0b6264d0eb5182b}} 
+\index{Acquisition@{Acquisition}!depth@{depth}}
+\index{depth@{depth}!Acquisition@{Acquisition}}
+\subsubsection{\texorpdfstring{depth()}{depth()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily unsigned int Acquisition\+::depth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -1167,10 +1331,20 @@ References Msg\+Svc\+::\+E\+RR, Object\+::m\+\_\+log, and Msg\+Svc\+::msg\+Svc()
 \begin{DoxyCode}
 48 \{ \hyperlink{classObject_a0d269813dd7ac1f24bc143031e2963f2}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a35a9d7166e9896af4ec8fb33bf5f1772}{MsgSvc::ERR}     , mymsg, \hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name} ); \}
 \end{DoxyCode}
+\mbox{\Hypertarget{classAcquisition_a6cae797f591c2c576ebf17411e5212c9}\label{classAcquisition_a6cae797f591c2c576ebf17411e5212c9}} 
+\index{Acquisition@{Acquisition}!execute@{execute}}
+\index{execute@{execute}!Acquisition@{Acquisition}}
+\subsubsection{\texorpdfstring{execute()}{execute()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classStatusCode}{Status\+Code} Acquisition\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+processus execution virtual function 
+
+Implements \hyperlink{classProcessus_a63767a63a1fb0055c5aa45b21a4a5d58}{Processus}.
+
 \mbox{\Hypertarget{classAcquisition_ae3b63064bee1b042914b63ae4135cbd8}\label{classAcquisition_ae3b63064bee1b042914b63ae4135cbd8}} 
 \index{Acquisition@{Acquisition}!execute@{execute}}
 \index{execute@{execute}!Acquisition@{Acquisition}}
-\subsubsection{\texorpdfstring{execute()}{execute()}}
+\subsubsection{\texorpdfstring{execute()}{execute()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} Acquisition\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 processus execution virtual function 
@@ -1224,22 +1398,22 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
 148     \hyperlink{classAcquisition_a154e5423720ab1f2c4ab5cd125cb4e80}{m\_sample}=d;
 149     nch=0; c=0;
 150     \textcolor{keywordflow}{while} (nch<\hyperlink{classAcquisition_a1860c7a03a65ea7a778d30dd4a40e1e1}{m\_nch}) \{
-151       \textcolor{keywordflow}{if}(\hyperlink{classAcquisition_ad323c9602565eec8e41f573d441745e2}{m\_chEnable}[c]>0)\{
-152         \hyperlink{classAcquisition_a1123502b520aec97ee8a71039abaa3fb}{m\_channel}[c]=\hyperlink{classAcquisition_a76fe7c020f7097e5d479867ba783ba31}{decodeFormat}(c,d,\hyperlink{classAcquisition_a8a893e7485e96da01185df6d1109c0bc}{m\_fifo});
+151       \textcolor{keywordflow}{if}(\hyperlink{classAcquisition_a217269bc403d9fd271a1701c98afb30e}{m\_chEnable}[c]>0)\{
+152         \hyperlink{classAcquisition_a9233a189179591c0c2f2639a3e6c13f6}{m\_channel}[c]=\hyperlink{classAcquisition_a76fe7c020f7097e5d479867ba783ba31}{decodeFormat}(c,d,\hyperlink{classAcquisition_a8a893e7485e96da01185df6d1109c0bc}{m\_fifo});
 153 \textcolor{comment}{//        info("sample "+itos(d)+"- channel "+itos(c)+" - value="+itos(m\_channel[c]));}
 154         \textcolor{keywordflow}{if} (\hyperlink{classAcquisition_a08f70edd83751dbdab4c8190dc4b9188}{m\_store\_hist}) \{
-155           \hyperlink{classAcquisition_a8f0ef9898c1e63fb6f13c14508d3180d}{v}[c+8*d]+=\hyperlink{classAcquisition_a1123502b520aec97ee8a71039abaa3fb}{m\_channel}[c];
-156           \hyperlink{classAcquisition_a841316dcf4f210ad52b144b187f2b7b6}{v2}[c+8*d]+=\hyperlink{classAcquisition_a1123502b520aec97ee8a71039abaa3fb}{m\_channel}[c]*\hyperlink{classAcquisition_a1123502b520aec97ee8a71039abaa3fb}{m\_channel}[c];
+155           \hyperlink{classAcquisition_ac855680c9bb5f8f14d505d5f41f1a076}{v}[c+8*d]+=\hyperlink{classAcquisition_a9233a189179591c0c2f2639a3e6c13f6}{m\_channel}[c];
+156           \hyperlink{classAcquisition_a8d2cd605d4982223356a14423d735c84}{v2}[c+8*d]+=\hyperlink{classAcquisition_a9233a189179591c0c2f2639a3e6c13f6}{m\_channel}[c]*\hyperlink{classAcquisition_a9233a189179591c0c2f2639a3e6c13f6}{m\_channel}[c];
 157         \}
 158         \textcolor{keywordflow}{if} (\hyperlink{classAcquisition_a26d0f1a44309ffac49c365b7ee568ab2}{m\_nsample}==d)\{
-159           \textcolor{keywordflow}{if} (\hyperlink{classAcquisition_a987cc1d04007cf1f5acc1accfd0909e5}{m\_store\_sample}) \hyperlink{classAcquisition_a53bcc000575de30eba6b7db8209be2cc}{m\_hsample}[c]->Fill(
-      \hyperlink{classAcquisition_a1123502b520aec97ee8a71039abaa3fb}{m\_channel}[c]);
+159           \textcolor{keywordflow}{if} (\hyperlink{classAcquisition_a987cc1d04007cf1f5acc1accfd0909e5}{m\_store\_sample}) \hyperlink{classAcquisition_ad0078b0c53eb14f13fdd16763df3be8e}{m\_hsample}[c]->Fill(
+      \hyperlink{classAcquisition_a9233a189179591c0c2f2639a3e6c13f6}{m\_channel}[c]);
 160         \}
 161         nch++;
 162       \}
 163       c++;
 164     \}
-165     \textcolor{keywordflow}{if} (\hyperlink{classAcquisition_aca2143e9135e25554e58327475a767c5}{m\_store\_tree}) \hyperlink{classAcquisition_a70f10db9c972f22a60bd2b82750168da}{m\_tree}->Fill();
+165     \textcolor{keywordflow}{if} (\hyperlink{classAcquisition_aca2143e9135e25554e58327475a767c5}{m\_store\_tree}) \hyperlink{classAcquisition_aa88a923232e8b7e08f5c1b5411497fc5}{m\_tree}->Fill();
 166   \}
 167   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
 168 \}
@@ -1284,10 +1458,20 @@ References Msg\+Svc\+::\+F\+A\+T\+AL, Object\+::m\+\_\+log, and Msg\+Svc\+::msg\
 \begin{DoxyCode}
 49 \{ \hyperlink{classObject_a0d269813dd7ac1f24bc143031e2963f2}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a59c73cb29edfc9cdf35845e2b1301363}{MsgSvc::FATAL}   , mymsg, \hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name} ); \}
 \end{DoxyCode}
+\mbox{\Hypertarget{classAcquisition_a92b4b55e8c7d53610e7eda6d5b9c74a4}\label{classAcquisition_a92b4b55e8c7d53610e7eda6d5b9c74a4}} 
+\index{Acquisition@{Acquisition}!finalize@{finalize}}
+\index{finalize@{finalize}!Acquisition@{Acquisition}}
+\subsubsection{\texorpdfstring{finalize()}{finalize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classStatusCode}{Status\+Code} Acquisition\+::finalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+processus termination virtual function 
+
+Implements \hyperlink{classProcessus_aba93d691f031bdb18ae4b8afb1b2e856}{Processus}.
+
 \mbox{\Hypertarget{classAcquisition_ab8ffcd86548280f0403b3ae6338f2499}\label{classAcquisition_ab8ffcd86548280f0403b3ae6338f2499}} 
 \index{Acquisition@{Acquisition}!finalize@{finalize}}
 \index{finalize@{finalize}!Acquisition@{Acquisition}}
-\subsubsection{\texorpdfstring{finalize()}{finalize()}}
+\subsubsection{\texorpdfstring{finalize()}{finalize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} Acquisition\+::finalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 processus termination virtual function 
@@ -1311,19 +1495,19 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
 173                                    \{
 174   \textcolor{keywordtype}{int} nch; \textcolor{keywordtype}{int} c;
 175   \textcolor{keywordtype}{double} val,tmp;
-176   \textcolor{keywordflow}{if} (\hyperlink{classAcquisition_aca2143e9135e25554e58327475a767c5}{m\_store\_tree}) \hyperlink{classAcquisition_a70f10db9c972f22a60bd2b82750168da}{m\_tree}->Print();
+176   \textcolor{keywordflow}{if} (\hyperlink{classAcquisition_aca2143e9135e25554e58327475a767c5}{m\_store\_tree}) \hyperlink{classAcquisition_aa88a923232e8b7e08f5c1b5411497fc5}{m\_tree}->Print();
 177   \textcolor{keywordflow}{if} (\hyperlink{classAcquisition_a08f70edd83751dbdab4c8190dc4b9188}{m\_store\_hist})\{
 178     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} d=0; d<\hyperlink{classAcquisition_a26628424533a2dd74d24712a14637a72}{m\_depth}; ++d)\{
 179       nch=0; c=0;
 180       \textcolor{keywordflow}{while} (nch<\hyperlink{classAcquisition_a1860c7a03a65ea7a778d30dd4a40e1e1}{m\_nch})\{
 181         \textcolor{keywordflow}{if}((\hyperlink{classAcquisition_aedc8b29f322ef00540797fbd0d5112d1}{m\_channels}>>c)&1)\{
-182           tmp=\hyperlink{classAcquisition_a8f0ef9898c1e63fb6f13c14508d3180d}{v}[c+8*d]/(\hyperlink{classAcquisition_a32a70daa3f653eae5eafc46dbd0e11a6}{m\_evtNumber}+1);
-183           \hyperlink{classAcquisition_a88963f722bfcde824882f6312a44e825}{m\_a}[c]->Fill(d,tmp);
+182           tmp=\hyperlink{classAcquisition_ac855680c9bb5f8f14d505d5f41f1a076}{v}[c+8*d]/(\hyperlink{classAcquisition_a32a70daa3f653eae5eafc46dbd0e11a6}{m\_evtNumber}+1);
+183           \hyperlink{classAcquisition_aedfd2a4842b08fdf85176bf672030430}{m\_a}[c]->Fill(d,tmp);
 184           \textcolor{keywordflow}{if} (\hyperlink{classAcquisition_a32a70daa3f653eae5eafc46dbd0e11a6}{m\_evtNumber}>0)\{
-185             val=(\hyperlink{classAcquisition_a841316dcf4f210ad52b144b187f2b7b6}{v2}[c+8*d]
-186                  -\hyperlink{classAcquisition_a8f0ef9898c1e63fb6f13c14508d3180d}{v}[c+8*d]*tmp
+185             val=(\hyperlink{classAcquisition_a8d2cd605d4982223356a14423d735c84}{v2}[c+8*d]
+186                  -\hyperlink{classAcquisition_ac855680c9bb5f8f14d505d5f41f1a076}{v}[c+8*d]*tmp
 187                  )/(\hyperlink{classAcquisition_a32a70daa3f653eae5eafc46dbd0e11a6}{m\_evtNumber});
-188             \hyperlink{classAcquisition_a15d71455f658e21a12ef4c153c21df65}{m\_s}[c]->Fill(d,val>0.?sqrt(val):0.);
+188             \hyperlink{classAcquisition_ad7f531c3d3fc58d1a2a5eab954db0ca7}{m\_s}[c]->Fill(d,val>0.?sqrt(val):0.);
 189           \}
 190           nch++;
 191         \}
@@ -1438,7 +1622,7 @@ References Msg\+Svc\+::\+I\+N\+FO, Object\+::m\+\_\+log, Object\+::m\+\_\+name, 
 
 
 
-Referenced by N\+I6008\+::add\+Device(), F\+E\+B\+\_\+v1\+::calib\+Cte(), check\+Cmd(), Hierarchy\+::clear(), F\+E\+B\+\_\+v1\+::clock80\+M\+Hz\+Falling\+Edge(), F\+E\+B\+\_\+v1\+::clock\+Falling\+Edge(), Usb\+F\+T\+Interface\+::close(), Usb\+F\+T\+M\+L\+Interface\+::close(), Processus\+::close\+Root\+File(), Server\+::cmdline(), Specs\+Mezzanine\+::cmdline(), Specs\+Slave\+::detect(), F\+E\+B\+\_\+v1\+::disable\+Subtract(), I\+Odata\+::dump(), A3\+P\+E\+::dump\+From\+A\+X(), A3\+P\+E\+::dump\+Pattern(), A3\+P\+E\+::dump\+Storage(), A3\+P\+E\+::dump\+To\+A\+X(), A3\+P\+E\+::dump\+Trigger(), Processus\+::end\+Processing(), Phaser\+Ramp\+Exec\+::execute(), export\+\_\+obj(), Phaser\+Ramp\+Exec\+::finalize(), F\+E\+B\+\_\+v1\+::gain4(), F\+E\+B\+\_\+v1\+::gbt80\+M\+Hz\+Clk\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+Data\+Path(), F\+E\+B\+\_\+v1\+::gbt\+D\+L\+L\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+D\+L\+L\+Reset(), F\+E\+B\+\_\+v1\+::gbt\+Enable\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+Mode(), F\+E\+B\+\_\+v1\+::gbt\+Status(), F\+E\+B\+\_\+v1\+::gbt\+Term\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+Track\+Mode(), I\+C\+E\+C\+A\+Lv3\+::get\+Analog\+Ch(), I\+C\+E\+C\+A\+Lv3\+::get\+Delay\+Line\+Ch(), I\+C\+E\+C\+A\+Lv3\+::get\+Main\+Reg(), F\+E\+B\+\_\+v1\+::global\+Pseudo\+P\+M\+Enable(), Croc\+::help(), R\+A\+M\+::help(), Specs\+Glue\+::help(), Usb\+M\+L\+I2c\+Bus\+::help(), Usb\+M\+L\+Spi\+Bus\+::help(), C\+U\+\_\+v1\+::help(), Usb\+I2c\+Bus\+::help(), Usb\+Spi\+Bus\+::help(), F\+E\+B\+\_\+v1\+::help(), I\+Oobject\+::help(), Proto40\+M\+Hz\+\_\+v1\+::help(), Specs\+Mezzanine\+::help(), Fe\+P\+G\+A\+::help(), Seq\+P\+G\+A\+::help(), Computer\+::help(), N\+I6008\+::help(), Specs\+Parallel\+Bus\+::help(), Specs\+Master\+::help(), Usb\+F\+T\+M\+L\+Interface\+::help(), Usb\+F\+T\+Interface\+::help(), Phaser\+::help(), I\+C\+Phaser\+::help(), A3\+P\+E\+::help(), M\+S\+Oxxxx\+::id(), Croc\+::init(), Computer\+::init(), N\+I6008\+::init(), Specs\+Parallel\+Bus\+::init(), Specs\+Slave\+::init(), Specs\+Master\+::init(), Usb\+F\+T\+Interface\+::init(), Usb\+F\+T\+M\+L\+Interface\+::init(), Storage\+Fifo\+Acquisition\+::initialize(), Storage\+Fifo\+::initialize(), A3\+P\+E\+\_\+\+Bit\+Flip\+::initialize(), initialize(), Emulate\+F\+E\+::initialize(), Current\+Measurement\+::initialize(), A\+D\+C\+Measurement\+::initialize(), Phaser\+Ramp\+Exec\+::initialize(), F\+E\+B\+\_\+v1\+::inject\+Mode\+F\+E(), is\+Int(), F\+E\+B\+\_\+v1\+::latency(), F\+E\+B\+\_\+v1\+::latency\+L\+L\+T(), A3\+P\+E\+::load\+From\+A\+X(), Application\+::load\+History\+File(), A3\+P\+E\+::load\+Pattern(), A3\+P\+E\+::load\+Storage(), A3\+P\+E\+::load\+To\+A\+X(), A3\+P\+E\+::load\+Trigger(), Application\+::loop(), F\+E\+B\+\_\+v1\+::mask\+L\+L\+T(), Application\+::network(), F\+E\+B\+\_\+v1\+::old\+Subtract(), M\+S\+Oxxxx\+::open(), Processus\+::open\+Root\+File(), Data\+::print(), F\+E\+B\+\_\+v1\+::probe\+Enable(), Proc\+Data\+Base\+::\+Proc\+Data\+Base(), F\+E\+B\+\_\+v1\+::pseudo\+A\+D\+C\+Enable(), F\+E\+B\+\_\+v1\+::pseudo\+P\+M\+Enable(), Usb\+Spi\+Bus\+::read(), Usb\+F\+T\+M\+L\+Interface\+::read(), F\+E\+B\+\_\+v1\+::read\+Fifo\+Inject\+F\+E(), F\+E\+B\+\_\+v1\+::read\+Fifo\+L\+L\+T(), F\+E\+B\+\_\+v1\+::read\+Fifo\+L\+L\+T\+F\+E(), F\+E\+B\+\_\+v1\+::read\+Fifo\+Spy\+F\+E(), M\+S\+Oxxxx\+::recv(), Croc\+::reset(), Usb\+I2c\+Bus\+::reset(), Usb\+M\+L\+I2c\+Bus\+::reset(), Usb\+M\+L\+Spi\+Bus\+::reset(), Usb\+Spi\+Bus\+::reset(), Fe\+P\+G\+A\+::reset(), Seq\+P\+G\+A\+::reset(), Computer\+::reset(), Specs\+Parallel\+Bus\+::reset(), Specs\+Master\+::reset(), N\+I6008\+::reset(), Usb\+F\+T\+M\+L\+Interface\+::reset(), Usb\+F\+T\+Interface\+::reset(), A3\+P\+E\+::reset(), A3\+P\+E\+::reset\+Acquisition\+Write\+Counter(), F\+E\+B\+\_\+v1\+::reset\+F\+E(), A3\+P\+E\+::reset\+F\+E(), F\+E\+B\+\_\+v1\+::reset\+Fifo\+Inject\+F\+E(), F\+E\+B\+\_\+v1\+::reset\+Fifo\+Spy\+F\+E(), A3\+P\+E\+::reset\+From\+A\+X\+Ram(), Specs\+Slave\+::reset\+Internal(), A3\+P\+E\+::reset\+Latency\+Counter(), A3\+P\+E\+::reset\+Pattern\+Fifo(), A3\+P\+E\+::reset\+Sequence\+From\+To\+A\+X(), A3\+P\+E\+::reset\+S\+P\+I(), A3\+P\+E\+::reset\+Storage\+Fifo(), A3\+P\+E\+::reset\+To\+A\+X\+Ram(), A3\+P\+E\+::reset\+Trigger\+Fifo(), Seq\+P\+G\+A\+::reset\+Usb(), Fe\+P\+G\+A\+::reset\+Usb(), A3\+P\+E\+::reset\+Usb\+Phasers(), M\+S\+Oxxxx\+::send(), Server\+::\+Server(), Application\+::server(), F\+E\+B\+\_\+v1\+::set\+Calib\+Cte(), F\+E\+B\+\_\+v1\+::set\+Clock80\+M\+Hz\+Falling\+Edge(), A3\+P\+E\+::set\+Clock\+Division(), F\+E\+B\+\_\+v1\+::set\+Clock\+Falling\+Edge(), Usb\+Spi\+Bus\+::set\+Data\+Length(), F\+E\+B\+\_\+v1\+::set\+Disable\+Subtract(), A3\+P\+E\+::set\+Enable\+A\+D\+C(), A3\+P\+E\+::set\+Fifo\+Depth(), A3\+P\+E\+::set\+Fifo\+Latency(), F\+E\+B\+\_\+v1\+::set\+Gain4(), F\+E\+B\+\_\+v1\+::set\+Gbt80\+M\+Hz\+Clk\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Clock\+Strength(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Data\+Path(), F\+E\+B\+\_\+v1\+::set\+Gbt\+D\+L\+L\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Enable\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Mode(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Term\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Track\+Mode(), F\+E\+B\+\_\+v1\+::set\+Global\+Pseudo\+P\+M\+Enable(), F\+E\+B\+\_\+v1\+::set\+Inject\+Mode\+F\+E(), A3\+P\+E\+::set\+Internal\+A\+X\+Sequence(), F\+E\+B\+\_\+v1\+::set\+Latency(), A3\+P\+E\+::set\+N\+Trigger(), F\+E\+B\+\_\+v1\+::set\+Old\+Subtract(), F\+E\+B\+\_\+v1\+::set\+Output\+Eport(), Phaser\+::set\+Phase(), I\+C\+Phaser\+::set\+Phase(), A3\+P\+E\+::set\+Pipeline(), F\+E\+B\+\_\+v1\+::set\+Probe\+Enable(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+A\+D\+C\+Enable(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+P\+M\+Enable(), A3\+P\+E\+::set\+Read\+Pattern\+Fifo\+Usb(), A3\+P\+E\+::set\+Read\+Trigger\+Fifo\+Usb(), A3\+P\+E\+::set\+Software\+Trigger(), F\+E\+B\+\_\+v1\+::set\+Spare\+For\+Trig\+Enable(), F\+E\+B\+\_\+v1\+::set\+Spy\+Mode\+F\+E(), Processus\+::set\+State(), F\+E\+B\+\_\+v1\+::set\+Threshold(), A3\+P\+E\+::set\+Trigger\+Delay(), A3\+P\+E\+::set\+Trigger\+Rate(), A3\+P\+E\+::set\+Write\+Storage\+Fifo\+Usb(), L\+S\+Delay\+Chip\+V1\+::show\+Config(), F\+E\+B\+\_\+v1\+::spare\+For\+Trig\+Enable(), Specs\+I2c\+::\+Specs\+I2c(), I\+C\+E\+C\+A\+Lv3\+::spi\+F\+E\+R\+Test(), F\+E\+B\+\_\+v1\+::spy\+Mode\+F\+E(), F\+E\+B\+\_\+v1\+::spy\+Mode\+Seq(), Server\+::start(), Processus\+::start\+Processing(), F\+E\+B\+\_\+v1\+::status\+Register(), F\+E\+B\+\_\+v1\+::stop\+Inj\+Loop(), Application\+::svc\+Running(), Application\+::terminate(), F\+E\+B\+\_\+v1\+::test\+Duration(), Seq\+P\+G\+A\+::test\+Sequence(), Fe\+P\+G\+A\+::test\+Sequence(), F\+E\+B\+\_\+v1\+::threshold(), Hierarchy\+::tree(), Croc\+::update(), Usb\+I2c\+Bus\+::update(), Usb\+Spi\+Bus\+::update(), Usb\+M\+L\+I2c\+Bus\+::update(), Usb\+M\+L\+Spi\+Bus\+::update(), C\+U\+\_\+v1\+::update(), Proto40\+M\+Hz\+\_\+v1\+::update(), Computer\+::update(), F\+E\+B\+\_\+v1\+::update(), Specs\+Parallel\+Bus\+::update(), N\+I6008\+::update(), Usb\+F\+T\+Interface\+::update(), Usb\+F\+T\+M\+L\+Interface\+::update(), Usb\+F\+T\+Interface\+::\+Usb\+F\+T\+Interface(), Usb\+F\+T\+M\+L\+Interface\+::\+Usb\+F\+T\+M\+L\+Interface(), Usb\+Spi\+Bus\+::write(), F\+E\+B\+\_\+v1\+::write\+Data\+Fifo\+Inject\+F\+E(), F\+E\+B\+\_\+v1\+::write\+Fifo\+Inject\+F\+E(), and N\+I6008\+::$\sim$\+N\+I6008().
+Referenced by N\+I6008\+::add\+Device(), I\+C\+E\+C\+A\+Lv3\+::bxid\+Resynch\+Status(), F\+E\+B\+\_\+v1\+::calib\+Cte(), check\+Cmd(), Hierarchy\+::clear(), F\+E\+B\+\_\+v1\+::clock80\+M\+Hz\+Falling\+Edge(), F\+E\+B\+\_\+v1\+::clock\+Falling\+Edge(), Usb\+F\+T\+Interface\+::close(), Usb\+F\+T\+M\+L\+Interface\+::close(), Processus\+::close\+Root\+File(), Server\+::cmdline(), Specs\+Mezzanine\+::cmdline(), Specs\+Slave\+::detect(), F\+E\+B\+\_\+v1\+::disable\+Subtract(), I\+Odata\+::dump(), A3\+P\+E\+::dump\+From\+A\+X(), A3\+P\+E\+::dump\+Pattern(), A3\+P\+E\+::dump\+Storage(), A3\+P\+E\+::dump\+To\+A\+X(), A3\+P\+E\+::dump\+Trigger(), Processus\+::end\+Processing(), Phaser\+Ramp\+Exec\+::execute(), export\+\_\+obj(), Phaser\+Ramp\+Exec\+::finalize(), F\+E\+B\+\_\+v1\+::gain4(), F\+E\+B\+\_\+v1\+::gbt80\+M\+Hz\+Clk\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+Data\+Path(), F\+E\+B\+\_\+v1\+::gbt\+D\+L\+L\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+D\+L\+L\+Reset(), F\+E\+B\+\_\+v1\+::gbt\+Enable\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+Mode(), F\+E\+B\+\_\+v1\+::gbt\+Status(), F\+E\+B\+\_\+v1\+::gbt\+Term\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+Track\+Mode(), I\+C\+E\+C\+A\+Lv3\+::get\+Analog\+Ch(), I\+C\+E\+C\+A\+Lv3\+::get\+Delay\+Line\+Ch(), I\+C\+E\+C\+A\+Lv3\+::get\+Main\+Reg(), F\+E\+B\+\_\+v1\+::global\+Pseudo\+P\+M\+Enable(), Croc\+::help(), R\+A\+M\+::help(), Specs\+Glue\+::help(), Usb\+M\+L\+I2c\+Bus\+::help(), Usb\+M\+L\+Spi\+Bus\+::help(), C\+U\+\_\+v1\+::help(), Usb\+I2c\+Bus\+::help(), Usb\+Spi\+Bus\+::help(), F\+E\+B\+\_\+v1\+::help(), I\+Oobject\+::help(), Proto40\+M\+Hz\+\_\+v1\+::help(), Specs\+Mezzanine\+::help(), Fe\+P\+G\+A\+::help(), Seq\+P\+G\+A\+::help(), Computer\+::help(), N\+I6008\+::help(), Specs\+Parallel\+Bus\+::help(), Specs\+Master\+::help(), Usb\+F\+T\+M\+L\+Interface\+::help(), Usb\+F\+T\+Interface\+::help(), Phaser\+::help(), I\+C\+Phaser\+::help(), A3\+P\+E\+::help(), M\+S\+Oxxxx\+::id(), Croc\+::init(), Computer\+::init(), N\+I6008\+::init(), Specs\+Parallel\+Bus\+::init(), Specs\+Slave\+::init(), Specs\+Master\+::init(), Usb\+F\+T\+Interface\+::init(), Usb\+F\+T\+M\+L\+Interface\+::init(), Storage\+Fifo\+Acquisition\+::initialize(), Storage\+Fifo\+::initialize(), initialize(), A3\+P\+E\+\_\+\+Bit\+Flip\+::initialize(), Emulate\+F\+E\+::initialize(), A\+D\+C\+Measurement\+::initialize(), Current\+Measurement\+::initialize(), Phaser\+Ramp\+Exec\+::initialize(), F\+E\+B\+\_\+v1\+::inject\+Mode\+F\+E(), is\+Int(), F\+E\+B\+\_\+v1\+::latency(), F\+E\+B\+\_\+v1\+::latency\+L\+L\+T(), A3\+P\+E\+::load\+From\+A\+X(), Application\+::load\+History\+File(), A3\+P\+E\+::load\+Pattern(), A3\+P\+E\+::load\+Storage(), A3\+P\+E\+::load\+To\+A\+X(), A3\+P\+E\+::load\+Trigger(), Application\+::loop(), F\+E\+B\+\_\+v1\+::mask\+L\+L\+T(), Application\+::network(), F\+E\+B\+\_\+v1\+::old\+Subtract(), M\+S\+Oxxxx\+::open(), Processus\+::open\+Root\+File(), Data\+::print(), F\+E\+B\+\_\+v1\+::probe\+Enable(), Proc\+Data\+Base\+::\+Proc\+Data\+Base(), F\+E\+B\+\_\+v1\+::pseudo\+A\+D\+C\+Enable(), F\+E\+B\+\_\+v1\+::pseudo\+P\+M\+Enable(), Usb\+Spi\+Bus\+::read(), Usb\+F\+T\+M\+L\+Interface\+::read(), F\+E\+B\+\_\+v1\+::read\+Fifo\+Inject\+F\+E(), F\+E\+B\+\_\+v1\+::read\+Fifo\+L\+L\+T(), F\+E\+B\+\_\+v1\+::read\+Fifo\+L\+L\+T\+F\+E(), F\+E\+B\+\_\+v1\+::read\+Fifo\+Spy\+F\+E(), M\+S\+Oxxxx\+::recv(), Croc\+::reset(), Usb\+M\+L\+I2c\+Bus\+::reset(), Usb\+I2c\+Bus\+::reset(), Usb\+M\+L\+Spi\+Bus\+::reset(), Usb\+Spi\+Bus\+::reset(), Fe\+P\+G\+A\+::reset(), Seq\+P\+G\+A\+::reset(), Computer\+::reset(), Specs\+Parallel\+Bus\+::reset(), Specs\+Master\+::reset(), N\+I6008\+::reset(), Usb\+F\+T\+M\+L\+Interface\+::reset(), Usb\+F\+T\+Interface\+::reset(), A3\+P\+E\+::reset(), A3\+P\+E\+::reset\+Acquisition\+Write\+Counter(), F\+E\+B\+\_\+v1\+::reset\+F\+E(), A3\+P\+E\+::reset\+F\+E(), F\+E\+B\+\_\+v1\+::reset\+Fifo\+Inject\+F\+E(), A3\+P\+E\+::reset\+From\+A\+X\+Ram(), Specs\+Slave\+::reset\+Internal(), A3\+P\+E\+::reset\+Latency\+Counter(), A3\+P\+E\+::reset\+Pattern\+Fifo(), A3\+P\+E\+::reset\+Sequence\+From\+To\+A\+X(), A3\+P\+E\+::reset\+S\+P\+I(), A3\+P\+E\+::reset\+Storage\+Fifo(), A3\+P\+E\+::reset\+To\+A\+X\+Ram(), A3\+P\+E\+::reset\+Trigger\+Fifo(), Seq\+P\+G\+A\+::reset\+Usb(), Fe\+P\+G\+A\+::reset\+Usb(), A3\+P\+E\+::reset\+Usb\+Phasers(), M\+S\+Oxxxx\+::send(), Server\+::\+Server(), Application\+::server(), F\+E\+B\+\_\+v1\+::set\+Calib\+Cte(), F\+E\+B\+\_\+v1\+::set\+Clock80\+M\+Hz\+Falling\+Edge(), A3\+P\+E\+::set\+Clock\+Division(), F\+E\+B\+\_\+v1\+::set\+Clock\+Falling\+Edge(), Usb\+Spi\+Bus\+::set\+Data\+Length(), F\+E\+B\+\_\+v1\+::set\+Disable\+Subtract(), A3\+P\+E\+::set\+Enable\+A\+D\+C(), A3\+P\+E\+::set\+Fifo\+Depth(), A3\+P\+E\+::set\+Fifo\+Latency(), F\+E\+B\+\_\+v1\+::set\+Gain4(), F\+E\+B\+\_\+v1\+::set\+Gbt80\+M\+Hz\+Clk\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Clock\+Strength(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Data\+Path(), F\+E\+B\+\_\+v1\+::set\+Gbt\+D\+L\+L\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Enable\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Mode(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Term\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Track\+Mode(), F\+E\+B\+\_\+v1\+::set\+Global\+Pseudo\+P\+M\+Enable(), F\+E\+B\+\_\+v1\+::set\+Inject\+Mode\+F\+E(), A3\+P\+E\+::set\+Internal\+A\+X\+Sequence(), F\+E\+B\+\_\+v1\+::set\+Latency(), A3\+P\+E\+::set\+N\+Trigger(), F\+E\+B\+\_\+v1\+::set\+Old\+Subtract(), F\+E\+B\+\_\+v1\+::set\+Output\+Eport(), Phaser\+::set\+Phase(), I\+C\+Phaser\+::set\+Phase(), A3\+P\+E\+::set\+Pipeline(), F\+E\+B\+\_\+v1\+::set\+Probe\+Enable(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+A\+D\+C\+Enable(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+P\+M\+Enable(), A3\+P\+E\+::set\+Read\+Pattern\+Fifo\+Usb(), A3\+P\+E\+::set\+Read\+Trigger\+Fifo\+Usb(), A3\+P\+E\+::set\+Software\+Trigger(), F\+E\+B\+\_\+v1\+::set\+Spare\+For\+Trig\+Enable(), F\+E\+B\+\_\+v1\+::set\+Spy\+Mode\+F\+E(), Processus\+::set\+State(), F\+E\+B\+\_\+v1\+::set\+Threshold(), A3\+P\+E\+::set\+Trigger\+Delay(), A3\+P\+E\+::set\+Trigger\+Rate(), A3\+P\+E\+::set\+Write\+Storage\+Fifo\+Usb(), L\+S\+Delay\+Chip\+V1\+::show\+Config(), F\+E\+B\+\_\+v1\+::spare\+For\+Trig\+Enable(), Specs\+I2c\+::\+Specs\+I2c(), I\+C\+E\+C\+A\+Lv3\+::spi\+F\+E\+R\+Test(), F\+E\+B\+\_\+v1\+::spy\+Mode\+F\+E(), F\+E\+B\+\_\+v1\+::spy\+Mode\+Seq(), Server\+::start(), Processus\+::start\+Processing(), F\+E\+B\+\_\+v1\+::status\+Register(), F\+E\+B\+\_\+v1\+::stop\+Inj\+Loop(), Application\+::svc\+Running(), Application\+::terminate(), Fe\+P\+G\+A\+::test\+Sequence(), F\+E\+B\+\_\+v1\+::threshold(), Hierarchy\+::tree(), Croc\+::update(), Usb\+I2c\+Bus\+::update(), Usb\+Spi\+Bus\+::update(), Usb\+M\+L\+I2c\+Bus\+::update(), Usb\+M\+L\+Spi\+Bus\+::update(), C\+U\+\_\+v1\+::update(), Proto40\+M\+Hz\+\_\+v1\+::update(), Computer\+::update(), F\+E\+B\+\_\+v1\+::update(), Specs\+Parallel\+Bus\+::update(), N\+I6008\+::update(), Usb\+F\+T\+Interface\+::update(), Usb\+F\+T\+M\+L\+Interface\+::update(), Usb\+F\+T\+Interface\+::\+Usb\+F\+T\+Interface(), Usb\+F\+T\+M\+L\+Interface\+::\+Usb\+F\+T\+M\+L\+Interface(), I\+C\+E\+C\+A\+Lv3\+::version(), Usb\+Spi\+Bus\+::write(), F\+E\+B\+\_\+v1\+::write\+Data\+Fifo\+Inject\+F\+E(), F\+E\+B\+\_\+v1\+::write\+Fifo\+Inject\+F\+E(), and N\+I6008\+::$\sim$\+N\+I6008().
 
 
 \begin{DoxyCode}
@@ -1462,10 +1646,20 @@ References Msg\+Svc\+::\+I\+N\+FO, Object\+::m\+\_\+log, and Msg\+Svc\+::msg\+Sv
 \begin{DoxyCode}
 46 \{ \hyperlink{classObject_a0d269813dd7ac1f24bc143031e2963f2}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{MsgSvc::INFO}    , mymsg, \hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name} ); \}
 \end{DoxyCode}
+\mbox{\Hypertarget{classAcquisition_aa73eec1ec46deae89bd3c25551bad86e}\label{classAcquisition_aa73eec1ec46deae89bd3c25551bad86e}} 
+\index{Acquisition@{Acquisition}!initialize@{initialize}}
+\index{initialize@{initialize}!Acquisition@{Acquisition}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classStatusCode}{Status\+Code} Acquisition\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+processus initialisation virtual function 
+
+Implements \hyperlink{classProcessus_aee88ad7b77ae7319cf8b128e9dd2ea11}{Processus}.
+
 \mbox{\Hypertarget{classAcquisition_acffc6b70b80811657409f92e489584ba}\label{classAcquisition_acffc6b70b80811657409f92e489584ba}} 
 \index{Acquisition@{Acquisition}!initialize@{initialize}}
 \index{initialize@{initialize}!Acquisition@{Acquisition}}
-\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} Acquisition\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 processus initialisation virtual function 
@@ -1511,28 +1705,28 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
 71   \textcolor{keywordtype}{char} hname[25];
 72   \textcolor{keywordtype}{char} \hyperlink{classObject_a73a0f1a41828fdd8303dd662446fb6c3}{title}[50];
 73   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} c=0; c<8; c++)\{
-74     \hyperlink{classAcquisition_ad323c9602565eec8e41f573d441745e2}{m\_chEnable}[c]=0;
-75     \hyperlink{classAcquisition_a1123502b520aec97ee8a71039abaa3fb}{m\_channel}[c]=-1;
+74     \hyperlink{classAcquisition_a217269bc403d9fd271a1701c98afb30e}{m\_chEnable}[c]=0;
+75     \hyperlink{classAcquisition_a9233a189179591c0c2f2639a3e6c13f6}{m\_channel}[c]=-1;
 76     \textcolor{keywordflow}{if} ((\hyperlink{classAcquisition_aedc8b29f322ef00540797fbd0d5112d1}{m\_channels}>>c)&1) \{
 77       \hyperlink{classAcquisition_aac113fd42c6574cdb4154e9808a21b67}{m\_pga}->\hyperlink{classA3PE_a0c90134c3440c8b8c8dc796c43893d64}{setEnableADC}(c,\textcolor{keyword}{true});
 78       \textcolor{keywordflow}{if} (\hyperlink{classAcquisition_a08f70edd83751dbdab4c8190dc4b9188}{m\_store\_hist})\{
 79         sprintf(hname,\textcolor{stringliteral}{"Average\_Ch\_%1i"},c);
 80         sprintf(title,\textcolor{stringliteral}{"Average Ch %1i"},c);
-81         \hyperlink{classAcquisition_a88963f722bfcde824882f6312a44e825}{m\_a}[c]=\textcolor{keyword}{new} TH1D(hname, title, \hyperlink{classAcquisition_a26628424533a2dd74d24712a14637a72}{m\_depth} , -0.5, (\textcolor{keywordtype}{float})(\hyperlink{classAcquisition_a26628424533a2dd74d24712a14637a72}{m\_depth})-0.5);
+81         \hyperlink{classAcquisition_aedfd2a4842b08fdf85176bf672030430}{m\_a}[c]=\textcolor{keyword}{new} TH1D(hname, title, \hyperlink{classAcquisition_a26628424533a2dd74d24712a14637a72}{m\_depth} , -0.5, (\textcolor{keywordtype}{float})(\hyperlink{classAcquisition_a26628424533a2dd74d24712a14637a72}{m\_depth})-0.5);
 82         sprintf(hname,\textcolor{stringliteral}{"RMS\_Ch\_%1i"},c);
 83         sprintf(title,\textcolor{stringliteral}{"RMS Ch %1i"},c);
-84         \hyperlink{classAcquisition_a15d71455f658e21a12ef4c153c21df65}{m\_s}[c]=\textcolor{keyword}{new} TH1D(hname, title, \hyperlink{classAcquisition_a26628424533a2dd74d24712a14637a72}{m\_depth} , -0.5, (\textcolor{keywordtype}{float})(\hyperlink{classAcquisition_a26628424533a2dd74d24712a14637a72}{m\_depth})-0.5);
-85         \hyperlink{classProcessus_ad46e0d4dfdfdcbce001ee6be1746dfa4}{addHisto1d}(\hyperlink{classAcquisition_a88963f722bfcde824882f6312a44e825}{m\_a}[c]);
-86         \hyperlink{classProcessus_ad46e0d4dfdfdcbce001ee6be1746dfa4}{addHisto1d}(\hyperlink{classAcquisition_a15d71455f658e21a12ef4c153c21df65}{m\_s}[c]);
+84         \hyperlink{classAcquisition_ad7f531c3d3fc58d1a2a5eab954db0ca7}{m\_s}[c]=\textcolor{keyword}{new} TH1D(hname, title, \hyperlink{classAcquisition_a26628424533a2dd74d24712a14637a72}{m\_depth} , -0.5, (\textcolor{keywordtype}{float})(\hyperlink{classAcquisition_a26628424533a2dd74d24712a14637a72}{m\_depth})-0.5);
+85         \hyperlink{classProcessus_ad46e0d4dfdfdcbce001ee6be1746dfa4}{addHisto1d}(\hyperlink{classAcquisition_aedfd2a4842b08fdf85176bf672030430}{m\_a}[c]);
+86         \hyperlink{classProcessus_ad46e0d4dfdfdcbce001ee6be1746dfa4}{addHisto1d}(\hyperlink{classAcquisition_ad7f531c3d3fc58d1a2a5eab954db0ca7}{m\_s}[c]);
 87       \}
 88       \textcolor{keywordflow}{if} (\hyperlink{classAcquisition_a987cc1d04007cf1f5acc1accfd0909e5}{m\_store\_sample})\{
 89         sprintf(hname,\textcolor{stringliteral}{"Acquisition\_Ch\_%1i\_%1i"},c,\hyperlink{classAcquisition_a26d0f1a44309ffac49c365b7ee568ab2}{m\_nsample});
 90         sprintf(title,\textcolor{stringliteral}{"Acquisition Ch %1i - Sample %1i"},c,\hyperlink{classAcquisition_a26d0f1a44309ffac49c365b7ee568ab2}{m\_nsample});
-91         \hyperlink{classAcquisition_a53bcc000575de30eba6b7db8209be2cc}{m\_hsample}[c]=\textcolor{keyword}{new} TH1D(hname, title, \hyperlink{classAcquisition_a05bccdc4b9ada37beaeba8794ccef12d}{m\_nbins}, \hyperlink{classAcquisition_a06b3ea027ebdcb15f64a6517ceb99b76}{m\_minRange}, 
+91         \hyperlink{classAcquisition_ad0078b0c53eb14f13fdd16763df3be8e}{m\_hsample}[c]=\textcolor{keyword}{new} TH1D(hname, title, \hyperlink{classAcquisition_a05bccdc4b9ada37beaeba8794ccef12d}{m\_nbins}, \hyperlink{classAcquisition_a06b3ea027ebdcb15f64a6517ceb99b76}{m\_minRange}, 
       \hyperlink{classAcquisition_a45478629e9db582470b4b158edb46616}{m\_maxRange});
-92         \hyperlink{classProcessus_ad46e0d4dfdfdcbce001ee6be1746dfa4}{addHisto1d}( \hyperlink{classAcquisition_a53bcc000575de30eba6b7db8209be2cc}{m\_hsample}[c] );
+92         \hyperlink{classProcessus_ad46e0d4dfdfdcbce001ee6be1746dfa4}{addHisto1d}( \hyperlink{classAcquisition_ad0078b0c53eb14f13fdd16763df3be8e}{m\_hsample}[c] );
 93       \}
-94       \hyperlink{classAcquisition_ad323c9602565eec8e41f573d441745e2}{m\_chEnable}[c]=1;
+94       \hyperlink{classAcquisition_a217269bc403d9fd271a1701c98afb30e}{m\_chEnable}[c]=1;
 95       \hyperlink{classAcquisition_a1860c7a03a65ea7a778d30dd4a40e1e1}{m\_nch}++;
 96     \}
 97     \textcolor{keywordflow}{else} \{
@@ -1541,13 +1735,13 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
 100     \}
 101   \}
 102   \textcolor{keywordflow}{if} (\hyperlink{classAcquisition_aca2143e9135e25554e58327475a767c5}{m\_store\_tree})\{
-103     \hyperlink{classAcquisition_a70f10db9c972f22a60bd2b82750168da}{m\_tree} = \textcolor{keyword}{new} TTree(\textcolor{stringliteral}{"Acquisition"},\hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name}().c\_str());
-104     \hyperlink{classAcquisition_a70f10db9c972f22a60bd2b82750168da}{m\_tree}->Branch(\textcolor{stringliteral}{"Run"},&\hyperlink{classAcquisition_afd35e220e0bfda7e763584524273aeb0}{m\_runNumber},\textcolor{stringliteral}{"Run/I"});
-105     \hyperlink{classAcquisition_a70f10db9c972f22a60bd2b82750168da}{m\_tree}->Branch(\textcolor{stringliteral}{"Event"},&\hyperlink{classAcquisition_a32a70daa3f653eae5eafc46dbd0e11a6}{m\_evtNumber},\textcolor{stringliteral}{"Event/I"});
-106     \hyperlink{classAcquisition_a70f10db9c972f22a60bd2b82750168da}{m\_tree}->Branch(\textcolor{stringliteral}{"Time"},&\hyperlink{classAcquisition_aa88cf8d27e075b5aaddb309dfb42cd04}{m\_timestamp},\textcolor{stringliteral}{"Time/D"});
-107     \hyperlink{classAcquisition_a70f10db9c972f22a60bd2b82750168da}{m\_tree}->Branch(\textcolor{stringliteral}{"Sample"},&\hyperlink{classAcquisition_a154e5423720ab1f2c4ab5cd125cb4e80}{m\_sample},\textcolor{stringliteral}{"Sample/I"});
-108     \hyperlink{classAcquisition_a70f10db9c972f22a60bd2b82750168da}{m\_tree}->Branch(\textcolor{stringliteral}{"Channel"},\hyperlink{classAcquisition_a1123502b520aec97ee8a71039abaa3fb}{m\_channel},\textcolor{stringliteral}{"Channel[8]/I"});
-109     \hyperlink{classAcquisition_a70f10db9c972f22a60bd2b82750168da}{m\_tree}->Branch(\textcolor{stringliteral}{"ChEnable"},\hyperlink{classAcquisition_ad323c9602565eec8e41f573d441745e2}{m\_chEnable},\textcolor{stringliteral}{"ChEnable[8]/I"});
+103     \hyperlink{classAcquisition_aa88a923232e8b7e08f5c1b5411497fc5}{m\_tree} = \textcolor{keyword}{new} TTree(\textcolor{stringliteral}{"Acquisition"},\hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name}().c\_str());
+104     \hyperlink{classAcquisition_aa88a923232e8b7e08f5c1b5411497fc5}{m\_tree}->Branch(\textcolor{stringliteral}{"Run"},&\hyperlink{classAcquisition_afd35e220e0bfda7e763584524273aeb0}{m\_runNumber},\textcolor{stringliteral}{"Run/I"});
+105     \hyperlink{classAcquisition_aa88a923232e8b7e08f5c1b5411497fc5}{m\_tree}->Branch(\textcolor{stringliteral}{"Event"},&\hyperlink{classAcquisition_a32a70daa3f653eae5eafc46dbd0e11a6}{m\_evtNumber},\textcolor{stringliteral}{"Event/I"});
+106     \hyperlink{classAcquisition_aa88a923232e8b7e08f5c1b5411497fc5}{m\_tree}->Branch(\textcolor{stringliteral}{"Time"},&\hyperlink{classAcquisition_aa88cf8d27e075b5aaddb309dfb42cd04}{m\_timestamp},\textcolor{stringliteral}{"Time/D"});
+107     \hyperlink{classAcquisition_aa88a923232e8b7e08f5c1b5411497fc5}{m\_tree}->Branch(\textcolor{stringliteral}{"Sample"},&\hyperlink{classAcquisition_a154e5423720ab1f2c4ab5cd125cb4e80}{m\_sample},\textcolor{stringliteral}{"Sample/I"});
+108     \hyperlink{classAcquisition_aa88a923232e8b7e08f5c1b5411497fc5}{m\_tree}->Branch(\textcolor{stringliteral}{"Channel"},\hyperlink{classAcquisition_a9233a189179591c0c2f2639a3e6c13f6}{m\_channel},\textcolor{stringliteral}{"Channel[8]/I"});
+109     \hyperlink{classAcquisition_aa88a923232e8b7e08f5c1b5411497fc5}{m\_tree}->Branch(\textcolor{stringliteral}{"ChEnable"},\hyperlink{classAcquisition_a217269bc403d9fd271a1701c98afb30e}{m\_chEnable},\textcolor{stringliteral}{"ChEnable[8]/I"});
 110   \}
 111   \hyperlink{classAcquisition_afd35e220e0bfda7e763584524273aeb0}{m\_runNumber}=\hyperlink{Tools_8h_a27885a3c35afe79029fb830f32f66458}{application}()->\hyperlink{classApplication_ada7cc0e8db586985f1435aee0c79f47d}{options}()->\hyperlink{classOptions_a2d9447919fe90f9ce8df5530526cbb27}{runNumber}();
 112   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
@@ -1611,7 +1805,25 @@ References Proc\+State\+::state.
 \mbox{\Hypertarget{classAcquisition_a386f3ebc6b1d4956aa7e40b314ddb4eb}\label{classAcquisition_a386f3ebc6b1d4956aa7e40b314ddb4eb}} 
 \index{Acquisition@{Acquisition}!max\+Range@{max\+Range}}
 \index{max\+Range@{max\+Range}!Acquisition@{Acquisition}}
-\subsubsection{\texorpdfstring{max\+Range()}{maxRange()}}
+\subsubsection{\texorpdfstring{max\+Range()}{maxRange()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float Acquisition\+::max\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 89 of file Acquisition.\+h.
+
+
+
+References m\+\_\+max\+Range.
+
+
+\begin{DoxyCode}
+89 \{\textcolor{keywordflow}{return} \hyperlink{classAcquisition_a45478629e9db582470b4b158edb46616}{m\_maxRange};\}
+\end{DoxyCode}
+\mbox{\Hypertarget{classAcquisition_a386f3ebc6b1d4956aa7e40b314ddb4eb}\label{classAcquisition_a386f3ebc6b1d4956aa7e40b314ddb4eb}} 
+\index{Acquisition@{Acquisition}!max\+Range@{max\+Range}}
+\index{max\+Range@{max\+Range}!Acquisition@{Acquisition}}
+\subsubsection{\texorpdfstring{max\+Range()}{maxRange()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily float Acquisition\+::max\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -1633,7 +1845,25 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), a
 \mbox{\Hypertarget{classAcquisition_a44f441710231748d2ca8f691647b2bcd}\label{classAcquisition_a44f441710231748d2ca8f691647b2bcd}} 
 \index{Acquisition@{Acquisition}!min\+Range@{min\+Range}}
 \index{min\+Range@{min\+Range}!Acquisition@{Acquisition}}
-\subsubsection{\texorpdfstring{min\+Range()}{minRange()}}
+\subsubsection{\texorpdfstring{min\+Range()}{minRange()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float Acquisition\+::min\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 83 of file Acquisition.\+h.
+
+
+
+References m\+\_\+min\+Range.
+
+
+\begin{DoxyCode}
+83 \{\textcolor{keywordflow}{return} \hyperlink{classAcquisition_a06b3ea027ebdcb15f64a6517ceb99b76}{m\_minRange};\}
+\end{DoxyCode}
+\mbox{\Hypertarget{classAcquisition_a44f441710231748d2ca8f691647b2bcd}\label{classAcquisition_a44f441710231748d2ca8f691647b2bcd}} 
+\index{Acquisition@{Acquisition}!min\+Range@{min\+Range}}
+\index{min\+Range@{min\+Range}!Acquisition@{Acquisition}}
+\subsubsection{\texorpdfstring{min\+Range()}{minRange()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily float Acquisition\+::min\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -1740,7 +1970,25 @@ Referenced by Specs\+Mezzanine\+::add\+Bus(), Hierarchy\+::add\+Child(), Specs\+
 \mbox{\Hypertarget{classAcquisition_a3a3dad0de9535d5a29c0810a5bdc3ae3}\label{classAcquisition_a3a3dad0de9535d5a29c0810a5bdc3ae3}} 
 \index{Acquisition@{Acquisition}!n\+Bins@{n\+Bins}}
 \index{n\+Bins@{n\+Bins}!Acquisition@{Acquisition}}
-\subsubsection{\texorpdfstring{n\+Bins()}{nBins()}}
+\subsubsection{\texorpdfstring{n\+Bins()}{nBins()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Acquisition\+::n\+Bins (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 77 of file Acquisition.\+h.
+
+
+
+References m\+\_\+nbins.
+
+
+\begin{DoxyCode}
+77 \{\textcolor{keywordflow}{return} \hyperlink{classAcquisition_a05bccdc4b9ada37beaeba8794ccef12d}{m\_nbins};\}
+\end{DoxyCode}
+\mbox{\Hypertarget{classAcquisition_a3a3dad0de9535d5a29c0810a5bdc3ae3}\label{classAcquisition_a3a3dad0de9535d5a29c0810a5bdc3ae3}} 
+\index{Acquisition@{Acquisition}!n\+Bins@{n\+Bins}}
+\index{n\+Bins@{n\+Bins}!Acquisition@{Acquisition}}
+\subsubsection{\texorpdfstring{n\+Bins()}{nBins()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily int Acquisition\+::n\+Bins (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -1871,7 +2119,25 @@ Definition at line 258 of file Processus.\+h.
 \mbox{\Hypertarget{classAcquisition_a83181975c0746e5837d53933031e7b62}\label{classAcquisition_a83181975c0746e5837d53933031e7b62}} 
 \index{Acquisition@{Acquisition}!sample@{sample}}
 \index{sample@{sample}!Acquisition@{Acquisition}}
-\subsubsection{\texorpdfstring{sample()}{sample()}}
+\subsubsection{\texorpdfstring{sample()}{sample()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Acquisition\+::sample (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 71 of file Acquisition.\+h.
+
+
+
+References m\+\_\+nsample.
+
+
+\begin{DoxyCode}
+71 \{\textcolor{keywordflow}{return} \hyperlink{classAcquisition_a26d0f1a44309ffac49c365b7ee568ab2}{m\_nsample};\}
+\end{DoxyCode}
+\mbox{\Hypertarget{classAcquisition_a83181975c0746e5837d53933031e7b62}\label{classAcquisition_a83181975c0746e5837d53933031e7b62}} 
+\index{Acquisition@{Acquisition}!sample@{sample}}
+\index{sample@{sample}!Acquisition@{Acquisition}}
+\subsubsection{\texorpdfstring{sample()}{sample()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily int Acquisition\+::sample (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -1893,7 +2159,13 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), a
 \mbox{\Hypertarget{classAcquisition_a3ee93f665573b4622bd9cba92c0cc04e}\label{classAcquisition_a3ee93f665573b4622bd9cba92c0cc04e}} 
 \index{Acquisition@{Acquisition}!set\+Channels@{set\+Channels}}
 \index{set\+Channels@{set\+Channels}!Acquisition@{Acquisition}}
-\subsubsection{\texorpdfstring{set\+Channels()}{setChannels()}}
+\subsubsection{\texorpdfstring{set\+Channels()}{setChannels()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} Acquisition\+::set\+Channels (\begin{DoxyParamCaption}\item[{unsigned}]{int }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAcquisition_a3ee93f665573b4622bd9cba92c0cc04e}\label{classAcquisition_a3ee93f665573b4622bd9cba92c0cc04e}} 
+\index{Acquisition@{Acquisition}!set\+Channels@{set\+Channels}}
+\index{set\+Channels@{set\+Channels}!Acquisition@{Acquisition}}
+\subsubsection{\texorpdfstring{set\+Channels()}{setChannels()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} Acquisition\+::set\+Channels (\begin{DoxyParamCaption}\item[{unsigned int}]{channels }\end{DoxyParamCaption})}
 
 
@@ -1922,7 +2194,27 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), d
 \mbox{\Hypertarget{classAcquisition_a37e05315fc47958c290a7d938c61e067}\label{classAcquisition_a37e05315fc47958c290a7d938c61e067}} 
 \index{Acquisition@{Acquisition}!set\+Dead\+Time@{set\+Dead\+Time}}
 \index{set\+Dead\+Time@{set\+Dead\+Time}!Acquisition@{Acquisition}}
-\subsubsection{\texorpdfstring{set\+Dead\+Time()}{setDeadTime()}}
+\subsubsection{\texorpdfstring{set\+Dead\+Time()}{setDeadTime()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Acquisition\+::set\+Dead\+Time (\begin{DoxyParamCaption}\item[{int}]{deadtime }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 61 of file Acquisition.\+h.
+
+
+
+References m\+\_\+deadtime.
+
+
+\begin{DoxyCode}
+61                                 \{
+62     \hyperlink{classAcquisition_a5f7fe20506e7d860ed61935255adfe17}{m\_deadtime}=deadtime;
+63   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classAcquisition_a37e05315fc47958c290a7d938c61e067}\label{classAcquisition_a37e05315fc47958c290a7d938c61e067}} 
+\index{Acquisition@{Acquisition}!set\+Dead\+Time@{set\+Dead\+Time}}
+\index{set\+Dead\+Time@{set\+Dead\+Time}!Acquisition@{Acquisition}}
+\subsubsection{\texorpdfstring{set\+Dead\+Time()}{setDeadTime()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void Acquisition\+::set\+Dead\+Time (\begin{DoxyParamCaption}\item[{int}]{deadtime }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -1946,7 +2238,13 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), a
 \mbox{\Hypertarget{classAcquisition_a303145d497f99da966fcfd95c00cd81e}\label{classAcquisition_a303145d497f99da966fcfd95c00cd81e}} 
 \index{Acquisition@{Acquisition}!set\+Depth@{set\+Depth}}
 \index{set\+Depth@{set\+Depth}!Acquisition@{Acquisition}}
-\subsubsection{\texorpdfstring{set\+Depth()}{setDepth()}}
+\subsubsection{\texorpdfstring{set\+Depth()}{setDepth()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} Acquisition\+::set\+Depth (\begin{DoxyParamCaption}\item[{unsigned}]{int }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAcquisition_a303145d497f99da966fcfd95c00cd81e}\label{classAcquisition_a303145d497f99da966fcfd95c00cd81e}} 
+\index{Acquisition@{Acquisition}!set\+Depth@{set\+Depth}}
+\index{set\+Depth@{set\+Depth}!Acquisition@{Acquisition}}
+\subsubsection{\texorpdfstring{set\+Depth()}{setDepth()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} Acquisition\+::set\+Depth (\begin{DoxyParamCaption}\item[{unsigned int}]{depth }\end{DoxyParamCaption})}
 
 
@@ -2078,7 +2376,27 @@ Definition at line 283 of file Processus.\+h.
 \mbox{\Hypertarget{classAcquisition_a786da6cff5428020034be23e554e0e1b}\label{classAcquisition_a786da6cff5428020034be23e554e0e1b}} 
 \index{Acquisition@{Acquisition}!set\+Max\+Range@{set\+Max\+Range}}
 \index{set\+Max\+Range@{set\+Max\+Range}!Acquisition@{Acquisition}}
-\subsubsection{\texorpdfstring{set\+Max\+Range()}{setMaxRange()}}
+\subsubsection{\texorpdfstring{set\+Max\+Range()}{setMaxRange()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Acquisition\+::set\+Max\+Range (\begin{DoxyParamCaption}\item[{float}]{maxrange }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 85 of file Acquisition.\+h.
+
+
+
+References m\+\_\+max\+Range.
+
+
+\begin{DoxyCode}
+85                                   \{
+86     \hyperlink{classAcquisition_a45478629e9db582470b4b158edb46616}{m\_maxRange}=maxrange;
+87   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classAcquisition_a786da6cff5428020034be23e554e0e1b}\label{classAcquisition_a786da6cff5428020034be23e554e0e1b}} 
+\index{Acquisition@{Acquisition}!set\+Max\+Range@{set\+Max\+Range}}
+\index{set\+Max\+Range@{set\+Max\+Range}!Acquisition@{Acquisition}}
+\subsubsection{\texorpdfstring{set\+Max\+Range()}{setMaxRange()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void Acquisition\+::set\+Max\+Range (\begin{DoxyParamCaption}\item[{float}]{maxrange }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -2102,7 +2420,27 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), a
 \mbox{\Hypertarget{classAcquisition_a8a15ffc6e539a3ae12efe4bea1ca7587}\label{classAcquisition_a8a15ffc6e539a3ae12efe4bea1ca7587}} 
 \index{Acquisition@{Acquisition}!set\+Min\+Range@{set\+Min\+Range}}
 \index{set\+Min\+Range@{set\+Min\+Range}!Acquisition@{Acquisition}}
-\subsubsection{\texorpdfstring{set\+Min\+Range()}{setMinRange()}}
+\subsubsection{\texorpdfstring{set\+Min\+Range()}{setMinRange()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Acquisition\+::set\+Min\+Range (\begin{DoxyParamCaption}\item[{float}]{minrange }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 79 of file Acquisition.\+h.
+
+
+
+References m\+\_\+min\+Range.
+
+
+\begin{DoxyCode}
+79                                   \{
+80     \hyperlink{classAcquisition_a06b3ea027ebdcb15f64a6517ceb99b76}{m\_minRange}=minrange;
+81   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classAcquisition_a8a15ffc6e539a3ae12efe4bea1ca7587}\label{classAcquisition_a8a15ffc6e539a3ae12efe4bea1ca7587}} 
+\index{Acquisition@{Acquisition}!set\+Min\+Range@{set\+Min\+Range}}
+\index{set\+Min\+Range@{set\+Min\+Range}!Acquisition@{Acquisition}}
+\subsubsection{\texorpdfstring{set\+Min\+Range()}{setMinRange()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void Acquisition\+::set\+Min\+Range (\begin{DoxyParamCaption}\item[{float}]{minrange }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -2148,7 +2486,27 @@ Referenced by A3\+P\+E\+::\+A3\+P\+E(), A3\+P\+E\+\_\+\+Bit\+Flip\+::\+A3\+P\+E\
 \mbox{\Hypertarget{classAcquisition_a6ee040a009aa48f848b1e12434135db9}\label{classAcquisition_a6ee040a009aa48f848b1e12434135db9}} 
 \index{Acquisition@{Acquisition}!set\+N\+Bins@{set\+N\+Bins}}
 \index{set\+N\+Bins@{set\+N\+Bins}!Acquisition@{Acquisition}}
-\subsubsection{\texorpdfstring{set\+N\+Bins()}{setNBins()}}
+\subsubsection{\texorpdfstring{set\+N\+Bins()}{setNBins()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Acquisition\+::set\+N\+Bins (\begin{DoxyParamCaption}\item[{int}]{nbins }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 73 of file Acquisition.\+h.
+
+
+
+References m\+\_\+nbins.
+
+
+\begin{DoxyCode}
+73                           \{
+74     \hyperlink{classAcquisition_a05bccdc4b9ada37beaeba8794ccef12d}{m\_nbins}=nbins;
+75   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classAcquisition_a6ee040a009aa48f848b1e12434135db9}\label{classAcquisition_a6ee040a009aa48f848b1e12434135db9}} 
+\index{Acquisition@{Acquisition}!set\+N\+Bins@{set\+N\+Bins}}
+\index{set\+N\+Bins@{set\+N\+Bins}!Acquisition@{Acquisition}}
+\subsubsection{\texorpdfstring{set\+N\+Bins()}{setNBins()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void Acquisition\+::set\+N\+Bins (\begin{DoxyParamCaption}\item[{int}]{nbins }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -2201,7 +2559,27 @@ Referenced by Processus\+::start\+Processing().
 \mbox{\Hypertarget{classAcquisition_ade6fd6483b3e3737fe7dcdffb5065954}\label{classAcquisition_ade6fd6483b3e3737fe7dcdffb5065954}} 
 \index{Acquisition@{Acquisition}!set\+Sample@{set\+Sample}}
 \index{set\+Sample@{set\+Sample}!Acquisition@{Acquisition}}
-\subsubsection{\texorpdfstring{set\+Sample()}{setSample()}}
+\subsubsection{\texorpdfstring{set\+Sample()}{setSample()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Acquisition\+::set\+Sample (\begin{DoxyParamCaption}\item[{int}]{nsample }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 67 of file Acquisition.\+h.
+
+
+
+References m\+\_\+nsample.
+
+
+\begin{DoxyCode}
+67                              \{
+68     \hyperlink{classAcquisition_a26d0f1a44309ffac49c365b7ee568ab2}{m\_nsample}=nsample;
+69   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classAcquisition_ade6fd6483b3e3737fe7dcdffb5065954}\label{classAcquisition_ade6fd6483b3e3737fe7dcdffb5065954}} 
+\index{Acquisition@{Acquisition}!set\+Sample@{set\+Sample}}
+\index{set\+Sample@{set\+Sample}!Acquisition@{Acquisition}}
+\subsubsection{\texorpdfstring{set\+Sample()}{setSample()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void Acquisition\+::set\+Sample (\begin{DoxyParamCaption}\item[{int}]{nsample }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -2291,7 +2669,27 @@ Referenced by export\+\_\+proc().
 \mbox{\Hypertarget{classAcquisition_af36a1b660244096b7d274f591f67b695}\label{classAcquisition_af36a1b660244096b7d274f591f67b695}} 
 \index{Acquisition@{Acquisition}!set\+Store\+Sample@{set\+Store\+Sample}}
 \index{set\+Store\+Sample@{set\+Store\+Sample}!Acquisition@{Acquisition}}
-\subsubsection{\texorpdfstring{set\+Store\+Sample()}{setStoreSample()}}
+\subsubsection{\texorpdfstring{set\+Store\+Sample()}{setStoreSample()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Acquisition\+::set\+Store\+Sample (\begin{DoxyParamCaption}\item[{bool}]{store\+\_\+sample }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 55 of file Acquisition.\+h.
+
+
+
+References m\+\_\+store\+\_\+sample.
+
+
+\begin{DoxyCode}
+55                                         \{
+56     \hyperlink{classAcquisition_a987cc1d04007cf1f5acc1accfd0909e5}{m\_store\_sample}=store\_sample;
+57   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classAcquisition_af36a1b660244096b7d274f591f67b695}\label{classAcquisition_af36a1b660244096b7d274f591f67b695}} 
+\index{Acquisition@{Acquisition}!set\+Store\+Sample@{set\+Store\+Sample}}
+\index{set\+Store\+Sample@{set\+Store\+Sample}!Acquisition@{Acquisition}}
+\subsubsection{\texorpdfstring{set\+Store\+Sample()}{setStoreSample()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void Acquisition\+::set\+Store\+Sample (\begin{DoxyParamCaption}\item[{bool}]{store\+\_\+sample }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -2315,7 +2713,27 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), a
 \mbox{\Hypertarget{classAcquisition_a759193856d26354722e5f647e60e16de}\label{classAcquisition_a759193856d26354722e5f647e60e16de}} 
 \index{Acquisition@{Acquisition}!set\+Store\+Tree@{set\+Store\+Tree}}
 \index{set\+Store\+Tree@{set\+Store\+Tree}!Acquisition@{Acquisition}}
-\subsubsection{\texorpdfstring{set\+Store\+Tree()}{setStoreTree()}}
+\subsubsection{\texorpdfstring{set\+Store\+Tree()}{setStoreTree()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Acquisition\+::set\+Store\+Tree (\begin{DoxyParamCaption}\item[{bool}]{store\+\_\+tree }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 43 of file Acquisition.\+h.
+
+
+
+References m\+\_\+store\+\_\+tree.
+
+
+\begin{DoxyCode}
+43                                     \{
+44     \hyperlink{classAcquisition_aca2143e9135e25554e58327475a767c5}{m\_store\_tree}=store\_tree;
+45   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classAcquisition_a759193856d26354722e5f647e60e16de}\label{classAcquisition_a759193856d26354722e5f647e60e16de}} 
+\index{Acquisition@{Acquisition}!set\+Store\+Tree@{set\+Store\+Tree}}
+\index{set\+Store\+Tree@{set\+Store\+Tree}!Acquisition@{Acquisition}}
+\subsubsection{\texorpdfstring{set\+Store\+Tree()}{setStoreTree()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void Acquisition\+::set\+Store\+Tree (\begin{DoxyParamCaption}\item[{bool}]{store\+\_\+tree }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -2339,7 +2757,27 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), a
 \mbox{\Hypertarget{classAcquisition_a1ceff272a1ad030dcd20c0dcddc65443}\label{classAcquisition_a1ceff272a1ad030dcd20c0dcddc65443}} 
 \index{Acquisition@{Acquisition}!set\+Store\+Trend@{set\+Store\+Trend}}
 \index{set\+Store\+Trend@{set\+Store\+Trend}!Acquisition@{Acquisition}}
-\subsubsection{\texorpdfstring{set\+Store\+Trend()}{setStoreTrend()}}
+\subsubsection{\texorpdfstring{set\+Store\+Trend()}{setStoreTrend()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Acquisition\+::set\+Store\+Trend (\begin{DoxyParamCaption}\item[{bool}]{store\+\_\+hist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 49 of file Acquisition.\+h.
+
+
+
+References m\+\_\+store\+\_\+hist.
+
+
+\begin{DoxyCode}
+49                                      \{
+50     \hyperlink{classAcquisition_a08f70edd83751dbdab4c8190dc4b9188}{m\_store\_hist}=store\_hist;
+51   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classAcquisition_a1ceff272a1ad030dcd20c0dcddc65443}\label{classAcquisition_a1ceff272a1ad030dcd20c0dcddc65443}} 
+\index{Acquisition@{Acquisition}!set\+Store\+Trend@{set\+Store\+Trend}}
+\index{set\+Store\+Trend@{set\+Store\+Trend}!Acquisition@{Acquisition}}
+\subsubsection{\texorpdfstring{set\+Store\+Trend()}{setStoreTrend()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void Acquisition\+::set\+Store\+Trend (\begin{DoxyParamCaption}\item[{bool}]{store\+\_\+hist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -2385,7 +2823,28 @@ Referenced by A3\+P\+E\+\_\+\+Bit\+Flip\+::\+A3\+P\+E\+\_\+\+Bit\+Flip(), Acquis
 \mbox{\Hypertarget{classAcquisition_acdb167b43f3babb59a98698aa5c5066f}\label{classAcquisition_acdb167b43f3babb59a98698aa5c5066f}} 
 \index{Acquisition@{Acquisition}!set\+Trigger@{set\+Trigger}}
 \index{set\+Trigger@{set\+Trigger}!Acquisition@{Acquisition}}
-\subsubsection{\texorpdfstring{set\+Trigger()}{setTrigger()}}
+\subsubsection{\texorpdfstring{set\+Trigger()}{setTrigger()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} Acquisition\+::set\+Trigger (\begin{DoxyParamCaption}\item[{bool}]{trig }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 34 of file Acquisition.\+h.
+
+
+
+References m\+\_\+trig, and Status\+Code\+::\+S\+U\+C\+C\+E\+SS.
+
+
+\begin{DoxyCode}
+34                                    \{
+35     \hyperlink{classAcquisition_a953bdc1bf56206b6df33b648af32a24f}{m\_trig}=trig; 
+36     \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
+37   \};
+\end{DoxyCode}
+\mbox{\Hypertarget{classAcquisition_acdb167b43f3babb59a98698aa5c5066f}\label{classAcquisition_acdb167b43f3babb59a98698aa5c5066f}} 
+\index{Acquisition@{Acquisition}!set\+Trigger@{set\+Trigger}}
+\index{set\+Trigger@{set\+Trigger}!Acquisition@{Acquisition}}
+\subsubsection{\texorpdfstring{set\+Trigger()}{setTrigger()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} Acquisition\+::set\+Trigger (\begin{DoxyParamCaption}\item[{bool}]{trig }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -2522,7 +2981,25 @@ Referenced by export\+\_\+proc(), and Application\+::prepare().
 \mbox{\Hypertarget{classAcquisition_a9af304e0fb2076cd4f92703708efe83e}\label{classAcquisition_a9af304e0fb2076cd4f92703708efe83e}} 
 \index{Acquisition@{Acquisition}!store\+Sample@{store\+Sample}}
 \index{store\+Sample@{store\+Sample}!Acquisition@{Acquisition}}
-\subsubsection{\texorpdfstring{store\+Sample()}{storeSample()}}
+\subsubsection{\texorpdfstring{store\+Sample()}{storeSample()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Acquisition\+::store\+Sample (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 59 of file Acquisition.\+h.
+
+
+
+References m\+\_\+store\+\_\+sample.
+
+
+\begin{DoxyCode}
+59 \{\textcolor{keywordflow}{return} \hyperlink{classAcquisition_a987cc1d04007cf1f5acc1accfd0909e5}{m\_store\_sample};\}
+\end{DoxyCode}
+\mbox{\Hypertarget{classAcquisition_a9af304e0fb2076cd4f92703708efe83e}\label{classAcquisition_a9af304e0fb2076cd4f92703708efe83e}} 
+\index{Acquisition@{Acquisition}!store\+Sample@{store\+Sample}}
+\index{store\+Sample@{store\+Sample}!Acquisition@{Acquisition}}
+\subsubsection{\texorpdfstring{store\+Sample()}{storeSample()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily bool Acquisition\+::store\+Sample (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -2544,7 +3021,25 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), a
 \mbox{\Hypertarget{classAcquisition_a8ab7e58ccb3fee54eb6850e5081fae10}\label{classAcquisition_a8ab7e58ccb3fee54eb6850e5081fae10}} 
 \index{Acquisition@{Acquisition}!store\+Tree@{store\+Tree}}
 \index{store\+Tree@{store\+Tree}!Acquisition@{Acquisition}}
-\subsubsection{\texorpdfstring{store\+Tree()}{storeTree()}}
+\subsubsection{\texorpdfstring{store\+Tree()}{storeTree()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Acquisition\+::store\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 47 of file Acquisition.\+h.
+
+
+
+References m\+\_\+store\+\_\+tree.
+
+
+\begin{DoxyCode}
+47 \{\textcolor{keywordflow}{return} \hyperlink{classAcquisition_aca2143e9135e25554e58327475a767c5}{m\_store\_tree};\}
+\end{DoxyCode}
+\mbox{\Hypertarget{classAcquisition_a8ab7e58ccb3fee54eb6850e5081fae10}\label{classAcquisition_a8ab7e58ccb3fee54eb6850e5081fae10}} 
+\index{Acquisition@{Acquisition}!store\+Tree@{store\+Tree}}
+\index{store\+Tree@{store\+Tree}!Acquisition@{Acquisition}}
+\subsubsection{\texorpdfstring{store\+Tree()}{storeTree()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily bool Acquisition\+::store\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -2566,7 +3061,25 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), a
 \mbox{\Hypertarget{classAcquisition_a5af693448daef6e9e054ab7f1aa50784}\label{classAcquisition_a5af693448daef6e9e054ab7f1aa50784}} 
 \index{Acquisition@{Acquisition}!store\+Trend@{store\+Trend}}
 \index{store\+Trend@{store\+Trend}!Acquisition@{Acquisition}}
-\subsubsection{\texorpdfstring{store\+Trend()}{storeTrend()}}
+\subsubsection{\texorpdfstring{store\+Trend()}{storeTrend()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Acquisition\+::store\+Trend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 53 of file Acquisition.\+h.
+
+
+
+References m\+\_\+store\+\_\+hist.
+
+
+\begin{DoxyCode}
+53 \{\textcolor{keywordflow}{return} \hyperlink{classAcquisition_a08f70edd83751dbdab4c8190dc4b9188}{m\_store\_hist};\}
+\end{DoxyCode}
+\mbox{\Hypertarget{classAcquisition_a5af693448daef6e9e054ab7f1aa50784}\label{classAcquisition_a5af693448daef6e9e054ab7f1aa50784}} 
+\index{Acquisition@{Acquisition}!store\+Trend@{store\+Trend}}
+\index{store\+Trend@{store\+Trend}!Acquisition@{Acquisition}}
+\subsubsection{\texorpdfstring{store\+Trend()}{storeTrend()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily bool Acquisition\+::store\+Trend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -2610,7 +3123,27 @@ Referenced by export\+\_\+obj(), export\+\_\+proc(), Data\+::hist2d(), Storage\+
 \mbox{\Hypertarget{classAcquisition_a6f680938eb6a42d57dfa7466e8852af9}\label{classAcquisition_a6f680938eb6a42d57dfa7466e8852af9}} 
 \index{Acquisition@{Acquisition}!trigger@{trigger}}
 \index{trigger@{trigger}!Acquisition@{Acquisition}}
-\subsubsection{\texorpdfstring{trigger()}{trigger()}}
+\subsubsection{\texorpdfstring{trigger()}{trigger()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Acquisition\+::trigger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 39 of file Acquisition.\+h.
+
+
+
+References m\+\_\+trig.
+
+
+\begin{DoxyCode}
+39                  \{
+40     \textcolor{keywordflow}{return} \hyperlink{classAcquisition_a953bdc1bf56206b6df33b648af32a24f}{m\_trig};
+41   \};
+\end{DoxyCode}
+\mbox{\Hypertarget{classAcquisition_a6f680938eb6a42d57dfa7466e8852af9}\label{classAcquisition_a6f680938eb6a42d57dfa7466e8852af9}} 
+\index{Acquisition@{Acquisition}!trigger@{trigger}}
+\index{trigger@{trigger}!Acquisition@{Acquisition}}
+\subsubsection{\texorpdfstring{trigger()}{trigger()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily bool Acquisition\+::trigger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
@@ -2709,7 +3242,7 @@ References Object\+::m\+\_\+log, Object\+::m\+\_\+name, Msg\+Svc\+::msg\+Svc(), 
 
 
 
-Referenced by D\+C\+U\+::acquire(), A3\+P\+E\+::acquisition(), Plot\+::add(), Application\+::bookkeeping(), check\+Cmd(), Hierarchy\+::child(), Hierarchy\+::child\+Typed(), Usb\+Spi\+Bus\+::clock\+Divider(), L\+S\+Delay\+Chip\+V1\+::config\+Reg\+Bulk\+Read(), L\+S\+Delay\+Chip\+V1\+::config\+Reg\+Bulk\+Write(), Element\+::connection(), D\+C\+U\+::convert(), Application\+::create(), Specs\+Glue\+::date(), Specs\+Mezzanine\+::date(), Specs\+Slave\+::detect(), N\+I6008\+::device(), A3\+P\+E\+\_\+\+Bit\+Flip\+::execute(), execute(), Usb\+F\+T\+Interface\+Test\+::execute(), export\+\_\+obj(), F\+E\+B\+\_\+v1\+::gbt\+Acknowledge\+Config(), F\+E\+B\+\_\+v1\+::gbt\+Clock\+Strength(), F\+E\+B\+\_\+v1\+::gbt\+D\+L\+L\+Reset(), L\+S\+Delay\+Chip\+V1\+::get\+Config\+Reg(), Specs\+Glue\+::i2c\+Clk\+Mode(), D\+C\+U\+::init(), Specs\+Slave\+::init(), Storage\+Fifo\+::initialize(), Storage\+Fifo\+Acquisition\+::initialize(), A3\+P\+E\+\_\+\+Bit\+Flip\+::initialize(), initialize(), Emulate\+F\+E\+::initialize(), Test\+I2\+C\+::initialize(), Test\+S\+P\+I\+::initialize(), Test\+U\+S\+B\+::initialize(), Specs\+Glue\+::led(), Specs\+Mezzanine\+::led(), A3\+P\+E\+::load\+Trigger(), Application\+::loop(), Application\+::make\+Dir(), Data\+::name(), Application\+::prepare(), Usb\+I2c\+Bus\+::read(), Phaser\+::read(), I\+C\+Phaser\+::read(), Usb\+Spi\+Bus\+::read(), D\+C\+U\+::read\+Mode(), D\+C\+U\+::reset(), Specs\+Slave\+::reset(), Specs\+Master\+::reset(), I\+C\+Phaser\+::reset(), Specs\+Slave\+::reset\+Internal(), Server\+::\+Server(), F\+E\+B\+\_\+v1\+::set\+Calib\+Cte(), Storage\+Fifo\+Acquisition\+::set\+Channels(), set\+Channels(), Usb\+Spi\+Bus\+::set\+Clock\+Divider(), F\+E\+B\+\_\+v1\+::set\+Clock\+Falling\+Edge(), Application\+::set\+Config(), L\+S\+Delay\+Chip\+V1\+::set\+Config\+Reg(), Storage\+Fifo\+Acquisition\+::set\+Depth(), set\+Depth(), A3\+P\+E\+::set\+Enable\+A\+D\+C(), F\+E\+B\+\_\+v1\+::set\+Gain4(), F\+E\+B\+\_\+v1\+::set\+Gbt80\+M\+Hz\+Clk\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Clock\+Strength(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Data\+Path(), F\+E\+B\+\_\+v1\+::set\+Gbt\+D\+L\+L\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Enable\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Mode(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Term\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Track\+Mode(), D\+C\+U\+::set\+H\+I\+R(), Specs\+Glue\+::set\+I2c\+Clk\+Mode(), Specs\+Mezzanine\+::set\+Led(), D\+C\+U\+::set\+L\+I\+R(), F\+E\+B\+\_\+v1\+::set\+Output\+Eport(), A3\+P\+E\+::set\+Pipeline(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+A\+D\+C\+Enable(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+P\+M\+Enable(), R\+A\+M\+::set\+Size(), Specs\+Master\+::set\+Speed(), F\+E\+B\+\_\+v1\+::set\+Stop\+Inj\+Loop(), F\+E\+B\+\_\+v1\+::set\+Test\+Duration(), I\+Odata\+::set\+U16(), I\+Odata\+::set\+U32(), I\+Odata\+::set\+U8(), Test\+Suite\+::sigma(), Specs\+Interface\+::specs\+Read\+I2c(), Specs\+Interface\+::specs\+Read\+Parallel(), Specs\+Interface\+::specs\+Read\+Register(), Specs\+Interface\+::specs\+Write\+I2c(), Specs\+Interface\+::specs\+Write\+Parallel(), Specs\+Interface\+::specs\+Write\+Register(), L\+S\+Delay\+Chip\+V1\+::spi\+B\+E\+R\+Test(), I\+C\+E\+C\+A\+Lv3\+::spi\+F\+E\+R\+Test(), I\+C\+E\+C\+A\+Lv3\+::spi\+Read(), I\+C\+E\+C\+A\+Lv3\+::spi\+Write(), I\+C\+E\+C\+A\+Lv3\+::spi\+Write\+Safe(), Server\+::start(), I\+C\+Phaser\+::status(), Application\+::svc\+Plot(), Application\+::svc\+Running(), Data\+::title(), Server\+::update\+Config(), Server\+::update\+State(), Data\+::vector\+Ptr(), Usb\+I2c\+Bus\+::write(), Phaser\+::write(), I\+C\+Phaser\+::write(), Usb\+Spi\+Bus\+::write(), F\+E\+B\+\_\+v1\+::write\+Fifo\+Inject\+F\+E(), and F\+E\+B\+\_\+v1\+::write\+Fifo\+L\+L\+T\+F\+E().
+Referenced by D\+C\+U\+::acquire(), A3\+P\+E\+::acquisition(), Plot\+::add(), Application\+::bookkeeping(), check\+Cmd(), Hierarchy\+::child(), Hierarchy\+::child\+Typed(), Usb\+Spi\+Bus\+::clock\+Divider(), L\+S\+Delay\+Chip\+V1\+::config\+Reg\+Bulk\+Read(), L\+S\+Delay\+Chip\+V1\+::config\+Reg\+Bulk\+Write(), Element\+::connection(), D\+C\+U\+::convert(), Application\+::create(), Specs\+Glue\+::date(), Specs\+Mezzanine\+::date(), Specs\+Slave\+::detect(), N\+I6008\+::device(), A3\+P\+E\+\_\+\+Bit\+Flip\+::execute(), execute(), Usb\+F\+T\+Interface\+Test\+::execute(), export\+\_\+obj(), F\+E\+B\+\_\+v1\+::gbt\+Acknowledge\+Config(), F\+E\+B\+\_\+v1\+::gbt\+Clock\+Strength(), F\+E\+B\+\_\+v1\+::gbt\+D\+L\+L\+Reset(), L\+S\+Delay\+Chip\+V1\+::get\+Config\+Reg(), Specs\+Glue\+::i2c\+Clk\+Mode(), D\+C\+U\+::init(), Specs\+Slave\+::init(), Storage\+Fifo\+::initialize(), Storage\+Fifo\+Acquisition\+::initialize(), A3\+P\+E\+\_\+\+Bit\+Flip\+::initialize(), initialize(), Test\+I2\+C\+::initialize(), Emulate\+F\+E\+::initialize(), Test\+S\+P\+I\+::initialize(), Test\+U\+S\+B\+::initialize(), Specs\+Glue\+::led(), Specs\+Mezzanine\+::led(), A3\+P\+E\+::load\+Trigger(), Application\+::loop(), Application\+::make\+Dir(), Data\+::name(), Application\+::prepare(), Usb\+I2c\+Bus\+::read(), Phaser\+::read(), I\+C\+Phaser\+::read(), Usb\+Spi\+Bus\+::read(), D\+C\+U\+::read\+Mode(), D\+C\+U\+::reset(), Specs\+Master\+::reset(), Specs\+Slave\+::reset(), I\+C\+Phaser\+::reset(), Specs\+Slave\+::reset\+Internal(), Server\+::\+Server(), F\+E\+B\+\_\+v1\+::set\+Calib\+Cte(), Storage\+Fifo\+Acquisition\+::set\+Channels(), set\+Channels(), Usb\+Spi\+Bus\+::set\+Clock\+Divider(), F\+E\+B\+\_\+v1\+::set\+Clock\+Falling\+Edge(), Application\+::set\+Config(), L\+S\+Delay\+Chip\+V1\+::set\+Config\+Reg(), Storage\+Fifo\+Acquisition\+::set\+Depth(), set\+Depth(), A3\+P\+E\+::set\+Enable\+A\+D\+C(), F\+E\+B\+\_\+v1\+::set\+Gain4(), F\+E\+B\+\_\+v1\+::set\+Gbt80\+M\+Hz\+Clk\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Clock\+Strength(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Data\+Path(), F\+E\+B\+\_\+v1\+::set\+Gbt\+D\+L\+L\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Enable\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Mode(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Term\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Track\+Mode(), D\+C\+U\+::set\+H\+I\+R(), Specs\+Glue\+::set\+I2c\+Clk\+Mode(), Specs\+Mezzanine\+::set\+Led(), D\+C\+U\+::set\+L\+I\+R(), F\+E\+B\+\_\+v1\+::set\+Output\+Eport(), A3\+P\+E\+::set\+Pipeline(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+A\+D\+C\+Enable(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+P\+M\+Enable(), R\+A\+M\+::set\+Size(), Specs\+Master\+::set\+Speed(), F\+E\+B\+\_\+v1\+::set\+Stop\+Inj\+Loop(), F\+E\+B\+\_\+v1\+::set\+Test\+Duration(), I\+Odata\+::set\+U16(), I\+Odata\+::set\+U32(), I\+Odata\+::set\+U8(), Test\+Suite\+::sigma(), Specs\+Interface\+::specs\+Read\+I2c(), Specs\+Interface\+::specs\+Read\+Parallel(), Specs\+Interface\+::specs\+Read\+Register(), Specs\+Interface\+::specs\+Write\+I2c(), Specs\+Interface\+::specs\+Write\+Parallel(), Specs\+Interface\+::specs\+Write\+Register(), I\+C\+E\+C\+A\+Lv3\+::spi\+Address\+Scan(), L\+S\+Delay\+Chip\+V1\+::spi\+B\+E\+R\+Test(), I\+C\+E\+C\+A\+Lv3\+::spi\+F\+E\+R\+Test(), I\+C\+E\+C\+A\+Lv3\+::spi\+Read(), I\+C\+E\+C\+A\+Lv3\+::spi\+Write(), I\+C\+E\+C\+A\+Lv3\+::spi\+Write\+Safe(), Server\+::start(), I\+C\+Phaser\+::status(), Application\+::svc\+Plot(), Application\+::svc\+Running(), Data\+::title(), Server\+::update\+Config(), Server\+::update\+State(), Data\+::vector\+Ptr(), Usb\+I2c\+Bus\+::write(), Phaser\+::write(), I\+C\+Phaser\+::write(), Usb\+Spi\+Bus\+::write(), F\+E\+B\+\_\+v1\+::write\+Fifo\+Inject\+F\+E(), and F\+E\+B\+\_\+v1\+::write\+Fifo\+L\+L\+T\+F\+E().
 
 
 \begin{DoxyCode}
@@ -2736,11 +3269,11 @@ References Object\+::m\+\_\+log, Msg\+Svc\+::msg\+Svc(), and Msg\+Svc\+::\+W\+A\
 
 
 \subsection{Member Data Documentation}
-\mbox{\Hypertarget{classAcquisition_a88963f722bfcde824882f6312a44e825}\label{classAcquisition_a88963f722bfcde824882f6312a44e825}} 
+\mbox{\Hypertarget{classAcquisition_aedfd2a4842b08fdf85176bf672030430}\label{classAcquisition_aedfd2a4842b08fdf85176bf672030430}} 
 \index{Acquisition@{Acquisition}!m\+\_\+a@{m\+\_\+a}}
 \index{m\+\_\+a@{m\+\_\+a}!Acquisition@{Acquisition}}
 \subsubsection{\texorpdfstring{m\+\_\+a}{m\_a}}
-{\footnotesize\ttfamily T\+H1D$\ast$ Acquisition\+::m\+\_\+a\mbox{[}8\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily T\+H1D $\ast$ Acquisition\+::m\+\_\+a\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
@@ -2764,10 +3297,20 @@ Definition at line 105 of file Attrib.\+h.
 
 Referenced by Attrib\+::\+Attrib(), and Attrib\+::attributs().
 
+\mbox{\Hypertarget{classAcquisition_ad4820003ddd62f0ca886c2e6a3690120}\label{classAcquisition_ad4820003ddd62f0ca886c2e6a3690120}} 
+\index{Acquisition@{Acquisition}!m\+\_\+board@{m\+\_\+board}}
+\index{m\+\_\+board@{m\+\_\+board}!Acquisition@{Acquisition}}
+\subsubsection{\texorpdfstring{m\+\_\+board}{m\_board}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classFEB__v1}{F\+E\+B\+\_\+v1}$\ast$ Acquisition\+::m\+\_\+board\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 117 of file Acquisition.\+h.
+
 \mbox{\Hypertarget{classAcquisition_a9b0db99be79d61ae78dae8a9e4efceab}\label{classAcquisition_a9b0db99be79d61ae78dae8a9e4efceab}} 
 \index{Acquisition@{Acquisition}!m\+\_\+board@{m\+\_\+board}}
 \index{m\+\_\+board@{m\+\_\+board}!Acquisition@{Acquisition}}
-\subsubsection{\texorpdfstring{m\+\_\+board}{m\_board}}
+\subsubsection{\texorpdfstring{m\+\_\+board}{m\_board}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \hyperlink{classProto40MHz__v1}{Proto40\+M\+Hz\+\_\+v1}$\ast$ Acquisition\+::m\+\_\+board\hspace{0.3cm}{\ttfamily [private]}}
 
 
@@ -2778,11 +3321,11 @@ Definition at line 119 of file Acquisition.\+h.
 
 Referenced by initialize().
 
-\mbox{\Hypertarget{classAcquisition_a1123502b520aec97ee8a71039abaa3fb}\label{classAcquisition_a1123502b520aec97ee8a71039abaa3fb}} 
+\mbox{\Hypertarget{classAcquisition_a9233a189179591c0c2f2639a3e6c13f6}\label{classAcquisition_a9233a189179591c0c2f2639a3e6c13f6}} 
 \index{Acquisition@{Acquisition}!m\+\_\+channel@{m\+\_\+channel}}
 \index{m\+\_\+channel@{m\+\_\+channel}!Acquisition@{Acquisition}}
 \subsubsection{\texorpdfstring{m\+\_\+channel}{m\_channel}}
-{\footnotesize\ttfamily Int\+\_\+t Acquisition\+::m\+\_\+channel\mbox{[}8\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily Int\+\_\+t Acquisition\+::m\+\_\+channel\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
@@ -2790,7 +3333,7 @@ Definition at line 112 of file Acquisition.\+h.
 
 
 
-Referenced by execute(), and initialize().
+Referenced by clone(), execute(), and initialize().
 
 \mbox{\Hypertarget{classAcquisition_aedc8b29f322ef00540797fbd0d5112d1}\label{classAcquisition_aedc8b29f322ef00540797fbd0d5112d1}} 
 \index{Acquisition@{Acquisition}!m\+\_\+channels@{m\+\_\+channels}}
@@ -2804,13 +3347,13 @@ Definition at line 117 of file Acquisition.\+h.
 
 
 
-Referenced by channels(), finalize(), initialize(), and set\+Channels().
+Referenced by channels(), clone(), finalize(), initialize(), and set\+Channels().
 
-\mbox{\Hypertarget{classAcquisition_ad323c9602565eec8e41f573d441745e2}\label{classAcquisition_ad323c9602565eec8e41f573d441745e2}} 
+\mbox{\Hypertarget{classAcquisition_a217269bc403d9fd271a1701c98afb30e}\label{classAcquisition_a217269bc403d9fd271a1701c98afb30e}} 
 \index{Acquisition@{Acquisition}!m\+\_\+ch\+Enable@{m\+\_\+ch\+Enable}}
 \index{m\+\_\+ch\+Enable@{m\+\_\+ch\+Enable}!Acquisition@{Acquisition}}
 \subsubsection{\texorpdfstring{m\+\_\+ch\+Enable}{m\_chEnable}}
-{\footnotesize\ttfamily Int\+\_\+t Acquisition\+::m\+\_\+ch\+Enable\mbox{[}8\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily Int\+\_\+t Acquisition\+::m\+\_\+ch\+Enable\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
@@ -2818,7 +3361,7 @@ Definition at line 113 of file Acquisition.\+h.
 
 
 
-Referenced by execute(), and initialize().
+Referenced by clone(), execute(), and initialize().
 
 \mbox{\Hypertarget{classAcquisition_a5f7fe20506e7d860ed61935255adfe17}\label{classAcquisition_a5f7fe20506e7d860ed61935255adfe17}} 
 \index{Acquisition@{Acquisition}!m\+\_\+deadtime@{m\+\_\+deadtime}}
@@ -2846,17 +3389,21 @@ Definition at line 118 of file Acquisition.\+h.
 
 
 
-Referenced by depth(), execute(), finalize(), initialize(), and set\+Depth().
+Referenced by clone(), depth(), execute(), finalize(), initialize(), and set\+Depth().
 
-\mbox{\Hypertarget{classAcquisition_a7d95ba9a5593451a73754ed44f6bcd1c}\label{classAcquisition_a7d95ba9a5593451a73754ed44f6bcd1c}} 
+\mbox{\Hypertarget{classAcquisition_a82cdfc89b37f20530bf112e13a5c5e5c}\label{classAcquisition_a82cdfc89b37f20530bf112e13a5c5e5c}} 
 \index{Acquisition@{Acquisition}!m\+\_\+depthmax@{m\+\_\+depthmax}}
 \index{m\+\_\+depthmax@{m\+\_\+depthmax}!Acquisition@{Acquisition}}
 \subsubsection{\texorpdfstring{m\+\_\+depthmax}{m\_depthmax}}
-{\footnotesize\ttfamily const unsigned int Acquisition\+::m\+\_\+depthmax = 512\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily static const unsigned int Acquisition\+::m\+\_\+depthmax = 512\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
 
 
 Definition at line 102 of file Acquisition.\+h.
+
+
+
+Referenced by clone().
 
 \mbox{\Hypertarget{classProcessus_aa9d24d53c3e52f36786cabb5d8e296e7}\label{classProcessus_aa9d24d53c3e52f36786cabb5d8e296e7}} 
 \index{Acquisition@{Acquisition}!m\+\_\+element@{m\+\_\+element}}
@@ -2884,7 +3431,7 @@ Definition at line 110 of file Acquisition.\+h.
 
 
 
-Referenced by execute(), finalize(), and initialize().
+Referenced by clone(), execute(), finalize(), and initialize().
 
 \mbox{\Hypertarget{classAcquisition_a8a893e7485e96da01185df6d1109c0bc}\label{classAcquisition_a8a893e7485e96da01185df6d1109c0bc}} 
 \index{Acquisition@{Acquisition}!m\+\_\+fifo@{m\+\_\+fifo}}
@@ -2900,11 +3447,11 @@ Definition at line 121 of file Acquisition.\+h.
 
 Referenced by execute(), and initialize().
 
-\mbox{\Hypertarget{classAcquisition_a53bcc000575de30eba6b7db8209be2cc}\label{classAcquisition_a53bcc000575de30eba6b7db8209be2cc}} 
+\mbox{\Hypertarget{classAcquisition_ad0078b0c53eb14f13fdd16763df3be8e}\label{classAcquisition_ad0078b0c53eb14f13fdd16763df3be8e}} 
 \index{Acquisition@{Acquisition}!m\+\_\+hsample@{m\+\_\+hsample}}
 \index{m\+\_\+hsample@{m\+\_\+hsample}!Acquisition@{Acquisition}}
 \subsubsection{\texorpdfstring{m\+\_\+hsample}{m\_hsample}}
-{\footnotesize\ttfamily T\+H1D$\ast$ Acquisition\+::m\+\_\+hsample\mbox{[}8\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily T\+H1D $\ast$ Acquisition\+::m\+\_\+hsample\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
@@ -2968,7 +3515,7 @@ Definition at line 114 of file Acquisition.\+h.
 
 
 
-Referenced by execute(), finalize(), and initialize().
+Referenced by clone(), execute(), finalize(), and initialize().
 
 \mbox{\Hypertarget{classAcquisition_a26d0f1a44309ffac49c365b7ee568ab2}\label{classAcquisition_a26d0f1a44309ffac49c365b7ee568ab2}} 
 \index{Acquisition@{Acquisition}!m\+\_\+nsample@{m\+\_\+nsample}}
@@ -3010,13 +3557,13 @@ Definition at line 109 of file Acquisition.\+h.
 
 
 
-Referenced by initialize().
+Referenced by clone(), and initialize().
 
-\mbox{\Hypertarget{classAcquisition_a15d71455f658e21a12ef4c153c21df65}\label{classAcquisition_a15d71455f658e21a12ef4c153c21df65}} 
+\mbox{\Hypertarget{classAcquisition_ad7f531c3d3fc58d1a2a5eab954db0ca7}\label{classAcquisition_ad7f531c3d3fc58d1a2a5eab954db0ca7}} 
 \index{Acquisition@{Acquisition}!m\+\_\+s@{m\+\_\+s}}
 \index{m\+\_\+s@{m\+\_\+s}!Acquisition@{Acquisition}}
 \subsubsection{\texorpdfstring{m\+\_\+s}{m\_s}}
-{\footnotesize\ttfamily T\+H1D$\ast$ Acquisition\+::m\+\_\+s\mbox{[}8\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily T\+H1D $\ast$ Acquisition\+::m\+\_\+s\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
@@ -3038,7 +3585,7 @@ Definition at line 111 of file Acquisition.\+h.
 
 
 
-Referenced by execute(), and initialize().
+Referenced by clone(), execute(), and initialize().
 
 \mbox{\Hypertarget{classAcquisition_a08f70edd83751dbdab4c8190dc4b9188}\label{classAcquisition_a08f70edd83751dbdab4c8190dc4b9188}} 
 \index{Acquisition@{Acquisition}!m\+\_\+store\+\_\+hist@{m\+\_\+store\+\_\+hist}}
@@ -3052,7 +3599,7 @@ Definition at line 105 of file Acquisition.\+h.
 
 
 
-Referenced by execute(), finalize(), initialize(), set\+Store\+Trend(), and store\+Trend().
+Referenced by clone(), execute(), finalize(), initialize(), set\+Store\+Trend(), and store\+Trend().
 
 \mbox{\Hypertarget{classAcquisition_a987cc1d04007cf1f5acc1accfd0909e5}\label{classAcquisition_a987cc1d04007cf1f5acc1accfd0909e5}} 
 \index{Acquisition@{Acquisition}!m\+\_\+store\+\_\+sample@{m\+\_\+store\+\_\+sample}}
@@ -3066,7 +3613,7 @@ Definition at line 106 of file Acquisition.\+h.
 
 
 
-Referenced by execute(), initialize(), set\+Store\+Sample(), and store\+Sample().
+Referenced by clone(), execute(), initialize(), set\+Store\+Sample(), and store\+Sample().
 
 \mbox{\Hypertarget{classAcquisition_aca2143e9135e25554e58327475a767c5}\label{classAcquisition_aca2143e9135e25554e58327475a767c5}} 
 \index{Acquisition@{Acquisition}!m\+\_\+store\+\_\+tree@{m\+\_\+store\+\_\+tree}}
@@ -3080,7 +3627,7 @@ Definition at line 104 of file Acquisition.\+h.
 
 
 
-Referenced by execute(), finalize(), initialize(), set\+Store\+Tree(), and store\+Tree().
+Referenced by clone(), execute(), finalize(), initialize(), set\+Store\+Tree(), and store\+Tree().
 
 \mbox{\Hypertarget{classAcquisition_aa88cf8d27e075b5aaddb309dfb42cd04}\label{classAcquisition_aa88cf8d27e075b5aaddb309dfb42cd04}} 
 \index{Acquisition@{Acquisition}!m\+\_\+timestamp@{m\+\_\+timestamp}}
@@ -3094,13 +3641,13 @@ Definition at line 116 of file Acquisition.\+h.
 
 
 
-Referenced by execute(), and initialize().
+Referenced by clone(), execute(), and initialize().
 
-\mbox{\Hypertarget{classAcquisition_a70f10db9c972f22a60bd2b82750168da}\label{classAcquisition_a70f10db9c972f22a60bd2b82750168da}} 
+\mbox{\Hypertarget{classAcquisition_aa88a923232e8b7e08f5c1b5411497fc5}\label{classAcquisition_aa88a923232e8b7e08f5c1b5411497fc5}} 
 \index{Acquisition@{Acquisition}!m\+\_\+tree@{m\+\_\+tree}}
 \index{m\+\_\+tree@{m\+\_\+tree}!Acquisition@{Acquisition}}
 \subsubsection{\texorpdfstring{m\+\_\+tree}{m\_tree}}
-{\footnotesize\ttfamily T\+Tree$\ast$ Acquisition\+::m\+\_\+tree\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily T\+Tree $\ast$ Acquisition\+::m\+\_\+tree\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
@@ -3108,7 +3655,7 @@ Definition at line 108 of file Acquisition.\+h.
 
 
 
-Referenced by execute(), finalize(), and initialize().
+Referenced by clone(), execute(), finalize(), and initialize().
 
 \mbox{\Hypertarget{classAcquisition_a953bdc1bf56206b6df33b648af32a24f}\label{classAcquisition_a953bdc1bf56206b6df33b648af32a24f}} 
 \index{Acquisition@{Acquisition}!m\+\_\+trig@{m\+\_\+trig}}
@@ -3124,11 +3671,11 @@ Definition at line 122 of file Acquisition.\+h.
 
 Referenced by execute(), initialize(), set\+Trigger(), and trigger().
 
-\mbox{\Hypertarget{classAcquisition_a8f0ef9898c1e63fb6f13c14508d3180d}\label{classAcquisition_a8f0ef9898c1e63fb6f13c14508d3180d}} 
+\mbox{\Hypertarget{classAcquisition_ac855680c9bb5f8f14d505d5f41f1a076}\label{classAcquisition_ac855680c9bb5f8f14d505d5f41f1a076}} 
 \index{Acquisition@{Acquisition}!v@{v}}
 \index{v@{v}!Acquisition@{Acquisition}}
 \subsubsection{\texorpdfstring{v}{v}}
-{\footnotesize\ttfamily double Acquisition\+::v\mbox{[}8 $\ast$\hyperlink{classAcquisition_a7d95ba9a5593451a73754ed44f6bcd1c}{m\+\_\+depthmax}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily double Acquisition\+::v\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
@@ -3138,11 +3685,11 @@ Definition at line 126 of file Acquisition.\+h.
 
 Referenced by execute(), and finalize().
 
-\mbox{\Hypertarget{classAcquisition_a841316dcf4f210ad52b144b187f2b7b6}\label{classAcquisition_a841316dcf4f210ad52b144b187f2b7b6}} 
+\mbox{\Hypertarget{classAcquisition_a8d2cd605d4982223356a14423d735c84}\label{classAcquisition_a8d2cd605d4982223356a14423d735c84}} 
 \index{Acquisition@{Acquisition}!v2@{v2}}
 \index{v2@{v2}!Acquisition@{Acquisition}}
 \subsubsection{\texorpdfstring{v2}{v2}}
-{\footnotesize\ttfamily double Acquisition\+::v2\mbox{[}8 $\ast$\hyperlink{classAcquisition_a7d95ba9a5593451a73754ed44f6bcd1c}{m\+\_\+depthmax}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily double Acquisition\+::v2\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
@@ -3156,5 +3703,5 @@ Referenced by execute(), and finalize().
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Calo\+Proto40\+M\+Hz/inc/proc/\hyperlink{Acquisition_8h}{Acquisition.\+h}\item 
-/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Calo\+Proto40\+M\+Hz/src/proc/\hyperlink{Acquisition_8cpp}{Acquisition.\+cpp}\end{DoxyCompactItemize}
+/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Calo\+Proto40\+M\+Hz/inc/proc/\hyperlink{CatCaloProto40MHz_2inc_2proc_2Acquisition_8h}{Acquisition.\+h}\item 
+/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Calo\+Proto40\+M\+Hz/src/proc/\hyperlink{CatCaloProto40MHz_2src_2proc_2Acquisition_8cpp}{Acquisition.\+cpp}\end{DoxyCompactItemize}

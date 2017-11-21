@@ -14,5 +14,6 @@ var searchData=
   ['buildhistos',['buildHistos',['../classData.html#a0c21ebc7662b7a6e25171959689481ca',1,'Data']]],
   ['buildprocessuslist',['BuildProcessusList',['../classAppFrame_1_1AppFrame.html#a56984a1e8d83849a66965ec5cb99e6e7',1,'AppFrame::AppFrame']]],
   ['bus',['bus',['../classIOdata.html#ab904bcca0e8e3bebc3299e47ca93a8a1',1,'IOdata']]],
+  ['bxidresynchstatus',['bxidResynchStatus',['../classICECALv3.html#a545f51b915a6de5c5f450622d0651a85',1,'ICECALv3']]],
   ['bypassmisomosi',['bypassMisoMosi',['../classICECALv3.html#a5ce36881aa89fedf7c37e03620acca6e',1,'ICECALv3::bypassMisoMosi()'],['../classLSDelayChipV1.html#a9e04b654e8d6d63efe23fc3b31e15ce6',1,'LSDelayChipV1::bypassMisoMosi()']]]
 ];

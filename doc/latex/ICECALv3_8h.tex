@@ -4,7 +4,7 @@
 {\ttfamily \#include \char`\"{}Register.\+h\char`\"{}}\newline
 {\ttfamily \#include $<$stdlib.\+h$>$}\newline
 {\ttfamily \#include $<$string$>$}\newline
-{\ttfamily \#include $<$Python.\+h$>$}\newline
+{\ttfamily \#include $<$python2.\+7/\+Python.\+h$>$}\newline
 {\ttfamily \#include $<$iostream$>$}\newline
 {\ttfamily \#include $<$fstream$>$}\newline
 {\ttfamily \#include $<$time.\+h$>$}\newline
@@ -40,13 +40,13 @@ typedef unsigned char \hyperlink{ICECALv3_8h_a3cb25ca6f51f003950f9625ff05536fc}{
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-const int \hyperlink{ICECALv3_8h_a848408b773702d268053cb49d205e097}{delay\+Line\+Addr\+Ch} \mbox{[}4\mbox{]} = \{ 16,17,18,19 \}
+const int \hyperlink{ICECALv3_8h_a848408b773702d268053cb49d205e097}{delay\+Line\+Addr\+Ch} \mbox{[}4\mbox{]} = \{ 28, 29, 30, 31 \}
 \item 
-const int \hyperlink{ICECALv3_8h_abd124f50fa794b9b0aded801fabf5322}{icecal\+L\+S\+B\+Addr\+Ch} \mbox{[}4\mbox{]} = \{ 5,5,5,5 \}
+const int \hyperlink{ICECALv3_8h_abd124f50fa794b9b0aded801fabf5322}{icecal\+L\+S\+B\+Addr\+Ch} \mbox{[}4\mbox{]} = \{ 0, 1, 2, 3 \}
 \item 
-const int \hyperlink{ICECALv3_8h_afba64a649cc9314882fd49b62b99d6e7}{icecal\+M\+S\+B\+Addr\+Ch} \mbox{[}4\mbox{]} = \{ 5,5,5,5 \}
+const int \hyperlink{ICECALv3_8h_afba64a649cc9314882fd49b62b99d6e7}{icecal\+M\+S\+B\+Addr\+Ch} \mbox{[}4\mbox{]} = \{ 4, 5, 6, 7 \}
 \item 
-const int \hyperlink{ICECALv3_8h_a9c22ae782814495416dc2b803df326c1}{icecal\+Main\+Addr} \mbox{[}4\mbox{]} = \{ 0,1,2,3 \}
+const int \hyperlink{ICECALv3_8h_a9c22ae782814495416dc2b803df326c1}{icecal\+Main\+Addr} \mbox{[}4\mbox{]} = \{ 8, 9, 10, 11 \}
 \end{DoxyCompactItemize}
 
 
@@ -60,6 +60,10 @@ const int \hyperlink{ICECALv3_8h_a9c22ae782814495416dc2b803df326c1}{icecal\+Main
 
 
 Definition at line 37 of file I\+C\+E\+C\+A\+Lv3.\+h.
+
+
+
+Referenced by I\+C\+E\+C\+A\+Lv3\+::bxid\+Resynch\+Status().
 
 \mbox{\Hypertarget{ICECALv3_8h_ab10444bd2aa43310cf654abe4e4a7af6}\label{ICECALv3_8h_ab10444bd2aa43310cf654abe4e4a7af6}} 
 \index{I\+C\+E\+C\+A\+Lv3.\+h@{I\+C\+E\+C\+A\+Lv3.\+h}!C\+A\+L\+I\+B\+R\+A\+T\+I\+O\+N\+\_\+\+F\+I\+L\+E\+\_\+\+V\+ER@{C\+A\+L\+I\+B\+R\+A\+T\+I\+O\+N\+\_\+\+F\+I\+L\+E\+\_\+\+V\+ER}}
@@ -84,6 +88,10 @@ Referenced by I\+C\+E\+C\+A\+Lv3\+::write\+Asic\+Params().
 
 
 Definition at line 36 of file I\+C\+E\+C\+A\+Lv3.\+h.
+
+
+
+Referenced by I\+C\+E\+C\+A\+Lv3\+::version().
 
 \mbox{\Hypertarget{ICECALv3_8h_a2870f5a3cad23b2b4e7f16faefe8ef2e}\label{ICECALv3_8h_a2870f5a3cad23b2b4e7f16faefe8ef2e}} 
 \index{I\+C\+E\+C\+A\+Lv3.\+h@{I\+C\+E\+C\+A\+Lv3.\+h}!S\+C\+\_\+\+M\+O\+S\+I\+\_\+\+M\+I\+S\+O\+\_\+\+B\+Y\+P\+A\+SS@{S\+C\+\_\+\+M\+O\+S\+I\+\_\+\+M\+I\+S\+O\+\_\+\+B\+Y\+P\+A\+SS}}
@@ -134,7 +142,7 @@ Definition at line 28 of file I\+C\+E\+C\+A\+Lv3.\+h.
 
 
 
-Definition at line 57 of file I\+C\+E\+C\+A\+Lv3.\+h.
+Definition at line 54 of file I\+C\+E\+C\+A\+Lv3.\+h.
 
 \mbox{\Hypertarget{ICECALv3_8h_a811024d35b9b8a41095b1f583b649e56}\label{ICECALv3_8h_a811024d35b9b8a41095b1f583b649e56}} 
 \index{I\+C\+E\+C\+A\+Lv3.\+h@{I\+C\+E\+C\+A\+Lv3.\+h}!U32@{U32}}
@@ -144,7 +152,7 @@ Definition at line 57 of file I\+C\+E\+C\+A\+Lv3.\+h.
 
 
 
-Definition at line 56 of file I\+C\+E\+C\+A\+Lv3.\+h.
+Definition at line 53 of file I\+C\+E\+C\+A\+Lv3.\+h.
 
 \mbox{\Hypertarget{ICECALv3_8h_a3cb25ca6f51f003950f9625ff05536fc}\label{ICECALv3_8h_a3cb25ca6f51f003950f9625ff05536fc}} 
 \index{I\+C\+E\+C\+A\+Lv3.\+h@{I\+C\+E\+C\+A\+Lv3.\+h}!U8@{U8}}
@@ -154,7 +162,7 @@ Definition at line 56 of file I\+C\+E\+C\+A\+Lv3.\+h.
 
 
 
-Definition at line 58 of file I\+C\+E\+C\+A\+Lv3.\+h.
+Definition at line 55 of file I\+C\+E\+C\+A\+Lv3.\+h.
 
 
 
@@ -163,11 +171,11 @@ Definition at line 58 of file I\+C\+E\+C\+A\+Lv3.\+h.
 \index{I\+C\+E\+C\+A\+Lv3.\+h@{I\+C\+E\+C\+A\+Lv3.\+h}!delay\+Line\+Addr\+Ch@{delay\+Line\+Addr\+Ch}}
 \index{delay\+Line\+Addr\+Ch@{delay\+Line\+Addr\+Ch}!I\+C\+E\+C\+A\+Lv3.\+h@{I\+C\+E\+C\+A\+Lv3.\+h}}
 \subsubsection{\texorpdfstring{delay\+Line\+Addr\+Ch}{delayLineAddrCh}}
-{\footnotesize\ttfamily const int delay\+Line\+Addr\+Ch\mbox{[}4\mbox{]} = \{ 16,17,18,19 \}}
+{\footnotesize\ttfamily const int delay\+Line\+Addr\+Ch\mbox{[}4\mbox{]} = \{ 28, 29, 30, 31 \}}
 
 
 
-Definition at line 43 of file I\+C\+E\+C\+A\+Lv3.\+h.
+Definition at line 42 of file I\+C\+E\+C\+A\+Lv3.\+h.
 
 
 
@@ -177,11 +185,11 @@ Referenced by I\+C\+E\+C\+A\+Lv3\+::get\+Delay\+Line\+Ch(), I\+C\+E\+C\+A\+Lv3\+
 \index{I\+C\+E\+C\+A\+Lv3.\+h@{I\+C\+E\+C\+A\+Lv3.\+h}!icecal\+L\+S\+B\+Addr\+Ch@{icecal\+L\+S\+B\+Addr\+Ch}}
 \index{icecal\+L\+S\+B\+Addr\+Ch@{icecal\+L\+S\+B\+Addr\+Ch}!I\+C\+E\+C\+A\+Lv3.\+h@{I\+C\+E\+C\+A\+Lv3.\+h}}
 \subsubsection{\texorpdfstring{icecal\+L\+S\+B\+Addr\+Ch}{icecalLSBAddrCh}}
-{\footnotesize\ttfamily const int icecal\+L\+S\+B\+Addr\+Ch\mbox{[}4\mbox{]} = \{ 5,5,5,5 \}}
+{\footnotesize\ttfamily const int icecal\+L\+S\+B\+Addr\+Ch\mbox{[}4\mbox{]} = \{ 0, 1, 2, 3 \}}
 
 
 
-Definition at line 47 of file I\+C\+E\+C\+A\+Lv3.\+h.
+Definition at line 45 of file I\+C\+E\+C\+A\+Lv3.\+h.
 
 
 
@@ -191,11 +199,11 @@ Referenced by I\+C\+E\+C\+A\+Lv3\+::get\+Analog\+Ch(), I\+C\+E\+C\+A\+Lv3\+::set
 \index{I\+C\+E\+C\+A\+Lv3.\+h@{I\+C\+E\+C\+A\+Lv3.\+h}!icecal\+Main\+Addr@{icecal\+Main\+Addr}}
 \index{icecal\+Main\+Addr@{icecal\+Main\+Addr}!I\+C\+E\+C\+A\+Lv3.\+h@{I\+C\+E\+C\+A\+Lv3.\+h}}
 \subsubsection{\texorpdfstring{icecal\+Main\+Addr}{icecalMainAddr}}
-{\footnotesize\ttfamily const int icecal\+Main\+Addr\mbox{[}4\mbox{]} = \{ 0,1,2,3 \}}
+{\footnotesize\ttfamily const int icecal\+Main\+Addr\mbox{[}4\mbox{]} = \{ 8, 9, 10, 11 \}}
 
 
 
-Definition at line 53 of file I\+C\+E\+C\+A\+Lv3.\+h.
+Definition at line 50 of file I\+C\+E\+C\+A\+Lv3.\+h.
 
 
 
@@ -205,11 +213,11 @@ Referenced by I\+C\+E\+C\+A\+Lv3\+::get\+Main\+Reg(), I\+C\+E\+C\+A\+Lv3\+::set\
 \index{I\+C\+E\+C\+A\+Lv3.\+h@{I\+C\+E\+C\+A\+Lv3.\+h}!icecal\+M\+S\+B\+Addr\+Ch@{icecal\+M\+S\+B\+Addr\+Ch}}
 \index{icecal\+M\+S\+B\+Addr\+Ch@{icecal\+M\+S\+B\+Addr\+Ch}!I\+C\+E\+C\+A\+Lv3.\+h@{I\+C\+E\+C\+A\+Lv3.\+h}}
 \subsubsection{\texorpdfstring{icecal\+M\+S\+B\+Addr\+Ch}{icecalMSBAddrCh}}
-{\footnotesize\ttfamily const int icecal\+M\+S\+B\+Addr\+Ch\mbox{[}4\mbox{]} = \{ 5,5,5,5 \}}
+{\footnotesize\ttfamily const int icecal\+M\+S\+B\+Addr\+Ch\mbox{[}4\mbox{]} = \{ 4, 5, 6, 7 \}}
 
 
 
-Definition at line 49 of file I\+C\+E\+C\+A\+Lv3.\+h.
+Definition at line 47 of file I\+C\+E\+C\+A\+Lv3.\+h.
 
 
 

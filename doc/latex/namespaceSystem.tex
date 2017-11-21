@@ -941,7 +941,7 @@ References module\+Handle(), and process\+Handle().
       \hyperlink{namespaceSystem_ab88d0de1d6850b6f95522e9c242eeab0}{moduleHandle}(), moduleName, \textcolor{keyword}{sizeof}(moduleName) );
 56       \}
 57       std::string mod = \hyperlink{namespaceSystem_add155d288552032434ee9e25d130ad72}{moduleName};
-58 \textcolor{preprocessor}{#elif defined(linux) || defined(\_\_APPLE\_\_)}
+58 \textcolor{preprocessor}{#elif defined(\_\_linux\_\_) || defined(linux)}
 59       std::string mod = ::basename((\textcolor{keywordtype}{char}*)((Dl\_info*)\hyperlink{namespaceSystem_ab88d0de1d6850b6f95522e9c242eeab0}{moduleHandle}())->dli\_fname);
 60 \textcolor{preprocessor}{#elif \_\_hpux}
 61       std::string mod = ::basename(((HMODULE*)\hyperlink{namespaceSystem_ab88d0de1d6850b6f95522e9c242eeab0}{moduleHandle}())->dsc.filename);

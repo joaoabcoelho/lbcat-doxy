@@ -22,7 +22,7 @@ var searchData=
   ['transmitspi',['transmitSpi',['../classFePGA.html#ac7698a9f59f7290a6bb648030976597f',1,'FePGA::transmitSpi()'],['../classSeqPGA.html#a579b4ab222e1c4778640948fbf2a8805',1,'SeqPGA::transmitSpi()']]],
   ['tree',['tree',['../classHierarchy.html#a76e914b9a677a22a82deb74d892bf261',1,'Hierarchy::tree(std::string indent=std::string(&quot;&quot;))'],['../classHierarchy.html#a594c294c5f60c230e106d522ed008212',1,'Hierarchy::tree()'],['../namespaceshell.html#aee4ac95f90c385c4fa8e9cd13ce2380d',1,'shell.tree()']]],
   ['treerecursive',['treeRecursive',['../classApplication.html#ab4a53c51303b155b738970bec9a6ce89',1,'Application']]],
-  ['trigger',['trigger',['../classPhaserScan.html#a6ae0b3511064540555ef9770c63febc4',1,'PhaserScan::trigger()'],['../classA3PE.html#a75cd0377eb653ed22c4d258ab359f3d6',1,'A3PE::trigger()'],['../classAcquisition.html#a6f680938eb6a42d57dfa7466e8852af9',1,'Acquisition::trigger()']]],
+  ['trigger',['trigger',['../classPhaserScan.html#a6ae0b3511064540555ef9770c63febc4',1,'PhaserScan::trigger()'],['../classA3PE.html#a75cd0377eb653ed22c4d258ab359f3d6',1,'A3PE::trigger()'],['../classAcquisition.html#a6f680938eb6a42d57dfa7466e8852af9',1,'Acquisition::trigger()'],['../classAcquisition.html#a6f680938eb6a42d57dfa7466e8852af9',1,'Acquisition::trigger()']]],
   ['triggerauto',['triggerAuto',['../classMSOxxxx.html#a44238c713464e76d4c3c2005413bdf76',1,'MSOxxxx']]],
   ['triggerconfig',['triggerConfig',['../classMSOxxxx.html#a9019b632465638a13c409d8243fe83b4',1,'MSOxxxx']]],
   ['triggerdelay',['triggerDelay',['../classA3PE.html#ac0aabc1457923b7ee7da0a2c91c46451',1,'A3PE']]],

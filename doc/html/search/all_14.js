@@ -51,7 +51,7 @@ var searchData=
   ['treectrlpanel',['TreeCtrlPanel',['../classtree_1_1TreeCtrlPanel.html',1,'tree']]],
   ['treeitem',['TreeItem',['../namespacetree.html#ad25a722efe4d4e2f98ec1f6a6c92b4b9',1,'tree']]],
   ['treerecursive',['treeRecursive',['../classApplication.html#ab4a53c51303b155b738970bec9a6ce89',1,'Application']]],
-  ['trigger',['trigger',['../classPhaserScan.html#a6ae0b3511064540555ef9770c63febc4',1,'PhaserScan::trigger()'],['../classA3PE.html#a75cd0377eb653ed22c4d258ab359f3d6',1,'A3PE::trigger()'],['../classAcquisition.html#a6f680938eb6a42d57dfa7466e8852af9',1,'Acquisition::trigger()']]],
+  ['trigger',['trigger',['../classPhaserScan.html#a6ae0b3511064540555ef9770c63febc4',1,'PhaserScan::trigger()'],['../classA3PE.html#a75cd0377eb653ed22c4d258ab359f3d6',1,'A3PE::trigger()'],['../classAcquisition.html#a6f680938eb6a42d57dfa7466e8852af9',1,'Acquisition::trigger()'],['../classAcquisition.html#a6f680938eb6a42d57dfa7466e8852af9',1,'Acquisition::trigger()']]],
   ['triggerauto',['triggerAuto',['../classMSOxxxx.html#a44238c713464e76d4c3c2005413bdf76',1,'MSOxxxx']]],
   ['triggerconfig',['triggerConfig',['../classMSOxxxx.html#a9019b632465638a13c409d8243fe83b4',1,'MSOxxxx']]],
   ['triggerdelay',['triggerDelay',['../classA3PE.html#ac0aabc1457923b7ee7da0a2c91c46451',1,'A3PE']]],
@@ -65,5 +65,5 @@ var searchData=
   ['txrx_5fstatus',['TXRX_STATUS',['../LALUsbML_8h.html#a7bb4b3f5a75f92e2825cf776d730210c',1,'TXRX_STATUS():&#160;LALUsbML.h'],['../LALUsb_8h.html#a7bb4b3f5a75f92e2825cf776d730210c',1,'TXRX_STATUS():&#160;LALUsb.h']]],
   ['txstatus',['TXSTATUS',['../LALUsbML_8h.html#a7bb4b3f5a75f92e2825cf776d730210ca9cafa2e2fa7aa5557cad854538cd329d',1,'TXSTATUS():&#160;LALUsbML.h'],['../LALUsb_8h.html#a7bb4b3f5a75f92e2825cf776d730210ca9cafa2e2fa7aa5557cad854538cd329d',1,'TXSTATUS():&#160;LALUsb.h']]],
   ['txtimeout',['txTimeOut',['../classUsbFTInterface.html#acab2397cb42003a1ed8f69a0c6cae195',1,'UsbFTInterface::txTimeOut()'],['../classUsbFTMLInterface.html#ad7e76fd952273faf094bf3475b2963da',1,'UsbFTMLInterface::txTimeOut()']]],
-  ['type',['Type',['../classStatusCode.html#a6f565cbeadc76d14c72f047e5e85eb4b',1,'StatusCode::Type()'],['../classvar.html#ae4f9e2c747c3e72f245b148146b1855e',1,'var::Type()'],['../struct__ft__device__list__info__node.html#aa764a1406eb904ad4444a82f2f950b4e',1,'_ft_device_list_info_node::Type()'],['../struct__int__frame__info.html#a4c4c7c961ca654d25894f2712acf8082',1,'_int_frame_info::type()'],['../classObject.html#a84f99f70f144a83e1582d1d0f84e4e62',1,'Object::type()']]]
+  ['type',['type',['../struct__int__frame__info.html#a4c4c7c961ca654d25894f2712acf8082',1,'_int_frame_info::type()'],['../classObject.html#a84f99f70f144a83e1582d1d0f84e4e62',1,'Object::type()'],['../classStatusCode.html#a6f565cbeadc76d14c72f047e5e85eb4b',1,'StatusCode::Type()'],['../classvar.html#ae4f9e2c747c3e72f245b148146b1855e',1,'var::Type()'],['../struct__ft__device__list__info__node.html#aa764a1406eb904ad4444a82f2f950b4e',1,'_ft_device_list_info_node::Type()']]]
 ];

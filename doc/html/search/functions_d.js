@@ -2,7 +2,7 @@ var searchData=
 [
   ['name',['name',['../classData.html#a58055729bcd33b4532cae0c569af5ea8',1,'Data::name()'],['../classDLL.html#a0a915d538771dde2cb0580cd340ee088',1,'DLL::name()'],['../classObject.html#a300f4c05dd468c7bb8b3c968868443c1',1,'Object::name()']]],
   ['nbin',['nBin',['../classHisto1D.html#a7f3cf7364ae6e1eb9ba08b5ffe897d8f',1,'Histo1D']]],
-  ['nbins',['nBins',['../classAcquisition.html#a3a3dad0de9535d5a29c0810a5bdc3ae3',1,'Acquisition']]],
+  ['nbins',['nBins',['../classAcquisition.html#a3a3dad0de9535d5a29c0810a5bdc3ae3',1,'Acquisition::nBins()'],['../classAcquisition.html#a3a3dad0de9535d5a29c0810a5bdc3ae3',1,'Acquisition::nBins()']]],
   ['nerrors',['nErrors',['../classOptions.html#acc6474323f0bbe17fa844e9a086b90b8',1,'Options::nErrors()'],['../classProcessus.html#a82a0487f82f07cc2c2dc2731f98149e7',1,'Processus::nErrors()']]],
   ['network',['network',['../classApplication.html#ab21cc0c86ca4e63d1fbd348d709dcddc',1,'Application::network()'],['../namespaceshell.html#ac644e906d4031b3ab30adb8e1984b252',1,'shell.network()']]],
   ['nevt',['nEvt',['../classOptions.html#ad769b256263a4ac24dd6f989ae724ab7',1,'Options']]],

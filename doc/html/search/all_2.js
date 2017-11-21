@@ -51,6 +51,7 @@ var searchData=
   ['buildprocessuslist',['BuildProcessusList',['../classAppFrame_1_1AppFrame.html#a56984a1e8d83849a66965ec5cb99e6e7',1,'AppFrame::AppFrame']]],
   ['bus',['Bus',['../classIOdata.html#a99aa7bed39364c4359ab8a7596bc013c',1,'IOdata::Bus()'],['../classIOdata.html#ab904bcca0e8e3bebc3299e47ca93a8a1',1,'IOdata::bus()'],['../namespaceCATApp.html#addde02095b318dd29aad22bf91fbf5c7aa5eeb9b5908cf99ffe6cd93cf235579d',1,'CATApp::BUS()']]],
   ['bxid_5fresynch_5faddr',['BXID_RESYNCH_ADDR',['../ICECALv3_8h.html#a57a201af9e55ffd847b551bff2dc71ce',1,'ICECALv3.h']]],
+  ['bxidresynchstatus',['bxidResynchStatus',['../classICECALv3.html#a545f51b915a6de5c5f450622d0651a85',1,'ICECALv3']]],
   ['bypassmisomosi',['bypassMisoMosi',['../classICECALv3.html#a5ce36881aa89fedf7c37e03620acca6e',1,'ICECALv3::bypassMisoMosi()'],['../classLSDelayChipV1.html#a9e04b654e8d6d63efe23fc3b31e15ce6',1,'LSDelayChipV1::bypassMisoMosi()']]],
   ['byte',['Byte',['../classIOdata.html#a37c53ebf4bf8d866aac8af572962a84ca00156611f08eeb1b5d361de809dafb8e',1,'IOdata::Byte()'],['../CatCaloProto40MHz_2inc_2WinTypes_8h.html#a4ae1dab0fb4b072a66584546209e7d58',1,'BYTE():&#160;WinTypes.h'],['../LALUsbMLx64_2include_2WinTypes_8h.html#a4ae1dab0fb4b072a66584546209e7d58',1,'BYTE():&#160;WinTypes.h'],['../LALUsbx64_2include_2WinTypes_8h.html#a4ae1dab0fb4b072a66584546209e7d58',1,'BYTE():&#160;WinTypes.h']]],
   ['bytesize',['ByteSize',['../struct__FTDCB.html#a6c3cd5d1cae69a2051d8c83badc52780',1,'_FTDCB']]]

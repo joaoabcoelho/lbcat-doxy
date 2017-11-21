@@ -169,6 +169,8 @@ unsigned int \hyperlink{classA3PE_aeb22b2fcba4d14f234ad2d6dcef7948c}{pipeline} (
 \item 
 \hyperlink{classRegister}{Register} $\ast$ \hyperlink{classA3PE_a3b75531731fc939206cce076f7ac9f9a}{write\+Length\+Fifo\+Reg} ()
 \item 
+\hyperlink{classRegister}{Register} $\ast$ \hyperlink{classA3PE_aa94c6120a73194d69dc5761cf90a4800}{ctrl\+Ana\+Mezz\+Reg} ()
+\item 
 \hyperlink{classRegister}{Register} $\ast$ \hyperlink{classA3PE_a10cf30ff852d7580ba94dbee0c48e0d5}{clock\+Division\+Reg} ()
 \item 
 \hyperlink{classRegister}{Register} $\ast$ \hyperlink{classA3PE_a4bf922f391fee6753fb0d53e133603b7}{trigger\+Reg} ()
@@ -345,6 +347,8 @@ std\+::string \hyperlink{classAttrib_a3414521d7a82476e874b25a5407b5e63}{m\+\_\+a
 \item 
 \hyperlink{classRegister}{Register} $\ast$ \hyperlink{classA3PE_a9a0cb2253ea34c0be567a03684217fee}{m\+\_\+write\+Length\+Fifo\+Reg}
 \item 
+\hyperlink{classRegister}{Register} $\ast$ \hyperlink{classA3PE_a126a936a5fd4fd4b83485b3637e1fa84}{m\+\_\+ctrl\+Ana\+Mezz\+Reg}
+\item 
 \hyperlink{classRegister}{Register} $\ast$ \hyperlink{classA3PE_ae1f4c24a99c2e6ae944a080f429cc155}{m\+\_\+clock\+Division\+Reg}
 \item 
 \hyperlink{classRegister}{Register} $\ast$ \hyperlink{classA3PE_a750158ae488121ab7969452f061e678c}{m\+\_\+trigger\+Reg}
@@ -500,7 +504,7 @@ Definition at line 25 of file A3\+P\+E.\+h.
 
 
 
-References Attrib\+::add(), Hierarchy\+::add\+Child(), Object\+::debug(), I\+Odata\+::def\+Data\+U16(), I\+Odata\+::def\+Data\+U32(), Attrib\+::\+E\+L\+E\+M\+E\+NT, Attrib\+::\+H\+A\+R\+D\+W\+A\+RE, I\+Oobject\+::io(), m\+\_\+acq\+Reg, m\+\_\+clock\+Division\+Reg, m\+\_\+ctrl\+Reg, m\+\_\+from\+A\+X\+Ram, m\+\_\+from\+A\+X\+Ram\+Ptr, m\+\_\+from\+A\+X\+Reg, m\+\_\+global\+Usb\+Reset, m\+\_\+latency\+AX, m\+\_\+latency\+Reg, m\+\_\+length\+AX, m\+\_\+pattern\+Ram, m\+\_\+reset\+Reg, m\+\_\+setup\+Reg, m\+\_\+spare3\+Reg, m\+\_\+status\+Reg, m\+\_\+storage\+Ram, m\+\_\+test\+Ram, m\+\_\+to\+A\+X\+Ram, m\+\_\+to\+A\+X\+Ram\+Ptr, m\+\_\+to\+A\+X\+Reg, m\+\_\+trigger\+Ram, m\+\_\+trigger\+Reg, m\+\_\+write\+Length\+Fifo\+Reg, I\+Oobject\+::set\+Address(), Object\+::set\+Id(), Object\+::set\+Name(), R\+A\+M\+::set\+Size(), and Object\+::set\+Type().
+References Attrib\+::add(), Hierarchy\+::add\+Child(), Object\+::debug(), I\+Odata\+::def\+Data\+U16(), I\+Odata\+::def\+Data\+U32(), Attrib\+::\+E\+L\+E\+M\+E\+NT, Attrib\+::\+H\+A\+R\+D\+W\+A\+RE, I\+Oobject\+::io(), m\+\_\+acq\+Reg, m\+\_\+clock\+Division\+Reg, m\+\_\+ctrl\+Ana\+Mezz\+Reg, m\+\_\+ctrl\+Reg, m\+\_\+from\+A\+X\+Ram, m\+\_\+from\+A\+X\+Ram\+Ptr, m\+\_\+from\+A\+X\+Reg, m\+\_\+global\+Usb\+Reset, m\+\_\+latency\+AX, m\+\_\+latency\+Reg, m\+\_\+length\+AX, m\+\_\+pattern\+Ram, m\+\_\+reset\+Reg, m\+\_\+setup\+Reg, m\+\_\+spare3\+Reg, m\+\_\+status\+Reg, m\+\_\+storage\+Ram, m\+\_\+test\+Ram, m\+\_\+to\+A\+X\+Ram, m\+\_\+to\+A\+X\+Ram\+Ptr, m\+\_\+to\+A\+X\+Reg, m\+\_\+trigger\+Ram, m\+\_\+trigger\+Reg, m\+\_\+write\+Length\+Fifo\+Reg, I\+Oobject\+::set\+Address(), Object\+::set\+Id(), Object\+::set\+Name(), R\+A\+M\+::set\+Size(), and Object\+::set\+Type().
 
 
 \begin{DoxyCode}
@@ -558,96 +562,103 @@ References Attrib\+::add(), Hierarchy\+::add\+Child(), Object\+::debug(), I\+Oda
 76     \hyperlink{classA3PE_a9a0cb2253ea34c0be567a03684217fee}{m\_writeLengthFifoReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a9e37c736d6dfb5223ed45786fad403da}{defDataU16}(1);
 77     \hyperlink{classA3PE_a9a0cb2253ea34c0be567a03684217fee}{m\_writeLengthFifoReg}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(8);
 78 
-79     \hyperlink{classA3PE_ae1f4c24a99c2e6ae944a080f429cc155}{m\_clockDivisionReg}=\textcolor{keyword}{new} \hyperlink{classRegister}{Register}();
-80     \hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(\hyperlink{classA3PE_ae1f4c24a99c2e6ae944a080f429cc155}{m\_clockDivisionReg});
-81     \hyperlink{classA3PE_ae1f4c24a99c2e6ae944a080f429cc155}{m\_clockDivisionReg}->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\textcolor{stringliteral}{"ClockDivisionReg"});
-82     \hyperlink{classA3PE_ae1f4c24a99c2e6ae944a080f429cc155}{m\_clockDivisionReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a78e50aa4a6c967cba195e77fe911a8c3}{defDataU32}(1);
-83     \hyperlink{classA3PE_ae1f4c24a99c2e6ae944a080f429cc155}{m\_clockDivisionReg}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(23);
-84 
-85     \hyperlink{classA3PE_a750158ae488121ab7969452f061e678c}{m\_triggerReg}=\textcolor{keyword}{new} \hyperlink{classRegister}{Register}();
-86     \hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(\hyperlink{classA3PE_a750158ae488121ab7969452f061e678c}{m\_triggerReg});
-87     \hyperlink{classA3PE_a750158ae488121ab7969452f061e678c}{m\_triggerReg}->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\textcolor{stringliteral}{"TriggerReg"});
-88     \hyperlink{classA3PE_a750158ae488121ab7969452f061e678c}{m\_triggerReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a78e50aa4a6c967cba195e77fe911a8c3}{defDataU32}(1);
-89     \hyperlink{classA3PE_a750158ae488121ab7969452f061e678c}{m\_triggerReg}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(24);
-90 
-91     \hyperlink{classA3PE_abe8eb76e3c0d967403726143deb1b70f}{m\_toAXReg}=\textcolor{keyword}{new} \hyperlink{classRegister}{Register}();
-92     \hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(\hyperlink{classA3PE_abe8eb76e3c0d967403726143deb1b70f}{m\_toAXReg});
-93     \hyperlink{classA3PE_abe8eb76e3c0d967403726143deb1b70f}{m\_toAXReg}->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\textcolor{stringliteral}{"ToAXReg"});
-94     \hyperlink{classA3PE_abe8eb76e3c0d967403726143deb1b70f}{m\_toAXReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a78e50aa4a6c967cba195e77fe911a8c3}{defDataU32}(1);
-95     \hyperlink{classA3PE_abe8eb76e3c0d967403726143deb1b70f}{m\_toAXReg}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(26);
-96 
-97     \hyperlink{classA3PE_acbfe708ac0a81243959c96124f192b9e}{m\_fromAXReg}=\textcolor{keyword}{new} \hyperlink{classRegister}{Register}();
-98     \hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(\hyperlink{classA3PE_acbfe708ac0a81243959c96124f192b9e}{m\_fromAXReg});
-99     \hyperlink{classA3PE_acbfe708ac0a81243959c96124f192b9e}{m\_fromAXReg}->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\textcolor{stringliteral}{"FromAXReg"});
-100     \hyperlink{classA3PE_acbfe708ac0a81243959c96124f192b9e}{m\_fromAXReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a78e50aa4a6c967cba195e77fe911a8c3}{defDataU32}(1);
-101     \hyperlink{classA3PE_acbfe708ac0a81243959c96124f192b9e}{m\_fromAXReg}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(27);
-102 
-103     \hyperlink{classA3PE_a1e7e5c89f190672990ae5bece2a8b1aa}{m\_spare3Reg}=\textcolor{keyword}{new} \hyperlink{classRegister}{Register}();
-104     \hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(\hyperlink{classA3PE_a1e7e5c89f190672990ae5bece2a8b1aa}{m\_spare3Reg});
-105     \hyperlink{classA3PE_a1e7e5c89f190672990ae5bece2a8b1aa}{m\_spare3Reg}->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\textcolor{stringliteral}{"Spare3Reg"});
-106     \hyperlink{classA3PE_a1e7e5c89f190672990ae5bece2a8b1aa}{m\_spare3Reg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a78e50aa4a6c967cba195e77fe911a8c3}{defDataU32}(1);
-107     \hyperlink{classA3PE_a1e7e5c89f190672990ae5bece2a8b1aa}{m\_spare3Reg}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(19);
-108 
-109     \hyperlink{classA3PE_a41e317474e0c6e63bad4648903279be9}{m\_storageRam}=\textcolor{keyword}{new} \hyperlink{classRAM}{RAM}();
-110     \hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(\hyperlink{classA3PE_a41e317474e0c6e63bad4648903279be9}{m\_storageRam});
-111     \hyperlink{classA3PE_a41e317474e0c6e63bad4648903279be9}{m\_storageRam}->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\textcolor{stringliteral}{"StorageRam"});
-112     \hyperlink{classA3PE_a41e317474e0c6e63bad4648903279be9}{m\_storageRam}->\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{setSize}(96,512);
-113     \hyperlink{classA3PE_a41e317474e0c6e63bad4648903279be9}{m\_storageRam}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(6);
-114 
-115     \hyperlink{classA3PE_a84d5deabbbf2d513144dd6a00390182e}{m\_patternRam}=\textcolor{keyword}{new} \hyperlink{classRAM}{RAM}();
-116     \hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(\hyperlink{classA3PE_a84d5deabbbf2d513144dd6a00390182e}{m\_patternRam});
-117     \hyperlink{classA3PE_a84d5deabbbf2d513144dd6a00390182e}{m\_patternRam}->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\textcolor{stringliteral}{"PatternRam"});
-118     \hyperlink{classA3PE_a84d5deabbbf2d513144dd6a00390182e}{m\_patternRam}->\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{setSize}(96,512);
-119     \hyperlink{classA3PE_a84d5deabbbf2d513144dd6a00390182e}{m\_patternRam}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(28);
-120 
-121     \hyperlink{classA3PE_a2b40e3937f0aa008ec7073acc5029fcc}{m\_triggerRam}=\textcolor{keyword}{new} \hyperlink{classRAM}{RAM}();
-122     \hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(\hyperlink{classA3PE_a2b40e3937f0aa008ec7073acc5029fcc}{m\_triggerRam});
-123     \hyperlink{classA3PE_a2b40e3937f0aa008ec7073acc5029fcc}{m\_triggerRam}->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\textcolor{stringliteral}{"TriggerRam"});
-124     \hyperlink{classA3PE_a2b40e3937f0aa008ec7073acc5029fcc}{m\_triggerRam}->\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{setSize}(8,512);
-125     \hyperlink{classA3PE_a2b40e3937f0aa008ec7073acc5029fcc}{m\_triggerRam}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(31);
-126 
-127     \hyperlink{classA3PE_aae1b8b2e96bba94535bd4de766bd7e65}{m\_toAXRamPtr}=\textcolor{keyword}{new} \hyperlink{classRegister}{Register}();
-128     \hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(\hyperlink{classA3PE_aae1b8b2e96bba94535bd4de766bd7e65}{m\_toAXRamPtr});
-129     \hyperlink{classA3PE_aae1b8b2e96bba94535bd4de766bd7e65}{m\_toAXRamPtr}->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\textcolor{stringliteral}{"ToAXRamPtr"});
-130     \hyperlink{classA3PE_aae1b8b2e96bba94535bd4de766bd7e65}{m\_toAXRamPtr}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a9e37c736d6dfb5223ed45786fad403da}{defDataU16}(1);
-131     \hyperlink{classA3PE_aae1b8b2e96bba94535bd4de766bd7e65}{m\_toAXRamPtr}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(35);
-132 
-133     \hyperlink{classA3PE_ae586a3d2fd21556e84e1af656e3430b5}{m\_toAXRam}=\textcolor{keyword}{new} \hyperlink{classRAM}{RAM}();
-134     \hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(\hyperlink{classA3PE_ae586a3d2fd21556e84e1af656e3430b5}{m\_toAXRam});
-135     \hyperlink{classA3PE_ae586a3d2fd21556e84e1af656e3430b5}{m\_toAXRam}->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\textcolor{stringliteral}{"ToAXRam"});
-136     \hyperlink{classA3PE_ae586a3d2fd21556e84e1af656e3430b5}{m\_toAXRam}->\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{setSize}(32,512);
-137     \hyperlink{classA3PE_ae586a3d2fd21556e84e1af656e3430b5}{m\_toAXRam}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(29);
-138 
-139     \hyperlink{classA3PE_a27ae9467bc128e46dd80443245df096a}{m\_fromAXRamPtr}=\textcolor{keyword}{new} \hyperlink{classRegister}{Register}();
-140     \hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(\hyperlink{classA3PE_a27ae9467bc128e46dd80443245df096a}{m\_fromAXRamPtr});
-141     \hyperlink{classA3PE_a27ae9467bc128e46dd80443245df096a}{m\_fromAXRamPtr}->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\textcolor{stringliteral}{"FromAXRamPtr"});
-142     \hyperlink{classA3PE_a27ae9467bc128e46dd80443245df096a}{m\_fromAXRamPtr}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a9e37c736d6dfb5223ed45786fad403da}{defDataU16}(1);
-143     \hyperlink{classA3PE_a27ae9467bc128e46dd80443245df096a}{m\_fromAXRamPtr}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(36);
-144 
-145     \hyperlink{classA3PE_a91d3dd3e87e2c948dd67cb82a63d3858}{m\_fromAXRam}=\textcolor{keyword}{new} \hyperlink{classRAM}{RAM}();
-146     \hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(\hyperlink{classA3PE_a91d3dd3e87e2c948dd67cb82a63d3858}{m\_fromAXRam});
-147     \hyperlink{classA3PE_a91d3dd3e87e2c948dd67cb82a63d3858}{m\_fromAXRam}->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\textcolor{stringliteral}{"FromAXRam"});
-148     \hyperlink{classA3PE_a91d3dd3e87e2c948dd67cb82a63d3858}{m\_fromAXRam}->\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{setSize}(32,512);
-149     \hyperlink{classA3PE_a91d3dd3e87e2c948dd67cb82a63d3858}{m\_fromAXRam}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(30);
-150 
-151     \hyperlink{classA3PE_a061472eb539bb6ac99f4fa11a760eeaf}{m\_latencyAX}=\textcolor{keyword}{new} \hyperlink{classRegister}{Register}();
-152     \hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(\hyperlink{classA3PE_a061472eb539bb6ac99f4fa11a760eeaf}{m\_latencyAX});
-153     \hyperlink{classA3PE_a061472eb539bb6ac99f4fa11a760eeaf}{m\_latencyAX}->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\textcolor{stringliteral}{"LatencyAX"});
-154     \hyperlink{classA3PE_a061472eb539bb6ac99f4fa11a760eeaf}{m\_latencyAX}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a78e50aa4a6c967cba195e77fe911a8c3}{defDataU32}(1);
-155     \hyperlink{classA3PE_a061472eb539bb6ac99f4fa11a760eeaf}{m\_latencyAX}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(32);
-156 
-157     \hyperlink{classA3PE_a87c93a38343873f2d52741deca4750ce}{m\_lengthAX}=\textcolor{keyword}{new} \hyperlink{classRegister}{Register}();
-158     \hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(\hyperlink{classA3PE_a87c93a38343873f2d52741deca4750ce}{m\_lengthAX});
-159     \hyperlink{classA3PE_a87c93a38343873f2d52741deca4750ce}{m\_lengthAX}->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\textcolor{stringliteral}{"LengthAX"});
-160     \hyperlink{classA3PE_a87c93a38343873f2d52741deca4750ce}{m\_lengthAX}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a9e37c736d6dfb5223ed45786fad403da}{defDataU16}(1);
-161     \hyperlink{classA3PE_a87c93a38343873f2d52741deca4750ce}{m\_lengthAX}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(34);
-162 
-163     \hyperlink{classA3PE_ad788e41ef5c674ab1a7671f3db0ffef6}{m\_testRam}=\textcolor{keyword}{new} \hyperlink{classRAM}{RAM}();
-164     \hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(\hyperlink{classA3PE_ad788e41ef5c674ab1a7671f3db0ffef6}{m\_testRam});
-165     \hyperlink{classA3PE_ad788e41ef5c674ab1a7671f3db0ffef6}{m\_testRam}->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\textcolor{stringliteral}{"TestRam"});
-166     \hyperlink{classA3PE_ad788e41ef5c674ab1a7671f3db0ffef6}{m\_testRam}->\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{setSize}(32,50);
-167     \hyperlink{classA3PE_ad788e41ef5c674ab1a7671f3db0ffef6}{m\_testRam}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(27);
-168   \}
+79     \textcolor{comment}{//ICECAL Analog Mezzanine Relays:}
+80     \hyperlink{classA3PE_a126a936a5fd4fd4b83485b3637e1fa84}{m\_ctrlAnaMezzReg}=\textcolor{keyword}{new} \hyperlink{classRegister}{Register}();
+81     \hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(\hyperlink{classA3PE_a126a936a5fd4fd4b83485b3637e1fa84}{m\_ctrlAnaMezzReg});
+82     \hyperlink{classA3PE_a126a936a5fd4fd4b83485b3637e1fa84}{m\_ctrlAnaMezzReg}->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\textcolor{stringliteral}{"CtrlAnaMezzReg"});
+83     \hyperlink{classA3PE_a126a936a5fd4fd4b83485b3637e1fa84}{m\_ctrlAnaMezzReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a78e50aa4a6c967cba195e77fe911a8c3}{defDataU32}(1);
+84     \hyperlink{classA3PE_a126a936a5fd4fd4b83485b3637e1fa84}{m\_ctrlAnaMezzReg}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(20);
+85 
+86     \hyperlink{classA3PE_ae1f4c24a99c2e6ae944a080f429cc155}{m\_clockDivisionReg}=\textcolor{keyword}{new} \hyperlink{classRegister}{Register}();
+87     \hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(\hyperlink{classA3PE_ae1f4c24a99c2e6ae944a080f429cc155}{m\_clockDivisionReg});
+88     \hyperlink{classA3PE_ae1f4c24a99c2e6ae944a080f429cc155}{m\_clockDivisionReg}->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\textcolor{stringliteral}{"ClockDivisionReg"});
+89     \hyperlink{classA3PE_ae1f4c24a99c2e6ae944a080f429cc155}{m\_clockDivisionReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a78e50aa4a6c967cba195e77fe911a8c3}{defDataU32}(1);
+90     \hyperlink{classA3PE_ae1f4c24a99c2e6ae944a080f429cc155}{m\_clockDivisionReg}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(23);
+91 
+92     \hyperlink{classA3PE_a750158ae488121ab7969452f061e678c}{m\_triggerReg}=\textcolor{keyword}{new} \hyperlink{classRegister}{Register}();
+93     \hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(\hyperlink{classA3PE_a750158ae488121ab7969452f061e678c}{m\_triggerReg});
+94     \hyperlink{classA3PE_a750158ae488121ab7969452f061e678c}{m\_triggerReg}->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\textcolor{stringliteral}{"TriggerReg"});
+95     \hyperlink{classA3PE_a750158ae488121ab7969452f061e678c}{m\_triggerReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a78e50aa4a6c967cba195e77fe911a8c3}{defDataU32}(1);
+96     \hyperlink{classA3PE_a750158ae488121ab7969452f061e678c}{m\_triggerReg}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(24);
+97 
+98     \hyperlink{classA3PE_abe8eb76e3c0d967403726143deb1b70f}{m\_toAXReg}=\textcolor{keyword}{new} \hyperlink{classRegister}{Register}();
+99     \hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(\hyperlink{classA3PE_abe8eb76e3c0d967403726143deb1b70f}{m\_toAXReg});
+100     \hyperlink{classA3PE_abe8eb76e3c0d967403726143deb1b70f}{m\_toAXReg}->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\textcolor{stringliteral}{"ToAXReg"});
+101     \hyperlink{classA3PE_abe8eb76e3c0d967403726143deb1b70f}{m\_toAXReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a78e50aa4a6c967cba195e77fe911a8c3}{defDataU32}(1);
+102     \hyperlink{classA3PE_abe8eb76e3c0d967403726143deb1b70f}{m\_toAXReg}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(26);
+103 
+104     \hyperlink{classA3PE_acbfe708ac0a81243959c96124f192b9e}{m\_fromAXReg}=\textcolor{keyword}{new} \hyperlink{classRegister}{Register}();
+105     \hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(\hyperlink{classA3PE_acbfe708ac0a81243959c96124f192b9e}{m\_fromAXReg});
+106     \hyperlink{classA3PE_acbfe708ac0a81243959c96124f192b9e}{m\_fromAXReg}->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\textcolor{stringliteral}{"FromAXReg"});
+107     \hyperlink{classA3PE_acbfe708ac0a81243959c96124f192b9e}{m\_fromAXReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a78e50aa4a6c967cba195e77fe911a8c3}{defDataU32}(1);
+108     \hyperlink{classA3PE_acbfe708ac0a81243959c96124f192b9e}{m\_fromAXReg}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(27);
+109 
+110     \hyperlink{classA3PE_a1e7e5c89f190672990ae5bece2a8b1aa}{m\_spare3Reg}=\textcolor{keyword}{new} \hyperlink{classRegister}{Register}();
+111     \hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(\hyperlink{classA3PE_a1e7e5c89f190672990ae5bece2a8b1aa}{m\_spare3Reg});
+112     \hyperlink{classA3PE_a1e7e5c89f190672990ae5bece2a8b1aa}{m\_spare3Reg}->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\textcolor{stringliteral}{"Spare3Reg"});
+113     \hyperlink{classA3PE_a1e7e5c89f190672990ae5bece2a8b1aa}{m\_spare3Reg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a78e50aa4a6c967cba195e77fe911a8c3}{defDataU32}(1);
+114     \hyperlink{classA3PE_a1e7e5c89f190672990ae5bece2a8b1aa}{m\_spare3Reg}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(19);
+115 
+116     \hyperlink{classA3PE_a41e317474e0c6e63bad4648903279be9}{m\_storageRam}=\textcolor{keyword}{new} \hyperlink{classRAM}{RAM}();
+117     \hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(\hyperlink{classA3PE_a41e317474e0c6e63bad4648903279be9}{m\_storageRam});
+118     \hyperlink{classA3PE_a41e317474e0c6e63bad4648903279be9}{m\_storageRam}->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\textcolor{stringliteral}{"StorageRam"});
+119     \hyperlink{classA3PE_a41e317474e0c6e63bad4648903279be9}{m\_storageRam}->\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{setSize}(96,512);
+120     \hyperlink{classA3PE_a41e317474e0c6e63bad4648903279be9}{m\_storageRam}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(6);
+121 
+122     \hyperlink{classA3PE_a84d5deabbbf2d513144dd6a00390182e}{m\_patternRam}=\textcolor{keyword}{new} \hyperlink{classRAM}{RAM}();
+123     \hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(\hyperlink{classA3PE_a84d5deabbbf2d513144dd6a00390182e}{m\_patternRam});
+124     \hyperlink{classA3PE_a84d5deabbbf2d513144dd6a00390182e}{m\_patternRam}->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\textcolor{stringliteral}{"PatternRam"});
+125     \hyperlink{classA3PE_a84d5deabbbf2d513144dd6a00390182e}{m\_patternRam}->\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{setSize}(96,512);
+126     \hyperlink{classA3PE_a84d5deabbbf2d513144dd6a00390182e}{m\_patternRam}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(28);
+127 
+128     \hyperlink{classA3PE_a2b40e3937f0aa008ec7073acc5029fcc}{m\_triggerRam}=\textcolor{keyword}{new} \hyperlink{classRAM}{RAM}();
+129     \hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(\hyperlink{classA3PE_a2b40e3937f0aa008ec7073acc5029fcc}{m\_triggerRam});
+130     \hyperlink{classA3PE_a2b40e3937f0aa008ec7073acc5029fcc}{m\_triggerRam}->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\textcolor{stringliteral}{"TriggerRam"});
+131     \hyperlink{classA3PE_a2b40e3937f0aa008ec7073acc5029fcc}{m\_triggerRam}->\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{setSize}(8,512);
+132     \hyperlink{classA3PE_a2b40e3937f0aa008ec7073acc5029fcc}{m\_triggerRam}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(31);
+133 
+134     \hyperlink{classA3PE_aae1b8b2e96bba94535bd4de766bd7e65}{m\_toAXRamPtr}=\textcolor{keyword}{new} \hyperlink{classRegister}{Register}();
+135     \hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(\hyperlink{classA3PE_aae1b8b2e96bba94535bd4de766bd7e65}{m\_toAXRamPtr});
+136     \hyperlink{classA3PE_aae1b8b2e96bba94535bd4de766bd7e65}{m\_toAXRamPtr}->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\textcolor{stringliteral}{"ToAXRamPtr"});
+137     \hyperlink{classA3PE_aae1b8b2e96bba94535bd4de766bd7e65}{m\_toAXRamPtr}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a9e37c736d6dfb5223ed45786fad403da}{defDataU16}(1);
+138     \hyperlink{classA3PE_aae1b8b2e96bba94535bd4de766bd7e65}{m\_toAXRamPtr}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(35);
+139 
+140     \hyperlink{classA3PE_ae586a3d2fd21556e84e1af656e3430b5}{m\_toAXRam}=\textcolor{keyword}{new} \hyperlink{classRAM}{RAM}();
+141     \hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(\hyperlink{classA3PE_ae586a3d2fd21556e84e1af656e3430b5}{m\_toAXRam});
+142     \hyperlink{classA3PE_ae586a3d2fd21556e84e1af656e3430b5}{m\_toAXRam}->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\textcolor{stringliteral}{"ToAXRam"});
+143     \hyperlink{classA3PE_ae586a3d2fd21556e84e1af656e3430b5}{m\_toAXRam}->\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{setSize}(32,512);
+144     \hyperlink{classA3PE_ae586a3d2fd21556e84e1af656e3430b5}{m\_toAXRam}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(29);
+145 
+146     \hyperlink{classA3PE_a27ae9467bc128e46dd80443245df096a}{m\_fromAXRamPtr}=\textcolor{keyword}{new} \hyperlink{classRegister}{Register}();
+147     \hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(\hyperlink{classA3PE_a27ae9467bc128e46dd80443245df096a}{m\_fromAXRamPtr});
+148     \hyperlink{classA3PE_a27ae9467bc128e46dd80443245df096a}{m\_fromAXRamPtr}->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\textcolor{stringliteral}{"FromAXRamPtr"});
+149     \hyperlink{classA3PE_a27ae9467bc128e46dd80443245df096a}{m\_fromAXRamPtr}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a9e37c736d6dfb5223ed45786fad403da}{defDataU16}(1);
+150     \hyperlink{classA3PE_a27ae9467bc128e46dd80443245df096a}{m\_fromAXRamPtr}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(36);
+151 
+152     \hyperlink{classA3PE_a91d3dd3e87e2c948dd67cb82a63d3858}{m\_fromAXRam}=\textcolor{keyword}{new} \hyperlink{classRAM}{RAM}();
+153     \hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(\hyperlink{classA3PE_a91d3dd3e87e2c948dd67cb82a63d3858}{m\_fromAXRam});
+154     \hyperlink{classA3PE_a91d3dd3e87e2c948dd67cb82a63d3858}{m\_fromAXRam}->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\textcolor{stringliteral}{"FromAXRam"});
+155     \hyperlink{classA3PE_a91d3dd3e87e2c948dd67cb82a63d3858}{m\_fromAXRam}->\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{setSize}(32,512);
+156     \hyperlink{classA3PE_a91d3dd3e87e2c948dd67cb82a63d3858}{m\_fromAXRam}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(30);
+157 
+158     \hyperlink{classA3PE_a061472eb539bb6ac99f4fa11a760eeaf}{m\_latencyAX}=\textcolor{keyword}{new} \hyperlink{classRegister}{Register}();
+159     \hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(\hyperlink{classA3PE_a061472eb539bb6ac99f4fa11a760eeaf}{m\_latencyAX});
+160     \hyperlink{classA3PE_a061472eb539bb6ac99f4fa11a760eeaf}{m\_latencyAX}->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\textcolor{stringliteral}{"LatencyAX"});
+161     \hyperlink{classA3PE_a061472eb539bb6ac99f4fa11a760eeaf}{m\_latencyAX}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a78e50aa4a6c967cba195e77fe911a8c3}{defDataU32}(1);
+162     \hyperlink{classA3PE_a061472eb539bb6ac99f4fa11a760eeaf}{m\_latencyAX}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(32);
+163 
+164     \hyperlink{classA3PE_a87c93a38343873f2d52741deca4750ce}{m\_lengthAX}=\textcolor{keyword}{new} \hyperlink{classRegister}{Register}();
+165     \hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(\hyperlink{classA3PE_a87c93a38343873f2d52741deca4750ce}{m\_lengthAX});
+166     \hyperlink{classA3PE_a87c93a38343873f2d52741deca4750ce}{m\_lengthAX}->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\textcolor{stringliteral}{"LengthAX"});
+167     \hyperlink{classA3PE_a87c93a38343873f2d52741deca4750ce}{m\_lengthAX}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a9e37c736d6dfb5223ed45786fad403da}{defDataU16}(1);
+168     \hyperlink{classA3PE_a87c93a38343873f2d52741deca4750ce}{m\_lengthAX}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(34);
+169 
+170     \hyperlink{classA3PE_ad788e41ef5c674ab1a7671f3db0ffef6}{m\_testRam}=\textcolor{keyword}{new} \hyperlink{classRAM}{RAM}();
+171     \hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(\hyperlink{classA3PE_ad788e41ef5c674ab1a7671f3db0ffef6}{m\_testRam});
+172     \hyperlink{classA3PE_ad788e41ef5c674ab1a7671f3db0ffef6}{m\_testRam}->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\textcolor{stringliteral}{"TestRam"});
+173     \hyperlink{classA3PE_ad788e41ef5c674ab1a7671f3db0ffef6}{m\_testRam}->\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{setSize}(32,50);
+174     \hyperlink{classA3PE_ad788e41ef5c674ab1a7671f3db0ffef6}{m\_testRam}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(27);
+175   \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classA3PE_aab155e065b455ff439daf47a976399c3}\label{classA3PE_aab155e065b455ff439daf47a976399c3}} 
 \index{A3\+PE@{A3\+PE}!````~A3\+PE@{$\sim$\+A3\+PE}}
@@ -657,37 +668,37 @@ References Attrib\+::add(), Hierarchy\+::add\+Child(), Object\+::debug(), I\+Oda
 
 
 
-Definition at line 170 of file A3\+P\+E.\+h.
+Definition at line 177 of file A3\+P\+E.\+h.
 
 
 \begin{DoxyCode}
-170          \{
-171     \textcolor{comment}{/*}
-172 \textcolor{comment}{    delete m\_globalUsbReset;}
-173 \textcolor{comment}{    delete m\_ctrlReg;}
-174 \textcolor{comment}{    delete m\_resetReg;}
-175 \textcolor{comment}{    delete m\_setupReg;}
-176 \textcolor{comment}{    delete m\_statusReg;}
-177 \textcolor{comment}{    delete m\_acqReg;}
-178 \textcolor{comment}{    delete m\_latencyReg;}
-179 \textcolor{comment}{    delete m\_writeLengthFifoReg;}
-180 \textcolor{comment}{    delete m\_clockDivisionReg;}
-181 \textcolor{comment}{    delete m\_triggerReg;}
-182 \textcolor{comment}{    delete m\_toAXReg;}
-183 \textcolor{comment}{    delete m\_fromAXReg;}
-184 \textcolor{comment}{    delete m\_spare3Reg;}
-185 \textcolor{comment}{    delete m\_storageRam;}
-186 \textcolor{comment}{    delete m\_patternRam;}
-187 \textcolor{comment}{    delete m\_triggerRam;}
-188 \textcolor{comment}{    delete m\_toAXRam;}
-189 \textcolor{comment}{    delete m\_fromAXRam;}
-190 \textcolor{comment}{    delete m\_toAXRamPtr;}
-191 \textcolor{comment}{    delete m\_fromAXRamPtr;}
-192 \textcolor{comment}{    delete m\_lengthAX;}
-193 \textcolor{comment}{    delete m\_latencyAX;}
-194 \textcolor{comment}{    delete m\_testRam;}
-195 \textcolor{comment}{    */}
-196   \}
+177          \{
+178     \textcolor{comment}{/*}
+179 \textcolor{comment}{    delete m\_globalUsbReset;}
+180 \textcolor{comment}{    delete m\_ctrlReg;}
+181 \textcolor{comment}{    delete m\_resetReg;}
+182 \textcolor{comment}{    delete m\_setupReg;}
+183 \textcolor{comment}{    delete m\_statusReg;}
+184 \textcolor{comment}{    delete m\_acqReg;}
+185 \textcolor{comment}{    delete m\_latencyReg;}
+186 \textcolor{comment}{    delete m\_writeLengthFifoReg;}
+187 \textcolor{comment}{    delete m\_clockDivisionReg;}
+188 \textcolor{comment}{    delete m\_triggerReg;}
+189 \textcolor{comment}{    delete m\_toAXReg;}
+190 \textcolor{comment}{    delete m\_fromAXReg;}
+191 \textcolor{comment}{    delete m\_spare3Reg;}
+192 \textcolor{comment}{    delete m\_storageRam;}
+193 \textcolor{comment}{    delete m\_patternRam;}
+194 \textcolor{comment}{    delete m\_triggerRam;}
+195 \textcolor{comment}{    delete m\_toAXRam;}
+196 \textcolor{comment}{    delete m\_fromAXRam;}
+197 \textcolor{comment}{    delete m\_toAXRamPtr;}
+198 \textcolor{comment}{    delete m\_fromAXRamPtr;}
+199 \textcolor{comment}{    delete m\_lengthAX;}
+200 \textcolor{comment}{    delete m\_latencyAX;}
+201 \textcolor{comment}{    delete m\_testRam;}
+202 \textcolor{comment}{    */}
+203   \}
 \end{DoxyCode}
 
 
@@ -700,7 +711,7 @@ Definition at line 170 of file A3\+P\+E.\+h.
 
 
 
-Definition at line 493 of file A3\+P\+E.\+h.
+Definition at line 500 of file A3\+P\+E.\+h.
 
 
 
@@ -712,9 +723,9 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
 
 
 \begin{DoxyCode}
-493                     \{
-494     \textcolor{keywordflow}{return} \hyperlink{classA3PE_abaf426f4c9192537117b77f9f4821e04}{m\_acqReg};
-495   \}
+500                     \{
+501     \textcolor{keywordflow}{return} \hyperlink{classA3PE_abaf426f4c9192537117b77f9f4821e04}{m\_acqReg};
+502   \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classA3PE_a035886b99761cc4f3c342ff0b4e44f59}\label{classA3PE_a035886b99761cc4f3c342ff0b4e44f59}} 
 \index{A3\+PE@{A3\+PE}!acquisition@{acquisition}}
@@ -1155,7 +1166,7 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), a
 
 
 
-Definition at line 505 of file A3\+P\+E.\+h.
+Definition at line 516 of file A3\+P\+E.\+h.
 
 
 
@@ -1167,9 +1178,9 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
 
 
 \begin{DoxyCode}
-505                               \{
-506     \textcolor{keywordflow}{return} \hyperlink{classA3PE_ae1f4c24a99c2e6ae944a080f429cc155}{m\_clockDivisionReg};
-507   \}
+516                               \{
+517     \textcolor{keywordflow}{return} \hyperlink{classA3PE_ae1f4c24a99c2e6ae944a080f429cc155}{m\_clockDivisionReg};
+518   \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classElement_af57444353c1ddf9fa0109801e97debf7}\label{classElement_af57444353c1ddf9fa0109801e97debf7}} 
 \index{A3\+PE@{A3\+PE}!connection@{connection}}
@@ -1199,6 +1210,30 @@ Referenced by Usb\+Spi\+Bus\+::clock\+Divider(), export\+\_\+obj(), Usb\+I2c\+Bu
 89   \textcolor{keywordflow}{return} \hyperlink{classElement_abe3de7a5dbbc9a6dd2d7e012e5fdb266}{m\_connection};
 90 \}
 \end{DoxyCode}
+\mbox{\Hypertarget{classA3PE_aa94c6120a73194d69dc5761cf90a4800}\label{classA3PE_aa94c6120a73194d69dc5761cf90a4800}} 
+\index{A3\+PE@{A3\+PE}!ctrl\+Ana\+Mezz\+Reg@{ctrl\+Ana\+Mezz\+Reg}}
+\index{ctrl\+Ana\+Mezz\+Reg@{ctrl\+Ana\+Mezz\+Reg}!A3\+PE@{A3\+PE}}
+\subsubsection{\texorpdfstring{ctrl\+Ana\+Mezz\+Reg()}{ctrlAnaMezzReg()}}
+{\footnotesize\ttfamily \hyperlink{classRegister}{Register}$\ast$ A3\+P\+E\+::ctrl\+Ana\+Mezz\+Reg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 512 of file A3\+P\+E.\+h.
+
+
+
+References m\+\_\+ctrl\+Ana\+Mezz\+Reg.
+
+
+
+Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
+
+
+\begin{DoxyCode}
+512                             \{
+513     \textcolor{keywordflow}{return} \hyperlink{classA3PE_a126a936a5fd4fd4b83485b3637e1fa84}{m\_ctrlAnaMezzReg};
+514   \}
+\end{DoxyCode}
 \mbox{\Hypertarget{classA3PE_ae5fc5dac92af2b34a41be388586647be}\label{classA3PE_ae5fc5dac92af2b34a41be388586647be}} 
 \index{A3\+PE@{A3\+PE}!ctrl\+Reg@{ctrl\+Reg}}
 \index{ctrl\+Reg@{ctrl\+Reg}!A3\+PE@{A3\+PE}}
@@ -1207,7 +1242,7 @@ Referenced by Usb\+Spi\+Bus\+::clock\+Divider(), export\+\_\+obj(), Usb\+I2c\+Bu
 
 
 
-Definition at line 477 of file A3\+P\+E.\+h.
+Definition at line 484 of file A3\+P\+E.\+h.
 
 
 
@@ -1219,9 +1254,9 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
 
 
 \begin{DoxyCode}
-477                      \{
-478     \textcolor{keywordflow}{return} \hyperlink{classA3PE_a264834484dd6326ebad58c2a3e1be9a6}{m\_ctrlReg};
-479   \}
+484                      \{
+485     \textcolor{keywordflow}{return} \hyperlink{classA3PE_a264834484dd6326ebad58c2a3e1be9a6}{m\_ctrlReg};
+486   \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classA3PE_a55df064c578bbc1e80a3b5fc05933f27}\label{classA3PE_a55df064c578bbc1e80a3b5fc05933f27}} 
 \index{A3\+PE@{A3\+PE}!data\+Ready@{data\+Ready}}
@@ -1270,7 +1305,7 @@ References Msg\+Svc\+::\+D\+E\+B\+UG, Object\+::m\+\_\+log, Object\+::m\+\_\+nam
 
 
 
-Referenced by A3\+P\+E(), acquisition(), Specs\+Mezzanine\+::add\+Bus(), Hierarchy\+::add\+Child(), Specs\+Slave\+::add\+I2c(), L\+S\+Delay\+Chip\+V1\+::config\+Reg\+Bulk\+Read(), L\+S\+Delay\+Chip\+V1\+::config\+Reg\+Bulk\+Write(), data\+Ready(), D\+C\+U\+::\+D\+C\+U(), Hierarchy\+::del\+Child(), Specs\+Slave\+::detect(), Storage\+Fifo\+Acquisition\+::execute(), Storage\+Fifo\+::execute(), A3\+P\+E\+\_\+\+Bit\+Flip\+::execute(), Acquisition\+::execute(), Emulate\+F\+E\+::execute(), export\+\_\+obj(), Fe\+P\+G\+A\+::\+Fe\+P\+G\+A(), Specs\+Glue\+::i2c\+Clk\+Mode(), Fe\+P\+G\+A\+::i2c\+Read(), Seq\+P\+G\+A\+::i2c\+Read(), Fe\+P\+G\+A\+::i2c\+Write(), Seq\+P\+G\+A\+::i2c\+Write(), I\+C\+E\+C\+A\+Lv3\+::\+I\+C\+E\+C\+A\+Lv3(), I\+C\+Phaser\+::\+I\+C\+Phaser(), Specs\+Slave\+::init(), Specs\+Master\+::init(), Storage\+Fifo\+Acquisition\+::initialize(), Storage\+Fifo\+::initialize(), A3\+P\+E\+\_\+\+Bit\+Flip\+::initialize(), Acquisition\+::initialize(), Emulate\+F\+E\+::initialize(), internal\+A\+X\+Sequence(), Specs\+Glue\+::led(), Specs\+Mezzanine\+::led(), M\+S\+Oxxxx\+::\+M\+S\+Oxxxx(), Phaser\+::\+Phaser(), Data\+::purge(), Phaser\+::read(), I\+C\+Phaser\+::read(), C\+U\+\_\+v1\+::reset(), F\+E\+B\+\_\+v1\+::reset(), Proto40\+M\+Hz\+\_\+v1\+::reset(), Specs\+Master\+::reset(), Specs\+Slave\+::reset(), F\+E\+B\+\_\+v1\+::reset\+Usb(), Seq\+P\+G\+A\+::\+Seq\+P\+G\+A(), set\+Add\+From\+A\+X\+Ram(), set\+Add\+To\+A\+X\+Ram(), set\+A\+X\+Ram\+Usb(), Element\+::set\+Connection(), Specs\+Glue\+::set\+I2c\+Clk\+Mode(), set\+Latency\+A\+X(), Specs\+Glue\+::set\+Led(), Specs\+Mezzanine\+::set\+Led(), set\+Length\+A\+X(), set\+Read\+To\+A\+X\+Ram\+Usb(), Specs\+Master\+::set\+Speed(), set\+Write\+From\+A\+X\+Ram\+Usb(), Specs\+Bus\+::\+Specs\+Bus(), Specs\+I2c\+::\+Specs\+I2c(), Specs\+Master\+::\+Specs\+Master(), Specs\+Mezzanine\+::\+Specs\+Mezzanine(), Specs\+Parallel\+Bus\+::\+Specs\+Parallel\+Bus(), Specs\+Slave\+::\+Specs\+Slave(), L\+S\+Delay\+Chip\+V1\+::spi\+B\+E\+R\+Test(), I\+C\+E\+C\+A\+Lv3\+::spi\+Read(), I\+C\+E\+C\+A\+Lv3\+::spi\+Write(), trigger(), Server\+::update\+Config(), Server\+::update\+State(), Phaser\+::write(), I\+C\+Phaser\+::write(), and Hierarchy\+::$\sim$\+Hierarchy().
+Referenced by A3\+P\+E(), acquisition(), Specs\+Mezzanine\+::add\+Bus(), Hierarchy\+::add\+Child(), Specs\+Slave\+::add\+I2c(), L\+S\+Delay\+Chip\+V1\+::config\+Reg\+Bulk\+Read(), L\+S\+Delay\+Chip\+V1\+::config\+Reg\+Bulk\+Write(), data\+Ready(), D\+C\+U\+::\+D\+C\+U(), Hierarchy\+::del\+Child(), Specs\+Slave\+::detect(), Storage\+Fifo\+Acquisition\+::execute(), Storage\+Fifo\+::execute(), A3\+P\+E\+\_\+\+Bit\+Flip\+::execute(), Acquisition\+::execute(), Emulate\+F\+E\+::execute(), export\+\_\+obj(), Fe\+P\+G\+A\+::\+Fe\+P\+G\+A(), Specs\+Glue\+::i2c\+Clk\+Mode(), Fe\+P\+G\+A\+::i2c\+Read(), Seq\+P\+G\+A\+::i2c\+Read(), Fe\+P\+G\+A\+::i2c\+Write(), Seq\+P\+G\+A\+::i2c\+Write(), I\+C\+E\+C\+A\+Lv3\+::\+I\+C\+E\+C\+A\+Lv3(), I\+C\+Phaser\+::\+I\+C\+Phaser(), Specs\+Slave\+::init(), Specs\+Master\+::init(), Storage\+Fifo\+::initialize(), Storage\+Fifo\+Acquisition\+::initialize(), A3\+P\+E\+\_\+\+Bit\+Flip\+::initialize(), Acquisition\+::initialize(), Emulate\+F\+E\+::initialize(), internal\+A\+X\+Sequence(), Specs\+Glue\+::led(), Specs\+Mezzanine\+::led(), M\+S\+Oxxxx\+::\+M\+S\+Oxxxx(), Phaser\+::\+Phaser(), Data\+::purge(), Phaser\+::read(), I\+C\+Phaser\+::read(), F\+E\+B\+\_\+v1\+::read\+Fifo\+Spy\+F\+E(), C\+U\+\_\+v1\+::reset(), F\+E\+B\+\_\+v1\+::reset(), Proto40\+M\+Hz\+\_\+v1\+::reset(), Specs\+Master\+::reset(), Specs\+Slave\+::reset(), F\+E\+B\+\_\+v1\+::reset\+Fifo\+Spy\+F\+E(), F\+E\+B\+\_\+v1\+::reset\+Usb(), Seq\+P\+G\+A\+::\+Seq\+P\+G\+A(), set\+Add\+From\+A\+X\+Ram(), set\+Add\+To\+A\+X\+Ram(), set\+A\+X\+Ram\+Usb(), Element\+::set\+Connection(), Specs\+Glue\+::set\+I2c\+Clk\+Mode(), set\+Latency\+A\+X(), Specs\+Glue\+::set\+Led(), Specs\+Mezzanine\+::set\+Led(), set\+Length\+A\+X(), set\+Read\+To\+A\+X\+Ram\+Usb(), Specs\+Master\+::set\+Speed(), set\+Write\+From\+A\+X\+Ram\+Usb(), Specs\+Bus\+::\+Specs\+Bus(), Specs\+I2c\+::\+Specs\+I2c(), Specs\+Master\+::\+Specs\+Master(), Specs\+Mezzanine\+::\+Specs\+Mezzanine(), Specs\+Parallel\+Bus\+::\+Specs\+Parallel\+Bus(), Specs\+Slave\+::\+Specs\+Slave(), L\+S\+Delay\+Chip\+V1\+::spi\+B\+E\+R\+Test(), I\+C\+E\+C\+A\+Lv3\+::spi\+Read(), I\+C\+E\+C\+A\+Lv3\+::spi\+Write(), F\+E\+B\+\_\+v1\+::test\+Duration(), Seq\+P\+G\+A\+::test\+Sequence(), trigger(), Server\+::update\+Config(), Server\+::update\+State(), Phaser\+::write(), I\+C\+Phaser\+::write(), and Hierarchy\+::$\sim$\+Hierarchy().
 
 
 \begin{DoxyCode}
@@ -1810,7 +1845,7 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), a
 
 
 
-Definition at line 541 of file A3\+P\+E.\+h.
+Definition at line 552 of file A3\+P\+E.\+h.
 
 
 
@@ -1822,9 +1857,9 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), d
 
 
 \begin{DoxyCode}
-541                   \{
-542     \textcolor{keywordflow}{return} \hyperlink{classA3PE_a91d3dd3e87e2c948dd67cb82a63d3858}{m\_fromAXRam};
-543   \}
+552                   \{
+553     \textcolor{keywordflow}{return} \hyperlink{classA3PE_a91d3dd3e87e2c948dd67cb82a63d3858}{m\_fromAXRam};
+554   \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classA3PE_aad21357e25e3d4e2bed779040de52e13}\label{classA3PE_aad21357e25e3d4e2bed779040de52e13}} 
 \index{A3\+PE@{A3\+PE}!from\+A\+X\+Ram\+Ptr\+Reg@{from\+A\+X\+Ram\+Ptr\+Reg}}
@@ -1834,7 +1869,7 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), d
 
 
 
-Definition at line 549 of file A3\+P\+E.\+h.
+Definition at line 560 of file A3\+P\+E.\+h.
 
 
 
@@ -1842,9 +1877,9 @@ References m\+\_\+from\+A\+X\+Ram\+Ptr.
 
 
 \begin{DoxyCode}
-549                              \{
-550     \textcolor{keywordflow}{return} \hyperlink{classA3PE_a27ae9467bc128e46dd80443245df096a}{m\_fromAXRamPtr};
-551   \}
+560                              \{
+561     \textcolor{keywordflow}{return} \hyperlink{classA3PE_a27ae9467bc128e46dd80443245df096a}{m\_fromAXRamPtr};
+562   \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classA3PE_a0b2fabe7e7941f33de210d9385b7afce}\label{classA3PE_a0b2fabe7e7941f33de210d9385b7afce}} 
 \index{A3\+PE@{A3\+PE}!from\+A\+X\+Reg@{from\+A\+X\+Reg}}
@@ -1854,7 +1889,7 @@ References m\+\_\+from\+A\+X\+Ram\+Ptr.
 
 
 
-Definition at line 517 of file A3\+P\+E.\+h.
+Definition at line 528 of file A3\+P\+E.\+h.
 
 
 
@@ -1866,9 +1901,9 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
 
 
 \begin{DoxyCode}
-517                        \{
-518     \textcolor{keywordflow}{return} \hyperlink{classA3PE_acbfe708ac0a81243959c96124f192b9e}{m\_fromAXReg};
-519   \}
+528                        \{
+529     \textcolor{keywordflow}{return} \hyperlink{classA3PE_acbfe708ac0a81243959c96124f192b9e}{m\_fromAXReg};
+530   \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classHierarchy_a255174fe4d316d2a3f430dcb9dab29f1}\label{classHierarchy_a255174fe4d316d2a3f430dcb9dab29f1}} 
 \index{A3\+PE@{A3\+PE}!has\+Children@{has\+Children}}
@@ -1906,7 +1941,7 @@ Implements \hyperlink{classElement_a32c0de27acb08e17251cef88c3e9303a}{Element}.
 
 
 
-Definition at line 201 of file A3\+P\+E.\+h.
+Definition at line 208 of file A3\+P\+E.\+h.
 
 
 
@@ -1914,7 +1949,7 @@ References Object\+::info(), and Object\+::name().
 
 
 \begin{DoxyCode}
-201 \{ \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"A3PE "}+\hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name}()+\textcolor{stringliteral}{". No help."},\textcolor{stringliteral}{"A3PE::help"}); \};
+208 \{ \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"A3PE "}+\hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name}()+\textcolor{stringliteral}{". No help."},\textcolor{stringliteral}{"A3PE::help"}); \};
 \end{DoxyCode}
 \mbox{\Hypertarget{classObject_af99145335cc61ff6e2798ea17db009d2}\label{classObject_af99145335cc61ff6e2798ea17db009d2}} 
 \index{A3\+PE@{A3\+PE}!id@{id}}
@@ -1954,7 +1989,7 @@ References Msg\+Svc\+::\+I\+N\+FO, Object\+::m\+\_\+log, Object\+::m\+\_\+name, 
 
 
 
-Referenced by N\+I6008\+::add\+Device(), F\+E\+B\+\_\+v1\+::calib\+Cte(), check\+Cmd(), Hierarchy\+::clear(), F\+E\+B\+\_\+v1\+::clock80\+M\+Hz\+Falling\+Edge(), F\+E\+B\+\_\+v1\+::clock\+Falling\+Edge(), Usb\+F\+T\+Interface\+::close(), Usb\+F\+T\+M\+L\+Interface\+::close(), Processus\+::close\+Root\+File(), Server\+::cmdline(), Specs\+Mezzanine\+::cmdline(), Specs\+Slave\+::detect(), F\+E\+B\+\_\+v1\+::disable\+Subtract(), I\+Odata\+::dump(), dump\+From\+A\+X(), dump\+Pattern(), dump\+Storage(), dump\+To\+A\+X(), dump\+Trigger(), Processus\+::end\+Processing(), Phaser\+Ramp\+Exec\+::execute(), export\+\_\+obj(), Phaser\+Ramp\+Exec\+::finalize(), F\+E\+B\+\_\+v1\+::gain4(), F\+E\+B\+\_\+v1\+::gbt80\+M\+Hz\+Clk\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+Data\+Path(), F\+E\+B\+\_\+v1\+::gbt\+D\+L\+L\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+D\+L\+L\+Reset(), F\+E\+B\+\_\+v1\+::gbt\+Enable\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+Mode(), F\+E\+B\+\_\+v1\+::gbt\+Status(), F\+E\+B\+\_\+v1\+::gbt\+Term\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+Track\+Mode(), I\+C\+E\+C\+A\+Lv3\+::get\+Analog\+Ch(), I\+C\+E\+C\+A\+Lv3\+::get\+Delay\+Line\+Ch(), I\+C\+E\+C\+A\+Lv3\+::get\+Main\+Reg(), F\+E\+B\+\_\+v1\+::global\+Pseudo\+P\+M\+Enable(), Croc\+::help(), R\+A\+M\+::help(), Specs\+Glue\+::help(), Usb\+M\+L\+I2c\+Bus\+::help(), Usb\+M\+L\+Spi\+Bus\+::help(), C\+U\+\_\+v1\+::help(), Usb\+I2c\+Bus\+::help(), Usb\+Spi\+Bus\+::help(), F\+E\+B\+\_\+v1\+::help(), I\+Oobject\+::help(), Proto40\+M\+Hz\+\_\+v1\+::help(), Specs\+Mezzanine\+::help(), Fe\+P\+G\+A\+::help(), Seq\+P\+G\+A\+::help(), Computer\+::help(), N\+I6008\+::help(), Specs\+Parallel\+Bus\+::help(), Specs\+Master\+::help(), Usb\+F\+T\+M\+L\+Interface\+::help(), Usb\+F\+T\+Interface\+::help(), Phaser\+::help(), I\+C\+Phaser\+::help(), help(), M\+S\+Oxxxx\+::id(), Croc\+::init(), Computer\+::init(), N\+I6008\+::init(), Specs\+Parallel\+Bus\+::init(), Specs\+Slave\+::init(), Specs\+Master\+::init(), Usb\+F\+T\+Interface\+::init(), Usb\+F\+T\+M\+L\+Interface\+::init(), Storage\+Fifo\+Acquisition\+::initialize(), Storage\+Fifo\+::initialize(), A3\+P\+E\+\_\+\+Bit\+Flip\+::initialize(), Acquisition\+::initialize(), Emulate\+F\+E\+::initialize(), Current\+Measurement\+::initialize(), A\+D\+C\+Measurement\+::initialize(), Phaser\+Ramp\+Exec\+::initialize(), F\+E\+B\+\_\+v1\+::inject\+Mode\+F\+E(), is\+Int(), F\+E\+B\+\_\+v1\+::latency(), F\+E\+B\+\_\+v1\+::latency\+L\+L\+T(), load\+From\+A\+X(), Application\+::load\+History\+File(), load\+Pattern(), load\+Storage(), load\+To\+A\+X(), load\+Trigger(), Application\+::loop(), F\+E\+B\+\_\+v1\+::mask\+L\+L\+T(), Application\+::network(), F\+E\+B\+\_\+v1\+::old\+Subtract(), M\+S\+Oxxxx\+::open(), Processus\+::open\+Root\+File(), Data\+::print(), F\+E\+B\+\_\+v1\+::probe\+Enable(), Proc\+Data\+Base\+::\+Proc\+Data\+Base(), F\+E\+B\+\_\+v1\+::pseudo\+A\+D\+C\+Enable(), F\+E\+B\+\_\+v1\+::pseudo\+P\+M\+Enable(), Usb\+Spi\+Bus\+::read(), Usb\+F\+T\+M\+L\+Interface\+::read(), F\+E\+B\+\_\+v1\+::read\+Fifo\+Inject\+F\+E(), F\+E\+B\+\_\+v1\+::read\+Fifo\+L\+L\+T(), F\+E\+B\+\_\+v1\+::read\+Fifo\+L\+L\+T\+F\+E(), F\+E\+B\+\_\+v1\+::read\+Fifo\+Spy\+F\+E(), M\+S\+Oxxxx\+::recv(), Croc\+::reset(), Usb\+I2c\+Bus\+::reset(), Usb\+M\+L\+I2c\+Bus\+::reset(), Usb\+M\+L\+Spi\+Bus\+::reset(), Usb\+Spi\+Bus\+::reset(), Fe\+P\+G\+A\+::reset(), Seq\+P\+G\+A\+::reset(), Computer\+::reset(), Specs\+Parallel\+Bus\+::reset(), Specs\+Master\+::reset(), N\+I6008\+::reset(), Usb\+F\+T\+M\+L\+Interface\+::reset(), Usb\+F\+T\+Interface\+::reset(), reset(), reset\+Acquisition\+Write\+Counter(), F\+E\+B\+\_\+v1\+::reset\+F\+E(), reset\+F\+E(), F\+E\+B\+\_\+v1\+::reset\+Fifo\+Inject\+F\+E(), F\+E\+B\+\_\+v1\+::reset\+Fifo\+Spy\+F\+E(), reset\+From\+A\+X\+Ram(), Specs\+Slave\+::reset\+Internal(), reset\+Latency\+Counter(), reset\+Pattern\+Fifo(), reset\+Sequence\+From\+To\+A\+X(), reset\+S\+P\+I(), reset\+Storage\+Fifo(), reset\+To\+A\+X\+Ram(), reset\+Trigger\+Fifo(), Seq\+P\+G\+A\+::reset\+Usb(), Fe\+P\+G\+A\+::reset\+Usb(), reset\+Usb\+Phasers(), M\+S\+Oxxxx\+::send(), Server\+::\+Server(), Application\+::server(), F\+E\+B\+\_\+v1\+::set\+Calib\+Cte(), F\+E\+B\+\_\+v1\+::set\+Clock80\+M\+Hz\+Falling\+Edge(), set\+Clock\+Division(), F\+E\+B\+\_\+v1\+::set\+Clock\+Falling\+Edge(), Usb\+Spi\+Bus\+::set\+Data\+Length(), F\+E\+B\+\_\+v1\+::set\+Disable\+Subtract(), set\+Enable\+A\+D\+C(), set\+Fifo\+Depth(), set\+Fifo\+Latency(), F\+E\+B\+\_\+v1\+::set\+Gain4(), F\+E\+B\+\_\+v1\+::set\+Gbt80\+M\+Hz\+Clk\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Clock\+Strength(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Data\+Path(), F\+E\+B\+\_\+v1\+::set\+Gbt\+D\+L\+L\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Enable\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Mode(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Term\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Track\+Mode(), F\+E\+B\+\_\+v1\+::set\+Global\+Pseudo\+P\+M\+Enable(), F\+E\+B\+\_\+v1\+::set\+Inject\+Mode\+F\+E(), set\+Internal\+A\+X\+Sequence(), F\+E\+B\+\_\+v1\+::set\+Latency(), set\+N\+Trigger(), F\+E\+B\+\_\+v1\+::set\+Old\+Subtract(), F\+E\+B\+\_\+v1\+::set\+Output\+Eport(), Phaser\+::set\+Phase(), I\+C\+Phaser\+::set\+Phase(), set\+Pipeline(), F\+E\+B\+\_\+v1\+::set\+Probe\+Enable(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+A\+D\+C\+Enable(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+P\+M\+Enable(), set\+Read\+Pattern\+Fifo\+Usb(), set\+Read\+Trigger\+Fifo\+Usb(), set\+Software\+Trigger(), F\+E\+B\+\_\+v1\+::set\+Spare\+For\+Trig\+Enable(), F\+E\+B\+\_\+v1\+::set\+Spy\+Mode\+F\+E(), Processus\+::set\+State(), F\+E\+B\+\_\+v1\+::set\+Threshold(), set\+Trigger\+Delay(), set\+Trigger\+Rate(), set\+Write\+Storage\+Fifo\+Usb(), L\+S\+Delay\+Chip\+V1\+::show\+Config(), F\+E\+B\+\_\+v1\+::spare\+For\+Trig\+Enable(), Specs\+I2c\+::\+Specs\+I2c(), I\+C\+E\+C\+A\+Lv3\+::spi\+F\+E\+R\+Test(), F\+E\+B\+\_\+v1\+::spy\+Mode\+F\+E(), F\+E\+B\+\_\+v1\+::spy\+Mode\+Seq(), Server\+::start(), Processus\+::start\+Processing(), F\+E\+B\+\_\+v1\+::status\+Register(), F\+E\+B\+\_\+v1\+::stop\+Inj\+Loop(), Application\+::svc\+Running(), Application\+::terminate(), F\+E\+B\+\_\+v1\+::test\+Duration(), Seq\+P\+G\+A\+::test\+Sequence(), Fe\+P\+G\+A\+::test\+Sequence(), F\+E\+B\+\_\+v1\+::threshold(), Hierarchy\+::tree(), Croc\+::update(), Usb\+I2c\+Bus\+::update(), Usb\+Spi\+Bus\+::update(), Usb\+M\+L\+I2c\+Bus\+::update(), Usb\+M\+L\+Spi\+Bus\+::update(), C\+U\+\_\+v1\+::update(), Proto40\+M\+Hz\+\_\+v1\+::update(), Computer\+::update(), F\+E\+B\+\_\+v1\+::update(), Specs\+Parallel\+Bus\+::update(), N\+I6008\+::update(), Usb\+F\+T\+Interface\+::update(), Usb\+F\+T\+M\+L\+Interface\+::update(), Usb\+F\+T\+Interface\+::\+Usb\+F\+T\+Interface(), Usb\+F\+T\+M\+L\+Interface\+::\+Usb\+F\+T\+M\+L\+Interface(), Usb\+Spi\+Bus\+::write(), F\+E\+B\+\_\+v1\+::write\+Data\+Fifo\+Inject\+F\+E(), F\+E\+B\+\_\+v1\+::write\+Fifo\+Inject\+F\+E(), and N\+I6008\+::$\sim$\+N\+I6008().
+Referenced by N\+I6008\+::add\+Device(), I\+C\+E\+C\+A\+Lv3\+::bxid\+Resynch\+Status(), F\+E\+B\+\_\+v1\+::calib\+Cte(), check\+Cmd(), Hierarchy\+::clear(), F\+E\+B\+\_\+v1\+::clock80\+M\+Hz\+Falling\+Edge(), F\+E\+B\+\_\+v1\+::clock\+Falling\+Edge(), Usb\+F\+T\+Interface\+::close(), Usb\+F\+T\+M\+L\+Interface\+::close(), Processus\+::close\+Root\+File(), Server\+::cmdline(), Specs\+Mezzanine\+::cmdline(), Specs\+Slave\+::detect(), F\+E\+B\+\_\+v1\+::disable\+Subtract(), I\+Odata\+::dump(), dump\+From\+A\+X(), dump\+Pattern(), dump\+Storage(), dump\+To\+A\+X(), dump\+Trigger(), Processus\+::end\+Processing(), Phaser\+Ramp\+Exec\+::execute(), export\+\_\+obj(), Phaser\+Ramp\+Exec\+::finalize(), F\+E\+B\+\_\+v1\+::gain4(), F\+E\+B\+\_\+v1\+::gbt80\+M\+Hz\+Clk\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+Data\+Path(), F\+E\+B\+\_\+v1\+::gbt\+D\+L\+L\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+D\+L\+L\+Reset(), F\+E\+B\+\_\+v1\+::gbt\+Enable\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+Mode(), F\+E\+B\+\_\+v1\+::gbt\+Status(), F\+E\+B\+\_\+v1\+::gbt\+Term\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+Track\+Mode(), I\+C\+E\+C\+A\+Lv3\+::get\+Analog\+Ch(), I\+C\+E\+C\+A\+Lv3\+::get\+Delay\+Line\+Ch(), I\+C\+E\+C\+A\+Lv3\+::get\+Main\+Reg(), F\+E\+B\+\_\+v1\+::global\+Pseudo\+P\+M\+Enable(), Croc\+::help(), R\+A\+M\+::help(), Specs\+Glue\+::help(), Usb\+M\+L\+I2c\+Bus\+::help(), Usb\+M\+L\+Spi\+Bus\+::help(), C\+U\+\_\+v1\+::help(), Usb\+I2c\+Bus\+::help(), Usb\+Spi\+Bus\+::help(), F\+E\+B\+\_\+v1\+::help(), I\+Oobject\+::help(), Proto40\+M\+Hz\+\_\+v1\+::help(), Specs\+Mezzanine\+::help(), Fe\+P\+G\+A\+::help(), Seq\+P\+G\+A\+::help(), Computer\+::help(), N\+I6008\+::help(), Specs\+Parallel\+Bus\+::help(), Specs\+Master\+::help(), Usb\+F\+T\+M\+L\+Interface\+::help(), Usb\+F\+T\+Interface\+::help(), Phaser\+::help(), I\+C\+Phaser\+::help(), help(), M\+S\+Oxxxx\+::id(), Croc\+::init(), Computer\+::init(), N\+I6008\+::init(), Specs\+Parallel\+Bus\+::init(), Specs\+Slave\+::init(), Specs\+Master\+::init(), Usb\+F\+T\+Interface\+::init(), Usb\+F\+T\+M\+L\+Interface\+::init(), Storage\+Fifo\+Acquisition\+::initialize(), Storage\+Fifo\+::initialize(), Acquisition\+::initialize(), A3\+P\+E\+\_\+\+Bit\+Flip\+::initialize(), Emulate\+F\+E\+::initialize(), A\+D\+C\+Measurement\+::initialize(), Current\+Measurement\+::initialize(), Phaser\+Ramp\+Exec\+::initialize(), F\+E\+B\+\_\+v1\+::inject\+Mode\+F\+E(), is\+Int(), F\+E\+B\+\_\+v1\+::latency(), F\+E\+B\+\_\+v1\+::latency\+L\+L\+T(), load\+From\+A\+X(), Application\+::load\+History\+File(), load\+Pattern(), load\+Storage(), load\+To\+A\+X(), load\+Trigger(), Application\+::loop(), F\+E\+B\+\_\+v1\+::mask\+L\+L\+T(), Application\+::network(), F\+E\+B\+\_\+v1\+::old\+Subtract(), M\+S\+Oxxxx\+::open(), Processus\+::open\+Root\+File(), Data\+::print(), F\+E\+B\+\_\+v1\+::probe\+Enable(), Proc\+Data\+Base\+::\+Proc\+Data\+Base(), F\+E\+B\+\_\+v1\+::pseudo\+A\+D\+C\+Enable(), F\+E\+B\+\_\+v1\+::pseudo\+P\+M\+Enable(), Usb\+Spi\+Bus\+::read(), Usb\+F\+T\+M\+L\+Interface\+::read(), F\+E\+B\+\_\+v1\+::read\+Fifo\+Inject\+F\+E(), F\+E\+B\+\_\+v1\+::read\+Fifo\+L\+L\+T(), F\+E\+B\+\_\+v1\+::read\+Fifo\+L\+L\+T\+F\+E(), F\+E\+B\+\_\+v1\+::read\+Fifo\+Spy\+F\+E(), M\+S\+Oxxxx\+::recv(), Croc\+::reset(), Usb\+M\+L\+I2c\+Bus\+::reset(), Usb\+I2c\+Bus\+::reset(), Usb\+M\+L\+Spi\+Bus\+::reset(), Usb\+Spi\+Bus\+::reset(), Fe\+P\+G\+A\+::reset(), Seq\+P\+G\+A\+::reset(), Computer\+::reset(), Specs\+Parallel\+Bus\+::reset(), Specs\+Master\+::reset(), N\+I6008\+::reset(), Usb\+F\+T\+M\+L\+Interface\+::reset(), Usb\+F\+T\+Interface\+::reset(), reset(), reset\+Acquisition\+Write\+Counter(), F\+E\+B\+\_\+v1\+::reset\+F\+E(), reset\+F\+E(), F\+E\+B\+\_\+v1\+::reset\+Fifo\+Inject\+F\+E(), reset\+From\+A\+X\+Ram(), Specs\+Slave\+::reset\+Internal(), reset\+Latency\+Counter(), reset\+Pattern\+Fifo(), reset\+Sequence\+From\+To\+A\+X(), reset\+S\+P\+I(), reset\+Storage\+Fifo(), reset\+To\+A\+X\+Ram(), reset\+Trigger\+Fifo(), Seq\+P\+G\+A\+::reset\+Usb(), Fe\+P\+G\+A\+::reset\+Usb(), reset\+Usb\+Phasers(), M\+S\+Oxxxx\+::send(), Server\+::\+Server(), Application\+::server(), F\+E\+B\+\_\+v1\+::set\+Calib\+Cte(), F\+E\+B\+\_\+v1\+::set\+Clock80\+M\+Hz\+Falling\+Edge(), set\+Clock\+Division(), F\+E\+B\+\_\+v1\+::set\+Clock\+Falling\+Edge(), Usb\+Spi\+Bus\+::set\+Data\+Length(), F\+E\+B\+\_\+v1\+::set\+Disable\+Subtract(), set\+Enable\+A\+D\+C(), set\+Fifo\+Depth(), set\+Fifo\+Latency(), F\+E\+B\+\_\+v1\+::set\+Gain4(), F\+E\+B\+\_\+v1\+::set\+Gbt80\+M\+Hz\+Clk\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Clock\+Strength(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Data\+Path(), F\+E\+B\+\_\+v1\+::set\+Gbt\+D\+L\+L\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Enable\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Mode(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Term\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Track\+Mode(), F\+E\+B\+\_\+v1\+::set\+Global\+Pseudo\+P\+M\+Enable(), F\+E\+B\+\_\+v1\+::set\+Inject\+Mode\+F\+E(), set\+Internal\+A\+X\+Sequence(), F\+E\+B\+\_\+v1\+::set\+Latency(), set\+N\+Trigger(), F\+E\+B\+\_\+v1\+::set\+Old\+Subtract(), F\+E\+B\+\_\+v1\+::set\+Output\+Eport(), Phaser\+::set\+Phase(), I\+C\+Phaser\+::set\+Phase(), set\+Pipeline(), F\+E\+B\+\_\+v1\+::set\+Probe\+Enable(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+A\+D\+C\+Enable(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+P\+M\+Enable(), set\+Read\+Pattern\+Fifo\+Usb(), set\+Read\+Trigger\+Fifo\+Usb(), set\+Software\+Trigger(), F\+E\+B\+\_\+v1\+::set\+Spare\+For\+Trig\+Enable(), F\+E\+B\+\_\+v1\+::set\+Spy\+Mode\+F\+E(), Processus\+::set\+State(), F\+E\+B\+\_\+v1\+::set\+Threshold(), set\+Trigger\+Delay(), set\+Trigger\+Rate(), set\+Write\+Storage\+Fifo\+Usb(), L\+S\+Delay\+Chip\+V1\+::show\+Config(), F\+E\+B\+\_\+v1\+::spare\+For\+Trig\+Enable(), Specs\+I2c\+::\+Specs\+I2c(), I\+C\+E\+C\+A\+Lv3\+::spi\+F\+E\+R\+Test(), F\+E\+B\+\_\+v1\+::spy\+Mode\+F\+E(), F\+E\+B\+\_\+v1\+::spy\+Mode\+Seq(), Server\+::start(), Processus\+::start\+Processing(), F\+E\+B\+\_\+v1\+::status\+Register(), F\+E\+B\+\_\+v1\+::stop\+Inj\+Loop(), Application\+::svc\+Running(), Application\+::terminate(), Fe\+P\+G\+A\+::test\+Sequence(), F\+E\+B\+\_\+v1\+::threshold(), Hierarchy\+::tree(), Croc\+::update(), Usb\+I2c\+Bus\+::update(), Usb\+Spi\+Bus\+::update(), Usb\+M\+L\+I2c\+Bus\+::update(), Usb\+M\+L\+Spi\+Bus\+::update(), C\+U\+\_\+v1\+::update(), Proto40\+M\+Hz\+\_\+v1\+::update(), Computer\+::update(), F\+E\+B\+\_\+v1\+::update(), Specs\+Parallel\+Bus\+::update(), N\+I6008\+::update(), Usb\+F\+T\+Interface\+::update(), Usb\+F\+T\+M\+L\+Interface\+::update(), Usb\+F\+T\+Interface\+::\+Usb\+F\+T\+Interface(), Usb\+F\+T\+M\+L\+Interface\+::\+Usb\+F\+T\+M\+L\+Interface(), I\+C\+E\+C\+A\+Lv3\+::version(), Usb\+Spi\+Bus\+::write(), F\+E\+B\+\_\+v1\+::write\+Data\+Fifo\+Inject\+F\+E(), F\+E\+B\+\_\+v1\+::write\+Fifo\+Inject\+F\+E(), and N\+I6008\+::$\sim$\+N\+I6008().
 
 
 \begin{DoxyCode}
@@ -1995,7 +2030,7 @@ Implements \hyperlink{classElement_af42754b5cabc198869222725218d695c}{Element}.
 
 
 
-Definition at line 207 of file A3\+P\+E.\+h.
+Definition at line 214 of file A3\+P\+E.\+h.
 
 
 
@@ -2003,9 +2038,9 @@ References Status\+Code\+::\+S\+U\+C\+C\+E\+SS.
 
 
 \begin{DoxyCode}
-207                     \{
-208     \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
-209   \};
+214                     \{
+215     \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
+216   \};
 \end{DoxyCode}
 \mbox{\Hypertarget{classA3PE_a4b9cf42bdd0a14e48807faa0956c59bd}\label{classA3PE_a4b9cf42bdd0a14e48807faa0956c59bd}} 
 \index{A3\+PE@{A3\+PE}!internal\+A\+X\+Sequence@{internal\+A\+X\+Sequence}}
@@ -2103,7 +2138,7 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), A
 
 
 
-Definition at line 497 of file A3\+P\+E.\+h.
+Definition at line 504 of file A3\+P\+E.\+h.
 
 
 
@@ -2111,9 +2146,9 @@ References m\+\_\+latency\+Reg.
 
 
 \begin{DoxyCode}
-497                         \{
-498     \textcolor{keywordflow}{return} \hyperlink{classA3PE_a96a167e73e264da5a18d9ddb5ebb5f23}{m\_latencyReg};
-499   \}
+504                         \{
+505     \textcolor{keywordflow}{return} \hyperlink{classA3PE_a96a167e73e264da5a18d9ddb5ebb5f23}{m\_latencyReg};
+506   \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classA3PE_acb95104d817db2e4f97e250f7e45b43d}\label{classA3PE_acb95104d817db2e4f97e250f7e45b43d}} 
 \index{A3\+PE@{A3\+PE}!length\+AX@{length\+AX}}
@@ -2725,7 +2760,7 @@ Referenced by Hierarchy\+::children(), export\+\_\+obj(), and Hierarchy\+::path\
 
 
 
-Definition at line 529 of file A3\+P\+E.\+h.
+Definition at line 540 of file A3\+P\+E.\+h.
 
 
 
@@ -2737,9 +2772,9 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), d
 
 
 \begin{DoxyCode}
-529                    \{
-530     \textcolor{keywordflow}{return} \hyperlink{classA3PE_a84d5deabbbf2d513144dd6a00390182e}{m\_patternRam};
-531   \}
+540                    \{
+541     \textcolor{keywordflow}{return} \hyperlink{classA3PE_a84d5deabbbf2d513144dd6a00390182e}{m\_patternRam};
+542   \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classA3PE_aeb22b2fcba4d14f234ad2d6dcef7948c}\label{classA3PE_aeb22b2fcba4d14f234ad2d6dcef7948c}} 
 \index{A3\+PE@{A3\+PE}!pipeline@{pipeline}}
@@ -2957,7 +2992,7 @@ Implements \hyperlink{classElement_a69efffa22f06909d768149715565cb56}{Element}.
 
 
 
-Definition at line 218 of file A3\+P\+E.\+h.
+Definition at line 225 of file A3\+P\+E.\+h.
 
 
 
@@ -2969,18 +3004,18 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), a
 
 
 \begin{DoxyCode}
-218                \{
-219         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"A3PE reset procedure."});
-220     \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"A3PE global usb reset."},\textcolor{stringliteral}{"A3PE::reset"});
-221     \textcolor{keywordflow}{if} (\hyperlink{classA3PE_abd71e0c273f9e211e1a9302019129aff}{m\_globalUsbReset}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}().\hyperlink{classStatusCode_a5dd22dc6eb2c52fc4cabc58f6dea2eb7}{isFailure}())\{
-222       \hyperlink{classObject_a204a95f57818c0f811933917a30eff45}{error}(\textcolor{stringliteral}{"Cannot trigger a Global Usb reset on A3PE "}+\hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name}(),\textcolor{stringliteral}{"A3PE::reset"});
-223     \}
-224     \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"A3PE global reset."},\textcolor{stringliteral}{"A3PE::reset"});
-225         \hyperlink{classA3PE_ab4db5f00976e5095686f108c8febf702}{m\_resetReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_aa9ade5ce3944c8e2b831533b6f876caf}{setU16}(0,0xFFFF);
-226     \textcolor{keywordflow}{if} (\hyperlink{classA3PE_ab4db5f00976e5095686f108c8febf702}{m\_resetReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}().\hyperlink{classStatusCode_a5dd22dc6eb2c52fc4cabc58f6dea2eb7}{isFailure}())\{
-227       \hyperlink{classObject_a204a95f57818c0f811933917a30eff45}{error}(\textcolor{stringliteral}{"Cannot trigger a Global reset on A3PE "}+\hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name}(),\textcolor{stringliteral}{"A3PE::reset"});
-228     \}
-229   \};
+225                \{
+226         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"A3PE reset procedure."});
+227     \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"A3PE global usb reset."},\textcolor{stringliteral}{"A3PE::reset"});
+228     \textcolor{keywordflow}{if} (\hyperlink{classA3PE_abd71e0c273f9e211e1a9302019129aff}{m\_globalUsbReset}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}().\hyperlink{classStatusCode_a5dd22dc6eb2c52fc4cabc58f6dea2eb7}{isFailure}())\{
+229       \hyperlink{classObject_a204a95f57818c0f811933917a30eff45}{error}(\textcolor{stringliteral}{"Cannot trigger a Global Usb reset on A3PE "}+\hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name}(),\textcolor{stringliteral}{"A3PE::reset"});
+230     \}
+231     \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"A3PE global reset."},\textcolor{stringliteral}{"A3PE::reset"});
+232         \hyperlink{classA3PE_ab4db5f00976e5095686f108c8febf702}{m\_resetReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_aa9ade5ce3944c8e2b831533b6f876caf}{setU16}(0,0xFFFF);
+233     \textcolor{keywordflow}{if} (\hyperlink{classA3PE_ab4db5f00976e5095686f108c8febf702}{m\_resetReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}().\hyperlink{classStatusCode_a5dd22dc6eb2c52fc4cabc58f6dea2eb7}{isFailure}())\{
+234       \hyperlink{classObject_a204a95f57818c0f811933917a30eff45}{error}(\textcolor{stringliteral}{"Cannot trigger a Global reset on A3PE "}+\hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name}(),\textcolor{stringliteral}{"A3PE::reset"});
+235     \}
+236   \};
 \end{DoxyCode}
 \mbox{\Hypertarget{classA3PE_a557ea9cfa97a03db1514af2fe8936df3}\label{classA3PE_a557ea9cfa97a03db1514af2fe8936df3}} 
 \index{A3\+PE@{A3\+PE}!reset\+Acquisition\+Write\+Counter@{reset\+Acquisition\+Write\+Counter}}
@@ -3115,7 +3150,7 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), a
 
 
 
-Definition at line 485 of file A3\+P\+E.\+h.
+Definition at line 492 of file A3\+P\+E.\+h.
 
 
 
@@ -3127,9 +3162,9 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
 
 
 \begin{DoxyCode}
-485                       \{
-486     \textcolor{keywordflow}{return} \hyperlink{classA3PE_ab4db5f00976e5095686f108c8febf702}{m\_resetReg};
-487   \}
+492                       \{
+493     \textcolor{keywordflow}{return} \hyperlink{classA3PE_ab4db5f00976e5095686f108c8febf702}{m\_resetReg};
+494   \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classA3PE_a6015ba83a7b828efb1969291ab740eee}\label{classA3PE_a6015ba83a7b828efb1969291ab740eee}} 
 \index{A3\+PE@{A3\+PE}!reset\+Sequence\+From\+To\+AX@{reset\+Sequence\+From\+To\+AX}}
@@ -4163,7 +4198,7 @@ Referenced by A3\+P\+E(), A3\+P\+E\+\_\+\+Bit\+Flip\+::\+A3\+P\+E\+\_\+\+Bit\+Fl
 
 
 
-Definition at line 481 of file A3\+P\+E.\+h.
+Definition at line 488 of file A3\+P\+E.\+h.
 
 
 
@@ -4175,9 +4210,9 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
 
 
 \begin{DoxyCode}
-481                       \{
-482     \textcolor{keywordflow}{return} \hyperlink{classA3PE_a142fa10b7e705c4701ae21678ec2ec8a}{m\_setupReg};
-483   \}
+488                       \{
+489     \textcolor{keywordflow}{return} \hyperlink{classA3PE_a142fa10b7e705c4701ae21678ec2ec8a}{m\_setupReg};
+490   \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classA3PE_aeb276fae7f19c45b4b4a3a5a2b99c337}\label{classA3PE_aeb276fae7f19c45b4b4a3a5a2b99c337}} 
 \index{A3\+PE@{A3\+PE}!set\+Write\+From\+A\+X\+Ram\+Usb@{set\+Write\+From\+A\+X\+Ram\+Usb}}
@@ -4288,7 +4323,7 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), a
 
 
 
-Definition at line 521 of file A3\+P\+E.\+h.
+Definition at line 532 of file A3\+P\+E.\+h.
 
 
 
@@ -4300,9 +4335,9 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
 
 
 \begin{DoxyCode}
-521                        \{
-522     \textcolor{keywordflow}{return} \hyperlink{classA3PE_a1e7e5c89f190672990ae5bece2a8b1aa}{m\_spare3Reg};
-523   \}
+532                        \{
+533     \textcolor{keywordflow}{return} \hyperlink{classA3PE_a1e7e5c89f190672990ae5bece2a8b1aa}{m\_spare3Reg};
+534   \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classA3PE_a91ae249ca14676f8b0832487955fcf8c}\label{classA3PE_a91ae249ca14676f8b0832487955fcf8c}} 
 \index{A3\+PE@{A3\+PE}!start\+Sequence\+AX@{start\+Sequence\+AX}}
@@ -4343,7 +4378,7 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), A
 
 
 
-Definition at line 489 of file A3\+P\+E.\+h.
+Definition at line 496 of file A3\+P\+E.\+h.
 
 
 
@@ -4355,9 +4390,9 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
 
 
 \begin{DoxyCode}
-489                        \{
-490     \textcolor{keywordflow}{return} \hyperlink{classA3PE_a2281e3d12a2dffad99ec55be2b695f53}{m\_statusReg};
-491   \}
+496                        \{
+497     \textcolor{keywordflow}{return} \hyperlink{classA3PE_a2281e3d12a2dffad99ec55be2b695f53}{m\_statusReg};
+498   \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classA3PE_af241373059bad4a3c376ab2ac98a7b29}\label{classA3PE_af241373059bad4a3c376ab2ac98a7b29}} 
 \index{A3\+PE@{A3\+PE}!storage\+Ram@{storage\+Ram}}
@@ -4367,7 +4402,7 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
 
 
 
-Definition at line 525 of file A3\+P\+E.\+h.
+Definition at line 536 of file A3\+P\+E.\+h.
 
 
 
@@ -4379,9 +4414,9 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), d
 
 
 \begin{DoxyCode}
-525                    \{
-526     \textcolor{keywordflow}{return} \hyperlink{classA3PE_a41e317474e0c6e63bad4648903279be9}{m\_storageRam};
-527   \}
+536                    \{
+537     \textcolor{keywordflow}{return} \hyperlink{classA3PE_a41e317474e0c6e63bad4648903279be9}{m\_storageRam};
+538   \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classA3PE_a9327d0bd2efb5baa7c6b7de27bbc5997}\label{classA3PE_a9327d0bd2efb5baa7c6b7de27bbc5997}} 
 \index{A3\+PE@{A3\+PE}!test\+Ram@{test\+Ram}}
@@ -4391,7 +4426,7 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), d
 
 
 
-Definition at line 545 of file A3\+P\+E.\+h.
+Definition at line 556 of file A3\+P\+E.\+h.
 
 
 
@@ -4403,9 +4438,9 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
 
 
 \begin{DoxyCode}
-545                 \{
-546     \textcolor{keywordflow}{return} \hyperlink{classA3PE_ad788e41ef5c674ab1a7671f3db0ffef6}{m\_testRam};
-547   \}
+556                 \{
+557     \textcolor{keywordflow}{return} \hyperlink{classA3PE_ad788e41ef5c674ab1a7671f3db0ffef6}{m\_testRam};
+558   \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classObject_a73a0f1a41828fdd8303dd662446fb6c3}\label{classObject_a73a0f1a41828fdd8303dd662446fb6c3}} 
 \index{A3\+PE@{A3\+PE}!title@{title}}
@@ -4437,7 +4472,7 @@ Referenced by export\+\_\+obj(), export\+\_\+proc(), Data\+::hist2d(), Storage\+
 
 
 
-Definition at line 537 of file A3\+P\+E.\+h.
+Definition at line 548 of file A3\+P\+E.\+h.
 
 
 
@@ -4449,9 +4484,9 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), d
 
 
 \begin{DoxyCode}
-537                 \{
-538     \textcolor{keywordflow}{return} \hyperlink{classA3PE_ae586a3d2fd21556e84e1af656e3430b5}{m\_toAXRam};
-539   \}
+548                 \{
+549     \textcolor{keywordflow}{return} \hyperlink{classA3PE_ae586a3d2fd21556e84e1af656e3430b5}{m\_toAXRam};
+550   \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classA3PE_af6e9e980e871fcf0e1b35e1b4ae95ebe}\label{classA3PE_af6e9e980e871fcf0e1b35e1b4ae95ebe}} 
 \index{A3\+PE@{A3\+PE}!to\+A\+X\+Ram\+Ptr\+Reg@{to\+A\+X\+Ram\+Ptr\+Reg}}
@@ -4461,7 +4496,7 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), d
 
 
 
-Definition at line 553 of file A3\+P\+E.\+h.
+Definition at line 564 of file A3\+P\+E.\+h.
 
 
 
@@ -4469,9 +4504,9 @@ References dump\+From\+A\+X(), dump\+Pattern(), dump\+Storage(), dump\+To\+A\+X(
 
 
 \begin{DoxyCode}
-553                            \{
-554     \textcolor{keywordflow}{return} \hyperlink{classA3PE_aae1b8b2e96bba94535bd4de766bd7e65}{m\_toAXRamPtr};
-555   \}
+564                            \{
+565     \textcolor{keywordflow}{return} \hyperlink{classA3PE_aae1b8b2e96bba94535bd4de766bd7e65}{m\_toAXRamPtr};
+566   \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classA3PE_a43b0006fafa3aeae353abb2ac30e872c}\label{classA3PE_a43b0006fafa3aeae353abb2ac30e872c}} 
 \index{A3\+PE@{A3\+PE}!to\+A\+X\+Reg@{to\+A\+X\+Reg}}
@@ -4481,7 +4516,7 @@ References dump\+From\+A\+X(), dump\+Pattern(), dump\+Storage(), dump\+To\+A\+X(
 
 
 
-Definition at line 513 of file A3\+P\+E.\+h.
+Definition at line 524 of file A3\+P\+E.\+h.
 
 
 
@@ -4493,9 +4528,9 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
 
 
 \begin{DoxyCode}
-513                      \{
-514     \textcolor{keywordflow}{return} \hyperlink{classA3PE_abe8eb76e3c0d967403726143deb1b70f}{m\_toAXReg};
-515   \}
+524                      \{
+525     \textcolor{keywordflow}{return} \hyperlink{classA3PE_abe8eb76e3c0d967403726143deb1b70f}{m\_toAXReg};
+526   \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classHierarchy_a76e914b9a677a22a82deb74d892bf261}\label{classHierarchy_a76e914b9a677a22a82deb74d892bf261}} 
 \index{A3\+PE@{A3\+PE}!tree@{tree}}
@@ -4612,7 +4647,7 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), a
 
 
 
-Definition at line 533 of file A3\+P\+E.\+h.
+Definition at line 544 of file A3\+P\+E.\+h.
 
 
 
@@ -4624,9 +4659,9 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), d
 
 
 \begin{DoxyCode}
-533                    \{
-534     \textcolor{keywordflow}{return} \hyperlink{classA3PE_a2b40e3937f0aa008ec7073acc5029fcc}{m\_triggerRam};
-535   \}
+544                    \{
+545     \textcolor{keywordflow}{return} \hyperlink{classA3PE_a2b40e3937f0aa008ec7073acc5029fcc}{m\_triggerRam};
+546   \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classA3PE_ada46375753047d6a74acdec442044f39}\label{classA3PE_ada46375753047d6a74acdec442044f39}} 
 \index{A3\+PE@{A3\+PE}!trigger\+Rate@{trigger\+Rate}}
@@ -4666,7 +4701,7 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), a
 
 
 
-Definition at line 509 of file A3\+P\+E.\+h.
+Definition at line 520 of file A3\+P\+E.\+h.
 
 
 
@@ -4678,9 +4713,9 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
 
 
 \begin{DoxyCode}
-509                         \{
-510     \textcolor{keywordflow}{return} \hyperlink{classA3PE_a750158ae488121ab7969452f061e678c}{m\_triggerReg};
-511   \}
+520                         \{
+521     \textcolor{keywordflow}{return} \hyperlink{classA3PE_a750158ae488121ab7969452f061e678c}{m\_triggerReg};
+522   \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classObject_a84f99f70f144a83e1582d1d0f84e4e62}\label{classObject_a84f99f70f144a83e1582d1d0f84e4e62}} 
 \index{A3\+PE@{A3\+PE}!type@{type}}
@@ -4716,7 +4751,7 @@ Implements \hyperlink{classElement_a4e6c83efae95616ebddd03c793a26661}{Element}.
 
 
 
-Definition at line 458 of file A3\+P\+E.\+h.
+Definition at line 465 of file A3\+P\+E.\+h.
 
 
 
@@ -4728,8 +4763,8 @@ Referenced by A3\+P\+E\+\_\+\+Bit\+Flip.\+A3\+P\+E\+\_\+\+Bit\+Flip\+::\+\_\+\+\
 
 
 \begin{DoxyCode}
-458                  \{
-459   \};
+465                  \{
+466   \};
 \end{DoxyCode}
 \mbox{\Hypertarget{classObject_a83d2db2df682907ea1115ad721c1c4a1}\label{classObject_a83d2db2df682907ea1115ad721c1c4a1}} 
 \index{A3\+PE@{A3\+PE}!verbose@{verbose}}
@@ -4787,7 +4822,7 @@ References Object\+::m\+\_\+log, Object\+::m\+\_\+name, Msg\+Svc\+::msg\+Svc(), 
 
 
 
-Referenced by D\+C\+U\+::acquire(), acquisition(), Plot\+::add(), Application\+::bookkeeping(), check\+Cmd(), Hierarchy\+::child(), Hierarchy\+::child\+Typed(), Usb\+Spi\+Bus\+::clock\+Divider(), L\+S\+Delay\+Chip\+V1\+::config\+Reg\+Bulk\+Read(), L\+S\+Delay\+Chip\+V1\+::config\+Reg\+Bulk\+Write(), Element\+::connection(), D\+C\+U\+::convert(), Application\+::create(), Specs\+Glue\+::date(), Specs\+Mezzanine\+::date(), Specs\+Slave\+::detect(), N\+I6008\+::device(), A3\+P\+E\+\_\+\+Bit\+Flip\+::execute(), Acquisition\+::execute(), Usb\+F\+T\+Interface\+Test\+::execute(), export\+\_\+obj(), F\+E\+B\+\_\+v1\+::gbt\+Acknowledge\+Config(), F\+E\+B\+\_\+v1\+::gbt\+Clock\+Strength(), F\+E\+B\+\_\+v1\+::gbt\+D\+L\+L\+Reset(), L\+S\+Delay\+Chip\+V1\+::get\+Config\+Reg(), Specs\+Glue\+::i2c\+Clk\+Mode(), D\+C\+U\+::init(), Specs\+Slave\+::init(), Storage\+Fifo\+::initialize(), Storage\+Fifo\+Acquisition\+::initialize(), A3\+P\+E\+\_\+\+Bit\+Flip\+::initialize(), Acquisition\+::initialize(), Emulate\+F\+E\+::initialize(), Test\+I2\+C\+::initialize(), Test\+S\+P\+I\+::initialize(), Test\+U\+S\+B\+::initialize(), Specs\+Glue\+::led(), Specs\+Mezzanine\+::led(), load\+Trigger(), Application\+::loop(), Application\+::make\+Dir(), Data\+::name(), Application\+::prepare(), Usb\+I2c\+Bus\+::read(), Phaser\+::read(), I\+C\+Phaser\+::read(), Usb\+Spi\+Bus\+::read(), D\+C\+U\+::read\+Mode(), D\+C\+U\+::reset(), Specs\+Slave\+::reset(), Specs\+Master\+::reset(), I\+C\+Phaser\+::reset(), Specs\+Slave\+::reset\+Internal(), Server\+::\+Server(), F\+E\+B\+\_\+v1\+::set\+Calib\+Cte(), Storage\+Fifo\+Acquisition\+::set\+Channels(), Acquisition\+::set\+Channels(), Usb\+Spi\+Bus\+::set\+Clock\+Divider(), F\+E\+B\+\_\+v1\+::set\+Clock\+Falling\+Edge(), Application\+::set\+Config(), L\+S\+Delay\+Chip\+V1\+::set\+Config\+Reg(), Storage\+Fifo\+Acquisition\+::set\+Depth(), Acquisition\+::set\+Depth(), set\+Enable\+A\+D\+C(), F\+E\+B\+\_\+v1\+::set\+Gain4(), F\+E\+B\+\_\+v1\+::set\+Gbt80\+M\+Hz\+Clk\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Clock\+Strength(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Data\+Path(), F\+E\+B\+\_\+v1\+::set\+Gbt\+D\+L\+L\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Enable\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Mode(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Term\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Track\+Mode(), D\+C\+U\+::set\+H\+I\+R(), Specs\+Glue\+::set\+I2c\+Clk\+Mode(), Specs\+Mezzanine\+::set\+Led(), D\+C\+U\+::set\+L\+I\+R(), F\+E\+B\+\_\+v1\+::set\+Output\+Eport(), set\+Pipeline(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+A\+D\+C\+Enable(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+P\+M\+Enable(), R\+A\+M\+::set\+Size(), Specs\+Master\+::set\+Speed(), F\+E\+B\+\_\+v1\+::set\+Stop\+Inj\+Loop(), F\+E\+B\+\_\+v1\+::set\+Test\+Duration(), I\+Odata\+::set\+U16(), I\+Odata\+::set\+U32(), I\+Odata\+::set\+U8(), Test\+Suite\+::sigma(), Specs\+Interface\+::specs\+Read\+I2c(), Specs\+Interface\+::specs\+Read\+Parallel(), Specs\+Interface\+::specs\+Read\+Register(), Specs\+Interface\+::specs\+Write\+I2c(), Specs\+Interface\+::specs\+Write\+Parallel(), Specs\+Interface\+::specs\+Write\+Register(), L\+S\+Delay\+Chip\+V1\+::spi\+B\+E\+R\+Test(), I\+C\+E\+C\+A\+Lv3\+::spi\+F\+E\+R\+Test(), I\+C\+E\+C\+A\+Lv3\+::spi\+Read(), I\+C\+E\+C\+A\+Lv3\+::spi\+Write(), I\+C\+E\+C\+A\+Lv3\+::spi\+Write\+Safe(), Server\+::start(), I\+C\+Phaser\+::status(), Application\+::svc\+Plot(), Application\+::svc\+Running(), Data\+::title(), Server\+::update\+Config(), Server\+::update\+State(), Data\+::vector\+Ptr(), Usb\+I2c\+Bus\+::write(), Phaser\+::write(), I\+C\+Phaser\+::write(), Usb\+Spi\+Bus\+::write(), F\+E\+B\+\_\+v1\+::write\+Fifo\+Inject\+F\+E(), and F\+E\+B\+\_\+v1\+::write\+Fifo\+L\+L\+T\+F\+E().
+Referenced by D\+C\+U\+::acquire(), acquisition(), Plot\+::add(), Application\+::bookkeeping(), check\+Cmd(), Hierarchy\+::child(), Hierarchy\+::child\+Typed(), Usb\+Spi\+Bus\+::clock\+Divider(), L\+S\+Delay\+Chip\+V1\+::config\+Reg\+Bulk\+Read(), L\+S\+Delay\+Chip\+V1\+::config\+Reg\+Bulk\+Write(), Element\+::connection(), D\+C\+U\+::convert(), Application\+::create(), Specs\+Glue\+::date(), Specs\+Mezzanine\+::date(), Specs\+Slave\+::detect(), N\+I6008\+::device(), A3\+P\+E\+\_\+\+Bit\+Flip\+::execute(), Acquisition\+::execute(), Usb\+F\+T\+Interface\+Test\+::execute(), export\+\_\+obj(), F\+E\+B\+\_\+v1\+::gbt\+Acknowledge\+Config(), F\+E\+B\+\_\+v1\+::gbt\+Clock\+Strength(), F\+E\+B\+\_\+v1\+::gbt\+D\+L\+L\+Reset(), L\+S\+Delay\+Chip\+V1\+::get\+Config\+Reg(), Specs\+Glue\+::i2c\+Clk\+Mode(), D\+C\+U\+::init(), Specs\+Slave\+::init(), Storage\+Fifo\+::initialize(), Storage\+Fifo\+Acquisition\+::initialize(), A3\+P\+E\+\_\+\+Bit\+Flip\+::initialize(), Acquisition\+::initialize(), Test\+I2\+C\+::initialize(), Emulate\+F\+E\+::initialize(), Test\+S\+P\+I\+::initialize(), Test\+U\+S\+B\+::initialize(), Specs\+Glue\+::led(), Specs\+Mezzanine\+::led(), load\+Trigger(), Application\+::loop(), Application\+::make\+Dir(), Data\+::name(), Application\+::prepare(), Usb\+I2c\+Bus\+::read(), Phaser\+::read(), I\+C\+Phaser\+::read(), Usb\+Spi\+Bus\+::read(), D\+C\+U\+::read\+Mode(), D\+C\+U\+::reset(), Specs\+Master\+::reset(), Specs\+Slave\+::reset(), I\+C\+Phaser\+::reset(), Specs\+Slave\+::reset\+Internal(), Server\+::\+Server(), F\+E\+B\+\_\+v1\+::set\+Calib\+Cte(), Storage\+Fifo\+Acquisition\+::set\+Channels(), Acquisition\+::set\+Channels(), Usb\+Spi\+Bus\+::set\+Clock\+Divider(), F\+E\+B\+\_\+v1\+::set\+Clock\+Falling\+Edge(), Application\+::set\+Config(), L\+S\+Delay\+Chip\+V1\+::set\+Config\+Reg(), Storage\+Fifo\+Acquisition\+::set\+Depth(), Acquisition\+::set\+Depth(), set\+Enable\+A\+D\+C(), F\+E\+B\+\_\+v1\+::set\+Gain4(), F\+E\+B\+\_\+v1\+::set\+Gbt80\+M\+Hz\+Clk\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Clock\+Strength(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Data\+Path(), F\+E\+B\+\_\+v1\+::set\+Gbt\+D\+L\+L\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Enable\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Mode(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Term\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Track\+Mode(), D\+C\+U\+::set\+H\+I\+R(), Specs\+Glue\+::set\+I2c\+Clk\+Mode(), Specs\+Mezzanine\+::set\+Led(), D\+C\+U\+::set\+L\+I\+R(), F\+E\+B\+\_\+v1\+::set\+Output\+Eport(), set\+Pipeline(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+A\+D\+C\+Enable(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+P\+M\+Enable(), R\+A\+M\+::set\+Size(), Specs\+Master\+::set\+Speed(), F\+E\+B\+\_\+v1\+::set\+Stop\+Inj\+Loop(), F\+E\+B\+\_\+v1\+::set\+Test\+Duration(), I\+Odata\+::set\+U16(), I\+Odata\+::set\+U32(), I\+Odata\+::set\+U8(), Test\+Suite\+::sigma(), Specs\+Interface\+::specs\+Read\+I2c(), Specs\+Interface\+::specs\+Read\+Parallel(), Specs\+Interface\+::specs\+Read\+Register(), Specs\+Interface\+::specs\+Write\+I2c(), Specs\+Interface\+::specs\+Write\+Parallel(), Specs\+Interface\+::specs\+Write\+Register(), I\+C\+E\+C\+A\+Lv3\+::spi\+Address\+Scan(), L\+S\+Delay\+Chip\+V1\+::spi\+B\+E\+R\+Test(), I\+C\+E\+C\+A\+Lv3\+::spi\+F\+E\+R\+Test(), I\+C\+E\+C\+A\+Lv3\+::spi\+Read(), I\+C\+E\+C\+A\+Lv3\+::spi\+Write(), I\+C\+E\+C\+A\+Lv3\+::spi\+Write\+Safe(), Server\+::start(), I\+C\+Phaser\+::status(), Application\+::svc\+Plot(), Application\+::svc\+Running(), Data\+::title(), Server\+::update\+Config(), Server\+::update\+State(), Data\+::vector\+Ptr(), Usb\+I2c\+Bus\+::write(), Phaser\+::write(), I\+C\+Phaser\+::write(), Usb\+Spi\+Bus\+::write(), F\+E\+B\+\_\+v1\+::write\+Fifo\+Inject\+F\+E(), and F\+E\+B\+\_\+v1\+::write\+Fifo\+L\+L\+T\+F\+E().
 
 
 \begin{DoxyCode}
@@ -4844,7 +4879,7 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), a
 
 
 
-Definition at line 501 of file A3\+P\+E.\+h.
+Definition at line 508 of file A3\+P\+E.\+h.
 
 
 
@@ -4856,9 +4891,9 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
 
 
 \begin{DoxyCode}
-501                                 \{
-502     \textcolor{keywordflow}{return} \hyperlink{classA3PE_a9a0cb2253ea34c0be567a03684217fee}{m\_writeLengthFifoReg};
-503   \}
+508                                 \{
+509     \textcolor{keywordflow}{return} \hyperlink{classA3PE_a9a0cb2253ea34c0be567a03684217fee}{m\_writeLengthFifoReg};
+510   \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classA3PE_af15048318a126074e28df1c6120d5e0d}\label{classA3PE_af15048318a126074e28df1c6120d5e0d}} 
 \index{A3\+PE@{A3\+PE}!write\+Storage\+Fifo\+Usb@{write\+Storage\+Fifo\+Usb}}
@@ -4896,7 +4931,7 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), a
 
 
 
-Definition at line 581 of file A3\+P\+E.\+h.
+Definition at line 592 of file A3\+P\+E.\+h.
 
 
 
@@ -4924,7 +4959,7 @@ Referenced by Attrib\+::\+Attrib(), and Attrib\+::attributs().
 
 
 
-Definition at line 584 of file A3\+P\+E.\+h.
+Definition at line 596 of file A3\+P\+E.\+h.
 
 
 
@@ -4944,6 +4979,20 @@ Definition at line 70 of file Element.\+h.
 
 Referenced by Usb\+Spi\+Bus\+::clock\+Divider(), Element\+::connection(), Element\+::\+Element(), Usb\+M\+L\+I2c\+Bus\+::init(), Usb\+M\+L\+Spi\+Bus\+::init(), Usb\+I2c\+Bus\+::init(), Usb\+Spi\+Bus\+::init(), I\+Oobject\+::init(), Usb\+I2c\+Bus\+::read(), Usb\+Spi\+Bus\+::read(), Usb\+Spi\+Bus\+::set\+Clock\+Divider(), Element\+::set\+Connection(), Usb\+I2c\+Bus\+::write(), and Usb\+Spi\+Bus\+::write().
 
+\mbox{\Hypertarget{classA3PE_a126a936a5fd4fd4b83485b3637e1fa84}\label{classA3PE_a126a936a5fd4fd4b83485b3637e1fa84}} 
+\index{A3\+PE@{A3\+PE}!m\+\_\+ctrl\+Ana\+Mezz\+Reg@{m\+\_\+ctrl\+Ana\+Mezz\+Reg}}
+\index{m\+\_\+ctrl\+Ana\+Mezz\+Reg@{m\+\_\+ctrl\+Ana\+Mezz\+Reg}!A3\+PE@{A3\+PE}}
+\subsubsection{\texorpdfstring{m\+\_\+ctrl\+Ana\+Mezz\+Reg}{m\_ctrlAnaMezzReg}}
+{\footnotesize\ttfamily \hyperlink{classRegister}{Register}$\ast$ A3\+P\+E\+::m\+\_\+ctrl\+Ana\+Mezz\+Reg\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 595 of file A3\+P\+E.\+h.
+
+
+
+Referenced by A3\+P\+E(), and ctrl\+Ana\+Mezz\+Reg().
+
 \mbox{\Hypertarget{classA3PE_a264834484dd6326ebad58c2a3e1be9a6}\label{classA3PE_a264834484dd6326ebad58c2a3e1be9a6}} 
 \index{A3\+PE@{A3\+PE}!m\+\_\+ctrl\+Reg@{m\+\_\+ctrl\+Reg}}
 \index{m\+\_\+ctrl\+Reg@{m\+\_\+ctrl\+Reg}!A3\+PE@{A3\+PE}}
@@ -4952,7 +5001,7 @@ Referenced by Usb\+Spi\+Bus\+::clock\+Divider(), Element\+::connection(), Elemen
 
 
 
-Definition at line 577 of file A3\+P\+E.\+h.
+Definition at line 588 of file A3\+P\+E.\+h.
 
 
 
@@ -4966,7 +5015,7 @@ Referenced by A3\+P\+E(), and ctrl\+Reg().
 
 
 
-Definition at line 595 of file A3\+P\+E.\+h.
+Definition at line 607 of file A3\+P\+E.\+h.
 
 
 
@@ -4980,7 +5029,7 @@ Referenced by A3\+P\+E(), and from\+A\+X\+Ram().
 
 
 
-Definition at line 593 of file A3\+P\+E.\+h.
+Definition at line 605 of file A3\+P\+E.\+h.
 
 
 
@@ -4994,7 +5043,7 @@ Referenced by A3\+P\+E(), from\+A\+X\+Ram\+Ptr\+Reg(), and set\+Add\+From\+A\+X\
 
 
 
-Definition at line 587 of file A3\+P\+E.\+h.
+Definition at line 599 of file A3\+P\+E.\+h.
 
 
 
@@ -5008,7 +5057,7 @@ Referenced by A3\+P\+E(), and from\+A\+X\+Reg().
 
 
 
-Definition at line 576 of file A3\+P\+E.\+h.
+Definition at line 587 of file A3\+P\+E.\+h.
 
 
 
@@ -5022,7 +5071,7 @@ Referenced by A3\+P\+E(), and reset().
 
 
 
-Definition at line 596 of file A3\+P\+E.\+h.
+Definition at line 608 of file A3\+P\+E.\+h.
 
 
 
@@ -5036,7 +5085,7 @@ Referenced by A3\+P\+E(), latency\+A\+X(), and set\+Latency\+A\+X().
 
 
 
-Definition at line 582 of file A3\+P\+E.\+h.
+Definition at line 593 of file A3\+P\+E.\+h.
 
 
 
@@ -5050,7 +5099,7 @@ Referenced by A3\+P\+E(), fifo\+Latency(), latency\+Reg(), and set\+Fifo\+Latenc
 
 
 
-Definition at line 597 of file A3\+P\+E.\+h.
+Definition at line 609 of file A3\+P\+E.\+h.
 
 
 
@@ -5064,7 +5113,7 @@ Referenced by A3\+P\+E(), length\+A\+X(), and set\+Length\+A\+X().
 
 
 
-Definition at line 590 of file A3\+P\+E.\+h.
+Definition at line 602 of file A3\+P\+E.\+h.
 
 
 
@@ -5078,7 +5127,7 @@ Referenced by A3\+P\+E(), and pattern\+Ram().
 
 
 
-Definition at line 578 of file A3\+P\+E.\+h.
+Definition at line 589 of file A3\+P\+E.\+h.
 
 
 
@@ -5092,7 +5141,7 @@ Referenced by A3\+P\+E(), enable\+Storage(), reset(), reset\+Acquisition\+Write\
 
 
 
-Definition at line 579 of file A3\+P\+E.\+h.
+Definition at line 590 of file A3\+P\+E.\+h.
 
 
 
@@ -5106,7 +5155,7 @@ Referenced by A3\+P\+E(), enable\+A\+D\+C(), internal\+A\+X\+Sequence(), read\+P
 
 
 
-Definition at line 588 of file A3\+P\+E.\+h.
+Definition at line 600 of file A3\+P\+E.\+h.
 
 
 
@@ -5120,7 +5169,7 @@ Referenced by A3\+P\+E(), and spare3\+Reg().
 
 
 
-Definition at line 580 of file A3\+P\+E.\+h.
+Definition at line 591 of file A3\+P\+E.\+h.
 
 
 
@@ -5134,7 +5183,7 @@ Referenced by A3\+P\+E(), and status\+Reg().
 
 
 
-Definition at line 589 of file A3\+P\+E.\+h.
+Definition at line 601 of file A3\+P\+E.\+h.
 
 
 
@@ -5148,7 +5197,7 @@ Referenced by A3\+P\+E(), set\+Fifo\+Depth(), and storage\+Ram().
 
 
 
-Definition at line 598 of file A3\+P\+E.\+h.
+Definition at line 610 of file A3\+P\+E.\+h.
 
 
 
@@ -5162,7 +5211,7 @@ Referenced by A3\+P\+E(), and test\+Ram().
 
 
 
-Definition at line 594 of file A3\+P\+E.\+h.
+Definition at line 606 of file A3\+P\+E.\+h.
 
 
 
@@ -5176,7 +5225,7 @@ Referenced by A3\+P\+E(), and to\+A\+X\+Ram().
 
 
 
-Definition at line 592 of file A3\+P\+E.\+h.
+Definition at line 604 of file A3\+P\+E.\+h.
 
 
 
@@ -5190,7 +5239,7 @@ Referenced by A3\+P\+E(), set\+Add\+To\+A\+X\+Ram(), and to\+A\+X\+Ram\+Ptr\+Reg
 
 
 
-Definition at line 586 of file A3\+P\+E.\+h.
+Definition at line 598 of file A3\+P\+E.\+h.
 
 
 
@@ -5204,7 +5253,7 @@ Referenced by A3\+P\+E(), and to\+A\+X\+Reg().
 
 
 
-Definition at line 591 of file A3\+P\+E.\+h.
+Definition at line 603 of file A3\+P\+E.\+h.
 
 
 
@@ -5218,7 +5267,7 @@ Referenced by A3\+P\+E(), and trigger\+Ram().
 
 
 
-Definition at line 585 of file A3\+P\+E.\+h.
+Definition at line 597 of file A3\+P\+E.\+h.
 
 
 
@@ -5232,7 +5281,7 @@ Referenced by A3\+P\+E(), n\+Trigger(), set\+N\+Trigger(), set\+Trigger\+Delay()
 
 
 
-Definition at line 583 of file A3\+P\+E.\+h.
+Definition at line 594 of file A3\+P\+E.\+h.
 
 
 

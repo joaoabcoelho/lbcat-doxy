@@ -8,5 +8,5 @@ var searchData=
   ['tree',['tree',['../classAppFrame_1_1AppFrame.html#a732c7cf0faafddef1421a289789ccf86',1,'AppFrame.AppFrame.tree()'],['../classtree_1_1TreeCtrlPanel.html#add705d7a471f6f93110250ff8ca9cede',1,'tree.TreeCtrlPanel.tree()']]],
   ['treecontainer',['treeContainer',['../classAppFrame_1_1AppFrame.html#a651f8f562f6becc25a2da6b7e85e8107',1,'AppFrame::AppFrame']]],
   ['treeitem',['TreeItem',['../namespacetree.html#ad25a722efe4d4e2f98ec1f6a6c92b4b9',1,'tree']]],
-  ['type',['Type',['../struct__ft__device__list__info__node.html#aa764a1406eb904ad4444a82f2f950b4e',1,'_ft_device_list_info_node::Type()'],['../struct__int__frame__info.html#a4c4c7c961ca654d25894f2712acf8082',1,'_int_frame_info::type()']]]
+  ['type',['type',['../struct__int__frame__info.html#a4c4c7c961ca654d25894f2712acf8082',1,'_int_frame_info::type()'],['../struct__ft__device__list__info__node.html#aa764a1406eb904ad4444a82f2f950b4e',1,'_ft_device_list_info_node::Type()']]]
 ];

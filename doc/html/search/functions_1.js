@@ -5,7 +5,7 @@ var searchData=
   ['accountname',['accountName',['../namespaceSystem.html#a8a4ea73b74e0f6b8225e571e21ba4e2f',1,'System::accountName()'],['../Server__NI6008_8h.html#a7894fd47557b61653dcc5a4c1c385f26',1,'accountName():&#160;Server_NI6008.h']]],
   ['acqreg',['acqReg',['../classA3PE.html#aca56dadafd70e670e75569ee03d91651',1,'A3PE']]],
   ['acquire',['acquire',['../classDCU.html#aa23d2c4aed766323bc828daac1f0cd78',1,'DCU']]],
-  ['acquisition',['Acquisition',['../classAcquisition.html#aa7d3138495a4a8888c21b33f4d657732',1,'Acquisition::Acquisition()'],['../classA3PE.html#a035886b99761cc4f3c342ff0b4e44f59',1,'A3PE::acquisition()']]],
+  ['acquisition',['Acquisition',['../classAcquisition.html#aa7d3138495a4a8888c21b33f4d657732',1,'Acquisition::Acquisition()'],['../classAcquisition.html#aa7d3138495a4a8888c21b33f4d657732',1,'Acquisition::Acquisition()'],['../classA3PE.html#a035886b99761cc4f3c342ff0b4e44f59',1,'A3PE::acquisition()']]],
   ['adcmeasurement',['ADCMeasurement',['../classADCMeasurement.html#a93804f658f3aaa78d3ce18199f1bf8e1',1,'ADCMeasurement']]],
   ['add',['add',['../classAttrib.html#a235f773af19c900264a190b00a3b4ad7',1,'Attrib::add()'],['../classPlot.html#ac0e03af81b0591d4786ff03441524eb2',1,'Plot::add()'],['../classProcDataBase.html#a0aafeb65a41b92a6d1fdd67f363ef826',1,'ProcDataBase::add()']]],
   ['addbus',['addBus',['../classSpecsMezzanine.html#a75e9ab8c333d6018ab088733101141ce',1,'SpecsMezzanine']]],

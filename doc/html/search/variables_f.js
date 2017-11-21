@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['raw',['raw',['../classEvent.html#ac59cc6743d8d652c347dba08ab66c2f6',1,'Event::raw()'],['../classData.html#afa86e448a0941d60d105b3132f200beb',1,'Data::Raw()']]],
+  ['raw',['Raw',['../classData.html#afa86e448a0941d60d105b3132f200beb',1,'Data::Raw()'],['../classEvent.html#ac59cc6743d8d652c347dba08ab66c2f6',1,'Event::raw()']]],
   ['readintervaltimeout',['ReadIntervalTimeout',['../struct__FTTIMEOUTS.html#a0f9592f9863a3230933833750b67d467',1,'_FTTIMEOUTS']]],
   ['readtotaltimeoutconstant',['ReadTotalTimeoutConstant',['../struct__FTTIMEOUTS.html#aa6478849c632565b01f91faca975cabe',1,'_FTTIMEOUTS']]],
   ['readtotaltimeoutmultiplier',['ReadTotalTimeoutMultiplier',['../struct__FTTIMEOUTS.html#abec01499b73ce0bd194ca0628dbf58e8',1,'_FTTIMEOUTS']]],

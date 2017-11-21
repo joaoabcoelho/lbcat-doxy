@@ -57,7 +57,13 @@ Py\+Object $\ast$ \hyperlink{classICECALv3_a8639cf6a44cba85b53128b5e1dc21e15}{sp
 \item 
 \hyperlink{classStatusCode}{Status\+Code} \hyperlink{classICECALv3_ac26be912fb72e615106fceb4626aa548}{dump\+Config} (string config\+File, Py\+Object $\ast$chip\+Id)
 \item 
-\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classICECALv3_ae0a77dccd270626bbd600630681b1442}{load\+Config} (string config\+File)
+Py\+Object $\ast$ \hyperlink{classICECALv3_a514456dd303e897aa1b55dccf3fa66d0}{load\+Config} (string config\+File)
+\item 
+double \hyperlink{classICECALv3_a7f3f8012d2e5c45f8e43819befa3f915}{version} ()
+\item 
+bool \hyperlink{classICECALv3_a545f51b915a6de5c5f450622d0651a85}{bxid\+Resynch\+Status} ()
+\item 
+void \hyperlink{classICECALv3_acbf1a7a8510d7e02280bacc58badf4f4}{spi\+Address\+Scan} ()
 \item 
 \hyperlink{classICECALv3_acdadf9483fc38a615192de41548024a1}{$\sim$\+I\+C\+E\+C\+A\+Lv3} ()
 \item 
@@ -179,7 +185,7 @@ std\+::string \hyperlink{classAttrib_a3414521d7a82476e874b25a5407b5e63}{m\+\_\+a
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{ICECALv3_8h_adf928e51a60dba0df29d615401cc55a8}{U16} \hyperlink{classICECALv3_aaabb9543482c4141fa89b4b8410164e0}{spi\+Read} (\hyperlink{ICECALv3_8h_a3cb25ca6f51f003950f9625ff05536fc}{U8} conf\+Reg\+Addr)
+\hyperlink{ICECALv3_8h_adf928e51a60dba0df29d615401cc55a8}{U16} \hyperlink{classICECALv3_aced41ce20a0853d6248b8df88412e57a}{spi\+Read} (\hyperlink{ICECALv3_8h_a3cb25ca6f51f003950f9625ff05536fc}{U8} conf\+Reg\+Addr, \hyperlink{ICECALv3_8h_a3cb25ca6f51f003950f9625ff05536fc}{U8} offset\+Addr=128)
 \item 
 void \hyperlink{classICECALv3_aef00f02801dea4bda2093c930501dcdd}{spi\+Write} (\hyperlink{ICECALv3_8h_a3cb25ca6f51f003950f9625ff05536fc}{U8} conf\+Reg\+Addr, \hyperlink{ICECALv3_8h_adf928e51a60dba0df29d615401cc55a8}{U16} \hyperlink{structconfRegData}{conf\+Reg\+Data})
 \item 
@@ -209,7 +215,7 @@ bool \hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err}
 \subsection{Detailed Description}
 
 
-Definition at line 61 of file I\+C\+E\+C\+A\+Lv3.\+h.
+Definition at line 58 of file I\+C\+E\+C\+A\+Lv3.\+h.
 
 
 
@@ -327,12 +333,12 @@ References Attrib\+::add(), Hierarchy\+::add\+Child(), I\+Odata\+::\+Byte, conf\
 
 
 
-Definition at line 97 of file I\+C\+E\+C\+A\+Lv3.\+h.
+Definition at line 98 of file I\+C\+E\+C\+A\+Lv3.\+h.
 
 
 \begin{DoxyCode}
-97              \{
-98   \}
+98              \{
+99   \}
 \end{DoxyCode}
 
 
@@ -435,6 +441,36 @@ Referenced by export\+\_\+obj(), and Attrib\+::remove().
 66   \textcolor{keywordflow}{return} output;
 67 \}
 \end{DoxyCode}
+\mbox{\Hypertarget{classICECALv3_a545f51b915a6de5c5f450622d0651a85}\label{classICECALv3_a545f51b915a6de5c5f450622d0651a85}} 
+\index{I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}!bxid\+Resynch\+Status@{bxid\+Resynch\+Status}}
+\index{bxid\+Resynch\+Status@{bxid\+Resynch\+Status}!I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}}
+\subsubsection{\texorpdfstring{bxid\+Resynch\+Status()}{bxidResynchStatus()}}
+{\footnotesize\ttfamily bool I\+C\+E\+C\+A\+Lv3\+::bxid\+Resynch\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 677 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
+
+
+
+References B\+X\+I\+D\+\_\+\+R\+E\+S\+Y\+N\+C\+H\+\_\+\+A\+D\+DR, Object\+::info(), itohs(), and spi\+Read().
+
+
+
+Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
+
+
+\begin{DoxyCode}
+678 \{
+679     \hyperlink{ICECALv3_8h_adf928e51a60dba0df29d615401cc55a8}{U16} rxData;
+680 
+681     rxData = \hyperlink{classICECALv3_aced41ce20a0853d6248b8df88412e57a}{spiRead}(\hyperlink{ICECALv3_8h_a57a201af9e55ffd847b551bff2dc71ce}{BXID\_RESYNCH\_ADDR}, 0x00 );
+682 
+683     \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"RX = "} + \hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(rxData),\textcolor{stringliteral}{""});
+684     \textcolor{keywordflow}{return}(rxData > 127);
+685 
+686 \}
+\end{DoxyCode}
 \mbox{\Hypertarget{classICECALv3_a5ce36881aa89fedf7c37e03620acca6e}\label{classICECALv3_a5ce36881aa89fedf7c37e03620acca6e}} 
 \index{I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}!bypass\+Miso\+Mosi@{bypass\+Miso\+Mosi}}
 \index{bypass\+Miso\+Mosi@{bypass\+Miso\+Mosi}!I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}}
@@ -443,7 +479,7 @@ Referenced by export\+\_\+obj(), and Attrib\+::remove().
 
 
 
-Definition at line 73 of file I\+C\+E\+C\+A\+Lv3.\+h.
+Definition at line 70 of file I\+C\+E\+C\+A\+Lv3.\+h.
 
 
 
@@ -451,7 +487,7 @@ References S\+C\+\_\+\+M\+O\+S\+I\+\_\+\+M\+I\+S\+O\+\_\+\+B\+Y\+P\+A\+SS.
 
 
 \begin{DoxyCode}
-73 \{       \hyperlink{classICECALv3_aef00f02801dea4bda2093c930501dcdd}{spiWrite}(\hyperlink{ICECALv3_8h_a2870f5a3cad23b2b4e7f16faefe8ef2e}{SC\_MOSI\_MISO\_BYPASS},writeData); \};
+70 \{       \hyperlink{classICECALv3_aef00f02801dea4bda2093c930501dcdd}{spiWrite}(\hyperlink{ICECALv3_8h_a2870f5a3cad23b2b4e7f16faefe8ef2e}{SC\_MOSI\_MISO\_BYPASS},writeData); \};
 \end{DoxyCode}
 \mbox{\Hypertarget{classICECALv3_a8753a74558f988b346a3fe350c5bbad4}\label{classICECALv3_a8753a74558f988b346a3fe350c5bbad4}} 
 \index{I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}!check\+Ch\+Number@{check\+Ch\+Number}}
@@ -461,7 +497,7 @@ References S\+C\+\_\+\+M\+O\+S\+I\+\_\+\+M\+I\+S\+O\+\_\+\+B\+Y\+P\+A\+SS.
 
 
 
-Definition at line 154 of file I\+C\+E\+C\+A\+Lv3.\+h.
+Definition at line 155 of file I\+C\+E\+C\+A\+Lv3.\+h.
 
 
 
@@ -469,14 +505,14 @@ References itos().
 
 
 \begin{DoxyCode}
-155     \{
-156         \textcolor{keywordflow}{if}(ch < 0 || ch > 3) \{
-157             \hyperlink{classObject_a204a95f57818c0f811933917a30eff45}{error}(\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(ch)+\textcolor{stringliteral}{" is not a valid ICECAL channel number. Valid numbers [0-3]."},\textcolor{stringliteral}{"
+156     \{
+157         \textcolor{keywordflow}{if}(ch < 0 || ch > 3) \{
+158             \hyperlink{classObject_a204a95f57818c0f811933917a30eff45}{error}(\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(ch)+\textcolor{stringliteral}{" is not a valid ICECAL channel number. Valid numbers [0-3]."},\textcolor{stringliteral}{"
       ICECALv3::checkChNumber"});
-158             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-159         \}
-160         \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{true};
-161     \}
+159             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+160         \}
+161         \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+162     \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classHierarchy_a1e207f973c694b538bf90107b4868817}\label{classHierarchy_a1e207f973c694b538bf90107b4868817}} 
 \index{I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}!child@{child}}
@@ -796,7 +832,7 @@ References Msg\+Svc\+::\+D\+E\+B\+UG, Object\+::m\+\_\+log, Object\+::m\+\_\+nam
 
 
 
-Referenced by A3\+P\+E\+::\+A3\+P\+E(), A3\+P\+E\+::acquisition(), Specs\+Mezzanine\+::add\+Bus(), Hierarchy\+::add\+Child(), Specs\+Slave\+::add\+I2c(), L\+S\+Delay\+Chip\+V1\+::config\+Reg\+Bulk\+Read(), L\+S\+Delay\+Chip\+V1\+::config\+Reg\+Bulk\+Write(), A3\+P\+E\+::data\+Ready(), D\+C\+U\+::\+D\+C\+U(), Hierarchy\+::del\+Child(), Specs\+Slave\+::detect(), Storage\+Fifo\+Acquisition\+::execute(), Storage\+Fifo\+::execute(), A3\+P\+E\+\_\+\+Bit\+Flip\+::execute(), Acquisition\+::execute(), Emulate\+F\+E\+::execute(), export\+\_\+obj(), Fe\+P\+G\+A\+::\+Fe\+P\+G\+A(), Specs\+Glue\+::i2c\+Clk\+Mode(), Fe\+P\+G\+A\+::i2c\+Read(), Seq\+P\+G\+A\+::i2c\+Read(), Fe\+P\+G\+A\+::i2c\+Write(), Seq\+P\+G\+A\+::i2c\+Write(), I\+C\+E\+C\+A\+Lv3(), I\+C\+Phaser\+::\+I\+C\+Phaser(), Specs\+Slave\+::init(), Specs\+Master\+::init(), Storage\+Fifo\+Acquisition\+::initialize(), Storage\+Fifo\+::initialize(), A3\+P\+E\+\_\+\+Bit\+Flip\+::initialize(), Acquisition\+::initialize(), Emulate\+F\+E\+::initialize(), A3\+P\+E\+::internal\+A\+X\+Sequence(), Specs\+Glue\+::led(), Specs\+Mezzanine\+::led(), M\+S\+Oxxxx\+::\+M\+S\+Oxxxx(), Phaser\+::\+Phaser(), Data\+::purge(), Phaser\+::read(), I\+C\+Phaser\+::read(), C\+U\+\_\+v1\+::reset(), Proto40\+M\+Hz\+\_\+v1\+::reset(), F\+E\+B\+\_\+v1\+::reset(), Specs\+Master\+::reset(), Specs\+Slave\+::reset(), F\+E\+B\+\_\+v1\+::reset\+Usb(), Seq\+P\+G\+A\+::\+Seq\+P\+G\+A(), A3\+P\+E\+::set\+Add\+From\+A\+X\+Ram(), A3\+P\+E\+::set\+Add\+To\+A\+X\+Ram(), A3\+P\+E\+::set\+A\+X\+Ram\+Usb(), Element\+::set\+Connection(), Specs\+Glue\+::set\+I2c\+Clk\+Mode(), A3\+P\+E\+::set\+Latency\+A\+X(), Specs\+Glue\+::set\+Led(), Specs\+Mezzanine\+::set\+Led(), A3\+P\+E\+::set\+Length\+A\+X(), A3\+P\+E\+::set\+Read\+To\+A\+X\+Ram\+Usb(), Specs\+Master\+::set\+Speed(), A3\+P\+E\+::set\+Write\+From\+A\+X\+Ram\+Usb(), Specs\+Bus\+::\+Specs\+Bus(), Specs\+I2c\+::\+Specs\+I2c(), Specs\+Master\+::\+Specs\+Master(), Specs\+Mezzanine\+::\+Specs\+Mezzanine(), Specs\+Parallel\+Bus\+::\+Specs\+Parallel\+Bus(), Specs\+Slave\+::\+Specs\+Slave(), L\+S\+Delay\+Chip\+V1\+::spi\+B\+E\+R\+Test(), spi\+Read(), spi\+Write(), A3\+P\+E\+::trigger(), Server\+::update\+Config(), Server\+::update\+State(), Phaser\+::write(), I\+C\+Phaser\+::write(), and Hierarchy\+::$\sim$\+Hierarchy().
+Referenced by A3\+P\+E\+::\+A3\+P\+E(), A3\+P\+E\+::acquisition(), Specs\+Mezzanine\+::add\+Bus(), Hierarchy\+::add\+Child(), Specs\+Slave\+::add\+I2c(), L\+S\+Delay\+Chip\+V1\+::config\+Reg\+Bulk\+Read(), L\+S\+Delay\+Chip\+V1\+::config\+Reg\+Bulk\+Write(), A3\+P\+E\+::data\+Ready(), D\+C\+U\+::\+D\+C\+U(), Hierarchy\+::del\+Child(), Specs\+Slave\+::detect(), Storage\+Fifo\+Acquisition\+::execute(), Storage\+Fifo\+::execute(), A3\+P\+E\+\_\+\+Bit\+Flip\+::execute(), Acquisition\+::execute(), Emulate\+F\+E\+::execute(), export\+\_\+obj(), Fe\+P\+G\+A\+::\+Fe\+P\+G\+A(), Specs\+Glue\+::i2c\+Clk\+Mode(), Fe\+P\+G\+A\+::i2c\+Read(), Seq\+P\+G\+A\+::i2c\+Read(), Fe\+P\+G\+A\+::i2c\+Write(), Seq\+P\+G\+A\+::i2c\+Write(), I\+C\+E\+C\+A\+Lv3(), I\+C\+Phaser\+::\+I\+C\+Phaser(), Specs\+Slave\+::init(), Specs\+Master\+::init(), Storage\+Fifo\+::initialize(), Storage\+Fifo\+Acquisition\+::initialize(), A3\+P\+E\+\_\+\+Bit\+Flip\+::initialize(), Acquisition\+::initialize(), Emulate\+F\+E\+::initialize(), A3\+P\+E\+::internal\+A\+X\+Sequence(), Specs\+Glue\+::led(), Specs\+Mezzanine\+::led(), M\+S\+Oxxxx\+::\+M\+S\+Oxxxx(), Phaser\+::\+Phaser(), Data\+::purge(), Phaser\+::read(), I\+C\+Phaser\+::read(), F\+E\+B\+\_\+v1\+::read\+Fifo\+Spy\+F\+E(), C\+U\+\_\+v1\+::reset(), F\+E\+B\+\_\+v1\+::reset(), Proto40\+M\+Hz\+\_\+v1\+::reset(), Specs\+Master\+::reset(), Specs\+Slave\+::reset(), F\+E\+B\+\_\+v1\+::reset\+Fifo\+Spy\+F\+E(), F\+E\+B\+\_\+v1\+::reset\+Usb(), Seq\+P\+G\+A\+::\+Seq\+P\+G\+A(), A3\+P\+E\+::set\+Add\+From\+A\+X\+Ram(), A3\+P\+E\+::set\+Add\+To\+A\+X\+Ram(), A3\+P\+E\+::set\+A\+X\+Ram\+Usb(), Element\+::set\+Connection(), Specs\+Glue\+::set\+I2c\+Clk\+Mode(), A3\+P\+E\+::set\+Latency\+A\+X(), Specs\+Glue\+::set\+Led(), Specs\+Mezzanine\+::set\+Led(), A3\+P\+E\+::set\+Length\+A\+X(), A3\+P\+E\+::set\+Read\+To\+A\+X\+Ram\+Usb(), Specs\+Master\+::set\+Speed(), A3\+P\+E\+::set\+Write\+From\+A\+X\+Ram\+Usb(), Specs\+Bus\+::\+Specs\+Bus(), Specs\+I2c\+::\+Specs\+I2c(), Specs\+Master\+::\+Specs\+Master(), Specs\+Mezzanine\+::\+Specs\+Mezzanine(), Specs\+Parallel\+Bus\+::\+Specs\+Parallel\+Bus(), Specs\+Slave\+::\+Specs\+Slave(), L\+S\+Delay\+Chip\+V1\+::spi\+B\+E\+R\+Test(), spi\+Read(), spi\+Write(), F\+E\+B\+\_\+v1\+::test\+Duration(), Seq\+P\+G\+A\+::test\+Sequence(), A3\+P\+E\+::trigger(), Server\+::update\+Config(), Server\+::update\+State(), Phaser\+::write(), I\+C\+Phaser\+::write(), and Hierarchy\+::$\sim$\+Hierarchy().
 
 
 \begin{DoxyCode}
@@ -918,7 +954,7 @@ Referenced by export\+\_\+obj(), and Object\+::set\+Dll\+Name().
 
 
 
-Definition at line 129 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
+Definition at line 132 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
 
 
 
@@ -930,28 +966,28 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
 
 
 \begin{DoxyCode}
-130 \{
-131     PyObject* asicParams = PyList\_New(0);
-132     \textcolor{keywordtype}{bool} ok;
-133 
-134     \textcolor{comment}{//The first list item is the Chip Identifier.}
-135     PyList\_Append(asicParams, chipId);
+133 \{
+134     PyObject* asicParams = PyList\_New(0);
+135     \textcolor{keywordtype}{bool} ok;
 136 
-137     \textcolor{comment}{//Let's ask for the configuration to our chip.}
-138     \textcolor{comment}{//Each function will return the corresponding parameter list}
-139     \textcolor{comment}{//of that register.}
-140     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<4;i++)
-141     \{
-142         PyList\_Append(asicParams, \hyperlink{classICECALv3_a7a1c1706a455903f42bb9a5257d94a78}{getDelayLineCh}(i) );
-143         PyList\_Append(asicParams, \hyperlink{classICECALv3_a5f1414e6049a82eafdd505a88d7d0c91}{getAnalogCh}(i) );
-144     \}
-145     PyList\_Append(asicParams, \hyperlink{classICECALv3_a4a414d23c1e199b446dc876161338148}{getMainReg}() );
-146 
-147     ok = \hyperlink{classICECALv3_a9d7c33e6d113e7f721dc848d28ab44d8}{writeAsicParams}(configFile,asicParams);
-148 
-149     \textcolor{keywordflow}{if}(ok) \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
-150     \textcolor{keywordflow}{else}   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
-151 \}
+137     \textcolor{comment}{//The first list item is the Chip Identifier.}
+138     PyList\_Append(asicParams, chipId);
+139 
+140     \textcolor{comment}{//Let's ask for the configuration to our chip.}
+141     \textcolor{comment}{//Each function will return the corresponding parameter list}
+142     \textcolor{comment}{//of that register.}
+143     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<4;i++)
+144     \{
+145         PyList\_Append(asicParams, \hyperlink{classICECALv3_a7a1c1706a455903f42bb9a5257d94a78}{getDelayLineCh}(i) );
+146         PyList\_Append(asicParams, \hyperlink{classICECALv3_a5f1414e6049a82eafdd505a88d7d0c91}{getAnalogCh}(i) );
+147     \}
+148     PyList\_Append(asicParams, \hyperlink{classICECALv3_a4a414d23c1e199b446dc876161338148}{getMainReg}() );
+149 
+150     ok = \hyperlink{classICECALv3_a9d7c33e6d113e7f721dc848d28ab44d8}{writeAsicParams}(configFile,asicParams);
+151 
+152     \textcolor{keywordflow}{if}(ok) \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
+153     \textcolor{keywordflow}{else}   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
+154 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classObject_a204a95f57818c0f811933917a30eff45}\label{classObject_a204a95f57818c0f811933917a30eff45}} 
 \index{I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}!error@{error}}
@@ -1041,7 +1077,7 @@ References Msg\+Svc\+::\+F\+A\+T\+AL, Object\+::m\+\_\+log, and Msg\+Svc\+::msg\
 
 
 
-Definition at line 103 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
+Definition at line 106 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
 
 
 
@@ -1049,29 +1085,29 @@ Referenced by load\+Config().
 
 
 \begin{DoxyCode}
-104 \{
-105     \textcolor{keywordtype}{int} iParamFile;
-106     \textcolor{keywordtype}{bool} found;
-107     PyObject* asicParams = PyList\_New(0);
-108 
-109     \textcolor{comment}{//For each of the parameters of the list...}
-110     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} iList=0 ; iList<paramListLen ; iList++)
-111     \{
-112         iParamFile=0;
-113         found = \textcolor{keyword}{false};
-114         \textcolor{comment}{//We look for the parameter name in the C++ dictionary.}
-115         \textcolor{keywordflow}{while}(iParamFile < fileParamLen && !found)
-116         \{
-117             \textcolor{keywordflow}{if}(paramName[iParamFile].find(paramListRet[iList]) != string::npos)
-118             \{
-119                 PyList\_Append(asicParams, PyInt\_FromLong(paramValue[iParamFile]));
-120                 found = \textcolor{keyword}{true};
-121             \}
-122             iParamFile++;
-123         \}
-124     \}
-125     \textcolor{keywordflow}{return} asicParams;
-126 \}
+107 \{
+108     \textcolor{keywordtype}{int} iParamFile;
+109     \textcolor{keywordtype}{bool} found;
+110     PyObject* asicParams = PyList\_New(0);
+111 
+112     \textcolor{comment}{//For each of the parameters of the list...}
+113     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} iList=0 ; iList<paramListLen ; iList++)
+114     \{
+115         iParamFile=0;
+116         found = \textcolor{keyword}{false};
+117         \textcolor{comment}{//We look for the parameter name in the C++ dictionary.}
+118         \textcolor{keywordflow}{while}(iParamFile < fileParamLen && !found)
+119         \{
+120             \textcolor{keywordflow}{if}(paramName[iParamFile].find(paramListRet[iList]) != string::npos)
+121             \{
+122                 PyList\_Append(asicParams, PyInt\_FromLong(paramValue[iParamFile]));
+123                 found = \textcolor{keyword}{true};
+124             \}
+125             iParamFile++;
+126         \}
+127     \}
+128     \textcolor{keywordflow}{return} asicParams;
+129 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classICECALv3_a5f1414e6049a82eafdd505a88d7d0c91}\label{classICECALv3_a5f1414e6049a82eafdd505a88d7d0c91}} 
 \index{I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}!get\+Analog\+Ch@{get\+Analog\+Ch}}
@@ -1081,7 +1117,7 @@ Referenced by load\+Config().
 
 
 
-Definition at line 310 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
+Definition at line 312 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
 
 
 
@@ -1093,58 +1129,58 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), a
 
 
 \begin{DoxyCode}
-311 \{                            
-312     \hyperlink{ICECALv3_8h_a3cb25ca6f51f003950f9625ff05536fc}{U8} spiLsbAddr = \hyperlink{ICECALv3_8h_abd124f50fa794b9b0aded801fabf5322}{icecalLSBAddrCh}[ch];           \textcolor{comment}{//The SPI address of the 16 LSBs.}
-313     \hyperlink{ICECALv3_8h_a3cb25ca6f51f003950f9625ff05536fc}{U8} spiMsbAddr = \hyperlink{ICECALv3_8h_afba64a649cc9314882fd49b62b99d6e7}{icecalMSBAddrCh}[ch];           \textcolor{comment}{//The SPI address of the 16 MSBs.}
-314 
-315     \textcolor{keywordtype}{int} cIntMsb, cIntLsb0, cIntLsb1, iOffMsb, cIntSubCh0, cIntSubCh1, iOffLsb0, iOffLsb1, iOffSubCh0, 
+313 \{                            
+314     \hyperlink{ICECALv3_8h_a3cb25ca6f51f003950f9625ff05536fc}{U8} spiLsbAddr = \hyperlink{ICECALv3_8h_abd124f50fa794b9b0aded801fabf5322}{icecalLSBAddrCh}[ch];           \textcolor{comment}{//The SPI address of the 16 LSBs.}
+315     \hyperlink{ICECALv3_8h_a3cb25ca6f51f003950f9625ff05536fc}{U8} spiMsbAddr = \hyperlink{ICECALv3_8h_afba64a649cc9314882fd49b62b99d6e7}{icecalMSBAddrCh}[ch];           \textcolor{comment}{//The SPI address of the 16 MSBs.}
+316 
+317     \textcolor{keywordtype}{int} cIntMsb, cIntLsb0, cIntLsb1, iOffMsb, cIntSubCh0, cIntSubCh1, iOffLsb0, iOffLsb1, iOffSubCh0, 
       iOffSubCh1, zero, pole, zIn;
-316     PyObject* icecalChParams = PyList\_New(0);
-317 
-318     \textcolor{comment}{//32 bit register from two SPI 16-bit registers.}
-319     \hyperlink{ICECALv3_8h_a811024d35b9b8a41095b1f583b649e56}{U32} rxData = (\hyperlink{classICECALv3_aaabb9543482c4141fa89b4b8410164e0}{spiRead}(spiMsbAddr) << 16) | \hyperlink{classICECALv3_aaabb9543482c4141fa89b4b8410164e0}{spiRead}(spiLsbAddr);
-320 
-321     \textcolor{keywordflow}{if}(\hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err}) PyList\_Append(icecalChParams, PyInt\_FromLong(-1));
-322     \textcolor{keywordflow}{else}
-323     \{
-324         cIntMsb     = (rxData >> 30) & 0x03;        \textcolor{comment}{//2 bits.}
-325         cIntLsb0    = (rxData >> 27) & 0x07;        \textcolor{comment}{//3 bits.}
-326         cIntLsb1    = (rxData >> 24) & 0x07;        \textcolor{comment}{//3 bits.}
-327         iOffMsb     = (rxData >> 20) & 0x0F;        \textcolor{comment}{//4 bits.}
-328         iOffLsb0    = (rxData >> 18) & 0x03;        \textcolor{comment}{//2 bits.}
-329         iOffLsb1    = (rxData >> 16) & 0x03;        \textcolor{comment}{//2 bits.}
-330         zero            = (rxData >> 11) & 0x1F;        \textcolor{comment}{//5 bits.}
-331         pole            = (rxData >> 5)  & 0x3F;        \textcolor{comment}{//6 bits.}
-332         zIn             = (rxData)           & 0x1F;        \textcolor{comment}{//5 bits.}
-333 
-334         cIntSubCh0 = (cIntMsb << 3) | cIntLsb0;     \textcolor{comment}{//cInt: The 2 MSB are shared between subchannels.}
-335         cIntSubCh1 = (cIntMsb << 3) | cIntLsb1;     \textcolor{comment}{//The 3 LSB may differ from subchannels.}
-336         iOffSubCh0 = (iOffMsb << 2) | iOffLsb0;     \textcolor{comment}{//iOff: 4 common + 2 different.}
-337         iOffSubCh1 = (iOffMsb << 2) | iOffLsb1;
-338 
-339         PyList\_Append(icecalChParams, PyInt\_FromLong(cIntSubCh0));
-340         PyList\_Append(icecalChParams, PyInt\_FromLong(cIntSubCh1));
-341         PyList\_Append(icecalChParams, PyInt\_FromLong(iOffSubCh0));
-342         PyList\_Append(icecalChParams, PyInt\_FromLong(iOffSubCh1));
-343         PyList\_Append(icecalChParams, PyInt\_FromLong(zero));
-344         PyList\_Append(icecalChParams, PyInt\_FromLong(pole));
-345         PyList\_Append(icecalChParams, PyInt\_FromLong(zIn));
-346 
-347         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"ICECAL Analog Channel <"}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(ch)+\textcolor{stringliteral}{"> (MSB @SPI = 0x"}+\hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(spiMsbAddr)+\textcolor{stringliteral}{". LSB
+318     PyObject* icecalChParams = PyList\_New(0);
+319 
+320     \textcolor{comment}{//32 bit register from two SPI 16-bit registers.}
+321     \hyperlink{ICECALv3_8h_a811024d35b9b8a41095b1f583b649e56}{U32} rxData = (\hyperlink{classICECALv3_aced41ce20a0853d6248b8df88412e57a}{spiRead}(spiMsbAddr) << 16) | \hyperlink{classICECALv3_aced41ce20a0853d6248b8df88412e57a}{spiRead}(spiLsbAddr);
+322 
+323     \textcolor{keywordflow}{if}(\hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err}) PyList\_Append(icecalChParams, PyInt\_FromLong(-1));
+324     \textcolor{keywordflow}{else}
+325     \{
+326         cIntMsb     = (rxData >> 30) & 0x03;        \textcolor{comment}{//2 bits.}
+327         cIntLsb0    = (rxData >> 27) & 0x07;        \textcolor{comment}{//3 bits.}
+328         cIntLsb1    = (rxData >> 24) & 0x07;        \textcolor{comment}{//3 bits.}
+329         iOffMsb     = (rxData >> 20) & 0x0F;        \textcolor{comment}{//4 bits.}
+330         iOffLsb0    = (rxData >> 18) & 0x03;        \textcolor{comment}{//2 bits.}
+331         iOffLsb1    = (rxData >> 16) & 0x03;        \textcolor{comment}{//2 bits.}
+332         zero            = (rxData >> 11) & 0x1F;        \textcolor{comment}{//5 bits.}
+333         pole            = (rxData >> 5)  & 0x3F;        \textcolor{comment}{//6 bits.}
+334         zIn             = (rxData)           & 0x1F;        \textcolor{comment}{//5 bits.}
+335 
+336         cIntSubCh0 = (cIntMsb << 3) | cIntLsb0;     \textcolor{comment}{//cInt: The 2 MSB are shared between subchannels.}
+337         cIntSubCh1 = (cIntMsb << 3) | cIntLsb1;     \textcolor{comment}{//The 3 LSB may differ from subchannels.}
+338         iOffSubCh0 = (iOffMsb << 2) | iOffLsb0;     \textcolor{comment}{//iOff: 4 common + 2 different.}
+339         iOffSubCh1 = (iOffMsb << 2) | iOffLsb1;
+340 
+341         PyList\_Append(icecalChParams, PyInt\_FromLong(cIntSubCh0));
+342         PyList\_Append(icecalChParams, PyInt\_FromLong(cIntSubCh1));
+343         PyList\_Append(icecalChParams, PyInt\_FromLong(iOffSubCh0));
+344         PyList\_Append(icecalChParams, PyInt\_FromLong(iOffSubCh1));
+345         PyList\_Append(icecalChParams, PyInt\_FromLong(zero));
+346         PyList\_Append(icecalChParams, PyInt\_FromLong(pole));
+347         PyList\_Append(icecalChParams, PyInt\_FromLong(zIn));
+348 
+349         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"ICECAL Analog Channel <"}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(ch)+\textcolor{stringliteral}{"> (MSB @SPI = 0x"}+\hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(spiMsbAddr)+\textcolor{stringliteral}{". LSB
        @SPI = 0x"}+\hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(spiLsbAddr)+\textcolor{stringliteral}{"):"},\textcolor{stringliteral}{"ICECALv3::getIcecal"});
-348         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·Integrator capacitor SubCh<0> : "}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(cIntSubCh0)    ,\textcolor{stringliteral}{"ICECALv3::getAnalogCh"});
-349         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·Integrator capacitor SubCh<1> : "}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(cIntSubCh1)    ,\textcolor{stringliteral}{"ICECALv3::getAnalogCh"});
-350         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·Offset Current SubCh<0>       : "}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(iOffSubCh0)    ,\textcolor{stringliteral}{"ICECALv3::getAnalogCh"});
-351         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·Offset Current SubCh<1>       : "}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(iOffSubCh1)    ,\textcolor{stringliteral}{"ICECALv3::getAnalogCh"});
-352         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·PZ Zero capacitor             : "}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(zero)              ,\textcolor{stringliteral}{"ICECALv3::getAnalogCh
+350         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·Integrator capacitor SubCh<0> : "}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(cIntSubCh0)    ,\textcolor{stringliteral}{"ICECALv3::getAnalogCh"});
+351         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·Integrator capacitor SubCh<1> : "}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(cIntSubCh1)    ,\textcolor{stringliteral}{"ICECALv3::getAnalogCh"});
+352         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·Offset Current SubCh<0>       : "}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(iOffSubCh0)    ,\textcolor{stringliteral}{"ICECALv3::getAnalogCh"});
+353         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·Offset Current SubCh<1>       : "}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(iOffSubCh1)    ,\textcolor{stringliteral}{"ICECALv3::getAnalogCh"});
+354         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·PZ Zero capacitor             : "}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(zero)              ,\textcolor{stringliteral}{"ICECALv3::getAnalogCh
       "});
-353         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·PZ Pole capacitor             : "}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(pole)              ,\textcolor{stringliteral}{"ICECALv3::getAnalogCh
+355         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·PZ Pole capacitor             : "}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(pole)              ,\textcolor{stringliteral}{"ICECALv3::getAnalogCh
       "});
-354         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·Input impedance control       : "}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(zIn)                   ,\textcolor{stringliteral}{"
+356         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·Input impedance control       : "}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(zIn)                   ,\textcolor{stringliteral}{"
       ICECALv3::getAnalogCh"});
-355     \}
-356     \textcolor{keywordflow}{return} icecalChParams;
-357 \}
+357     \}
+358     \textcolor{keywordflow}{return} icecalChParams;
+359 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classICECALv3_a7a1c1706a455903f42bb9a5257d94a78}\label{classICECALv3_a7a1c1706a455903f42bb9a5257d94a78}} 
 \index{I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}!get\+Delay\+Line\+Ch@{get\+Delay\+Line\+Ch}}
@@ -1154,7 +1190,7 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), a
 
 
 
-Definition at line 243 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
+Definition at line 246 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
 
 
 
@@ -1166,41 +1202,41 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), a
 
 
 \begin{DoxyCode}
-244 \{                            
-245     \hyperlink{ICECALv3_8h_a3cb25ca6f51f003950f9625ff05536fc}{U8} spiAddr = \hyperlink{ICECALv3_8h_a848408b773702d268053cb49d205e097}{delayLineAddrCh}[ch];          \textcolor{comment}{//The SPI address of this delay line
+247 \{                            
+248     \hyperlink{ICECALv3_8h_a3cb25ca6f51f003950f9625ff05536fc}{U8} spiAddr = \hyperlink{ICECALv3_8h_a848408b773702d268053cb49d205e097}{delayLineAddrCh}[ch];          \textcolor{comment}{//The SPI address of this delay line
        channel.}
-246     \hyperlink{ICECALv3_8h_adf928e51a60dba0df29d615401cc55a8}{U16} rxData = \hyperlink{classICECALv3_aaabb9543482c4141fa89b4b8410164e0}{spiRead}(spiAddr);                \textcolor{comment}{//rxData contains the 16 bits corresponding to
+249     \hyperlink{ICECALv3_8h_adf928e51a60dba0df29d615401cc55a8}{U16} rxData = \hyperlink{classICECALv3_aced41ce20a0853d6248b8df88412e57a}{spiRead}(spiAddr);                \textcolor{comment}{//rxData contains the 16 bits corresponding to
        the delay line channel.}
-247 
-248     \textcolor{keywordtype}{int} phaseADC, phaseTH, phaseINT, locSel, lvdsOEn;
-249     PyObject* dllParams = PyList\_New(0);
 250 
-251     \textcolor{keywordflow}{if}(\hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err}) PyList\_Append(dllParams, PyInt\_FromLong(-1));
-252     \textcolor{keywordflow}{else}
-253     \{
-254         phaseADC = (rxData >> 11) & 0x1F;       \textcolor{comment}{//5 bits.}
-255         phaseTH  = (rxData >> 6 ) & 0x1F;       \textcolor{comment}{//5 bits.}
-256         phaseINT = (rxData >> 3 ) & 0x07;       \textcolor{comment}{//3 bits.}
-257         locSel   = (rxData >> 1 ) & 0x03;       \textcolor{comment}{//2 bits.}
-258         lvdsOEn  = !(rxData & 0x01);                \textcolor{comment}{//1 bit (active low).}
-259 
-260         \textcolor{comment}{//Converts integers to PyInt objects and then appends them to the PyList}
-261         PyList\_Append(dllParams, PyInt\_FromLong(phaseADC));
-262         PyList\_Append(dllParams, PyInt\_FromLong(phaseTH));
-263         PyList\_Append(dllParams, PyInt\_FromLong(phaseINT));
-264         PyList\_Append(dllParams, PyInt\_FromLong(locSel));
-265         PyList\_Append(dllParams, PyInt\_FromLong(lvdsOEn));
-266 
-267         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"Delay Line Channel <"}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(ch)+\textcolor{stringliteral}{"> configuration (@SPI = 0x"}+
+251     \textcolor{keywordtype}{int} phaseADC, phaseTH, phaseINT, locSel, lvdsOEn;
+252     PyObject* dllParams = PyList\_New(0);
+253 
+254     \textcolor{keywordflow}{if}(\hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err}) PyList\_Append(dllParams, PyInt\_FromLong(-1));
+255     \textcolor{keywordflow}{else}
+256     \{
+257         phaseADC = (rxData >> 11) & 0x1F;       \textcolor{comment}{//5 bits.}
+258         phaseTH  = (rxData >> 6 ) & 0x1F;       \textcolor{comment}{//5 bits.}
+259         phaseINT = (rxData >> 3 ) & 0x07;       \textcolor{comment}{//3 bits.}
+260         locSel   = (rxData >> 1 ) & 0x03;       \textcolor{comment}{//2 bits.}
+261         lvdsOEn  = (rxData & 0x01);                 \textcolor{comment}{//1 bit.}
+262 
+263         \textcolor{comment}{//Converts integers to PyInt objects and then appends them to the PyList}
+264         PyList\_Append(dllParams, PyInt\_FromLong(phaseADC));
+265         PyList\_Append(dllParams, PyInt\_FromLong(phaseTH));
+266         PyList\_Append(dllParams, PyInt\_FromLong(phaseINT));
+267         PyList\_Append(dllParams, PyInt\_FromLong(locSel));
+268         PyList\_Append(dllParams, PyInt\_FromLong(lvdsOEn));
+269 
+270         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"Delay Line Channel <"}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(ch)+\textcolor{stringliteral}{"> configuration (@SPI = 0x"}+
       \hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(spiAddr)+\textcolor{stringliteral}{"):"},\textcolor{stringliteral}{"ICECALv3::getDelayLine"});
-268         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·Phase ADC          : "}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(phaseADC),\textcolor{stringliteral}{"ICECALv3::getDelayLine"});
-269         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·Phase T&H          : "}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(phaseTH) ,\textcolor{stringliteral}{"ICECALv3::getDelayLine"});
-270         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·Phase INT          : "}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(phaseINT),\textcolor{stringliteral}{"ICECALv3::getDelayLine"});
-271         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·LVDS Current Sel   : "}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(locSel)  ,\textcolor{stringliteral}{"ICECALv3::getDelayLine"});
-272         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·LVDS Output enable : "}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(lvdsOEn) ,\textcolor{stringliteral}{"ICECALv3::getDelayLine"});
-273     \}
-274     \textcolor{keywordflow}{return} dllParams;
-275 \}
+271         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·Phase ADC          : "}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(phaseADC),\textcolor{stringliteral}{"ICECALv3::getDelayLine"});
+272         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·Phase T&H          : "}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(phaseTH) ,\textcolor{stringliteral}{"ICECALv3::getDelayLine"});
+273         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·Phase INT          : "}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(phaseINT),\textcolor{stringliteral}{"ICECALv3::getDelayLine"});
+274         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·LVDS Current Sel   : "}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(locSel)  ,\textcolor{stringliteral}{"ICECALv3::getDelayLine"});
+275         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·LVDS Output enable : "}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(lvdsOEn) ,\textcolor{stringliteral}{"ICECALv3::getDelayLine"});
+276     \}
+277     \textcolor{keywordflow}{return} dllParams;
+278 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classICECALv3_a4a414d23c1e199b446dc876161338148}\label{classICECALv3_a4a414d23c1e199b446dc876161338148}} 
 \index{I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}!get\+Main\+Reg@{get\+Main\+Reg}}
@@ -1210,7 +1246,7 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), a
 
 
 
-Definition at line 413 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
+Definition at line 415 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
 
 
 
@@ -1222,78 +1258,78 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), a
 
 
 \begin{DoxyCode}
-414 \{                            
-415     \hyperlink{ICECALv3_8h_adf928e51a60dba0df29d615401cc55a8}{U16} rxD[4];
-416 
-417     \textcolor{keywordtype}{int} vCtlOE, bxidSynOE, clkRefreshEn, iBiasOB, iBiasCETH, iBiasTH, iBiasINT;
-418     \textcolor{keywordtype}{int} iBiasCEINT, iBiasCEPZ, iBias0T, iBiasPZ, iBiasV0T;
-419     PyObject* icecalMainParams = PyList\_New(0);
-420 
-421     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<4;i++) rxD[i] = \hyperlink{classICECALv3_aaabb9543482c4141fa89b4b8410164e0}{spiRead}(\hyperlink{ICECALv3_8h_a9c22ae782814495416dc2b803df326c1}{icecalMainAddr}[i]);      \textcolor{comment}{//4 registers of 16
-       bits.}
+416 \{                            
+417     \hyperlink{ICECALv3_8h_adf928e51a60dba0df29d615401cc55a8}{U16} rxD[4];
+418 
+419     \textcolor{keywordtype}{int} vCtlOE, bxidSynOE, clkRefreshEn, iBiasOB, iBiasCETH, iBiasTH, iBiasINT;
+420     \textcolor{keywordtype}{int} iBiasCEINT, iBiasCEPZ, iBias0T, iBiasPZ, iBiasV0T;
+421     PyObject* icecalMainParams = PyList\_New(0);
 422 
-423     \textcolor{keywordflow}{if}(\hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err}) PyList\_Append(icecalMainParams, PyInt\_FromLong(-1));
-424     \textcolor{keywordflow}{else}
-425     \{
-426         \textcolor{comment}{//Delay Line & Slow Control main configuration bits.}
-427         vCtlOE              = !((rxD[3] >> 15) & 0x01);     \textcolor{comment}{//1 bit (active low) (d63).}
-428         bxidSynOE           = !((rxD[3] >> 14) & 0x01);     \textcolor{comment}{//1 bit (active low) (d62).}
-429         clkRefreshEn    = !((rxD[3] >> 13) & 0x01);     \textcolor{comment}{//1 bit (active low) (d61).}
-430 
-431         \textcolor{comment}{//Bias currents for the analog channels.}
-432         iBiasOB             = (rxD[3] >> 6) & 0x3F;     \textcolor{comment}{//6 bits (d59..54).}
-433         iBiasCETH           = (rxD[3])          & 0x3F;     \textcolor{comment}{//6 bits (d53..48).}
-434         iBiasTH             = (rxD[2] >> 6) & 0x3F;     \textcolor{comment}{//6 bits (d43..38).}
-435         iBiasINT            = (rxD[2] )         & 0x3F;     \textcolor{comment}{//6 bits (d37..32).}
-436         iBiasCEINT      =((rxD[1] >> 9) & 0x38) | ((rxD[0] >> 12) & 0x7);       \textcolor{comment}{//6 bits (d30..28,
+423     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<4;i++) rxD[i] = \hyperlink{classICECALv3_aced41ce20a0853d6248b8df88412e57a}{spiRead}(\hyperlink{ICECALv3_8h_a9c22ae782814495416dc2b803df326c1}{icecalMainAddr}[i]);      \textcolor{comment}{//4 registers of 16
+       bits.}
+424 
+425     \textcolor{keywordflow}{if}(\hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err}) PyList\_Append(icecalMainParams, PyInt\_FromLong(-1));
+426     \textcolor{keywordflow}{else}
+427     \{
+428         \textcolor{comment}{//Delay Line & Slow Control main configuration bits.}
+429         vCtlOE              = !((rxD[3] >> 15) & 0x01);     \textcolor{comment}{//1 bit (active low) (d63).}
+430         bxidSynOE           = !((rxD[3] >> 14) & 0x01);     \textcolor{comment}{//1 bit (active low) (d62).}
+431         clkRefreshEn    = !((rxD[3] >> 13) & 0x01);     \textcolor{comment}{//1 bit (active low) (d61).}
+432 
+433         \textcolor{comment}{//Bias currents for the analog channels.}
+434         iBiasOB             = (rxD[3] >> 6) & 0x3F;     \textcolor{comment}{//6 bits (d59..54).}
+435         iBiasCETH           = (rxD[3])          & 0x3F;     \textcolor{comment}{//6 bits (d53..48).}
+436         iBiasTH             = (rxD[2] >> 6) & 0x3F;     \textcolor{comment}{//6 bits (d43..38).}
+437         iBiasINT            = (rxD[2] )         & 0x3F;     \textcolor{comment}{//6 bits (d37..32).}
+438         iBiasCEINT      =((rxD[1] >> 9) & 0x38) | ((rxD[0] >> 12) & 0x7);       \textcolor{comment}{//6 bits (d30..28,
        d14..12).}
-437         iBiasCEPZ           = (rxD[1] >> 6) & 0x3F;     \textcolor{comment}{//6 bits (d27..22).}
-438         iBias0T             = (rxD[1])          & 0x3F;     \textcolor{comment}{//6 bits (d21..16).}
-439         iBiasPZ             = (rxD[0] >> 6) & 0x3F;     \textcolor{comment}{//6 bits (d11..06).}
-440         iBiasV0T            = (rxD[0])          & 0x3F;     \textcolor{comment}{//6 bits (d05..00).}
-441 
-442         PyList\_Append(icecalMainParams, PyInt\_FromLong(vCtlOE));
-443         PyList\_Append(icecalMainParams, PyInt\_FromLong(bxidSynOE));
-444         PyList\_Append(icecalMainParams, PyInt\_FromLong(clkRefreshEn));
-445         PyList\_Append(icecalMainParams, PyInt\_FromLong(iBiasOB));
-446         PyList\_Append(icecalMainParams, PyInt\_FromLong(iBiasCETH));
-447         PyList\_Append(icecalMainParams, PyInt\_FromLong(iBiasTH));
-448         PyList\_Append(icecalMainParams, PyInt\_FromLong(iBiasINT));
-449         PyList\_Append(icecalMainParams, PyInt\_FromLong(iBiasCEINT));
-450         PyList\_Append(icecalMainParams, PyInt\_FromLong(iBiasCEPZ));
-451         PyList\_Append(icecalMainParams, PyInt\_FromLong(iBias0T));
-452         PyList\_Append(icecalMainParams, PyInt\_FromLong(iBiasPZ));
-453         PyList\_Append(icecalMainParams, PyInt\_FromLong(iBiasV0T));
-454 
-455         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"ICECAL Main Register (@SPI = [0x"}+\hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(\hyperlink{ICECALv3_8h_a9c22ae782814495416dc2b803df326c1}{icecalMainAddr}[3])+\textcolor{stringliteral}{"..0x"}+
+439         iBiasCEPZ           = (rxD[1] >> 6) & 0x3F;     \textcolor{comment}{//6 bits (d27..22).}
+440         iBias0T             = (rxD[1])          & 0x3F;     \textcolor{comment}{//6 bits (d21..16).}
+441         iBiasPZ             = (rxD[0] >> 6) & 0x3F;     \textcolor{comment}{//6 bits (d11..06).}
+442         iBiasV0T            = (rxD[0])          & 0x3F;     \textcolor{comment}{//6 bits (d05..00).}
+443 
+444         PyList\_Append(icecalMainParams, PyInt\_FromLong(vCtlOE));
+445         PyList\_Append(icecalMainParams, PyInt\_FromLong(bxidSynOE));
+446         PyList\_Append(icecalMainParams, PyInt\_FromLong(clkRefreshEn));
+447         PyList\_Append(icecalMainParams, PyInt\_FromLong(iBiasOB));
+448         PyList\_Append(icecalMainParams, PyInt\_FromLong(iBiasCETH));
+449         PyList\_Append(icecalMainParams, PyInt\_FromLong(iBiasTH));
+450         PyList\_Append(icecalMainParams, PyInt\_FromLong(iBiasINT));
+451         PyList\_Append(icecalMainParams, PyInt\_FromLong(iBiasCEINT));
+452         PyList\_Append(icecalMainParams, PyInt\_FromLong(iBiasCEPZ));
+453         PyList\_Append(icecalMainParams, PyInt\_FromLong(iBias0T));
+454         PyList\_Append(icecalMainParams, PyInt\_FromLong(iBiasPZ));
+455         PyList\_Append(icecalMainParams, PyInt\_FromLong(iBiasV0T));
+456 
+457         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"ICECAL Main Register (@SPI = [0x"}+\hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(\hyperlink{ICECALv3_8h_a9c22ae782814495416dc2b803df326c1}{icecalMainAddr}[3])+\textcolor{stringliteral}{"..0x"}+
       \hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(\hyperlink{ICECALv3_8h_a9c22ae782814495416dc2b803df326c1}{icecalMainAddr}[0])+\textcolor{stringliteral}{"]):"},\textcolor{stringliteral}{"ICECALv3::getIcecalMain"});
-456         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·DLL Control Voltage Output Enable: "} + \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(vCtlOE)               ,\textcolor{stringliteral}{"
+458         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·DLL Control Voltage Output Enable: "} + \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(vCtlOE)               ,\textcolor{stringliteral}{"
       ICECALv3::getIcecalMain"});
-457         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·BXID Resynch Output Enable       : "} + \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(bxidSynOE)        ,\textcolor{stringliteral}{"
+459         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·BXID Resynch Output Enable       : "} + \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(bxidSynOE)        ,\textcolor{stringliteral}{"
       ICECALv3::getIcecalMain"});
-458         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·SPI Clock refresh Enable         : "} + \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(clkRefreshEn) ,\textcolor{stringliteral}{"
+460         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·SPI Clock refresh Enable         : "} + \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(clkRefreshEn) ,\textcolor{stringliteral}{"
       ICECALv3::getIcecalMain"});
-459         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·Output Buffer bias               : "} + \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(iBiasOB)          ,\textcolor{stringliteral}{"
+461         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·Output Buffer bias               : "} + \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(iBiasOB)          ,\textcolor{stringliteral}{"
       ICECALv3::getIcecalMain"});
-460         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·Track & Hold OpAmp bias (CE)     : "} + \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(iBiasCETH)        ,\textcolor{stringliteral}{"
+462         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·Track & Hold OpAmp bias (CE)     : "} + \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(iBiasCETH)        ,\textcolor{stringliteral}{"
       ICECALv3::getIcecalMain"});
-461         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·Track & Hold OpAmp bias          : "} + \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(iBiasTH)          ,\textcolor{stringliteral}{"
+463         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·Track & Hold OpAmp bias          : "} + \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(iBiasTH)          ,\textcolor{stringliteral}{"
       ICECALv3::getIcecalMain"});
-462         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·Integrator OpAmp bias            : "} + \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(iBiasINT)         ,\textcolor{stringliteral}{"
+464         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·Integrator OpAmp bias            : "} + \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(iBiasINT)         ,\textcolor{stringliteral}{"
       ICECALv3::getIcecalMain"});
-463         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·Integrator OpAmp bias (CE)       : "} + \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(iBiasCEINT)       ,\textcolor{stringliteral}{"
+465         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·Integrator OpAmp bias (CE)       : "} + \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(iBiasCEINT)       ,\textcolor{stringliteral}{"
       ICECALv3::getIcecalMain"});
-464         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·Pole-Zero OpAmp bias (CE)        : "} + \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(iBiasCEPZ)        ,\textcolor{stringliteral}{"
+466         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·Pole-Zero OpAmp bias (CE)        : "} + \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(iBiasCEPZ)        ,\textcolor{stringliteral}{"
       ICECALv3::getIcecalMain"});
-465         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·0T bias                    : "} + \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(iBias0T)            ,\textcolor{stringliteral}{"
+467         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·0T bias                    : "} + \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(iBias0T)            ,\textcolor{stringliteral}{"
       ICECALv3::getIcecalMain"});
-466         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·Pole-Zero OpAmp bias             : "} + \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(iBiasPZ)          ,\textcolor{stringliteral}{"
+468         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·Pole-Zero OpAmp bias             : "} + \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(iBiasPZ)          ,\textcolor{stringliteral}{"
       ICECALv3::getIcecalMain"});
-467         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·0T bias (V0T)              : "} + \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(iBiasV0T)           ,\textcolor{stringliteral}{"
+469         \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"   ·0T bias (V0T)              : "} + \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(iBiasV0T)           ,\textcolor{stringliteral}{"
       ICECALv3::getIcecalMain"});
-468     \}
-469     \textcolor{keywordflow}{return} icecalMainParams;
-470 \}
+470     \}
+471     \textcolor{keywordflow}{return} icecalMainParams;
+472 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classHierarchy_a255174fe4d316d2a3f430dcb9dab29f1}\label{classHierarchy_a255174fe4d316d2a3f430dcb9dab29f1}} 
 \index{I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}!has\+Children@{has\+Children}}
@@ -1331,11 +1367,11 @@ Implements \hyperlink{classElement_a32c0de27acb08e17251cef88c3e9303a}{Element}.
 
 
 
-Definition at line 103 of file I\+C\+E\+C\+A\+Lv3.\+h.
+Definition at line 104 of file I\+C\+E\+C\+A\+Lv3.\+h.
 
 
 \begin{DoxyCode}
-103 \{ \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"ICECALv3 "}+\hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name}()+\textcolor{stringliteral}{". No help."},\textcolor{stringliteral}{"ICECALv3::help"}); \};
+104 \{ \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"ICECALv3 "}+\hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name}()+\textcolor{stringliteral}{". No help."},\textcolor{stringliteral}{"ICECALv3::help"}); \};
 \end{DoxyCode}
 \mbox{\Hypertarget{classObject_af99145335cc61ff6e2798ea17db009d2}\label{classObject_af99145335cc61ff6e2798ea17db009d2}} 
 \index{I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}!id@{id}}
@@ -1375,7 +1411,7 @@ References Msg\+Svc\+::\+I\+N\+FO, Object\+::m\+\_\+log, Object\+::m\+\_\+name, 
 
 
 
-Referenced by N\+I6008\+::add\+Device(), F\+E\+B\+\_\+v1\+::calib\+Cte(), check\+Cmd(), Hierarchy\+::clear(), F\+E\+B\+\_\+v1\+::clock80\+M\+Hz\+Falling\+Edge(), F\+E\+B\+\_\+v1\+::clock\+Falling\+Edge(), Usb\+F\+T\+M\+L\+Interface\+::close(), Usb\+F\+T\+Interface\+::close(), Processus\+::close\+Root\+File(), Server\+::cmdline(), Specs\+Mezzanine\+::cmdline(), Specs\+Slave\+::detect(), F\+E\+B\+\_\+v1\+::disable\+Subtract(), I\+Odata\+::dump(), A3\+P\+E\+::dump\+From\+A\+X(), A3\+P\+E\+::dump\+Pattern(), A3\+P\+E\+::dump\+Storage(), A3\+P\+E\+::dump\+To\+A\+X(), A3\+P\+E\+::dump\+Trigger(), Processus\+::end\+Processing(), Phaser\+Ramp\+Exec\+::execute(), export\+\_\+obj(), Phaser\+Ramp\+Exec\+::finalize(), F\+E\+B\+\_\+v1\+::gain4(), F\+E\+B\+\_\+v1\+::gbt80\+M\+Hz\+Clk\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+Data\+Path(), F\+E\+B\+\_\+v1\+::gbt\+D\+L\+L\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+D\+L\+L\+Reset(), F\+E\+B\+\_\+v1\+::gbt\+Enable\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+Mode(), F\+E\+B\+\_\+v1\+::gbt\+Status(), F\+E\+B\+\_\+v1\+::gbt\+Term\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+Track\+Mode(), get\+Analog\+Ch(), get\+Delay\+Line\+Ch(), get\+Main\+Reg(), F\+E\+B\+\_\+v1\+::global\+Pseudo\+P\+M\+Enable(), Croc\+::help(), R\+A\+M\+::help(), Specs\+Glue\+::help(), Usb\+M\+L\+I2c\+Bus\+::help(), Usb\+M\+L\+Spi\+Bus\+::help(), C\+U\+\_\+v1\+::help(), Usb\+I2c\+Bus\+::help(), Usb\+Spi\+Bus\+::help(), F\+E\+B\+\_\+v1\+::help(), I\+Oobject\+::help(), Proto40\+M\+Hz\+\_\+v1\+::help(), Specs\+Mezzanine\+::help(), Fe\+P\+G\+A\+::help(), Seq\+P\+G\+A\+::help(), Computer\+::help(), N\+I6008\+::help(), Specs\+Parallel\+Bus\+::help(), Specs\+Master\+::help(), Usb\+F\+T\+M\+L\+Interface\+::help(), Usb\+F\+T\+Interface\+::help(), Phaser\+::help(), I\+C\+Phaser\+::help(), A3\+P\+E\+::help(), M\+S\+Oxxxx\+::id(), Croc\+::init(), N\+I6008\+::init(), Computer\+::init(), Specs\+Parallel\+Bus\+::init(), Specs\+Slave\+::init(), Specs\+Master\+::init(), Usb\+F\+T\+Interface\+::init(), Usb\+F\+T\+M\+L\+Interface\+::init(), Storage\+Fifo\+Acquisition\+::initialize(), Storage\+Fifo\+::initialize(), A3\+P\+E\+\_\+\+Bit\+Flip\+::initialize(), Acquisition\+::initialize(), Emulate\+F\+E\+::initialize(), Current\+Measurement\+::initialize(), A\+D\+C\+Measurement\+::initialize(), Phaser\+Ramp\+Exec\+::initialize(), F\+E\+B\+\_\+v1\+::inject\+Mode\+F\+E(), is\+Int(), F\+E\+B\+\_\+v1\+::latency(), F\+E\+B\+\_\+v1\+::latency\+L\+L\+T(), A3\+P\+E\+::load\+From\+A\+X(), Application\+::load\+History\+File(), A3\+P\+E\+::load\+Pattern(), A3\+P\+E\+::load\+Storage(), A3\+P\+E\+::load\+To\+A\+X(), A3\+P\+E\+::load\+Trigger(), Application\+::loop(), F\+E\+B\+\_\+v1\+::mask\+L\+L\+T(), Application\+::network(), F\+E\+B\+\_\+v1\+::old\+Subtract(), M\+S\+Oxxxx\+::open(), Processus\+::open\+Root\+File(), Data\+::print(), F\+E\+B\+\_\+v1\+::probe\+Enable(), Proc\+Data\+Base\+::\+Proc\+Data\+Base(), F\+E\+B\+\_\+v1\+::pseudo\+A\+D\+C\+Enable(), F\+E\+B\+\_\+v1\+::pseudo\+P\+M\+Enable(), Usb\+Spi\+Bus\+::read(), Usb\+F\+T\+M\+L\+Interface\+::read(), F\+E\+B\+\_\+v1\+::read\+Fifo\+Inject\+F\+E(), F\+E\+B\+\_\+v1\+::read\+Fifo\+L\+L\+T(), F\+E\+B\+\_\+v1\+::read\+Fifo\+L\+L\+T\+F\+E(), F\+E\+B\+\_\+v1\+::read\+Fifo\+Spy\+F\+E(), M\+S\+Oxxxx\+::recv(), Croc\+::reset(), Usb\+I2c\+Bus\+::reset(), Usb\+M\+L\+I2c\+Bus\+::reset(), Usb\+M\+L\+Spi\+Bus\+::reset(), Usb\+Spi\+Bus\+::reset(), Fe\+P\+G\+A\+::reset(), Seq\+P\+G\+A\+::reset(), Computer\+::reset(), Specs\+Parallel\+Bus\+::reset(), Specs\+Master\+::reset(), N\+I6008\+::reset(), Usb\+F\+T\+M\+L\+Interface\+::reset(), Usb\+F\+T\+Interface\+::reset(), A3\+P\+E\+::reset(), A3\+P\+E\+::reset\+Acquisition\+Write\+Counter(), F\+E\+B\+\_\+v1\+::reset\+F\+E(), A3\+P\+E\+::reset\+F\+E(), F\+E\+B\+\_\+v1\+::reset\+Fifo\+Inject\+F\+E(), F\+E\+B\+\_\+v1\+::reset\+Fifo\+Spy\+F\+E(), A3\+P\+E\+::reset\+From\+A\+X\+Ram(), Specs\+Slave\+::reset\+Internal(), A3\+P\+E\+::reset\+Latency\+Counter(), A3\+P\+E\+::reset\+Pattern\+Fifo(), A3\+P\+E\+::reset\+Sequence\+From\+To\+A\+X(), A3\+P\+E\+::reset\+S\+P\+I(), A3\+P\+E\+::reset\+Storage\+Fifo(), A3\+P\+E\+::reset\+To\+A\+X\+Ram(), A3\+P\+E\+::reset\+Trigger\+Fifo(), Seq\+P\+G\+A\+::reset\+Usb(), Fe\+P\+G\+A\+::reset\+Usb(), A3\+P\+E\+::reset\+Usb\+Phasers(), M\+S\+Oxxxx\+::send(), Server\+::\+Server(), Application\+::server(), F\+E\+B\+\_\+v1\+::set\+Calib\+Cte(), F\+E\+B\+\_\+v1\+::set\+Clock80\+M\+Hz\+Falling\+Edge(), A3\+P\+E\+::set\+Clock\+Division(), F\+E\+B\+\_\+v1\+::set\+Clock\+Falling\+Edge(), Usb\+Spi\+Bus\+::set\+Data\+Length(), F\+E\+B\+\_\+v1\+::set\+Disable\+Subtract(), A3\+P\+E\+::set\+Enable\+A\+D\+C(), A3\+P\+E\+::set\+Fifo\+Depth(), A3\+P\+E\+::set\+Fifo\+Latency(), F\+E\+B\+\_\+v1\+::set\+Gain4(), F\+E\+B\+\_\+v1\+::set\+Gbt80\+M\+Hz\+Clk\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Clock\+Strength(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Data\+Path(), F\+E\+B\+\_\+v1\+::set\+Gbt\+D\+L\+L\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Enable\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Mode(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Term\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Track\+Mode(), F\+E\+B\+\_\+v1\+::set\+Global\+Pseudo\+P\+M\+Enable(), F\+E\+B\+\_\+v1\+::set\+Inject\+Mode\+F\+E(), A3\+P\+E\+::set\+Internal\+A\+X\+Sequence(), F\+E\+B\+\_\+v1\+::set\+Latency(), A3\+P\+E\+::set\+N\+Trigger(), F\+E\+B\+\_\+v1\+::set\+Old\+Subtract(), F\+E\+B\+\_\+v1\+::set\+Output\+Eport(), Phaser\+::set\+Phase(), I\+C\+Phaser\+::set\+Phase(), A3\+P\+E\+::set\+Pipeline(), F\+E\+B\+\_\+v1\+::set\+Probe\+Enable(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+A\+D\+C\+Enable(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+P\+M\+Enable(), A3\+P\+E\+::set\+Read\+Pattern\+Fifo\+Usb(), A3\+P\+E\+::set\+Read\+Trigger\+Fifo\+Usb(), A3\+P\+E\+::set\+Software\+Trigger(), F\+E\+B\+\_\+v1\+::set\+Spare\+For\+Trig\+Enable(), F\+E\+B\+\_\+v1\+::set\+Spy\+Mode\+F\+E(), Processus\+::set\+State(), F\+E\+B\+\_\+v1\+::set\+Threshold(), A3\+P\+E\+::set\+Trigger\+Delay(), A3\+P\+E\+::set\+Trigger\+Rate(), A3\+P\+E\+::set\+Write\+Storage\+Fifo\+Usb(), L\+S\+Delay\+Chip\+V1\+::show\+Config(), F\+E\+B\+\_\+v1\+::spare\+For\+Trig\+Enable(), Specs\+I2c\+::\+Specs\+I2c(), spi\+F\+E\+R\+Test(), F\+E\+B\+\_\+v1\+::spy\+Mode\+F\+E(), F\+E\+B\+\_\+v1\+::spy\+Mode\+Seq(), Server\+::start(), Processus\+::start\+Processing(), F\+E\+B\+\_\+v1\+::status\+Register(), F\+E\+B\+\_\+v1\+::stop\+Inj\+Loop(), Application\+::svc\+Running(), Application\+::terminate(), F\+E\+B\+\_\+v1\+::test\+Duration(), Seq\+P\+G\+A\+::test\+Sequence(), Fe\+P\+G\+A\+::test\+Sequence(), F\+E\+B\+\_\+v1\+::threshold(), Hierarchy\+::tree(), Croc\+::update(), Usb\+I2c\+Bus\+::update(), Usb\+Spi\+Bus\+::update(), Usb\+M\+L\+I2c\+Bus\+::update(), Usb\+M\+L\+Spi\+Bus\+::update(), C\+U\+\_\+v1\+::update(), Proto40\+M\+Hz\+\_\+v1\+::update(), Computer\+::update(), F\+E\+B\+\_\+v1\+::update(), Specs\+Parallel\+Bus\+::update(), N\+I6008\+::update(), Usb\+F\+T\+Interface\+::update(), Usb\+F\+T\+M\+L\+Interface\+::update(), Usb\+F\+T\+Interface\+::\+Usb\+F\+T\+Interface(), Usb\+F\+T\+M\+L\+Interface\+::\+Usb\+F\+T\+M\+L\+Interface(), Usb\+Spi\+Bus\+::write(), F\+E\+B\+\_\+v1\+::write\+Data\+Fifo\+Inject\+F\+E(), F\+E\+B\+\_\+v1\+::write\+Fifo\+Inject\+F\+E(), and N\+I6008\+::$\sim$\+N\+I6008().
+Referenced by N\+I6008\+::add\+Device(), bxid\+Resynch\+Status(), F\+E\+B\+\_\+v1\+::calib\+Cte(), check\+Cmd(), Hierarchy\+::clear(), F\+E\+B\+\_\+v1\+::clock80\+M\+Hz\+Falling\+Edge(), F\+E\+B\+\_\+v1\+::clock\+Falling\+Edge(), Usb\+F\+T\+Interface\+::close(), Usb\+F\+T\+M\+L\+Interface\+::close(), Processus\+::close\+Root\+File(), Server\+::cmdline(), Specs\+Mezzanine\+::cmdline(), Specs\+Slave\+::detect(), F\+E\+B\+\_\+v1\+::disable\+Subtract(), I\+Odata\+::dump(), A3\+P\+E\+::dump\+From\+A\+X(), A3\+P\+E\+::dump\+Pattern(), A3\+P\+E\+::dump\+Storage(), A3\+P\+E\+::dump\+To\+A\+X(), A3\+P\+E\+::dump\+Trigger(), Processus\+::end\+Processing(), Phaser\+Ramp\+Exec\+::execute(), export\+\_\+obj(), Phaser\+Ramp\+Exec\+::finalize(), F\+E\+B\+\_\+v1\+::gain4(), F\+E\+B\+\_\+v1\+::gbt80\+M\+Hz\+Clk\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+Data\+Path(), F\+E\+B\+\_\+v1\+::gbt\+D\+L\+L\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+D\+L\+L\+Reset(), F\+E\+B\+\_\+v1\+::gbt\+Enable\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+Mode(), F\+E\+B\+\_\+v1\+::gbt\+Status(), F\+E\+B\+\_\+v1\+::gbt\+Term\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+Track\+Mode(), get\+Analog\+Ch(), get\+Delay\+Line\+Ch(), get\+Main\+Reg(), F\+E\+B\+\_\+v1\+::global\+Pseudo\+P\+M\+Enable(), Croc\+::help(), R\+A\+M\+::help(), Specs\+Glue\+::help(), Usb\+M\+L\+I2c\+Bus\+::help(), Usb\+M\+L\+Spi\+Bus\+::help(), C\+U\+\_\+v1\+::help(), Usb\+I2c\+Bus\+::help(), Usb\+Spi\+Bus\+::help(), F\+E\+B\+\_\+v1\+::help(), I\+Oobject\+::help(), Proto40\+M\+Hz\+\_\+v1\+::help(), Specs\+Mezzanine\+::help(), Fe\+P\+G\+A\+::help(), Seq\+P\+G\+A\+::help(), Computer\+::help(), N\+I6008\+::help(), Specs\+Parallel\+Bus\+::help(), Specs\+Master\+::help(), Usb\+F\+T\+M\+L\+Interface\+::help(), Usb\+F\+T\+Interface\+::help(), Phaser\+::help(), I\+C\+Phaser\+::help(), A3\+P\+E\+::help(), M\+S\+Oxxxx\+::id(), Croc\+::init(), Computer\+::init(), N\+I6008\+::init(), Specs\+Parallel\+Bus\+::init(), Specs\+Slave\+::init(), Specs\+Master\+::init(), Usb\+F\+T\+Interface\+::init(), Usb\+F\+T\+M\+L\+Interface\+::init(), Storage\+Fifo\+Acquisition\+::initialize(), Storage\+Fifo\+::initialize(), Acquisition\+::initialize(), A3\+P\+E\+\_\+\+Bit\+Flip\+::initialize(), Emulate\+F\+E\+::initialize(), A\+D\+C\+Measurement\+::initialize(), Current\+Measurement\+::initialize(), Phaser\+Ramp\+Exec\+::initialize(), F\+E\+B\+\_\+v1\+::inject\+Mode\+F\+E(), is\+Int(), F\+E\+B\+\_\+v1\+::latency(), F\+E\+B\+\_\+v1\+::latency\+L\+L\+T(), A3\+P\+E\+::load\+From\+A\+X(), Application\+::load\+History\+File(), A3\+P\+E\+::load\+Pattern(), A3\+P\+E\+::load\+Storage(), A3\+P\+E\+::load\+To\+A\+X(), A3\+P\+E\+::load\+Trigger(), Application\+::loop(), F\+E\+B\+\_\+v1\+::mask\+L\+L\+T(), Application\+::network(), F\+E\+B\+\_\+v1\+::old\+Subtract(), M\+S\+Oxxxx\+::open(), Processus\+::open\+Root\+File(), Data\+::print(), F\+E\+B\+\_\+v1\+::probe\+Enable(), Proc\+Data\+Base\+::\+Proc\+Data\+Base(), F\+E\+B\+\_\+v1\+::pseudo\+A\+D\+C\+Enable(), F\+E\+B\+\_\+v1\+::pseudo\+P\+M\+Enable(), Usb\+Spi\+Bus\+::read(), Usb\+F\+T\+M\+L\+Interface\+::read(), F\+E\+B\+\_\+v1\+::read\+Fifo\+Inject\+F\+E(), F\+E\+B\+\_\+v1\+::read\+Fifo\+L\+L\+T(), F\+E\+B\+\_\+v1\+::read\+Fifo\+L\+L\+T\+F\+E(), F\+E\+B\+\_\+v1\+::read\+Fifo\+Spy\+F\+E(), M\+S\+Oxxxx\+::recv(), Croc\+::reset(), Usb\+M\+L\+I2c\+Bus\+::reset(), Usb\+I2c\+Bus\+::reset(), Usb\+M\+L\+Spi\+Bus\+::reset(), Usb\+Spi\+Bus\+::reset(), Fe\+P\+G\+A\+::reset(), Seq\+P\+G\+A\+::reset(), Computer\+::reset(), Specs\+Parallel\+Bus\+::reset(), Specs\+Master\+::reset(), N\+I6008\+::reset(), Usb\+F\+T\+Interface\+::reset(), Usb\+F\+T\+M\+L\+Interface\+::reset(), A3\+P\+E\+::reset(), A3\+P\+E\+::reset\+Acquisition\+Write\+Counter(), F\+E\+B\+\_\+v1\+::reset\+F\+E(), A3\+P\+E\+::reset\+F\+E(), F\+E\+B\+\_\+v1\+::reset\+Fifo\+Inject\+F\+E(), A3\+P\+E\+::reset\+From\+A\+X\+Ram(), Specs\+Slave\+::reset\+Internal(), A3\+P\+E\+::reset\+Latency\+Counter(), A3\+P\+E\+::reset\+Pattern\+Fifo(), A3\+P\+E\+::reset\+Sequence\+From\+To\+A\+X(), A3\+P\+E\+::reset\+S\+P\+I(), A3\+P\+E\+::reset\+Storage\+Fifo(), A3\+P\+E\+::reset\+To\+A\+X\+Ram(), A3\+P\+E\+::reset\+Trigger\+Fifo(), Seq\+P\+G\+A\+::reset\+Usb(), Fe\+P\+G\+A\+::reset\+Usb(), A3\+P\+E\+::reset\+Usb\+Phasers(), M\+S\+Oxxxx\+::send(), Server\+::\+Server(), Application\+::server(), F\+E\+B\+\_\+v1\+::set\+Calib\+Cte(), F\+E\+B\+\_\+v1\+::set\+Clock80\+M\+Hz\+Falling\+Edge(), A3\+P\+E\+::set\+Clock\+Division(), F\+E\+B\+\_\+v1\+::set\+Clock\+Falling\+Edge(), Usb\+Spi\+Bus\+::set\+Data\+Length(), F\+E\+B\+\_\+v1\+::set\+Disable\+Subtract(), A3\+P\+E\+::set\+Enable\+A\+D\+C(), A3\+P\+E\+::set\+Fifo\+Depth(), A3\+P\+E\+::set\+Fifo\+Latency(), F\+E\+B\+\_\+v1\+::set\+Gain4(), F\+E\+B\+\_\+v1\+::set\+Gbt80\+M\+Hz\+Clk\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Clock\+Strength(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Data\+Path(), F\+E\+B\+\_\+v1\+::set\+Gbt\+D\+L\+L\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Enable\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Mode(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Term\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Track\+Mode(), F\+E\+B\+\_\+v1\+::set\+Global\+Pseudo\+P\+M\+Enable(), F\+E\+B\+\_\+v1\+::set\+Inject\+Mode\+F\+E(), A3\+P\+E\+::set\+Internal\+A\+X\+Sequence(), F\+E\+B\+\_\+v1\+::set\+Latency(), A3\+P\+E\+::set\+N\+Trigger(), F\+E\+B\+\_\+v1\+::set\+Old\+Subtract(), F\+E\+B\+\_\+v1\+::set\+Output\+Eport(), Phaser\+::set\+Phase(), I\+C\+Phaser\+::set\+Phase(), A3\+P\+E\+::set\+Pipeline(), F\+E\+B\+\_\+v1\+::set\+Probe\+Enable(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+A\+D\+C\+Enable(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+P\+M\+Enable(), A3\+P\+E\+::set\+Read\+Pattern\+Fifo\+Usb(), A3\+P\+E\+::set\+Read\+Trigger\+Fifo\+Usb(), A3\+P\+E\+::set\+Software\+Trigger(), F\+E\+B\+\_\+v1\+::set\+Spare\+For\+Trig\+Enable(), F\+E\+B\+\_\+v1\+::set\+Spy\+Mode\+F\+E(), Processus\+::set\+State(), F\+E\+B\+\_\+v1\+::set\+Threshold(), A3\+P\+E\+::set\+Trigger\+Delay(), A3\+P\+E\+::set\+Trigger\+Rate(), A3\+P\+E\+::set\+Write\+Storage\+Fifo\+Usb(), L\+S\+Delay\+Chip\+V1\+::show\+Config(), F\+E\+B\+\_\+v1\+::spare\+For\+Trig\+Enable(), Specs\+I2c\+::\+Specs\+I2c(), spi\+F\+E\+R\+Test(), F\+E\+B\+\_\+v1\+::spy\+Mode\+F\+E(), F\+E\+B\+\_\+v1\+::spy\+Mode\+Seq(), Server\+::start(), Processus\+::start\+Processing(), F\+E\+B\+\_\+v1\+::status\+Register(), F\+E\+B\+\_\+v1\+::stop\+Inj\+Loop(), Application\+::svc\+Running(), Application\+::terminate(), Fe\+P\+G\+A\+::test\+Sequence(), F\+E\+B\+\_\+v1\+::threshold(), Hierarchy\+::tree(), Croc\+::update(), Usb\+I2c\+Bus\+::update(), Usb\+Spi\+Bus\+::update(), Usb\+M\+L\+I2c\+Bus\+::update(), Usb\+M\+L\+Spi\+Bus\+::update(), C\+U\+\_\+v1\+::update(), Proto40\+M\+Hz\+\_\+v1\+::update(), Computer\+::update(), F\+E\+B\+\_\+v1\+::update(), Specs\+Parallel\+Bus\+::update(), N\+I6008\+::update(), Usb\+F\+T\+Interface\+::update(), Usb\+F\+T\+M\+L\+Interface\+::update(), Usb\+F\+T\+Interface\+::\+Usb\+F\+T\+Interface(), Usb\+F\+T\+M\+L\+Interface\+::\+Usb\+F\+T\+M\+L\+Interface(), version(), Usb\+Spi\+Bus\+::write(), F\+E\+B\+\_\+v1\+::write\+Data\+Fifo\+Inject\+F\+E(), F\+E\+B\+\_\+v1\+::write\+Fifo\+Inject\+F\+E(), and N\+I6008\+::$\sim$\+N\+I6008().
 
 
 \begin{DoxyCode}
@@ -1416,7 +1452,7 @@ Implements \hyperlink{classElement_af42754b5cabc198869222725218d695c}{Element}.
 
 
 
-Definition at line 110 of file I\+C\+E\+C\+A\+Lv3.\+h.
+Definition at line 111 of file I\+C\+E\+C\+A\+Lv3.\+h.
 
 
 
@@ -1424,9 +1460,9 @@ References shell\+::reset(), and Status\+Code\+::\+S\+U\+C\+C\+E\+SS.
 
 
 \begin{DoxyCode}
-110                     \{
-111     \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
-112   \};
+111                     \{
+112     \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
+113   \};
 \end{DoxyCode}
 \mbox{\Hypertarget{classAttrib_a704f26af560909ad22065083bb7d4c34}\label{classAttrib_a704f26af560909ad22065083bb7d4c34}} 
 \index{I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}!is@{is}}
@@ -1468,27 +1504,27 @@ Referenced by export\+\_\+obj(), and Element\+::set\+Connection().
 
 
 
-Definition at line 163 of file I\+C\+E\+C\+A\+Lv3.\+h.
+Definition at line 164 of file I\+C\+E\+C\+A\+Lv3.\+h.
 
 
 
-Referenced by get\+Analog\+Ch(), get\+Delay\+Line\+Ch(), get\+Main\+Reg(), set\+Analog\+Ch(), spi\+F\+E\+R\+Test(), spi\+Read(), spi\+Write(), and spi\+Write\+Safe().
+Referenced by bxid\+Resynch\+Status(), get\+Analog\+Ch(), get\+Delay\+Line\+Ch(), get\+Main\+Reg(), set\+Analog\+Ch(), spi\+Address\+Scan(), spi\+F\+E\+R\+Test(), spi\+Read(), spi\+Write(), and spi\+Write\+Safe().
 
 
 \begin{DoxyCode}
-164     \{
-165         \textcolor{keywordtype}{char} buff[32];
-166       \textcolor{keywordflow}{if}      (value < 256)   sprintf(buff,\textcolor{stringliteral}{"%02X"},value);
-167         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (value < 65536) sprintf(buff,\textcolor{stringliteral}{"%04X"},value);
-168         \textcolor{keywordflow}{else}                                    sprintf(buff,\textcolor{stringliteral}{"%08X"},value);
-169         \textcolor{keywordflow}{return} std::string(buff);
-170     \}
+165     \{
+166         \textcolor{keywordtype}{char} buff[32];
+167       \textcolor{keywordflow}{if}      (value < 256)   sprintf(buff,\textcolor{stringliteral}{"%02X"},value);
+168         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (value < 65536) sprintf(buff,\textcolor{stringliteral}{"%04X"},value);
+169         \textcolor{keywordflow}{else}                                    sprintf(buff,\textcolor{stringliteral}{"%08X"},value);
+170         \textcolor{keywordflow}{return} std::string(buff);
+171     \}
 \end{DoxyCode}
-\mbox{\Hypertarget{classICECALv3_ae0a77dccd270626bbd600630681b1442}\label{classICECALv3_ae0a77dccd270626bbd600630681b1442}} 
+\mbox{\Hypertarget{classICECALv3_a514456dd303e897aa1b55dccf3fa66d0}\label{classICECALv3_a514456dd303e897aa1b55dccf3fa66d0}} 
 \index{I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}!load\+Config@{load\+Config}}
 \index{load\+Config@{load\+Config}!I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}}
 \subsubsection{\texorpdfstring{load\+Config()}{loadConfig()}}
-{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} I\+C\+E\+C\+A\+Lv3\+::load\+Config (\begin{DoxyParamCaption}\item[{string}]{config\+File }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Py\+Object $\ast$ I\+C\+E\+C\+A\+Lv3\+::load\+Config (\begin{DoxyParamCaption}\item[{string}]{config\+File }\end{DoxyParamCaption})}
 
 
 
@@ -1496,7 +1532,7 @@ Definition at line 36 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
 
 
 
-References Status\+Code\+::\+F\+A\+I\+L\+U\+RE, fill\+Params(), parse\+Parameter\+List(), set\+Analog\+Ch(), set\+Delay\+Line\+Ch(), set\+Main\+Reg(), and Status\+Code\+::\+S\+U\+C\+C\+E\+SS.
+References fill\+Params(), parse\+Parameter\+List(), set\+Analog\+Ch(), set\+Delay\+Line\+Ch(), and set\+Main\+Reg().
 
 
 
@@ -1508,49 +1544,52 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
 38     \textcolor{keywordtype}{string} paramName[64];
 39     \textcolor{keywordtype}{int} paramValue[64], nParams;
 40     PyObject* asicParams;
-41  
-42     \textcolor{comment}{//These are the names of the parameters that we are looking for in each case.}
-43     \textcolor{keywordtype}{string} mainParams[] = \{\textcolor{stringliteral}{"VCONTROL\_OE"},\textcolor{stringliteral}{"BXID\_SYN\_OE"},\textcolor{stringliteral}{"CLK\_REFRESH"},\textcolor{stringliteral}{"IBIAS\_OB"},\textcolor{stringliteral}{"IBIAS\_CE\_TH"},\textcolor{stringliteral}{"IBIAS\_TH"},\textcolor{stringliteral}{"
+41 
+42     PyObject* fullConfiguration = PyList\_New(0);
+43     \textcolor{comment}{//These are the names of the parameters that we are looking for in each case.}
+44     \textcolor{keywordtype}{string} mainParams[] = \{\textcolor{stringliteral}{"VCONTROL\_OE"},\textcolor{stringliteral}{"BXID\_SYN\_OE"},\textcolor{stringliteral}{"CLK\_REFRESH"},\textcolor{stringliteral}{"IBIAS\_OB"},\textcolor{stringliteral}{"IBIAS\_CE\_TH"},\textcolor{stringliteral}{"IBIAS\_TH"},\textcolor{stringliteral}{"
       IBIAS\_INT"},\textcolor{stringliteral}{"IBIAS\_CE\_IN"},\textcolor{stringliteral}{"IBIAS\_CE\_PZ"},\textcolor{stringliteral}{"IBIAS\_0T"},\textcolor{stringliteral}{"IBIAS\_PZ"},\textcolor{stringliteral}{"IBIAS\_V0T"}\};
-44     \textcolor{keywordtype}{string} analogParams[4][7]=      \{ \{\textcolor{stringliteral}{"CINT\_SUBCH0[0]"},\textcolor{stringliteral}{"CINT\_SUBCH1[0]"},\textcolor{stringliteral}{"IOFF\_SUBCH0[0]"},\textcolor{stringliteral}{"IOFF\_SUBCH1[0]"},\textcolor{stringliteral}{
+45     \textcolor{keywordtype}{string} analogParams[4][7]=      \{ \{\textcolor{stringliteral}{"CINT\_SUBCH0[0]"},\textcolor{stringliteral}{"CINT\_SUBCH1[0]"},\textcolor{stringliteral}{"IOFF\_SUBCH0[0]"},\textcolor{stringliteral}{"IOFF\_SUBCH1[0]"},\textcolor{stringliteral}{
       "ZERO[0]"},\textcolor{stringliteral}{"POLE[0]"},\textcolor{stringliteral}{"ZIN[0]"}\}
-45                                                                 , \{\textcolor{stringliteral}{"CINT\_SUBCH0[1]"},\textcolor{stringliteral}{"CINT\_SUBCH1[1]"},\textcolor{stringliteral}{"
+46                                                                 , \{\textcolor{stringliteral}{"CINT\_SUBCH0[1]"},\textcolor{stringliteral}{"CINT\_SUBCH1[1]"},\textcolor{stringliteral}{"
       IOFF\_SUBCH0[1]"},\textcolor{stringliteral}{"IOFF\_SUBCH1[1]"},\textcolor{stringliteral}{"ZERO[1]"},\textcolor{stringliteral}{"POLE[1]"},\textcolor{stringliteral}{"ZIN[1]"}\}
-46                                                                 , \{\textcolor{stringliteral}{"CINT\_SUBCH0[2]"},\textcolor{stringliteral}{"CINT\_SUBCH1[2]"},\textcolor{stringliteral}{"
+47                                                                 , \{\textcolor{stringliteral}{"CINT\_SUBCH0[2]"},\textcolor{stringliteral}{"CINT\_SUBCH1[2]"},\textcolor{stringliteral}{"
       IOFF\_SUBCH0[2]"},\textcolor{stringliteral}{"IOFF\_SUBCH1[2]"},\textcolor{stringliteral}{"ZERO[2]"},\textcolor{stringliteral}{"POLE[2]"},\textcolor{stringliteral}{"ZIN[2]"}\}
-47                                                                 , \{\textcolor{stringliteral}{"CINT\_SUBCH0[3]"},\textcolor{stringliteral}{"CINT\_SUBCH1[3]"},\textcolor{stringliteral}{"
+48                                                                 , \{\textcolor{stringliteral}{"CINT\_SUBCH0[3]"},\textcolor{stringliteral}{"CINT\_SUBCH1[3]"},\textcolor{stringliteral}{"
       IOFF\_SUBCH0[3]"},\textcolor{stringliteral}{"IOFF\_SUBCH1[3]"},\textcolor{stringliteral}{"ZERO[3]"},\textcolor{stringliteral}{"POLE[3]"},\textcolor{stringliteral}{"ZIN[3]"}\}             \};
-48     \textcolor{keywordtype}{string} delayLineParams[4][5]= \{ \{\textcolor{stringliteral}{"PHASE\_ADC[0]"},\textcolor{stringliteral}{"PHASE\_TH[0]"},\textcolor{stringliteral}{"PHASE\_INT[0]"},\textcolor{stringliteral}{"LOC\_SEL[0]"},\textcolor{stringliteral}{"LVDS\_OEN[0]"}
+49     \textcolor{keywordtype}{string} delayLineParams[4][5]= \{ \{\textcolor{stringliteral}{"PHASE\_ADC[0]"},\textcolor{stringliteral}{"PHASE\_TH[0]"},\textcolor{stringliteral}{"PHASE\_INT[0]"},\textcolor{stringliteral}{"LOC\_SEL[0]"},\textcolor{stringliteral}{"LVDS\_OEN[0]"}
       \}
-49                                                                 ,\{\textcolor{stringliteral}{"PHASE\_ADC[1]"},\textcolor{stringliteral}{"PHASE\_TH[1]"},\textcolor{stringliteral}{"
+50                                                                 ,\{\textcolor{stringliteral}{"PHASE\_ADC[1]"},\textcolor{stringliteral}{"PHASE\_TH[1]"},\textcolor{stringliteral}{"
       PHASE\_INT[1]"},\textcolor{stringliteral}{"LOC\_SEL[1]"},\textcolor{stringliteral}{"LVDS\_OEN[1]"}\}
-50                                                                 ,\{\textcolor{stringliteral}{"PHASE\_ADC[2]"},\textcolor{stringliteral}{"PHASE\_TH[2]"},\textcolor{stringliteral}{"
+51                                                                 ,\{\textcolor{stringliteral}{"PHASE\_ADC[2]"},\textcolor{stringliteral}{"PHASE\_TH[2]"},\textcolor{stringliteral}{"
       PHASE\_INT[2]"},\textcolor{stringliteral}{"LOC\_SEL[2]"},\textcolor{stringliteral}{"LVDS\_OEN[2]"}\}
-51                                                                 ,\{\textcolor{stringliteral}{"PHASE\_ADC[3]"},\textcolor{stringliteral}{"PHASE\_TH[3]"},\textcolor{stringliteral}{"
+52                                                                 ,\{\textcolor{stringliteral}{"PHASE\_ADC[3]"},\textcolor{stringliteral}{"PHASE\_TH[3]"},\textcolor{stringliteral}{"
       PHASE\_INT[3]"},\textcolor{stringliteral}{"LOC\_SEL[3]"},\textcolor{stringliteral}{"LVDS\_OEN[3]"}\}               \};
-52 
-53     nParams = \hyperlink{classICECALv3_a313e8166af1ce26b4026f883ad900fb9}{parseParameterList}(configFile, paramName, paramValue);
-54 
-55     \textcolor{keywordflow}{if}(nParams == -1) \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
-56     \textcolor{keywordflow}{else}
+53 
+54     nParams = \hyperlink{classICECALv3_a313e8166af1ce26b4026f883ad900fb9}{parseParameterList}(configFile, paramName, paramValue);
+55 
+56     \textcolor{keywordflow}{if}(nParams != -1)
 57     \{
 58         \textcolor{comment}{//At this point we have an array of parameter names (string) and an array of values (int).}
 59         \textcolor{comment}{//We obtain the parameter values of the 'mainParams' array by searching on the C++ dictionary.}
 60         asicParams = \hyperlink{classICECALv3_ac006abc42a048308427f6801d783a407}{fillParams}(mainParams,12,paramName,paramValue,nParams);
 61         \hyperlink{classICECALv3_a479f7e17669da4b785af840049d39cb4}{setMainReg}(asicParams);
-62 
-63         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} iCh=0 ; iCh<4 ; iCh++)
-64         \{
-65             asicParams = \hyperlink{classICECALv3_ac006abc42a048308427f6801d783a407}{fillParams}(analogParams[iCh],7,paramName,paramValue,nParams);            \textcolor{comment}{
+62         PyList\_Append(fullConfiguration,asicParams);
+63 
+64         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} iCh=0 ; iCh<4 ; iCh++)
+65         \{
+66             asicParams = \hyperlink{classICECALv3_ac006abc42a048308427f6801d783a407}{fillParams}(analogParams[iCh],7,paramName,paramValue,nParams);            \textcolor{comment}{
       //Parameters of the analog channel.}
-66             \hyperlink{classICECALv3_a9578e4d13c250d8bc417f68c79d6a21d}{setAnalogCh}(iCh,asicParams);
-67             asicParams = \hyperlink{classICECALv3_ac006abc42a048308427f6801d783a407}{fillParams}(delayLineParams[iCh],5,paramName,paramValue,nParams);     \textcolor{comment}{//
+67             \hyperlink{classICECALv3_a9578e4d13c250d8bc417f68c79d6a21d}{setAnalogCh}(iCh,asicParams);
+68             PyList\_Append(fullConfiguration,asicParams);
+69             asicParams = \hyperlink{classICECALv3_ac006abc42a048308427f6801d783a407}{fillParams}(delayLineParams[iCh],5,paramName,paramValue,nParams);     \textcolor{comment}{//
       Parameters of the delay line channel.}
-68             \hyperlink{classICECALv3_a14a7a29c9a3412c062f053cc616b860a}{setDelayLineCh}(iCh,asicParams);       
-69         \}
-70         \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
-71     \}
-72 \}
+70             \hyperlink{classICECALv3_a14a7a29c9a3412c062f053cc616b860a}{setDelayLineCh}(iCh,asicParams);       
+71             PyList\_Append(fullConfiguration,asicParams);
+72         \}
+73     \}
+74     \textcolor{keywordflow}{return} fullConfiguration;
+75 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classObject_a58b2d0618c2d08cf2383012611528d97}\label{classObject_a58b2d0618c2d08cf2383012611528d97}} 
 \index{I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}!msg@{msg}}
@@ -1743,7 +1782,7 @@ References Hierarchy\+::parent(), and Object\+::type().
 
 
 
-Definition at line 74 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
+Definition at line 77 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
 
 
 
@@ -1755,35 +1794,35 @@ Referenced by load\+Config().
 
 
 \begin{DoxyCode}
-75 \{
-76     \textcolor{keywordtype}{int} iParams = 0, eqPos;
-77     \textcolor{keywordtype}{string} line;    
-78 
-79     std::ifstream fd(configFile.c\_str());
-80     \textcolor{keywordflow}{if}(!fd)                                 \textcolor{comment}{//File NOT OK.}
-81     \{
-82         \hyperlink{classObject_a204a95f57818c0f811933917a30eff45}{error}(configFile+\textcolor{stringliteral}{" could not be opened."},\textcolor{stringliteral}{"ICECALv3::loadConfig"});
-83         \textcolor{keywordflow}{return} -1;
-84   \}
-85     \textcolor{keywordflow}{else}                                        \textcolor{comment}{//File OK.}
-86     \{
-87         \textcolor{keywordflow}{while}(!fd.eof())                                    
-88         \{
-89             getline(fd,line);
-90             eqPos = line.find(\textcolor{stringliteral}{"="});
-91             \textcolor{keywordflow}{if}((eqPos != string::npos) && (line[0] != \textcolor{charliteral}{'#'}))     \textcolor{comment}{//If current line contains "=" and DO NOT
+78 \{
+79     \textcolor{keywordtype}{int} iParams = 0, eqPos;
+80     \textcolor{keywordtype}{string} line;    
+81 
+82     std::ifstream fd(configFile.c\_str());
+83     \textcolor{keywordflow}{if}(!fd)                                 \textcolor{comment}{//File NOT OK.}
+84     \{
+85         \hyperlink{classObject_a204a95f57818c0f811933917a30eff45}{error}(configFile+\textcolor{stringliteral}{" could not be opened."},\textcolor{stringliteral}{"ICECALv3::loadConfig"});
+86         \textcolor{keywordflow}{return} -1;
+87   \}
+88     \textcolor{keywordflow}{else}                                        \textcolor{comment}{//File OK.}
+89     \{
+90         \textcolor{keywordflow}{while}(!fd.eof())                                    
+91         \{
+92             getline(fd,line);
+93             eqPos = line.find(\textcolor{stringliteral}{"="});
+94             \textcolor{keywordflow}{if}((eqPos != string::npos) && (line[0] != \textcolor{charliteral}{'#'}))     \textcolor{comment}{//If current line contains "=" and DO NOT
        start with "#", is a good parameter.}
-92             \{
-93                 paramName[iParams]  = line.substr(0,eqPos);                                                         \textcolor{comment}{
+95             \{
+96                 paramName[iParams]  = line.substr(0,eqPos);                                                         \textcolor{comment}{
       //We store the parameter name}
-94                 paramValue[iParams] = atoi(line.substr(eqPos+1,string::npos).c\_str());  \textcolor{comment}{//and the parameter
+97                 paramValue[iParams] = atoi(line.substr(eqPos+1,string::npos).c\_str());  \textcolor{comment}{//and the parameter
        value.}
-95                 iParams++;
-96             \}
-97         \}
-98         \textcolor{keywordflow}{return} iParams;
-99     \}
-100 \}
+98                 iParams++;
+99             \}
+100         \}
+101         \textcolor{keywordflow}{return} iParams;
+102     \}
+103 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classHierarchy_aa7990fa7caf132d83e361ce033c6c65a}\label{classHierarchy_aa7990fa7caf132d83e361ce033c6c65a}} 
 \index{I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}!path@{path}}
@@ -1955,13 +1994,13 @@ Implements \hyperlink{classElement_a69efffa22f06909d768149715565cb56}{Element}.
 
 
 
-Definition at line 653 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
+Definition at line 655 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
 
 
 \begin{DoxyCode}
-653                     \{
-654 
-655 \}
+655                     \{
+656 
+657 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classICECALv3_a1b9ca0e09d45634a70da6f19a7257314}\label{classICECALv3_a1b9ca0e09d45634a70da6f19a7257314}} 
 \index{I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}!reset\+Pumps@{reset\+Pumps}}
@@ -1971,7 +2010,7 @@ Definition at line 653 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
 
 
 
-Definition at line 72 of file I\+C\+E\+C\+A\+Lv3.\+h.
+Definition at line 69 of file I\+C\+E\+C\+A\+Lv3.\+h.
 
 
 
@@ -1979,7 +2018,7 @@ References S\+C\+\_\+\+S\+O\+F\+T\+\_\+\+R\+ST.
 
 
 \begin{DoxyCode}
-72 \{                                       \hyperlink{classICECALv3_aef00f02801dea4bda2093c930501dcdd}{spiWrite}(\hyperlink{ICECALv3_8h_adfc33152f992de37ef835a719df6c934}{SC\_SOFT\_RST},0);                                 
+69 \{                                       \hyperlink{classICECALv3_aef00f02801dea4bda2093c930501dcdd}{spiWrite}(\hyperlink{ICECALv3_8h_adfc33152f992de37ef835a719df6c934}{SC\_SOFT\_RST},0);                                 
       \};
 \end{DoxyCode}
 \mbox{\Hypertarget{classICECALv3_aaf38119f47401a85022ae1b0d05675bd}\label{classICECALv3_aaf38119f47401a85022ae1b0d05675bd}} 
@@ -1990,7 +2029,7 @@ References S\+C\+\_\+\+S\+O\+F\+T\+\_\+\+R\+ST.
 
 
 
-Definition at line 68 of file I\+C\+E\+C\+A\+Lv3.\+h.
+Definition at line 65 of file I\+C\+E\+C\+A\+Lv3.\+h.
 
 
 
@@ -1998,7 +2037,7 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
 
 
 \begin{DoxyCode}
-68 \{   \hyperlink{classICECALv3_a6e8b6c03f5b0f1d8281bf8a0fa46064f}{confReg}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(address);   \}
+65 \{   \hyperlink{classICECALv3_a6e8b6c03f5b0f1d8281bf8a0fa46064f}{confReg}->\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{setAddress}(address);   \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classICECALv3_a9578e4d13c250d8bc417f68c79d6a21d}\label{classICECALv3_a9578e4d13c250d8bc417f68c79d6a21d}} 
 \index{I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}!set\+Analog\+Ch@{set\+Analog\+Ch}}
@@ -2008,7 +2047,7 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
 
 
 
-Definition at line 359 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
+Definition at line 361 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
 
 
 
@@ -2020,54 +2059,54 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), a
 
 
 \begin{DoxyCode}
-360 \{                            
-361     \hyperlink{ICECALv3_8h_adf928e51a60dba0df29d615401cc55a8}{U16} hTx, lTx;
-362     \textcolor{keywordtype}{int} cIntMsb, cIntLsb0, cIntLsb1, cIntSubCh0, cIntSubCh1, iOffMsb, iOffLsb0, iOffLsb1;
-363     \textcolor{keywordtype}{int} iOffSubCh0, iOffSubCh1, zero, pole, zIn;
-364 
-365     \hyperlink{ICECALv3_8h_a3cb25ca6f51f003950f9625ff05536fc}{U8} spiLsbAddr = \hyperlink{ICECALv3_8h_abd124f50fa794b9b0aded801fabf5322}{icecalLSBAddrCh}[ch];           \textcolor{comment}{//The SPI address of the 16 LSBs.}
-366     \hyperlink{ICECALv3_8h_a3cb25ca6f51f003950f9625ff05536fc}{U8} spiMsbAddr = \hyperlink{ICECALv3_8h_afba64a649cc9314882fd49b62b99d6e7}{icecalMSBAddrCh}[ch];           \textcolor{comment}{//The SPI address of the 16 MSBs.}
-367 
-368     cIntSubCh0 = PyInt\_AsLong(PyList\_GetItem(icecalChParams,0));
-369     cIntSubCh1 = PyInt\_AsLong(PyList\_GetItem(icecalChParams,1));
-370     iOffSubCh0 = PyInt\_AsLong(PyList\_GetItem(icecalChParams,2));
-371     iOffSubCh1 = PyInt\_AsLong(PyList\_GetItem(icecalChParams,3));
-372     zero             = PyInt\_AsLong(PyList\_GetItem(icecalChParams,4));
-373     pole             = PyInt\_AsLong(PyList\_GetItem(icecalChParams,5));
-374     zIn              = PyInt\_AsLong(PyList\_GetItem(icecalChParams,6));
-375 
-376     \textcolor{comment}{//Integretor Capacitor and Offset current configuration registers share the MSBs between subchannels.}
-377     \textcolor{comment}{//Therefore, these MSBs must be equal. Otherwise registers won't be properly configured. }
-378     \textcolor{keywordflow}{if}(((cIntSubCh0 & 0x18) == (cIntSubCh1 & 0x18)) && ((iOffSubCh0 & 0x3C) == (iOffSubCh1 & 0x3C)))
-379     \{
-380         \textcolor{comment}{//Integretor capacitor: 2 + 3 bits.}
-381         cIntMsb  = (cIntSubCh0 >> 3) & 0x3;
-382         cIntLsb0 =  cIntSubCh0 & 0x7;
-383         cIntLsb1 =  cIntSubCh1 & 0x7;
-384         \textcolor{comment}{//Offset current: 4 + 2 bits.}
-385         iOffMsb  = (iOffSubCh0 >> 2) & 0xF;
-386         iOffLsb0 =  iOffSubCh0 & 0x3;
-387         iOffLsb1 =  iOffSubCh1 & 0x3;
-388 
-389         hTx =  ((cIntMsb & 0x3) << 14) | ((cIntLsb0 & 0x7) << 11) | ((cIntLsb1 & 0x7) << 8) | 
-390                      ((iOffMsb & 0xF) << 4)  | ((iOffLsb0 & 0x3) << 2)  | ((iOffLsb1 & 0x3));
-391         lTx =    ((zero & 0x1F) << 11)   | ((pole & 0x3F) << 5)     | (zIn & 0x1F);
-392 
-393                             \hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err} = \hyperlink{classICECALv3_aa0b8358ea0be8e47a8aded5e1551787f}{spiWriteSafe}(spiMsbAddr,hTx);  
-394         \textcolor{keywordflow}{if}(!\hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err}) \hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err} = \hyperlink{classICECALv3_aa0b8358ea0be8e47a8aded5e1551787f}{spiWriteSafe}(spiLsbAddr,lTx);
-395 
-396         \textcolor{keywordflow}{if}(\hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err}) \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
-397         \textcolor{keywordflow}{else}        \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
-398     \}
-399     \textcolor{keywordflow}{else} 
-400     \{
-401         \textcolor{keywordflow}{if}((cIntSubCh0 & 0x18) != (cIntSubCh1 & 0x18)) \hyperlink{classObject_a204a95f57818c0f811933917a30eff45}{error}(\textcolor{stringliteral}{"Integrator Cap MSB sub-channel mismatch.
+362 \{                            
+363     \hyperlink{ICECALv3_8h_adf928e51a60dba0df29d615401cc55a8}{U16} hTx, lTx;
+364     \textcolor{keywordtype}{int} cIntMsb, cIntLsb0, cIntLsb1, cIntSubCh0, cIntSubCh1, iOffMsb, iOffLsb0, iOffLsb1;
+365     \textcolor{keywordtype}{int} iOffSubCh0, iOffSubCh1, zero, pole, zIn;
+366 
+367     \hyperlink{ICECALv3_8h_a3cb25ca6f51f003950f9625ff05536fc}{U8} spiLsbAddr = \hyperlink{ICECALv3_8h_abd124f50fa794b9b0aded801fabf5322}{icecalLSBAddrCh}[ch];           \textcolor{comment}{//The SPI address of the 16 LSBs.}
+368     \hyperlink{ICECALv3_8h_a3cb25ca6f51f003950f9625ff05536fc}{U8} spiMsbAddr = \hyperlink{ICECALv3_8h_afba64a649cc9314882fd49b62b99d6e7}{icecalMSBAddrCh}[ch];           \textcolor{comment}{//The SPI address of the 16 MSBs.}
+369 
+370     cIntSubCh0 = PyInt\_AsLong(PyList\_GetItem(icecalChParams,0));
+371     cIntSubCh1 = PyInt\_AsLong(PyList\_GetItem(icecalChParams,1));
+372     iOffSubCh0 = PyInt\_AsLong(PyList\_GetItem(icecalChParams,2));
+373     iOffSubCh1 = PyInt\_AsLong(PyList\_GetItem(icecalChParams,3));
+374     zero             = PyInt\_AsLong(PyList\_GetItem(icecalChParams,4));
+375     pole             = PyInt\_AsLong(PyList\_GetItem(icecalChParams,5));
+376     zIn              = PyInt\_AsLong(PyList\_GetItem(icecalChParams,6));
+377 
+378     \textcolor{comment}{//Integretor Capacitor and Offset current configuration registers share the MSBs between subchannels.}
+379     \textcolor{comment}{//Therefore, these MSBs must be equal. Otherwise registers won't be properly configured. }
+380     \textcolor{keywordflow}{if}(((cIntSubCh0 & 0x18) == (cIntSubCh1 & 0x18)) && ((iOffSubCh0 & 0x3C) == (iOffSubCh1 & 0x3C)))
+381     \{
+382         \textcolor{comment}{//Integretor capacitor: 2 + 3 bits.}
+383         cIntMsb  = (cIntSubCh0 >> 3) & 0x3;
+384         cIntLsb0 =  cIntSubCh0 & 0x7;
+385         cIntLsb1 =  cIntSubCh1 & 0x7;
+386         \textcolor{comment}{//Offset current: 4 + 2 bits.}
+387         iOffMsb  = (iOffSubCh0 >> 2) & 0xF;
+388         iOffLsb0 =  iOffSubCh0 & 0x3;
+389         iOffLsb1 =  iOffSubCh1 & 0x3;
+390 
+391         hTx =  ((cIntMsb & 0x3) << 14) | ((cIntLsb0 & 0x7) << 11) | ((cIntLsb1 & 0x7) << 8) | 
+392                      ((iOffMsb & 0xF) << 4)  | ((iOffLsb0 & 0x3) << 2)  | ((iOffLsb1 & 0x3));
+393         lTx =    ((zero & 0x1F) << 11)   | ((pole & 0x3F) << 5)     | (zIn & 0x1F);
+394 
+395                             \hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err} = \hyperlink{classICECALv3_aa0b8358ea0be8e47a8aded5e1551787f}{spiWriteSafe}(spiMsbAddr,hTx);  
+396         \textcolor{keywordflow}{if}(!\hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err}) \hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err} = \hyperlink{classICECALv3_aa0b8358ea0be8e47a8aded5e1551787f}{spiWriteSafe}(spiLsbAddr,lTx);
+397 
+398         \textcolor{keywordflow}{if}(\hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err}) \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
+399         \textcolor{keywordflow}{else}        \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
+400     \}
+401     \textcolor{keywordflow}{else} 
+402     \{
+403         \textcolor{keywordflow}{if}((cIntSubCh0 & 0x18) != (cIntSubCh1 & 0x18)) \hyperlink{classObject_a204a95f57818c0f811933917a30eff45}{error}(\textcolor{stringliteral}{"Integrator Cap MSB sub-channel mismatch.
        MSB<0> = "}+\hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(cIntSubCh0)+\textcolor{stringliteral}{", MSB<1> = "}+\hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(cIntSubCh1)+\textcolor{stringliteral}{"."},\textcolor{stringliteral}{"ICECALv3::setAnalogCh"});
-402         \textcolor{keywordflow}{if}((iOffSubCh0 & 0x3C) != (iOffSubCh1 & 0x3C)) \hyperlink{classObject_a204a95f57818c0f811933917a30eff45}{error}(\textcolor{stringliteral}{"Offset Current MSB sub-channel mismatch.
+404         \textcolor{keywordflow}{if}((iOffSubCh0 & 0x3C) != (iOffSubCh1 & 0x3C)) \hyperlink{classObject_a204a95f57818c0f811933917a30eff45}{error}(\textcolor{stringliteral}{"Offset Current MSB sub-channel mismatch.
        MSB<0> = "}+\hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(iOffSubCh0)+\textcolor{stringliteral}{", MSB<1> = "}+\hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(iOffSubCh1)+\textcolor{stringliteral}{"."},\textcolor{stringliteral}{"ICECALv3::setAnalogCh"});
-403         \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
-404     \}
-405 \}
+405         \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
+406     \}
+407 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classElement_ab476b4b1df5954141ceb14f072433b89}\label{classElement_ab476b4b1df5954141ceb14f072433b89}} 
 \index{I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}!set\+Connection@{set\+Connection}}
@@ -2120,9 +2159,9 @@ Referenced by export\+\_\+obj(), Usb\+M\+L\+Spi\+Bus\+::init(), Usb\+M\+L\+I2c\+
 \subsubsection{\texorpdfstring{set\+Delay\+Line\+Ch()}{setDelayLineCh()}}
 {\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} I\+C\+E\+C\+A\+Lv3\+::set\+Delay\+Line\+Ch (\begin{DoxyParamCaption}\item[{int}]{ch,  }\item[{Py\+Object $\ast$}]{dll\+Params }\end{DoxyParamCaption})}
 
-lvds\+O\+En --$>$ Active low!!! 
 
-Definition at line 278 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
+
+Definition at line 281 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
 
 
 
@@ -2134,30 +2173,30 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), a
 
 
 \begin{DoxyCode}
-279 \{                            
-280     \hyperlink{ICECALv3_8h_adf928e51a60dba0df29d615401cc55a8}{U16} txData;
-281     \textcolor{keywordtype}{int} phaseADC, phaseTH, phaseINT, locSel, lvdsOEn;
-282 
-283     \hyperlink{ICECALv3_8h_a3cb25ca6f51f003950f9625ff05536fc}{U8} spiAddr = \hyperlink{ICECALv3_8h_a848408b773702d268053cb49d205e097}{delayLineAddrCh}[ch];          \textcolor{comment}{//The SPI address of this delay line
+282 \{                            
+283     \hyperlink{ICECALv3_8h_adf928e51a60dba0df29d615401cc55a8}{U16} txData;
+284     \textcolor{keywordtype}{int} phaseADC, phaseTH, phaseINT, locSel, lvdsOEn;
+285 
+286     \hyperlink{ICECALv3_8h_a3cb25ca6f51f003950f9625ff05536fc}{U8} spiAddr = \hyperlink{ICECALv3_8h_a848408b773702d268053cb49d205e097}{delayLineAddrCh}[ch];          \textcolor{comment}{//The SPI address of this delay line
        channel.}
-284 
-285     \textcolor{comment}{//Converts the elements of the PyList to integers.}
-286     phaseADC = PyInt\_AsLong(PyList\_GetItem(dllParams,0));
-287     phaseTH  = PyInt\_AsLong(PyList\_GetItem(dllParams,1));
-288     phaseINT = PyInt\_AsLong(PyList\_GetItem(dllParams,2));
-289     locSel   = PyInt\_AsLong(PyList\_GetItem(dllParams,3));
-290     lvdsOEn  = PyInt\_AsLong(PyList\_GetItem(dllParams,4));
-291 
-293     \textcolor{comment}{//txData contains the 16 bits corresponding to the delay line channel.}
-294     txData =  ((phaseADC & 0x1F) << 11) | ((phaseTH & 0x1F) << 6) | ((phaseINT & 0x1F) << 3) | ((locSel & 
-      0x03) << 1) | (!lvdsOEn & 0x01);
-295 
-296     \textcolor{comment}{//Data is sent and checked. If there is a random write/read error, data is written again.}
-297     \hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err} = \hyperlink{classICECALv3_aa0b8358ea0be8e47a8aded5e1551787f}{spiWriteSafe}(spiAddr,txData);  
-298 
-299     \textcolor{keywordflow}{if}(\hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err}) \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
-300     \textcolor{keywordflow}{else}        \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
-301 \}
+287 
+288     \textcolor{comment}{//Converts the elements of the PyList to integers.}
+289     phaseADC = PyInt\_AsLong(PyList\_GetItem(dllParams,0));
+290     phaseTH  = PyInt\_AsLong(PyList\_GetItem(dllParams,1));
+291     phaseINT = PyInt\_AsLong(PyList\_GetItem(dllParams,2));
+292     locSel   = PyInt\_AsLong(PyList\_GetItem(dllParams,3));
+293     lvdsOEn  = PyInt\_AsLong(PyList\_GetItem(dllParams,4));
+294 
+295     \textcolor{comment}{//txData contains the 16 bits corresponding to the delay line channel.}
+296     txData =  ((phaseADC & 0x1F) << 11) | ((phaseTH & 0x1F) << 6) | ((phaseINT & 0x1F) << 3) | ((locSel & 
+      0x03) << 1) | (lvdsOEn & 0x01);
+297 
+298     \textcolor{comment}{//Data is sent and checked. If there is a random write/read error, data is written again.}
+299     \hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err} = \hyperlink{classICECALv3_aa0b8358ea0be8e47a8aded5e1551787f}{spiWriteSafe}(spiAddr,txData);  
+300 
+301     \textcolor{keywordflow}{if}(\hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err}) \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
+302     \textcolor{keywordflow}{else}        \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
+303 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classObject_a870c5af919958c2136623b2d7816d123}\label{classObject_a870c5af919958c2136623b2d7816d123}} 
 \index{I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}!set\+Dll\+Name@{set\+Dll\+Name}}
@@ -2218,7 +2257,7 @@ Referenced by A3\+P\+E\+::\+A3\+P\+E(), D\+C\+U\+::\+D\+C\+U(), export\+\_\+obj(
 
 
 
-Definition at line 472 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
+Definition at line 474 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
 
 
 
@@ -2230,38 +2269,38 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), a
 
 
 \begin{DoxyCode}
-473 \{                            
-474     \hyperlink{ICECALv3_8h_adf928e51a60dba0df29d615401cc55a8}{U16} txD[4];
-475 
-476     \textcolor{keywordtype}{int} vCtlOE, bxidSynOE, clkRefreshEn, iBiasOB, iBiasCETH, iBiasTH, iBiasINT;
-477     \textcolor{keywordtype}{int} iBiasCEINT, iBiasCEPZ, iBias0T, iBiasPZ, iBiasV0T;
-478     
-479     vCtlOE              = !PyInt\_AsLong(PyList\_GetItem(icecalMainParams,0));    \textcolor{comment}{//Active low.}
-480     bxidSynOE       = !PyInt\_AsLong(PyList\_GetItem(icecalMainParams,1));    \textcolor{comment}{//Active low.}
-481     clkRefreshEn    = !PyInt\_AsLong(PyList\_GetItem(icecalMainParams,2));    \textcolor{comment}{//Active low.}
-482     iBiasOB         = PyInt\_AsLong(PyList\_GetItem(icecalMainParams,3));
-483     iBiasCETH           = PyInt\_AsLong(PyList\_GetItem(icecalMainParams,4));
-484     iBiasTH             = PyInt\_AsLong(PyList\_GetItem(icecalMainParams,5));
-485     iBiasINT            = PyInt\_AsLong(PyList\_GetItem(icecalMainParams,6));
-486     iBiasCEINT      = PyInt\_AsLong(PyList\_GetItem(icecalMainParams,7));
-487     iBiasCEPZ       = PyInt\_AsLong(PyList\_GetItem(icecalMainParams,8));
-488     iBias0T             = PyInt\_AsLong(PyList\_GetItem(icecalMainParams,9));
-489     iBiasPZ             = PyInt\_AsLong(PyList\_GetItem(icecalMainParams,10));
-490     iBiasV0T        = PyInt\_AsLong(PyList\_GetItem(icecalMainParams,11));
-491 
-492     txD[3] = ((vCtlOE & 0x1) << 15)         | ((bxidSynOE & 0x1) << 14) | ((clkRefreshEn & 0x1) << 13) | ((
+475 \{                            
+476     \hyperlink{ICECALv3_8h_adf928e51a60dba0df29d615401cc55a8}{U16} txD[4];
+477 
+478     \textcolor{keywordtype}{int} vCtlOE, bxidSynOE, clkRefreshEn, iBiasOB, iBiasCETH, iBiasTH, iBiasINT;
+479     \textcolor{keywordtype}{int} iBiasCEINT, iBiasCEPZ, iBias0T, iBiasPZ, iBiasV0T;
+480     
+481     vCtlOE              = !PyInt\_AsLong(PyList\_GetItem(icecalMainParams,0));    \textcolor{comment}{//Active low.}
+482     bxidSynOE       = !PyInt\_AsLong(PyList\_GetItem(icecalMainParams,1));    \textcolor{comment}{//Active low.}
+483     clkRefreshEn    = !PyInt\_AsLong(PyList\_GetItem(icecalMainParams,2));    \textcolor{comment}{//Active low.}
+484     iBiasOB         = PyInt\_AsLong(PyList\_GetItem(icecalMainParams,3));
+485     iBiasCETH           = PyInt\_AsLong(PyList\_GetItem(icecalMainParams,4));
+486     iBiasTH             = PyInt\_AsLong(PyList\_GetItem(icecalMainParams,5));
+487     iBiasINT            = PyInt\_AsLong(PyList\_GetItem(icecalMainParams,6));
+488     iBiasCEINT      = PyInt\_AsLong(PyList\_GetItem(icecalMainParams,7));
+489     iBiasCEPZ       = PyInt\_AsLong(PyList\_GetItem(icecalMainParams,8));
+490     iBias0T             = PyInt\_AsLong(PyList\_GetItem(icecalMainParams,9));
+491     iBiasPZ             = PyInt\_AsLong(PyList\_GetItem(icecalMainParams,10));
+492     iBiasV0T        = PyInt\_AsLong(PyList\_GetItem(icecalMainParams,11));
+493 
+494     txD[3] = ((vCtlOE & 0x1) << 15)         | ((bxidSynOE & 0x1) << 14) | ((clkRefreshEn & 0x1) << 13) | ((
       iBiasOB & 0x3F) << 6) | (iBiasCETH & 0x3F);
-493     txD[2] = ((iBiasTH & 0x3F) << 6)        |  (iBiasINT  & 0x3F); 
-494     txD[1] = ((iBiasCEINT & 0x38) << 9) | ((iBiasCEPZ & 0x3F) << 6) |  (iBias0T      & 0x3F);
-495     txD[0] = ((iBiasCEINT & 0x7) << 12) | ((iBiasPZ   & 0x3F) << 6) |  (iBiasV0T     & 0x3F);
-496 
-497     \textcolor{comment}{//Four 16-bit registers are written.}
-498     \hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err} = 0;
-499     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<4;i++) \hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err} |= \hyperlink{classICECALv3_aa0b8358ea0be8e47a8aded5e1551787f}{spiWriteSafe}(\hyperlink{ICECALv3_8h_a9c22ae782814495416dc2b803df326c1}{icecalMainAddr}[i],txD[i]);
-500 
-501     \textcolor{keywordflow}{if}(\hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err}) \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
-502     \textcolor{keywordflow}{else}        \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
-503 \}
+495     txD[2] = ((iBiasTH & 0x3F) << 6)        |  (iBiasINT  & 0x3F); 
+496     txD[1] = ((iBiasCEINT & 0x38) << 9) | ((iBiasCEPZ & 0x3F) << 6) |  (iBias0T      & 0x3F);
+497     txD[0] = ((iBiasCEINT & 0x7) << 12) | ((iBiasPZ   & 0x3F) << 6) |  (iBiasV0T     & 0x3F);
+498 
+499     \textcolor{comment}{//Four 16-bit registers are written.}
+500     \hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err} = 0;
+501     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<4;i++) \hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err} |= \hyperlink{classICECALv3_aa0b8358ea0be8e47a8aded5e1551787f}{spiWriteSafe}(\hyperlink{ICECALv3_8h_a9c22ae782814495416dc2b803df326c1}{icecalMainAddr}[i],txD[i]);
+502 
+503     \textcolor{keywordflow}{if}(\hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err}) \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
+504     \textcolor{keywordflow}{else}        \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
+505 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}\label{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}} 
 \index{I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}!set\+Name@{set\+Name}}
@@ -2293,7 +2332,7 @@ Referenced by A3\+P\+E\+::\+A3\+P\+E(), A3\+P\+E\+\_\+\+Bit\+Flip\+::\+A3\+P\+E\
 
 
 
-Definition at line 69 of file I\+C\+E\+C\+A\+Lv3.\+h.
+Definition at line 66 of file I\+C\+E\+C\+A\+Lv3.\+h.
 
 
 
@@ -2301,7 +2340,7 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
 
 
 \begin{DoxyCode}
-69 \{   \hyperlink{classICECALv3_ae877ce34b3a4d6c368cc6409ac9614fa}{nRetries} = nRet;                                \}
+66 \{   \hyperlink{classICECALv3_ae877ce34b3a4d6c368cc6409ac9614fa}{nRetries} = nRet;                                \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classHierarchy_a585ad1aeec16077a0e532ab8b4fc557b}\label{classHierarchy_a585ad1aeec16077a0e532ab8b4fc557b}} 
 \index{I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}!set\+Parent@{set\+Parent}}
@@ -2380,6 +2419,44 @@ Referenced by A3\+P\+E\+::\+A3\+P\+E(), A3\+P\+E\+\_\+\+Bit\+Flip\+::\+A3\+P\+E\
 \begin{DoxyCode}
 52 \{ \hyperlink{classObject_a457a600fe8c00eb1034374f75110a78c}{m\_type}  = \hyperlink{classObject_a84f99f70f144a83e1582d1d0f84e4e62}{type}  ; \} \textcolor{comment}{//< Set Object m\_type}
 \end{DoxyCode}
+\mbox{\Hypertarget{classICECALv3_acbf1a7a8510d7e02280bacc58badf4f4}\label{classICECALv3_acbf1a7a8510d7e02280bacc58badf4f4}} 
+\index{I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}!spi\+Address\+Scan@{spi\+Address\+Scan}}
+\index{spi\+Address\+Scan@{spi\+Address\+Scan}!I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}}
+\subsubsection{\texorpdfstring{spi\+Address\+Scan()}{spiAddressScan()}}
+{\footnotesize\ttfamily void I\+C\+E\+C\+A\+Lv3\+::spi\+Address\+Scan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 688 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
+
+
+
+References itohs(), itos(), spi\+Read(), and Object\+::warning().
+
+
+
+Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
+
+
+\begin{DoxyCode}
+689 \{
+690     \hyperlink{ICECALv3_8h_adf928e51a60dba0df29d615401cc55a8}{U16} rxData;
+691     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} addr, rw, pumpRst, conf, regSel;
+692 
+693     \textcolor{keywordflow}{for}(addr=0; addr<256; addr++)
+694     \{
+695         rw      = (addr>>7);
+696         pumpRst = (addr>>6) & 0x01;
+697         conf    = (addr>>5) & 0x01;
+698         regSel  = addr & 0x1F;
+699 
+700         rxData = \hyperlink{classICECALv3_aced41ce20a0853d6248b8df88412e57a}{spiRead}( (\hyperlink{ICECALv3_8h_a3cb25ca6f51f003950f9625ff05536fc}{U8}) addr , 0x00 );
+701         \hyperlink{classObject_a65cd4fda577711660821fd2cd5a3b4c9}{warning}(\textcolor{stringliteral}{"R/!W="}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(rw)+\textcolor{stringliteral}{" PUMPrst="}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(pumpRst)+\textcolor{stringliteral}{" !CONF/STAT="}+
+      \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(conf)+\textcolor{stringliteral}{" REGsel="}+\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(regSel)+\textcolor{stringliteral}{" ~ SPI(@=0x"}+\hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(addr)+\textcolor{stringliteral}{") = 0x"}+
+      \hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(rxData),\textcolor{stringliteral}{"ICECALv3::spiAddressScan"});
+702     \}
+703 \}
+\end{DoxyCode}
 \mbox{\Hypertarget{classICECALv3_a8639cf6a44cba85b53128b5e1dc21e15}\label{classICECALv3_a8639cf6a44cba85b53128b5e1dc21e15}} 
 \index{I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}!spi\+F\+E\+R\+Test@{spi\+F\+E\+R\+Test}}
 \index{spi\+F\+E\+R\+Test@{spi\+F\+E\+R\+Test}!I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}}
@@ -2388,7 +2465,7 @@ Referenced by A3\+P\+E\+::\+A3\+P\+E(), A3\+P\+E\+\_\+\+Bit\+Flip\+::\+A3\+P\+E\
 
 
 
-Definition at line 575 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
+Definition at line 577 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
 
 
 
@@ -2400,104 +2477,104 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
 
 
 \begin{DoxyCode}
-576 \{
-577     \textcolor{keywordtype}{long} iTest, nBadTx=0, nBadRx=0, nFatal=0, nBad, regErrorHistogram[16];
-578     \textcolor{keywordtype}{int} iFrame, iRetry, readOk, writeOk;
-579     \textcolor{keywordtype}{double} fer;
-580     \hyperlink{ICECALv3_8h_adf928e51a60dba0df29d615401cc55a8}{U16} writeData = 0x0000;
-581     \hyperlink{ICECALv3_8h_adf928e51a60dba0df29d615401cc55a8}{U16} readData, retry;
-582     PyObject* ferStatistics         = PyList\_New(0); 
-583     PyObject* confRegAddresses  = PyList\_New(0);
-584     PyObject* confRegHistogram  = PyList\_New(0);
-585 
-586     \hyperlink{ICECALv3_8h_a3cb25ca6f51f003950f9625ff05536fc}{U8}  addr;
-587     \hyperlink{ICECALv3_8h_a3cb25ca6f51f003950f9625ff05536fc}{U8}  confRegList[16] = \{\hyperlink{ICECALv3_8h_a9c22ae782814495416dc2b803df326c1}{icecalMainAddr}[0] , \hyperlink{ICECALv3_8h_a9c22ae782814495416dc2b803df326c1}{icecalMainAddr}[1] , 
+578 \{
+579     \textcolor{keywordtype}{long} iTest, nBadTx=0, nBadRx=0, nFatal=0, nBad, regErrorHistogram[16];
+580     \textcolor{keywordtype}{int} iFrame, iRetry, readOk, writeOk;
+581     \textcolor{keywordtype}{double} fer;
+582     \hyperlink{ICECALv3_8h_adf928e51a60dba0df29d615401cc55a8}{U16} writeData = 0x0000;
+583     \hyperlink{ICECALv3_8h_adf928e51a60dba0df29d615401cc55a8}{U16} readData, retry;
+584     PyObject* ferStatistics         = PyList\_New(0); 
+585     PyObject* confRegAddresses  = PyList\_New(0);
+586     PyObject* confRegHistogram  = PyList\_New(0);
+587 
+588     \hyperlink{ICECALv3_8h_a3cb25ca6f51f003950f9625ff05536fc}{U8}  addr;
+589     \hyperlink{ICECALv3_8h_a3cb25ca6f51f003950f9625ff05536fc}{U8}  confRegList[16] = \{\hyperlink{ICECALv3_8h_a9c22ae782814495416dc2b803df326c1}{icecalMainAddr}[0] , \hyperlink{ICECALv3_8h_a9c22ae782814495416dc2b803df326c1}{icecalMainAddr}[1] , 
       icecalMainAddr[2] , icecalMainAddr[3] , \hyperlink{ICECALv3_8h_a848408b773702d268053cb49d205e097}{delayLineAddrCh}[0] , delayLineAddrCh[1] , delayLineAddrCh[2] , 
       delayLineAddrCh[3] ,
-588                                                  \hyperlink{ICECALv3_8h_abd124f50fa794b9b0aded801fabf5322}{icecalLSBAddrCh}[0], icecalLSBAddrCh[1], 
+590                                                  \hyperlink{ICECALv3_8h_abd124f50fa794b9b0aded801fabf5322}{icecalLSBAddrCh}[0], icecalLSBAddrCh[1], 
       icecalLSBAddrCh[2], icecalLSBAddrCh[3], \hyperlink{ICECALv3_8h_afba64a649cc9314882fd49b62b99d6e7}{icecalMSBAddrCh}[0] , icecalMSBAddrCh[1] , 
       icecalMSBAddrCh[2] , icecalMSBAddrCh[3]\};
-589 
-590     \textcolor{comment}{//Error histogram. This will compute the number of error in each register address.}
-591     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0 ; i<16 ; i++) regErrorHistogram[i] = 0;
-592 
-593     \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"Starting SPI FER test..."},\textcolor{stringliteral}{"ICECALv3::spiFERTest"});
+591 
+592     \textcolor{comment}{//Error histogram. This will compute the number of error in each register address.}
+593     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0 ; i<16 ; i++) regErrorHistogram[i] = 0;
 594 
-595     \textcolor{comment}{//FER Test is performed N Times}
-596     \textcolor{keywordflow}{for}(iTest=0 ; iTest<nTest ; iTest++)
-597     \{
-598         \textcolor{comment}{//For each test we check the 16 RW registers of the chip.}
-599         \textcolor{keywordflow}{for}(iFrame=0 ; iFrame<16 ; iFrame++)
-600         \{
-601             addr = confRegList[iFrame];
-602 
-603             \textcolor{comment}{//Random data to be sent.}
-604             writeData = rand() + rand();
-605 
-606             \textcolor{comment}{//Write + Read back.    }
-607             \hyperlink{classICECALv3_aef00f02801dea4bda2093c930501dcdd}{spiWrite}(addr,writeData);
-608             readData = \hyperlink{classICECALv3_aaabb9543482c4141fa89b4b8410164e0}{spiRead}(addr);    
-609 
-610             \textcolor{comment}{//Data mismatch: let's see if it's a read, write or FATAL error;}
-611             \textcolor{keywordflow}{if}(writeData != readData)
-612             \{
-613                 \textcolor{comment}{//The number of coincidences are counted. This loop will break when 5 R/W coincidences are
+595     \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"Starting SPI FER test..."},\textcolor{stringliteral}{"ICECALv3::spiFERTest"});
+596 
+597     \textcolor{comment}{//FER Test is performed N Times}
+598     \textcolor{keywordflow}{for}(iTest=0 ; iTest<nTest ; iTest++)
+599     \{
+600         \textcolor{comment}{//For each test we check the 16 RW registers of the chip.}
+601         \textcolor{keywordflow}{for}(iFrame=0 ; iFrame<16 ; iFrame++)
+602         \{
+603             addr = confRegList[iFrame];
+604 
+605             \textcolor{comment}{//Random data to be sent.}
+606             writeData = rand() + rand();
+607 
+608             \textcolor{comment}{//Write + Read back.    }
+609             \hyperlink{classICECALv3_aef00f02801dea4bda2093c930501dcdd}{spiWrite}(addr,writeData);
+610             readData = \hyperlink{classICECALv3_aced41ce20a0853d6248b8df88412e57a}{spiRead}(addr);    
+611 
+612             \textcolor{comment}{//Data mismatch: let's see if it's a read, write or FATAL error;}
+613             \textcolor{keywordflow}{if}(writeData != readData)
+614             \{
+615                 \textcolor{comment}{//The number of coincidences are counted. This loop will break when 5 R/W coincidences are
        found or after 50 retrials.}
-614                 iRetry = 0;     readOk = 0;         writeOk = 0;
-615                 \textcolor{keywordflow}{do}
-616                 \{
-617                     retry = \hyperlink{classICECALv3_aaabb9543482c4141fa89b4b8410164e0}{spiRead}(addr);
-618                     \textcolor{keywordflow}{if}(retry == readData )  readOk++;
-619                     \textcolor{keywordflow}{if}(retry == writeData) writeOk++;
-620                     iRetry++;
-621                 \}
-622                 \textcolor{keywordflow}{while}(readOk < 5 && writeOk < 5 && iRetry < 50);
-623 
-624                 \textcolor{comment}{//Number of total errors according to the source.}
-625                 \textcolor{keywordflow}{if}          (iRetry >= 50) \{    \hyperlink{classObject_a204a95f57818c0f811933917a30eff45}{error}(\textcolor{stringliteral}{"Mismatch: the source of the SPI error could not
+616                 iRetry = 0;     readOk = 0;         writeOk = 0;
+617                 \textcolor{keywordflow}{do}
+618                 \{
+619                     retry = \hyperlink{classICECALv3_aced41ce20a0853d6248b8df88412e57a}{spiRead}(addr);
+620                     \textcolor{keywordflow}{if}(retry == readData )  readOk++;
+621                     \textcolor{keywordflow}{if}(retry == writeData) writeOk++;
+622                     iRetry++;
+623                 \}
+624                 \textcolor{keywordflow}{while}(readOk < 5 && writeOk < 5 && iRetry < 50);
+625 
+626                 \textcolor{comment}{//Number of total errors according to the source.}
+627                 \textcolor{keywordflow}{if}          (iRetry >= 50) \{    \hyperlink{classObject_a204a95f57818c0f811933917a30eff45}{error}(\textcolor{stringliteral}{"Mismatch: the source of the SPI error could not
        be determined"},\textcolor{stringliteral}{"ICECALv3::spiFER"});     nFatal++;   \}
-626                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (readOk >= 5)    \{  \hyperlink{classObject_a204a95f57818c0f811933917a30eff45}{error}(\textcolor{stringliteral}{"Mismatch: Write error @SPI = 0x"}+
+628                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (readOk >= 5)    \{  \hyperlink{classObject_a204a95f57818c0f811933917a30eff45}{error}(\textcolor{stringliteral}{"Mismatch: Write error @SPI = 0x"}+
       \hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(addr)+\textcolor{stringliteral}{". W = 0x"}+\hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(writeData)+\textcolor{stringliteral}{", R = 0x"}+\hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(readData)+\textcolor{stringliteral}{"."},\textcolor{stringliteral}{"ICECALv3::spiFER"});  
       nBadTx++;    \}
-627                 \textcolor{keywordflow}{else}                                     \{  \hyperlink{classObject_a204a95f57818c0f811933917a30eff45}{error}(\textcolor{stringliteral}{"Mismatch: Read error @SPI = 0x"}+
+629                 \textcolor{keywordflow}{else}                                     \{  \hyperlink{classObject_a204a95f57818c0f811933917a30eff45}{error}(\textcolor{stringliteral}{"Mismatch: Read error @SPI = 0x"}+
       \hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(addr)+\textcolor{stringliteral}{".  W = 0x"}+\hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(writeData)+\textcolor{stringliteral}{", R = 0x"}+\hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(readData)+\textcolor{stringliteral}{"."},\textcolor{stringliteral}{"ICECALv3::spiFER"});     
       nBadRx++;    \}
-628 
-629                 \textcolor{comment}{//Number of total errors according to the number of SPI register.}
-630                 regErrorHistogram[iFrame]++;
-631             \}
-632         \}
-633     \}
-634     nBad = nFatal + nBadTx + nBadRx;                            \textcolor{comment}{//Global number of errors.}
-635     fer = (double)nBad / ((\textcolor{keywordtype}{double})nTest * 16.0);    \textcolor{comment}{//Frame Rate Error.}
-636 
-637     \textcolor{keywordflow}{for}(iFrame=0 ; iFrame<16 ; iFrame++) PyList\_Append(confRegAddresses, PyInt\_FromLong(confRegList[iFrame]
+630 
+631                 \textcolor{comment}{//Number of total errors according to the number of SPI register.}
+632                 regErrorHistogram[iFrame]++;
+633             \}
+634         \}
+635     \}
+636     nBad = nFatal + nBadTx + nBadRx;                            \textcolor{comment}{//Global number of errors.}
+637     fer = (double)nBad / ((\textcolor{keywordtype}{double})nTest * 16.0);    \textcolor{comment}{//Frame Rate Error.}
+638 
+639     \textcolor{keywordflow}{for}(iFrame=0 ; iFrame<16 ; iFrame++) PyList\_Append(confRegAddresses, PyInt\_FromLong(confRegList[iFrame]
       ));              \textcolor{comment}{//A list with the SPI @s.}
-638     \textcolor{keywordflow}{for}(iFrame=0 ; iFrame<16 ; iFrame++) PyList\_Append(confRegHistogram, PyInt\_FromLong(regErrorHistogram[
+640     \textcolor{keywordflow}{for}(iFrame=0 ; iFrame<16 ; iFrame++) PyList\_Append(confRegHistogram, PyInt\_FromLong(regErrorHistogram[
       iFrame]));    \textcolor{comment}{//The number of errors in this SPI @s.}
-639 
-640     \textcolor{comment}{//FER statistics list:}
-641     PyList\_Append(ferStatistics, PyInt\_FromLong(nBad));         \textcolor{comment}{//# Bad frames (global).}
-642     PyList\_Append(ferStatistics, PyFloat\_FromDouble(fer));  \textcolor{comment}{//Global FER (0 ~ 1).}
-643     PyList\_Append(ferStatistics, PyInt\_FromLong(nFatal));       \textcolor{comment}{//# Fatal frames.}
-644     PyList\_Append(ferStatistics, PyInt\_FromLong(nBadTx));       \textcolor{comment}{//# Bad TX frames.}
-645     PyList\_Append(ferStatistics, PyInt\_FromLong(nBadRx));       \textcolor{comment}{//# Bad RX frames.}
-646     PyList\_Append(ferStatistics, confRegAddresses);                 \textcolor{comment}{//SPI @ list.}
-647     PyList\_Append(ferStatistics, confRegHistogram);                 \textcolor{comment}{//SPI error counters list.}
-648 
-649     \hyperlink{classObject_a65cd4fda577711660821fd2cd5a3b4c9}{warning}(\textcolor{stringliteral}{"SPI BER test finished!!!"});
-650     \textcolor{keywordflow}{return} ferStatistics;
-651 \}
+641 
+642     \textcolor{comment}{//FER statistics list:}
+643     PyList\_Append(ferStatistics, PyInt\_FromLong(nBad));         \textcolor{comment}{//# Bad frames (global).}
+644     PyList\_Append(ferStatistics, PyFloat\_FromDouble(fer));  \textcolor{comment}{//Global FER (0 ~ 1).}
+645     PyList\_Append(ferStatistics, PyInt\_FromLong(nFatal));       \textcolor{comment}{//# Fatal frames.}
+646     PyList\_Append(ferStatistics, PyInt\_FromLong(nBadTx));       \textcolor{comment}{//# Bad TX frames.}
+647     PyList\_Append(ferStatistics, PyInt\_FromLong(nBadRx));       \textcolor{comment}{//# Bad RX frames.}
+648     PyList\_Append(ferStatistics, confRegAddresses);                 \textcolor{comment}{//SPI @ list.}
+649     PyList\_Append(ferStatistics, confRegHistogram);                 \textcolor{comment}{//SPI error counters list.}
+650 
+651     \hyperlink{classObject_a65cd4fda577711660821fd2cd5a3b4c9}{warning}(\textcolor{stringliteral}{"SPI BER test finished!!!"});
+652     \textcolor{keywordflow}{return} ferStatistics;
+653 \}
 \end{DoxyCode}
-\mbox{\Hypertarget{classICECALv3_aaabb9543482c4141fa89b4b8410164e0}\label{classICECALv3_aaabb9543482c4141fa89b4b8410164e0}} 
+\mbox{\Hypertarget{classICECALv3_aced41ce20a0853d6248b8df88412e57a}\label{classICECALv3_aced41ce20a0853d6248b8df88412e57a}} 
 \index{I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}!spi\+Read@{spi\+Read}}
 \index{spi\+Read@{spi\+Read}!I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}}
 \subsubsection{\texorpdfstring{spi\+Read()}{spiRead()}}
-{\footnotesize\ttfamily \hyperlink{ICECALv3_8h_adf928e51a60dba0df29d615401cc55a8}{U16} I\+C\+E\+C\+A\+Lv3\+::spi\+Read (\begin{DoxyParamCaption}\item[{\hyperlink{ICECALv3_8h_a3cb25ca6f51f003950f9625ff05536fc}{U8}}]{conf\+Reg\+Addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{ICECALv3_8h_adf928e51a60dba0df29d615401cc55a8}{U16} I\+C\+E\+C\+A\+Lv3\+::spi\+Read (\begin{DoxyParamCaption}\item[{\hyperlink{ICECALv3_8h_a3cb25ca6f51f003950f9625ff05536fc}{U8}}]{conf\+Reg\+Addr,  }\item[{\hyperlink{ICECALv3_8h_a3cb25ca6f51f003950f9625ff05536fc}{U8}}]{offset\+Addr = {\ttfamily 128} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Definition at line 535 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
+Definition at line 537 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
 
 
 
@@ -2505,32 +2582,32 @@ References conf\+Reg, I\+Odata\+::data\+U8(), Object\+::debug(), err, I\+Oobject
 
 
 
-Referenced by get\+Analog\+Ch(), get\+Delay\+Line\+Ch(), get\+Main\+Reg(), spi\+F\+E\+R\+Test(), and spi\+Write\+Safe().
+Referenced by bxid\+Resynch\+Status(), get\+Analog\+Ch(), get\+Delay\+Line\+Ch(), get\+Main\+Reg(), spi\+Address\+Scan(), spi\+F\+E\+R\+Test(), spi\+Write\+Safe(), and version().
 
 
 \begin{DoxyCode}
-536 \{
-537     \hyperlink{ICECALv3_8h_adf928e51a60dba0df29d615401cc55a8}{U16} rxData;
-538 
-539     \hyperlink{ICECALv3_8h_a3cb25ca6f51f003950f9625ff05536fc}{U8}* buffer = \hyperlink{classICECALv3_a6e8b6c03f5b0f1d8281bf8a0fa46064f}{confReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a75e9c318dbac3a39402179070943d4bc}{dataU8}();
-540     buffer[2]  = confRegAddr + 128;                         \textcolor{comment}{//+128 = read   }
-541 
-542     \textcolor{keywordflow}{if} (\hyperlink{classICECALv3_a6e8b6c03f5b0f1d8281bf8a0fa46064f}{confReg}->\hyperlink{classIOobject_aa07610c11963b1db6710e3c76ceea456}{read}().\hyperlink{classStatusCode_a5dd22dc6eb2c52fc4cabc58f6dea2eb7}{isFailure}()) 
-543     \{
-544         \hyperlink{classObject_a65cd4fda577711660821fd2cd5a3b4c9}{warning}(\textcolor{stringliteral}{"ICECALv3 read (@"}+\hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(confRegAddr)+\textcolor{stringliteral}{") error."},\textcolor{stringliteral}{"ICECALv3::spiRead"});
-545         \hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err} = \textcolor{keyword}{true};
-546         \textcolor{keywordflow}{return} 0;
-547     \}
-548     \textcolor{keywordflow}{else}
-549     \{
-550         \hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err} = \textcolor{keyword}{false};
-551         rxData = ((\hyperlink{ICECALv3_8h_adf928e51a60dba0df29d615401cc55a8}{U16})buffer[1] * 256) + (\hyperlink{ICECALv3_8h_adf928e51a60dba0df29d615401cc55a8}{U16})buffer[0];
-552         \hyperlink{classObject_aac010553f022165573714b7014a15f0d}{debug}(\textcolor{stringliteral}{"Register (@"}+ \hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(confRegAddr) + \textcolor{stringliteral}{") = 0x"} + \hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(rxData),\textcolor{stringliteral}{"
+538 \{
+539     \hyperlink{ICECALv3_8h_adf928e51a60dba0df29d615401cc55a8}{U16} rxData;
+540 
+541     \hyperlink{ICECALv3_8h_a3cb25ca6f51f003950f9625ff05536fc}{U8}* buffer = \hyperlink{classICECALv3_a6e8b6c03f5b0f1d8281bf8a0fa46064f}{confReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a75e9c318dbac3a39402179070943d4bc}{dataU8}();
+542     buffer[2]  = confRegAddr + offsetAddr;                          \textcolor{comment}{//+128 = read   }
+543 
+544     \textcolor{keywordflow}{if} (\hyperlink{classICECALv3_a6e8b6c03f5b0f1d8281bf8a0fa46064f}{confReg}->\hyperlink{classIOobject_aa07610c11963b1db6710e3c76ceea456}{read}().\hyperlink{classStatusCode_a5dd22dc6eb2c52fc4cabc58f6dea2eb7}{isFailure}()) 
+545     \{
+546         \hyperlink{classObject_a65cd4fda577711660821fd2cd5a3b4c9}{warning}(\textcolor{stringliteral}{"ICECALv3 read (@"}+\hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(confRegAddr)+\textcolor{stringliteral}{") error."},\textcolor{stringliteral}{"ICECALv3::spiRead"});
+547         \hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err} = \textcolor{keyword}{true};
+548         \textcolor{keywordflow}{return} 0;
+549     \}
+550     \textcolor{keywordflow}{else}
+551     \{
+552         \hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err} = \textcolor{keyword}{false};
+553         rxData = ((\hyperlink{ICECALv3_8h_adf928e51a60dba0df29d615401cc55a8}{U16})buffer[1] * 256) + (\hyperlink{ICECALv3_8h_adf928e51a60dba0df29d615401cc55a8}{U16})buffer[0];
+554         \hyperlink{classObject_aac010553f022165573714b7014a15f0d}{debug}(\textcolor{stringliteral}{"Register (@"}+ \hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(confRegAddr) + \textcolor{stringliteral}{") = 0x"} + \hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(rxData),\textcolor{stringliteral}{"
       ICECALv3::spiRead"});
-553         \textcolor{keywordflow}{return} rxData;
-554     \}
-555 
-556 \}
+555         \textcolor{keywordflow}{return} rxData;
+556     \}
+557 
+558 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classICECALv3_aef00f02801dea4bda2093c930501dcdd}\label{classICECALv3_aef00f02801dea4bda2093c930501dcdd}} 
 \index{I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}!spi\+Write@{spi\+Write}}
@@ -2540,7 +2617,7 @@ Referenced by get\+Analog\+Ch(), get\+Delay\+Line\+Ch(), get\+Main\+Reg(), spi\+
 
 
 
-Definition at line 559 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
+Definition at line 561 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
 
 
 
@@ -2552,18 +2629,18 @@ Referenced by spi\+F\+E\+R\+Test(), and spi\+Write\+Safe().
 
 
 \begin{DoxyCode}
-560 \{
-561     \hyperlink{ICECALv3_8h_a3cb25ca6f51f003950f9625ff05536fc}{U8}* buffer = \hyperlink{classICECALv3_a6e8b6c03f5b0f1d8281bf8a0fa46064f}{confReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a75e9c318dbac3a39402179070943d4bc}{dataU8}();
-562     buffer[2] = confRegAddr;                                \textcolor{comment}{//Frame = buffer<2>, buffer<1>, buffer<0>}
-563     buffer[1] = (\hyperlink{structconfRegData}{confRegData} >> 8) & 0xFF;
-564     buffer[0] =  \hyperlink{structconfRegData}{confRegData}       & 0xFF;
-565 
-566     \hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err} = \hyperlink{classICECALv3_a6e8b6c03f5b0f1d8281bf8a0fa46064f}{confReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}().\hyperlink{classStatusCode_a5dd22dc6eb2c52fc4cabc58f6dea2eb7}{isFailure}();
+562 \{
+563     \hyperlink{ICECALv3_8h_a3cb25ca6f51f003950f9625ff05536fc}{U8}* buffer = \hyperlink{classICECALv3_a6e8b6c03f5b0f1d8281bf8a0fa46064f}{confReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a75e9c318dbac3a39402179070943d4bc}{dataU8}();
+564     buffer[2] = confRegAddr;                                \textcolor{comment}{//Frame = buffer<2>, buffer<1>, buffer<0>}
+565     buffer[1] = (\hyperlink{structconfRegData}{confRegData} >> 8) & 0xFF;
+566     buffer[0] =  \hyperlink{structconfRegData}{confRegData}       & 0xFF;
 567 
-568     \textcolor{keywordflow}{if}(\hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err})  \hyperlink{classObject_a65cd4fda577711660821fd2cd5a3b4c9}{warning}(\textcolor{stringliteral}{"ICECALv3 write error."},\textcolor{stringliteral}{"ICECALv3::spiWrite"});
-569     \textcolor{keywordflow}{else}      \hyperlink{classObject_aac010553f022165573714b7014a15f0d}{debug}(\textcolor{stringliteral}{"ICECALv3 write (@"}+ \hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(confRegAddr) + \textcolor{stringliteral}{") = 0x"} + 
+568     \hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err} = \hyperlink{classICECALv3_a6e8b6c03f5b0f1d8281bf8a0fa46064f}{confReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}().\hyperlink{classStatusCode_a5dd22dc6eb2c52fc4cabc58f6dea2eb7}{isFailure}();
+569 
+570     \textcolor{keywordflow}{if}(\hyperlink{classICECALv3_ad8989925ee5b3ff322d863ce6aaff0bd}{err})  \hyperlink{classObject_a65cd4fda577711660821fd2cd5a3b4c9}{warning}(\textcolor{stringliteral}{"ICECALv3 write error."},\textcolor{stringliteral}{"ICECALv3::spiWrite"});
+571     \textcolor{keywordflow}{else}      \hyperlink{classObject_aac010553f022165573714b7014a15f0d}{debug}(\textcolor{stringliteral}{"ICECALv3 write (@"}+ \hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(confRegAddr) + \textcolor{stringliteral}{") = 0x"} + 
       \hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(\hyperlink{structconfRegData}{confRegData}),\textcolor{stringliteral}{"ICECALv3::spiWrite"});
-570 \}
+572 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classICECALv3_aa0b8358ea0be8e47a8aded5e1551787f}\label{classICECALv3_aa0b8358ea0be8e47a8aded5e1551787f}} 
 \index{I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}!spi\+Write\+Safe@{spi\+Write\+Safe}}
@@ -2573,7 +2650,7 @@ Referenced by spi\+F\+E\+R\+Test(), and spi\+Write\+Safe().
 
 
 
-Definition at line 511 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
+Definition at line 513 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
 
 
 
@@ -2585,30 +2662,30 @@ Referenced by set\+Analog\+Ch(), set\+Delay\+Line\+Ch(), and set\+Main\+Reg().
 
 
 \begin{DoxyCode}
-512 \{
-513     \hyperlink{ICECALv3_8h_adf928e51a60dba0df29d615401cc55a8}{U16} rxRegData;
-514     \textcolor{keywordtype}{bool} ok = \textcolor{keyword}{true};
-515     \textcolor{keywordtype}{int} iteration = 0;
-516 
-517     \textcolor{keywordflow}{do}\{
-518         \textcolor{comment}{//Data is sent and read back...}
-519         \hyperlink{classICECALv3_aef00f02801dea4bda2093c930501dcdd}{spiWrite}(confRegAddr,\hyperlink{structconfRegData}{confRegData});   
-520         rxRegData = \hyperlink{classICECALv3_aaabb9543482c4141fa89b4b8410164e0}{spiRead}(confRegAddr);
-521 
-522         \textcolor{comment}{//Exit conditions are computed.}
-523         ok = (rxRegData == \hyperlink{structconfRegData}{confRegData});
-524         iteration++;
-525     
-526         \textcolor{keywordflow}{if}(!ok) \hyperlink{classObject_a65cd4fda577711660821fd2cd5a3b4c9}{warning}(\textcolor{stringliteral}{"Mismatch ("}+\hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(iteration)+\textcolor{stringliteral}{") in @SPI = 0x"}+
+514 \{
+515     \hyperlink{ICECALv3_8h_adf928e51a60dba0df29d615401cc55a8}{U16} rxRegData;
+516     \textcolor{keywordtype}{bool} ok = \textcolor{keyword}{true};
+517     \textcolor{keywordtype}{int} iteration = 0;
+518 
+519     \textcolor{keywordflow}{do}\{
+520         \textcolor{comment}{//Data is sent and read back...}
+521         \hyperlink{classICECALv3_aef00f02801dea4bda2093c930501dcdd}{spiWrite}(confRegAddr,\hyperlink{structconfRegData}{confRegData});   
+522         rxRegData = \hyperlink{classICECALv3_aced41ce20a0853d6248b8df88412e57a}{spiRead}(confRegAddr);
+523 
+524         \textcolor{comment}{//Exit conditions are computed.}
+525         ok = (rxRegData == \hyperlink{structconfRegData}{confRegData});
+526         iteration++;
+527     
+528         \textcolor{keywordflow}{if}(!ok) \hyperlink{classObject_a65cd4fda577711660821fd2cd5a3b4c9}{warning}(\textcolor{stringliteral}{"Mismatch ("}+\hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(iteration)+\textcolor{stringliteral}{") in @SPI = 0x"}+
       \hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(confRegAddr)+\textcolor{stringliteral}{". Read: 0x"}+\hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(rxRegData)+\textcolor{stringliteral}{". Expected: 0x"}+
       \hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(confRegAddr)+\textcolor{stringliteral}{"."},\textcolor{stringliteral}{"ICECALv3::spiWriteSafe"}); 
-527 
-528     \}\textcolor{keywordflow}{while}(!ok && iteration<= \hyperlink{classICECALv3_ae877ce34b3a4d6c368cc6409ac9614fa}{nRetries});
 529 
-530     \textcolor{keywordflow}{if}(!ok) \hyperlink{classObject_a204a95f57818c0f811933917a30eff45}{error}(\textcolor{stringliteral}{"Too many errors ("}+\hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(iteration)+\textcolor{stringliteral}{"). Check electronics!"},\textcolor{stringliteral}{"
+530     \}\textcolor{keywordflow}{while}(!ok && iteration<= \hyperlink{classICECALv3_ae877ce34b3a4d6c368cc6409ac9614fa}{nRetries});
+531 
+532     \textcolor{keywordflow}{if}(!ok) \hyperlink{classObject_a204a95f57818c0f811933917a30eff45}{error}(\textcolor{stringliteral}{"Too many errors ("}+\hyperlink{classICECALv3_a04b02e583f191bfce34d05132cd23834}{itohs}(iteration)+\textcolor{stringliteral}{"). Check electronics!"},\textcolor{stringliteral}{"
       ICECALv3::spiWriteSafe"});
-531     \textcolor{keywordflow}{return} !ok;
-532 \}
+533     \textcolor{keywordflow}{return} !ok;
+534 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classObject_a73a0f1a41828fdd8303dd662446fb6c3}\label{classObject_a73a0f1a41828fdd8303dd662446fb6c3}} 
 \index{I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}!title@{title}}
@@ -2718,7 +2795,7 @@ Implements \hyperlink{classElement_a4e6c83efae95616ebddd03c793a26661}{Element}.
 
 
 
-Definition at line 126 of file I\+C\+E\+C\+A\+Lv3.\+h.
+Definition at line 127 of file I\+C\+E\+C\+A\+Lv3.\+h.
 
 
 
@@ -2726,9 +2803,9 @@ Referenced by A3\+P\+E\+\_\+\+Bit\+Flip.\+A3\+P\+E\+\_\+\+Bit\+Flip\+::\+\_\+\+\
 
 
 \begin{DoxyCode}
-126                  \{
-127     
-128   \};
+127                  \{
+128     
+129   \};
 \end{DoxyCode}
 \mbox{\Hypertarget{classObject_a83d2db2df682907ea1115ad721c1c4a1}\label{classObject_a83d2db2df682907ea1115ad721c1c4a1}} 
 \index{I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}!verbose@{verbose}}
@@ -2770,6 +2847,42 @@ References Object\+::m\+\_\+log, Msg\+Svc\+::msg\+Svc(), and Msg\+Svc\+::\+V\+E\
 \begin{DoxyCode}
 44 \{ \hyperlink{classObject_a0d269813dd7ac1f24bc143031e2963f2}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926af655256b06494ade5ba830abe5401ec9}{MsgSvc::VERBOSE} , mymsg, \hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name} ); \}
 \end{DoxyCode}
+\mbox{\Hypertarget{classICECALv3_a7f3f8012d2e5c45f8e43819befa3f915}\label{classICECALv3_a7f3f8012d2e5c45f8e43819befa3f915}} 
+\index{I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}!version@{version}}
+\index{version@{version}!I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}}
+\subsubsection{\texorpdfstring{version()}{version()}}
+{\footnotesize\ttfamily double I\+C\+E\+C\+A\+Lv3\+::version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 660 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
+
+
+
+References ftos(), I\+C\+E\+C\+A\+L\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+A\+D\+DR, Object\+::info(), itos(), and spi\+Read().
+
+
+
+Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
+
+
+\begin{DoxyCode}
+661 \{
+662     \hyperlink{ICECALv3_8h_adf928e51a60dba0df29d615401cc55a8}{U16} rxversion;
+663     \textcolor{keywordtype}{double} major,minor,\hyperlink{classICECALv3_a7f3f8012d2e5c45f8e43819befa3f915}{version};
+664     \textcolor{keywordtype}{string} version\_str;
+665 
+666     rxversion = \hyperlink{classICECALv3_aced41ce20a0853d6248b8df88412e57a}{spiRead}(\hyperlink{ICECALv3_8h_a46a6446285e0e7808feebc4bc9ef52e1}{ICECAL\_VERSION\_ADDR}, 0x00 );
+667 
+668     major = (double)((rxversion>>12) & 0x0F); 
+669     minor = (double)((rxversion >>8) & 0x0F);
+670     version\_str = \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(major) + \textcolor{stringliteral}{"."} + \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(minor);
+671     version = atof( version\_str.c\_str() );
+672 
+673     \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"ICECAL Version: "} + \hyperlink{Tools_8h_ae78000c70889d75d67813c6cb83010a6}{ftos}(version),\textcolor{stringliteral}{"ICECALv3::version"});
+674     \textcolor{keywordflow}{return} \hyperlink{classICECALv3_a7f3f8012d2e5c45f8e43819befa3f915}{version};
+675 \}
+\end{DoxyCode}
 \mbox{\Hypertarget{classObject_a65cd4fda577711660821fd2cd5a3b4c9}\label{classObject_a65cd4fda577711660821fd2cd5a3b4c9}} 
 \index{I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}!warning@{warning}}
 \index{warning@{warning}!I\+C\+E\+C\+A\+Lv3@{I\+C\+E\+C\+A\+Lv3}}
@@ -2786,7 +2899,7 @@ References Object\+::m\+\_\+log, Object\+::m\+\_\+name, Msg\+Svc\+::msg\+Svc(), 
 
 
 
-Referenced by D\+C\+U\+::acquire(), A3\+P\+E\+::acquisition(), Plot\+::add(), Application\+::bookkeeping(), check\+Cmd(), Hierarchy\+::child(), Hierarchy\+::child\+Typed(), Usb\+Spi\+Bus\+::clock\+Divider(), L\+S\+Delay\+Chip\+V1\+::config\+Reg\+Bulk\+Read(), L\+S\+Delay\+Chip\+V1\+::config\+Reg\+Bulk\+Write(), Element\+::connection(), D\+C\+U\+::convert(), Application\+::create(), Specs\+Glue\+::date(), Specs\+Mezzanine\+::date(), Specs\+Slave\+::detect(), N\+I6008\+::device(), A3\+P\+E\+\_\+\+Bit\+Flip\+::execute(), Acquisition\+::execute(), Usb\+F\+T\+Interface\+Test\+::execute(), export\+\_\+obj(), F\+E\+B\+\_\+v1\+::gbt\+Acknowledge\+Config(), F\+E\+B\+\_\+v1\+::gbt\+Clock\+Strength(), F\+E\+B\+\_\+v1\+::gbt\+D\+L\+L\+Reset(), L\+S\+Delay\+Chip\+V1\+::get\+Config\+Reg(), Specs\+Glue\+::i2c\+Clk\+Mode(), D\+C\+U\+::init(), Specs\+Slave\+::init(), Storage\+Fifo\+::initialize(), Storage\+Fifo\+Acquisition\+::initialize(), Acquisition\+::initialize(), A3\+P\+E\+\_\+\+Bit\+Flip\+::initialize(), Emulate\+F\+E\+::initialize(), Test\+I2\+C\+::initialize(), Test\+S\+P\+I\+::initialize(), Test\+U\+S\+B\+::initialize(), Specs\+Glue\+::led(), Specs\+Mezzanine\+::led(), A3\+P\+E\+::load\+Trigger(), Application\+::loop(), Application\+::make\+Dir(), Data\+::name(), Application\+::prepare(), Usb\+I2c\+Bus\+::read(), Phaser\+::read(), I\+C\+Phaser\+::read(), Usb\+Spi\+Bus\+::read(), D\+C\+U\+::read\+Mode(), D\+C\+U\+::reset(), Specs\+Slave\+::reset(), Specs\+Master\+::reset(), I\+C\+Phaser\+::reset(), Specs\+Slave\+::reset\+Internal(), Server\+::\+Server(), F\+E\+B\+\_\+v1\+::set\+Calib\+Cte(), Storage\+Fifo\+Acquisition\+::set\+Channels(), Acquisition\+::set\+Channels(), Usb\+Spi\+Bus\+::set\+Clock\+Divider(), F\+E\+B\+\_\+v1\+::set\+Clock\+Falling\+Edge(), Application\+::set\+Config(), L\+S\+Delay\+Chip\+V1\+::set\+Config\+Reg(), Storage\+Fifo\+Acquisition\+::set\+Depth(), Acquisition\+::set\+Depth(), A3\+P\+E\+::set\+Enable\+A\+D\+C(), F\+E\+B\+\_\+v1\+::set\+Gain4(), F\+E\+B\+\_\+v1\+::set\+Gbt80\+M\+Hz\+Clk\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Clock\+Strength(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Data\+Path(), F\+E\+B\+\_\+v1\+::set\+Gbt\+D\+L\+L\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Enable\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Mode(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Term\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Track\+Mode(), D\+C\+U\+::set\+H\+I\+R(), Specs\+Glue\+::set\+I2c\+Clk\+Mode(), Specs\+Mezzanine\+::set\+Led(), D\+C\+U\+::set\+L\+I\+R(), F\+E\+B\+\_\+v1\+::set\+Output\+Eport(), A3\+P\+E\+::set\+Pipeline(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+A\+D\+C\+Enable(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+P\+M\+Enable(), R\+A\+M\+::set\+Size(), Specs\+Master\+::set\+Speed(), F\+E\+B\+\_\+v1\+::set\+Stop\+Inj\+Loop(), F\+E\+B\+\_\+v1\+::set\+Test\+Duration(), I\+Odata\+::set\+U16(), I\+Odata\+::set\+U32(), I\+Odata\+::set\+U8(), Test\+Suite\+::sigma(), Specs\+Interface\+::specs\+Read\+I2c(), Specs\+Interface\+::specs\+Read\+Parallel(), Specs\+Interface\+::specs\+Read\+Register(), Specs\+Interface\+::specs\+Write\+I2c(), Specs\+Interface\+::specs\+Write\+Parallel(), Specs\+Interface\+::specs\+Write\+Register(), L\+S\+Delay\+Chip\+V1\+::spi\+B\+E\+R\+Test(), spi\+F\+E\+R\+Test(), spi\+Read(), spi\+Write(), spi\+Write\+Safe(), Server\+::start(), I\+C\+Phaser\+::status(), Application\+::svc\+Plot(), Application\+::svc\+Running(), Data\+::title(), Server\+::update\+Config(), Server\+::update\+State(), Data\+::vector\+Ptr(), Usb\+I2c\+Bus\+::write(), Phaser\+::write(), I\+C\+Phaser\+::write(), Usb\+Spi\+Bus\+::write(), F\+E\+B\+\_\+v1\+::write\+Fifo\+Inject\+F\+E(), and F\+E\+B\+\_\+v1\+::write\+Fifo\+L\+L\+T\+F\+E().
+Referenced by D\+C\+U\+::acquire(), A3\+P\+E\+::acquisition(), Plot\+::add(), Application\+::bookkeeping(), check\+Cmd(), Hierarchy\+::child(), Hierarchy\+::child\+Typed(), Usb\+Spi\+Bus\+::clock\+Divider(), L\+S\+Delay\+Chip\+V1\+::config\+Reg\+Bulk\+Read(), L\+S\+Delay\+Chip\+V1\+::config\+Reg\+Bulk\+Write(), Element\+::connection(), D\+C\+U\+::convert(), Application\+::create(), Specs\+Glue\+::date(), Specs\+Mezzanine\+::date(), Specs\+Slave\+::detect(), N\+I6008\+::device(), A3\+P\+E\+\_\+\+Bit\+Flip\+::execute(), Acquisition\+::execute(), Usb\+F\+T\+Interface\+Test\+::execute(), export\+\_\+obj(), F\+E\+B\+\_\+v1\+::gbt\+Acknowledge\+Config(), F\+E\+B\+\_\+v1\+::gbt\+Clock\+Strength(), F\+E\+B\+\_\+v1\+::gbt\+D\+L\+L\+Reset(), L\+S\+Delay\+Chip\+V1\+::get\+Config\+Reg(), Specs\+Glue\+::i2c\+Clk\+Mode(), D\+C\+U\+::init(), Specs\+Slave\+::init(), Storage\+Fifo\+::initialize(), Storage\+Fifo\+Acquisition\+::initialize(), Acquisition\+::initialize(), A3\+P\+E\+\_\+\+Bit\+Flip\+::initialize(), Test\+I2\+C\+::initialize(), Emulate\+F\+E\+::initialize(), Test\+S\+P\+I\+::initialize(), Test\+U\+S\+B\+::initialize(), Specs\+Glue\+::led(), Specs\+Mezzanine\+::led(), A3\+P\+E\+::load\+Trigger(), Application\+::loop(), Application\+::make\+Dir(), Data\+::name(), Application\+::prepare(), Usb\+I2c\+Bus\+::read(), Phaser\+::read(), I\+C\+Phaser\+::read(), Usb\+Spi\+Bus\+::read(), D\+C\+U\+::read\+Mode(), D\+C\+U\+::reset(), Specs\+Master\+::reset(), Specs\+Slave\+::reset(), I\+C\+Phaser\+::reset(), Specs\+Slave\+::reset\+Internal(), Server\+::\+Server(), F\+E\+B\+\_\+v1\+::set\+Calib\+Cte(), Storage\+Fifo\+Acquisition\+::set\+Channels(), Acquisition\+::set\+Channels(), Usb\+Spi\+Bus\+::set\+Clock\+Divider(), F\+E\+B\+\_\+v1\+::set\+Clock\+Falling\+Edge(), Application\+::set\+Config(), L\+S\+Delay\+Chip\+V1\+::set\+Config\+Reg(), Storage\+Fifo\+Acquisition\+::set\+Depth(), Acquisition\+::set\+Depth(), A3\+P\+E\+::set\+Enable\+A\+D\+C(), F\+E\+B\+\_\+v1\+::set\+Gain4(), F\+E\+B\+\_\+v1\+::set\+Gbt80\+M\+Hz\+Clk\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Clock\+Strength(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Data\+Path(), F\+E\+B\+\_\+v1\+::set\+Gbt\+D\+L\+L\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Enable\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Mode(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Term\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Track\+Mode(), D\+C\+U\+::set\+H\+I\+R(), Specs\+Glue\+::set\+I2c\+Clk\+Mode(), Specs\+Mezzanine\+::set\+Led(), D\+C\+U\+::set\+L\+I\+R(), F\+E\+B\+\_\+v1\+::set\+Output\+Eport(), A3\+P\+E\+::set\+Pipeline(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+A\+D\+C\+Enable(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+P\+M\+Enable(), R\+A\+M\+::set\+Size(), Specs\+Master\+::set\+Speed(), F\+E\+B\+\_\+v1\+::set\+Stop\+Inj\+Loop(), F\+E\+B\+\_\+v1\+::set\+Test\+Duration(), I\+Odata\+::set\+U16(), I\+Odata\+::set\+U32(), I\+Odata\+::set\+U8(), Test\+Suite\+::sigma(), Specs\+Interface\+::specs\+Read\+I2c(), Specs\+Interface\+::specs\+Read\+Parallel(), Specs\+Interface\+::specs\+Read\+Register(), Specs\+Interface\+::specs\+Write\+I2c(), Specs\+Interface\+::specs\+Write\+Parallel(), Specs\+Interface\+::specs\+Write\+Register(), spi\+Address\+Scan(), L\+S\+Delay\+Chip\+V1\+::spi\+B\+E\+R\+Test(), spi\+F\+E\+R\+Test(), spi\+Read(), spi\+Write(), spi\+Write\+Safe(), Server\+::start(), I\+C\+Phaser\+::status(), Application\+::svc\+Plot(), Application\+::svc\+Running(), Data\+::title(), Server\+::update\+Config(), Server\+::update\+State(), Data\+::vector\+Ptr(), Usb\+I2c\+Bus\+::write(), Phaser\+::write(), I\+C\+Phaser\+::write(), Usb\+Spi\+Bus\+::write(), F\+E\+B\+\_\+v1\+::write\+Fifo\+Inject\+F\+E(), and F\+E\+B\+\_\+v1\+::write\+Fifo\+L\+L\+T\+F\+E().
 
 
 \begin{DoxyCode}
@@ -2818,7 +2931,7 @@ References Object\+::m\+\_\+log, Msg\+Svc\+::msg\+Svc(), and Msg\+Svc\+::\+W\+A\
 
 
 
-Definition at line 153 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
+Definition at line 156 of file I\+C\+E\+C\+A\+Lv3.\+cpp.
 
 
 
@@ -2830,86 +2943,86 @@ Referenced by dump\+Config().
 
 
 \begin{DoxyCode}
-154 \{
-155   time\_t rawtime;
-156   \textcolor{keyword}{struct }tm * timeinfo;
-157     \textcolor{keywordtype}{char} dStr[64], tStr[64];
-158     ofstream fd;
-159     PyObject* l;        \textcolor{comment}{//Temporary list to accomodate 'asicParams' main list list objects.}
-160 
-161     \textcolor{comment}{//'asicParams' output example:}
-162     \textcolor{comment}{//['R1403C0000', [19, 24, 0, 0, 1], [2, 3, 6, 0, 0, 0, 19, 48, 0], [19, 24, 0, 0, 1],}
-163     \textcolor{comment}{// [2, 3, 6, 0, 0, 0, 19, 48, 0], [19, 24, 0, 0, 1], [2, 3, 6, 0, 0, 0, 19, 48, 0], }
-164     \textcolor{comment}{// [19, 24, 0, 0, 1], [2, 3, 6, 0, 0, 0, 19, 48, 0], [0, 0, 0, 56, 0, 56, 0, 9, 56, 0, 56, 0]]}
-165 
-166   time (&rawtime);
-167   timeinfo = localtime (&rawtime);
-168     strftime (dStr,64,\textcolor{stringliteral}{"%Y/%m/%d"},timeinfo);
-169     strftime (tStr,64,\textcolor{stringliteral}{"%R"},timeinfo);   
-170 
-171     fd.open (fileName.c\_str(), ios\_base::out);
-172     \textcolor{keywordflow}{if}(fd.is\_open())
-173     \{
-174         fd << \textcolor{stringliteral}{"#########################################################"} << endl;
-175         fd << \textcolor{stringliteral}{"#############   ICECAL CALIBRATION FILE   ###############"} << endl;
-176         fd << \textcolor{stringliteral}{"#########################################################"} << endl;
-177         fd << \textcolor{stringliteral}{""} << endl;
-178         fd << \textcolor{stringliteral}{"#File Version     : v"} << \hyperlink{ICECALv3_8h_ab10444bd2aa43310cf654abe4e4a7af6}{CALIBRATION\_FILE\_VER} << endl;
-179         fd << \textcolor{stringliteral}{"#Date (YYYY/MM/DD): "} << string(dStr) << endl;
-180         fd << \textcolor{stringliteral}{"#Time (HH:MM)     : "} << string(tStr) << endl;
-181         fd << \textcolor{stringliteral}{"#ICECAL Chip ID   : "} << PyString\_AsString(PyList\_GetItem(asicParams,0)) << endl;
-182         fd << \textcolor{stringliteral}{""} << endl << endl;
-183     
-184         fd << \textcolor{stringliteral}{"#########################################################"} << endl;
-185         fd << \textcolor{stringliteral}{"# ICECAL Main Register Parameters:"} << endl;
-186         fd << \textcolor{stringliteral}{"#########################################################"} << endl;
-187         fd << \textcolor{stringliteral}{""} << endl;
-188 
-189         l = PyList\_GetItem(asicParams,9);       \textcolor{comment}{//list item 9. ICECAL Main config reg.}
-190         fd <<   \textcolor{stringliteral}{"VCONTROL\_OE = "} << PyInt\_AsLong(PyList\_GetItem(l,0)) << endl;
-191         fd <<   \textcolor{stringliteral}{"BXID\_SYN\_OE = "} << PyInt\_AsLong(PyList\_GetItem(l,1)) << endl;
-192         fd <<   \textcolor{stringliteral}{"CLK\_REFRESH = "} << PyInt\_AsLong(PyList\_GetItem(l,2)) << endl;
-193         fd <<   \textcolor{stringliteral}{"IBIAS\_OB    = "} << PyInt\_AsLong(PyList\_GetItem(l,3)) << endl;
-194         fd <<   \textcolor{stringliteral}{"IBIAS\_CE\_TH = "} << PyInt\_AsLong(PyList\_GetItem(l,4)) << endl;
-195         fd <<   \textcolor{stringliteral}{"IBIAS\_TH    = "} << PyInt\_AsLong(PyList\_GetItem(l,5)) << endl;
-196         fd <<   \textcolor{stringliteral}{"IBIAS\_INT   = "} << PyInt\_AsLong(PyList\_GetItem(l,6)) << endl;
-197         fd <<   \textcolor{stringliteral}{"IBIAS\_CE\_IN = "} << PyInt\_AsLong(PyList\_GetItem(l,7)) << endl;
-198         fd <<   \textcolor{stringliteral}{"IBIAS\_CE\_PZ = "} << PyInt\_AsLong(PyList\_GetItem(l,8)) << endl;  
-199         fd <<   \textcolor{stringliteral}{"IBIAS\_0T    = "} << PyInt\_AsLong(PyList\_GetItem(l,9)) << endl;
-200         fd <<   \textcolor{stringliteral}{"IBIAS\_PZ    = "} << PyInt\_AsLong(PyList\_GetItem(l,10)) << endl;
-201         fd <<   \textcolor{stringliteral}{"IBIAS\_V0T   = "} << PyInt\_AsLong(PyList\_GetItem(l,11)) << endl;
-202         fd << \textcolor{stringliteral}{""} << endl << endl;
-203 
-204         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<4;i++)
-205         \{
-206             fd << \textcolor{stringliteral}{"#########################################################"} << endl;
-207             fd << \textcolor{stringliteral}{"#Channel #"} << i << \textcolor{stringliteral}{" Parameters:"} << endl;
-208             fd << \textcolor{stringliteral}{"#########################################################"} << endl;
-209             fd << \textcolor{stringliteral}{""} << endl;
-210 
-211             l = PyList\_GetItem(asicParams,1+2*i);       \textcolor{comment}{//list items 1, 3, 5, 7. Delay line config regs.}
-212             fd <<   \textcolor{stringliteral}{"PHASE\_ADC["} << i << \textcolor{stringliteral}{"]   = "} << PyInt\_AsLong(PyList\_GetItem(l,0)) << endl;
-213             fd <<   \textcolor{stringliteral}{"PHASE\_TH["} << i << \textcolor{stringliteral}{"]    = "} << PyInt\_AsLong(PyList\_GetItem(l,1)) << endl;
-214             fd <<   \textcolor{stringliteral}{"PHASE\_INT["} << i << \textcolor{stringliteral}{"]   = "} << PyInt\_AsLong(PyList\_GetItem(l,2)) << endl;
-215             fd <<   \textcolor{stringliteral}{"LOC\_SEL["} << i << \textcolor{stringliteral}{"]     = "} << PyInt\_AsLong(PyList\_GetItem(l,3)) << endl;
-216             fd <<   \textcolor{stringliteral}{"LVDS\_OEN["} << i << \textcolor{stringliteral}{"]    = "} << PyInt\_AsLong(PyList\_GetItem(l,4)) << endl;
-217 
-218             l = PyList\_GetItem(asicParams,2+2*i);       \textcolor{comment}{//list items 2, 4, 6, 8. ICECAL Analog config regs.}
-219             fd <<   \textcolor{stringliteral}{"CINT\_SUBCH0["} << i << \textcolor{stringliteral}{"] = "} << PyInt\_AsLong(PyList\_GetItem(l,0)) << endl;
-220             fd <<   \textcolor{stringliteral}{"CINT\_SUBCH1["} << i << \textcolor{stringliteral}{"] = "} << PyInt\_AsLong(PyList\_GetItem(l,1)) << endl;
-221             fd <<   \textcolor{stringliteral}{"IOFF\_SUBCH0["} << i << \textcolor{stringliteral}{"] = "} << PyInt\_AsLong(PyList\_GetItem(l,2)) << endl;
-222             fd <<   \textcolor{stringliteral}{"IOFF\_SUBCH1["} << i << \textcolor{stringliteral}{"] = "} << PyInt\_AsLong(PyList\_GetItem(l,3)) << endl;
-223             fd <<   \textcolor{stringliteral}{"ZERO["} << i << \textcolor{stringliteral}{"]        = "} << PyInt\_AsLong(PyList\_GetItem(l,4)) << endl;
-224             fd <<   \textcolor{stringliteral}{"POLE["} << i << \textcolor{stringliteral}{"]        = "} << PyInt\_AsLong(PyList\_GetItem(l,5)) << endl;
-225             fd <<   \textcolor{stringliteral}{"ZIN["} << i << \textcolor{stringliteral}{"]         = "} << PyInt\_AsLong(PyList\_GetItem(l,6)) << endl; 
-226             fd << \textcolor{stringliteral}{""} << endl;
-227         \}
-228 
-229         fd.close();
-230         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
-231     \}
-232     \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-233 \}
+157 \{
+158   time\_t rawtime;
+159   \textcolor{keyword}{struct }tm * timeinfo;
+160     \textcolor{keywordtype}{char} dStr[64], tStr[64];
+161     ofstream fd;
+162     PyObject* l;        \textcolor{comment}{//Temporary list to accomodate 'asicParams' main list list objects.}
+163 
+164     \textcolor{comment}{//'asicParams' output example:}
+165     \textcolor{comment}{//['R1403C0000', [19, 24, 0, 0, 1], [2, 3, 6, 0, 0, 0, 19, 48, 0], [19, 24, 0, 0, 1],}
+166     \textcolor{comment}{// [2, 3, 6, 0, 0, 0, 19, 48, 0], [19, 24, 0, 0, 1], [2, 3, 6, 0, 0, 0, 19, 48, 0], }
+167     \textcolor{comment}{// [19, 24, 0, 0, 1], [2, 3, 6, 0, 0, 0, 19, 48, 0], [0, 0, 0, 56, 0, 56, 0, 9, 56, 0, 56, 0]]}
+168 
+169   time (&rawtime);
+170   timeinfo = localtime (&rawtime);
+171     strftime (dStr,64,\textcolor{stringliteral}{"%Y/%m/%d"},timeinfo);
+172     strftime (tStr,64,\textcolor{stringliteral}{"%R"},timeinfo);   
+173 
+174     fd.open (fileName.c\_str(), ios\_base::out);
+175     \textcolor{keywordflow}{if}(fd.is\_open())
+176     \{
+177         fd << \textcolor{stringliteral}{"#########################################################"} << endl;
+178         fd << \textcolor{stringliteral}{"#############   ICECAL CALIBRATION FILE   ###############"} << endl;
+179         fd << \textcolor{stringliteral}{"#########################################################"} << endl;
+180         fd << \textcolor{stringliteral}{""} << endl;
+181         fd << \textcolor{stringliteral}{"#File Version     : v"} << \hyperlink{ICECALv3_8h_ab10444bd2aa43310cf654abe4e4a7af6}{CALIBRATION\_FILE\_VER} << endl;
+182         fd << \textcolor{stringliteral}{"#Date (YYYY/MM/DD): "} << string(dStr) << endl;
+183         fd << \textcolor{stringliteral}{"#Time (HH:MM)     : "} << string(tStr) << endl;
+184         fd << \textcolor{stringliteral}{"#ICECAL Chip ID   : "} << PyString\_AsString(PyList\_GetItem(asicParams,0)) << endl;
+185         fd << \textcolor{stringliteral}{""} << endl << endl;
+186     
+187         fd << \textcolor{stringliteral}{"#########################################################"} << endl;
+188         fd << \textcolor{stringliteral}{"# ICECAL Main Register Parameters:"} << endl;
+189         fd << \textcolor{stringliteral}{"#########################################################"} << endl;
+190         fd << \textcolor{stringliteral}{""} << endl;
+191 
+192         l = PyList\_GetItem(asicParams,9);       \textcolor{comment}{//list item 9. ICECAL Main config reg.}
+193         fd <<   \textcolor{stringliteral}{"VCONTROL\_OE = "} << PyInt\_AsLong(PyList\_GetItem(l,0)) << endl;
+194         fd <<   \textcolor{stringliteral}{"BXID\_SYN\_OE = "} << PyInt\_AsLong(PyList\_GetItem(l,1)) << endl;
+195         fd <<   \textcolor{stringliteral}{"CLK\_REFRESH = "} << PyInt\_AsLong(PyList\_GetItem(l,2)) << endl;
+196         fd <<   \textcolor{stringliteral}{"IBIAS\_OB    = "} << PyInt\_AsLong(PyList\_GetItem(l,3)) << endl;
+197         fd <<   \textcolor{stringliteral}{"IBIAS\_CE\_TH = "} << PyInt\_AsLong(PyList\_GetItem(l,4)) << endl;
+198         fd <<   \textcolor{stringliteral}{"IBIAS\_TH    = "} << PyInt\_AsLong(PyList\_GetItem(l,5)) << endl;
+199         fd <<   \textcolor{stringliteral}{"IBIAS\_INT   = "} << PyInt\_AsLong(PyList\_GetItem(l,6)) << endl;
+200         fd <<   \textcolor{stringliteral}{"IBIAS\_CE\_IN = "} << PyInt\_AsLong(PyList\_GetItem(l,7)) << endl;
+201         fd <<   \textcolor{stringliteral}{"IBIAS\_CE\_PZ = "} << PyInt\_AsLong(PyList\_GetItem(l,8)) << endl;  
+202         fd <<   \textcolor{stringliteral}{"IBIAS\_0T    = "} << PyInt\_AsLong(PyList\_GetItem(l,9)) << endl;
+203         fd <<   \textcolor{stringliteral}{"IBIAS\_PZ    = "} << PyInt\_AsLong(PyList\_GetItem(l,10)) << endl;
+204         fd <<   \textcolor{stringliteral}{"IBIAS\_V0T   = "} << PyInt\_AsLong(PyList\_GetItem(l,11)) << endl;
+205         fd << \textcolor{stringliteral}{""} << endl << endl;
+206 
+207         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<4;i++)
+208         \{
+209             fd << \textcolor{stringliteral}{"#########################################################"} << endl;
+210             fd << \textcolor{stringliteral}{"#Channel #"} << i << \textcolor{stringliteral}{" Parameters:"} << endl;
+211             fd << \textcolor{stringliteral}{"#########################################################"} << endl;
+212             fd << \textcolor{stringliteral}{""} << endl;
+213 
+214             l = PyList\_GetItem(asicParams,1+2*i);       \textcolor{comment}{//list items 1, 3, 5, 7. Delay line config regs.}
+215             fd <<   \textcolor{stringliteral}{"PHASE\_ADC["} << i << \textcolor{stringliteral}{"]   = "} << PyInt\_AsLong(PyList\_GetItem(l,0)) << endl;
+216             fd <<   \textcolor{stringliteral}{"PHASE\_TH["} << i << \textcolor{stringliteral}{"]    = "} << PyInt\_AsLong(PyList\_GetItem(l,1)) << endl;
+217             fd <<   \textcolor{stringliteral}{"PHASE\_INT["} << i << \textcolor{stringliteral}{"]   = "} << PyInt\_AsLong(PyList\_GetItem(l,2)) << endl;
+218             fd <<   \textcolor{stringliteral}{"LOC\_SEL["} << i << \textcolor{stringliteral}{"]     = "} << PyInt\_AsLong(PyList\_GetItem(l,3)) << endl;
+219             fd <<   \textcolor{stringliteral}{"LVDS\_OEN["} << i << \textcolor{stringliteral}{"]    = "} << PyInt\_AsLong(PyList\_GetItem(l,4)) << endl;
+220 
+221             l = PyList\_GetItem(asicParams,2+2*i);       \textcolor{comment}{//list items 2, 4, 6, 8. ICECAL Analog config regs.}
+222             fd <<   \textcolor{stringliteral}{"CINT\_SUBCH0["} << i << \textcolor{stringliteral}{"] = "} << PyInt\_AsLong(PyList\_GetItem(l,0)) << endl;
+223             fd <<   \textcolor{stringliteral}{"CINT\_SUBCH1["} << i << \textcolor{stringliteral}{"] = "} << PyInt\_AsLong(PyList\_GetItem(l,1)) << endl;
+224             fd <<   \textcolor{stringliteral}{"IOFF\_SUBCH0["} << i << \textcolor{stringliteral}{"] = "} << PyInt\_AsLong(PyList\_GetItem(l,2)) << endl;
+225             fd <<   \textcolor{stringliteral}{"IOFF\_SUBCH1["} << i << \textcolor{stringliteral}{"] = "} << PyInt\_AsLong(PyList\_GetItem(l,3)) << endl;
+226             fd <<   \textcolor{stringliteral}{"ZERO["} << i << \textcolor{stringliteral}{"]        = "} << PyInt\_AsLong(PyList\_GetItem(l,4)) << endl;
+227             fd <<   \textcolor{stringliteral}{"POLE["} << i << \textcolor{stringliteral}{"]        = "} << PyInt\_AsLong(PyList\_GetItem(l,5)) << endl;
+228             fd <<   \textcolor{stringliteral}{"ZIN["} << i << \textcolor{stringliteral}{"]         = "} << PyInt\_AsLong(PyList\_GetItem(l,6)) << endl; 
+229             fd << \textcolor{stringliteral}{""} << endl;
+230         \}
+231 
+232         fd.close();
+233         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+234     \}
+235     \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+236 \}
 \end{DoxyCode}
 
 
@@ -2922,7 +3035,7 @@ Referenced by dump\+Config().
 
 
 
-Definition at line 128 of file I\+C\+E\+C\+A\+Lv3.\+h.
+Definition at line 129 of file I\+C\+E\+C\+A\+Lv3.\+h.
 
 
 
@@ -2936,7 +3049,7 @@ Referenced by I\+C\+E\+C\+A\+Lv3(), spi\+Read(), and spi\+Write().
 
 
 
-Definition at line 138 of file I\+C\+E\+C\+A\+Lv3.\+h.
+Definition at line 139 of file I\+C\+E\+C\+A\+Lv3.\+h.
 
 
 
@@ -2978,7 +3091,7 @@ Referenced by Usb\+Spi\+Bus\+::clock\+Divider(), Element\+::connection(), Elemen
 
 
 
-Definition at line 136 of file I\+C\+E\+C\+A\+Lv3.\+h.
+Definition at line 137 of file I\+C\+E\+C\+A\+Lv3.\+h.
 
 
 

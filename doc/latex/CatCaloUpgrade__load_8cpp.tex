@@ -14,6 +14,7 @@
 {\ttfamily \#include \char`\"{}Test\+U\+S\+B.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}Test\+I2\+C.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}Test\+S\+P\+I.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Acquisition.\+h\char`\"{}}\newline
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -30,7 +31,7 @@
 
 
 
-Definition at line 25 of file Cat\+Calo\+Upgrade\+\_\+load.\+cpp.
+Definition at line 26 of file Cat\+Calo\+Upgrade\+\_\+load.\+cpp.
 
 
 
@@ -38,19 +39,21 @@ References D\+E\+C\+L\+A\+R\+E\+\_\+\+E\+L\+E\+M\+E\+NT, D\+E\+C\+L\+A\+R\+E\+\_
 
 
 \begin{DoxyCode}
-26 \{
-27   \hyperlink{DLL_8h_a3cf59a4b090c171501973779974e42a2}{DECLARE\_ELEMENT}   ( \hyperlink{classFEB__v1}{FEB\_v1}, Proto v1 of the Upgrade LHCb Calo front-end board);
-28   \hyperlink{DLL_8h_a3cf59a4b090c171501973779974e42a2}{DECLARE\_ELEMENT}   ( \hyperlink{classCU__v1}{CU\_v1}, Proto v1 of the Upgrade LHCb Calo Control board);
-29   \hyperlink{DLL_8h_a3cf59a4b090c171501973779974e42a2}{DECLARE\_ELEMENT}   ( \hyperlink{classSeqPGA}{SeqPGA}, \hyperlink{classSeqPGA}{SeqPGA} FPGA description);
-30   \hyperlink{DLL_8h_a3cf59a4b090c171501973779974e42a2}{DECLARE\_ELEMENT}   ( \hyperlink{classFePGA}{FePGA}, \hyperlink{classFePGA}{FePGA} FPGA description);
-31     
-32   \hyperlink{DLL_8h_a3cf59a4b090c171501973779974e42a2}{DECLARE\_ELEMENT}   ( \hyperlink{classUsbFTMLInterface}{UsbFTMLInterface}, USB FT245 interface description);
-33   \hyperlink{DLL_8h_a3cf59a4b090c171501973779974e42a2}{DECLARE\_ELEMENT}   ( \hyperlink{classUsbMLSpiBus}{UsbMLSpiBus}, USB Spi Bus);
-34   \hyperlink{DLL_8h_a3cf59a4b090c171501973779974e42a2}{DECLARE\_ELEMENT}   ( \hyperlink{classUsbMLI2cBus}{UsbMLI2cBus}, USB I2c Bus);
-35   \hyperlink{DLL_8h_a3cf59a4b090c171501973779974e42a2}{DECLARE\_ELEMENT}   ( \hyperlink{classICPhaser}{ICPhaser}, ICECAL Delay Chip);
-36   \hyperlink{DLL_8h_aef2212dc8e888f762b7c0e2b2fcb0cdf}{DECLARE\_PROCESSUS} ( \hyperlink{namespaceEmulateFE}{EmulateFE} , Emulation of the front-end fpga processing);
-37   \hyperlink{DLL_8h_aef2212dc8e888f762b7c0e2b2fcb0cdf}{DECLARE\_PROCESSUS} ( \hyperlink{namespaceTestI2C}{TestI2C}   , Test of the \hyperlink{namespaceCATApp_addde02095b318dd29aad22bf91fbf5c7af0a8d8add7a4fb23e99e6ea6e09e5a59}{I2C} interface);
-38   \hyperlink{DLL_8h_aef2212dc8e888f762b7c0e2b2fcb0cdf}{DECLARE\_PROCESSUS} ( \hyperlink{namespaceTestSPI}{TestSPI}   , Test of the SPI interface);
-39   \hyperlink{DLL_8h_aef2212dc8e888f762b7c0e2b2fcb0cdf}{DECLARE\_PROCESSUS} ( \hyperlink{namespaceTestUSB}{TestUSB}   , Test of the USB interface);
-40 \}
+27 \{
+28   \hyperlink{DLL_8h_a3cf59a4b090c171501973779974e42a2}{DECLARE\_ELEMENT}   ( \hyperlink{classFEB__v1}{FEB\_v1}, Proto v1 of the Upgrade LHCb Calo front-end board);
+29   \hyperlink{DLL_8h_a3cf59a4b090c171501973779974e42a2}{DECLARE\_ELEMENT}   ( \hyperlink{classCU__v1}{CU\_v1}, Proto v1 of the Upgrade LHCb Calo Control board);
+30   \hyperlink{DLL_8h_a3cf59a4b090c171501973779974e42a2}{DECLARE\_ELEMENT}   ( \hyperlink{classSeqPGA}{SeqPGA}, \hyperlink{classSeqPGA}{SeqPGA} FPGA description);
+31   \hyperlink{DLL_8h_a3cf59a4b090c171501973779974e42a2}{DECLARE\_ELEMENT}   ( \hyperlink{classFePGA}{FePGA}, \hyperlink{classFePGA}{FePGA} FPGA description);
+32     
+33   \hyperlink{DLL_8h_a3cf59a4b090c171501973779974e42a2}{DECLARE\_ELEMENT}   ( \hyperlink{classUsbFTMLInterface}{UsbFTMLInterface}, USB FT245 interface description);
+34   \hyperlink{DLL_8h_a3cf59a4b090c171501973779974e42a2}{DECLARE\_ELEMENT}   ( \hyperlink{classUsbMLSpiBus}{UsbMLSpiBus}, USB Spi Bus);
+35   \hyperlink{DLL_8h_a3cf59a4b090c171501973779974e42a2}{DECLARE\_ELEMENT}   ( \hyperlink{classUsbMLI2cBus}{UsbMLI2cBus}, USB I2c Bus);
+36   \hyperlink{DLL_8h_a3cf59a4b090c171501973779974e42a2}{DECLARE\_ELEMENT}   ( \hyperlink{classICPhaser}{ICPhaser}, ICECAL Delay Chip);
+37   \hyperlink{DLL_8h_aef2212dc8e888f762b7c0e2b2fcb0cdf}{DECLARE\_PROCESSUS} ( \hyperlink{namespaceEmulateFE}{EmulateFE}     , Emulation of the front-end fpga processing)
+      ;
+38   \hyperlink{DLL_8h_aef2212dc8e888f762b7c0e2b2fcb0cdf}{DECLARE\_PROCESSUS} ( \hyperlink{namespaceTestI2C}{TestI2C}       , Test of the \hyperlink{namespaceCATApp_addde02095b318dd29aad22bf91fbf5c7af0a8d8add7a4fb23e99e6ea6e09e5a59}{I2C} interface);
+39   \hyperlink{DLL_8h_aef2212dc8e888f762b7c0e2b2fcb0cdf}{DECLARE\_PROCESSUS} ( \hyperlink{namespaceTestSPI}{TestSPI}       , Test of the SPI interface);
+40   \hyperlink{DLL_8h_aef2212dc8e888f762b7c0e2b2fcb0cdf}{DECLARE\_PROCESSUS} ( \hyperlink{namespaceTestUSB}{TestUSB}       , Test of the USB interface);
+41   \hyperlink{DLL_8h_aef2212dc8e888f762b7c0e2b2fcb0cdf}{DECLARE\_PROCESSUS} ( \hyperlink{namespaceAcquisition}{Acquisition}   , \hyperlink{namespaceAcquisition}{Acquisition} task);
+42 \}
 \end{DoxyCode}

@@ -75,7 +75,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="Register_8h_source.html">Register.h</a>&quot;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
-<code>#include &lt;Python.h&gt;</code><br />
+<code>#include &lt;python2.7/Python.h&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;fstream&gt;</code><br />
 <code>#include &lt;time.h&gt;</code><br />
@@ -113,13 +113,13 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a848408b773702d268053cb49d205e097"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ICECALv3_8h.html#a848408b773702d268053cb49d205e097">delayLineAddrCh</a> [4] = { 16,17,18,19 }</td></tr>
+<tr class="memitem:a848408b773702d268053cb49d205e097"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ICECALv3_8h.html#a848408b773702d268053cb49d205e097">delayLineAddrCh</a> [4] = { 28, 29, 30, 31 }</td></tr>
 <tr class="separator:a848408b773702d268053cb49d205e097"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd124f50fa794b9b0aded801fabf5322"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ICECALv3_8h.html#abd124f50fa794b9b0aded801fabf5322">icecalLSBAddrCh</a> [4] = { 5,5,5,5 }</td></tr>
+<tr class="memitem:abd124f50fa794b9b0aded801fabf5322"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ICECALv3_8h.html#abd124f50fa794b9b0aded801fabf5322">icecalLSBAddrCh</a> [4] = { 0, 1, 2, 3 }</td></tr>
 <tr class="separator:abd124f50fa794b9b0aded801fabf5322"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afba64a649cc9314882fd49b62b99d6e7"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ICECALv3_8h.html#afba64a649cc9314882fd49b62b99d6e7">icecalMSBAddrCh</a> [4] = { 5,5,5,5 }</td></tr>
+<tr class="memitem:afba64a649cc9314882fd49b62b99d6e7"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ICECALv3_8h.html#afba64a649cc9314882fd49b62b99d6e7">icecalMSBAddrCh</a> [4] = { 4, 5, 6, 7 }</td></tr>
 <tr class="separator:afba64a649cc9314882fd49b62b99d6e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c22ae782814495416dc2b803df326c1"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ICECALv3_8h.html#a9c22ae782814495416dc2b803df326c1">icecalMainAddr</a> [4] = { 0,1,2,3 }</td></tr>
+<tr class="memitem:a9c22ae782814495416dc2b803df326c1"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ICECALv3_8h.html#a9c22ae782814495416dc2b803df326c1">icecalMainAddr</a> [4] = { 8, 9, 10, 11 }</td></tr>
 <tr class="separator:a9c22ae782814495416dc2b803df326c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -137,6 +137,8 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ICECALv3_8h_source.html#l00037">37</a> of file <a class="el" href="ICECALv3_8h_source.html">ICECALv3.h</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="ICECALv3_8cpp_source.html#l00677">ICECALv3::bxidResynchStatus()</a>.</p>
+
 </div>
 </div>
 <a id="ab10444bd2aa43310cf654abe4e4a7af6"></a>
@@ -153,7 +155,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ICECALv3_8h_source.html#l00027">27</a> of file <a class="el" href="ICECALv3_8h_source.html">ICECALv3.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ICECALv3_8cpp_source.html#l00153">ICECALv3::writeAsicParams()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ICECALv3_8cpp_source.html#l00156">ICECALv3::writeAsicParams()</a>.</p>
 
 </div>
 </div>
@@ -171,6 +173,8 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ICECALv3_8h_source.html#l00036">36</a> of file <a class="el" href="ICECALv3_8h_source.html">ICECALv3.h</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="ICECALv3_8cpp_source.html#l00660">ICECALv3::version()</a>.</p>
+
 </div>
 </div>
 <a id="a2870f5a3cad23b2b4e7f16faefe8ef2e"></a>
@@ -187,7 +191,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ICECALv3_8h_source.html#l00033">33</a> of file <a class="el" href="ICECALv3_8h_source.html">ICECALv3.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ICECALv3_8h_source.html#l00073">ICECALv3::bypassMisoMosi()</a>, and <a class="el" href="LSDelayChipV1_8cpp_source.html#l00144">LSDelayChipV1::bypassMisoMosi()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ICECALv3_8h_source.html#l00070">ICECALv3::bypassMisoMosi()</a>, and <a class="el" href="LSDelayChipV1_8cpp_source.html#l00144">LSDelayChipV1::bypassMisoMosi()</a>.</p>
 
 </div>
 </div>
@@ -205,7 +209,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ICECALv3_8h_source.html#l00032">32</a> of file <a class="el" href="ICECALv3_8h_source.html">ICECALv3.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ICECALv3_8h_source.html#l00072">ICECALv3::resetPumps()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ICECALv3_8h_source.html#l00069">ICECALv3::resetPumps()</a>.</p>
 
 </div>
 </div>
@@ -238,7 +242,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ICECALv3_8h_source.html#l00057">57</a> of file <a class="el" href="ICECALv3_8h_source.html">ICECALv3.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ICECALv3_8h_source.html#l00054">54</a> of file <a class="el" href="ICECALv3_8h_source.html">ICECALv3.h</a>.</p>
 
 </div>
 </div>
@@ -254,7 +258,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ICECALv3_8h_source.html#l00056">56</a> of file <a class="el" href="ICECALv3_8h_source.html">ICECALv3.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ICECALv3_8h_source.html#l00053">53</a> of file <a class="el" href="ICECALv3_8h_source.html">ICECALv3.h</a>.</p>
 
 </div>
 </div>
@@ -270,7 +274,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ICECALv3_8h_source.html#l00058">58</a> of file <a class="el" href="ICECALv3_8h_source.html">ICECALv3.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ICECALv3_8h_source.html#l00055">55</a> of file <a class="el" href="ICECALv3_8h_source.html">ICECALv3.h</a>.</p>
 
 </div>
 </div>
@@ -282,14 +286,14 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const int delayLineAddrCh[4] = { 16,17,18,19 }</td>
+          <td class="memname">const int delayLineAddrCh[4] = { 28, 29, 30, 31 }</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ICECALv3_8h_source.html#l00043">43</a> of file <a class="el" href="ICECALv3_8h_source.html">ICECALv3.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ICECALv3_8h_source.html#l00042">42</a> of file <a class="el" href="ICECALv3_8h_source.html">ICECALv3.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ICECALv3_8cpp_source.html#l00243">ICECALv3::getDelayLineCh()</a>, <a class="el" href="ICECALv3_8cpp_source.html#l00278">ICECALv3::setDelayLineCh()</a>, and <a class="el" href="ICECALv3_8cpp_source.html#l00575">ICECALv3::spiFERTest()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ICECALv3_8cpp_source.html#l00246">ICECALv3::getDelayLineCh()</a>, <a class="el" href="ICECALv3_8cpp_source.html#l00281">ICECALv3::setDelayLineCh()</a>, and <a class="el" href="ICECALv3_8cpp_source.html#l00577">ICECALv3::spiFERTest()</a>.</p>
 
 </div>
 </div>
@@ -300,14 +304,14 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const int icecalLSBAddrCh[4] = { 5,5,5,5 }</td>
+          <td class="memname">const int icecalLSBAddrCh[4] = { 0, 1, 2, 3 }</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ICECALv3_8h_source.html#l00047">47</a> of file <a class="el" href="ICECALv3_8h_source.html">ICECALv3.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ICECALv3_8h_source.html#l00045">45</a> of file <a class="el" href="ICECALv3_8h_source.html">ICECALv3.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ICECALv3_8cpp_source.html#l00310">ICECALv3::getAnalogCh()</a>, <a class="el" href="ICECALv3_8cpp_source.html#l00359">ICECALv3::setAnalogCh()</a>, and <a class="el" href="ICECALv3_8cpp_source.html#l00575">ICECALv3::spiFERTest()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ICECALv3_8cpp_source.html#l00312">ICECALv3::getAnalogCh()</a>, <a class="el" href="ICECALv3_8cpp_source.html#l00361">ICECALv3::setAnalogCh()</a>, and <a class="el" href="ICECALv3_8cpp_source.html#l00577">ICECALv3::spiFERTest()</a>.</p>
 
 </div>
 </div>
@@ -318,14 +322,14 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const int icecalMainAddr[4] = { 0,1,2,3 }</td>
+          <td class="memname">const int icecalMainAddr[4] = { 8, 9, 10, 11 }</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ICECALv3_8h_source.html#l00053">53</a> of file <a class="el" href="ICECALv3_8h_source.html">ICECALv3.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ICECALv3_8h_source.html#l00050">50</a> of file <a class="el" href="ICECALv3_8h_source.html">ICECALv3.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ICECALv3_8cpp_source.html#l00413">ICECALv3::getMainReg()</a>, <a class="el" href="ICECALv3_8cpp_source.html#l00472">ICECALv3::setMainReg()</a>, and <a class="el" href="ICECALv3_8cpp_source.html#l00575">ICECALv3::spiFERTest()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ICECALv3_8cpp_source.html#l00415">ICECALv3::getMainReg()</a>, <a class="el" href="ICECALv3_8cpp_source.html#l00474">ICECALv3::setMainReg()</a>, and <a class="el" href="ICECALv3_8cpp_source.html#l00577">ICECALv3::spiFERTest()</a>.</p>
 
 </div>
 </div>
@@ -336,14 +340,14 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const int icecalMSBAddrCh[4] = { 5,5,5,5 }</td>
+          <td class="memname">const int icecalMSBAddrCh[4] = { 4, 5, 6, 7 }</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ICECALv3_8h_source.html#l00049">49</a> of file <a class="el" href="ICECALv3_8h_source.html">ICECALv3.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ICECALv3_8h_source.html#l00047">47</a> of file <a class="el" href="ICECALv3_8h_source.html">ICECALv3.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ICECALv3_8cpp_source.html#l00310">ICECALv3::getAnalogCh()</a>, <a class="el" href="ICECALv3_8cpp_source.html#l00359">ICECALv3::setAnalogCh()</a>, and <a class="el" href="ICECALv3_8cpp_source.html#l00575">ICECALv3::spiFERTest()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ICECALv3_8cpp_source.html#l00312">ICECALv3::getAnalogCh()</a>, <a class="el" href="ICECALv3_8cpp_source.html#l00361">ICECALv3::setAnalogCh()</a>, and <a class="el" href="ICECALv3_8cpp_source.html#l00577">ICECALv3::spiFERTest()</a>.</p>
 
 </div>
 </div>

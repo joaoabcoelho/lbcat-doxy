@@ -2,7 +2,7 @@ var searchData=
 [
   ['_7ea3pe',['~A3PE',['../classA3PE.html#aab155e065b455ff439daf47a976399c3',1,'A3PE']]],
   ['_7ea3pe_5fbitflip',['~A3PE_BitFlip',['../classA3PE__BitFlip.html#ab58f69a2c8d342bcad937b1dbc0bb3ed',1,'A3PE_BitFlip']]],
-  ['_7eacquisition',['~Acquisition',['../classAcquisition.html#a3b0205ba385e2da70abb5a351c4dbf0f',1,'Acquisition']]],
+  ['_7eacquisition',['~Acquisition',['../classAcquisition.html#a3b0205ba385e2da70abb5a351c4dbf0f',1,'Acquisition::~Acquisition()'],['../classAcquisition.html#af697b51bd72afcfe8f9f3f368743d20d',1,'Acquisition::~Acquisition()']]],
   ['_7eadcmeasurement',['~ADCMeasurement',['../classADCMeasurement.html#aa89145ed91025783a1bb277cb480ed1c',1,'ADCMeasurement']]],
   ['_7eapplication',['~Application',['../classApplication.html#a748bca84fefb9c12661cfaa2f623748d',1,'Application']]],
   ['_7eattrib',['~Attrib',['../classAttrib.html#a6f3413862312138b87255c2e12dd8326',1,'Attrib']]],

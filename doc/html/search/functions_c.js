@@ -9,12 +9,12 @@ var searchData=
   ['maskllt',['maskLLT',['../classFEB__v1.html#a14807bfa77f92bb82428c39abea5df88',1,'FEB_v1']]],
   ['masterdevid',['masterDevID',['../classSpecsMaster.html#a7bbbc2994a3e17bb91a0651eaa241842',1,'SpecsMaster']]],
   ['masteri2creg',['masterI2cReg',['../classFePGA.html#a2bcd2c468fc3e1bcadc9bd8800b325a0',1,'FePGA::masterI2cReg()'],['../classSeqPGA.html#a3906fe0cdfd9042a67c0fa35ae75147a',1,'SeqPGA::masterI2cReg()']]],
-  ['maxrange',['maxRange',['../classAcquisition.html#a386f3ebc6b1d4956aa7e40b314ddb4eb',1,'Acquisition']]],
+  ['maxrange',['maxRange',['../classAcquisition.html#a386f3ebc6b1d4956aa7e40b314ddb4eb',1,'Acquisition::maxRange()'],['../classAcquisition.html#a386f3ebc6b1d4956aa7e40b314ddb4eb',1,'Acquisition::maxRange()']]],
   ['maxx',['maxX',['../classHisto1D.html#a54c7464513d1382c7c66fa880bfe568e',1,'Histo1D::maxX()'],['../classHisto2D.html#aae04c13ac492562532b4d3f82979a0f4',1,'Histo2D::maxX()']]],
   ['maxy',['maxY',['../classHisto1D.html#a60a1095ac5fbab109d20c54c2ee569a3',1,'Histo1D::maxY()'],['../classHisto2D.html#a7bfc748b81257716316a38e628c5832f',1,'Histo2D::maxY()']]],
   ['maxz',['maxZ',['../classHisto2D.html#ad6ccf8ddd4e4b5930f39284059577570',1,'Histo2D']]],
   ['mean',['mean',['../classRegisterTest.html#a5d3726a88a7fdcd90981bb5de8399df9',1,'RegisterTest::mean()'],['../classUsbFTInterfaceTest.html#a8b88ab4c18cff5e8da014ef6fcf39b90',1,'UsbFTInterfaceTest::mean()']]],
-  ['minrange',['minRange',['../classAcquisition.html#a44f441710231748d2ca8f691647b2bcd',1,'Acquisition']]],
+  ['minrange',['minRange',['../classAcquisition.html#a44f441710231748d2ca8f691647b2bcd',1,'Acquisition::minRange()'],['../classAcquisition.html#a44f441710231748d2ca8f691647b2bcd',1,'Acquisition::minRange()']]],
   ['minx',['minX',['../classHisto1D.html#abe9bf76799889414686794502e777b67',1,'Histo1D::minX()'],['../classHisto2D.html#ae5a3ff63669999c9fda448db61e5bb57',1,'Histo2D::minX()']]],
   ['miny',['minY',['../classHisto1D.html#a122c7071e060672dd2c08ad92212b3a2',1,'Histo1D::minY()'],['../classHisto2D.html#ae946ecc8e7b4efc2e1454cd75c7d8aca',1,'Histo2D::minY()']]],
   ['minz',['minZ',['../classHisto2D.html#a68cfc2d92fbc5ce2efa1d6b5781ea621',1,'Histo2D']]],
@@ -24,6 +24,6 @@ var searchData=
   ['modulenamefull',['moduleNameFull',['../namespaceSystem.html#abbb9e2ab2f883bfe24805d89bef43792',1,'System']]],
   ['moduletype',['moduleType',['../namespaceSystem.html#aa0cb1193baa6883c2686a0a87d56d228',1,'System']]],
   ['msg',['msg',['../classDLL.html#a3a4774ae240e805b9c3ce18b7418d7cc',1,'DLL::msg(std::string mymsg)'],['../classDLL.html#a39585579e6dd045ee39cd74ebecc0525',1,'DLL::msg(std::string mymsg, std::string name)'],['../classObject.html#a58b2d0618c2d08cf2383012611528d97',1,'Object::msg(std::string mymsg)'],['../classObject.html#ac5d59299273cee27aacf7de00d2e7034',1,'Object::msg(std::string mymsg, std::string name)']]],
-  ['msgsvc',['msgSvc',['../classMsgSvc.html#ad25f18047920cc59a314e5098259711c',1,'MsgSvc::msgSvc()'],['../classObject.html#a3f9d5537ebce0c0f2bf6ae4d92426f3c',1,'Object::msgSvc()'],['../classServer__NI6008.html#a140d5f91d6c0f4fb963ecf747e44df78',1,'Server_NI6008::msgSvc()'],['../classMsgSvc.html#a67dd82487821da06312e20c1fc68b85a',1,'MsgSvc::MsgSvc()']]],
+  ['msgsvc',['MsgSvc',['../classMsgSvc.html#a67dd82487821da06312e20c1fc68b85a',1,'MsgSvc::MsgSvc()'],['../classMsgSvc.html#ad25f18047920cc59a314e5098259711c',1,'MsgSvc::msgSvc(MsgSvc::MsgLevel, std::string, std::string call=std::string(&quot;&quot;))'],['../classObject.html#a3f9d5537ebce0c0f2bf6ae4d92426f3c',1,'Object::msgSvc()'],['../classServer__NI6008.html#a140d5f91d6c0f4fb963ecf747e44df78',1,'Server_NI6008::msgSvc()']]],
   ['msoxxxx',['MSOxxxx',['../classMSOxxxx.html#afa2d5e8dcabe88d8c4ef54238a4e7bc7',1,'MSOxxxx']]]
 ];
