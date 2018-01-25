@@ -1,155 +1,150 @@
-\hypertarget{Python__Base_8cpp}{}\section{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/src/\+Python\+\_\+\+Base.cpp File Reference}
-\label{Python__Base_8cpp}\index{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/src/\+Python\+\_\+\+Base.\+cpp@{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/src/\+Python\+\_\+\+Base.\+cpp}}
-{\ttfamily \#include $<$vector$>$}\newline
-{\ttfamily \#include $<$map$>$}\newline
-{\ttfamily \#include $<$list$>$}\newline
-{\ttfamily \#include \char`\"{}Status\+Code.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}Msg\+Svc.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}Options.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}D\+L\+L.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}D\+L\+L\+Mgr.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}Proc\+Data\+Base.\+h\char`\"{}}\newline
-{\ttfamily \#include $<$boost/python.\+hpp$>$}\newline
-{\ttfamily \#include $<$boost/python/suite/indexing/vector\+\_\+indexing\+\_\+suite.\+hpp$>$}\newline
+\hypertarget{Python__Base_8cpp}{
+\section{/home/eleclhcb/LHCb/lbcat-\/cmake/CatKernel/src/Python\_\-Base.cpp File Reference}
+\label{Python__Base_8cpp}\index{/home/eleclhcb/LHCb/lbcat-\/cmake/CatKernel/src/Python\_\-Base.cpp@{/home/eleclhcb/LHCb/lbcat-\/cmake/CatKernel/src/Python\_\-Base.cpp}}
+}
+{\ttfamily \#include $<$vector$>$}\par
+{\ttfamily \#include $<$map$>$}\par
+{\ttfamily \#include $<$list$>$}\par
+{\ttfamily \#include \char`\"{}StatusCode.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}MsgSvc.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}Options.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}DLL.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}DLLMgr.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}ProcDataBase.h\char`\"{}}\par
+{\ttfamily \#include $<$boost/python.hpp$>$}\par
+{\ttfamily \#include $<$boost/python/suite/indexing/vector\_\-indexing\_\-suite.hpp$>$}\par
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{Python__Base_8cpp_a492375e938b24561d4a125d80b0b115d}{export\+\_\+base} ()
+void \hyperlink{Python__Base_8cpp_a492375e938b24561d4a125d80b0b115d}{export\_\-base} ()
 \end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{Python__Base_8cpp_a492375e938b24561d4a125d80b0b115d}\label{Python__Base_8cpp_a492375e938b24561d4a125d80b0b115d}} 
-\index{Python\+\_\+\+Base.\+cpp@{Python\+\_\+\+Base.\+cpp}!export\+\_\+base@{export\+\_\+base}}
-\index{export\+\_\+base@{export\+\_\+base}!Python\+\_\+\+Base.\+cpp@{Python\+\_\+\+Base.\+cpp}}
-\subsubsection{\texorpdfstring{export\+\_\+base()}{export\_base()}}
-{\footnotesize\ttfamily void export\+\_\+base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\hypertarget{Python__Base_8cpp_a492375e938b24561d4a125d80b0b115d}{
+\index{Python\_\-Base.cpp@{Python\_\-Base.cpp}!export\_\-base@{export\_\-base}}
+\index{export\_\-base@{export\_\-base}!Python_Base.cpp@{Python\_\-Base.cpp}}
+\subsubsection[{export\_\-base}]{\setlength{\rightskip}{0pt plus 5cm}void export\_\-base ()}}
+\label{Python__Base_8cpp_a492375e938b24561d4a125d80b0b115d}
 
 
+Definition at line 17 of file Python\_\-Base.cpp.
 
-Definition at line 17 of file Python\+\_\+\+Base.\+cpp.
+References DLLMgr::createElement(), DLLMgr::createProcessus(), Options::currentPath(), Options::dataFile(), Options::dataFileFullName(), Options::dataStorage(), MsgSvc::DEBUG, Options::defFile(), DLLMgr::destroy(), DLLMgr::dll(), DLLMgr::dlls(), MsgSvc::ERR, StatusCode::FAILURE, MsgSvc::FATAL, Options::incNErrors(), Options::incNEvt(), Options::incRunNumber(), MsgSvc::INFO, StatusCode::isFailure(), StatusCode::isSuccess(), DLLMgr::libraryOfObject(), ProcDataBase::list(), DLLMgr::load(), Options::logDefFile(), Options::logFile(), Options::logOutputLevel(), Options::logStorage(), MsgSvc::msgSvc(), Options::nErrors(), Options::nEvt(), Options::nEvtMax(), MsgSvc::NONE, Options::plotFreq(), DLLMgr::print(), DLL::print(), Options::print(), Options::printFreq(), Options::runNumber(), Options::runNumberManagement(), MsgSvc::setCallSize(), Options::setCurrentPath(), Options::setDataStorage(), Options::setDefFile(), MsgSvc::setLineLength(), Options::setLogDefFile(), Options::setLogOutputLevel(), Options::setLogStorage(), Options::setNErrors(), Options::setNEvt(), Options::setNEvtMax(), Options::setPlotFreq(), Options::setPrintFreq(), Options::setRunNumber(), Options::setRunNumberManagement(), Options::setStopOnError(), Options::setStorageDir(), Options::setStorageFile(), Options::setStoragePath(), Options::setStream(), Options::stopOnError(), Options::storageDir(), Options::storageFile(), Options::storageFileFullName(), Options::storageFullPath(), Options::storagePath(), StatusCode::SUCCESS, DLLMgr::unload(), MsgSvc::VERBOSE, and MsgSvc::WARNING.
 
-
-
-References D\+L\+L\+Mgr\+::create\+Element(), D\+L\+L\+Mgr\+::create\+Processus(), Options\+::current\+Path(), Options\+::data\+File(), Options\+::data\+File\+Full\+Name(), Options\+::data\+Storage(), Msg\+Svc\+::\+D\+E\+B\+UG, Options\+::def\+File(), D\+L\+L\+Mgr\+::destroy(), D\+L\+L\+Mgr\+::dll(), D\+L\+L\+Mgr\+::dlls(), Msg\+Svc\+::\+E\+RR, Status\+Code\+::\+F\+A\+I\+L\+U\+RE, Msg\+Svc\+::\+F\+A\+T\+AL, Options\+::inc\+N\+Errors(), Options\+::inc\+N\+Evt(), Options\+::inc\+Run\+Number(), Msg\+Svc\+::\+I\+N\+FO, Status\+Code\+::is\+Failure(), Status\+Code\+::is\+Success(), D\+L\+L\+Mgr\+::library\+Of\+Object(), Proc\+Data\+Base\+::list(), D\+L\+L\+Mgr\+::load(), Options\+::log\+Def\+File(), Options\+::log\+File(), Options\+::log\+Output\+Level(), Options\+::log\+Storage(), Msg\+Svc\+::msg\+Svc(), Options\+::n\+Errors(), Options\+::n\+Evt(), Options\+::n\+Evt\+Max(), Msg\+Svc\+::\+N\+O\+NE, Options\+::plot\+Freq(), D\+L\+L\+Mgr\+::print(), D\+L\+L\+::print(), Options\+::print(), Options\+::print\+Freq(), Options\+::run\+Number(), Options\+::run\+Number\+Management(), Msg\+Svc\+::set\+Call\+Size(), Options\+::set\+Current\+Path(), Options\+::set\+Data\+Storage(), Options\+::set\+Def\+File(), Msg\+Svc\+::set\+Line\+Length(), Options\+::set\+Log\+Def\+File(), Options\+::set\+Log\+Output\+Level(), Options\+::set\+Log\+Storage(), Options\+::set\+N\+Errors(), Options\+::set\+N\+Evt(), Options\+::set\+N\+Evt\+Max(), Options\+::set\+Plot\+Freq(), Options\+::set\+Print\+Freq(), Options\+::set\+Run\+Number(), Options\+::set\+Run\+Number\+Management(), Options\+::set\+Stop\+On\+Error(), Options\+::set\+Storage\+Dir(), Options\+::set\+Storage\+File(), Options\+::set\+Storage\+Path(), Options\+::set\+Stream(), Options\+::stop\+On\+Error(), Options\+::storage\+Dir(), Options\+::storage\+File(), Options\+::storage\+File\+Full\+Name(), Options\+::storage\+Full\+Path(), Options\+::storage\+Path(), Status\+Code\+::\+S\+U\+C\+C\+E\+SS, D\+L\+L\+Mgr\+::unload(), Msg\+Svc\+::\+V\+E\+R\+B\+O\+SE, and Msg\+Svc\+::\+W\+A\+R\+N\+I\+NG.
-
-
-
-Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
+Referenced by BOOST\_\-PYTHON\_\-MODULE().
 
 
 \begin{DoxyCode}
-18 \{
-19   enum\_<MsgSvc::MsgLevel>(\textcolor{stringliteral}{"MsgLevel"})
-20     .value(\textcolor{stringliteral}{"VERBOSE"}, \hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926af655256b06494ade5ba830abe5401ec9}{MsgSvc::VERBOSE})
-21     .value(\textcolor{stringliteral}{"DEBUG"},   \hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a1dbdcc82dce88370ec335883c83b38b0}{MsgSvc::DEBUG})
-22     .value(\textcolor{stringliteral}{"INFO"},    \hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{MsgSvc::INFO})
-23     .value(\textcolor{stringliteral}{"WARNING"}, \hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a7cefae88f2ba26b2b05b676a383c834b}{MsgSvc::WARNING})
-24     .value(\textcolor{stringliteral}{"ERROR"},   \hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a35a9d7166e9896af4ec8fb33bf5f1772}{MsgSvc::ERR})
-25     .value(\textcolor{stringliteral}{"FATAL"},   \hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a59c73cb29edfc9cdf35845e2b1301363}{MsgSvc::FATAL})
-26     .value(\textcolor{stringliteral}{"NONE"},    \hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a9be9ae32fed8e1e6eba4a58692210fbd}{MsgSvc::NONE})
+18 {
+19   enum_<MsgSvc::MsgLevel>("MsgLevel")
+20     .value("VERBOSE", MsgSvc::VERBOSE)
+21     .value("DEBUG",   MsgSvc::DEBUG)
+22     .value("INFO",    MsgSvc::INFO)
+23     .value("WARNING", MsgSvc::WARNING)
+24     .value("ERROR",   MsgSvc::ERR)
+25     .value("FATAL",   MsgSvc::FATAL)
+26     .value("NONE",    MsgSvc::NONE)
 27     ;
 28   
-29   class\_<MsgSvc>(\textcolor{stringliteral}{"MsgSvc"})
-30     .def(\textcolor{stringliteral}{"msgSvc"},&\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{MsgSvc::msgSvc})
-31     .def(\textcolor{stringliteral}{"setLineLength"},&\hyperlink{classMsgSvc_ab741c391e80fcbf13eb2e60e48dc7536}{MsgSvc::setLineLength})
-32     .def(\textcolor{stringliteral}{"setCallSize"},&\hyperlink{classMsgSvc_a50854fb6f9df98bc170f690941747b61}{MsgSvc::setCallSize})
+29   class_<MsgSvc>("MsgSvc")
+30     .def("msgSvc",&MsgSvc::msgSvc)
+31     .def("setLineLength",&MsgSvc::setLineLength)
+32     .def("setCallSize",&MsgSvc::setCallSize)
 33     ;
 34   
-35   enum\_<StatusCode::Type>(\textcolor{stringliteral}{"Code"})
-36     .value(\textcolor{stringliteral}{"FAILURE"},\hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE})
-37     .value(\textcolor{stringliteral}{"SUCCESS"},\hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS})
+35   enum_<StatusCode::Type>("Code")
+36     .value("FAILURE",StatusCode::FAILURE)
+37     .value("SUCCESS",StatusCode::SUCCESS)
 38     ;
 39   
-40   class\_<StatusCode>(\textcolor{stringliteral}{"StatusCode"})
-41     .def(\textcolor{stringliteral}{"isSuccess"}, &\hyperlink{classStatusCode_acfe5ce8b2bb7d3d651fb0108c18c05c3}{StatusCode::isSuccess})
-42     .def(\textcolor{stringliteral}{"isFailure"}, &\hyperlink{classStatusCode_a5dd22dc6eb2c52fc4cabc58f6dea2eb7}{StatusCode::isFailure})
+40   class_<StatusCode>("StatusCode")
+41     .def("isSuccess", &StatusCode::isSuccess)
+42     .def("isFailure", &StatusCode::isFailure)
 43     ;
 44   
-45   class\_<Options>(\textcolor{stringliteral}{"Options"})
-46     .def(\textcolor{stringliteral}{"setLogOutputLevel"}, &\hyperlink{classOptions_a5d8ab053c941a944a53c0bfe871058a1}{Options::setLogOutputLevel})
-47     .def(\textcolor{stringliteral}{"logOutputLevel"},    &\hyperlink{classOptions_a2d11716f34070dd7991648a26eb5d244}{Options::logOutputLevel})
-48     .def(\textcolor{stringliteral}{"setPrintFreq"},      &\hyperlink{classOptions_adac15a8dbae0183ae7cecc09ebba6887}{Options::setPrintFreq})
-49     .def(\textcolor{stringliteral}{"printFreq"},         &\hyperlink{classOptions_a67021ffef9f666bba4696f89807b2a70}{Options::printFreq})
-50     .def(\textcolor{stringliteral}{"setRunNumber"},      &\hyperlink{classOptions_aed19a55eb2c418f333bc97615cf4a3a8}{Options::setRunNumber})
-51     .def(\textcolor{stringliteral}{"runNumber"},         &\hyperlink{classOptions_a2d9447919fe90f9ce8df5530526cbb27}{Options::runNumber})
-52     .def(\textcolor{stringliteral}{"setNEvt"},             &\hyperlink{classOptions_ae6a0fdaa736948f5040deb3eb6889268}{Options::setNEvt})
-53     .def(\textcolor{stringliteral}{"nEvt"},                &\hyperlink{classOptions_ad769b256263a4ac24dd6f989ae724ab7}{Options::nEvt})
-54     .def(\textcolor{stringliteral}{"setNEvtMax"},          &\hyperlink{classOptions_a6d732c0591188469287581bac8a4e3cd}{Options::setNEvtMax})
-55     .def(\textcolor{stringliteral}{"nEvtMax"},             &\hyperlink{classOptions_ad1f3b03d734c806a2feca418b26bcc9b}{Options::nEvtMax})
-56     .def(\textcolor{stringliteral}{"setPlotFreq"},         &\hyperlink{classOptions_a7df298047f1506fa2244cf096da96409}{Options::setPlotFreq})
-57     .def(\textcolor{stringliteral}{"plotFreq"},            &\hyperlink{classOptions_a1e20abb20c1a2187f9455b39cd9d26ae}{Options::plotFreq})
-58     .def(\textcolor{stringliteral}{"setNErrors"},          &\hyperlink{classOptions_a45368b495036869c67fe0e6bf9abc4e6}{Options::setNErrors})
-59     .def(\textcolor{stringliteral}{"nErrors"},             &\hyperlink{classOptions_acc6474323f0bbe17fa844e9a086b90b8}{Options::nErrors})
-60     .def(\textcolor{stringliteral}{"setRunNumberMgr"},   &\hyperlink{classOptions_a7bf3fb2833021f8900eb105b0a9c02c5}{Options::setRunNumberManagement})
-61     .def(\textcolor{stringliteral}{"runNumberMgr"},      &\hyperlink{classOptions_a7654a2c3d67baae08f61edc18bec367e}{Options::runNumberManagement})
-62     .def(\textcolor{stringliteral}{"setCurrentPath"},    &\hyperlink{classOptions_a3cebd8308183414ef2e0de0e7922c87a}{Options::setCurrentPath})
-63     .def(\textcolor{stringliteral}{"currentPath"},       &\hyperlink{classOptions_ab9cf7442a712fe8593f6cf5cfff36a5d}{Options::currentPath})
-64     .def(\textcolor{stringliteral}{"setStoragePath"},    &\hyperlink{classOptions_a8c32e222956c77ed2ec5387318f91394}{Options::setStoragePath})
-65     .def(\textcolor{stringliteral}{"storagePath"},       &\hyperlink{classOptions_a3992b9247441a3e60e55c8c5fe32b394}{Options::storagePath})
-66     .def(\textcolor{stringliteral}{"storageFullPath"},   &\hyperlink{classOptions_aa5fe6b85088f3012226869480790a383}{Options::storageFullPath})
-67     .def(\textcolor{stringliteral}{"setStorageDir"},     &\hyperlink{classOptions_aed5e6919526bcfa5cf4961230bd20e37}{Options::setStorageDir})
-68     .def(\textcolor{stringliteral}{"storageDir"},          &\hyperlink{classOptions_a5e8026ed2674f8f5db444b52fea27fda}{Options::storageDir})
-69     .def(\textcolor{stringliteral}{"setStorageFile"},    &\hyperlink{classOptions_ac163281337998af5ca3b7a9617337fef}{Options::setStorageFile})
-70     .def(\textcolor{stringliteral}{"storageFile"},         &\hyperlink{classOptions_a6661fe4edd501f7e97527b8f9354ef84}{Options::storageFile})
-71     .def(\textcolor{stringliteral}{"storageFileFullName"},&\hyperlink{classOptions_a68c501133588cd4b1c80219adb926e8d}{Options::storageFileFullName})
-72     .def(\textcolor{stringliteral}{"dataFileFullName"},  &\hyperlink{classOptions_ab1cd9f237e9c18fd72323c74565453f8}{Options::dataFileFullName})
-73     .def(\textcolor{stringliteral}{"dataFile"},            &\hyperlink{classOptions_a166984c16a957bf2e8e0f0a1ce39eb73}{Options::dataFile})
-74     .def(\textcolor{stringliteral}{"logFile"},             &\hyperlink{classOptions_a739a9b788fc937ad55d10d6b47ff1e8c}{Options::logFile})
-75     .def(\textcolor{stringliteral}{"setDataStorage"},    &\hyperlink{classOptions_ae6f39f4b0b4bd260fbb5a2f0b5f4786e}{Options::setDataStorage})
-76     .def(\textcolor{stringliteral}{"dataStorage"},         &\hyperlink{classOptions_aed7799d10139fa542055b982cb820192}{Options::dataStorage})
-77     .def(\textcolor{stringliteral}{"setLogStorage"},     &\hyperlink{classOptions_a96f0288f5317cf371589f4db07e913b0}{Options::setLogStorage})
-78     .def(\textcolor{stringliteral}{"logStorage"},        &\hyperlink{classOptions_a33735fffe17485937ab7579d8716b7ee}{Options::logStorage})
-79     .def(\textcolor{stringliteral}{"setLogDefFile"},     &\hyperlink{classOptions_a52e2995912a71f51c230dd6bf28b6a94}{Options::setLogDefFile})
-80     .def(\textcolor{stringliteral}{"logDefFile"},        &\hyperlink{classOptions_a5d362ec7f7969bd72c3c94b8e3d5ba97}{Options::logDefFile})
-81     .def(\textcolor{stringliteral}{"setDefFile"},        &\hyperlink{classOptions_a3c8bed9867ac5805489d78061e55bd1a}{Options::setDefFile})
-82     .def(\textcolor{stringliteral}{"defFile"},             &\hyperlink{classOptions_aca5ce5262ca717eaad5ff9db92ad1948}{Options::defFile})
-83     .def(\textcolor{stringliteral}{"incRunNumber"},      &\hyperlink{classOptions_a0bf512fc9126cd76acabaa4c3b65d7fb}{Options::incRunNumber})
-84     .def(\textcolor{stringliteral}{"incNEvt"},             &\hyperlink{classOptions_aa950f9861182c76c4005668e0b7f012a}{Options::incNEvt})
-85     .def(\textcolor{stringliteral}{"incNErrors"},          &\hyperlink{classOptions_ae5d12fb2571255033ef6b35300921b39}{Options::incNErrors})
-86     .def(\textcolor{stringliteral}{"setStream"},         &\hyperlink{classOptions_af7df7a64e597f0bed79ca979f8144daa}{Options::setStream})     
-87     .def(\textcolor{stringliteral}{"stopOnError"},       &\hyperlink{classOptions_afcd7b27fdf474050d912571e09525efe}{Options::stopOnError})
-88     .def(\textcolor{stringliteral}{"setStopOnError"},    &\hyperlink{classOptions_a0d362af154c7d2e30a7bf340eb061fa5}{Options::setStopOnError})
-89     .def(\textcolor{stringliteral}{"dump"},              &\hyperlink{classOptions_a3f4593f64bc8c8afc3ade9237adb83e1}{Options::print})
+45   class_<Options>("Options")
+46     .def("setLogOutputLevel", &Options::setLogOutputLevel)
+47     .def("logOutputLevel",    &Options::logOutputLevel)
+48     .def("setPrintFreq",      &Options::setPrintFreq)
+49     .def("printFreq",         &Options::printFreq)
+50     .def("setRunNumber",      &Options::setRunNumber)
+51     .def("runNumber",         &Options::runNumber)
+52     .def("setNEvt",             &Options::setNEvt)
+53     .def("nEvt",                &Options::nEvt)
+54     .def("setNEvtMax",          &Options::setNEvtMax)
+55     .def("nEvtMax",             &Options::nEvtMax)
+56     .def("setPlotFreq",         &Options::setPlotFreq)
+57     .def("plotFreq",            &Options::plotFreq)
+58     .def("setNErrors",          &Options::setNErrors)
+59     .def("nErrors",             &Options::nErrors)
+60     .def("setRunNumberMgr",   &Options::setRunNumberManagement)
+61     .def("runNumberMgr",      &Options::runNumberManagement)
+62     .def("setCurrentPath",    &Options::setCurrentPath)
+63     .def("currentPath",       &Options::currentPath)
+64     .def("setStoragePath",    &Options::setStoragePath)
+65     .def("storagePath",       &Options::storagePath)
+66     .def("storageFullPath",   &Options::storageFullPath)
+67     .def("setStorageDir",     &Options::setStorageDir)
+68     .def("storageDir",          &Options::storageDir)
+69     .def("setStorageFile",    &Options::setStorageFile)
+70     .def("storageFile",         &Options::storageFile)
+71     .def("storageFileFullName",&Options::storageFileFullName)
+72     .def("dataFileFullName",  &Options::dataFileFullName)
+73     .def("dataFile",            &Options::dataFile)
+74     .def("logFile",             &Options::logFile)
+75     .def("setDataStorage",    &Options::setDataStorage)
+76     .def("dataStorage",         &Options::dataStorage)
+77     .def("setLogStorage",     &Options::setLogStorage)
+78     .def("logStorage",        &Options::logStorage)
+79     .def("setLogDefFile",     &Options::setLogDefFile)
+80     .def("logDefFile",        &Options::logDefFile)
+81     .def("setDefFile",        &Options::setDefFile)
+82     .def("defFile",             &Options::defFile)
+83     .def("incRunNumber",      &Options::incRunNumber)
+84     .def("incNEvt",             &Options::incNEvt)
+85     .def("incNErrors",          &Options::incNErrors)
+86     .def("setStream",         &Options::setStream)     
+87     .def("stopOnError",       &Options::stopOnError)
+88     .def("setStopOnError",    &Options::setStopOnError)
+89     .def("dump",              &Options::print)
 90     ;
 91 
-92   std::vector<Processus*> (\hyperlink{classProcDataBase}{ProcDataBase}::*listElement)(\hyperlink{classElement}{Element}*) = (&
-      \hyperlink{classProcDataBase_a813dbc8f9e7c4d69074a01394f04fc98}{ProcDataBase::list});
-93   std::vector<Processus*> (\hyperlink{classProcDataBase}{ProcDataBase}::*listFull)( )        = (&
-      \hyperlink{classProcDataBase_a813dbc8f9e7c4d69074a01394f04fc98}{ProcDataBase::list});
+92   std::vector<Processus*> (ProcDataBase::*listElement)(Element*) = (&
+      ProcDataBase::list);
+93   std::vector<Processus*> (ProcDataBase::*listFull)( )        = (&
+      ProcDataBase::list);
 94 
-95   class\_<ProcDataBase>(\textcolor{stringliteral}{"ProcDb"})
-96     .def(\textcolor{stringliteral}{"list"}, listElement)
-97     .def(\textcolor{stringliteral}{"list"}, listFull   )
+95   class_<ProcDataBase>("ProcDb")
+96     .def("list", listElement)
+97     .def("list", listFull   )
 98     ;
 99 
-100   class\_<DLL>(\textcolor{stringliteral}{"DLL"})
-101     .def(\textcolor{stringliteral}{"info"},&\hyperlink{classDLL_ae45f8b4b291e9da806f4921dd7468cfc}{DLL::print})
+100   class_<DLL>("DLL")
+101     .def("info",&DLL::print)
 102     ;
 103 
-104   class\_< std::vector< DLL* > >(\textcolor{stringliteral}{"DLLPtrVec"})
-105     .def(vector\_indexing\_suite< std::vector< DLL* > >())
+104   class_< std::vector< DLL* > >("DLLPtrVec")
+105     .def(vector_indexing_suite< std::vector< DLL* > >())
 106     ;
 107 
-108   \hyperlink{classStatusCode}{StatusCode} (\hyperlink{classDLLMgr}{DLLMgr}::*destroyElement)  (\hyperlink{classElement}{Element}*)     = (&
-      \hyperlink{classDLLMgr_abc9c97bab16c8f261626ed401d67c8c8}{DLLMgr::destroy});
-109   \hyperlink{classStatusCode}{StatusCode} (\hyperlink{classDLLMgr}{DLLMgr}::*destroyProcessus)(\hyperlink{classProcessus}{Processus}*)   = (&
-      \hyperlink{classDLLMgr_abc9c97bab16c8f261626ed401d67c8c8}{DLLMgr::destroy});
+108   StatusCode (DLLMgr::*destroyElement)  (Element*)     = (&DLLMgr::destroy);
+109   StatusCode (DLLMgr::*destroyProcessus)(Processus*)   = (&DLLMgr::destroy);
 110 
-111   class\_<DLLMgr>(\textcolor{stringliteral}{"DLLMgr"})
-112     .def(\textcolor{stringliteral}{"load"}, &\hyperlink{classDLLMgr_a3c92bec62ace09dd00959c31bb2475d6}{DLLMgr::load})
-113     .def(\textcolor{stringliteral}{"unload"}, &\hyperlink{classDLLMgr_a0e4b881509f638f94cb4d6612578157b}{DLLMgr::unload})
-114     .def(\textcolor{stringliteral}{"info"},&\hyperlink{classDLLMgr_a223c039ca2d098fd825d52b22a9feeb4}{DLLMgr::print})
-115     .def(\textcolor{stringliteral}{"dll"}, &\hyperlink{classDLLMgr_a0241372eb2e136f61e609a04426636bd}{DLLMgr::dll},return\_value\_policy<reference\_existing\_object>())
-116     .def(\textcolor{stringliteral}{"dlls"}, &\hyperlink{classDLLMgr_a40a2b326bd4f01e58b4afa78a3773898}{DLLMgr::dlls})
-117     .def(\textcolor{stringliteral}{"dllOfObject"}, &\hyperlink{classDLLMgr_a7e8c992899b7357158aef047a2f15c51}{DLLMgr::libraryOfObject},
-      return\_value\_policy<reference\_existing\_object>())
-118     .def(\textcolor{stringliteral}{"createElement"}, &\hyperlink{classDLLMgr_a8cc61eaf98a6aa3cb99fee7226477053}{DLLMgr::createElement},
-      return\_value\_policy<reference\_existing\_object>())
-119     .def(\textcolor{stringliteral}{"createProcessus"},&\hyperlink{classDLLMgr_a04161fedb24bb6ae8469848d97804c39}{DLLMgr::createProcessus},
-      return\_value\_policy<reference\_existing\_object>())
-120     .def(\textcolor{stringliteral}{"destroy"},destroyElement)
-121     .def(\textcolor{stringliteral}{"destroy"},destroyProcessus)
+111   class_<DLLMgr>("DLLMgr")
+112     .def("load", &DLLMgr::load)
+113     .def("unload", &DLLMgr::unload)
+114     .def("info",&DLLMgr::print)
+115     .def("dll", &DLLMgr::dll,return_value_policy<reference_existing_object>())
+116     .def("dlls", &DLLMgr::dlls)
+117     .def("dllOfObject", &DLLMgr::libraryOfObject,return_value_policy<reference_ex
+      isting_object>())
+118     .def("createElement", &DLLMgr::createElement,return_value_policy<reference_ex
+      isting_object>())
+119     .def("createProcessus",&DLLMgr::createProcessus,return_value_policy<reference
+      _existing_object>())
+120     .def("destroy",destroyElement)
+121     .def("destroy",destroyProcessus)
 122     ;
-123 \}
+123 }
 \end{DoxyCode}

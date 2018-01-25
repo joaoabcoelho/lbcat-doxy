@@ -1,642 +1,467 @@
-\hypertarget{LALUsbx64_2include_2WinTypes_8h}{}\section{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+L\+A\+L\+Usbx64/include/\+Win\+Types.h File Reference}
-\label{LALUsbx64_2include_2WinTypes_8h}\index{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-{\ttfamily \#include $<$sys/time.\+h$>$}\newline
+\hypertarget{LALUsbx64_2include_2WinTypes_8h}{
+\section{/home/eleclhcb/LHCb/lbcat-\/cmake/LALUsbx64/include/WinTypes.h File Reference}
+\label{LALUsbx64_2include_2WinTypes_8h}\index{/home/eleclhcb/LHCb/lbcat-\/cmake/LALUsbx64/include/WinTypes.h@{/home/eleclhcb/LHCb/lbcat-\/cmake/LALUsbx64/include/WinTypes.h}}
+}
+{\ttfamily \#include $<$sys/time.h$>$}\par
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-struct \hyperlink{struct__OVERLAPPED}{\+\_\+\+O\+V\+E\+R\+L\+A\+P\+P\+ED}
+struct \hyperlink{struct__OVERLAPPED}{\_\-OVERLAPPED}
 \item 
-struct \hyperlink{struct__SECURITY__ATTRIBUTES}{\+\_\+\+S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+ES}
+struct \hyperlink{struct__SECURITY__ATTRIBUTES}{\_\-SECURITY\_\-ATTRIBUTES}
 \end{DoxyCompactItemize}
-\subsection*{Macros}
+\subsection*{Defines}
 \begin{DoxyCompactItemize}
 \item 
-\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_adca9a47fedae60ce8925e09a64cd5df8}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+D\+E\+V\+I\+C\+ES}~50
+\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_adca9a47fedae60ce8925e09a64cd5df8}{MAX\_\-NUM\_\-DEVICES}~50
 \item 
-\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{T\+R\+UE}~1
+\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_a9fe1330777d3890c4f6aa24b62ee2c4d}{MS\_\-CTS\_\-ON}~((\hyperlink{LALUsbx64_2include_2WinTypes_8h_ad342ac907eb044443153a22f964bf0af}{DWORD})0x0010)
 \item 
-\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_aa93f0eb578d23995850d61f7d61c55c1}{F\+A\+L\+SE}~0
+\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_a3ba90bfb4ec9933da30c8d4f7d56e024}{MS\_\-DSR\_\-ON}~((\hyperlink{LALUsbx64_2include_2WinTypes_8h_ad342ac907eb044443153a22f964bf0af}{DWORD})0x0020)
 \item 
-\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_a9fe1330777d3890c4f6aa24b62ee2c4d}{M\+S\+\_\+\+C\+T\+S\+\_\+\+ON}~((\hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD})0x0010)
+\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_a2c6c2bda1fd7a503fc997d5978423fe7}{MS\_\-RING\_\-ON}~((\hyperlink{LALUsbx64_2include_2WinTypes_8h_ad342ac907eb044443153a22f964bf0af}{DWORD})0x0040)
 \item 
-\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_a3ba90bfb4ec9933da30c8d4f7d56e024}{M\+S\+\_\+\+D\+S\+R\+\_\+\+ON}~((\hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD})0x0020)
+\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_a86b8bd03fce8576a15d2bc2776a4327e}{MS\_\-RLSD\_\-ON}~((\hyperlink{LALUsbx64_2include_2WinTypes_8h_ad342ac907eb044443153a22f964bf0af}{DWORD})0x0080)
 \item 
-\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_a2c6c2bda1fd7a503fc997d5978423fe7}{M\+S\+\_\+\+R\+I\+N\+G\+\_\+\+ON}~((\hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD})0x0040)
+\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_af670fffb215c0ca4c8cd1ef2d3be3343}{CE\_\-RXOVER}~0x0001
 \item 
-\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_a86b8bd03fce8576a15d2bc2776a4327e}{M\+S\+\_\+\+R\+L\+S\+D\+\_\+\+ON}~((\hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD})0x0080)
+\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_a3071e27c1ee6a2ad51aed2b8778b0edb}{CE\_\-OVERRUN}~0x0002
 \item 
-\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_af670fffb215c0ca4c8cd1ef2d3be3343}{C\+E\+\_\+\+R\+X\+O\+V\+ER}~0x0001
+\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_a6d0dda8afd7c0ae907bfffa4fb8497f2}{CE\_\-RXPARITY}~0x0004
 \item 
-\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_a3071e27c1ee6a2ad51aed2b8778b0edb}{C\+E\+\_\+\+O\+V\+E\+R\+R\+UN}~0x0002
+\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_afe0d11816bca09a2796aade81b21083e}{CE\_\-FRAME}~0x0008
 \item 
-\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_a6d0dda8afd7c0ae907bfffa4fb8497f2}{C\+E\+\_\+\+R\+X\+P\+A\+R\+I\+TY}~0x0004
+\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_a087a9175e903c1ec375800a2ad2027cd}{CE\_\-BREAK}~0x0010
 \item 
-\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_afe0d11816bca09a2796aade81b21083e}{C\+E\+\_\+\+F\+R\+A\+ME}~0x0008
+\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_a7dfb989588d4acbee3d818c860ec6d86}{CE\_\-TXFULL}~0x0100
 \item 
-\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_a087a9175e903c1ec375800a2ad2027cd}{C\+E\+\_\+\+B\+R\+E\+AK}~0x0010
+\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_ac238a2d112d58a0e3c789372171f5252}{CE\_\-PTO}~0x0200
 \item 
-\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_a7dfb989588d4acbee3d818c860ec6d86}{C\+E\+\_\+\+T\+X\+F\+U\+LL}~0x0100
+\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_a4b6b650761d266ea0f56cfe1e03ef6e8}{CE\_\-IOE}~0x0400
 \item 
-\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_ac238a2d112d58a0e3c789372171f5252}{C\+E\+\_\+\+P\+TO}~0x0200
+\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_af851511b2d37f61a45a90ab0f938d43a}{CE\_\-DNS}~0x0800
 \item 
-\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_a4b6b650761d266ea0f56cfe1e03ef6e8}{C\+E\+\_\+\+I\+OE}~0x0400
+\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_a5c4af49b5d0863ea51b4e988cd38ff56}{CE\_\-OOP}~0x1000
 \item 
-\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_af851511b2d37f61a45a90ab0f938d43a}{C\+E\+\_\+\+D\+NS}~0x0800
-\item 
-\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_a5c4af49b5d0863ea51b4e988cd38ff56}{C\+E\+\_\+\+O\+OP}~0x1000
-\item 
-\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_a2d537f394afe95d73b9ca2467abcf310}{C\+E\+\_\+\+M\+O\+DE}~0x8000
-\item 
-\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_a5fdc7facea201bfce4ad308105f88d0c}{I\+N\+V\+A\+L\+I\+D\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+V\+A\+L\+UE}~0x\+F\+F\+F\+F\+F\+F\+FF
+\#define \hyperlink{LALUsbx64_2include_2WinTypes_8h_a2d537f394afe95d73b9ca2467abcf310}{CE\_\-MODE}~0x8000
 \end{DoxyCompactItemize}
 \subsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
-typedef unsigned long \hyperlink{LALUsbx64_2include_2WinTypes_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}
+typedef unsigned long \hyperlink{LALUsbx64_2include_2WinTypes_8h_ad342ac907eb044443153a22f964bf0af}{DWORD}
 \item 
-typedef unsigned long \hyperlink{LALUsbx64_2include_2WinTypes_8h_af632da489ebc3708ec3ab6791ee53fa4}{U\+L\+O\+NG}
+typedef unsigned long \hyperlink{LALUsbx64_2include_2WinTypes_8h_af632da489ebc3708ec3ab6791ee53fa4}{ULONG}
 \item 
-typedef unsigned short \hyperlink{LALUsbx64_2include_2WinTypes_8h_a5850d5316caf7f4cedd742fdf8cd7c02}{U\+S\+H\+O\+RT}
+typedef unsigned short \hyperlink{LALUsbx64_2include_2WinTypes_8h_a5850d5316caf7f4cedd742fdf8cd7c02}{USHORT}
 \item 
-typedef short \hyperlink{LALUsbx64_2include_2WinTypes_8h_a9909bd3cf05f0906045f2ee85be4eeac}{S\+H\+O\+RT}
+typedef short \hyperlink{LALUsbx64_2include_2WinTypes_8h_a9909bd3cf05f0906045f2ee85be4eeac}{SHORT}
 \item 
-typedef unsigned char \hyperlink{LALUsbx64_2include_2WinTypes_8h_a4f4bb67531a9bf6f0b9c6ad76aeba587}{U\+C\+H\+AR}
+typedef unsigned char \hyperlink{LALUsbx64_2include_2WinTypes_8h_a4f4bb67531a9bf6f0b9c6ad76aeba587}{UCHAR}
 \item 
-typedef unsigned short \hyperlink{LALUsbx64_2include_2WinTypes_8h_a197942eefa7db30960ae396d68339b97}{W\+O\+RD}
+typedef unsigned short \hyperlink{LALUsbx64_2include_2WinTypes_8h_a197942eefa7db30960ae396d68339b97}{WORD}
 \item 
-typedef unsigned char \hyperlink{LALUsbx64_2include_2WinTypes_8h_a4ae1dab0fb4b072a66584546209e7d58}{B\+Y\+TE}
+typedef unsigned char \hyperlink{LALUsbx64_2include_2WinTypes_8h_a4ae1dab0fb4b072a66584546209e7d58}{BYTE}
 \item 
-typedef unsigned char $\ast$ \hyperlink{LALUsbx64_2include_2WinTypes_8h_aac302d6f27b3453f8c2fb3810949ef7e}{L\+P\+B\+Y\+TE}
+typedef unsigned char $\ast$ \hyperlink{LALUsbx64_2include_2WinTypes_8h_aac302d6f27b3453f8c2fb3810949ef7e}{LPBYTE}
 \item 
-typedef int \hyperlink{LALUsbx64_2include_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}
+typedef int \hyperlink{LALUsbx64_2include_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{BOOL}
 \item 
-typedef char \hyperlink{LALUsbx64_2include_2WinTypes_8h_a55feea4a69748664b608156555bb33b9}{B\+O\+O\+L\+E\+AN}
+typedef char \hyperlink{LALUsbx64_2include_2WinTypes_8h_a55feea4a69748664b608156555bb33b9}{BOOLEAN}
 \item 
-typedef char \hyperlink{LALUsbx64_2include_2WinTypes_8h_aebb9e13210d88d43e32e735ada43a425}{C\+H\+AR}
+typedef char \hyperlink{LALUsbx64_2include_2WinTypes_8h_aebb9e13210d88d43e32e735ada43a425}{CHAR}
 \item 
-typedef int $\ast$ \hyperlink{LALUsbx64_2include_2WinTypes_8h_ac2c99f03a430a8cfd4ff8cb98136201b}{L\+P\+B\+O\+OL}
+typedef int $\ast$ \hyperlink{LALUsbx64_2include_2WinTypes_8h_ac2c99f03a430a8cfd4ff8cb98136201b}{LPBOOL}
 \item 
-typedef unsigned char $\ast$ \hyperlink{LALUsbx64_2include_2WinTypes_8h_a06c249fdad80e91872a47b11efbf963a}{P\+U\+C\+H\+AR}
+typedef unsigned char $\ast$ \hyperlink{LALUsbx64_2include_2WinTypes_8h_a06c249fdad80e91872a47b11efbf963a}{PUCHAR}
 \item 
-typedef const char $\ast$ \hyperlink{LALUsbx64_2include_2WinTypes_8h_adbea528b1294c9a1dfda3dfa33ff1472}{L\+P\+C\+S\+TR}
+typedef const char $\ast$ \hyperlink{LALUsbx64_2include_2WinTypes_8h_adbea528b1294c9a1dfda3dfa33ff1472}{LPCSTR}
 \item 
-typedef char $\ast$ \hyperlink{LALUsbx64_2include_2WinTypes_8h_af5eac65594b9e2e99449e223be232094}{P\+C\+H\+AR}
+typedef char $\ast$ \hyperlink{LALUsbx64_2include_2WinTypes_8h_af5eac65594b9e2e99449e223be232094}{PCHAR}
 \item 
-typedef void $\ast$ \hyperlink{LALUsbx64_2include_2WinTypes_8h_a2b5e00c0c5a5aa5199ba9f28ec3e8caa}{P\+V\+O\+ID}
+typedef void $\ast$ \hyperlink{LALUsbx64_2include_2WinTypes_8h_a2b5e00c0c5a5aa5199ba9f28ec3e8caa}{PVOID}
 \item 
-typedef void $\ast$ \hyperlink{LALUsbx64_2include_2WinTypes_8h_aa8c0374618b33785ccb02f74bcfebc46}{H\+A\+N\+D\+LE}
+typedef void $\ast$ \hyperlink{LALUsbx64_2include_2WinTypes_8h_aa8c0374618b33785ccb02f74bcfebc46}{HANDLE}
 \item 
-typedef long \hyperlink{LALUsbx64_2include_2WinTypes_8h_a2a3e0cda5f1249bef6db47c5eb8e3813}{L\+O\+NG}
+typedef long \hyperlink{LALUsbx64_2include_2WinTypes_8h_a2a3e0cda5f1249bef6db47c5eb8e3813}{LONG}
 \item 
-typedef int \hyperlink{LALUsbx64_2include_2WinTypes_8h_a392e62da233ed3e2f7c3fd4f487a3896}{I\+NT}
+typedef int \hyperlink{LALUsbx64_2include_2WinTypes_8h_a392e62da233ed3e2f7c3fd4f487a3896}{INT}
 \item 
-typedef unsigned int \hyperlink{LALUsbx64_2include_2WinTypes_8h_a36cb3b01d81ffd844bbbfb54003e06ec}{U\+I\+NT}
+typedef unsigned int \hyperlink{LALUsbx64_2include_2WinTypes_8h_a36cb3b01d81ffd844bbbfb54003e06ec}{UINT}
 \item 
-typedef char $\ast$ \hyperlink{LALUsbx64_2include_2WinTypes_8h_a140cf415e90c02039ff733cd93e4affd}{L\+P\+S\+TR}
+typedef char $\ast$ \hyperlink{LALUsbx64_2include_2WinTypes_8h_a140cf415e90c02039ff733cd93e4affd}{LPSTR}
 \item 
-typedef char $\ast$ \hyperlink{LALUsbx64_2include_2WinTypes_8h_a4164e170dcb78b7da7277a7e1f5953fc}{L\+P\+T\+S\+TR}
+typedef char $\ast$ \hyperlink{LALUsbx64_2include_2WinTypes_8h_a4164e170dcb78b7da7277a7e1f5953fc}{LPTSTR}
 \item 
-typedef \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD} $\ast$ \hyperlink{LALUsbx64_2include_2WinTypes_8h_a143be739596851314f3c386bd6f752f9}{L\+P\+D\+W\+O\+RD}
+typedef \hyperlink{LALUsbx64_2include_2WinTypes_8h_ad342ac907eb044443153a22f964bf0af}{DWORD} $\ast$ \hyperlink{LALUsbx64_2include_2WinTypes_8h_a143be739596851314f3c386bd6f752f9}{LPDWORD}
 \item 
-typedef \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a197942eefa7db30960ae396d68339b97}{W\+O\+RD} $\ast$ \hyperlink{LALUsbx64_2include_2WinTypes_8h_aeb632a3c64c6c2e8ce064c1ca5374701}{L\+P\+W\+O\+RD}
+typedef \hyperlink{LALUsbx64_2include_2WinTypes_8h_a197942eefa7db30960ae396d68339b97}{WORD} $\ast$ \hyperlink{LALUsbx64_2include_2WinTypes_8h_aeb632a3c64c6c2e8ce064c1ca5374701}{LPWORD}
 \item 
-typedef \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_af632da489ebc3708ec3ab6791ee53fa4}{U\+L\+O\+NG} $\ast$ \hyperlink{LALUsbx64_2include_2WinTypes_8h_a253b627decfeb8fee3765eba6d720d74}{P\+U\+L\+O\+NG}
+typedef \hyperlink{LALUsbx64_2include_2WinTypes_8h_af632da489ebc3708ec3ab6791ee53fa4}{ULONG} $\ast$ \hyperlink{LALUsbx64_2include_2WinTypes_8h_a253b627decfeb8fee3765eba6d720d74}{PULONG}
 \item 
-typedef \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a2b5e00c0c5a5aa5199ba9f28ec3e8caa}{P\+V\+O\+ID} \hyperlink{LALUsbx64_2include_2WinTypes_8h_a98428a03b263db9d26c25c53459c542f}{L\+P\+V\+O\+ID}
+typedef \hyperlink{LALUsbx64_2include_2WinTypes_8h_a2b5e00c0c5a5aa5199ba9f28ec3e8caa}{PVOID} \hyperlink{LALUsbx64_2include_2WinTypes_8h_a98428a03b263db9d26c25c53459c542f}{LPVOID}
 \item 
-typedef void \hyperlink{LALUsbx64_2include_2WinTypes_8h_a7927e087749615dae3114cc27b91c86d}{V\+O\+ID}
+typedef void \hyperlink{LALUsbx64_2include_2WinTypes_8h_a7927e087749615dae3114cc27b91c86d}{VOID}
 \item 
-typedef unsigned long long int \hyperlink{LALUsbx64_2include_2WinTypes_8h_a40fe0aea3d84f6e2adbb232b3c7a3a9c}{U\+L\+O\+N\+G\+L\+O\+NG}
+typedef unsigned long long int \hyperlink{LALUsbx64_2include_2WinTypes_8h_a40fe0aea3d84f6e2adbb232b3c7a3a9c}{ULONGLONG}
 \item 
-typedef struct \hyperlink{struct__OVERLAPPED}{\+\_\+\+O\+V\+E\+R\+L\+A\+P\+P\+ED} \hyperlink{LALUsbx64_2include_2WinTypes_8h_acc634c5d2ba8f268fe1b5774d7477297}{O\+V\+E\+R\+L\+A\+P\+P\+ED}
+typedef struct \hyperlink{struct__OVERLAPPED}{\_\-OVERLAPPED} \hyperlink{LALUsbx64_2include_2WinTypes_8h_acc634c5d2ba8f268fe1b5774d7477297}{OVERLAPPED}
 \item 
-typedef struct \hyperlink{struct__OVERLAPPED}{\+\_\+\+O\+V\+E\+R\+L\+A\+P\+P\+ED} $\ast$ \hyperlink{LALUsbx64_2include_2WinTypes_8h_ad3c708c36ed2fdc059368b364bff9490}{L\+P\+O\+V\+E\+R\+L\+A\+P\+P\+ED}
+typedef struct \hyperlink{struct__OVERLAPPED}{\_\-OVERLAPPED} $\ast$ \hyperlink{LALUsbx64_2include_2WinTypes_8h_ad3c708c36ed2fdc059368b364bff9490}{LPOVERLAPPED}
 \item 
-typedef struct \hyperlink{struct__SECURITY__ATTRIBUTES}{\+\_\+\+S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+ES} \hyperlink{LALUsbx64_2include_2WinTypes_8h_ae1658f511de470ae2131e00fefa18a2f}{S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+ES}
+typedef struct \hyperlink{struct__SECURITY__ATTRIBUTES}{\_\-SECURITY\_\-ATTRIBUTES} \hyperlink{LALUsbx64_2include_2WinTypes_8h_ae1658f511de470ae2131e00fefa18a2f}{SECURITY\_\-ATTRIBUTES}
 \item 
-typedef struct \hyperlink{struct__SECURITY__ATTRIBUTES}{\+\_\+\+S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+ES} $\ast$ \hyperlink{LALUsbx64_2include_2WinTypes_8h_a986641dce4ee82b5fb5f491fe33a4e84}{L\+P\+S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+ES}
+typedef struct \hyperlink{struct__SECURITY__ATTRIBUTES}{\_\-SECURITY\_\-ATTRIBUTES} $\ast$ \hyperlink{LALUsbx64_2include_2WinTypes_8h_a986641dce4ee82b5fb5f491fe33a4e84}{LPSECURITY\_\-ATTRIBUTES}
 \item 
-typedef struct timeval \hyperlink{LALUsbx64_2include_2WinTypes_8h_aa0215b7bbc143479bf9f88af56e6177f}{S\+Y\+S\+T\+E\+M\+T\+I\+ME}
+typedef struct timeval \hyperlink{LALUsbx64_2include_2WinTypes_8h_aa0215b7bbc143479bf9f88af56e6177f}{SYSTEMTIME}
 \item 
-typedef struct timeval \hyperlink{LALUsbx64_2include_2WinTypes_8h_a81f97f1b9751ff76c68395d3c0f51928}{F\+I\+L\+E\+T\+I\+ME}
+typedef struct timeval \hyperlink{LALUsbx64_2include_2WinTypes_8h_a81f97f1b9751ff76c68395d3c0f51928}{FILETIME}
 \end{DoxyCompactItemize}
 
 
-\subsection{Macro Definition Documentation}
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a087a9175e903c1ec375800a2ad2027cd}\label{LALUsbx64_2include_2WinTypes_8h_a087a9175e903c1ec375800a2ad2027cd}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!C\+E\+\_\+\+B\+R\+E\+AK@{C\+E\+\_\+\+B\+R\+E\+AK}}
-\index{C\+E\+\_\+\+B\+R\+E\+AK@{C\+E\+\_\+\+B\+R\+E\+AK}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{C\+E\+\_\+\+B\+R\+E\+AK}{CE\_BREAK}}
-{\footnotesize\ttfamily \#define C\+E\+\_\+\+B\+R\+E\+AK~0x0010}
+\subsection{Define Documentation}
+\hypertarget{LALUsbx64_2include_2WinTypes_8h_a087a9175e903c1ec375800a2ad2027cd}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!CE\_\-BREAK@{CE\_\-BREAK}}
+\index{CE\_\-BREAK@{CE\_\-BREAK}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{CE\_\-BREAK}]{\setlength{\rightskip}{0pt plus 5cm}\#define CE\_\-BREAK~0x0010}}
+\label{LALUsbx64_2include_2WinTypes_8h_a087a9175e903c1ec375800a2ad2027cd}
 
 
+Definition at line 75 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_af851511b2d37f61a45a90ab0f938d43a}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!CE\_\-DNS@{CE\_\-DNS}}
+\index{CE\_\-DNS@{CE\_\-DNS}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{CE\_\-DNS}]{\setlength{\rightskip}{0pt plus 5cm}\#define CE\_\-DNS~0x0800}}
+\label{LALUsbx64_2include_2WinTypes_8h_af851511b2d37f61a45a90ab0f938d43a}
 
-Definition at line 75 of file Win\+Types.\+h.
 
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_af851511b2d37f61a45a90ab0f938d43a}\label{LALUsbx64_2include_2WinTypes_8h_af851511b2d37f61a45a90ab0f938d43a}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!C\+E\+\_\+\+D\+NS@{C\+E\+\_\+\+D\+NS}}
-\index{C\+E\+\_\+\+D\+NS@{C\+E\+\_\+\+D\+NS}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{C\+E\+\_\+\+D\+NS}{CE\_DNS}}
-{\footnotesize\ttfamily \#define C\+E\+\_\+\+D\+NS~0x0800}
+Definition at line 79 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_afe0d11816bca09a2796aade81b21083e}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!CE\_\-FRAME@{CE\_\-FRAME}}
+\index{CE\_\-FRAME@{CE\_\-FRAME}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{CE\_\-FRAME}]{\setlength{\rightskip}{0pt plus 5cm}\#define CE\_\-FRAME~0x0008}}
+\label{LALUsbx64_2include_2WinTypes_8h_afe0d11816bca09a2796aade81b21083e}
 
 
+Definition at line 74 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_a4b6b650761d266ea0f56cfe1e03ef6e8}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!CE\_\-IOE@{CE\_\-IOE}}
+\index{CE\_\-IOE@{CE\_\-IOE}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{CE\_\-IOE}]{\setlength{\rightskip}{0pt plus 5cm}\#define CE\_\-IOE~0x0400}}
+\label{LALUsbx64_2include_2WinTypes_8h_a4b6b650761d266ea0f56cfe1e03ef6e8}
 
-Definition at line 79 of file Win\+Types.\+h.
 
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_afe0d11816bca09a2796aade81b21083e}\label{LALUsbx64_2include_2WinTypes_8h_afe0d11816bca09a2796aade81b21083e}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!C\+E\+\_\+\+F\+R\+A\+ME@{C\+E\+\_\+\+F\+R\+A\+ME}}
-\index{C\+E\+\_\+\+F\+R\+A\+ME@{C\+E\+\_\+\+F\+R\+A\+ME}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{C\+E\+\_\+\+F\+R\+A\+ME}{CE\_FRAME}}
-{\footnotesize\ttfamily \#define C\+E\+\_\+\+F\+R\+A\+ME~0x0008}
+Definition at line 78 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_a2d537f394afe95d73b9ca2467abcf310}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!CE\_\-MODE@{CE\_\-MODE}}
+\index{CE\_\-MODE@{CE\_\-MODE}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{CE\_\-MODE}]{\setlength{\rightskip}{0pt plus 5cm}\#define CE\_\-MODE~0x8000}}
+\label{LALUsbx64_2include_2WinTypes_8h_a2d537f394afe95d73b9ca2467abcf310}
 
 
+Definition at line 81 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_a5c4af49b5d0863ea51b4e988cd38ff56}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!CE\_\-OOP@{CE\_\-OOP}}
+\index{CE\_\-OOP@{CE\_\-OOP}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{CE\_\-OOP}]{\setlength{\rightskip}{0pt plus 5cm}\#define CE\_\-OOP~0x1000}}
+\label{LALUsbx64_2include_2WinTypes_8h_a5c4af49b5d0863ea51b4e988cd38ff56}
 
-Definition at line 74 of file Win\+Types.\+h.
 
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a4b6b650761d266ea0f56cfe1e03ef6e8}\label{LALUsbx64_2include_2WinTypes_8h_a4b6b650761d266ea0f56cfe1e03ef6e8}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!C\+E\+\_\+\+I\+OE@{C\+E\+\_\+\+I\+OE}}
-\index{C\+E\+\_\+\+I\+OE@{C\+E\+\_\+\+I\+OE}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{C\+E\+\_\+\+I\+OE}{CE\_IOE}}
-{\footnotesize\ttfamily \#define C\+E\+\_\+\+I\+OE~0x0400}
+Definition at line 80 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_a3071e27c1ee6a2ad51aed2b8778b0edb}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!CE\_\-OVERRUN@{CE\_\-OVERRUN}}
+\index{CE\_\-OVERRUN@{CE\_\-OVERRUN}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{CE\_\-OVERRUN}]{\setlength{\rightskip}{0pt plus 5cm}\#define CE\_\-OVERRUN~0x0002}}
+\label{LALUsbx64_2include_2WinTypes_8h_a3071e27c1ee6a2ad51aed2b8778b0edb}
 
 
+Definition at line 72 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_ac238a2d112d58a0e3c789372171f5252}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!CE\_\-PTO@{CE\_\-PTO}}
+\index{CE\_\-PTO@{CE\_\-PTO}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{CE\_\-PTO}]{\setlength{\rightskip}{0pt plus 5cm}\#define CE\_\-PTO~0x0200}}
+\label{LALUsbx64_2include_2WinTypes_8h_ac238a2d112d58a0e3c789372171f5252}
 
-Definition at line 78 of file Win\+Types.\+h.
 
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a2d537f394afe95d73b9ca2467abcf310}\label{LALUsbx64_2include_2WinTypes_8h_a2d537f394afe95d73b9ca2467abcf310}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!C\+E\+\_\+\+M\+O\+DE@{C\+E\+\_\+\+M\+O\+DE}}
-\index{C\+E\+\_\+\+M\+O\+DE@{C\+E\+\_\+\+M\+O\+DE}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{C\+E\+\_\+\+M\+O\+DE}{CE\_MODE}}
-{\footnotesize\ttfamily \#define C\+E\+\_\+\+M\+O\+DE~0x8000}
+Definition at line 77 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_af670fffb215c0ca4c8cd1ef2d3be3343}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!CE\_\-RXOVER@{CE\_\-RXOVER}}
+\index{CE\_\-RXOVER@{CE\_\-RXOVER}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{CE\_\-RXOVER}]{\setlength{\rightskip}{0pt plus 5cm}\#define CE\_\-RXOVER~0x0001}}
+\label{LALUsbx64_2include_2WinTypes_8h_af670fffb215c0ca4c8cd1ef2d3be3343}
 
 
+Definition at line 71 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_a6d0dda8afd7c0ae907bfffa4fb8497f2}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!CE\_\-RXPARITY@{CE\_\-RXPARITY}}
+\index{CE\_\-RXPARITY@{CE\_\-RXPARITY}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{CE\_\-RXPARITY}]{\setlength{\rightskip}{0pt plus 5cm}\#define CE\_\-RXPARITY~0x0004}}
+\label{LALUsbx64_2include_2WinTypes_8h_a6d0dda8afd7c0ae907bfffa4fb8497f2}
 
-Definition at line 81 of file Win\+Types.\+h.
 
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a5c4af49b5d0863ea51b4e988cd38ff56}\label{LALUsbx64_2include_2WinTypes_8h_a5c4af49b5d0863ea51b4e988cd38ff56}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!C\+E\+\_\+\+O\+OP@{C\+E\+\_\+\+O\+OP}}
-\index{C\+E\+\_\+\+O\+OP@{C\+E\+\_\+\+O\+OP}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{C\+E\+\_\+\+O\+OP}{CE\_OOP}}
-{\footnotesize\ttfamily \#define C\+E\+\_\+\+O\+OP~0x1000}
+Definition at line 73 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_a7dfb989588d4acbee3d818c860ec6d86}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!CE\_\-TXFULL@{CE\_\-TXFULL}}
+\index{CE\_\-TXFULL@{CE\_\-TXFULL}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{CE\_\-TXFULL}]{\setlength{\rightskip}{0pt plus 5cm}\#define CE\_\-TXFULL~0x0100}}
+\label{LALUsbx64_2include_2WinTypes_8h_a7dfb989588d4acbee3d818c860ec6d86}
 
 
+Definition at line 76 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_adca9a47fedae60ce8925e09a64cd5df8}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!MAX\_\-NUM\_\-DEVICES@{MAX\_\-NUM\_\-DEVICES}}
+\index{MAX\_\-NUM\_\-DEVICES@{MAX\_\-NUM\_\-DEVICES}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{MAX\_\-NUM\_\-DEVICES}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAX\_\-NUM\_\-DEVICES~50}}
+\label{LALUsbx64_2include_2WinTypes_8h_adca9a47fedae60ce8925e09a64cd5df8}
 
-Definition at line 80 of file Win\+Types.\+h.
 
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a3071e27c1ee6a2ad51aed2b8778b0edb}\label{LALUsbx64_2include_2WinTypes_8h_a3071e27c1ee6a2ad51aed2b8778b0edb}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!C\+E\+\_\+\+O\+V\+E\+R\+R\+UN@{C\+E\+\_\+\+O\+V\+E\+R\+R\+UN}}
-\index{C\+E\+\_\+\+O\+V\+E\+R\+R\+UN@{C\+E\+\_\+\+O\+V\+E\+R\+R\+UN}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{C\+E\+\_\+\+O\+V\+E\+R\+R\+UN}{CE\_OVERRUN}}
-{\footnotesize\ttfamily \#define C\+E\+\_\+\+O\+V\+E\+R\+R\+UN~0x0002}
+Definition at line 4 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_a9fe1330777d3890c4f6aa24b62ee2c4d}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!MS\_\-CTS\_\-ON@{MS\_\-CTS\_\-ON}}
+\index{MS\_\-CTS\_\-ON@{MS\_\-CTS\_\-ON}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{MS\_\-CTS\_\-ON}]{\setlength{\rightskip}{0pt plus 5cm}\#define MS\_\-CTS\_\-ON~(({\bf DWORD})0x0010)}}
+\label{LALUsbx64_2include_2WinTypes_8h_a9fe1330777d3890c4f6aa24b62ee2c4d}
 
 
+Definition at line 62 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_a3ba90bfb4ec9933da30c8d4f7d56e024}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!MS\_\-DSR\_\-ON@{MS\_\-DSR\_\-ON}}
+\index{MS\_\-DSR\_\-ON@{MS\_\-DSR\_\-ON}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{MS\_\-DSR\_\-ON}]{\setlength{\rightskip}{0pt plus 5cm}\#define MS\_\-DSR\_\-ON~(({\bf DWORD})0x0020)}}
+\label{LALUsbx64_2include_2WinTypes_8h_a3ba90bfb4ec9933da30c8d4f7d56e024}
 
-Definition at line 72 of file Win\+Types.\+h.
 
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_ac238a2d112d58a0e3c789372171f5252}\label{LALUsbx64_2include_2WinTypes_8h_ac238a2d112d58a0e3c789372171f5252}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!C\+E\+\_\+\+P\+TO@{C\+E\+\_\+\+P\+TO}}
-\index{C\+E\+\_\+\+P\+TO@{C\+E\+\_\+\+P\+TO}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{C\+E\+\_\+\+P\+TO}{CE\_PTO}}
-{\footnotesize\ttfamily \#define C\+E\+\_\+\+P\+TO~0x0200}
+Definition at line 63 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_a2c6c2bda1fd7a503fc997d5978423fe7}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!MS\_\-RING\_\-ON@{MS\_\-RING\_\-ON}}
+\index{MS\_\-RING\_\-ON@{MS\_\-RING\_\-ON}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{MS\_\-RING\_\-ON}]{\setlength{\rightskip}{0pt plus 5cm}\#define MS\_\-RING\_\-ON~(({\bf DWORD})0x0040)}}
+\label{LALUsbx64_2include_2WinTypes_8h_a2c6c2bda1fd7a503fc997d5978423fe7}
 
 
+Definition at line 64 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_a86b8bd03fce8576a15d2bc2776a4327e}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!MS\_\-RLSD\_\-ON@{MS\_\-RLSD\_\-ON}}
+\index{MS\_\-RLSD\_\-ON@{MS\_\-RLSD\_\-ON}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{MS\_\-RLSD\_\-ON}]{\setlength{\rightskip}{0pt plus 5cm}\#define MS\_\-RLSD\_\-ON~(({\bf DWORD})0x0080)}}
+\label{LALUsbx64_2include_2WinTypes_8h_a86b8bd03fce8576a15d2bc2776a4327e}
 
-Definition at line 77 of file Win\+Types.\+h.
 
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_af670fffb215c0ca4c8cd1ef2d3be3343}\label{LALUsbx64_2include_2WinTypes_8h_af670fffb215c0ca4c8cd1ef2d3be3343}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!C\+E\+\_\+\+R\+X\+O\+V\+ER@{C\+E\+\_\+\+R\+X\+O\+V\+ER}}
-\index{C\+E\+\_\+\+R\+X\+O\+V\+ER@{C\+E\+\_\+\+R\+X\+O\+V\+ER}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{C\+E\+\_\+\+R\+X\+O\+V\+ER}{CE\_RXOVER}}
-{\footnotesize\ttfamily \#define C\+E\+\_\+\+R\+X\+O\+V\+ER~0x0001}
-
-
-
-Definition at line 71 of file Win\+Types.\+h.
-
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a6d0dda8afd7c0ae907bfffa4fb8497f2}\label{LALUsbx64_2include_2WinTypes_8h_a6d0dda8afd7c0ae907bfffa4fb8497f2}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!C\+E\+\_\+\+R\+X\+P\+A\+R\+I\+TY@{C\+E\+\_\+\+R\+X\+P\+A\+R\+I\+TY}}
-\index{C\+E\+\_\+\+R\+X\+P\+A\+R\+I\+TY@{C\+E\+\_\+\+R\+X\+P\+A\+R\+I\+TY}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{C\+E\+\_\+\+R\+X\+P\+A\+R\+I\+TY}{CE\_RXPARITY}}
-{\footnotesize\ttfamily \#define C\+E\+\_\+\+R\+X\+P\+A\+R\+I\+TY~0x0004}
-
-
-
-Definition at line 73 of file Win\+Types.\+h.
-
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a7dfb989588d4acbee3d818c860ec6d86}\label{LALUsbx64_2include_2WinTypes_8h_a7dfb989588d4acbee3d818c860ec6d86}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!C\+E\+\_\+\+T\+X\+F\+U\+LL@{C\+E\+\_\+\+T\+X\+F\+U\+LL}}
-\index{C\+E\+\_\+\+T\+X\+F\+U\+LL@{C\+E\+\_\+\+T\+X\+F\+U\+LL}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{C\+E\+\_\+\+T\+X\+F\+U\+LL}{CE\_TXFULL}}
-{\footnotesize\ttfamily \#define C\+E\+\_\+\+T\+X\+F\+U\+LL~0x0100}
-
-
-
-Definition at line 76 of file Win\+Types.\+h.
-
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_aa93f0eb578d23995850d61f7d61c55c1}\label{LALUsbx64_2include_2WinTypes_8h_aa93f0eb578d23995850d61f7d61c55c1}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!F\+A\+L\+SE@{F\+A\+L\+SE}}
-\index{F\+A\+L\+SE@{F\+A\+L\+SE}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{F\+A\+L\+SE}{FALSE}}
-{\footnotesize\ttfamily \#define F\+A\+L\+SE~0}
-
-
-
-Definition at line 56 of file Win\+Types.\+h.
-
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a5fdc7facea201bfce4ad308105f88d0c}\label{LALUsbx64_2include_2WinTypes_8h_a5fdc7facea201bfce4ad308105f88d0c}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!I\+N\+V\+A\+L\+I\+D\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+V\+A\+L\+UE@{I\+N\+V\+A\+L\+I\+D\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+V\+A\+L\+UE}}
-\index{I\+N\+V\+A\+L\+I\+D\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+V\+A\+L\+UE@{I\+N\+V\+A\+L\+I\+D\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+V\+A\+L\+UE}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{I\+N\+V\+A\+L\+I\+D\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+V\+A\+L\+UE}{INVALID\_HANDLE\_VALUE}}
-{\footnotesize\ttfamily \#define I\+N\+V\+A\+L\+I\+D\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+V\+A\+L\+UE~0x\+F\+F\+F\+F\+F\+F\+FF}
-
-
-
-Definition at line 84 of file Win\+Types.\+h.
-
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_adca9a47fedae60ce8925e09a64cd5df8}\label{LALUsbx64_2include_2WinTypes_8h_adca9a47fedae60ce8925e09a64cd5df8}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+D\+E\+V\+I\+C\+ES@{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+D\+E\+V\+I\+C\+ES}}
-\index{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+D\+E\+V\+I\+C\+ES@{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+D\+E\+V\+I\+C\+ES}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+D\+E\+V\+I\+C\+ES}{MAX\_NUM\_DEVICES}}
-{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+D\+E\+V\+I\+C\+ES~50}
-
-
-
-Definition at line 4 of file Win\+Types.\+h.
-
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a9fe1330777d3890c4f6aa24b62ee2c4d}\label{LALUsbx64_2include_2WinTypes_8h_a9fe1330777d3890c4f6aa24b62ee2c4d}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!M\+S\+\_\+\+C\+T\+S\+\_\+\+ON@{M\+S\+\_\+\+C\+T\+S\+\_\+\+ON}}
-\index{M\+S\+\_\+\+C\+T\+S\+\_\+\+ON@{M\+S\+\_\+\+C\+T\+S\+\_\+\+ON}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{M\+S\+\_\+\+C\+T\+S\+\_\+\+ON}{MS\_CTS\_ON}}
-{\footnotesize\ttfamily \#define M\+S\+\_\+\+C\+T\+S\+\_\+\+ON~((\hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD})0x0010)}
-
-
-
-Definition at line 62 of file Win\+Types.\+h.
-
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a3ba90bfb4ec9933da30c8d4f7d56e024}\label{LALUsbx64_2include_2WinTypes_8h_a3ba90bfb4ec9933da30c8d4f7d56e024}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!M\+S\+\_\+\+D\+S\+R\+\_\+\+ON@{M\+S\+\_\+\+D\+S\+R\+\_\+\+ON}}
-\index{M\+S\+\_\+\+D\+S\+R\+\_\+\+ON@{M\+S\+\_\+\+D\+S\+R\+\_\+\+ON}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{M\+S\+\_\+\+D\+S\+R\+\_\+\+ON}{MS\_DSR\_ON}}
-{\footnotesize\ttfamily \#define M\+S\+\_\+\+D\+S\+R\+\_\+\+ON~((\hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD})0x0020)}
-
-
-
-Definition at line 63 of file Win\+Types.\+h.
-
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a2c6c2bda1fd7a503fc997d5978423fe7}\label{LALUsbx64_2include_2WinTypes_8h_a2c6c2bda1fd7a503fc997d5978423fe7}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!M\+S\+\_\+\+R\+I\+N\+G\+\_\+\+ON@{M\+S\+\_\+\+R\+I\+N\+G\+\_\+\+ON}}
-\index{M\+S\+\_\+\+R\+I\+N\+G\+\_\+\+ON@{M\+S\+\_\+\+R\+I\+N\+G\+\_\+\+ON}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{M\+S\+\_\+\+R\+I\+N\+G\+\_\+\+ON}{MS\_RING\_ON}}
-{\footnotesize\ttfamily \#define M\+S\+\_\+\+R\+I\+N\+G\+\_\+\+ON~((\hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD})0x0040)}
-
-
-
-Definition at line 64 of file Win\+Types.\+h.
-
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a86b8bd03fce8576a15d2bc2776a4327e}\label{LALUsbx64_2include_2WinTypes_8h_a86b8bd03fce8576a15d2bc2776a4327e}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!M\+S\+\_\+\+R\+L\+S\+D\+\_\+\+ON@{M\+S\+\_\+\+R\+L\+S\+D\+\_\+\+ON}}
-\index{M\+S\+\_\+\+R\+L\+S\+D\+\_\+\+ON@{M\+S\+\_\+\+R\+L\+S\+D\+\_\+\+ON}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{M\+S\+\_\+\+R\+L\+S\+D\+\_\+\+ON}{MS\_RLSD\_ON}}
-{\footnotesize\ttfamily \#define M\+S\+\_\+\+R\+L\+S\+D\+\_\+\+ON~((\hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD})0x0080)}
-
-
-
-Definition at line 65 of file Win\+Types.\+h.
-
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_aa8cecfc5c5c054d2875c03e77b7be15d}\label{LALUsbx64_2include_2WinTypes_8h_aa8cecfc5c5c054d2875c03e77b7be15d}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!T\+R\+UE@{T\+R\+UE}}
-\index{T\+R\+UE@{T\+R\+UE}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{T\+R\+UE}{TRUE}}
-{\footnotesize\ttfamily \#define T\+R\+UE~1}
-
-
-
-Definition at line 53 of file Win\+Types.\+h.
-
-
+Definition at line 65 of file WinTypes.h.
 
 \subsection{Typedef Documentation}
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}\label{LALUsbx64_2include_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!B\+O\+OL@{B\+O\+OL}}
-\index{B\+O\+OL@{B\+O\+OL}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{B\+O\+OL}{BOOL}}
-{\footnotesize\ttfamily typedef int \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{B\+O\+OL}}
+\hypertarget{LALUsbx64_2include_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!BOOL@{BOOL}}
+\index{BOOL@{BOOL}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{BOOL}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf BOOL}}}
+\label{LALUsbx64_2include_2WinTypes_8h_a050c65e107f0c828f856a231f4b4e788}
+
+
+Definition at line 15 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_a55feea4a69748664b608156555bb33b9}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!BOOLEAN@{BOOLEAN}}
+\index{BOOLEAN@{BOOLEAN}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{BOOLEAN}]{\setlength{\rightskip}{0pt plus 5cm}typedef char {\bf BOOLEAN}}}
+\label{LALUsbx64_2include_2WinTypes_8h_a55feea4a69748664b608156555bb33b9}
 
+
+Definition at line 16 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_a4ae1dab0fb4b072a66584546209e7d58}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!BYTE@{BYTE}}
+\index{BYTE@{BYTE}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{BYTE}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned char {\bf BYTE}}}
+\label{LALUsbx64_2include_2WinTypes_8h_a4ae1dab0fb4b072a66584546209e7d58}
 
 
-Definition at line 15 of file Win\+Types.\+h.
+Definition at line 13 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_aebb9e13210d88d43e32e735ada43a425}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!CHAR@{CHAR}}
+\index{CHAR@{CHAR}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{CHAR}]{\setlength{\rightskip}{0pt plus 5cm}typedef char {\bf CHAR}}}
+\label{LALUsbx64_2include_2WinTypes_8h_aebb9e13210d88d43e32e735ada43a425}
 
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a55feea4a69748664b608156555bb33b9}\label{LALUsbx64_2include_2WinTypes_8h_a55feea4a69748664b608156555bb33b9}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!B\+O\+O\+L\+E\+AN@{B\+O\+O\+L\+E\+AN}}
-\index{B\+O\+O\+L\+E\+AN@{B\+O\+O\+L\+E\+AN}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{B\+O\+O\+L\+E\+AN}{BOOLEAN}}
-{\footnotesize\ttfamily typedef char \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a55feea4a69748664b608156555bb33b9}{B\+O\+O\+L\+E\+AN}}
 
+Definition at line 17 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_ad342ac907eb044443153a22f964bf0af}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!DWORD@{DWORD}}
+\index{DWORD@{DWORD}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{DWORD}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned long {\bf DWORD}}}
+\label{LALUsbx64_2include_2WinTypes_8h_ad342ac907eb044443153a22f964bf0af}
 
 
-Definition at line 16 of file Win\+Types.\+h.
+Definition at line 7 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_a81f97f1b9751ff76c68395d3c0f51928}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!FILETIME@{FILETIME}}
+\index{FILETIME@{FILETIME}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{FILETIME}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct timeval {\bf FILETIME}}}
+\label{LALUsbx64_2include_2WinTypes_8h_a81f97f1b9751ff76c68395d3c0f51928}
 
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a4ae1dab0fb4b072a66584546209e7d58}\label{LALUsbx64_2include_2WinTypes_8h_a4ae1dab0fb4b072a66584546209e7d58}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!B\+Y\+TE@{B\+Y\+TE}}
-\index{B\+Y\+TE@{B\+Y\+TE}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{B\+Y\+TE}{BYTE}}
-{\footnotesize\ttfamily typedef unsigned char \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a4ae1dab0fb4b072a66584546209e7d58}{B\+Y\+TE}}
 
+Definition at line 51 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_aa8c0374618b33785ccb02f74bcfebc46}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!HANDLE@{HANDLE}}
+\index{HANDLE@{HANDLE}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{HANDLE}]{\setlength{\rightskip}{0pt plus 5cm}typedef void$\ast$ {\bf HANDLE}}}
+\label{LALUsbx64_2include_2WinTypes_8h_aa8c0374618b33785ccb02f74bcfebc46}
 
 
-Definition at line 13 of file Win\+Types.\+h.
+Definition at line 23 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_a392e62da233ed3e2f7c3fd4f487a3896}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!INT@{INT}}
+\index{INT@{INT}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{INT}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf INT}}}
+\label{LALUsbx64_2include_2WinTypes_8h_a392e62da233ed3e2f7c3fd4f487a3896}
 
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_aebb9e13210d88d43e32e735ada43a425}\label{LALUsbx64_2include_2WinTypes_8h_aebb9e13210d88d43e32e735ada43a425}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!C\+H\+AR@{C\+H\+AR}}
-\index{C\+H\+AR@{C\+H\+AR}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{C\+H\+AR}{CHAR}}
-{\footnotesize\ttfamily typedef char \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_aebb9e13210d88d43e32e735ada43a425}{C\+H\+AR}}
 
+Definition at line 25 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_a2a3e0cda5f1249bef6db47c5eb8e3813}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!LONG@{LONG}}
+\index{LONG@{LONG}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{LONG}]{\setlength{\rightskip}{0pt plus 5cm}typedef long {\bf LONG}}}
+\label{LALUsbx64_2include_2WinTypes_8h_a2a3e0cda5f1249bef6db47c5eb8e3813}
 
 
-Definition at line 17 of file Win\+Types.\+h.
+Definition at line 24 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_ac2c99f03a430a8cfd4ff8cb98136201b}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!LPBOOL@{LPBOOL}}
+\index{LPBOOL@{LPBOOL}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{LPBOOL}]{\setlength{\rightskip}{0pt plus 5cm}typedef int$\ast$ {\bf LPBOOL}}}
+\label{LALUsbx64_2include_2WinTypes_8h_ac2c99f03a430a8cfd4ff8cb98136201b}
 
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_ad342ac907eb044443153a22f964bf0af}\label{LALUsbx64_2include_2WinTypes_8h_ad342ac907eb044443153a22f964bf0af}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!D\+W\+O\+RD@{D\+W\+O\+RD}}
-\index{D\+W\+O\+RD@{D\+W\+O\+RD}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{D\+W\+O\+RD}{DWORD}}
-{\footnotesize\ttfamily typedef unsigned long \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}}
+
+Definition at line 18 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_aac302d6f27b3453f8c2fb3810949ef7e}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!LPBYTE@{LPBYTE}}
+\index{LPBYTE@{LPBYTE}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{LPBYTE}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned char$\ast$ {\bf LPBYTE}}}
+\label{LALUsbx64_2include_2WinTypes_8h_aac302d6f27b3453f8c2fb3810949ef7e}
 
 
+Definition at line 14 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_adbea528b1294c9a1dfda3dfa33ff1472}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!LPCSTR@{LPCSTR}}
+\index{LPCSTR@{LPCSTR}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{LPCSTR}]{\setlength{\rightskip}{0pt plus 5cm}typedef const char$\ast$ {\bf LPCSTR}}}
+\label{LALUsbx64_2include_2WinTypes_8h_adbea528b1294c9a1dfda3dfa33ff1472}
 
-Definition at line 7 of file Win\+Types.\+h.
 
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a81f97f1b9751ff76c68395d3c0f51928}\label{LALUsbx64_2include_2WinTypes_8h_a81f97f1b9751ff76c68395d3c0f51928}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!F\+I\+L\+E\+T\+I\+ME@{F\+I\+L\+E\+T\+I\+ME}}
-\index{F\+I\+L\+E\+T\+I\+ME@{F\+I\+L\+E\+T\+I\+ME}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{F\+I\+L\+E\+T\+I\+ME}{FILETIME}}
-{\footnotesize\ttfamily typedef struct timeval \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a81f97f1b9751ff76c68395d3c0f51928}{F\+I\+L\+E\+T\+I\+ME}}
+Definition at line 20 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_a143be739596851314f3c386bd6f752f9}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!LPDWORD@{LPDWORD}}
+\index{LPDWORD@{LPDWORD}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{LPDWORD}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf DWORD}$\ast$ {\bf LPDWORD}}}
+\label{LALUsbx64_2include_2WinTypes_8h_a143be739596851314f3c386bd6f752f9}
 
 
+Definition at line 29 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_ad3c708c36ed2fdc059368b364bff9490}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!LPOVERLAPPED@{LPOVERLAPPED}}
+\index{LPOVERLAPPED@{LPOVERLAPPED}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{LPOVERLAPPED}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \_\-OVERLAPPED} $\ast$ {\bf LPOVERLAPPED}}}
+\label{LALUsbx64_2include_2WinTypes_8h_ad3c708c36ed2fdc059368b364bff9490}
+\hypertarget{LALUsbx64_2include_2WinTypes_8h_a986641dce4ee82b5fb5f491fe33a4e84}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!LPSECURITY\_\-ATTRIBUTES@{LPSECURITY\_\-ATTRIBUTES}}
+\index{LPSECURITY\_\-ATTRIBUTES@{LPSECURITY\_\-ATTRIBUTES}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{LPSECURITY\_\-ATTRIBUTES}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \_\-SECURITY\_\-ATTRIBUTES} $\ast$ {\bf LPSECURITY\_\-ATTRIBUTES}}}
+\label{LALUsbx64_2include_2WinTypes_8h_a986641dce4ee82b5fb5f491fe33a4e84}
+\hypertarget{LALUsbx64_2include_2WinTypes_8h_a140cf415e90c02039ff733cd93e4affd}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!LPSTR@{LPSTR}}
+\index{LPSTR@{LPSTR}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{LPSTR}]{\setlength{\rightskip}{0pt plus 5cm}typedef char$\ast$ {\bf LPSTR}}}
+\label{LALUsbx64_2include_2WinTypes_8h_a140cf415e90c02039ff733cd93e4affd}
+
+
+Definition at line 27 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_a4164e170dcb78b7da7277a7e1f5953fc}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!LPTSTR@{LPTSTR}}
+\index{LPTSTR@{LPTSTR}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{LPTSTR}]{\setlength{\rightskip}{0pt plus 5cm}typedef char$\ast$ {\bf LPTSTR}}}
+\label{LALUsbx64_2include_2WinTypes_8h_a4164e170dcb78b7da7277a7e1f5953fc}
+
+
+Definition at line 28 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_a98428a03b263db9d26c25c53459c542f}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!LPVOID@{LPVOID}}
+\index{LPVOID@{LPVOID}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{LPVOID}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf PVOID} {\bf LPVOID}}}
+\label{LALUsbx64_2include_2WinTypes_8h_a98428a03b263db9d26c25c53459c542f}
 
-Definition at line 51 of file Win\+Types.\+h.
+
+Definition at line 32 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_aeb632a3c64c6c2e8ce064c1ca5374701}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!LPWORD@{LPWORD}}
+\index{LPWORD@{LPWORD}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{LPWORD}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf WORD}$\ast$ {\bf LPWORD}}}
+\label{LALUsbx64_2include_2WinTypes_8h_aeb632a3c64c6c2e8ce064c1ca5374701}
 
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_aa8c0374618b33785ccb02f74bcfebc46}\label{LALUsbx64_2include_2WinTypes_8h_aa8c0374618b33785ccb02f74bcfebc46}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!H\+A\+N\+D\+LE@{H\+A\+N\+D\+LE}}
-\index{H\+A\+N\+D\+LE@{H\+A\+N\+D\+LE}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{H\+A\+N\+D\+LE}{HANDLE}}
-{\footnotesize\ttfamily typedef void$\ast$ \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_aa8c0374618b33785ccb02f74bcfebc46}{H\+A\+N\+D\+LE}}
 
+Definition at line 30 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_acc634c5d2ba8f268fe1b5774d7477297}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!OVERLAPPED@{OVERLAPPED}}
+\index{OVERLAPPED@{OVERLAPPED}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{OVERLAPPED}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \_\-OVERLAPPED}  {\bf OVERLAPPED}}}
+\label{LALUsbx64_2include_2WinTypes_8h_acc634c5d2ba8f268fe1b5774d7477297}
+\hypertarget{LALUsbx64_2include_2WinTypes_8h_af5eac65594b9e2e99449e223be232094}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!PCHAR@{PCHAR}}
+\index{PCHAR@{PCHAR}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{PCHAR}]{\setlength{\rightskip}{0pt plus 5cm}typedef char$\ast$ {\bf PCHAR}}}
+\label{LALUsbx64_2include_2WinTypes_8h_af5eac65594b9e2e99449e223be232094}
 
 
-Definition at line 23 of file Win\+Types.\+h.
+Definition at line 21 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_a06c249fdad80e91872a47b11efbf963a}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!PUCHAR@{PUCHAR}}
+\index{PUCHAR@{PUCHAR}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{PUCHAR}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned char$\ast$ {\bf PUCHAR}}}
+\label{LALUsbx64_2include_2WinTypes_8h_a06c249fdad80e91872a47b11efbf963a}
 
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a392e62da233ed3e2f7c3fd4f487a3896}\label{LALUsbx64_2include_2WinTypes_8h_a392e62da233ed3e2f7c3fd4f487a3896}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!I\+NT@{I\+NT}}
-\index{I\+NT@{I\+NT}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{I\+NT}{INT}}
-{\footnotesize\ttfamily typedef int \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a392e62da233ed3e2f7c3fd4f487a3896}{I\+NT}}
 
+Definition at line 19 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_a253b627decfeb8fee3765eba6d720d74}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!PULONG@{PULONG}}
+\index{PULONG@{PULONG}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{PULONG}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf ULONG}$\ast$ {\bf PULONG}}}
+\label{LALUsbx64_2include_2WinTypes_8h_a253b627decfeb8fee3765eba6d720d74}
 
 
-Definition at line 25 of file Win\+Types.\+h.
+Definition at line 31 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_a2b5e00c0c5a5aa5199ba9f28ec3e8caa}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!PVOID@{PVOID}}
+\index{PVOID@{PVOID}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{PVOID}]{\setlength{\rightskip}{0pt plus 5cm}typedef void$\ast$ {\bf PVOID}}}
+\label{LALUsbx64_2include_2WinTypes_8h_a2b5e00c0c5a5aa5199ba9f28ec3e8caa}
 
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a2a3e0cda5f1249bef6db47c5eb8e3813}\label{LALUsbx64_2include_2WinTypes_8h_a2a3e0cda5f1249bef6db47c5eb8e3813}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!L\+O\+NG@{L\+O\+NG}}
-\index{L\+O\+NG@{L\+O\+NG}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{L\+O\+NG}{LONG}}
-{\footnotesize\ttfamily typedef long \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a2a3e0cda5f1249bef6db47c5eb8e3813}{L\+O\+NG}}
 
+Definition at line 22 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_ae1658f511de470ae2131e00fefa18a2f}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!SECURITY\_\-ATTRIBUTES@{SECURITY\_\-ATTRIBUTES}}
+\index{SECURITY\_\-ATTRIBUTES@{SECURITY\_\-ATTRIBUTES}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{SECURITY\_\-ATTRIBUTES}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \_\-SECURITY\_\-ATTRIBUTES}  {\bf SECURITY\_\-ATTRIBUTES}}}
+\label{LALUsbx64_2include_2WinTypes_8h_ae1658f511de470ae2131e00fefa18a2f}
+\hypertarget{LALUsbx64_2include_2WinTypes_8h_a9909bd3cf05f0906045f2ee85be4eeac}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!SHORT@{SHORT}}
+\index{SHORT@{SHORT}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{SHORT}]{\setlength{\rightskip}{0pt plus 5cm}typedef short {\bf SHORT}}}
+\label{LALUsbx64_2include_2WinTypes_8h_a9909bd3cf05f0906045f2ee85be4eeac}
 
 
-Definition at line 24 of file Win\+Types.\+h.
+Definition at line 10 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_aa0215b7bbc143479bf9f88af56e6177f}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!SYSTEMTIME@{SYSTEMTIME}}
+\index{SYSTEMTIME@{SYSTEMTIME}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{SYSTEMTIME}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct timeval {\bf SYSTEMTIME}}}
+\label{LALUsbx64_2include_2WinTypes_8h_aa0215b7bbc143479bf9f88af56e6177f}
 
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_ac2c99f03a430a8cfd4ff8cb98136201b}\label{LALUsbx64_2include_2WinTypes_8h_ac2c99f03a430a8cfd4ff8cb98136201b}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!L\+P\+B\+O\+OL@{L\+P\+B\+O\+OL}}
-\index{L\+P\+B\+O\+OL@{L\+P\+B\+O\+OL}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{L\+P\+B\+O\+OL}{LPBOOL}}
-{\footnotesize\ttfamily typedef int$\ast$ \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_ac2c99f03a430a8cfd4ff8cb98136201b}{L\+P\+B\+O\+OL}}
 
+Definition at line 50 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_a4f4bb67531a9bf6f0b9c6ad76aeba587}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!UCHAR@{UCHAR}}
+\index{UCHAR@{UCHAR}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{UCHAR}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned char {\bf UCHAR}}}
+\label{LALUsbx64_2include_2WinTypes_8h_a4f4bb67531a9bf6f0b9c6ad76aeba587}
 
 
-Definition at line 18 of file Win\+Types.\+h.
+Definition at line 11 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_a36cb3b01d81ffd844bbbfb54003e06ec}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!UINT@{UINT}}
+\index{UINT@{UINT}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{UINT}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf UINT}}}
+\label{LALUsbx64_2include_2WinTypes_8h_a36cb3b01d81ffd844bbbfb54003e06ec}
 
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_aac302d6f27b3453f8c2fb3810949ef7e}\label{LALUsbx64_2include_2WinTypes_8h_aac302d6f27b3453f8c2fb3810949ef7e}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!L\+P\+B\+Y\+TE@{L\+P\+B\+Y\+TE}}
-\index{L\+P\+B\+Y\+TE@{L\+P\+B\+Y\+TE}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{L\+P\+B\+Y\+TE}{LPBYTE}}
-{\footnotesize\ttfamily typedef unsigned char$\ast$ \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_aac302d6f27b3453f8c2fb3810949ef7e}{L\+P\+B\+Y\+TE}}
 
+Definition at line 26 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_af632da489ebc3708ec3ab6791ee53fa4}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!ULONG@{ULONG}}
+\index{ULONG@{ULONG}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{ULONG}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned long {\bf ULONG}}}
+\label{LALUsbx64_2include_2WinTypes_8h_af632da489ebc3708ec3ab6791ee53fa4}
 
 
-Definition at line 14 of file Win\+Types.\+h.
+Definition at line 8 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_a40fe0aea3d84f6e2adbb232b3c7a3a9c}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!ULONGLONG@{ULONGLONG}}
+\index{ULONGLONG@{ULONGLONG}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{ULONGLONG}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned long long int {\bf ULONGLONG}}}
+\label{LALUsbx64_2include_2WinTypes_8h_a40fe0aea3d84f6e2adbb232b3c7a3a9c}
 
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_adbea528b1294c9a1dfda3dfa33ff1472}\label{LALUsbx64_2include_2WinTypes_8h_adbea528b1294c9a1dfda3dfa33ff1472}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!L\+P\+C\+S\+TR@{L\+P\+C\+S\+TR}}
-\index{L\+P\+C\+S\+TR@{L\+P\+C\+S\+TR}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{L\+P\+C\+S\+TR}{LPCSTR}}
-{\footnotesize\ttfamily typedef const char$\ast$ \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_adbea528b1294c9a1dfda3dfa33ff1472}{L\+P\+C\+S\+TR}}
 
+Definition at line 34 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_a5850d5316caf7f4cedd742fdf8cd7c02}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!USHORT@{USHORT}}
+\index{USHORT@{USHORT}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{USHORT}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned short {\bf USHORT}}}
+\label{LALUsbx64_2include_2WinTypes_8h_a5850d5316caf7f4cedd742fdf8cd7c02}
 
 
-Definition at line 20 of file Win\+Types.\+h.
+Definition at line 9 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_a7927e087749615dae3114cc27b91c86d}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!VOID@{VOID}}
+\index{VOID@{VOID}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{VOID}]{\setlength{\rightskip}{0pt plus 5cm}typedef void {\bf VOID}}}
+\label{LALUsbx64_2include_2WinTypes_8h_a7927e087749615dae3114cc27b91c86d}
 
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a143be739596851314f3c386bd6f752f9}\label{LALUsbx64_2include_2WinTypes_8h_a143be739596851314f3c386bd6f752f9}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!L\+P\+D\+W\+O\+RD@{L\+P\+D\+W\+O\+RD}}
-\index{L\+P\+D\+W\+O\+RD@{L\+P\+D\+W\+O\+RD}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{L\+P\+D\+W\+O\+RD}{LPDWORD}}
-{\footnotesize\ttfamily typedef \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD}$\ast$ \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a143be739596851314f3c386bd6f752f9}{L\+P\+D\+W\+O\+RD}}
 
+Definition at line 33 of file WinTypes.h.\hypertarget{LALUsbx64_2include_2WinTypes_8h_a197942eefa7db30960ae396d68339b97}{
+\index{LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}!WORD@{WORD}}
+\index{WORD@{WORD}!LALUsbx64/include/WinTypes.h@{LALUsbx64/include/WinTypes.h}}
+\subsubsection[{WORD}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned short {\bf WORD}}}
+\label{LALUsbx64_2include_2WinTypes_8h_a197942eefa7db30960ae396d68339b97}
 
 
-Definition at line 29 of file Win\+Types.\+h.
-
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_ad3c708c36ed2fdc059368b364bff9490}\label{LALUsbx64_2include_2WinTypes_8h_ad3c708c36ed2fdc059368b364bff9490}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!L\+P\+O\+V\+E\+R\+L\+A\+P\+P\+ED@{L\+P\+O\+V\+E\+R\+L\+A\+P\+P\+ED}}
-\index{L\+P\+O\+V\+E\+R\+L\+A\+P\+P\+ED@{L\+P\+O\+V\+E\+R\+L\+A\+P\+P\+ED}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{L\+P\+O\+V\+E\+R\+L\+A\+P\+P\+ED}{LPOVERLAPPED}}
-{\footnotesize\ttfamily typedef struct \hyperlink{struct__OVERLAPPED}{\+\_\+\+O\+V\+E\+R\+L\+A\+P\+P\+ED} $\ast$ \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_ad3c708c36ed2fdc059368b364bff9490}{L\+P\+O\+V\+E\+R\+L\+A\+P\+P\+ED}}
-
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a986641dce4ee82b5fb5f491fe33a4e84}\label{LALUsbx64_2include_2WinTypes_8h_a986641dce4ee82b5fb5f491fe33a4e84}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!L\+P\+S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+ES@{L\+P\+S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+ES}}
-\index{L\+P\+S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+ES@{L\+P\+S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+ES}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{L\+P\+S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+ES}{LPSECURITY\_ATTRIBUTES}}
-{\footnotesize\ttfamily typedef struct \hyperlink{struct__SECURITY__ATTRIBUTES}{\+\_\+\+S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+ES} $\ast$ \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a986641dce4ee82b5fb5f491fe33a4e84}{L\+P\+S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+ES}}
-
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a140cf415e90c02039ff733cd93e4affd}\label{LALUsbx64_2include_2WinTypes_8h_a140cf415e90c02039ff733cd93e4affd}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!L\+P\+S\+TR@{L\+P\+S\+TR}}
-\index{L\+P\+S\+TR@{L\+P\+S\+TR}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{L\+P\+S\+TR}{LPSTR}}
-{\footnotesize\ttfamily typedef char$\ast$ \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a140cf415e90c02039ff733cd93e4affd}{L\+P\+S\+TR}}
-
-
-
-Definition at line 27 of file Win\+Types.\+h.
-
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a4164e170dcb78b7da7277a7e1f5953fc}\label{LALUsbx64_2include_2WinTypes_8h_a4164e170dcb78b7da7277a7e1f5953fc}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!L\+P\+T\+S\+TR@{L\+P\+T\+S\+TR}}
-\index{L\+P\+T\+S\+TR@{L\+P\+T\+S\+TR}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{L\+P\+T\+S\+TR}{LPTSTR}}
-{\footnotesize\ttfamily typedef char$\ast$ \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a4164e170dcb78b7da7277a7e1f5953fc}{L\+P\+T\+S\+TR}}
-
-
-
-Definition at line 28 of file Win\+Types.\+h.
-
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a98428a03b263db9d26c25c53459c542f}\label{LALUsbx64_2include_2WinTypes_8h_a98428a03b263db9d26c25c53459c542f}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!L\+P\+V\+O\+ID@{L\+P\+V\+O\+ID}}
-\index{L\+P\+V\+O\+ID@{L\+P\+V\+O\+ID}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{L\+P\+V\+O\+ID}{LPVOID}}
-{\footnotesize\ttfamily typedef \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a2b5e00c0c5a5aa5199ba9f28ec3e8caa}{P\+V\+O\+ID} \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a98428a03b263db9d26c25c53459c542f}{L\+P\+V\+O\+ID}}
-
-
-
-Definition at line 32 of file Win\+Types.\+h.
-
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_aeb632a3c64c6c2e8ce064c1ca5374701}\label{LALUsbx64_2include_2WinTypes_8h_aeb632a3c64c6c2e8ce064c1ca5374701}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!L\+P\+W\+O\+RD@{L\+P\+W\+O\+RD}}
-\index{L\+P\+W\+O\+RD@{L\+P\+W\+O\+RD}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{L\+P\+W\+O\+RD}{LPWORD}}
-{\footnotesize\ttfamily typedef \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a197942eefa7db30960ae396d68339b97}{W\+O\+RD}$\ast$ \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_aeb632a3c64c6c2e8ce064c1ca5374701}{L\+P\+W\+O\+RD}}
-
-
-
-Definition at line 30 of file Win\+Types.\+h.
-
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_acc634c5d2ba8f268fe1b5774d7477297}\label{LALUsbx64_2include_2WinTypes_8h_acc634c5d2ba8f268fe1b5774d7477297}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!O\+V\+E\+R\+L\+A\+P\+P\+ED@{O\+V\+E\+R\+L\+A\+P\+P\+ED}}
-\index{O\+V\+E\+R\+L\+A\+P\+P\+ED@{O\+V\+E\+R\+L\+A\+P\+P\+ED}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{O\+V\+E\+R\+L\+A\+P\+P\+ED}{OVERLAPPED}}
-{\footnotesize\ttfamily typedef struct \hyperlink{struct__OVERLAPPED}{\+\_\+\+O\+V\+E\+R\+L\+A\+P\+P\+ED}  \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_acc634c5d2ba8f268fe1b5774d7477297}{O\+V\+E\+R\+L\+A\+P\+P\+ED}}
-
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_af5eac65594b9e2e99449e223be232094}\label{LALUsbx64_2include_2WinTypes_8h_af5eac65594b9e2e99449e223be232094}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!P\+C\+H\+AR@{P\+C\+H\+AR}}
-\index{P\+C\+H\+AR@{P\+C\+H\+AR}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{P\+C\+H\+AR}{PCHAR}}
-{\footnotesize\ttfamily typedef char$\ast$ \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_af5eac65594b9e2e99449e223be232094}{P\+C\+H\+AR}}
-
-
-
-Definition at line 21 of file Win\+Types.\+h.
-
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a06c249fdad80e91872a47b11efbf963a}\label{LALUsbx64_2include_2WinTypes_8h_a06c249fdad80e91872a47b11efbf963a}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!P\+U\+C\+H\+AR@{P\+U\+C\+H\+AR}}
-\index{P\+U\+C\+H\+AR@{P\+U\+C\+H\+AR}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{P\+U\+C\+H\+AR}{PUCHAR}}
-{\footnotesize\ttfamily typedef unsigned char$\ast$ \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a06c249fdad80e91872a47b11efbf963a}{P\+U\+C\+H\+AR}}
-
-
-
-Definition at line 19 of file Win\+Types.\+h.
-
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a253b627decfeb8fee3765eba6d720d74}\label{LALUsbx64_2include_2WinTypes_8h_a253b627decfeb8fee3765eba6d720d74}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!P\+U\+L\+O\+NG@{P\+U\+L\+O\+NG}}
-\index{P\+U\+L\+O\+NG@{P\+U\+L\+O\+NG}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{P\+U\+L\+O\+NG}{PULONG}}
-{\footnotesize\ttfamily typedef \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_af632da489ebc3708ec3ab6791ee53fa4}{U\+L\+O\+NG}$\ast$ \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a253b627decfeb8fee3765eba6d720d74}{P\+U\+L\+O\+NG}}
-
-
-
-Definition at line 31 of file Win\+Types.\+h.
-
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a2b5e00c0c5a5aa5199ba9f28ec3e8caa}\label{LALUsbx64_2include_2WinTypes_8h_a2b5e00c0c5a5aa5199ba9f28ec3e8caa}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!P\+V\+O\+ID@{P\+V\+O\+ID}}
-\index{P\+V\+O\+ID@{P\+V\+O\+ID}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{P\+V\+O\+ID}{PVOID}}
-{\footnotesize\ttfamily typedef void$\ast$ \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a2b5e00c0c5a5aa5199ba9f28ec3e8caa}{P\+V\+O\+ID}}
-
-
-
-Definition at line 22 of file Win\+Types.\+h.
-
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_ae1658f511de470ae2131e00fefa18a2f}\label{LALUsbx64_2include_2WinTypes_8h_ae1658f511de470ae2131e00fefa18a2f}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+ES@{S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+ES}}
-\index{S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+ES@{S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+ES}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+ES}{SECURITY\_ATTRIBUTES}}
-{\footnotesize\ttfamily typedef struct \hyperlink{struct__SECURITY__ATTRIBUTES}{\+\_\+\+S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+ES}  \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_ae1658f511de470ae2131e00fefa18a2f}{S\+E\+C\+U\+R\+I\+T\+Y\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+ES}}
-
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a9909bd3cf05f0906045f2ee85be4eeac}\label{LALUsbx64_2include_2WinTypes_8h_a9909bd3cf05f0906045f2ee85be4eeac}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!S\+H\+O\+RT@{S\+H\+O\+RT}}
-\index{S\+H\+O\+RT@{S\+H\+O\+RT}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{S\+H\+O\+RT}{SHORT}}
-{\footnotesize\ttfamily typedef short \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a9909bd3cf05f0906045f2ee85be4eeac}{S\+H\+O\+RT}}
-
-
-
-Definition at line 10 of file Win\+Types.\+h.
-
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_aa0215b7bbc143479bf9f88af56e6177f}\label{LALUsbx64_2include_2WinTypes_8h_aa0215b7bbc143479bf9f88af56e6177f}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!S\+Y\+S\+T\+E\+M\+T\+I\+ME@{S\+Y\+S\+T\+E\+M\+T\+I\+ME}}
-\index{S\+Y\+S\+T\+E\+M\+T\+I\+ME@{S\+Y\+S\+T\+E\+M\+T\+I\+ME}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{S\+Y\+S\+T\+E\+M\+T\+I\+ME}{SYSTEMTIME}}
-{\footnotesize\ttfamily typedef struct timeval \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_aa0215b7bbc143479bf9f88af56e6177f}{S\+Y\+S\+T\+E\+M\+T\+I\+ME}}
-
-
-
-Definition at line 50 of file Win\+Types.\+h.
-
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a4f4bb67531a9bf6f0b9c6ad76aeba587}\label{LALUsbx64_2include_2WinTypes_8h_a4f4bb67531a9bf6f0b9c6ad76aeba587}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!U\+C\+H\+AR@{U\+C\+H\+AR}}
-\index{U\+C\+H\+AR@{U\+C\+H\+AR}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{U\+C\+H\+AR}{UCHAR}}
-{\footnotesize\ttfamily typedef unsigned char \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a4f4bb67531a9bf6f0b9c6ad76aeba587}{U\+C\+H\+AR}}
-
-
-
-Definition at line 11 of file Win\+Types.\+h.
-
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a36cb3b01d81ffd844bbbfb54003e06ec}\label{LALUsbx64_2include_2WinTypes_8h_a36cb3b01d81ffd844bbbfb54003e06ec}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!U\+I\+NT@{U\+I\+NT}}
-\index{U\+I\+NT@{U\+I\+NT}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{U\+I\+NT}{UINT}}
-{\footnotesize\ttfamily typedef unsigned int \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a36cb3b01d81ffd844bbbfb54003e06ec}{U\+I\+NT}}
-
-
-
-Definition at line 26 of file Win\+Types.\+h.
-
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_af632da489ebc3708ec3ab6791ee53fa4}\label{LALUsbx64_2include_2WinTypes_8h_af632da489ebc3708ec3ab6791ee53fa4}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!U\+L\+O\+NG@{U\+L\+O\+NG}}
-\index{U\+L\+O\+NG@{U\+L\+O\+NG}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{U\+L\+O\+NG}{ULONG}}
-{\footnotesize\ttfamily typedef unsigned long \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_af632da489ebc3708ec3ab6791ee53fa4}{U\+L\+O\+NG}}
-
-
-
-Definition at line 8 of file Win\+Types.\+h.
-
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a40fe0aea3d84f6e2adbb232b3c7a3a9c}\label{LALUsbx64_2include_2WinTypes_8h_a40fe0aea3d84f6e2adbb232b3c7a3a9c}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!U\+L\+O\+N\+G\+L\+O\+NG@{U\+L\+O\+N\+G\+L\+O\+NG}}
-\index{U\+L\+O\+N\+G\+L\+O\+NG@{U\+L\+O\+N\+G\+L\+O\+NG}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{U\+L\+O\+N\+G\+L\+O\+NG}{ULONGLONG}}
-{\footnotesize\ttfamily typedef unsigned long long int \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a40fe0aea3d84f6e2adbb232b3c7a3a9c}{U\+L\+O\+N\+G\+L\+O\+NG}}
-
-
-
-Definition at line 34 of file Win\+Types.\+h.
-
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a5850d5316caf7f4cedd742fdf8cd7c02}\label{LALUsbx64_2include_2WinTypes_8h_a5850d5316caf7f4cedd742fdf8cd7c02}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!U\+S\+H\+O\+RT@{U\+S\+H\+O\+RT}}
-\index{U\+S\+H\+O\+RT@{U\+S\+H\+O\+RT}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{U\+S\+H\+O\+RT}{USHORT}}
-{\footnotesize\ttfamily typedef unsigned short \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a5850d5316caf7f4cedd742fdf8cd7c02}{U\+S\+H\+O\+RT}}
-
-
-
-Definition at line 9 of file Win\+Types.\+h.
-
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a7927e087749615dae3114cc27b91c86d}\label{LALUsbx64_2include_2WinTypes_8h_a7927e087749615dae3114cc27b91c86d}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!V\+O\+ID@{V\+O\+ID}}
-\index{V\+O\+ID@{V\+O\+ID}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{V\+O\+ID}{VOID}}
-{\footnotesize\ttfamily typedef void \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a7927e087749615dae3114cc27b91c86d}{V\+O\+ID}}
-
-
-
-Definition at line 33 of file Win\+Types.\+h.
-
-\mbox{\Hypertarget{LALUsbx64_2include_2WinTypes_8h_a197942eefa7db30960ae396d68339b97}\label{LALUsbx64_2include_2WinTypes_8h_a197942eefa7db30960ae396d68339b97}} 
-\index{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}!W\+O\+RD@{W\+O\+RD}}
-\index{W\+O\+RD@{W\+O\+RD}!L\+A\+L\+Usbx64/include/\+Win\+Types.\+h@{L\+A\+L\+Usbx64/include/\+Win\+Types.\+h}}
-\subsubsection{\texorpdfstring{W\+O\+RD}{WORD}}
-{\footnotesize\ttfamily typedef unsigned short \hyperlink{CatCaloProto40MHz_2inc_2WinTypes_8h_a197942eefa7db30960ae396d68339b97}{W\+O\+RD}}
-
-
-
-Definition at line 12 of file Win\+Types.\+h.
-
+Definition at line 12 of file WinTypes.h.

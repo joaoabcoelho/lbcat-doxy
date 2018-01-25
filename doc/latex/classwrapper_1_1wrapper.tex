@@ -1,260 +1,209 @@
-\hypertarget{classwrapper_1_1wrapper}{}\section{wrapper.\+wrapper Class Reference}
-\label{classwrapper_1_1wrapper}\index{wrapper.\+wrapper@{wrapper.\+wrapper}}
+\hypertarget{classwrapper_1_1wrapper}{
+\section{wrapper::wrapper Class Reference}
+\label{classwrapper_1_1wrapper}\index{wrapper::wrapper@{wrapper::wrapper}}
+}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-def \hyperlink{classwrapper_1_1wrapper_a0709d1d42877783bb4f7d84adc34b1ad}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, \hyperlink{classwrapper_1_1wrapper_ab0c2277e5f957e77c3502085b5629c2c}{cat}, obj, type)
+def \hyperlink{classwrapper_1_1wrapper_a28c722c437b535f48f73fe1a9ceb7673}{\_\-\_\-init\_\-\_\-}
 \item 
-def \hyperlink{classwrapper_1_1wrapper_a0ae8c1f5e175d8ea7d43223dc880aba6}{Load\+From\+File} (self)
+def \hyperlink{classwrapper_1_1wrapper_ab315783e7a986b3e53d41877e3c41620}{LoadFromFile}
 \item 
-def \hyperlink{classwrapper_1_1wrapper_aee2ada5ae65c88654d560ee4c9f23dbb}{Load\+From\+Source} (self, source)
+def \hyperlink{classwrapper_1_1wrapper_ae63461400283e16ea7d67219f8a397da}{LoadFromSource}
 \item 
-def \hyperlink{classwrapper_1_1wrapper_a5d047ef93e1fb3cdf75b4fb8266a0a8a}{Load\+Dict} (self)
+def \hyperlink{classwrapper_1_1wrapper_a0aef3490086e1e271039044259f1966c}{LoadDict}
 \item 
-def \hyperlink{classwrapper_1_1wrapper_a3c92a3d23586ea94e280359554b05baf}{Get\+File\+Path} (self)
+def \hyperlink{classwrapper_1_1wrapper_a874fd66ca205b3e79a22e1d3ae7254c5}{GetFilePath}
 \item 
-def \hyperlink{classwrapper_1_1wrapper_a38e355694400434e5759ad0a70e4d1bc}{Get\+Filename} (self)
+def \hyperlink{classwrapper_1_1wrapper_ae0c31da2925082f7d02d24e665d9d8f2}{GetFilename}
 \item 
-def \hyperlink{classwrapper_1_1wrapper_a97ff384380baa3e200f92f20bf48fffa}{Get\+Active} (self)
+def \hyperlink{classwrapper_1_1wrapper_ac836367c5b65afb2307339cbd5d30683}{GetActive}
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classwrapper_1_1wrapper_ab0c2277e5f957e77c3502085b5629c2c}{cat}
+\hyperlink{classwrapper_1_1wrapper_a258ac98ee9d8cb53ca4ab2bc6fd5f376}{cat}
 \item 
-\hyperlink{classwrapper_1_1wrapper_a59acff5098966e96d4ab251cde101735}{modules}
+\hyperlink{classwrapper_1_1wrapper_af3a640a6e44b97a0a58aaa237fa9311b}{modules}
 \item 
-\hyperlink{classwrapper_1_1wrapper_a81f1d31a0ccc51bfdf4d8e18eff6e437}{ok}
+\hyperlink{classwrapper_1_1wrapper_a9922036691f66285e0eb72d3627d5352}{ok}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 4 of file wrapper.\+py.
-
-
-
-\subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classwrapper_1_1wrapper_a0709d1d42877783bb4f7d84adc34b1ad}\label{classwrapper_1_1wrapper_a0709d1d42877783bb4f7d84adc34b1ad}} 
-\index{wrapper\+::wrapper@{wrapper\+::wrapper}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
-\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!wrapper\+::wrapper@{wrapper\+::wrapper}}
-\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
-{\footnotesize\ttfamily def wrapper.\+wrapper.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{type }\end{DoxyParamCaption})}
-
-
-
-Definition at line 5 of file wrapper.\+py.
-
-
-\begin{DoxyCode}
-5     \textcolor{keyword}{def }\hyperlink{classwrapper_1_1ModuleDictWrapper_a9a7a794150502f51df687831583e13b9}{\_\_init\_\_}(self, cat, obj, type):
-6         path=os.path.join(os.environ.get(\textcolor{stringliteral}{"CATPATH"}), obj.dllName(),\textcolor{stringliteral}{"python"}, type)
-7         \textcolor{keywordflow}{if} (type==\textcolor{stringliteral}{"element"}):
-8             filename=os.path.join(path,obj.type()+\textcolor{stringliteral}{".py"})
-9         \textcolor{keywordflow}{elif} (type==\textcolor{stringliteral}{"proc"}):
-10             filename=os.path.join(path,obj.name()+\textcolor{stringliteral}{".py"})
-11         self.cat=cat
-12         \textcolor{comment}{#              (dict , source ,  filename , path , error information )}
-13         \textcolor{comment}{#              (  0  ,   1    ,     2     ,    3 ,       4        )}
-14         self.modules =  [\textcolor{keywordtype}{None},  \textcolor{stringliteral}{""}    ,  filename , path ,     \textcolor{keywordtype}{None}]
-15         self.ok = self.LoadFromFile()
-16 
-\end{DoxyCode}
-
+Definition at line 4 of file wrapper.py.
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classwrapper_1_1wrapper_a97ff384380baa3e200f92f20bf48fffa}\label{classwrapper_1_1wrapper_a97ff384380baa3e200f92f20bf48fffa}} 
-\index{wrapper\+::wrapper@{wrapper\+::wrapper}!Get\+Active@{Get\+Active}}
-\index{Get\+Active@{Get\+Active}!wrapper\+::wrapper@{wrapper\+::wrapper}}
-\subsubsection{\texorpdfstring{Get\+Active()}{GetActive()}}
-{\footnotesize\ttfamily def wrapper.\+wrapper.\+Get\+Active (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+\hypertarget{classwrapper_1_1wrapper_a28c722c437b535f48f73fe1a9ceb7673}{
+\index{wrapper::wrapper@{wrapper::wrapper}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!wrapper::wrapper@{wrapper::wrapper}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def wrapper::wrapper::\_\-\_\-init\_\-\_\- ( {\em self}, \/   {\em cat}, \/   {\em obj}, \/   {\em type})}}
+\label{classwrapper_1_1wrapper_a28c722c437b535f48f73fe1a9ceb7673}
 
 
-
-Definition at line 44 of file wrapper.\+py.
-
-
-
-References wrapper.\+wrapper.\+modules.
+Definition at line 5 of file wrapper.py.
 
 
 \begin{DoxyCode}
-44     \textcolor{keyword}{def }GetActive(self):
+5                                       :
+6         path=os.path.join(os.environ.get("CATPATH"), obj.dllName(),"python", type
+      )
+7         if (type=="element"):
+8             filename=os.path.join(path,obj.type()+".py")
+9         elif (type=="proc"):
+10             filename=os.path.join(path,obj.name()+".py")
+11         self.cat=cat
+12         #              (dict , source ,  filename , path , error information )
+13         #              (  0  ,   1    ,     2     ,    3 ,       4        )
+14         self.modules =  [None,  ""    ,  filename , path ,     None]
+15         self.ok = self.LoadFromFile()
+16 
+    def LoadFromFile(self):
+\end{DoxyCode}
+\hypertarget{classwrapper_1_1wrapper_ac836367c5b65afb2307339cbd5d30683}{
+\index{wrapper::wrapper@{wrapper::wrapper}!GetActive@{GetActive}}
+\index{GetActive@{GetActive}!wrapper::wrapper@{wrapper::wrapper}}
+\subsubsection[{GetActive}]{\setlength{\rightskip}{0pt plus 5cm}def wrapper::wrapper::GetActive ( {\em self})}}
+\label{classwrapper_1_1wrapper_ac836367c5b65afb2307339cbd5d30683}
+
+
+Definition at line 44 of file wrapper.py.
+
+
+\begin{DoxyCode}
+44                        :
 45         dict = self.modules[0]
-46         \textcolor{keywordflow}{if} dict \textcolor{keywordflow}{is} \textcolor{keywordtype}{None}:
-47             \textcolor{keywordflow}{return} \textcolor{keywordtype}{None}
-48         \textcolor{keywordflow}{else}:
-49             \textcolor{keywordflow}{return} ModuleDictWrapper(dict)
+46         if dict is None:
+47             return None
+48         else:
+49             return ModuleDictWrapper(dict)
 50 
 51 
-52 \textcolor{comment}{#---------------------------------------------------------------------------}
+52 #---------------------------------------------------------------------------
 53 
+class ModuleDictWrapper:
 \end{DoxyCode}
-\mbox{\Hypertarget{classwrapper_1_1wrapper_a38e355694400434e5759ad0a70e4d1bc}\label{classwrapper_1_1wrapper_a38e355694400434e5759ad0a70e4d1bc}} 
-\index{wrapper\+::wrapper@{wrapper\+::wrapper}!Get\+Filename@{Get\+Filename}}
-\index{Get\+Filename@{Get\+Filename}!wrapper\+::wrapper@{wrapper\+::wrapper}}
-\subsubsection{\texorpdfstring{Get\+Filename()}{GetFilename()}}
-{\footnotesize\ttfamily def wrapper.\+wrapper.\+Get\+Filename (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+\hypertarget{classwrapper_1_1wrapper_ae0c31da2925082f7d02d24e665d9d8f2}{
+\index{wrapper::wrapper@{wrapper::wrapper}!GetFilename@{GetFilename}}
+\index{GetFilename@{GetFilename}!wrapper::wrapper@{wrapper::wrapper}}
+\subsubsection[{GetFilename}]{\setlength{\rightskip}{0pt plus 5cm}def wrapper::wrapper::GetFilename ( {\em self})}}
+\label{classwrapper_1_1wrapper_ae0c31da2925082f7d02d24e665d9d8f2}
 
 
-
-Definition at line 41 of file wrapper.\+py.
-
-
-
-References wrapper.\+wrapper.\+modules.
+Definition at line 41 of file wrapper.py.
 
 
 \begin{DoxyCode}
-41     \textcolor{keyword}{def }GetFilename(self):
-42         \textcolor{keywordflow}{return} self.modules[2]
+41                          :
+42         return self.modules[2]
 43 
+    def GetActive(self):
 \end{DoxyCode}
-\mbox{\Hypertarget{classwrapper_1_1wrapper_a3c92a3d23586ea94e280359554b05baf}\label{classwrapper_1_1wrapper_a3c92a3d23586ea94e280359554b05baf}} 
-\index{wrapper\+::wrapper@{wrapper\+::wrapper}!Get\+File\+Path@{Get\+File\+Path}}
-\index{Get\+File\+Path@{Get\+File\+Path}!wrapper\+::wrapper@{wrapper\+::wrapper}}
-\subsubsection{\texorpdfstring{Get\+File\+Path()}{GetFilePath()}}
-{\footnotesize\ttfamily def wrapper.\+wrapper.\+Get\+File\+Path (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+\hypertarget{classwrapper_1_1wrapper_a874fd66ca205b3e79a22e1d3ae7254c5}{
+\index{wrapper::wrapper@{wrapper::wrapper}!GetFilePath@{GetFilePath}}
+\index{GetFilePath@{GetFilePath}!wrapper::wrapper@{wrapper::wrapper}}
+\subsubsection[{GetFilePath}]{\setlength{\rightskip}{0pt plus 5cm}def wrapper::wrapper::GetFilePath ( {\em self})}}
+\label{classwrapper_1_1wrapper_a874fd66ca205b3e79a22e1d3ae7254c5}
 
 
-
-Definition at line 38 of file wrapper.\+py.
-
-
-
-References wrapper.\+wrapper.\+modules.
+Definition at line 38 of file wrapper.py.
 
 
 \begin{DoxyCode}
-38     \textcolor{keyword}{def }GetFilePath(self):
-39         \textcolor{keywordflow}{return} self.modules[3]
+38                          :
+39         return self.modules[3]
 40 
+    def GetFilename(self):
 \end{DoxyCode}
-\mbox{\Hypertarget{classwrapper_1_1wrapper_a5d047ef93e1fb3cdf75b4fb8266a0a8a}\label{classwrapper_1_1wrapper_a5d047ef93e1fb3cdf75b4fb8266a0a8a}} 
-\index{wrapper\+::wrapper@{wrapper\+::wrapper}!Load\+Dict@{Load\+Dict}}
-\index{Load\+Dict@{Load\+Dict}!wrapper\+::wrapper@{wrapper\+::wrapper}}
-\subsubsection{\texorpdfstring{Load\+Dict()}{LoadDict()}}
-{\footnotesize\ttfamily def wrapper.\+wrapper.\+Load\+Dict (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+\hypertarget{classwrapper_1_1wrapper_a0aef3490086e1e271039044259f1966c}{
+\index{wrapper::wrapper@{wrapper::wrapper}!LoadDict@{LoadDict}}
+\index{LoadDict@{LoadDict}!wrapper::wrapper@{wrapper::wrapper}}
+\subsubsection[{LoadDict}]{\setlength{\rightskip}{0pt plus 5cm}def wrapper::wrapper::LoadDict ( {\em self})}}
+\label{classwrapper_1_1wrapper_a0aef3490086e1e271039044259f1966c}
 
 
-
-Definition at line 31 of file wrapper.\+py.
-
-
-
-References wrapper.\+wrapper.\+modules.
-
-
-
-Referenced by wrapper.\+wrapper.\+Load\+From\+Source().
+Definition at line 31 of file wrapper.py.
 
 
 \begin{DoxyCode}
-31     \textcolor{keyword}{def }LoadDict(self):
+31                       :
 32         source = self.modules[1]
-33         self.modules[0] = \{\}
-34         code = compile(source, \textcolor{stringliteral}{"wrap"} , \textcolor{stringliteral}{"exec"})
-35 \textcolor{comment}{#        print source}
-36         exec code \textcolor{keywordflow}{in} self.modules[0]
+33         self.modules[0] = {}
+34         code = compile(source, "wrap" , "exec")
+35 #        print source
+36         exec code in self.modules[0]
 37 
+    def GetFilePath(self):
 \end{DoxyCode}
-\mbox{\Hypertarget{classwrapper_1_1wrapper_a0ae8c1f5e175d8ea7d43223dc880aba6}\label{classwrapper_1_1wrapper_a0ae8c1f5e175d8ea7d43223dc880aba6}} 
-\index{wrapper\+::wrapper@{wrapper\+::wrapper}!Load\+From\+File@{Load\+From\+File}}
-\index{Load\+From\+File@{Load\+From\+File}!wrapper\+::wrapper@{wrapper\+::wrapper}}
-\subsubsection{\texorpdfstring{Load\+From\+File()}{LoadFromFile()}}
-{\footnotesize\ttfamily def wrapper.\+wrapper.\+Load\+From\+File (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+\hypertarget{classwrapper_1_1wrapper_ab315783e7a986b3e53d41877e3c41620}{
+\index{wrapper::wrapper@{wrapper::wrapper}!LoadFromFile@{LoadFromFile}}
+\index{LoadFromFile@{LoadFromFile}!wrapper::wrapper@{wrapper::wrapper}}
+\subsubsection[{LoadFromFile}]{\setlength{\rightskip}{0pt plus 5cm}def wrapper::wrapper::LoadFromFile ( {\em self})}}
+\label{classwrapper_1_1wrapper_ab315783e7a986b3e53d41877e3c41620}
 
 
-
-Definition at line 17 of file wrapper.\+py.
-
-
-
-References object.\+object.\+cat, wrapper.\+wrapper.\+cat, wrapper.\+wrapper.\+Load\+From\+Source(), and wrapper.\+wrapper.\+modules.
+Definition at line 17 of file wrapper.py.
 
 
 \begin{DoxyCode}
-17     \textcolor{keyword}{def }LoadFromFile(self):
-18         \textcolor{keywordflow}{if} os.path.isfile(self.modules[2]) :
-19             file = open(self.modules[2],\textcolor{stringliteral}{"rt"})
+17                           :
+18         if os.path.isfile(self.modules[2]) :
+19             file = open(self.modules[2],"rt")
 20             self.LoadFromSource(file.read())
 21             file.close()
-22             \textcolor{keywordflow}{return} \textcolor{keyword}{True}
-23         \textcolor{keywordflow}{else} :
-24             self.cat.debug(\textcolor{stringliteral}{"file "}+ self.modules[2] + \textcolor{stringliteral}{" does not exits. No plot associated to this
-       processus."},\textcolor{stringliteral}{"wrapper.py"})
-25             \textcolor{keywordflow}{return} \textcolor{keyword}{False}
+22             return True
+23         else :
+24             self.cat.debug("file "+ self.modules[2] + " does not exits. No plot a
+      ssociated to this processus.","wrapper.py")
+25             return False
 26 
+    def LoadFromSource(self,source):
 \end{DoxyCode}
-\mbox{\Hypertarget{classwrapper_1_1wrapper_aee2ada5ae65c88654d560ee4c9f23dbb}\label{classwrapper_1_1wrapper_aee2ada5ae65c88654d560ee4c9f23dbb}} 
-\index{wrapper\+::wrapper@{wrapper\+::wrapper}!Load\+From\+Source@{Load\+From\+Source}}
-\index{Load\+From\+Source@{Load\+From\+Source}!wrapper\+::wrapper@{wrapper\+::wrapper}}
-\subsubsection{\texorpdfstring{Load\+From\+Source()}{LoadFromSource()}}
-{\footnotesize\ttfamily def wrapper.\+wrapper.\+Load\+From\+Source (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{source }\end{DoxyParamCaption})}
+\hypertarget{classwrapper_1_1wrapper_ae63461400283e16ea7d67219f8a397da}{
+\index{wrapper::wrapper@{wrapper::wrapper}!LoadFromSource@{LoadFromSource}}
+\index{LoadFromSource@{LoadFromSource}!wrapper::wrapper@{wrapper::wrapper}}
+\subsubsection[{LoadFromSource}]{\setlength{\rightskip}{0pt plus 5cm}def wrapper::wrapper::LoadFromSource ( {\em self}, \/   {\em source})}}
+\label{classwrapper_1_1wrapper_ae63461400283e16ea7d67219f8a397da}
 
 
-
-Definition at line 27 of file wrapper.\+py.
-
-
-
-References wrapper.\+wrapper.\+Load\+Dict(), and wrapper.\+wrapper.\+modules.
-
-
-
-Referenced by wrapper.\+wrapper.\+Load\+From\+File().
+Definition at line 27 of file wrapper.py.
 
 
 \begin{DoxyCode}
-27     \textcolor{keyword}{def }LoadFromSource(self,source):
+27                                    :
 28         self.modules[1] = source
 29         self.LoadDict()
 30 
+    def LoadDict(self):
 \end{DoxyCode}
 
 
 \subsection{Member Data Documentation}
-\mbox{\Hypertarget{classwrapper_1_1wrapper_ab0c2277e5f957e77c3502085b5629c2c}\label{classwrapper_1_1wrapper_ab0c2277e5f957e77c3502085b5629c2c}} 
-\index{wrapper\+::wrapper@{wrapper\+::wrapper}!cat@{cat}}
-\index{cat@{cat}!wrapper\+::wrapper@{wrapper\+::wrapper}}
-\subsubsection{\texorpdfstring{cat}{cat}}
-{\footnotesize\ttfamily wrapper.\+wrapper.\+cat}
+\hypertarget{classwrapper_1_1wrapper_a258ac98ee9d8cb53ca4ab2bc6fd5f376}{
+\index{wrapper::wrapper@{wrapper::wrapper}!cat@{cat}}
+\index{cat@{cat}!wrapper::wrapper@{wrapper::wrapper}}
+\subsubsection[{cat}]{\setlength{\rightskip}{0pt plus 5cm}{\bf wrapper::wrapper::cat}}}
+\label{classwrapper_1_1wrapper_a258ac98ee9d8cb53ca4ab2bc6fd5f376}
 
 
-
-Definition at line 11 of file wrapper.\+py.
-
-
-
-Referenced by wrapper.\+wrapper.\+Load\+From\+File().
-
-\mbox{\Hypertarget{classwrapper_1_1wrapper_a59acff5098966e96d4ab251cde101735}\label{classwrapper_1_1wrapper_a59acff5098966e96d4ab251cde101735}} 
-\index{wrapper\+::wrapper@{wrapper\+::wrapper}!modules@{modules}}
-\index{modules@{modules}!wrapper\+::wrapper@{wrapper\+::wrapper}}
-\subsubsection{\texorpdfstring{modules}{modules}}
-{\footnotesize\ttfamily wrapper.\+wrapper.\+modules}
+Definition at line 11 of file wrapper.py.\hypertarget{classwrapper_1_1wrapper_af3a640a6e44b97a0a58aaa237fa9311b}{
+\index{wrapper::wrapper@{wrapper::wrapper}!modules@{modules}}
+\index{modules@{modules}!wrapper::wrapper@{wrapper::wrapper}}
+\subsubsection[{modules}]{\setlength{\rightskip}{0pt plus 5cm}{\bf wrapper::wrapper::modules}}}
+\label{classwrapper_1_1wrapper_af3a640a6e44b97a0a58aaa237fa9311b}
 
 
-
-Definition at line 14 of file wrapper.\+py.
-
-
-
-Referenced by wrapper.\+wrapper.\+Get\+Active(), wrapper.\+wrapper.\+Get\+Filename(), wrapper.\+wrapper.\+Get\+File\+Path(), wrapper.\+wrapper.\+Load\+Dict(), wrapper.\+wrapper.\+Load\+From\+File(), and wrapper.\+wrapper.\+Load\+From\+Source().
-
-\mbox{\Hypertarget{classwrapper_1_1wrapper_a81f1d31a0ccc51bfdf4d8e18eff6e437}\label{classwrapper_1_1wrapper_a81f1d31a0ccc51bfdf4d8e18eff6e437}} 
-\index{wrapper\+::wrapper@{wrapper\+::wrapper}!ok@{ok}}
-\index{ok@{ok}!wrapper\+::wrapper@{wrapper\+::wrapper}}
-\subsubsection{\texorpdfstring{ok}{ok}}
-{\footnotesize\ttfamily wrapper.\+wrapper.\+ok}
+Definition at line 14 of file wrapper.py.\hypertarget{classwrapper_1_1wrapper_a9922036691f66285e0eb72d3627d5352}{
+\index{wrapper::wrapper@{wrapper::wrapper}!ok@{ok}}
+\index{ok@{ok}!wrapper::wrapper@{wrapper::wrapper}}
+\subsubsection[{ok}]{\setlength{\rightskip}{0pt plus 5cm}{\bf wrapper::wrapper::ok}}}
+\label{classwrapper_1_1wrapper_a9922036691f66285e0eb72d3627d5352}
 
 
+Definition at line 15 of file wrapper.py.
 
-Definition at line 15 of file wrapper.\+py.
-
-
-
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
 \item 
-/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Python/python/\hyperlink{wrapper_8py}{wrapper.\+py}\end{DoxyCompactItemize}
+/home/eleclhcb/LHCb/lbcat-\/cmake/CatPython/python/\hyperlink{wrapper_8py}{wrapper.py}\end{DoxyCompactItemize}

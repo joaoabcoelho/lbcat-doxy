@@ -1,120 +1,90 @@
-\hypertarget{classCurrentMeasurement_1_1CurrentMeasurement}{}\section{Current\+Measurement.\+Current\+Measurement Class Reference}
-\label{classCurrentMeasurement_1_1CurrentMeasurement}\index{Current\+Measurement.\+Current\+Measurement@{Current\+Measurement.\+Current\+Measurement}}
-Inheritance diagram for Current\+Measurement.\+Current\+Measurement\+:\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=2.000000cm]{classCurrentMeasurement_1_1CurrentMeasurement}
-\end{center}
-\end{figure}
+\hypertarget{classCurrentMeasurement_1_1CurrentMeasurement}{
+\section{CurrentMeasurement::CurrentMeasurement Class Reference}
+\label{classCurrentMeasurement_1_1CurrentMeasurement}\index{CurrentMeasurement::CurrentMeasurement@{CurrentMeasurement::CurrentMeasurement}}
+}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-def \hyperlink{classCurrentMeasurement_1_1CurrentMeasurement_a6c638933aeb8a6ab17b3ff69823d259e}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, cat, obj, panel, path)
+def \hyperlink{classCurrentMeasurement_1_1CurrentMeasurement_a8d86e531d513ee677b94705b0463e50c}{\_\-\_\-init\_\-\_\-}
 \item 
-def \hyperlink{classCurrentMeasurement_1_1CurrentMeasurement_a25af769de641fb09274e8ac719114476}{on\+Apply} (self, event)
+def \hyperlink{classCurrentMeasurement_1_1CurrentMeasurement_a9e6507d2178348375ccd74ad1cf31cae}{onApply}
 \item 
-def \hyperlink{classCurrentMeasurement_1_1CurrentMeasurement_a8c8e77e7819a059bcb6eafbfe05cf34f}{update} (self)
+def \hyperlink{classCurrentMeasurement_1_1CurrentMeasurement_a982772cd38be997fa14bec525e04ca11}{update}
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classCurrentMeasurement_1_1CurrentMeasurement_a76a2cb79c02b94eb57e3f177a5e82732}{s1}
+\hyperlink{classCurrentMeasurement_1_1CurrentMeasurement_a42bc14191333b5834010b05d2ca3ece6}{s1}
 \item 
-\hyperlink{classCurrentMeasurement_1_1CurrentMeasurement_a200fb06a147bd5e386a4da95e84c2fe8}{s2}
+\hyperlink{classCurrentMeasurement_1_1CurrentMeasurement_ad88b00c17c89b2c02193c926e1198ca7}{s2}
 \item 
-\hyperlink{classCurrentMeasurement_1_1CurrentMeasurement_a6700e6d3ab7fe26783abd79560b64e64}{s3}
+\hyperlink{classCurrentMeasurement_1_1CurrentMeasurement_aae05b51df6c8e3cee2133eca4aee1f86}{s3}
 \item 
-\hyperlink{classCurrentMeasurement_1_1CurrentMeasurement_a809a02c49dce0fd059eadbd06740be0f}{s4}
+\hyperlink{classCurrentMeasurement_1_1CurrentMeasurement_af84388267bc65ccd644639685d6e858c}{s4}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 11 of file Current\+Measurement.\+py.
-
-
-
-\subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classCurrentMeasurement_1_1CurrentMeasurement_a6c638933aeb8a6ab17b3ff69823d259e}\label{classCurrentMeasurement_1_1CurrentMeasurement_a6c638933aeb8a6ab17b3ff69823d259e}} 
-\index{Current\+Measurement\+::\+Current\+Measurement@{Current\+Measurement\+::\+Current\+Measurement}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
-\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!Current\+Measurement\+::\+Current\+Measurement@{Current\+Measurement\+::\+Current\+Measurement}}
-\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
-{\footnotesize\ttfamily def Current\+Measurement.\+Current\+Measurement.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{panel,  }\item[{}]{path }\end{DoxyParamCaption})}
-
-
-
-Definition at line 12 of file Current\+Measurement.\+py.
-
-
-
-References element.\+element.\+loadxrc(), and proc.\+proc.\+loadxrc().
-
-
-\begin{DoxyCode}
-12     \textcolor{keyword}{def }\hyperlink{classwrapper_1_1ModuleDictWrapper_a9a7a794150502f51df687831583e13b9}{\_\_init\_\_}(self, cat, obj, panel, path):
-13         proc.\_\_init\_\_(self,cat,obj,panel,path)
-14         self.loadxrc()
-15         self.s1=self.getControl(\textcolor{stringliteral}{"s1"})
-16         self.s2=self.getControl(\textcolor{stringliteral}{"s2"})
-17         self.s3=self.getControl(\textcolor{stringliteral}{"s3"})
-18         self.s4=self.getControl(\textcolor{stringliteral}{"s4"})
-19         self.update()
-20         self.panel.Bind(wx.EVT\_BUTTON, self.onApply, id=xrc.XRCID(\textcolor{stringliteral}{"Apply"}))
-21 
-\end{DoxyCode}
-
+Definition at line 11 of file CurrentMeasurement.py.
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classCurrentMeasurement_1_1CurrentMeasurement_a25af769de641fb09274e8ac719114476}\label{classCurrentMeasurement_1_1CurrentMeasurement_a25af769de641fb09274e8ac719114476}} 
-\index{Current\+Measurement\+::\+Current\+Measurement@{Current\+Measurement\+::\+Current\+Measurement}!on\+Apply@{on\+Apply}}
-\index{on\+Apply@{on\+Apply}!Current\+Measurement\+::\+Current\+Measurement@{Current\+Measurement\+::\+Current\+Measurement}}
-\subsubsection{\texorpdfstring{on\+Apply()}{onApply()}}
-{\footnotesize\ttfamily def Current\+Measurement.\+Current\+Measurement.\+on\+Apply (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{event }\end{DoxyParamCaption})}
+\hypertarget{classCurrentMeasurement_1_1CurrentMeasurement_a8d86e531d513ee677b94705b0463e50c}{
+\index{CurrentMeasurement::CurrentMeasurement@{CurrentMeasurement::CurrentMeasurement}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!CurrentMeasurement::CurrentMeasurement@{CurrentMeasurement::CurrentMeasurement}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def CurrentMeasurement::CurrentMeasurement::\_\-\_\-init\_\-\_\- ( {\em self}, \/   {\em cat}, \/   {\em obj}, \/   {\em panel}, \/   {\em path})}}
+\label{classCurrentMeasurement_1_1CurrentMeasurement_a8d86e531d513ee677b94705b0463e50c}
 
 
-
-Definition at line 22 of file Current\+Measurement.\+py.
-
-
-
-References object.\+object.\+obj, Cfg\+Frame.\+Cfg\+Frame.\+obj, Storage\+Fifo.\+Storage\+Fifo.\+s1, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s1, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s1, Test\+U\+S\+B.\+Test\+U\+S\+B.\+s1, Test\+I2\+C.\+Test\+I2\+C.\+s1, Test\+Suite.\+Test\+Suite.\+s1, A\+D\+C\+Measurement.\+Current\+Measurement.\+s1, Current\+Measurement.\+Current\+Measurement.\+s1, Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+s1, Storage\+Fifo.\+Storage\+Fifo.\+s2, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s2, Test\+I2\+C.\+Test\+I2\+C.\+s2, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s2, Test\+U\+S\+B.\+Test\+U\+S\+B.\+s2, Test\+Suite.\+Test\+Suite.\+s2, A\+D\+C\+Measurement.\+Current\+Measurement.\+s2, Current\+Measurement.\+Current\+Measurement.\+s2, Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+s2, Test\+U\+S\+B.\+Test\+U\+S\+B.\+s3, Storage\+Fifo.\+Storage\+Fifo.\+s3, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s3, Test\+I2\+C.\+Test\+I2\+C.\+s3, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s3, Test\+Suite.\+Test\+Suite.\+s3, Current\+Measurement.\+Current\+Measurement.\+s3, Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+s3, A\+D\+C\+Measurement.\+Current\+Measurement.\+s3, Storage\+Fifo.\+Storage\+Fifo.\+s4, Test\+U\+S\+B.\+Test\+U\+S\+B.\+s4, Test\+I2\+C.\+Test\+I2\+C.\+s4, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s4, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s4, Test\+Suite.\+Test\+Suite.\+s4, Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+s4, A\+D\+C\+Measurement.\+Current\+Measurement.\+s4, and Current\+Measurement.\+Current\+Measurement.\+s4.
-
-
-
-Referenced by A3\+P\+E\+\_\+\+Bit\+Flip.\+A3\+P\+E\+\_\+\+Bit\+Flip.\+\_\+\+\_\+init\+\_\+\+\_\+(), and Emulate\+F\+E.\+Emulate\+F\+E.\+\_\+\+\_\+init\+\_\+\+\_\+().
+Definition at line 12 of file CurrentMeasurement.py.
 
 
 \begin{DoxyCode}
-22     \textcolor{keyword}{def }onApply(self, event):
+12                                              :
+13         proc.__init__(self,cat,obj,panel,path)
+14         self.loadxrc()
+15         self.s1=self.getControl("s1")
+16         self.s2=self.getControl("s2")
+17         self.s3=self.getControl("s3")
+18         self.s4=self.getControl("s4")
+19         self.update()
+20         self.panel.Bind(wx.EVT_BUTTON, self.onApply, id=xrc.XRCID("Apply"))
+21 
+    def onApply(self, event):
+\end{DoxyCode}
+\hypertarget{classCurrentMeasurement_1_1CurrentMeasurement_a9e6507d2178348375ccd74ad1cf31cae}{
+\index{CurrentMeasurement::CurrentMeasurement@{CurrentMeasurement::CurrentMeasurement}!onApply@{onApply}}
+\index{onApply@{onApply}!CurrentMeasurement::CurrentMeasurement@{CurrentMeasurement::CurrentMeasurement}}
+\subsubsection[{onApply}]{\setlength{\rightskip}{0pt plus 5cm}def CurrentMeasurement::CurrentMeasurement::onApply ( {\em self}, \/   {\em event})}}
+\label{classCurrentMeasurement_1_1CurrentMeasurement_a9e6507d2178348375ccd74ad1cf31cae}
+
+
+Definition at line 22 of file CurrentMeasurement.py.
+
+
+\begin{DoxyCode}
+22                             :
 23         v1 = float(self.s1.GetValue())
 24         v2 = float(self.s2.GetValue())
 25         v3 = float(self.s3.GetValue())
 26         v4 = float(self.s4.GetValue())
 27         self.obj.setSigma(v1,v2,v3,v4)
 28 
+    def update(self):
 \end{DoxyCode}
-\mbox{\Hypertarget{classCurrentMeasurement_1_1CurrentMeasurement_a8c8e77e7819a059bcb6eafbfe05cf34f}\label{classCurrentMeasurement_1_1CurrentMeasurement_a8c8e77e7819a059bcb6eafbfe05cf34f}} 
-\index{Current\+Measurement\+::\+Current\+Measurement@{Current\+Measurement\+::\+Current\+Measurement}!update@{update}}
-\index{update@{update}!Current\+Measurement\+::\+Current\+Measurement@{Current\+Measurement\+::\+Current\+Measurement}}
-\subsubsection{\texorpdfstring{update()}{update()}}
-{\footnotesize\ttfamily def Current\+Measurement.\+Current\+Measurement.\+update (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+\hypertarget{classCurrentMeasurement_1_1CurrentMeasurement_a982772cd38be997fa14bec525e04ca11}{
+\index{CurrentMeasurement::CurrentMeasurement@{CurrentMeasurement::CurrentMeasurement}!update@{update}}
+\index{update@{update}!CurrentMeasurement::CurrentMeasurement@{CurrentMeasurement::CurrentMeasurement}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}def CurrentMeasurement::CurrentMeasurement::update ( {\em self})}}
+\label{classCurrentMeasurement_1_1CurrentMeasurement_a982772cd38be997fa14bec525e04ca11}
 
 
-
-Definition at line 29 of file Current\+Measurement.\+py.
-
-
-
-References object.\+object.\+obj, Cfg\+Frame.\+Cfg\+Frame.\+obj, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s1, Test\+I2\+C.\+Test\+I2\+C.\+s1, Storage\+Fifo.\+Storage\+Fifo.\+s1, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s1, Test\+U\+S\+B.\+Test\+U\+S\+B.\+s1, Test\+Suite.\+Test\+Suite.\+s1, Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+s1, A\+D\+C\+Measurement.\+Current\+Measurement.\+s1, Current\+Measurement.\+Current\+Measurement.\+s1, Test\+U\+S\+B.\+Test\+U\+S\+B.\+s2, Storage\+Fifo.\+Storage\+Fifo.\+s2, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s2, Test\+I2\+C.\+Test\+I2\+C.\+s2, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s2, Test\+Suite.\+Test\+Suite.\+s2, Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+s2, A\+D\+C\+Measurement.\+Current\+Measurement.\+s2, Current\+Measurement.\+Current\+Measurement.\+s2, Test\+I2\+C.\+Test\+I2\+C.\+s3, Storage\+Fifo.\+Storage\+Fifo.\+s3, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s3, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s3, Test\+U\+S\+B.\+Test\+U\+S\+B.\+s3, Test\+Suite.\+Test\+Suite.\+s3, Current\+Measurement.\+Current\+Measurement.\+s3, Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+s3, A\+D\+C\+Measurement.\+Current\+Measurement.\+s3, Test\+U\+S\+B.\+Test\+U\+S\+B.\+s4, Test\+I2\+C.\+Test\+I2\+C.\+s4, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s4, Storage\+Fifo.\+Storage\+Fifo.\+s4, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s4, Test\+Suite.\+Test\+Suite.\+s4, Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+s4, A\+D\+C\+Measurement.\+Current\+Measurement.\+s4, and Current\+Measurement.\+Current\+Measurement.\+s4.
-
-
-
-Referenced by App\+Frame.\+App\+Frame.\+delete\+Hardware(), Conf\+Frame.\+Conf\+Frame.\+on\+Change(), Graph\+Frame.\+Graph\+Frame.\+on\+Change(), Cfg\+Frame.\+Cfg\+Frame.\+on\+Change(), Conf\+Frame.\+Conf\+Frame.\+on\+Edit(), App\+Frame.\+App\+Frame.\+on\+Load(), Conf\+Frame.\+Conf\+Frame.\+on\+Re\+Load(), Graph\+Frame.\+Graph\+Frame.\+on\+Re\+Load(), Cfg\+Frame.\+Cfg\+Frame.\+on\+Re\+Load(), and App\+Frame.\+App\+Frame.\+on\+Re\+Load().
+Definition at line 29 of file CurrentMeasurement.py.
 
 
 \begin{DoxyCode}
-29     \textcolor{keyword}{def }update(self):
+29                     :
 30         v1=self.obj.sigma(0)
 31         v2=self.obj.sigma(1)
 32         v3=self.obj.sigma(2)
@@ -125,70 +95,43 @@ Referenced by App\+Frame.\+App\+Frame.\+delete\+Hardware(), Conf\+Frame.\+Conf\+
 37         self.s3.SetValue(str(v3))
 38         self.s4.SetValue(str(v4))        
 39 
-40 \textcolor{comment}{#----------------------------------------------------------------------}
+40 #----------------------------------------------------------------------
 41 
+def Edit (cat, obj, panel, path):
 \end{DoxyCode}
 
 
 \subsection{Member Data Documentation}
-\mbox{\Hypertarget{classCurrentMeasurement_1_1CurrentMeasurement_a76a2cb79c02b94eb57e3f177a5e82732}\label{classCurrentMeasurement_1_1CurrentMeasurement_a76a2cb79c02b94eb57e3f177a5e82732}} 
-\index{Current\+Measurement\+::\+Current\+Measurement@{Current\+Measurement\+::\+Current\+Measurement}!s1@{s1}}
-\index{s1@{s1}!Current\+Measurement\+::\+Current\+Measurement@{Current\+Measurement\+::\+Current\+Measurement}}
-\subsubsection{\texorpdfstring{s1}{s1}}
-{\footnotesize\ttfamily Current\+Measurement.\+Current\+Measurement.\+s1}
+\hypertarget{classCurrentMeasurement_1_1CurrentMeasurement_a42bc14191333b5834010b05d2ca3ece6}{
+\index{CurrentMeasurement::CurrentMeasurement@{CurrentMeasurement::CurrentMeasurement}!s1@{s1}}
+\index{s1@{s1}!CurrentMeasurement::CurrentMeasurement@{CurrentMeasurement::CurrentMeasurement}}
+\subsubsection[{s1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CurrentMeasurement::CurrentMeasurement::s1}}}
+\label{classCurrentMeasurement_1_1CurrentMeasurement_a42bc14191333b5834010b05d2ca3ece6}
 
 
-
-Definition at line 15 of file Current\+Measurement.\+py.
-
-
-
-Referenced by Current\+Measurement.\+Current\+Measurement.\+on\+Apply(), and Current\+Measurement.\+Current\+Measurement.\+update().
-
-\mbox{\Hypertarget{classCurrentMeasurement_1_1CurrentMeasurement_a200fb06a147bd5e386a4da95e84c2fe8}\label{classCurrentMeasurement_1_1CurrentMeasurement_a200fb06a147bd5e386a4da95e84c2fe8}} 
-\index{Current\+Measurement\+::\+Current\+Measurement@{Current\+Measurement\+::\+Current\+Measurement}!s2@{s2}}
-\index{s2@{s2}!Current\+Measurement\+::\+Current\+Measurement@{Current\+Measurement\+::\+Current\+Measurement}}
-\subsubsection{\texorpdfstring{s2}{s2}}
-{\footnotesize\ttfamily Current\+Measurement.\+Current\+Measurement.\+s2}
+Definition at line 15 of file CurrentMeasurement.py.\hypertarget{classCurrentMeasurement_1_1CurrentMeasurement_ad88b00c17c89b2c02193c926e1198ca7}{
+\index{CurrentMeasurement::CurrentMeasurement@{CurrentMeasurement::CurrentMeasurement}!s2@{s2}}
+\index{s2@{s2}!CurrentMeasurement::CurrentMeasurement@{CurrentMeasurement::CurrentMeasurement}}
+\subsubsection[{s2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CurrentMeasurement::CurrentMeasurement::s2}}}
+\label{classCurrentMeasurement_1_1CurrentMeasurement_ad88b00c17c89b2c02193c926e1198ca7}
 
 
-
-Definition at line 16 of file Current\+Measurement.\+py.
-
-
-
-Referenced by Current\+Measurement.\+Current\+Measurement.\+on\+Apply(), and Current\+Measurement.\+Current\+Measurement.\+update().
-
-\mbox{\Hypertarget{classCurrentMeasurement_1_1CurrentMeasurement_a6700e6d3ab7fe26783abd79560b64e64}\label{classCurrentMeasurement_1_1CurrentMeasurement_a6700e6d3ab7fe26783abd79560b64e64}} 
-\index{Current\+Measurement\+::\+Current\+Measurement@{Current\+Measurement\+::\+Current\+Measurement}!s3@{s3}}
-\index{s3@{s3}!Current\+Measurement\+::\+Current\+Measurement@{Current\+Measurement\+::\+Current\+Measurement}}
-\subsubsection{\texorpdfstring{s3}{s3}}
-{\footnotesize\ttfamily Current\+Measurement.\+Current\+Measurement.\+s3}
+Definition at line 16 of file CurrentMeasurement.py.\hypertarget{classCurrentMeasurement_1_1CurrentMeasurement_aae05b51df6c8e3cee2133eca4aee1f86}{
+\index{CurrentMeasurement::CurrentMeasurement@{CurrentMeasurement::CurrentMeasurement}!s3@{s3}}
+\index{s3@{s3}!CurrentMeasurement::CurrentMeasurement@{CurrentMeasurement::CurrentMeasurement}}
+\subsubsection[{s3}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CurrentMeasurement::CurrentMeasurement::s3}}}
+\label{classCurrentMeasurement_1_1CurrentMeasurement_aae05b51df6c8e3cee2133eca4aee1f86}
 
 
-
-Definition at line 17 of file Current\+Measurement.\+py.
-
-
-
-Referenced by Current\+Measurement.\+Current\+Measurement.\+on\+Apply(), and Current\+Measurement.\+Current\+Measurement.\+update().
-
-\mbox{\Hypertarget{classCurrentMeasurement_1_1CurrentMeasurement_a809a02c49dce0fd059eadbd06740be0f}\label{classCurrentMeasurement_1_1CurrentMeasurement_a809a02c49dce0fd059eadbd06740be0f}} 
-\index{Current\+Measurement\+::\+Current\+Measurement@{Current\+Measurement\+::\+Current\+Measurement}!s4@{s4}}
-\index{s4@{s4}!Current\+Measurement\+::\+Current\+Measurement@{Current\+Measurement\+::\+Current\+Measurement}}
-\subsubsection{\texorpdfstring{s4}{s4}}
-{\footnotesize\ttfamily Current\+Measurement.\+Current\+Measurement.\+s4}
+Definition at line 17 of file CurrentMeasurement.py.\hypertarget{classCurrentMeasurement_1_1CurrentMeasurement_af84388267bc65ccd644639685d6e858c}{
+\index{CurrentMeasurement::CurrentMeasurement@{CurrentMeasurement::CurrentMeasurement}!s4@{s4}}
+\index{s4@{s4}!CurrentMeasurement::CurrentMeasurement@{CurrentMeasurement::CurrentMeasurement}}
+\subsubsection[{s4}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CurrentMeasurement::CurrentMeasurement::s4}}}
+\label{classCurrentMeasurement_1_1CurrentMeasurement_af84388267bc65ccd644639685d6e858c}
 
 
+Definition at line 18 of file CurrentMeasurement.py.
 
-Definition at line 18 of file Current\+Measurement.\+py.
-
-
-
-Referenced by Current\+Measurement.\+Current\+Measurement.\+on\+Apply(), and Current\+Measurement.\+Current\+Measurement.\+update().
-
-
-
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
 \item 
-/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+N\+I/python/proc/\hyperlink{CurrentMeasurement_8py}{Current\+Measurement.\+py}\end{DoxyCompactItemize}
+/home/eleclhcb/LHCb/lbcat-\/cmake/CatNI/python/proc/\hyperlink{CurrentMeasurement_8py}{CurrentMeasurement.py}\end{DoxyCompactItemize}

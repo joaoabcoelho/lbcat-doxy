@@ -1,120 +1,90 @@
-\hypertarget{classTestSuite_1_1TestSuite}{}\section{Test\+Suite.\+Test\+Suite Class Reference}
-\label{classTestSuite_1_1TestSuite}\index{Test\+Suite.\+Test\+Suite@{Test\+Suite.\+Test\+Suite}}
-Inheritance diagram for Test\+Suite.\+Test\+Suite\+:\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=2.000000cm]{classTestSuite_1_1TestSuite}
-\end{center}
-\end{figure}
+\hypertarget{classTestSuite_1_1TestSuite}{
+\section{TestSuite::TestSuite Class Reference}
+\label{classTestSuite_1_1TestSuite}\index{TestSuite::TestSuite@{TestSuite::TestSuite}}
+}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-def \hyperlink{classTestSuite_1_1TestSuite_a21be2485fa1e8a4d16b7f0a90b186599}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, cat, obj, panel, path)
+def \hyperlink{classTestSuite_1_1TestSuite_a064abccc146fe414e554e4fc3246410a}{\_\-\_\-init\_\-\_\-}
 \item 
-def \hyperlink{classTestSuite_1_1TestSuite_a40cdae2e901d21c94a0153699f518846}{on\+Apply} (self, event)
+def \hyperlink{classTestSuite_1_1TestSuite_a80b48e10e265f0bee62ae672364621a6}{onApply}
 \item 
-def \hyperlink{classTestSuite_1_1TestSuite_aee5f1c66f7aa5189cd2ed3cf2fca93f5}{update} (self)
+def \hyperlink{classTestSuite_1_1TestSuite_ac971f21027b51f6266bf1ffe875781d2}{update}
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classTestSuite_1_1TestSuite_a314e3935627e2cd3c18e13746a9758fd}{s1}
+\hyperlink{classTestSuite_1_1TestSuite_aab040614aa1856540c3350159aa2d400}{s1}
 \item 
-\hyperlink{classTestSuite_1_1TestSuite_a30791bbda8dc9662453603b1be89281a}{s2}
+\hyperlink{classTestSuite_1_1TestSuite_afb317b632353bd3ed504627458247062}{s2}
 \item 
-\hyperlink{classTestSuite_1_1TestSuite_a9995e2f1a3b89fdf26e782b9aefae2cc}{s3}
+\hyperlink{classTestSuite_1_1TestSuite_a90deb1b548daa550141b71dfeacae780}{s3}
 \item 
-\hyperlink{classTestSuite_1_1TestSuite_a8bd2aac24a75e71c7da35673d95f481a}{s4}
+\hyperlink{classTestSuite_1_1TestSuite_aa5d3fc0a9e3afb7491c124e4374da5ed}{s4}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 10 of file Test\+Suite.\+py.
-
-
-
-\subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classTestSuite_1_1TestSuite_a21be2485fa1e8a4d16b7f0a90b186599}\label{classTestSuite_1_1TestSuite_a21be2485fa1e8a4d16b7f0a90b186599}} 
-\index{Test\+Suite\+::\+Test\+Suite@{Test\+Suite\+::\+Test\+Suite}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
-\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!Test\+Suite\+::\+Test\+Suite@{Test\+Suite\+::\+Test\+Suite}}
-\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
-{\footnotesize\ttfamily def Test\+Suite.\+Test\+Suite.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{panel,  }\item[{}]{path }\end{DoxyParamCaption})}
-
-
-
-Definition at line 11 of file Test\+Suite.\+py.
-
-
-
-References element.\+element.\+loadxrc(), and proc.\+proc.\+loadxrc().
-
-
-\begin{DoxyCode}
-11     \textcolor{keyword}{def }\hyperlink{classwrapper_1_1ModuleDictWrapper_a9a7a794150502f51df687831583e13b9}{\_\_init\_\_}(self, cat, obj, panel, path):
-12         proc.\_\_init\_\_(self,cat,obj,panel,path)
-13         self.loadxrc()
-14         self.s1=self.getControl(\textcolor{stringliteral}{"s1"})
-15         self.s2=self.getControl(\textcolor{stringliteral}{"s2"})
-16         self.s3=self.getControl(\textcolor{stringliteral}{"s3"})
-17         self.s4=self.getControl(\textcolor{stringliteral}{"s4"})
-18         self.update()
-19         self.panel.Bind(wx.EVT\_BUTTON, self.onApply, id=xrc.XRCID(\textcolor{stringliteral}{"Apply"}))
-20 
-\end{DoxyCode}
-
+Definition at line 10 of file TestSuite.py.
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classTestSuite_1_1TestSuite_a40cdae2e901d21c94a0153699f518846}\label{classTestSuite_1_1TestSuite_a40cdae2e901d21c94a0153699f518846}} 
-\index{Test\+Suite\+::\+Test\+Suite@{Test\+Suite\+::\+Test\+Suite}!on\+Apply@{on\+Apply}}
-\index{on\+Apply@{on\+Apply}!Test\+Suite\+::\+Test\+Suite@{Test\+Suite\+::\+Test\+Suite}}
-\subsubsection{\texorpdfstring{on\+Apply()}{onApply()}}
-{\footnotesize\ttfamily def Test\+Suite.\+Test\+Suite.\+on\+Apply (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{event }\end{DoxyParamCaption})}
+\hypertarget{classTestSuite_1_1TestSuite_a064abccc146fe414e554e4fc3246410a}{
+\index{TestSuite::TestSuite@{TestSuite::TestSuite}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!TestSuite::TestSuite@{TestSuite::TestSuite}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def TestSuite::TestSuite::\_\-\_\-init\_\-\_\- ( {\em self}, \/   {\em cat}, \/   {\em obj}, \/   {\em panel}, \/   {\em path})}}
+\label{classTestSuite_1_1TestSuite_a064abccc146fe414e554e4fc3246410a}
 
 
-
-Definition at line 21 of file Test\+Suite.\+py.
-
-
-
-References object.\+object.\+obj, Cfg\+Frame.\+Cfg\+Frame.\+obj, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s1, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s1, Test\+U\+S\+B.\+Test\+U\+S\+B.\+s1, Storage\+Fifo.\+Storage\+Fifo.\+s1, Test\+I2\+C.\+Test\+I2\+C.\+s1, Test\+Suite.\+Test\+Suite.\+s1, Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+s1, Storage\+Fifo.\+Storage\+Fifo.\+s2, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s2, Test\+I2\+C.\+Test\+I2\+C.\+s2, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s2, Test\+U\+S\+B.\+Test\+U\+S\+B.\+s2, Test\+Suite.\+Test\+Suite.\+s2, Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+s2, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s3, Test\+I2\+C.\+Test\+I2\+C.\+s3, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s3, Test\+U\+S\+B.\+Test\+U\+S\+B.\+s3, Storage\+Fifo.\+Storage\+Fifo.\+s3, Test\+Suite.\+Test\+Suite.\+s3, Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+s3, Test\+U\+S\+B.\+Test\+U\+S\+B.\+s4, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s4, Test\+I2\+C.\+Test\+I2\+C.\+s4, Storage\+Fifo.\+Storage\+Fifo.\+s4, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s4, Test\+Suite.\+Test\+Suite.\+s4, Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+s4, and Test\+Suite.\+set\+Sigma().
-
-
-
-Referenced by A3\+P\+E\+\_\+\+Bit\+Flip.\+A3\+P\+E\+\_\+\+Bit\+Flip.\+\_\+\+\_\+init\+\_\+\+\_\+(), and Emulate\+F\+E.\+Emulate\+F\+E.\+\_\+\+\_\+init\+\_\+\+\_\+().
+Definition at line 11 of file TestSuite.py.
 
 
 \begin{DoxyCode}
-21     \textcolor{keyword}{def }onApply(self, event):
+11                                              :
+12         proc.__init__(self,cat,obj,panel,path)
+13         self.loadxrc()
+14         self.s1=self.getControl("s1")
+15         self.s2=self.getControl("s2")
+16         self.s3=self.getControl("s3")
+17         self.s4=self.getControl("s4")
+18         self.update()
+19         self.panel.Bind(wx.EVT_BUTTON, self.onApply, id=xrc.XRCID("Apply"))
+20 
+    def onApply(self, event):
+\end{DoxyCode}
+\hypertarget{classTestSuite_1_1TestSuite_a80b48e10e265f0bee62ae672364621a6}{
+\index{TestSuite::TestSuite@{TestSuite::TestSuite}!onApply@{onApply}}
+\index{onApply@{onApply}!TestSuite::TestSuite@{TestSuite::TestSuite}}
+\subsubsection[{onApply}]{\setlength{\rightskip}{0pt plus 5cm}def TestSuite::TestSuite::onApply ( {\em self}, \/   {\em event})}}
+\label{classTestSuite_1_1TestSuite_a80b48e10e265f0bee62ae672364621a6}
+
+
+Definition at line 21 of file TestSuite.py.
+
+
+\begin{DoxyCode}
+21                             :
 22         v1 = float(self.s1.GetValue())
 23         v2 = float(self.s2.GetValue())
 24         v3 = float(self.s3.GetValue())
 25         v4 = float(self.s4.GetValue())
 26         self.obj.setSigma(v1,v2,v3,v4)
 27 
+    def update(self):
 \end{DoxyCode}
-\mbox{\Hypertarget{classTestSuite_1_1TestSuite_aee5f1c66f7aa5189cd2ed3cf2fca93f5}\label{classTestSuite_1_1TestSuite_aee5f1c66f7aa5189cd2ed3cf2fca93f5}} 
-\index{Test\+Suite\+::\+Test\+Suite@{Test\+Suite\+::\+Test\+Suite}!update@{update}}
-\index{update@{update}!Test\+Suite\+::\+Test\+Suite@{Test\+Suite\+::\+Test\+Suite}}
-\subsubsection{\texorpdfstring{update()}{update()}}
-{\footnotesize\ttfamily def Test\+Suite.\+Test\+Suite.\+update (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+\hypertarget{classTestSuite_1_1TestSuite_ac971f21027b51f6266bf1ffe875781d2}{
+\index{TestSuite::TestSuite@{TestSuite::TestSuite}!update@{update}}
+\index{update@{update}!TestSuite::TestSuite@{TestSuite::TestSuite}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}def TestSuite::TestSuite::update ( {\em self})}}
+\label{classTestSuite_1_1TestSuite_ac971f21027b51f6266bf1ffe875781d2}
 
 
-
-Definition at line 28 of file Test\+Suite.\+py.
-
-
-
-References object.\+object.\+obj, Cfg\+Frame.\+Cfg\+Frame.\+obj, Storage\+Fifo.\+Storage\+Fifo.\+s1, Test\+U\+S\+B.\+Test\+U\+S\+B.\+s1, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s1, Test\+I2\+C.\+Test\+I2\+C.\+s1, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s1, Test\+Suite.\+Test\+Suite.\+s1, Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+s1, Storage\+Fifo.\+Storage\+Fifo.\+s2, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s2, Test\+I2\+C.\+Test\+I2\+C.\+s2, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s2, Test\+U\+S\+B.\+Test\+U\+S\+B.\+s2, Test\+Suite.\+Test\+Suite.\+s2, Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+s2, Storage\+Fifo.\+Storage\+Fifo.\+s3, Test\+I2\+C.\+Test\+I2\+C.\+s3, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s3, Test\+U\+S\+B.\+Test\+U\+S\+B.\+s3, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s3, Test\+Suite.\+Test\+Suite.\+s3, Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+s3, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s4, Storage\+Fifo.\+Storage\+Fifo.\+s4, Test\+U\+S\+B.\+Test\+U\+S\+B.\+s4, Test\+I2\+C.\+Test\+I2\+C.\+s4, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s4, Test\+Suite.\+Test\+Suite.\+s4, Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+s4, and Test\+Suite.\+sigma().
-
-
-
-Referenced by App\+Frame.\+App\+Frame.\+delete\+Hardware(), Conf\+Frame.\+Conf\+Frame.\+on\+Change(), Graph\+Frame.\+Graph\+Frame.\+on\+Change(), Cfg\+Frame.\+Cfg\+Frame.\+on\+Change(), Conf\+Frame.\+Conf\+Frame.\+on\+Edit(), App\+Frame.\+App\+Frame.\+on\+Load(), Conf\+Frame.\+Conf\+Frame.\+on\+Re\+Load(), Graph\+Frame.\+Graph\+Frame.\+on\+Re\+Load(), Cfg\+Frame.\+Cfg\+Frame.\+on\+Re\+Load(), and App\+Frame.\+App\+Frame.\+on\+Re\+Load().
+Definition at line 28 of file TestSuite.py.
 
 
 \begin{DoxyCode}
-28     \textcolor{keyword}{def }update(self):
+28                     :
 29         v1=self.obj.sigma(0)
 30         v2=self.obj.sigma(1)
 31         v3=self.obj.sigma(2)
@@ -125,70 +95,43 @@ Referenced by App\+Frame.\+App\+Frame.\+delete\+Hardware(), Conf\+Frame.\+Conf\+
 36         self.s3.SetValue(str(v3))
 37         self.s4.SetValue(str(v4))        
 38 
-39 \textcolor{comment}{#----------------------------------------------------------------------}
+39 #----------------------------------------------------------------------
 40 
+def Edit (cat, obj, panel, path):
 \end{DoxyCode}
 
 
 \subsection{Member Data Documentation}
-\mbox{\Hypertarget{classTestSuite_1_1TestSuite_a314e3935627e2cd3c18e13746a9758fd}\label{classTestSuite_1_1TestSuite_a314e3935627e2cd3c18e13746a9758fd}} 
-\index{Test\+Suite\+::\+Test\+Suite@{Test\+Suite\+::\+Test\+Suite}!s1@{s1}}
-\index{s1@{s1}!Test\+Suite\+::\+Test\+Suite@{Test\+Suite\+::\+Test\+Suite}}
-\subsubsection{\texorpdfstring{s1}{s1}}
-{\footnotesize\ttfamily Test\+Suite.\+Test\+Suite.\+s1}
+\hypertarget{classTestSuite_1_1TestSuite_aab040614aa1856540c3350159aa2d400}{
+\index{TestSuite::TestSuite@{TestSuite::TestSuite}!s1@{s1}}
+\index{s1@{s1}!TestSuite::TestSuite@{TestSuite::TestSuite}}
+\subsubsection[{s1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TestSuite::TestSuite::s1}}}
+\label{classTestSuite_1_1TestSuite_aab040614aa1856540c3350159aa2d400}
 
 
-
-Definition at line 14 of file Test\+Suite.\+py.
-
-
-
-Referenced by Test\+Suite.\+Test\+Suite.\+on\+Apply(), Current\+Measurement.\+Current\+Measurement.\+on\+Apply(), A\+D\+C\+Measurement.\+Current\+Measurement.\+on\+Apply(), Test\+Suite.\+Test\+Suite.\+update(), Current\+Measurement.\+Current\+Measurement.\+update(), and A\+D\+C\+Measurement.\+Current\+Measurement.\+update().
-
-\mbox{\Hypertarget{classTestSuite_1_1TestSuite_a30791bbda8dc9662453603b1be89281a}\label{classTestSuite_1_1TestSuite_a30791bbda8dc9662453603b1be89281a}} 
-\index{Test\+Suite\+::\+Test\+Suite@{Test\+Suite\+::\+Test\+Suite}!s2@{s2}}
-\index{s2@{s2}!Test\+Suite\+::\+Test\+Suite@{Test\+Suite\+::\+Test\+Suite}}
-\subsubsection{\texorpdfstring{s2}{s2}}
-{\footnotesize\ttfamily Test\+Suite.\+Test\+Suite.\+s2}
+Definition at line 14 of file TestSuite.py.\hypertarget{classTestSuite_1_1TestSuite_afb317b632353bd3ed504627458247062}{
+\index{TestSuite::TestSuite@{TestSuite::TestSuite}!s2@{s2}}
+\index{s2@{s2}!TestSuite::TestSuite@{TestSuite::TestSuite}}
+\subsubsection[{s2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TestSuite::TestSuite::s2}}}
+\label{classTestSuite_1_1TestSuite_afb317b632353bd3ed504627458247062}
 
 
-
-Definition at line 15 of file Test\+Suite.\+py.
-
-
-
-Referenced by Test\+Suite.\+Test\+Suite.\+on\+Apply(), Current\+Measurement.\+Current\+Measurement.\+on\+Apply(), A\+D\+C\+Measurement.\+Current\+Measurement.\+on\+Apply(), Test\+Suite.\+Test\+Suite.\+update(), Current\+Measurement.\+Current\+Measurement.\+update(), and A\+D\+C\+Measurement.\+Current\+Measurement.\+update().
-
-\mbox{\Hypertarget{classTestSuite_1_1TestSuite_a9995e2f1a3b89fdf26e782b9aefae2cc}\label{classTestSuite_1_1TestSuite_a9995e2f1a3b89fdf26e782b9aefae2cc}} 
-\index{Test\+Suite\+::\+Test\+Suite@{Test\+Suite\+::\+Test\+Suite}!s3@{s3}}
-\index{s3@{s3}!Test\+Suite\+::\+Test\+Suite@{Test\+Suite\+::\+Test\+Suite}}
-\subsubsection{\texorpdfstring{s3}{s3}}
-{\footnotesize\ttfamily Test\+Suite.\+Test\+Suite.\+s3}
+Definition at line 15 of file TestSuite.py.\hypertarget{classTestSuite_1_1TestSuite_a90deb1b548daa550141b71dfeacae780}{
+\index{TestSuite::TestSuite@{TestSuite::TestSuite}!s3@{s3}}
+\index{s3@{s3}!TestSuite::TestSuite@{TestSuite::TestSuite}}
+\subsubsection[{s3}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TestSuite::TestSuite::s3}}}
+\label{classTestSuite_1_1TestSuite_a90deb1b548daa550141b71dfeacae780}
 
 
-
-Definition at line 16 of file Test\+Suite.\+py.
-
-
-
-Referenced by Test\+Suite.\+Test\+Suite.\+on\+Apply(), Current\+Measurement.\+Current\+Measurement.\+on\+Apply(), A\+D\+C\+Measurement.\+Current\+Measurement.\+on\+Apply(), Test\+Suite.\+Test\+Suite.\+update(), Current\+Measurement.\+Current\+Measurement.\+update(), and A\+D\+C\+Measurement.\+Current\+Measurement.\+update().
-
-\mbox{\Hypertarget{classTestSuite_1_1TestSuite_a8bd2aac24a75e71c7da35673d95f481a}\label{classTestSuite_1_1TestSuite_a8bd2aac24a75e71c7da35673d95f481a}} 
-\index{Test\+Suite\+::\+Test\+Suite@{Test\+Suite\+::\+Test\+Suite}!s4@{s4}}
-\index{s4@{s4}!Test\+Suite\+::\+Test\+Suite@{Test\+Suite\+::\+Test\+Suite}}
-\subsubsection{\texorpdfstring{s4}{s4}}
-{\footnotesize\ttfamily Test\+Suite.\+Test\+Suite.\+s4}
+Definition at line 16 of file TestSuite.py.\hypertarget{classTestSuite_1_1TestSuite_aa5d3fc0a9e3afb7491c124e4374da5ed}{
+\index{TestSuite::TestSuite@{TestSuite::TestSuite}!s4@{s4}}
+\index{s4@{s4}!TestSuite::TestSuite@{TestSuite::TestSuite}}
+\subsubsection[{s4}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TestSuite::TestSuite::s4}}}
+\label{classTestSuite_1_1TestSuite_aa5d3fc0a9e3afb7491c124e4374da5ed}
 
 
+Definition at line 17 of file TestSuite.py.
 
-Definition at line 17 of file Test\+Suite.\+py.
-
-
-
-Referenced by Test\+Suite.\+Test\+Suite.\+on\+Apply(), Current\+Measurement.\+Current\+Measurement.\+on\+Apply(), A\+D\+C\+Measurement.\+Current\+Measurement.\+on\+Apply(), Test\+Suite.\+Test\+Suite.\+update(), Current\+Measurement.\+Current\+Measurement.\+update(), and A\+D\+C\+Measurement.\+Current\+Measurement.\+update().
-
-
-
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
 \item 
-/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/python/proc/\hyperlink{TestSuite_8py}{Test\+Suite.\+py}\end{DoxyCompactItemize}
+/home/eleclhcb/LHCb/lbcat-\/cmake/CatKernel/python/proc/\hyperlink{TestSuite_8py}{TestSuite.py}\end{DoxyCompactItemize}

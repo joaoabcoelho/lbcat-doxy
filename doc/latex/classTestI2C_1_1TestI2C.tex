@@ -1,120 +1,90 @@
-\hypertarget{classTestI2C_1_1TestI2C}{}\section{Test\+I2\+C.\+Test\+I2C Class Reference}
-\label{classTestI2C_1_1TestI2C}\index{Test\+I2\+C.\+Test\+I2C@{Test\+I2\+C.\+Test\+I2C}}
-Inheritance diagram for Test\+I2\+C.\+Test\+I2C\+:\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=2.000000cm]{classTestI2C_1_1TestI2C}
-\end{center}
-\end{figure}
+\hypertarget{classTestI2C_1_1TestI2C}{
+\section{TestI2C::TestI2C Class Reference}
+\label{classTestI2C_1_1TestI2C}\index{TestI2C::TestI2C@{TestI2C::TestI2C}}
+}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-def \hyperlink{classTestI2C_1_1TestI2C_ab3283d2bcd0fe2782094a799ef259334}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, cat, obj, panel, path)
+def \hyperlink{classTestI2C_1_1TestI2C_ab74f55b254d044b0ebfd47d04a765074}{\_\-\_\-init\_\-\_\-}
 \item 
-def \hyperlink{classTestI2C_1_1TestI2C_a6737e8674436af268fa39e4d6ebea064}{on\+Apply} (self, event)
+def \hyperlink{classTestI2C_1_1TestI2C_af291b7193981a5fedac63f6d4b237755}{onApply}
 \item 
-def \hyperlink{classTestI2C_1_1TestI2C_aa09430186d2af74fae791a1af932db65}{update} (self)
+def \hyperlink{classTestI2C_1_1TestI2C_a65a49c0918b5ec6475fcea5fa405d5fb}{update}
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classTestI2C_1_1TestI2C_a74973f987e57f6b47208b6a7438c951f}{s1}
+\hyperlink{classTestI2C_1_1TestI2C_a00d57a9891262d6929a7c788ef4a4d66}{s1}
 \item 
-\hyperlink{classTestI2C_1_1TestI2C_a17d8f06f958baf5845484d3bd12b3d1b}{s2}
+\hyperlink{classTestI2C_1_1TestI2C_ab4812bf64775a479e0580e7f36b7bfef}{s2}
 \item 
-\hyperlink{classTestI2C_1_1TestI2C_a45a9468d8f8ebcf3948936beb23d84b3}{s3}
+\hyperlink{classTestI2C_1_1TestI2C_a2d30fcf71b708351db5027bebcd70b6e}{s3}
 \item 
-\hyperlink{classTestI2C_1_1TestI2C_a44f094cf9bfdc3969deae28d12e0d3c3}{s4}
+\hyperlink{classTestI2C_1_1TestI2C_a30d6040b97028171387aa0b6edc158ef}{s4}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 9 of file Test\+I2\+C.\+py.
-
-
-
-\subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classTestI2C_1_1TestI2C_ab3283d2bcd0fe2782094a799ef259334}\label{classTestI2C_1_1TestI2C_ab3283d2bcd0fe2782094a799ef259334}} 
-\index{Test\+I2\+C\+::\+Test\+I2C@{Test\+I2\+C\+::\+Test\+I2C}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
-\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!Test\+I2\+C\+::\+Test\+I2C@{Test\+I2\+C\+::\+Test\+I2C}}
-\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
-{\footnotesize\ttfamily def Test\+I2\+C.\+Test\+I2\+C.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{panel,  }\item[{}]{path }\end{DoxyParamCaption})}
-
-
-
-Definition at line 10 of file Test\+I2\+C.\+py.
-
-
-
-References element.\+element.\+loadxrc(), and proc.\+proc.\+loadxrc().
-
-
-\begin{DoxyCode}
-10     \textcolor{keyword}{def }\hyperlink{classwrapper_1_1ModuleDictWrapper_a9a7a794150502f51df687831583e13b9}{\_\_init\_\_}(self, cat, obj, panel, path):
-11         proc.\_\_init\_\_(self,cat,obj,panel,path)
-12         self.loadxrc()
-13         self.s1=self.getControl(\textcolor{stringliteral}{"s1"})
-14         self.s2=self.getControl(\textcolor{stringliteral}{"s2"})
-15         self.s3=self.getControl(\textcolor{stringliteral}{"s3"})
-16         self.s4=self.getControl(\textcolor{stringliteral}{"s4"})
-17         self.update()
-18         self.panel.Bind(wx.EVT\_BUTTON, self.onApply, id=xrc.XRCID(\textcolor{stringliteral}{"Apply"}))
-19 
-\end{DoxyCode}
-
+Definition at line 9 of file TestI2C.py.
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classTestI2C_1_1TestI2C_a6737e8674436af268fa39e4d6ebea064}\label{classTestI2C_1_1TestI2C_a6737e8674436af268fa39e4d6ebea064}} 
-\index{Test\+I2\+C\+::\+Test\+I2C@{Test\+I2\+C\+::\+Test\+I2C}!on\+Apply@{on\+Apply}}
-\index{on\+Apply@{on\+Apply}!Test\+I2\+C\+::\+Test\+I2C@{Test\+I2\+C\+::\+Test\+I2C}}
-\subsubsection{\texorpdfstring{on\+Apply()}{onApply()}}
-{\footnotesize\ttfamily def Test\+I2\+C.\+Test\+I2\+C.\+on\+Apply (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{event }\end{DoxyParamCaption})}
+\hypertarget{classTestI2C_1_1TestI2C_ab74f55b254d044b0ebfd47d04a765074}{
+\index{TestI2C::TestI2C@{TestI2C::TestI2C}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!TestI2C::TestI2C@{TestI2C::TestI2C}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def TestI2C::TestI2C::\_\-\_\-init\_\-\_\- ( {\em self}, \/   {\em cat}, \/   {\em obj}, \/   {\em panel}, \/   {\em path})}}
+\label{classTestI2C_1_1TestI2C_ab74f55b254d044b0ebfd47d04a765074}
 
 
-
-Definition at line 20 of file Test\+I2\+C.\+py.
-
-
-
-References object.\+object.\+obj, Cfg\+Frame.\+Cfg\+Frame.\+obj, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s1, Test\+I2\+C.\+Test\+I2\+C.\+s1, Storage\+Fifo.\+Storage\+Fifo.\+s1, Storage\+Fifo.\+Storage\+Fifo.\+s2, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s2, Test\+I2\+C.\+Test\+I2\+C.\+s2, Test\+I2\+C.\+Test\+I2\+C.\+s3, Storage\+Fifo.\+Storage\+Fifo.\+s3, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s3, Test\+I2\+C.\+Test\+I2\+C.\+s4, Storage\+Fifo.\+Storage\+Fifo.\+s4, and Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s4.
-
-
-
-Referenced by A3\+P\+E\+\_\+\+Bit\+Flip.\+A3\+P\+E\+\_\+\+Bit\+Flip.\+\_\+\+\_\+init\+\_\+\+\_\+(), and Emulate\+F\+E.\+Emulate\+F\+E.\+\_\+\+\_\+init\+\_\+\+\_\+().
+Definition at line 10 of file TestI2C.py.
 
 
 \begin{DoxyCode}
-20     \textcolor{keyword}{def }onApply(self, event):
+10                                              :
+11         proc.__init__(self,cat,obj,panel,path)
+12         self.loadxrc()
+13         self.s1=self.getControl("s1")
+14         self.s2=self.getControl("s2")
+15         self.s3=self.getControl("s3")
+16         self.s4=self.getControl("s4")
+17         self.update()
+18         self.panel.Bind(wx.EVT_BUTTON, self.onApply, id=xrc.XRCID("Apply"))
+19 
+    def onApply(self, event):
+\end{DoxyCode}
+\hypertarget{classTestI2C_1_1TestI2C_af291b7193981a5fedac63f6d4b237755}{
+\index{TestI2C::TestI2C@{TestI2C::TestI2C}!onApply@{onApply}}
+\index{onApply@{onApply}!TestI2C::TestI2C@{TestI2C::TestI2C}}
+\subsubsection[{onApply}]{\setlength{\rightskip}{0pt plus 5cm}def TestI2C::TestI2C::onApply ( {\em self}, \/   {\em event})}}
+\label{classTestI2C_1_1TestI2C_af291b7193981a5fedac63f6d4b237755}
+
+
+Definition at line 20 of file TestI2C.py.
+
+
+\begin{DoxyCode}
+20                             :
 21         v1 = float(self.s1.GetValue())
 22         v2 = float(self.s2.GetValue())
 23         v3 = float(self.s3.GetValue())
 24         v4 = float(self.s4.GetValue())
 25         self.obj.setSigma(v1,v2,v3,v4)
 26 
+    def update(self):
 \end{DoxyCode}
-\mbox{\Hypertarget{classTestI2C_1_1TestI2C_aa09430186d2af74fae791a1af932db65}\label{classTestI2C_1_1TestI2C_aa09430186d2af74fae791a1af932db65}} 
-\index{Test\+I2\+C\+::\+Test\+I2C@{Test\+I2\+C\+::\+Test\+I2C}!update@{update}}
-\index{update@{update}!Test\+I2\+C\+::\+Test\+I2C@{Test\+I2\+C\+::\+Test\+I2C}}
-\subsubsection{\texorpdfstring{update()}{update()}}
-{\footnotesize\ttfamily def Test\+I2\+C.\+Test\+I2\+C.\+update (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+\hypertarget{classTestI2C_1_1TestI2C_a65a49c0918b5ec6475fcea5fa405d5fb}{
+\index{TestI2C::TestI2C@{TestI2C::TestI2C}!update@{update}}
+\index{update@{update}!TestI2C::TestI2C@{TestI2C::TestI2C}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}def TestI2C::TestI2C::update ( {\em self})}}
+\label{classTestI2C_1_1TestI2C_a65a49c0918b5ec6475fcea5fa405d5fb}
 
 
-
-Definition at line 27 of file Test\+I2\+C.\+py.
-
-
-
-References object.\+object.\+obj, Cfg\+Frame.\+Cfg\+Frame.\+obj, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s1, Test\+I2\+C.\+Test\+I2\+C.\+s1, Storage\+Fifo.\+Storage\+Fifo.\+s1, Test\+I2\+C.\+Test\+I2\+C.\+s2, Storage\+Fifo.\+Storage\+Fifo.\+s2, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s2, Storage\+Fifo.\+Storage\+Fifo.\+s3, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s3, Test\+I2\+C.\+Test\+I2\+C.\+s3, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s4, Storage\+Fifo.\+Storage\+Fifo.\+s4, and Test\+I2\+C.\+Test\+I2\+C.\+s4.
-
-
-
-Referenced by App\+Frame.\+App\+Frame.\+delete\+Hardware(), Conf\+Frame.\+Conf\+Frame.\+on\+Change(), Graph\+Frame.\+Graph\+Frame.\+on\+Change(), Cfg\+Frame.\+Cfg\+Frame.\+on\+Change(), Conf\+Frame.\+Conf\+Frame.\+on\+Edit(), App\+Frame.\+App\+Frame.\+on\+Load(), Conf\+Frame.\+Conf\+Frame.\+on\+Re\+Load(), Graph\+Frame.\+Graph\+Frame.\+on\+Re\+Load(), Cfg\+Frame.\+Cfg\+Frame.\+on\+Re\+Load(), and App\+Frame.\+App\+Frame.\+on\+Re\+Load().
+Definition at line 27 of file TestI2C.py.
 
 
 \begin{DoxyCode}
-27     \textcolor{keyword}{def }update(self):
+27                     :
 28         v1=self.obj.sigma(0)
 29         v2=self.obj.sigma(1)
 30         v3=self.obj.sigma(2)
@@ -125,70 +95,43 @@ Referenced by App\+Frame.\+App\+Frame.\+delete\+Hardware(), Conf\+Frame.\+Conf\+
 35         self.s3.SetValue(str(v3))
 36         self.s4.SetValue(str(v4))        
 37 
-38 \textcolor{comment}{#----------------------------------------------------------------------}
+38 #----------------------------------------------------------------------
 39 
+def Edit (cat, obj, panel, path):
 \end{DoxyCode}
 
 
 \subsection{Member Data Documentation}
-\mbox{\Hypertarget{classTestI2C_1_1TestI2C_a74973f987e57f6b47208b6a7438c951f}\label{classTestI2C_1_1TestI2C_a74973f987e57f6b47208b6a7438c951f}} 
-\index{Test\+I2\+C\+::\+Test\+I2C@{Test\+I2\+C\+::\+Test\+I2C}!s1@{s1}}
-\index{s1@{s1}!Test\+I2\+C\+::\+Test\+I2C@{Test\+I2\+C\+::\+Test\+I2C}}
-\subsubsection{\texorpdfstring{s1}{s1}}
-{\footnotesize\ttfamily Test\+I2\+C.\+Test\+I2\+C.\+s1}
+\hypertarget{classTestI2C_1_1TestI2C_a00d57a9891262d6929a7c788ef4a4d66}{
+\index{TestI2C::TestI2C@{TestI2C::TestI2C}!s1@{s1}}
+\index{s1@{s1}!TestI2C::TestI2C@{TestI2C::TestI2C}}
+\subsubsection[{s1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TestI2C::TestI2C::s1}}}
+\label{classTestI2C_1_1TestI2C_a00d57a9891262d6929a7c788ef4a4d66}
 
 
-
-Definition at line 13 of file Test\+I2\+C.\+py.
-
-
-
-Referenced by Test\+I2\+C.\+Test\+I2\+C.\+on\+Apply(), Test\+U\+S\+B.\+Test\+U\+S\+B.\+on\+Apply(), Test\+S\+P\+I.\+Test\+S\+P\+I.\+on\+Apply(), Test\+Suite.\+Test\+Suite.\+on\+Apply(), A\+D\+C\+Measurement.\+Current\+Measurement.\+on\+Apply(), Current\+Measurement.\+Current\+Measurement.\+on\+Apply(), Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+on\+Apply(), Test\+S\+P\+I.\+Test\+S\+P\+I.\+update(), Test\+I2\+C.\+Test\+I2\+C.\+update(), Test\+U\+S\+B.\+Test\+U\+S\+B.\+update(), Test\+Suite.\+Test\+Suite.\+update(), A\+D\+C\+Measurement.\+Current\+Measurement.\+update(), Current\+Measurement.\+Current\+Measurement.\+update(), and Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+update().
-
-\mbox{\Hypertarget{classTestI2C_1_1TestI2C_a17d8f06f958baf5845484d3bd12b3d1b}\label{classTestI2C_1_1TestI2C_a17d8f06f958baf5845484d3bd12b3d1b}} 
-\index{Test\+I2\+C\+::\+Test\+I2C@{Test\+I2\+C\+::\+Test\+I2C}!s2@{s2}}
-\index{s2@{s2}!Test\+I2\+C\+::\+Test\+I2C@{Test\+I2\+C\+::\+Test\+I2C}}
-\subsubsection{\texorpdfstring{s2}{s2}}
-{\footnotesize\ttfamily Test\+I2\+C.\+Test\+I2\+C.\+s2}
+Definition at line 13 of file TestI2C.py.\hypertarget{classTestI2C_1_1TestI2C_ab4812bf64775a479e0580e7f36b7bfef}{
+\index{TestI2C::TestI2C@{TestI2C::TestI2C}!s2@{s2}}
+\index{s2@{s2}!TestI2C::TestI2C@{TestI2C::TestI2C}}
+\subsubsection[{s2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TestI2C::TestI2C::s2}}}
+\label{classTestI2C_1_1TestI2C_ab4812bf64775a479e0580e7f36b7bfef}
 
 
-
-Definition at line 14 of file Test\+I2\+C.\+py.
-
-
-
-Referenced by Test\+I2\+C.\+Test\+I2\+C.\+on\+Apply(), Test\+U\+S\+B.\+Test\+U\+S\+B.\+on\+Apply(), Test\+S\+P\+I.\+Test\+S\+P\+I.\+on\+Apply(), Test\+Suite.\+Test\+Suite.\+on\+Apply(), A\+D\+C\+Measurement.\+Current\+Measurement.\+on\+Apply(), Current\+Measurement.\+Current\+Measurement.\+on\+Apply(), Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+on\+Apply(), Test\+S\+P\+I.\+Test\+S\+P\+I.\+update(), Test\+I2\+C.\+Test\+I2\+C.\+update(), Test\+U\+S\+B.\+Test\+U\+S\+B.\+update(), Test\+Suite.\+Test\+Suite.\+update(), A\+D\+C\+Measurement.\+Current\+Measurement.\+update(), Current\+Measurement.\+Current\+Measurement.\+update(), and Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+update().
-
-\mbox{\Hypertarget{classTestI2C_1_1TestI2C_a45a9468d8f8ebcf3948936beb23d84b3}\label{classTestI2C_1_1TestI2C_a45a9468d8f8ebcf3948936beb23d84b3}} 
-\index{Test\+I2\+C\+::\+Test\+I2C@{Test\+I2\+C\+::\+Test\+I2C}!s3@{s3}}
-\index{s3@{s3}!Test\+I2\+C\+::\+Test\+I2C@{Test\+I2\+C\+::\+Test\+I2C}}
-\subsubsection{\texorpdfstring{s3}{s3}}
-{\footnotesize\ttfamily Test\+I2\+C.\+Test\+I2\+C.\+s3}
+Definition at line 14 of file TestI2C.py.\hypertarget{classTestI2C_1_1TestI2C_a2d30fcf71b708351db5027bebcd70b6e}{
+\index{TestI2C::TestI2C@{TestI2C::TestI2C}!s3@{s3}}
+\index{s3@{s3}!TestI2C::TestI2C@{TestI2C::TestI2C}}
+\subsubsection[{s3}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TestI2C::TestI2C::s3}}}
+\label{classTestI2C_1_1TestI2C_a2d30fcf71b708351db5027bebcd70b6e}
 
 
-
-Definition at line 15 of file Test\+I2\+C.\+py.
-
-
-
-Referenced by Test\+I2\+C.\+Test\+I2\+C.\+on\+Apply(), Test\+U\+S\+B.\+Test\+U\+S\+B.\+on\+Apply(), Test\+S\+P\+I.\+Test\+S\+P\+I.\+on\+Apply(), Test\+Suite.\+Test\+Suite.\+on\+Apply(), A\+D\+C\+Measurement.\+Current\+Measurement.\+on\+Apply(), Current\+Measurement.\+Current\+Measurement.\+on\+Apply(), Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+on\+Apply(), Test\+S\+P\+I.\+Test\+S\+P\+I.\+update(), Test\+I2\+C.\+Test\+I2\+C.\+update(), Test\+U\+S\+B.\+Test\+U\+S\+B.\+update(), Test\+Suite.\+Test\+Suite.\+update(), A\+D\+C\+Measurement.\+Current\+Measurement.\+update(), Current\+Measurement.\+Current\+Measurement.\+update(), and Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+update().
-
-\mbox{\Hypertarget{classTestI2C_1_1TestI2C_a44f094cf9bfdc3969deae28d12e0d3c3}\label{classTestI2C_1_1TestI2C_a44f094cf9bfdc3969deae28d12e0d3c3}} 
-\index{Test\+I2\+C\+::\+Test\+I2C@{Test\+I2\+C\+::\+Test\+I2C}!s4@{s4}}
-\index{s4@{s4}!Test\+I2\+C\+::\+Test\+I2C@{Test\+I2\+C\+::\+Test\+I2C}}
-\subsubsection{\texorpdfstring{s4}{s4}}
-{\footnotesize\ttfamily Test\+I2\+C.\+Test\+I2\+C.\+s4}
+Definition at line 15 of file TestI2C.py.\hypertarget{classTestI2C_1_1TestI2C_a30d6040b97028171387aa0b6edc158ef}{
+\index{TestI2C::TestI2C@{TestI2C::TestI2C}!s4@{s4}}
+\index{s4@{s4}!TestI2C::TestI2C@{TestI2C::TestI2C}}
+\subsubsection[{s4}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TestI2C::TestI2C::s4}}}
+\label{classTestI2C_1_1TestI2C_a30d6040b97028171387aa0b6edc158ef}
 
 
+Definition at line 16 of file TestI2C.py.
 
-Definition at line 16 of file Test\+I2\+C.\+py.
-
-
-
-Referenced by Test\+I2\+C.\+Test\+I2\+C.\+on\+Apply(), Test\+U\+S\+B.\+Test\+U\+S\+B.\+on\+Apply(), Test\+S\+P\+I.\+Test\+S\+P\+I.\+on\+Apply(), Test\+Suite.\+Test\+Suite.\+on\+Apply(), A\+D\+C\+Measurement.\+Current\+Measurement.\+on\+Apply(), Current\+Measurement.\+Current\+Measurement.\+on\+Apply(), Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+on\+Apply(), Test\+S\+P\+I.\+Test\+S\+P\+I.\+update(), Test\+I2\+C.\+Test\+I2\+C.\+update(), Test\+U\+S\+B.\+Test\+U\+S\+B.\+update(), Test\+Suite.\+Test\+Suite.\+update(), A\+D\+C\+Measurement.\+Current\+Measurement.\+update(), Current\+Measurement.\+Current\+Measurement.\+update(), and Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+update().
-
-
-
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
 \item 
-/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Calo\+Upgrade/python/proc/\hyperlink{TestI2C_8py}{Test\+I2\+C.\+py}\end{DoxyCompactItemize}
+/home/eleclhcb/LHCb/lbcat-\/cmake/CatCaloUpgrade/python/proc/\hyperlink{TestI2C_8py}{TestI2C.py}\end{DoxyCompactItemize}

@@ -1,34 +1,34 @@
-\hypertarget{classServer}{}\section{Server Class Reference}
+\hypertarget{classServer}{
+\section{Server Class Reference}
 \label{classServer}\index{Server@{Server}}
+}
 
 
-{\ttfamily \#include $<$inc/\+Server.\+h$>$}
-
-\subsection*{Public Member Functions}
+{\ttfamily \#include $<$inc/Server.h$>$}\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classServer_ac808c867e64a7f139b1958abeb387a15}{Server} (\hyperlink{classApplication}{Application} $\ast$)
-\begin{DoxyCompactList}\small\item\em Standard constructor. \end{DoxyCompactList}\item 
-virtual \hyperlink{classServer_a4b3aa2579cb1c8cd1d069582c14d0fa6}{$\sim$\+Server} ()
-\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
-\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classServer_a039cc5b24c26fa5bb8145335f27bb28e}{start} ()
-\begin{DoxyCompactList}\small\item\em Start Service. \end{DoxyCompactList}\item 
-\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classServer_abaa0b878f4f96454339f1989ec12cc6b}{update\+State} ()
-\begin{DoxyCompactList}\small\item\em Update \hyperlink{classState}{State} Service. \end{DoxyCompactList}\item 
-\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classServer_af58d60a5587813e2aab7fc9016dfa01a}{update\+Config} ()
-\begin{DoxyCompactList}\small\item\em Update \hyperlink{classConfig}{Config} Service. \end{DoxyCompactList}\item 
-\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classServer_adc7d38a333b12fbe03db3d209f5feae9}{cmdline} (std\+::vector$<$ std\+::string $>$)
+\begin{DoxyCompactList}\small\item\em Standard constructor. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classServer_a4b3aa2579cb1c8cd1d069582c14d0fa6}{$\sim$Server} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\item 
+\hyperlink{classStatusCode}{StatusCode} \hyperlink{classServer_a039cc5b24c26fa5bb8145335f27bb28e}{start} ()
+\begin{DoxyCompactList}\small\item\em Start Service. \item\end{DoxyCompactList}\item 
+\hyperlink{classStatusCode}{StatusCode} \hyperlink{classServer_abaa0b878f4f96454339f1989ec12cc6b}{updateState} ()
+\begin{DoxyCompactList}\small\item\em Update \hyperlink{classState}{State} Service. \item\end{DoxyCompactList}\item 
+\hyperlink{classStatusCode}{StatusCode} \hyperlink{classServer_af58d60a5587813e2aab7fc9016dfa01a}{updateConfig} ()
+\begin{DoxyCompactList}\small\item\em Update \hyperlink{classConfig}{Config} Service. \item\end{DoxyCompactList}\item 
+\hyperlink{classStatusCode}{StatusCode} \hyperlink{classServer_adc7d38a333b12fbe03db3d209f5feae9}{cmdline} (std::vector$<$ std::string $>$)
 \item 
-void \hyperlink{classServer_ac885fb635733c69a28fe3ec9bd21eac5}{set\+Update\+Delay} (int \hyperlink{classServer_ac3b91a1bf06dab7911e6d1b867d677bc}{update\+Delay})
+void \hyperlink{classServer_ac885fb635733c69a28fe3ec9bd21eac5}{setUpdateDelay} (int updateDelay)
 \item 
-int \hyperlink{classServer_ac3b91a1bf06dab7911e6d1b867d677bc}{update\+Delay} ()
+int \hyperlink{classServer_ac3b91a1bf06dab7911e6d1b867d677bc}{updateDelay} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classApplication}{Application} $\ast$ \hyperlink{classServer_ae1c25dc357c4a1145289c747fddaa251}{m\+\_\+app}
+\hyperlink{classApplication}{Application} $\ast$ \hyperlink{classServer_ae1c25dc357c4a1145289c747fddaa251}{m\_\-app}
 \item 
-int \hyperlink{classServer_ae991d55181bff0552a34278ea9f76735}{m\+\_\+update\+Delay}
+int \hyperlink{classServer_ae991d55181bff0552a34278ea9f76735}{m\_\-updateDelay}
 \end{DoxyCompactItemize}
 
 
@@ -41,343 +41,288 @@ Frederic Machefert
 \end{DoxyDate}
 
 
-Definition at line 22 of file Server.\+h.
-
-
+Definition at line 22 of file Server.h.
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classServer_ac808c867e64a7f139b1958abeb387a15}\label{classServer_ac808c867e64a7f139b1958abeb387a15}} 
+\hypertarget{classServer_ac808c867e64a7f139b1958abeb387a15}{
 \index{Server@{Server}!Server@{Server}}
 \index{Server@{Server}!Server@{Server}}
-\subsubsection{\texorpdfstring{Server()}{Server()}}
-{\footnotesize\ttfamily Server\+::\+Server (\begin{DoxyParamCaption}\item[{\hyperlink{classApplication}{Application} $\ast$}]{application }\end{DoxyParamCaption})}
-
+\subsubsection[{Server}]{\setlength{\rightskip}{0pt plus 5cm}Server::Server ({\bf Application} $\ast$ {\em application})}}
+\label{classServer_ac808c867e64a7f139b1958abeb387a15}
 
 
 Standard constructor. 
 
+Definition at line 26 of file Server.cpp.
 
-
-Definition at line 26 of file Server.\+cpp.
-
-
-
-References application(), Object\+::info(), m\+\_\+app, m\+\_\+update\+Delay, and Object\+::warning().
+References Object::info(), m\_\-app, m\_\-updateDelay, and Object::warning().
 
 
 \begin{DoxyCode}
-26                                          \{
-27   \hyperlink{classServer_ae1c25dc357c4a1145289c747fddaa251}{m\_app} = \hyperlink{Tools_8h_a27885a3c35afe79029fb830f32f66458}{application};
-28 \textcolor{preprocessor}{#ifdef \_NETWORK\_}
-29   \hyperlink{classServer_ae991d55181bff0552a34278ea9f76735}{m\_updateDelay} = 1;
-30   \hyperlink{classServer_ae1c25dc357c4a1145289c747fddaa251}{m\_app}->\hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"Server built."},\textcolor{stringliteral}{"Server::Server"});
-31   m\_servCmd    = \textcolor{keyword}{new} CmndServ ( \hyperlink{classServer_ae1c25dc357c4a1145289c747fddaa251}{m\_app} );
-32   m\_servCtrl   = \textcolor{keyword}{new} CtrlServ ( \hyperlink{classServer_ae1c25dc357c4a1145289c747fddaa251}{m\_app} );
-33   m\_servTimer  = 0;
-34   m\_servState  = 0;
-35   m\_servConfig = 0;
-36 \textcolor{preprocessor}{#else}
-37   \hyperlink{classServer_ae1c25dc357c4a1145289c747fddaa251}{m\_app}->\hyperlink{classObject_a65cd4fda577711660821fd2cd5a3b4c9}{warning}(\textcolor{stringliteral}{"Compilation without NETWORK capabilities"},\textcolor{stringliteral}{"Server::Server"}); 
-38 \textcolor{preprocessor}{#endif  }
-39 \}
+26                                          {
+27   m_app = application;
+28 #ifdef _NETWORK_
+29   m_updateDelay = 1;
+30   m_app->info("Server built.","Server::Server");
+31   m_servCmd    = new CmndServ ( m_app );
+32   m_servCtrl   = new CtrlServ ( m_app );
+33   m_servTimer  = 0;
+34   m_servState  = 0;
+35   m_servConfig = 0;
+36 #else
+37   m_app->warning("Compilation without NETWORK capabilities","Server::Server"); 
+38 #endif  
+39 }
 \end{DoxyCode}
-\mbox{\Hypertarget{classServer_a4b3aa2579cb1c8cd1d069582c14d0fa6}\label{classServer_a4b3aa2579cb1c8cd1d069582c14d0fa6}} 
-\index{Server@{Server}!````~Server@{$\sim$\+Server}}
-\index{````~Server@{$\sim$\+Server}!Server@{Server}}
-\subsubsection{\texorpdfstring{$\sim$\+Server()}{~Server()}}
-{\footnotesize\ttfamily Server\+::$\sim$\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
+\hypertarget{classServer_a4b3aa2579cb1c8cd1d069582c14d0fa6}{
+\index{Server@{Server}!$\sim$Server@{$\sim$Server}}
+\index{$\sim$Server@{$\sim$Server}!Server@{Server}}
+\subsubsection[{$\sim$Server}]{\setlength{\rightskip}{0pt plus 5cm}Server::$\sim$Server ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classServer_a4b3aa2579cb1c8cd1d069582c14d0fa6}
 
 
 Destructor. 
 
-
-
-Definition at line 44 of file Server.\+cpp.
+Definition at line 44 of file Server.cpp.
 
 
 \begin{DoxyCode}
-44                 \{
-45 \textcolor{preprocessor}{#ifdef \_NETWORK\_}
-46   \textcolor{keyword}{delete} m\_servCmd;
-47   \textcolor{keyword}{delete} m\_servCtrl;
-48   \textcolor{keywordflow}{if} ( 0 != m\_servState ) \{
-49     \textcolor{keyword}{delete} m\_servState;
-50   \}
-51   \textcolor{keywordflow}{if} ( 0 != m\_servTimer ) \{
-52     \textcolor{keyword}{delete} m\_servTimer;
-53   \}
-54   \textcolor{keywordflow}{if} ( 0 != m\_servConfig ) \{
-55     \textcolor{keyword}{delete} m\_servConfig;
-56   \}
-57   m\_servCmd    = 0;
-58   m\_servCtrl   = 0;
-59   m\_servTimer  = 0;
-60   m\_servState  = 0;
-61   m\_servConfig = 0;
-62 \textcolor{preprocessor}{#endif}
-63 \}
+44                 {
+45 #ifdef _NETWORK_
+46   delete m_servCmd;
+47   delete m_servCtrl;
+48   if ( 0 != m_servState ) {
+49     delete m_servState;
+50   }
+51   if ( 0 != m_servTimer ) {
+52     delete m_servTimer;
+53   }
+54   if ( 0 != m_servConfig ) {
+55     delete m_servConfig;
+56   }
+57   m_servCmd    = 0;
+58   m_servCtrl   = 0;
+59   m_servTimer  = 0;
+60   m_servState  = 0;
+61   m_servConfig = 0;
+62 #endif
+63 }
 \end{DoxyCode}
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classServer_adc7d38a333b12fbe03db3d209f5feae9}\label{classServer_adc7d38a333b12fbe03db3d209f5feae9}} 
+\hypertarget{classServer_adc7d38a333b12fbe03db3d209f5feae9}{
 \index{Server@{Server}!cmdline@{cmdline}}
 \index{cmdline@{cmdline}!Server@{Server}}
-\subsubsection{\texorpdfstring{cmdline()}{cmdline()}}
-{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} Server\+::cmdline (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{cmd }\end{DoxyParamCaption})}
+\subsubsection[{cmdline}]{\setlength{\rightskip}{0pt plus 5cm}{\bf StatusCode} Server::cmdline (std::vector$<$ std::string $>$ {\em cmd})}}
+\label{classServer_adc7d38a333b12fbe03db3d209f5feae9}
 
 
+Definition at line 128 of file Server.cpp.
 
-Definition at line 128 of file Server.\+cpp.
-
-
-
-References Status\+Code\+::\+F\+A\+I\+L\+U\+RE, Object\+::info(), m\+\_\+app, set\+Update\+Delay(), Status\+Code\+::\+S\+U\+C\+C\+E\+SS, update\+Config(), update\+Delay(), and update\+State().
+References StatusCode::FAILURE, Object::info(), m\_\-app, setUpdateDelay(), StatusCode::SUCCESS, updateConfig(), updateDelay(), and updateState().
 
 
 \begin{DoxyCode}
-128                                                         \{  
-129   \textcolor{keywordflow}{if} ( cmd.size()==0)\{
-130     \textcolor{keywordtype}{char} line[200];
+128                                                         {  
+129   if ( cmd.size()==0){
+130     char line[200];
 131     std::string tmp;
-132     sprintf(line,\textcolor{stringliteral}{"Timer    [timer]    : %i"}, \hyperlink{classServer_ac3b91a1bf06dab7911e6d1b867d677bc}{updateDelay}() );
-133     \hyperlink{classServer_ae1c25dc357c4a1145289c747fddaa251}{m\_app}->\hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(line,\textcolor{stringliteral}{"Server::cmdline"});
-134     \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
-135   \}
+132     sprintf(line,"Timer    [timer]    : %i", updateDelay() );
+133     m_app->info(line,"Server::cmdline");
+134     return StatusCode::SUCCESS;
+135   }
 136   
 137   transform(cmd[0].begin(),cmd[0].end(),cmd[0].begin(),tolower);
 138 
-139   \textcolor{keywordflow}{if} (cmd[0].compare(\textcolor{stringliteral}{"timer"})==0)\{
-140     \textcolor{keywordflow}{if} ( cmd.size() == 2 ) \{
-141       \hyperlink{classServer_ac885fb635733c69a28fe3ec9bd21eac5}{setUpdateDelay} ( atoi(cmd[1].c\_str()) );
-142       \textcolor{keyword}{this} -> \hyperlink{classServer_af58d60a5587813e2aab7fc9016dfa01a}{updateConfig}();
-143       \textcolor{keyword}{this} -> \hyperlink{classServer_abaa0b878f4f96454339f1989ec12cc6b}{updateState}();  
-144     \}
-145     \textcolor{keyword}{this} -> \hyperlink{classServer_af58d60a5587813e2aab7fc9016dfa01a}{updateConfig}();
-146     \textcolor{keyword}{this} -> \hyperlink{classServer_abaa0b878f4f96454339f1989ec12cc6b}{updateState}();
-147     \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
-148   \}
-149   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
-150 \}
+139   if (cmd[0].compare("timer")==0){
+140     if ( cmd.size() == 2 ) {
+141       setUpdateDelay ( atoi(cmd[1].c_str()) );
+142       this -> updateConfig();
+143       this -> updateState();  
+144     }
+145     this -> updateConfig();
+146     this -> updateState();
+147     return StatusCode::SUCCESS;
+148   }
+149   return StatusCode::FAILURE;
+150 }
 \end{DoxyCode}
-\mbox{\Hypertarget{classServer_ac885fb635733c69a28fe3ec9bd21eac5}\label{classServer_ac885fb635733c69a28fe3ec9bd21eac5}} 
-\index{Server@{Server}!set\+Update\+Delay@{set\+Update\+Delay}}
-\index{set\+Update\+Delay@{set\+Update\+Delay}!Server@{Server}}
-\subsubsection{\texorpdfstring{set\+Update\+Delay()}{setUpdateDelay()}}
-{\footnotesize\ttfamily void Server\+::set\+Update\+Delay (\begin{DoxyParamCaption}\item[{int}]{update\+Delay }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Set accessor to member m\+\_\+update\+Delay 
+\hypertarget{classServer_ac885fb635733c69a28fe3ec9bd21eac5}{
+\index{Server@{Server}!setUpdateDelay@{setUpdateDelay}}
+\index{setUpdateDelay@{setUpdateDelay}!Server@{Server}}
+\subsubsection[{setUpdateDelay}]{\setlength{\rightskip}{0pt plus 5cm}void Server::setUpdateDelay (int {\em updateDelay})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classServer_ac885fb635733c69a28fe3ec9bd21eac5}
+Set accessor to member m\_\-updateDelay 
 \begin{DoxyParams}{Parameters}
-{\em update\+Delay} & the new value for m\+\_\+update\+Delay \\
-\hline
-\end{DoxyParams}
+\item[{\em updateDelay}]the new value for m\_\-updateDelay \end{DoxyParams}
 
 
-Definition at line 41 of file Server.\+h.
+Definition at line 41 of file Server.h.
 
-
-
-References m\+\_\+update\+Delay, and update\+Delay().
-
-
+References m\_\-updateDelay.
 
 Referenced by cmdline().
 
 
 \begin{DoxyCode}
-41                                         \{
-42     \hyperlink{classServer_ae991d55181bff0552a34278ea9f76735}{m\_updateDelay} = \hyperlink{classServer_ac3b91a1bf06dab7911e6d1b867d677bc}{updateDelay};
-43 \textcolor{preprocessor}{#ifdef \_NETWORK\_}
-44     \textcolor{keywordflow}{if} ( 0 != m\_servTimer )\{
-45       m\_servTimer->setDelay ( \hyperlink{classServer_ae991d55181bff0552a34278ea9f76735}{m\_updateDelay} );
-46     \}
-47 \textcolor{preprocessor}{#endif}
-48   \}
+41                                         {
+42     m_updateDelay = updateDelay;
+43 #ifdef _NETWORK_
+44     if ( 0 != m_servTimer ){
+45       m_servTimer->setDelay ( m_updateDelay );
+46     }
+47 #endif
+48   }
 \end{DoxyCode}
-\mbox{\Hypertarget{classServer_a039cc5b24c26fa5bb8145335f27bb28e}\label{classServer_a039cc5b24c26fa5bb8145335f27bb28e}} 
+\hypertarget{classServer_a039cc5b24c26fa5bb8145335f27bb28e}{
 \index{Server@{Server}!start@{start}}
 \index{start@{start}!Server@{Server}}
-\subsubsection{\texorpdfstring{start()}{start()}}
-{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} Server\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}{\bf StatusCode} Server::start ()}}
+\label{classServer_a039cc5b24c26fa5bb8145335f27bb28e}
 
 
 Start Service. 
 
+Definition at line 98 of file Server.cpp.
 
+References application(), Application::config(), StatusCode::FAILURE, Object::info(), m\_\-app, Object::name(), Application::procDb(), Application::state(), StatusCode::SUCCESS, updateDelay(), and Object::warning().
 
-Definition at line 98 of file Server.\+cpp.
-
-
-
-References application(), Application\+::config(), Status\+Code\+::\+F\+A\+I\+L\+U\+RE, Object\+::info(), m\+\_\+app, Object\+::name(), Application\+::proc\+Db(), Application\+::state(), Status\+Code\+::\+S\+U\+C\+C\+E\+SS, update\+Delay(), and Object\+::warning().
-
-
-
-Referenced by Application\+::network(), and Application\+::server().
+Referenced by Application::network(), and Application::server().
 
 
 \begin{DoxyCode}
-98                            \{
-99 \textcolor{preprocessor}{#ifdef \_NETWORK\_}
-100   \hyperlink{classServer_ae1c25dc357c4a1145289c747fddaa251}{m\_app}->\hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"Starting CAT server "} + \hyperlink{Tools_8h_a27885a3c35afe79029fb830f32f66458}{application}()->name(),\textcolor{stringliteral}{"Server::start"});
-101   DimServer::start(\hyperlink{classServer_ae1c25dc357c4a1145289c747fddaa251}{m\_app}->\hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name}().c\_str());
-102   std::string str =  \hyperlink{classServer_ae1c25dc357c4a1145289c747fddaa251}{m\_app}->\hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name}() ;
-103   str = \hyperlink{classServer_ae1c25dc357c4a1145289c747fddaa251}{m\_app}->\hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name}() ;
-104   str.append (\textcolor{stringliteral}{"/state"});
-105   m\_servState = \textcolor{keyword}{new} DimService ( str.c\_str(),\textcolor{stringliteral}{"I:4;C"},
-106                                  \hyperlink{classServer_ae1c25dc357c4a1145289c747fddaa251}{m\_app}->\hyperlink{classApplication_adfc9b92559f61c92224abf03f51cef47}{state}(),
-107                                  \textcolor{keyword}{sizeof}(*(\hyperlink{classServer_ae1c25dc357c4a1145289c747fddaa251}{m\_app}->\hyperlink{classApplication_adfc9b92559f61c92224abf03f51cef47}{state}())) );
-108   m\_servTimer = \textcolor{keyword}{new} Timer    ( \hyperlink{classServer_ac3b91a1bf06dab7911e6d1b867d677bc}{updateDelay}() , m\_servState );
-109   str = \hyperlink{Tools_8h_a27885a3c35afe79029fb830f32f66458}{application}()->\hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name}() ;
-110   str.append (\textcolor{stringliteral}{"/config"}); 
-111   m\_servConfig = \textcolor{keyword}{new} DimService ( str.c\_str(),\textcolor{stringliteral}{"C"},
-112                                   \hyperlink{classServer_ae1c25dc357c4a1145289c747fddaa251}{m\_app}->\hyperlink{classApplication_ae79819f7743d6f402fce87665c1dc9a6}{config}(),
-113                                   \textcolor{keyword}{sizeof}(*(\hyperlink{classServer_ae1c25dc357c4a1145289c747fddaa251}{m\_app}->\hyperlink{classApplication_ae79819f7743d6f402fce87665c1dc9a6}{config}())) );
+98                            {
+99 #ifdef _NETWORK_
+100   m_app->info("Starting CAT server " + application()->name(),"Server::start");
+101   DimServer::start(m_app->name().c_str());
+102   std::string str =  m_app->name() ;
+103   str = m_app->name() ;
+104   str.append ("/state");
+105   m_servState = new DimService ( str.c_str(),"I:4;C",
+106                                  m_app->state(),
+107                                  sizeof(*(m_app->state())) );
+108   m_servTimer = new Timer    ( updateDelay() , m_servState );
+109   str = application()->name() ;
+110   str.append ("/config"); 
+111   m_servConfig = new DimService ( str.c_str(),"C",
+112                                   m_app->config(),
+113                                   sizeof(*(m_app->config())) );
 114 
-115   \hyperlink{classServer_ae1c25dc357c4a1145289c747fddaa251}{m\_app}->\hyperlink{classApplication_aa5c28af1a7e1c41dada2db2a4d03c57d}{procDb}()->startServices();
-116 \textcolor{preprocessor}{#else}
-117   \hyperlink{classServer_ae1c25dc357c4a1145289c747fddaa251}{m\_app}->\hyperlink{classObject_a65cd4fda577711660821fd2cd5a3b4c9}{warning}(\textcolor{stringliteral}{"compilation without NETWORK capabilities. Cannot start server."},
-118                  \textcolor{stringliteral}{"Server::star"});
-119   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
-120 \textcolor{preprocessor}{#endif}
-121   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
-122 \}
+115   m_app->procDb()->startServices();
+116 #else
+117   m_app->warning("compilation without NETWORK capabilities. Cannot start server."
+      ,
+118                  "Server::star");
+119   return StatusCode::FAILURE;
+120 #endif
+121   return StatusCode::SUCCESS;
+122 }
 \end{DoxyCode}
-\mbox{\Hypertarget{classServer_af58d60a5587813e2aab7fc9016dfa01a}\label{classServer_af58d60a5587813e2aab7fc9016dfa01a}} 
-\index{Server@{Server}!update\+Config@{update\+Config}}
-\index{update\+Config@{update\+Config}!Server@{Server}}
-\subsubsection{\texorpdfstring{update\+Config()}{updateConfig()}}
-{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} Server\+::update\+Config (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
+\hypertarget{classServer_af58d60a5587813e2aab7fc9016dfa01a}{
+\index{Server@{Server}!updateConfig@{updateConfig}}
+\index{updateConfig@{updateConfig}!Server@{Server}}
+\subsubsection[{updateConfig}]{\setlength{\rightskip}{0pt plus 5cm}{\bf StatusCode} Server::updateConfig ()}}
+\label{classServer_af58d60a5587813e2aab7fc9016dfa01a}
 
 
 Update \hyperlink{classConfig}{Config} Service. 
 
+Definition at line 83 of file Server.cpp.
 
+References Object::debug(), StatusCode::FAILURE, m\_\-app, StatusCode::SUCCESS, and Object::warning().
 
-Definition at line 83 of file Server.\+cpp.
-
-
-
-References Object\+::debug(), Status\+Code\+::\+F\+A\+I\+L\+U\+RE, m\+\_\+app, Status\+Code\+::\+S\+U\+C\+C\+E\+SS, and Object\+::warning().
-
-
-
-Referenced by cmdline(), and Application\+::set\+Config().
+Referenced by cmdline(), and Application::setConfig().
 
 
 \begin{DoxyCode}
-83                                   \{
-84 \textcolor{preprocessor}{#ifdef \_NETWORK\_}
-85   m\_servConfig->updateService();
-86   \hyperlink{classServer_ae1c25dc357c4a1145289c747fddaa251}{m\_app}->\hyperlink{classObject_aac010553f022165573714b7014a15f0d}{debug}(\textcolor{stringliteral}{"Updating proc database service."},\textcolor{stringliteral}{"Server::updateConfig"});
-87 \textcolor{preprocessor}{#else}
-88   \hyperlink{classServer_ae1c25dc357c4a1145289c747fddaa251}{m\_app}->\hyperlink{classObject_a65cd4fda577711660821fd2cd5a3b4c9}{warning}(\textcolor{stringliteral}{"Updating server services not available (NETWORK mode off)."},
-89                  \textcolor{stringliteral}{"Server::updateConfig"}); 
-90   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
-91 \textcolor{preprocessor}{#endif}
-92   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
-93 \}
+83                                   {
+84 #ifdef _NETWORK_
+85   m_servConfig->updateService();
+86   m_app->debug("Updating proc database service.","Server::updateConfig");
+87 #else
+88   m_app->warning("Updating server services not available (NETWORK mode off).",
+89                  "Server::updateConfig"); 
+90   return StatusCode::FAILURE;
+91 #endif
+92   return StatusCode::SUCCESS;
+93 }
 \end{DoxyCode}
-\mbox{\Hypertarget{classServer_ac3b91a1bf06dab7911e6d1b867d677bc}\label{classServer_ac3b91a1bf06dab7911e6d1b867d677bc}} 
-\index{Server@{Server}!update\+Delay@{update\+Delay}}
-\index{update\+Delay@{update\+Delay}!Server@{Server}}
-\subsubsection{\texorpdfstring{update\+Delay()}{updateDelay()}}
-{\footnotesize\ttfamily int Server\+::update\+Delay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Get accessor to member m\+\_\+update\+Delay \begin{DoxyReturn}{Returns}
-the current value of m\+\_\+update\+Delay 
+\hypertarget{classServer_ac3b91a1bf06dab7911e6d1b867d677bc}{
+\index{Server@{Server}!updateDelay@{updateDelay}}
+\index{updateDelay@{updateDelay}!Server@{Server}}
+\subsubsection[{updateDelay}]{\setlength{\rightskip}{0pt plus 5cm}int Server::updateDelay ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classServer_ac3b91a1bf06dab7911e6d1b867d677bc}
+Get accessor to member m\_\-updateDelay \begin{DoxyReturn}{Returns}
+the current value of m\_\-updateDelay 
 \end{DoxyReturn}
 
 
-Definition at line 54 of file Server.\+h.
+Definition at line 54 of file Server.h.
 
+References m\_\-updateDelay.
 
-
-References m\+\_\+update\+Delay.
-
-
-
-Referenced by cmdline(), set\+Update\+Delay(), and start().
+Referenced by cmdline(), and start().
 
 
 \begin{DoxyCode}
-54                      \{
-55     \textcolor{keywordflow}{return} \hyperlink{classServer_ae991d55181bff0552a34278ea9f76735}{m\_updateDelay};
-56   \}
+54                      {
+55     return m_updateDelay;
+56   }
 \end{DoxyCode}
-\mbox{\Hypertarget{classServer_abaa0b878f4f96454339f1989ec12cc6b}\label{classServer_abaa0b878f4f96454339f1989ec12cc6b}} 
-\index{Server@{Server}!update\+State@{update\+State}}
-\index{update\+State@{update\+State}!Server@{Server}}
-\subsubsection{\texorpdfstring{update\+State()}{updateState()}}
-{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} Server\+::update\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
+\hypertarget{classServer_abaa0b878f4f96454339f1989ec12cc6b}{
+\index{Server@{Server}!updateState@{updateState}}
+\index{updateState@{updateState}!Server@{Server}}
+\subsubsection[{updateState}]{\setlength{\rightskip}{0pt plus 5cm}{\bf StatusCode} Server::updateState ()}}
+\label{classServer_abaa0b878f4f96454339f1989ec12cc6b}
 
 
 Update \hyperlink{classState}{State} Service. 
 
+Definition at line 68 of file Server.cpp.
 
+References Object::debug(), StatusCode::FAILURE, m\_\-app, StatusCode::SUCCESS, and Object::warning().
 
-Definition at line 68 of file Server.\+cpp.
-
-
-
-References Object\+::debug(), Status\+Code\+::\+F\+A\+I\+L\+U\+RE, m\+\_\+app, Status\+Code\+::\+S\+U\+C\+C\+E\+SS, and Object\+::warning().
-
-
-
-Referenced by cmdline(), and Application\+::set\+State().
+Referenced by cmdline(), and Application::setState().
 
 
 \begin{DoxyCode}
-68                                  \{
-69 \textcolor{preprocessor}{#ifdef \_NETWORK\_}
-70   m\_servState->updateService();
-71   \hyperlink{classServer_ae1c25dc357c4a1145289c747fddaa251}{m\_app}->\hyperlink{classObject_aac010553f022165573714b7014a15f0d}{debug}(\textcolor{stringliteral}{"Updating state service."},\textcolor{stringliteral}{"Server::updateState"}); 
-72 \textcolor{preprocessor}{#else}
-73   \hyperlink{classServer_ae1c25dc357c4a1145289c747fddaa251}{m\_app}->\hyperlink{classObject_a65cd4fda577711660821fd2cd5a3b4c9}{warning}(\textcolor{stringliteral}{"Updating server services not available (NETWORK mode off)."},
-74                  \textcolor{stringliteral}{"Server::updateState"}); 
-75   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
-76 \textcolor{preprocessor}{#endif}
-77   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
-78 \}
+68                                  {
+69 #ifdef _NETWORK_
+70   m_servState->updateService();
+71   m_app->debug("Updating state service.","Server::updateState"); 
+72 #else
+73   m_app->warning("Updating server services not available (NETWORK mode off).",
+74                  "Server::updateState"); 
+75   return StatusCode::FAILURE;
+76 #endif
+77   return StatusCode::SUCCESS;
+78 }
 \end{DoxyCode}
 
 
 \subsection{Member Data Documentation}
-\mbox{\Hypertarget{classServer_ae1c25dc357c4a1145289c747fddaa251}\label{classServer_ae1c25dc357c4a1145289c747fddaa251}} 
-\index{Server@{Server}!m\+\_\+app@{m\+\_\+app}}
-\index{m\+\_\+app@{m\+\_\+app}!Server@{Server}}
-\subsubsection{\texorpdfstring{m\+\_\+app}{m\_app}}
-{\footnotesize\ttfamily \hyperlink{classApplication}{Application}$\ast$ Server\+::m\+\_\+app\hspace{0.3cm}{\ttfamily [private]}}
+\hypertarget{classServer_ae1c25dc357c4a1145289c747fddaa251}{
+\index{Server@{Server}!m\_\-app@{m\_\-app}}
+\index{m\_\-app@{m\_\-app}!Server@{Server}}
+\subsubsection[{m\_\-app}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Application}$\ast$ {\bf Server::m\_\-app}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classServer_ae1c25dc357c4a1145289c747fddaa251}
 
 
+Definition at line 79 of file Server.h.
 
-Definition at line 79 of file Server.\+h.
-
-
-
-Referenced by cmdline(), Server(), start(), update\+Config(), and update\+State().
-
-\mbox{\Hypertarget{classServer_ae991d55181bff0552a34278ea9f76735}\label{classServer_ae991d55181bff0552a34278ea9f76735}} 
-\index{Server@{Server}!m\+\_\+update\+Delay@{m\+\_\+update\+Delay}}
-\index{m\+\_\+update\+Delay@{m\+\_\+update\+Delay}!Server@{Server}}
-\subsubsection{\texorpdfstring{m\+\_\+update\+Delay}{m\_updateDelay}}
-{\footnotesize\ttfamily int Server\+::m\+\_\+update\+Delay\hspace{0.3cm}{\ttfamily [private]}}
+Referenced by cmdline(), Server(), start(), updateConfig(), and updateState().\hypertarget{classServer_ae991d55181bff0552a34278ea9f76735}{
+\index{Server@{Server}!m\_\-updateDelay@{m\_\-updateDelay}}
+\index{m\_\-updateDelay@{m\_\-updateDelay}!Server@{Server}}
+\subsubsection[{m\_\-updateDelay}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Server::m\_\-updateDelay}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classServer_ae991d55181bff0552a34278ea9f76735}
 
 
+Definition at line 80 of file Server.h.
 
-Definition at line 80 of file Server.\+h.
+Referenced by Server(), setUpdateDelay(), and updateDelay().
 
-
-
-Referenced by Server(), set\+Update\+Delay(), and update\+Delay().
-
-
-
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
 \item 
-/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/inc/\hyperlink{Server_8h}{Server.\+h}\item 
-/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/src/\hyperlink{Server_8cpp}{Server.\+cpp}\end{DoxyCompactItemize}
+/home/eleclhcb/LHCb/lbcat-\/cmake/CatKernel/inc/\hyperlink{Server_8h}{Server.h}\item 
+/home/eleclhcb/LHCb/lbcat-\/cmake/CatKernel/src/\hyperlink{Server_8cpp}{Server.cpp}\end{DoxyCompactItemize}

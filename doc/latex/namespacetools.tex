@@ -1,31 +1,33 @@
-\hypertarget{namespacetools}{}\section{tools Namespace Reference}
+\hypertarget{namespacetools}{
+\section{tools Namespace Reference}
 \label{namespacetools}\index{tools@{tools}}
+}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-def \hyperlink{namespacetools_a9eaf94e896cb3fae9773462bd4e0b626}{opj} (path)
+def \hyperlink{namespacetools_a927391568c65e48580526412fb7d49ab}{opj}
 \end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{namespacetools_a9eaf94e896cb3fae9773462bd4e0b626}\label{namespacetools_a9eaf94e896cb3fae9773462bd4e0b626}} 
+\hypertarget{namespacetools_a927391568c65e48580526412fb7d49ab}{
 \index{tools@{tools}!opj@{opj}}
 \index{opj@{opj}!tools@{tools}}
-\subsubsection{\texorpdfstring{opj()}{opj()}}
-{\footnotesize\ttfamily def tools.\+opj (\begin{DoxyParamCaption}\item[{}]{path }\end{DoxyParamCaption})}
-
+\subsubsection[{opj}]{\setlength{\rightskip}{0pt plus 5cm}def tools::opj ( {\em path})}}
+\label{namespacetools_a927391568c65e48580526412fb7d49ab}
 \begin{DoxyVerb}Convert paths to the platform-specific separator\end{DoxyVerb}
  
 
-Definition at line 5 of file tools.\+py.
+Definition at line 5 of file tools.py.
 
 
 \begin{DoxyCode}
-5 \textcolor{keyword}{def }\hyperlink{namespacetools_a9eaf94e896cb3fae9773462bd4e0b626}{opj}(path):
-6     \textcolor{stringliteral}{"""Convert paths to the platform-specific separator"""}
-7     st = apply(os.path.join, tuple(path.split(\textcolor{stringliteral}{'/'})))
-8     \textcolor{comment}{# HACK: on Linux, a leading / gets lost...}
-9     \textcolor{keywordflow}{if} path.startswith(\textcolor{stringliteral}{'/'}):
-10         st = \textcolor{stringliteral}{'/'} + st
-11     \textcolor{keywordflow}{return} st
-12 \end{DoxyCode}
+5              :
+6     """Convert paths to the platform-specific separator"""
+7     st = apply(os.path.join, tuple(path.split('/')))
+8     # HACK: on Linux, a leading / gets lost...
+9     if path.startswith('/'):
+10         st = '/' + st
+11     return st
+    return st
+\end{DoxyCode}

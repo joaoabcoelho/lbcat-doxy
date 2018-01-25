@@ -1,122 +1,92 @@
-\hypertarget{classStorageFifo_1_1StorageFifo}{}\section{Storage\+Fifo.\+Storage\+Fifo Class Reference}
-\label{classStorageFifo_1_1StorageFifo}\index{Storage\+Fifo.\+Storage\+Fifo@{Storage\+Fifo.\+Storage\+Fifo}}
-Inheritance diagram for Storage\+Fifo.\+Storage\+Fifo\+:\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=2.000000cm]{classStorageFifo_1_1StorageFifo}
-\end{center}
-\end{figure}
+\hypertarget{classStorageFifo_1_1StorageFifo}{
+\section{StorageFifo::StorageFifo Class Reference}
+\label{classStorageFifo_1_1StorageFifo}\index{StorageFifo::StorageFifo@{StorageFifo::StorageFifo}}
+}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-def \hyperlink{classStorageFifo_1_1StorageFifo_a7ee1fe240661a6d0ad47bcdb866dabba}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, cat, obj, panel, path)
+def \hyperlink{classStorageFifo_1_1StorageFifo_afb4e3e246f105da483ff50e7d4b85dcc}{\_\-\_\-init\_\-\_\-}
 \item 
-def \hyperlink{classStorageFifo_1_1StorageFifo_a7fa51672518fefda7102ec998203508f}{on\+Apply} (self, event)
+def \hyperlink{classStorageFifo_1_1StorageFifo_a59d0adc3c8c09e187ece685987fc501a}{onApply}
 \item 
-def \hyperlink{classStorageFifo_1_1StorageFifo_a6f95bfe2c70677ea813f3a708689686d}{update} (self)
+def \hyperlink{classStorageFifo_1_1StorageFifo_a0af6429cd37d03618907e91bf57928fb}{update}
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classStorageFifo_1_1StorageFifo_af5f69dc80cba7f4f1a2407d365d71b13}{s1}
+\hyperlink{classStorageFifo_1_1StorageFifo_ab27e4a7f4056b6e6b6c7b323d95eae6b}{s1}
 \item 
-\hyperlink{classStorageFifo_1_1StorageFifo_ac8ae47a5852b5eac23b0cefa7d335c13}{s2}
+\hyperlink{classStorageFifo_1_1StorageFifo_a652e937ce967ee77a0ab1179b0eb39d1}{s2}
 \item 
-\hyperlink{classStorageFifo_1_1StorageFifo_ae1aec7880da6f8a9dc51f46db70e6d0b}{s3}
+\hyperlink{classStorageFifo_1_1StorageFifo_afe12db64baa102770551ba2a1e8cf1e7}{s3}
 \item 
-\hyperlink{classStorageFifo_1_1StorageFifo_a6dbf6622f309aab462553f1bcc4ae8ad}{s4}
+\hyperlink{classStorageFifo_1_1StorageFifo_a55e9317951aa785bd4404dfe90e9a74a}{s4}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 8 of file Storage\+Fifo.\+py.
-
-
-
-\subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classStorageFifo_1_1StorageFifo_a7ee1fe240661a6d0ad47bcdb866dabba}\label{classStorageFifo_1_1StorageFifo_a7ee1fe240661a6d0ad47bcdb866dabba}} 
-\index{Storage\+Fifo\+::\+Storage\+Fifo@{Storage\+Fifo\+::\+Storage\+Fifo}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
-\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!Storage\+Fifo\+::\+Storage\+Fifo@{Storage\+Fifo\+::\+Storage\+Fifo}}
-\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
-{\footnotesize\ttfamily def Storage\+Fifo.\+Storage\+Fifo.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{panel,  }\item[{}]{path }\end{DoxyParamCaption})}
-
-
-
-Definition at line 9 of file Storage\+Fifo.\+py.
-
-
-
-References element.\+element.\+loadxrc(), and proc.\+proc.\+loadxrc().
-
-
-\begin{DoxyCode}
-9     \textcolor{keyword}{def }\hyperlink{classwrapper_1_1ModuleDictWrapper_a9a7a794150502f51df687831583e13b9}{\_\_init\_\_}(self, cat, obj, panel, path):
-10         proc.\_\_init\_\_(self,cat,obj,panel,path)
-11         self.loadxrc()
-12 
-13         self.s1=self.getControl(\textcolor{stringliteral}{"s1"})
-14         self.s2=self.getControl(\textcolor{stringliteral}{"s2"})
-15         self.s3=self.getControl(\textcolor{stringliteral}{"s3"})
-16         self.s4=self.getControl(\textcolor{stringliteral}{"s4"})
-17         self.update()
-18 
-19         self.panel.Bind(wx.EVT\_BUTTON, self.onApply, id=xrc.XRCID(\textcolor{stringliteral}{"Apply"}))
-20 
-\end{DoxyCode}
-
+Definition at line 8 of file StorageFifo.py.
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classStorageFifo_1_1StorageFifo_a7fa51672518fefda7102ec998203508f}\label{classStorageFifo_1_1StorageFifo_a7fa51672518fefda7102ec998203508f}} 
-\index{Storage\+Fifo\+::\+Storage\+Fifo@{Storage\+Fifo\+::\+Storage\+Fifo}!on\+Apply@{on\+Apply}}
-\index{on\+Apply@{on\+Apply}!Storage\+Fifo\+::\+Storage\+Fifo@{Storage\+Fifo\+::\+Storage\+Fifo}}
-\subsubsection{\texorpdfstring{on\+Apply()}{onApply()}}
-{\footnotesize\ttfamily def Storage\+Fifo.\+Storage\+Fifo.\+on\+Apply (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{event }\end{DoxyParamCaption})}
+\hypertarget{classStorageFifo_1_1StorageFifo_afb4e3e246f105da483ff50e7d4b85dcc}{
+\index{StorageFifo::StorageFifo@{StorageFifo::StorageFifo}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!StorageFifo::StorageFifo@{StorageFifo::StorageFifo}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def StorageFifo::StorageFifo::\_\-\_\-init\_\-\_\- ( {\em self}, \/   {\em cat}, \/   {\em obj}, \/   {\em panel}, \/   {\em path})}}
+\label{classStorageFifo_1_1StorageFifo_afb4e3e246f105da483ff50e7d4b85dcc}
 
 
-
-Definition at line 21 of file Storage\+Fifo.\+py.
-
-
-
-References object.\+object.\+obj, Cfg\+Frame.\+Cfg\+Frame.\+obj, Storage\+Fifo.\+Storage\+Fifo.\+s1, Storage\+Fifo.\+Storage\+Fifo.\+s2, Storage\+Fifo.\+Storage\+Fifo.\+s3, and Storage\+Fifo.\+Storage\+Fifo.\+s4.
-
-
-
-Referenced by A3\+P\+E\+\_\+\+Bit\+Flip.\+A3\+P\+E\+\_\+\+Bit\+Flip.\+\_\+\+\_\+init\+\_\+\+\_\+(), and Emulate\+F\+E.\+Emulate\+F\+E.\+\_\+\+\_\+init\+\_\+\+\_\+().
+Definition at line 9 of file StorageFifo.py.
 
 
 \begin{DoxyCode}
-21     \textcolor{keyword}{def }onApply(self, event):
+9                                              :
+10         proc.__init__(self,cat,obj,panel,path)
+11         self.loadxrc()
+12 
+13         self.s1=self.getControl("s1")
+14         self.s2=self.getControl("s2")
+15         self.s3=self.getControl("s3")
+16         self.s4=self.getControl("s4")
+17         self.update()
+18 
+19         self.panel.Bind(wx.EVT_BUTTON, self.onApply, id=xrc.XRCID("Apply"))
+20 
+    def onApply(self, event):
+\end{DoxyCode}
+\hypertarget{classStorageFifo_1_1StorageFifo_a59d0adc3c8c09e187ece685987fc501a}{
+\index{StorageFifo::StorageFifo@{StorageFifo::StorageFifo}!onApply@{onApply}}
+\index{onApply@{onApply}!StorageFifo::StorageFifo@{StorageFifo::StorageFifo}}
+\subsubsection[{onApply}]{\setlength{\rightskip}{0pt plus 5cm}def StorageFifo::StorageFifo::onApply ( {\em self}, \/   {\em event})}}
+\label{classStorageFifo_1_1StorageFifo_a59d0adc3c8c09e187ece685987fc501a}
+
+
+Definition at line 21 of file StorageFifo.py.
+
+
+\begin{DoxyCode}
+21                             :
 22         v1 = float(self.s1.GetValue())
 23         v2 = float(self.s2.GetValue())
 24         v3 = float(self.s3.GetValue())
 25         v4 = float(self.s4.GetValue())
 26         self.obj.setSigma(v1,v2,v3,v4)
 27 
+    def update(self):
 \end{DoxyCode}
-\mbox{\Hypertarget{classStorageFifo_1_1StorageFifo_a6f95bfe2c70677ea813f3a708689686d}\label{classStorageFifo_1_1StorageFifo_a6f95bfe2c70677ea813f3a708689686d}} 
-\index{Storage\+Fifo\+::\+Storage\+Fifo@{Storage\+Fifo\+::\+Storage\+Fifo}!update@{update}}
-\index{update@{update}!Storage\+Fifo\+::\+Storage\+Fifo@{Storage\+Fifo\+::\+Storage\+Fifo}}
-\subsubsection{\texorpdfstring{update()}{update()}}
-{\footnotesize\ttfamily def Storage\+Fifo.\+Storage\+Fifo.\+update (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+\hypertarget{classStorageFifo_1_1StorageFifo_a0af6429cd37d03618907e91bf57928fb}{
+\index{StorageFifo::StorageFifo@{StorageFifo::StorageFifo}!update@{update}}
+\index{update@{update}!StorageFifo::StorageFifo@{StorageFifo::StorageFifo}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}def StorageFifo::StorageFifo::update ( {\em self})}}
+\label{classStorageFifo_1_1StorageFifo_a0af6429cd37d03618907e91bf57928fb}
 
 
-
-Definition at line 28 of file Storage\+Fifo.\+py.
-
-
-
-References object.\+object.\+obj, Cfg\+Frame.\+Cfg\+Frame.\+obj, Storage\+Fifo.\+Storage\+Fifo.\+s1, Storage\+Fifo.\+Storage\+Fifo.\+s2, Storage\+Fifo.\+Storage\+Fifo.\+s3, and Storage\+Fifo.\+Storage\+Fifo.\+s4.
-
-
-
-Referenced by App\+Frame.\+App\+Frame.\+delete\+Hardware(), Conf\+Frame.\+Conf\+Frame.\+on\+Change(), Graph\+Frame.\+Graph\+Frame.\+on\+Change(), Cfg\+Frame.\+Cfg\+Frame.\+on\+Change(), Conf\+Frame.\+Conf\+Frame.\+on\+Edit(), App\+Frame.\+App\+Frame.\+on\+Load(), Conf\+Frame.\+Conf\+Frame.\+on\+Re\+Load(), Graph\+Frame.\+Graph\+Frame.\+on\+Re\+Load(), Cfg\+Frame.\+Cfg\+Frame.\+on\+Re\+Load(), and App\+Frame.\+App\+Frame.\+on\+Re\+Load().
+Definition at line 28 of file StorageFifo.py.
 
 
 \begin{DoxyCode}
-28     \textcolor{keyword}{def }update(self):
+28                     :
 29         v1=self.obj.sigma(0)
 30         v2=self.obj.sigma(1)
 31         v3=self.obj.sigma(2)
@@ -127,70 +97,43 @@ Referenced by App\+Frame.\+App\+Frame.\+delete\+Hardware(), Conf\+Frame.\+Conf\+
 36         self.s3.SetValue(str(v3))
 37         self.s4.SetValue(str(v4))        
 38 
-39 \textcolor{comment}{#----------------------------------------------------------------------}
+39 #----------------------------------------------------------------------
 40 
+def Edit (cat, obj, panel, path):
 \end{DoxyCode}
 
 
 \subsection{Member Data Documentation}
-\mbox{\Hypertarget{classStorageFifo_1_1StorageFifo_af5f69dc80cba7f4f1a2407d365d71b13}\label{classStorageFifo_1_1StorageFifo_af5f69dc80cba7f4f1a2407d365d71b13}} 
-\index{Storage\+Fifo\+::\+Storage\+Fifo@{Storage\+Fifo\+::\+Storage\+Fifo}!s1@{s1}}
-\index{s1@{s1}!Storage\+Fifo\+::\+Storage\+Fifo@{Storage\+Fifo\+::\+Storage\+Fifo}}
-\subsubsection{\texorpdfstring{s1}{s1}}
-{\footnotesize\ttfamily Storage\+Fifo.\+Storage\+Fifo.\+s1}
+\hypertarget{classStorageFifo_1_1StorageFifo_ab27e4a7f4056b6e6b6c7b323d95eae6b}{
+\index{StorageFifo::StorageFifo@{StorageFifo::StorageFifo}!s1@{s1}}
+\index{s1@{s1}!StorageFifo::StorageFifo@{StorageFifo::StorageFifo}}
+\subsubsection[{s1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf StorageFifo::StorageFifo::s1}}}
+\label{classStorageFifo_1_1StorageFifo_ab27e4a7f4056b6e6b6c7b323d95eae6b}
 
 
-
-Definition at line 13 of file Storage\+Fifo.\+py.
-
-
-
-Referenced by Test\+I2\+C.\+Test\+I2\+C.\+on\+Apply(), Test\+U\+S\+B.\+Test\+U\+S\+B.\+on\+Apply(), Test\+S\+P\+I.\+Test\+S\+P\+I.\+on\+Apply(), Storage\+Fifo.\+Storage\+Fifo.\+on\+Apply(), Test\+Suite.\+Test\+Suite.\+on\+Apply(), Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+on\+Apply(), Current\+Measurement.\+Current\+Measurement.\+on\+Apply(), A\+D\+C\+Measurement.\+Current\+Measurement.\+on\+Apply(), Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+on\+Apply(), Test\+S\+P\+I.\+Test\+S\+P\+I.\+update(), Test\+U\+S\+B.\+Test\+U\+S\+B.\+update(), Test\+I2\+C.\+Test\+I2\+C.\+update(), Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+update(), Storage\+Fifo.\+Storage\+Fifo.\+update(), Test\+Suite.\+Test\+Suite.\+update(), A\+D\+C\+Measurement.\+Current\+Measurement.\+update(), Current\+Measurement.\+Current\+Measurement.\+update(), and Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+update().
-
-\mbox{\Hypertarget{classStorageFifo_1_1StorageFifo_ac8ae47a5852b5eac23b0cefa7d335c13}\label{classStorageFifo_1_1StorageFifo_ac8ae47a5852b5eac23b0cefa7d335c13}} 
-\index{Storage\+Fifo\+::\+Storage\+Fifo@{Storage\+Fifo\+::\+Storage\+Fifo}!s2@{s2}}
-\index{s2@{s2}!Storage\+Fifo\+::\+Storage\+Fifo@{Storage\+Fifo\+::\+Storage\+Fifo}}
-\subsubsection{\texorpdfstring{s2}{s2}}
-{\footnotesize\ttfamily Storage\+Fifo.\+Storage\+Fifo.\+s2}
+Definition at line 13 of file StorageFifo.py.\hypertarget{classStorageFifo_1_1StorageFifo_a652e937ce967ee77a0ab1179b0eb39d1}{
+\index{StorageFifo::StorageFifo@{StorageFifo::StorageFifo}!s2@{s2}}
+\index{s2@{s2}!StorageFifo::StorageFifo@{StorageFifo::StorageFifo}}
+\subsubsection[{s2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf StorageFifo::StorageFifo::s2}}}
+\label{classStorageFifo_1_1StorageFifo_a652e937ce967ee77a0ab1179b0eb39d1}
 
 
-
-Definition at line 14 of file Storage\+Fifo.\+py.
-
-
-
-Referenced by Test\+I2\+C.\+Test\+I2\+C.\+on\+Apply(), Test\+U\+S\+B.\+Test\+U\+S\+B.\+on\+Apply(), Test\+S\+P\+I.\+Test\+S\+P\+I.\+on\+Apply(), Storage\+Fifo.\+Storage\+Fifo.\+on\+Apply(), Test\+Suite.\+Test\+Suite.\+on\+Apply(), Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+on\+Apply(), Current\+Measurement.\+Current\+Measurement.\+on\+Apply(), A\+D\+C\+Measurement.\+Current\+Measurement.\+on\+Apply(), Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+on\+Apply(), Test\+S\+P\+I.\+Test\+S\+P\+I.\+update(), Test\+U\+S\+B.\+Test\+U\+S\+B.\+update(), Test\+I2\+C.\+Test\+I2\+C.\+update(), Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+update(), Storage\+Fifo.\+Storage\+Fifo.\+update(), Test\+Suite.\+Test\+Suite.\+update(), A\+D\+C\+Measurement.\+Current\+Measurement.\+update(), Current\+Measurement.\+Current\+Measurement.\+update(), and Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+update().
-
-\mbox{\Hypertarget{classStorageFifo_1_1StorageFifo_ae1aec7880da6f8a9dc51f46db70e6d0b}\label{classStorageFifo_1_1StorageFifo_ae1aec7880da6f8a9dc51f46db70e6d0b}} 
-\index{Storage\+Fifo\+::\+Storage\+Fifo@{Storage\+Fifo\+::\+Storage\+Fifo}!s3@{s3}}
-\index{s3@{s3}!Storage\+Fifo\+::\+Storage\+Fifo@{Storage\+Fifo\+::\+Storage\+Fifo}}
-\subsubsection{\texorpdfstring{s3}{s3}}
-{\footnotesize\ttfamily Storage\+Fifo.\+Storage\+Fifo.\+s3}
+Definition at line 14 of file StorageFifo.py.\hypertarget{classStorageFifo_1_1StorageFifo_afe12db64baa102770551ba2a1e8cf1e7}{
+\index{StorageFifo::StorageFifo@{StorageFifo::StorageFifo}!s3@{s3}}
+\index{s3@{s3}!StorageFifo::StorageFifo@{StorageFifo::StorageFifo}}
+\subsubsection[{s3}]{\setlength{\rightskip}{0pt plus 5cm}{\bf StorageFifo::StorageFifo::s3}}}
+\label{classStorageFifo_1_1StorageFifo_afe12db64baa102770551ba2a1e8cf1e7}
 
 
-
-Definition at line 15 of file Storage\+Fifo.\+py.
-
-
-
-Referenced by Test\+I2\+C.\+Test\+I2\+C.\+on\+Apply(), Test\+U\+S\+B.\+Test\+U\+S\+B.\+on\+Apply(), Test\+S\+P\+I.\+Test\+S\+P\+I.\+on\+Apply(), Storage\+Fifo.\+Storage\+Fifo.\+on\+Apply(), Test\+Suite.\+Test\+Suite.\+on\+Apply(), Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+on\+Apply(), Current\+Measurement.\+Current\+Measurement.\+on\+Apply(), A\+D\+C\+Measurement.\+Current\+Measurement.\+on\+Apply(), Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+on\+Apply(), Test\+S\+P\+I.\+Test\+S\+P\+I.\+update(), Test\+U\+S\+B.\+Test\+U\+S\+B.\+update(), Test\+I2\+C.\+Test\+I2\+C.\+update(), Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+update(), Storage\+Fifo.\+Storage\+Fifo.\+update(), Test\+Suite.\+Test\+Suite.\+update(), A\+D\+C\+Measurement.\+Current\+Measurement.\+update(), Current\+Measurement.\+Current\+Measurement.\+update(), and Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+update().
-
-\mbox{\Hypertarget{classStorageFifo_1_1StorageFifo_a6dbf6622f309aab462553f1bcc4ae8ad}\label{classStorageFifo_1_1StorageFifo_a6dbf6622f309aab462553f1bcc4ae8ad}} 
-\index{Storage\+Fifo\+::\+Storage\+Fifo@{Storage\+Fifo\+::\+Storage\+Fifo}!s4@{s4}}
-\index{s4@{s4}!Storage\+Fifo\+::\+Storage\+Fifo@{Storage\+Fifo\+::\+Storage\+Fifo}}
-\subsubsection{\texorpdfstring{s4}{s4}}
-{\footnotesize\ttfamily Storage\+Fifo.\+Storage\+Fifo.\+s4}
+Definition at line 15 of file StorageFifo.py.\hypertarget{classStorageFifo_1_1StorageFifo_a55e9317951aa785bd4404dfe90e9a74a}{
+\index{StorageFifo::StorageFifo@{StorageFifo::StorageFifo}!s4@{s4}}
+\index{s4@{s4}!StorageFifo::StorageFifo@{StorageFifo::StorageFifo}}
+\subsubsection[{s4}]{\setlength{\rightskip}{0pt plus 5cm}{\bf StorageFifo::StorageFifo::s4}}}
+\label{classStorageFifo_1_1StorageFifo_a55e9317951aa785bd4404dfe90e9a74a}
 
 
+Definition at line 16 of file StorageFifo.py.
 
-Definition at line 16 of file Storage\+Fifo.\+py.
-
-
-
-Referenced by Test\+I2\+C.\+Test\+I2\+C.\+on\+Apply(), Test\+U\+S\+B.\+Test\+U\+S\+B.\+on\+Apply(), Test\+S\+P\+I.\+Test\+S\+P\+I.\+on\+Apply(), Storage\+Fifo.\+Storage\+Fifo.\+on\+Apply(), Test\+Suite.\+Test\+Suite.\+on\+Apply(), Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+on\+Apply(), Current\+Measurement.\+Current\+Measurement.\+on\+Apply(), A\+D\+C\+Measurement.\+Current\+Measurement.\+on\+Apply(), Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+on\+Apply(), Test\+S\+P\+I.\+Test\+S\+P\+I.\+update(), Test\+U\+S\+B.\+Test\+U\+S\+B.\+update(), Test\+I2\+C.\+Test\+I2\+C.\+update(), Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+update(), Storage\+Fifo.\+Storage\+Fifo.\+update(), Test\+Suite.\+Test\+Suite.\+update(), A\+D\+C\+Measurement.\+Current\+Measurement.\+update(), Current\+Measurement.\+Current\+Measurement.\+update(), and Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+update().
-
-
-
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
 \item 
-/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Calo\+Proto40\+M\+Hz/python/proc/\hyperlink{StorageFifo_8py}{Storage\+Fifo.\+py}\end{DoxyCompactItemize}
+/home/eleclhcb/LHCb/lbcat-\/cmake/CatCaloProto40MHz/python/proc/\hyperlink{StorageFifo_8py}{StorageFifo.py}\end{DoxyCompactItemize}

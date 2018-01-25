@@ -1,136 +1,136 @@
-\hypertarget{classDLL}{}\section{D\+LL Class Reference}
-\label{classDLL}\index{D\+LL@{D\+LL}}
+\hypertarget{classDLL}{
+\section{DLL Class Reference}
+\label{classDLL}\index{DLL@{DLL}}
+}
 
 
-{\ttfamily \#include $<$inc/\+D\+L\+L.\+h$>$}
-
-\subsection*{Public Types}
+{\ttfamily \#include $<$inc/DLL.h$>$}\subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef void $\ast$ \hyperlink{classDLL_addaefe5c907a5f357cc18718300f22b0}{Image\+Handle}
+typedef void $\ast$ \hyperlink{classDLL_addaefe5c907a5f357cc18718300f22b0}{ImageHandle}
 \item 
-typedef void($\ast$ \hyperlink{classDLL_a6d72472c2f54dc82cbb6a5bbab70dae6}{Entry\+Point}) (\hyperlink{classDLL}{D\+LL} $\ast$)
+typedef void($\ast$ \hyperlink{classDLL_a9b8086a1063fe93f3545a3d20c5ca192}{EntryPoint} )(\hyperlink{classDLL}{DLL} $\ast$)
 \item 
-typedef \hyperlink{classElement}{Element} $\ast$($\ast$ \hyperlink{classDLL_a104a81e667f9a54504c0faf095f77fc7}{Constructor\+Element}) ()
+typedef \hyperlink{classElement}{Element} $\ast$($\ast$ \hyperlink{classDLL_a7b46644880e5b843144baed79bb2f961}{ConstructorElement} )()
 \item 
-typedef void($\ast$ \hyperlink{classDLL_a204f0c776712969410a2673db3d98cf5}{Destructor\+Element}) (\hyperlink{classElement}{Element} $\ast$)
+typedef void($\ast$ \hyperlink{classDLL_a6e838cc12677c8ea48d5312984f8f18b}{DestructorElement} )(\hyperlink{classElement}{Element} $\ast$)
 \item 
-typedef \hyperlink{classProcessus}{Processus} $\ast$($\ast$ \hyperlink{classDLL_afbf4c85f3517962642944b80833a3607}{Constructor\+Processus}) ()
+typedef \hyperlink{classProcessus}{Processus} $\ast$($\ast$ \hyperlink{classDLL_ad47776a706e85c9bdae28ec91e88b8e8}{ConstructorProcessus} )()
 \item 
-typedef void($\ast$ \hyperlink{classDLL_a203a61b2a683e2751b5f3fe5a7187a7e}{Destructor\+Processus}) (\hyperlink{classProcessus}{Processus} $\ast$)
+typedef void($\ast$ \hyperlink{classDLL_a3bd20fb58c02a1a2f4e96d59da21faf5}{DestructorProcessus} )(\hyperlink{classProcessus}{Processus} $\ast$)
 \item 
-typedef \hyperlink{classObject}{Object} $\ast$($\ast$ \hyperlink{classDLL_a67b9601085a9f972b9ac6876cd11398e}{Constructor\+Object}) ()
+typedef \hyperlink{classObject}{Object} $\ast$($\ast$ \hyperlink{classDLL_a19c89e48f530542f639456f569ede17a}{ConstructorObject} )()
 \item 
-typedef void($\ast$ \hyperlink{classDLL_a4400d330cd793ae5f883ffa58384f637}{Destructor\+Object}) (\hyperlink{classObject}{Object} $\ast$)
+typedef void($\ast$ \hyperlink{classDLL_a143a49a77c9a75b043e9dba700afc45b}{DestructorObject} )(\hyperlink{classObject}{Object} $\ast$)
 \item 
-typedef std\+::pair$<$ std\+::string, std\+::string $>$ \hyperlink{classDLL_aa2df9e9226052bfa93a6df56f1ca689b}{identification}
+typedef std::pair$<$ std::string, std::string $>$ \hyperlink{classDLL_aa2df9e9226052bfa93a6df56f1ca689b}{identification}
 \item 
-typedef std\+::vector$<$ \hyperlink{classDLL_aa2df9e9226052bfa93a6df56f1ca689b}{identification} $>$ \hyperlink{classDLL_a36792635c3cd36adbaaef2ff7152046e}{list\+Of\+Elements}
+typedef std::vector$<$ \hyperlink{classDLL_aa2df9e9226052bfa93a6df56f1ca689b}{identification} $>$ \hyperlink{classDLL_a36792635c3cd36adbaaef2ff7152046e}{listOfElements}
 \item 
-typedef std\+::vector$<$ \hyperlink{classDLL_aa2df9e9226052bfa93a6df56f1ca689b}{identification} $>$ \hyperlink{classDLL_aded1b0bb41b288ed4f34cb6d6632d486}{list\+Of\+Processus}
+typedef std::vector$<$ \hyperlink{classDLL_aa2df9e9226052bfa93a6df56f1ca689b}{identification} $>$ \hyperlink{classDLL_aded1b0bb41b288ed4f34cb6d6632d486}{listOfProcessus}
 \item 
-typedef std\+::vector$<$ \hyperlink{classDLL_aa2df9e9226052bfa93a6df56f1ca689b}{identification} $>$ \hyperlink{classDLL_a68629aa6f9103c5a3082511ff8218b1e}{list\+Of\+Objects}
+typedef std::vector$<$ \hyperlink{classDLL_aa2df9e9226052bfa93a6df56f1ca689b}{identification} $>$ \hyperlink{classDLL_a68629aa6f9103c5a3082511ff8218b1e}{listOfObjects}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classDLL_a78a22a98025697c4862ffc2a7cfcb648}{D\+LL} ()
-\begin{DoxyCompactList}\small\item\em Standard constructor. \end{DoxyCompactList}\item 
-virtual \hyperlink{classDLL_aff5b45d4b57b97144d4b49bc05aa0ddd}{$\sim$\+D\+LL} ()
-\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
-\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classDLL_a64166d3479edf7e44fd539841e70fb3a}{load} (std\+::string)
+\hyperlink{classDLL_a78a22a98025697c4862ffc2a7cfcb648}{DLL} ()
+\begin{DoxyCompactList}\small\item\em Standard constructor. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classDLL_aff5b45d4b57b97144d4b49bc05aa0ddd}{$\sim$DLL} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\item 
+\hyperlink{classStatusCode}{StatusCode} \hyperlink{classDLL_a64166d3479edf7e44fd539841e70fb3a}{load} (std::string)
 \item 
-\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classDLL_a10147aebd7b2688354f8c372d468d4aa}{unload} ()
+\hyperlink{classStatusCode}{StatusCode} \hyperlink{classDLL_a10147aebd7b2688354f8c372d468d4aa}{unload} ()
 \item 
-void \hyperlink{classDLL_afc65a270b32a08d0681819cf2317aef0}{set\+Name} (std\+::string \hyperlink{classDLL_a0a915d538771dde2cb0580cd340ee088}{name})
+void \hyperlink{classDLL_afc65a270b32a08d0681819cf2317aef0}{setName} (std::string name)
 \item 
-std\+::string \hyperlink{classDLL_a0a915d538771dde2cb0580cd340ee088}{name} ()
+std::string \hyperlink{classDLL_a0a915d538771dde2cb0580cd340ee088}{name} ()
 \item 
-\hyperlink{classDLL_a36792635c3cd36adbaaef2ff7152046e}{list\+Of\+Elements} \hyperlink{classDLL_adc96628c3ffd637827615fb5a3c71119}{list\+Elements} ()
+\hyperlink{classDLL_a36792635c3cd36adbaaef2ff7152046e}{listOfElements} \hyperlink{classDLL_adc96628c3ffd637827615fb5a3c71119}{listElements} ()
 \item 
-\hyperlink{classDLL_aded1b0bb41b288ed4f34cb6d6632d486}{list\+Of\+Processus} \hyperlink{classDLL_a52eb21bf2ac1a61ae8ae41663ce4c3f8}{list\+Processus} ()
+\hyperlink{classDLL_aded1b0bb41b288ed4f34cb6d6632d486}{listOfProcessus} \hyperlink{classDLL_a52eb21bf2ac1a61ae8ae41663ce4c3f8}{listProcessus} ()
 \item 
-\hyperlink{classDLL_a68629aa6f9103c5a3082511ff8218b1e}{list\+Of\+Objects} \hyperlink{classDLL_a3bde9f46fc00bcc1b0a22558cf0447da}{list\+Objects} ()
+\hyperlink{classDLL_a68629aa6f9103c5a3082511ff8218b1e}{listOfObjects} \hyperlink{classDLL_a3bde9f46fc00bcc1b0a22558cf0447da}{listObjects} ()
 \item 
-void \hyperlink{classDLL_ac6528d0e965139d0830868fe8cace775}{add\+Element} (std\+::string element, std\+::string description=std\+::string(\char`\"{}\char`\"{}))
+void \hyperlink{classDLL_ac6528d0e965139d0830868fe8cace775}{addElement} (std::string element, std::string description=std::string(\char`\"{}\char`\"{}))
 \item 
-void \hyperlink{classDLL_a1f08b909c1569631b6b6b84b52409e33}{add\+Processus} (std\+::string proc, std\+::string description=std\+::string(\char`\"{}\char`\"{}))
+void \hyperlink{classDLL_a1f08b909c1569631b6b6b84b52409e33}{addProcessus} (std::string proc, std::string description=std::string(\char`\"{}\char`\"{}))
 \item 
-void \hyperlink{classDLL_a76bd3e49e5e0046b017aa18afdc55a41}{add\+Object} (std\+::string proc, std\+::string description=std\+::string(\char`\"{}\char`\"{}))
+void \hyperlink{classDLL_a76bd3e49e5e0046b017aa18afdc55a41}{addObject} (std::string proc, std::string description=std::string(\char`\"{}\char`\"{}))
 \item 
-bool \hyperlink{classDLL_af1aada8b1d5632bfac61639f997b9753}{contains\+Object} (std\+::string)
+bool \hyperlink{classDLL_af1aada8b1d5632bfac61639f997b9753}{containsObject} (std::string)
 \item 
-std\+::vector$<$ std\+::string $>$ \hyperlink{classDLL_a7d378e5aceb5b06e0fd7df6bc07f9ee5}{object\+List} ()
+std::vector$<$ std::string $>$ \hyperlink{classDLL_a7d378e5aceb5b06e0fd7df6bc07f9ee5}{objectList} ()
 \item 
-\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classDLL_ad2a4ae95995c0fa312ae31169df12d72}{init} ()
+\hyperlink{classStatusCode}{StatusCode} \hyperlink{classDLL_ad2a4ae95995c0fa312ae31169df12d72}{init} ()
 \item 
-\hyperlink{classElement}{Element} $\ast$ \hyperlink{classDLL_a20cd236b93830729cad8fcec092e5e18}{create\+Element} (std\+::string)
+\hyperlink{classElement}{Element} $\ast$ \hyperlink{classDLL_a20cd236b93830729cad8fcec092e5e18}{createElement} (std::string)
 \item 
-\hyperlink{classProcessus}{Processus} $\ast$ \hyperlink{classDLL_a9136bcd5e5ca7894bd337241803735c3}{create\+Processus} (std\+::string)
+\hyperlink{classProcessus}{Processus} $\ast$ \hyperlink{classDLL_a9136bcd5e5ca7894bd337241803735c3}{createProcessus} (std::string)
 \item 
-\hyperlink{classObject}{Object} $\ast$ \hyperlink{classDLL_aab0ac14c9ae23fe6cb9aadb2cbc87424}{create\+Object} (std\+::string)
+\hyperlink{classObject}{Object} $\ast$ \hyperlink{classDLL_aab0ac14c9ae23fe6cb9aadb2cbc87424}{createObject} (std::string)
 \item 
-\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classDLL_abbe40e8f9065dfcfef3df9decb60087b}{destroy} (\hyperlink{classElement}{Element} $\ast$)
+\hyperlink{classStatusCode}{StatusCode} \hyperlink{classDLL_abbe40e8f9065dfcfef3df9decb60087b}{destroy} (\hyperlink{classElement}{Element} $\ast$)
 \item 
-\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classDLL_ac2ca6dfa120f123af42bff6f0b3fec5a}{destroy} (\hyperlink{classProcessus}{Processus} $\ast$)
+\hyperlink{classStatusCode}{StatusCode} \hyperlink{classDLL_ac2ca6dfa120f123af42bff6f0b3fec5a}{destroy} (\hyperlink{classProcessus}{Processus} $\ast$)
 \item 
-\hyperlink{classStatusCode}{Status\+Code} \hyperlink{classDLL_a4334ca0b1639c39d905c3553f5b9d507}{destroy} (\hyperlink{classObject}{Object} $\ast$)
+\hyperlink{classStatusCode}{StatusCode} \hyperlink{classDLL_a4334ca0b1639c39d905c3553f5b9d507}{destroy} (\hyperlink{classObject}{Object} $\ast$)
 \item 
 void \hyperlink{classDLL_ae45f8b4b291e9da806f4921dd7468cfc}{print} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classDLL_a3a4774ae240e805b9c3ce18b7418d7cc}{msg} (std\+::string mymsg)
+void \hyperlink{classDLL_a3a4774ae240e805b9c3ce18b7418d7cc}{msg} (std::string mymsg)
 \item 
-void \hyperlink{classDLL_a3b019cc98993af67fdc9b07b1921251b}{verbose} (std\+::string mymsg)
+void \hyperlink{classDLL_a3b019cc98993af67fdc9b07b1921251b}{verbose} (std::string mymsg)
 \item 
-void \hyperlink{classDLL_ab3fb4a13b4308047d42b27b6943a47da}{debug} (std\+::string mymsg)
+void \hyperlink{classDLL_ab3fb4a13b4308047d42b27b6943a47da}{debug} (std::string mymsg)
 \item 
-void \hyperlink{classDLL_a2b7ea0c85b83a1dec03e4fce13c0d5d2}{info} (std\+::string mymsg)
+void \hyperlink{classDLL_a2b7ea0c85b83a1dec03e4fce13c0d5d2}{info} (std::string mymsg)
 \item 
-void \hyperlink{classDLL_a4bbc341bad623eedb5c228c91ce2e858}{warning} (std\+::string mymsg)
+void \hyperlink{classDLL_a4bbc341bad623eedb5c228c91ce2e858}{warning} (std::string mymsg)
 \item 
-void \hyperlink{classDLL_a946b5d7e4b0b200b7acf190aa58bf9c4}{fatal} (std\+::string mymsg)
+void \hyperlink{classDLL_a946b5d7e4b0b200b7acf190aa58bf9c4}{fatal} (std::string mymsg)
 \item 
-void \hyperlink{classDLL_a39585579e6dd045ee39cd74ebecc0525}{msg} (std\+::string mymsg, std\+::string \hyperlink{classDLL_a0a915d538771dde2cb0580cd340ee088}{name})
+void \hyperlink{classDLL_a39585579e6dd045ee39cd74ebecc0525}{msg} (std::string mymsg, std::string name)
 \item 
-void \hyperlink{classDLL_a721fa58107b11bb96181219f06f517e3}{verbose} (std\+::string mymsg, std\+::string \hyperlink{classDLL_a0a915d538771dde2cb0580cd340ee088}{name})
+void \hyperlink{classDLL_a721fa58107b11bb96181219f06f517e3}{verbose} (std::string mymsg, std::string name)
 \item 
-void \hyperlink{classDLL_a681470b03d31aab77229bb2e3a72409c}{debug} (std\+::string mymsg, std\+::string \hyperlink{classDLL_a0a915d538771dde2cb0580cd340ee088}{name})
+void \hyperlink{classDLL_a681470b03d31aab77229bb2e3a72409c}{debug} (std::string mymsg, std::string name)
 \item 
-void \hyperlink{classDLL_ac7c5b201c76267167f3543d524d06046}{info} (std\+::string mymsg, std\+::string \hyperlink{classDLL_a0a915d538771dde2cb0580cd340ee088}{name})
+void \hyperlink{classDLL_ac7c5b201c76267167f3543d524d06046}{info} (std::string mymsg, std::string name)
 \item 
-void \hyperlink{classDLL_a0f7d876098d5dcd412989a3b2a5dadf3}{warning} (std\+::string mymsg, std\+::string \hyperlink{classDLL_a0a915d538771dde2cb0580cd340ee088}{name})
+void \hyperlink{classDLL_a0f7d876098d5dcd412989a3b2a5dadf3}{warning} (std::string mymsg, std::string name)
 \item 
-void \hyperlink{classDLL_ada1bec81505d4e419e995004a2eb180e}{fatal} (std\+::string mymsg, std\+::string \hyperlink{classDLL_a0a915d538771dde2cb0580cd340ee088}{name})
+void \hyperlink{classDLL_ada1bec81505d4e419e995004a2eb180e}{fatal} (std::string mymsg, std::string name)
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classMsgSvc}{Msg\+Svc} \hyperlink{classDLL_a6e66cd993e2d142b48691557ce8e4047}{m\+\_\+log}
+\hyperlink{classMsgSvc}{MsgSvc} \hyperlink{classDLL_a6e66cd993e2d142b48691557ce8e4047}{m\_\-log}
 \item 
-std\+::string \hyperlink{classDLL_ad5e4d36d8c2575447f73acc2a703b405}{m\+\_\+name}
+std::string \hyperlink{classDLL_ad5e4d36d8c2575447f73acc2a703b405}{m\_\-name}
 \item 
-\hyperlink{classDLL_addaefe5c907a5f357cc18718300f22b0}{Image\+Handle} \hyperlink{classDLL_a2ca22015aef35c5d61f8daaf3c070154}{m\+\_\+handle}
+\hyperlink{classDLL_addaefe5c907a5f357cc18718300f22b0}{ImageHandle} \hyperlink{classDLL_a2ca22015aef35c5d61f8daaf3c070154}{m\_\-handle}
 \item 
-\hyperlink{classDLL_a36792635c3cd36adbaaef2ff7152046e}{list\+Of\+Elements} \hyperlink{classDLL_a2e88d7167245fd7b6a000817583643ed}{m\+\_\+list\+Elements}
+\hyperlink{classDLL_a36792635c3cd36adbaaef2ff7152046e}{listOfElements} \hyperlink{classDLL_a2e88d7167245fd7b6a000817583643ed}{m\_\-listElements}
 \item 
-\hyperlink{classDLL_aded1b0bb41b288ed4f34cb6d6632d486}{list\+Of\+Processus} \hyperlink{classDLL_a197e92b990184a27a74f4a0456897bd5}{m\+\_\+list\+Processus}
+\hyperlink{classDLL_aded1b0bb41b288ed4f34cb6d6632d486}{listOfProcessus} \hyperlink{classDLL_a197e92b990184a27a74f4a0456897bd5}{m\_\-listProcessus}
 \item 
-\hyperlink{classDLL_a68629aa6f9103c5a3082511ff8218b1e}{list\+Of\+Objects} \hyperlink{classDLL_af48201f52f29a849489e0104a440bcbb}{m\+\_\+list\+Objects}
+\hyperlink{classDLL_a68629aa6f9103c5a3082511ff8218b1e}{listOfObjects} \hyperlink{classDLL_af48201f52f29a849489e0104a440bcbb}{m\_\-listObjects}
 \item 
-std\+::vector$<$ \hyperlink{classDLL_a104a81e667f9a54504c0faf095f77fc7}{Constructor\+Element} $>$ \hyperlink{classDLL_a7ee65d305f4f6014f6499d69f162d024}{m\+\_\+element\+Constructors}
+std::vector$<$ \hyperlink{classDLL_a7b46644880e5b843144baed79bb2f961}{ConstructorElement} $>$ \hyperlink{classDLL_a7ee65d305f4f6014f6499d69f162d024}{m\_\-elementConstructors}
 \item 
-std\+::vector$<$ \hyperlink{classDLL_a204f0c776712969410a2673db3d98cf5}{Destructor\+Element} $>$ \hyperlink{classDLL_a5004587b4dac5d0ccb0ab99b167ef159}{m\+\_\+element\+Destructors}
+std::vector$<$ \hyperlink{classDLL_a6e838cc12677c8ea48d5312984f8f18b}{DestructorElement} $>$ \hyperlink{classDLL_a5004587b4dac5d0ccb0ab99b167ef159}{m\_\-elementDestructors}
 \item 
-std\+::vector$<$ \hyperlink{classDLL_afbf4c85f3517962642944b80833a3607}{Constructor\+Processus} $>$ \hyperlink{classDLL_af9b49d23b767b742e38a7286de8e7c4d}{m\+\_\+processus\+Constructors}
+std::vector$<$ \hyperlink{classDLL_ad47776a706e85c9bdae28ec91e88b8e8}{ConstructorProcessus} $>$ \hyperlink{classDLL_af9b49d23b767b742e38a7286de8e7c4d}{m\_\-processusConstructors}
 \item 
-std\+::vector$<$ \hyperlink{classDLL_a203a61b2a683e2751b5f3fe5a7187a7e}{Destructor\+Processus} $>$ \hyperlink{classDLL_a5a00cc3723ff34be55c621505f15fc08}{m\+\_\+processus\+Destructors}
+std::vector$<$ \hyperlink{classDLL_a3bd20fb58c02a1a2f4e96d59da21faf5}{DestructorProcessus} $>$ \hyperlink{classDLL_a5a00cc3723ff34be55c621505f15fc08}{m\_\-processusDestructors}
 \item 
-std\+::vector$<$ \hyperlink{classDLL_a67b9601085a9f972b9ac6876cd11398e}{Constructor\+Object} $>$ \hyperlink{classDLL_a298d605445e22ef8147ae700848cd737}{m\+\_\+object\+Constructors}
+std::vector$<$ \hyperlink{classDLL_a19c89e48f530542f639456f569ede17a}{ConstructorObject} $>$ \hyperlink{classDLL_a298d605445e22ef8147ae700848cd737}{m\_\-objectConstructors}
 \item 
-std\+::vector$<$ \hyperlink{classDLL_a4400d330cd793ae5f883ffa58384f637}{Destructor\+Object} $>$ \hyperlink{classDLL_a8c34d91e0a5ccfc34fff7c66f542b2d7}{m\+\_\+object\+Destructors}
+std::vector$<$ \hyperlink{classDLL_a143a49a77c9a75b043e9dba700afc45b}{DestructorObject} $>$ \hyperlink{classDLL_a8c34d91e0a5ccfc34fff7c66f542b2d7}{m\_\-objectDestructors}
 \end{DoxyCompactItemize}
 
 
@@ -143,1258 +143,1043 @@ std\+::vector$<$ \hyperlink{classDLL_a4400d330cd793ae5f883ffa58384f637}{Destruct
 \end{DoxyDate}
 
 
-Definition at line 57 of file D\+L\+L.\+h.
-
-
+Definition at line 57 of file DLL.h.
 
 \subsection{Member Typedef Documentation}
-\mbox{\Hypertarget{classDLL_a104a81e667f9a54504c0faf095f77fc7}\label{classDLL_a104a81e667f9a54504c0faf095f77fc7}} 
-\index{D\+LL@{D\+LL}!Constructor\+Element@{Constructor\+Element}}
-\index{Constructor\+Element@{Constructor\+Element}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{Constructor\+Element}{ConstructorElement}}
-{\footnotesize\ttfamily typedef \hyperlink{classElement}{Element}$\ast$($\ast$ D\+L\+L\+::\+Constructor\+Element) ()}
+\hypertarget{classDLL_a7b46644880e5b843144baed79bb2f961}{
+\index{DLL@{DLL}!ConstructorElement@{ConstructorElement}}
+\index{ConstructorElement@{ConstructorElement}!DLL@{DLL}}
+\subsubsection[{ConstructorElement}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Element}$\ast$($\ast$ {\bf DLL::ConstructorElement})()}}
+\label{classDLL_a7b46644880e5b843144baed79bb2f961}
 
 
-
-Definition at line 69 of file D\+L\+L.\+h.
-
-\mbox{\Hypertarget{classDLL_a67b9601085a9f972b9ac6876cd11398e}\label{classDLL_a67b9601085a9f972b9ac6876cd11398e}} 
-\index{D\+LL@{D\+LL}!Constructor\+Object@{Constructor\+Object}}
-\index{Constructor\+Object@{Constructor\+Object}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{Constructor\+Object}{ConstructorObject}}
-{\footnotesize\ttfamily typedef \hyperlink{classObject}{Object}$\ast$($\ast$ D\+L\+L\+::\+Constructor\+Object) ()}
+Definition at line 69 of file DLL.h.\hypertarget{classDLL_a19c89e48f530542f639456f569ede17a}{
+\index{DLL@{DLL}!ConstructorObject@{ConstructorObject}}
+\index{ConstructorObject@{ConstructorObject}!DLL@{DLL}}
+\subsubsection[{ConstructorObject}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Object}$\ast$($\ast$ {\bf DLL::ConstructorObject})()}}
+\label{classDLL_a19c89e48f530542f639456f569ede17a}
 
 
-
-Definition at line 73 of file D\+L\+L.\+h.
-
-\mbox{\Hypertarget{classDLL_afbf4c85f3517962642944b80833a3607}\label{classDLL_afbf4c85f3517962642944b80833a3607}} 
-\index{D\+LL@{D\+LL}!Constructor\+Processus@{Constructor\+Processus}}
-\index{Constructor\+Processus@{Constructor\+Processus}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{Constructor\+Processus}{ConstructorProcessus}}
-{\footnotesize\ttfamily typedef \hyperlink{classProcessus}{Processus}$\ast$($\ast$ D\+L\+L\+::\+Constructor\+Processus) ()}
+Definition at line 73 of file DLL.h.\hypertarget{classDLL_ad47776a706e85c9bdae28ec91e88b8e8}{
+\index{DLL@{DLL}!ConstructorProcessus@{ConstructorProcessus}}
+\index{ConstructorProcessus@{ConstructorProcessus}!DLL@{DLL}}
+\subsubsection[{ConstructorProcessus}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Processus}$\ast$($\ast$ {\bf DLL::ConstructorProcessus})()}}
+\label{classDLL_ad47776a706e85c9bdae28ec91e88b8e8}
 
 
-
-Definition at line 71 of file D\+L\+L.\+h.
-
-\mbox{\Hypertarget{classDLL_a204f0c776712969410a2673db3d98cf5}\label{classDLL_a204f0c776712969410a2673db3d98cf5}} 
-\index{D\+LL@{D\+LL}!Destructor\+Element@{Destructor\+Element}}
-\index{Destructor\+Element@{Destructor\+Element}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{Destructor\+Element}{DestructorElement}}
-{\footnotesize\ttfamily typedef void($\ast$ D\+L\+L\+::\+Destructor\+Element) (\hyperlink{classElement}{Element} $\ast$)}
+Definition at line 71 of file DLL.h.\hypertarget{classDLL_a6e838cc12677c8ea48d5312984f8f18b}{
+\index{DLL@{DLL}!DestructorElement@{DestructorElement}}
+\index{DestructorElement@{DestructorElement}!DLL@{DLL}}
+\subsubsection[{DestructorElement}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ {\bf DLL::DestructorElement})({\bf Element} $\ast$)}}
+\label{classDLL_a6e838cc12677c8ea48d5312984f8f18b}
 
 
-
-Definition at line 70 of file D\+L\+L.\+h.
-
-\mbox{\Hypertarget{classDLL_a4400d330cd793ae5f883ffa58384f637}\label{classDLL_a4400d330cd793ae5f883ffa58384f637}} 
-\index{D\+LL@{D\+LL}!Destructor\+Object@{Destructor\+Object}}
-\index{Destructor\+Object@{Destructor\+Object}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{Destructor\+Object}{DestructorObject}}
-{\footnotesize\ttfamily typedef void($\ast$ D\+L\+L\+::\+Destructor\+Object) (\hyperlink{classObject}{Object} $\ast$)}
+Definition at line 70 of file DLL.h.\hypertarget{classDLL_a143a49a77c9a75b043e9dba700afc45b}{
+\index{DLL@{DLL}!DestructorObject@{DestructorObject}}
+\index{DestructorObject@{DestructorObject}!DLL@{DLL}}
+\subsubsection[{DestructorObject}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ {\bf DLL::DestructorObject})({\bf Object} $\ast$)}}
+\label{classDLL_a143a49a77c9a75b043e9dba700afc45b}
 
 
-
-Definition at line 74 of file D\+L\+L.\+h.
-
-\mbox{\Hypertarget{classDLL_a203a61b2a683e2751b5f3fe5a7187a7e}\label{classDLL_a203a61b2a683e2751b5f3fe5a7187a7e}} 
-\index{D\+LL@{D\+LL}!Destructor\+Processus@{Destructor\+Processus}}
-\index{Destructor\+Processus@{Destructor\+Processus}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{Destructor\+Processus}{DestructorProcessus}}
-{\footnotesize\ttfamily typedef void($\ast$ D\+L\+L\+::\+Destructor\+Processus) (\hyperlink{classProcessus}{Processus} $\ast$)}
+Definition at line 74 of file DLL.h.\hypertarget{classDLL_a3bd20fb58c02a1a2f4e96d59da21faf5}{
+\index{DLL@{DLL}!DestructorProcessus@{DestructorProcessus}}
+\index{DestructorProcessus@{DestructorProcessus}!DLL@{DLL}}
+\subsubsection[{DestructorProcessus}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ {\bf DLL::DestructorProcessus})({\bf Processus} $\ast$)}}
+\label{classDLL_a3bd20fb58c02a1a2f4e96d59da21faf5}
 
 
-
-Definition at line 72 of file D\+L\+L.\+h.
-
-\mbox{\Hypertarget{classDLL_a6d72472c2f54dc82cbb6a5bbab70dae6}\label{classDLL_a6d72472c2f54dc82cbb6a5bbab70dae6}} 
-\index{D\+LL@{D\+LL}!Entry\+Point@{Entry\+Point}}
-\index{Entry\+Point@{Entry\+Point}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{Entry\+Point}{EntryPoint}}
-{\footnotesize\ttfamily typedef void($\ast$ D\+L\+L\+::\+Entry\+Point) (\hyperlink{classDLL}{D\+LL} $\ast$)}
+Definition at line 72 of file DLL.h.\hypertarget{classDLL_a9b8086a1063fe93f3545a3d20c5ca192}{
+\index{DLL@{DLL}!EntryPoint@{EntryPoint}}
+\index{EntryPoint@{EntryPoint}!DLL@{DLL}}
+\subsubsection[{EntryPoint}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ {\bf DLL::EntryPoint})({\bf DLL} $\ast$)}}
+\label{classDLL_a9b8086a1063fe93f3545a3d20c5ca192}
 
 
-
-Definition at line 67 of file D\+L\+L.\+h.
-
-\mbox{\Hypertarget{classDLL_aa2df9e9226052bfa93a6df56f1ca689b}\label{classDLL_aa2df9e9226052bfa93a6df56f1ca689b}} 
-\index{D\+LL@{D\+LL}!identification@{identification}}
-\index{identification@{identification}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{identification}{identification}}
-{\footnotesize\ttfamily typedef std\+::pair$<$std\+::string,std\+::string$>$ \hyperlink{classDLL_aa2df9e9226052bfa93a6df56f1ca689b}{D\+L\+L\+::identification}}
+Definition at line 67 of file DLL.h.\hypertarget{classDLL_aa2df9e9226052bfa93a6df56f1ca689b}{
+\index{DLL@{DLL}!identification@{identification}}
+\index{identification@{identification}!DLL@{DLL}}
+\subsubsection[{identification}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::pair$<$std::string,std::string$>$ {\bf DLL::identification}}}
+\label{classDLL_aa2df9e9226052bfa93a6df56f1ca689b}
 
 
-
-Definition at line 76 of file D\+L\+L.\+h.
-
-\mbox{\Hypertarget{classDLL_addaefe5c907a5f357cc18718300f22b0}\label{classDLL_addaefe5c907a5f357cc18718300f22b0}} 
-\index{D\+LL@{D\+LL}!Image\+Handle@{Image\+Handle}}
-\index{Image\+Handle@{Image\+Handle}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{Image\+Handle}{ImageHandle}}
-{\footnotesize\ttfamily typedef void$\ast$ \hyperlink{classDLL_addaefe5c907a5f357cc18718300f22b0}{D\+L\+L\+::\+Image\+Handle}}
+Definition at line 76 of file DLL.h.\hypertarget{classDLL_addaefe5c907a5f357cc18718300f22b0}{
+\index{DLL@{DLL}!ImageHandle@{ImageHandle}}
+\index{ImageHandle@{ImageHandle}!DLL@{DLL}}
+\subsubsection[{ImageHandle}]{\setlength{\rightskip}{0pt plus 5cm}typedef void$\ast$ {\bf DLL::ImageHandle}}}
+\label{classDLL_addaefe5c907a5f357cc18718300f22b0}
 
 
-
-Definition at line 64 of file D\+L\+L.\+h.
-
-\mbox{\Hypertarget{classDLL_a36792635c3cd36adbaaef2ff7152046e}\label{classDLL_a36792635c3cd36adbaaef2ff7152046e}} 
-\index{D\+LL@{D\+LL}!list\+Of\+Elements@{list\+Of\+Elements}}
-\index{list\+Of\+Elements@{list\+Of\+Elements}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{list\+Of\+Elements}{listOfElements}}
-{\footnotesize\ttfamily typedef std\+::vector$<$\hyperlink{classDLL_aa2df9e9226052bfa93a6df56f1ca689b}{identification}$>$ \hyperlink{classDLL_a36792635c3cd36adbaaef2ff7152046e}{D\+L\+L\+::list\+Of\+Elements}}
+Definition at line 64 of file DLL.h.\hypertarget{classDLL_a36792635c3cd36adbaaef2ff7152046e}{
+\index{DLL@{DLL}!listOfElements@{listOfElements}}
+\index{listOfElements@{listOfElements}!DLL@{DLL}}
+\subsubsection[{listOfElements}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::vector$<${\bf identification}$>$ {\bf DLL::listOfElements}}}
+\label{classDLL_a36792635c3cd36adbaaef2ff7152046e}
 
 
-
-Definition at line 77 of file D\+L\+L.\+h.
-
-\mbox{\Hypertarget{classDLL_a68629aa6f9103c5a3082511ff8218b1e}\label{classDLL_a68629aa6f9103c5a3082511ff8218b1e}} 
-\index{D\+LL@{D\+LL}!list\+Of\+Objects@{list\+Of\+Objects}}
-\index{list\+Of\+Objects@{list\+Of\+Objects}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{list\+Of\+Objects}{listOfObjects}}
-{\footnotesize\ttfamily typedef std\+::vector$<$\hyperlink{classDLL_aa2df9e9226052bfa93a6df56f1ca689b}{identification}$>$ \hyperlink{classDLL_a68629aa6f9103c5a3082511ff8218b1e}{D\+L\+L\+::list\+Of\+Objects}}
+Definition at line 77 of file DLL.h.\hypertarget{classDLL_a68629aa6f9103c5a3082511ff8218b1e}{
+\index{DLL@{DLL}!listOfObjects@{listOfObjects}}
+\index{listOfObjects@{listOfObjects}!DLL@{DLL}}
+\subsubsection[{listOfObjects}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::vector$<${\bf identification}$>$ {\bf DLL::listOfObjects}}}
+\label{classDLL_a68629aa6f9103c5a3082511ff8218b1e}
 
 
-
-Definition at line 79 of file D\+L\+L.\+h.
-
-\mbox{\Hypertarget{classDLL_aded1b0bb41b288ed4f34cb6d6632d486}\label{classDLL_aded1b0bb41b288ed4f34cb6d6632d486}} 
-\index{D\+LL@{D\+LL}!list\+Of\+Processus@{list\+Of\+Processus}}
-\index{list\+Of\+Processus@{list\+Of\+Processus}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{list\+Of\+Processus}{listOfProcessus}}
-{\footnotesize\ttfamily typedef std\+::vector$<$\hyperlink{classDLL_aa2df9e9226052bfa93a6df56f1ca689b}{identification}$>$ \hyperlink{classDLL_aded1b0bb41b288ed4f34cb6d6632d486}{D\+L\+L\+::list\+Of\+Processus}}
+Definition at line 79 of file DLL.h.\hypertarget{classDLL_aded1b0bb41b288ed4f34cb6d6632d486}{
+\index{DLL@{DLL}!listOfProcessus@{listOfProcessus}}
+\index{listOfProcessus@{listOfProcessus}!DLL@{DLL}}
+\subsubsection[{listOfProcessus}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::vector$<${\bf identification}$>$ {\bf DLL::listOfProcessus}}}
+\label{classDLL_aded1b0bb41b288ed4f34cb6d6632d486}
 
 
-
-Definition at line 78 of file D\+L\+L.\+h.
-
-
+Definition at line 78 of file DLL.h.
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classDLL_a78a22a98025697c4862ffc2a7cfcb648}\label{classDLL_a78a22a98025697c4862ffc2a7cfcb648}} 
-\index{D\+LL@{D\+LL}!D\+LL@{D\+LL}}
-\index{D\+LL@{D\+LL}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{D\+L\+L()}{DLL()}}
-{\footnotesize\ttfamily D\+L\+L\+::\+D\+LL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
+\hypertarget{classDLL_a78a22a98025697c4862ffc2a7cfcb648}{
+\index{DLL@{DLL}!DLL@{DLL}}
+\index{DLL@{DLL}!DLL@{DLL}}
+\subsubsection[{DLL}]{\setlength{\rightskip}{0pt plus 5cm}DLL::DLL ()}}
+\label{classDLL_a78a22a98025697c4862ffc2a7cfcb648}
 
 
 Standard constructor. 
 
-
-
-Definition at line 20 of file D\+L\+L.\+cpp.
+Definition at line 20 of file DLL.cpp.
 
 
 \begin{DoxyCode}
 20           :
-21 \hyperlink{classDLL_a2ca22015aef35c5d61f8daaf3c070154}{m\_handle} (0)
-22 \{
-23 \}
+21 m_handle (0)
+22 {
+23 }
 \end{DoxyCode}
-\mbox{\Hypertarget{classDLL_aff5b45d4b57b97144d4b49bc05aa0ddd}\label{classDLL_aff5b45d4b57b97144d4b49bc05aa0ddd}} 
-\index{D\+LL@{D\+LL}!````~D\+LL@{$\sim$\+D\+LL}}
-\index{````~D\+LL@{$\sim$\+D\+LL}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{$\sim$\+D\+L\+L()}{~DLL()}}
-{\footnotesize\ttfamily D\+L\+L\+::$\sim$\+D\+LL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
+\hypertarget{classDLL_aff5b45d4b57b97144d4b49bc05aa0ddd}{
+\index{DLL@{DLL}!$\sim$DLL@{$\sim$DLL}}
+\index{$\sim$DLL@{$\sim$DLL}!DLL@{DLL}}
+\subsubsection[{$\sim$DLL}]{\setlength{\rightskip}{0pt plus 5cm}DLL::$\sim$DLL ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classDLL_aff5b45d4b57b97144d4b49bc05aa0ddd}
 
 
 Destructor. 
 
-
-
-Definition at line 27 of file D\+L\+L.\+cpp.
+Definition at line 27 of file DLL.cpp.
 
 
 \begin{DoxyCode}
-27 \{\}
+27 {}
 \end{DoxyCode}
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classDLL_ac6528d0e965139d0830868fe8cace775}\label{classDLL_ac6528d0e965139d0830868fe8cace775}} 
-\index{D\+LL@{D\+LL}!add\+Element@{add\+Element}}
-\index{add\+Element@{add\+Element}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{add\+Element()}{addElement()}}
-{\footnotesize\ttfamily void D\+L\+L\+::add\+Element (\begin{DoxyParamCaption}\item[{std\+::string}]{element,  }\item[{std\+::string}]{description = {\ttfamily std\+:\+:string~(\char`\"{}\char`\"{})} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\hypertarget{classDLL_ac6528d0e965139d0830868fe8cace775}{
+\index{DLL@{DLL}!addElement@{addElement}}
+\index{addElement@{addElement}!DLL@{DLL}}
+\subsubsection[{addElement}]{\setlength{\rightskip}{0pt plus 5cm}void DLL::addElement (std::string {\em element}, \/  std::string {\em description} = {\ttfamily std::string~(\char`\"{}\char`\"{})})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classDLL_ac6528d0e965139d0830868fe8cace775}
+Append an \hyperlink{classElement}{Element} to the \hyperlink{classDLL}{DLL} 
 
-Append an \hyperlink{classElement}{Element} to the \hyperlink{classDLL}{D\+LL} 
+Definition at line 139 of file DLL.h.
 
-Definition at line 139 of file D\+L\+L.\+h.
-
-
-
-References m\+\_\+list\+Elements.
+References m\_\-listElements.
 
 
 \begin{DoxyCode}
-141   \{
-142     \hyperlink{classDLL_aa2df9e9226052bfa93a6df56f1ca689b}{identification} id ( \hyperlink{namespaceelement}{element} , description );
-143     \hyperlink{classDLL_a2e88d7167245fd7b6a000817583643ed}{m\_listElements}.push\_back( \textcolor{keywordtype}{id} );
-144   \}
+141   {
+142     identification id ( element , description );
+143     m_listElements.push_back( id );
+144   }
 \end{DoxyCode}
-\mbox{\Hypertarget{classDLL_a76bd3e49e5e0046b017aa18afdc55a41}\label{classDLL_a76bd3e49e5e0046b017aa18afdc55a41}} 
-\index{D\+LL@{D\+LL}!add\+Object@{add\+Object}}
-\index{add\+Object@{add\+Object}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{add\+Object()}{addObject()}}
-{\footnotesize\ttfamily void D\+L\+L\+::add\+Object (\begin{DoxyParamCaption}\item[{std\+::string}]{proc,  }\item[{std\+::string}]{description = {\ttfamily std\+:\+:string~(\char`\"{}\char`\"{})} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\hypertarget{classDLL_a76bd3e49e5e0046b017aa18afdc55a41}{
+\index{DLL@{DLL}!addObject@{addObject}}
+\index{addObject@{addObject}!DLL@{DLL}}
+\subsubsection[{addObject}]{\setlength{\rightskip}{0pt plus 5cm}void DLL::addObject (std::string {\em proc}, \/  std::string {\em description} = {\ttfamily std::string~(\char`\"{}\char`\"{})})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classDLL_a76bd3e49e5e0046b017aa18afdc55a41}
+Append a \hyperlink{classObject}{Object} to the \hyperlink{classDLL}{DLL} 
 
-Append a \hyperlink{classObject}{Object} to the \hyperlink{classDLL}{D\+LL} 
+Definition at line 159 of file DLL.h.
 
-Definition at line 159 of file D\+L\+L.\+h.
-
-
-
-References contains\+Object(), create\+Element(), create\+Object(), create\+Processus(), destroy(), init(), m\+\_\+list\+Objects, object\+List(), and print().
+References m\_\-listObjects.
 
 
 \begin{DoxyCode}
-161     \{
-162     \hyperlink{classDLL_aa2df9e9226052bfa93a6df56f1ca689b}{identification} id ( \hyperlink{namespaceproc}{proc} , description ); 
-163     \hyperlink{classDLL_af48201f52f29a849489e0104a440bcbb}{m\_listObjects}.push\_back( \textcolor{keywordtype}{id} );
-164   \}
+161     {
+162     identification id ( proc , description ); 
+163     m_listObjects.push_back( id );
+164   }
 \end{DoxyCode}
-\mbox{\Hypertarget{classDLL_a1f08b909c1569631b6b6b84b52409e33}\label{classDLL_a1f08b909c1569631b6b6b84b52409e33}} 
-\index{D\+LL@{D\+LL}!add\+Processus@{add\+Processus}}
-\index{add\+Processus@{add\+Processus}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{add\+Processus()}{addProcessus()}}
-{\footnotesize\ttfamily void D\+L\+L\+::add\+Processus (\begin{DoxyParamCaption}\item[{std\+::string}]{proc,  }\item[{std\+::string}]{description = {\ttfamily std\+:\+:string~(\char`\"{}\char`\"{})} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\hypertarget{classDLL_a1f08b909c1569631b6b6b84b52409e33}{
+\index{DLL@{DLL}!addProcessus@{addProcessus}}
+\index{addProcessus@{addProcessus}!DLL@{DLL}}
+\subsubsection[{addProcessus}]{\setlength{\rightskip}{0pt plus 5cm}void DLL::addProcessus (std::string {\em proc}, \/  std::string {\em description} = {\ttfamily std::string~(\char`\"{}\char`\"{})})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classDLL_a1f08b909c1569631b6b6b84b52409e33}
+Append a \hyperlink{classProcessus}{Processus} to the \hyperlink{classDLL}{DLL} 
 
-Append a \hyperlink{classProcessus}{Processus} to the \hyperlink{classDLL}{D\+LL} 
+Definition at line 149 of file DLL.h.
 
-Definition at line 149 of file D\+L\+L.\+h.
-
-
-
-References m\+\_\+list\+Processus.
+References m\_\-listProcessus.
 
 
 \begin{DoxyCode}
-151     \{
-152     \hyperlink{classDLL_aa2df9e9226052bfa93a6df56f1ca689b}{identification} id ( \hyperlink{namespaceproc}{proc} , description ); 
-153     \hyperlink{classDLL_a197e92b990184a27a74f4a0456897bd5}{m\_listProcessus}.push\_back( \textcolor{keywordtype}{id} );
-154   \}
+151     {
+152     identification id ( proc , description ); 
+153     m_listProcessus.push_back( id );
+154   }
 \end{DoxyCode}
-\mbox{\Hypertarget{classDLL_af1aada8b1d5632bfac61639f997b9753}\label{classDLL_af1aada8b1d5632bfac61639f997b9753}} 
-\index{D\+LL@{D\+LL}!contains\+Object@{contains\+Object}}
-\index{contains\+Object@{contains\+Object}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{contains\+Object()}{containsObject()}}
-{\footnotesize\ttfamily bool D\+L\+L\+::contains\+Object (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
-
+\hypertarget{classDLL_af1aada8b1d5632bfac61639f997b9753}{
+\index{DLL@{DLL}!containsObject@{containsObject}}
+\index{containsObject@{containsObject}!DLL@{DLL}}
+\subsubsection[{containsObject}]{\setlength{\rightskip}{0pt plus 5cm}bool DLL::containsObject (std::string {\em name})}}
+\label{classDLL_af1aada8b1d5632bfac61639f997b9753}
 find if \hyperlink{classObject}{Object} belong to the library 
 
-Definition at line 32 of file D\+L\+L.\+cpp.
+Definition at line 32 of file DLL.cpp.
 
-
-
-References m\+\_\+list\+Elements, and m\+\_\+list\+Processus.
-
-
-
-Referenced by add\+Object().
+References m\_\-listElements, and m\_\-listProcessus.
 
 
 \begin{DoxyCode}
-32                                           \{
-33   std::vector<identification>::const\_iterator iter;
-34   \textcolor{keywordflow}{for} ( iter=\hyperlink{classDLL_a2e88d7167245fd7b6a000817583643ed}{m\_listElements}.begin() ;
-35         iter!=\hyperlink{classDLL_a2e88d7167245fd7b6a000817583643ed}{m\_listElements}.end() ;
-36         ++iter ) \{
-37     \textcolor{keywordflow}{if} ( 0==\hyperlink{classDLL_a0a915d538771dde2cb0580cd340ee088}{name}.compare( iter->first ) )\{
-38       \textcolor{keywordflow}{return} \textcolor{keyword}{true};
-39     \}
-40   \}
-41   \textcolor{keywordflow}{for} ( iter=\hyperlink{classDLL_a197e92b990184a27a74f4a0456897bd5}{m\_listProcessus}.begin() ;
-42         iter!=\hyperlink{classDLL_a197e92b990184a27a74f4a0456897bd5}{m\_listProcessus}.end() ;
-43         ++iter ) \{
-44     \textcolor{keywordflow}{if} ( 0==\hyperlink{classDLL_a0a915d538771dde2cb0580cd340ee088}{name}.compare( iter->first ) )\{
-45       \textcolor{keywordflow}{return} \textcolor{keyword}{true};
-46     \}
-47   \}
-48   \textcolor{keywordflow}{return} \textcolor{keyword}{false};
-49 \}
+32                                           {
+33   std::vector<identification>::const_iterator iter;
+34   for ( iter=m_listElements.begin() ;
+35         iter!=m_listElements.end() ;
+36         ++iter ) {
+37     if ( 0==name.compare( iter->first ) ){
+38       return true;
+39     }
+40   }
+41   for ( iter=m_listProcessus.begin() ;
+42         iter!=m_listProcessus.end() ;
+43         ++iter ) {
+44     if ( 0==name.compare( iter->first ) ){
+45       return true;
+46     }
+47   }
+48   return false;
+49 }
 \end{DoxyCode}
-\mbox{\Hypertarget{classDLL_a20cd236b93830729cad8fcec092e5e18}\label{classDLL_a20cd236b93830729cad8fcec092e5e18}} 
-\index{D\+LL@{D\+LL}!create\+Element@{create\+Element}}
-\index{create\+Element@{create\+Element}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{create\+Element()}{createElement()}}
-{\footnotesize\ttfamily \hyperlink{classElement}{Element} $\ast$ D\+L\+L\+::create\+Element (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
-
+\hypertarget{classDLL_a20cd236b93830729cad8fcec092e5e18}{
+\index{DLL@{DLL}!createElement@{createElement}}
+\index{createElement@{createElement}!DLL@{DLL}}
+\subsubsection[{createElement}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Element} $\ast$ DLL::createElement (std::string {\em name})}}
+\label{classDLL_a20cd236b93830729cad8fcec092e5e18}
 Create an \hyperlink{classElement}{Element} from its type 
 
-Definition at line 278 of file D\+L\+L.\+cpp.
+Definition at line 278 of file DLL.cpp.
 
+References m\_\-elementConstructors, m\_\-listElements, name(), and Object::setDllName().
 
-
-References m\+\_\+element\+Constructors, m\+\_\+list\+Elements, name(), and Object\+::set\+Dll\+Name().
-
-
-
-Referenced by add\+Object(), and D\+L\+L\+Mgr\+::create\+Element().
+Referenced by DLLMgr::createElement().
 
 
 \begin{DoxyCode}
-278                                              \{
-279   std::vector<identification>::const\_iterator iter;
-280   std::vector<ConstructorElement>::const\_iterator constructor=
-      \hyperlink{classDLL_a7ee65d305f4f6014f6499d69f162d024}{m\_elementConstructors}.begin();
-281   \textcolor{keywordflow}{for} ( iter=\hyperlink{classDLL_a2e88d7167245fd7b6a000817583643ed}{m\_listElements}.begin() ;
-282         iter!=\hyperlink{classDLL_a2e88d7167245fd7b6a000817583643ed}{m\_listElements}.end() ;
-283         ++iter ) \{
-284     \textcolor{keywordflow}{if} ( 0==\hyperlink{classDLL_a0a915d538771dde2cb0580cd340ee088}{name}.compare(iter->first) )\{
-285       \hyperlink{classElement}{Element} *\hyperlink{namespaceelement}{element} = (*constructor)() ;
-286       element->\hyperlink{classObject_a870c5af919958c2136623b2d7816d123}{setDllName}(this->\hyperlink{classDLL_a0a915d538771dde2cb0580cd340ee088}{name}());
-287       \textcolor{keywordflow}{return} ( element );
-288     \}
+278                                              {
+279   std::vector<identification>::const_iterator iter;
+280   std::vector<ConstructorElement>::const_iterator constructor=
+      m_elementConstructors.begin();
+281   for ( iter=m_listElements.begin() ;
+282         iter!=m_listElements.end() ;
+283         ++iter ) {
+284     if ( 0==name.compare(iter->first) ){
+285       Element *element = (*constructor)() ;
+286       element->setDllName(this->name());
+287       return ( element );
+288     }
 289     constructor++;
-290   \}
-291   \textcolor{keywordflow}{return} NULL;
-292 \}
+290   }
+291   return NULL;
+292 }
 \end{DoxyCode}
-\mbox{\Hypertarget{classDLL_aab0ac14c9ae23fe6cb9aadb2cbc87424}\label{classDLL_aab0ac14c9ae23fe6cb9aadb2cbc87424}} 
-\index{D\+LL@{D\+LL}!create\+Object@{create\+Object}}
-\index{create\+Object@{create\+Object}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{create\+Object()}{createObject()}}
-{\footnotesize\ttfamily \hyperlink{classObject}{Object}$\ast$ D\+L\+L\+::create\+Object (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})}
-
-Create a \hyperlink{classObject}{Object} from its type 
-
-Referenced by add\+Object().
-
-\mbox{\Hypertarget{classDLL_a9136bcd5e5ca7894bd337241803735c3}\label{classDLL_a9136bcd5e5ca7894bd337241803735c3}} 
-\index{D\+LL@{D\+LL}!create\+Processus@{create\+Processus}}
-\index{create\+Processus@{create\+Processus}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{create\+Processus()}{createProcessus()}}
-{\footnotesize\ttfamily \hyperlink{classProcessus}{Processus} $\ast$ D\+L\+L\+::create\+Processus (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
-
+\hypertarget{classDLL_aab0ac14c9ae23fe6cb9aadb2cbc87424}{
+\index{DLL@{DLL}!createObject@{createObject}}
+\index{createObject@{createObject}!DLL@{DLL}}
+\subsubsection[{createObject}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object}$\ast$ DLL::createObject (std::string)}}
+\label{classDLL_aab0ac14c9ae23fe6cb9aadb2cbc87424}
+Create a \hyperlink{classObject}{Object} from its type \hypertarget{classDLL_a9136bcd5e5ca7894bd337241803735c3}{
+\index{DLL@{DLL}!createProcessus@{createProcessus}}
+\index{createProcessus@{createProcessus}!DLL@{DLL}}
+\subsubsection[{createProcessus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Processus} $\ast$ DLL::createProcessus (std::string {\em name})}}
+\label{classDLL_a9136bcd5e5ca7894bd337241803735c3}
 Create a \hyperlink{classProcessus}{Processus} from its type 
 
-Definition at line 297 of file D\+L\+L.\+cpp.
+Definition at line 297 of file DLL.cpp.
 
+References m\_\-listProcessus, m\_\-processusConstructors, name(), and Object::setDllName().
 
-
-References m\+\_\+list\+Processus, m\+\_\+processus\+Constructors, name(), and Object\+::set\+Dll\+Name().
-
-
-
-Referenced by add\+Object(), D\+L\+L\+Mgr\+::create\+Processus(), and init().
+Referenced by DLLMgr::createProcessus(), and init().
 
 
 \begin{DoxyCode}
-297                                                  \{
-298   std::vector<identification>::const\_iterator iter;
-299   std::vector<ConstructorProcessus>::const\_iterator constructor=
-      \hyperlink{classDLL_af9b49d23b767b742e38a7286de8e7c4d}{m\_processusConstructors}.begin();
-300   \textcolor{keywordflow}{for} ( iter=\hyperlink{classDLL_a197e92b990184a27a74f4a0456897bd5}{m\_listProcessus}.begin() ;
-301         iter!=\hyperlink{classDLL_a197e92b990184a27a74f4a0456897bd5}{m\_listProcessus}.end() ;
-302         ++iter ) \{
-303     \textcolor{keywordflow}{if} ( 0==\hyperlink{classDLL_a0a915d538771dde2cb0580cd340ee088}{name}.compare(iter->first) )\{
-304       \hyperlink{classProcessus}{Processus} *processus=(*constructor)();
-305       processus->\hyperlink{classObject_a870c5af919958c2136623b2d7816d123}{setDllName}(this->\hyperlink{classDLL_a0a915d538771dde2cb0580cd340ee088}{name}());
-306       \textcolor{keywordflow}{return} ( processus );
-307     \}
+297                                                  {
+298   std::vector<identification>::const_iterator iter;
+299   std::vector<ConstructorProcessus>::const_iterator constructor=
+      m_processusConstructors.begin();
+300   for ( iter=m_listProcessus.begin() ;
+301         iter!=m_listProcessus.end() ;
+302         ++iter ) {
+303     if ( 0==name.compare(iter->first) ){
+304       Processus *processus=(*constructor)();
+305       processus->setDllName(this->name());
+306       return ( processus );
+307     }
 308     constructor++;
-309   \}
-310   \textcolor{keywordflow}{return} NULL;
-311 \}
+309   }
+310   return NULL;
+311 }
 \end{DoxyCode}
-\mbox{\Hypertarget{classDLL_ab3fb4a13b4308047d42b27b6943a47da}\label{classDLL_ab3fb4a13b4308047d42b27b6943a47da}} 
-\index{D\+LL@{D\+LL}!debug@{debug}}
-\index{debug@{debug}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{debug()}{debug()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void D\+L\+L\+::debug (\begin{DoxyParamCaption}\item[{std\+::string}]{mymsg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+\hypertarget{classDLL_a681470b03d31aab77229bb2e3a72409c}{
+\index{DLL@{DLL}!debug@{debug}}
+\index{debug@{debug}!DLL@{DLL}}
+\subsubsection[{debug}]{\setlength{\rightskip}{0pt plus 5cm}void DLL::debug (std::string {\em mymsg}, \/  std::string {\em name})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, private\mbox{]}}}}
+\label{classDLL_a681470b03d31aab77229bb2e3a72409c}
 
 
+Definition at line 241 of file DLL.h.
 
-Definition at line 234 of file D\+L\+L.\+h.
-
-
-
-References Msg\+Svc\+::\+D\+E\+B\+UG, and Msg\+Svc\+::msg\+Svc().
+References MsgSvc::DEBUG, m\_\-log, and MsgSvc::msgSvc().
 
 
+\begin{DoxyCode}
+241 { m_log.msgSvc (MsgSvc::DEBUG   , mymsg, name ); }
+\end{DoxyCode}
+\hypertarget{classDLL_ab3fb4a13b4308047d42b27b6943a47da}{
+\index{DLL@{DLL}!debug@{debug}}
+\index{debug@{debug}!DLL@{DLL}}
+\subsubsection[{debug}]{\setlength{\rightskip}{0pt plus 5cm}void DLL::debug (std::string {\em mymsg})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, private\mbox{]}}}}
+\label{classDLL_ab3fb4a13b4308047d42b27b6943a47da}
+
+
+Definition at line 234 of file DLL.h.
+
+References MsgSvc::DEBUG, m\_\-log, m\_\-name, and MsgSvc::msgSvc().
 
 Referenced by load().
 
 
 \begin{DoxyCode}
-234 \{ \hyperlink{classDLL_a6e66cd993e2d142b48691557ce8e4047}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a1dbdcc82dce88370ec335883c83b38b0}{MsgSvc::DEBUG}   , mymsg, \hyperlink{classDLL_ad5e4d36d8c2575447f73acc2a703b405}{m\_name} ); \}
+234 { m_log.msgSvc (MsgSvc::DEBUG   , mymsg, m_name ); }
 \end{DoxyCode}
-\mbox{\Hypertarget{classDLL_a681470b03d31aab77229bb2e3a72409c}\label{classDLL_a681470b03d31aab77229bb2e3a72409c}} 
-\index{D\+LL@{D\+LL}!debug@{debug}}
-\index{debug@{debug}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{debug()}{debug()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void D\+L\+L\+::debug (\begin{DoxyParamCaption}\item[{std\+::string}]{mymsg,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
-
-
-
-Definition at line 241 of file D\+L\+L.\+h.
-
-
-
-References Msg\+Svc\+::\+D\+E\+B\+UG, and Msg\+Svc\+::msg\+Svc().
-
-
-\begin{DoxyCode}
-241 \{ \hyperlink{classDLL_a6e66cd993e2d142b48691557ce8e4047}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a1dbdcc82dce88370ec335883c83b38b0}{MsgSvc::DEBUG}   , mymsg, \hyperlink{classDLL_a0a915d538771dde2cb0580cd340ee088}{name} ); \}
-\end{DoxyCode}
-\mbox{\Hypertarget{classDLL_abbe40e8f9065dfcfef3df9decb60087b}\label{classDLL_abbe40e8f9065dfcfef3df9decb60087b}} 
-\index{D\+LL@{D\+LL}!destroy@{destroy}}
-\index{destroy@{destroy}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{destroy()}{destroy()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} D\+L\+L\+::destroy (\begin{DoxyParamCaption}\item[{\hyperlink{classElement}{Element} $\ast$}]{ptr }\end{DoxyParamCaption})}
-
-Destroy an \hyperlink{classElement}{Element} from its pointer 
-
-Definition at line 316 of file D\+L\+L.\+cpp.
-
-
-
-References Status\+Code\+::\+F\+A\+I\+L\+U\+RE, m\+\_\+element\+Destructors, m\+\_\+list\+Elements, Status\+Code\+::\+S\+U\+C\+C\+E\+SS, and Object\+::type().
-
-
-
-Referenced by add\+Object(), and D\+L\+L\+Mgr\+::destroy().
-
-
-\begin{DoxyCode}
-316                                        \{
-317   std::vector<identification>::const\_iterator iter;
-318   std::vector<DestructorElement>::const\_iterator destructor=\hyperlink{classDLL_a5004587b4dac5d0ccb0ab99b167ef159}{m\_elementDestructors}.begin(
-      );
-319   \textcolor{keywordflow}{for} ( iter=\hyperlink{classDLL_a2e88d7167245fd7b6a000817583643ed}{m\_listElements}.begin() ;
-320         iter!=\hyperlink{classDLL_a2e88d7167245fd7b6a000817583643ed}{m\_listElements}.end() ;
-321         ++iter ) \{
-322     \textcolor{keywordflow}{if} ( 0==(ptr->\hyperlink{classObject_a84f99f70f144a83e1582d1d0f84e4e62}{type}()).compare(iter->first) )\{
-323       ( (*destructor)( ptr ) );
-324       \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
-325     \}
-326     destructor++;
-327   \}
-328   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
-329 \}
-\end{DoxyCode}
-\mbox{\Hypertarget{classDLL_ac2ca6dfa120f123af42bff6f0b3fec5a}\label{classDLL_ac2ca6dfa120f123af42bff6f0b3fec5a}} 
-\index{D\+LL@{D\+LL}!destroy@{destroy}}
-\index{destroy@{destroy}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{destroy()}{destroy()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} D\+L\+L\+::destroy (\begin{DoxyParamCaption}\item[{\hyperlink{classProcessus}{Processus} $\ast$}]{ptr }\end{DoxyParamCaption})}
-
+\hypertarget{classDLL_a4334ca0b1639c39d905c3553f5b9d507}{
+\index{DLL@{DLL}!destroy@{destroy}}
+\index{destroy@{destroy}!DLL@{DLL}}
+\subsubsection[{destroy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf StatusCode} DLL::destroy ({\bf Object} $\ast$)}}
+\label{classDLL_a4334ca0b1639c39d905c3553f5b9d507}
+Destroy a \hyperlink{classObject}{Object} from its pointer \hypertarget{classDLL_ac2ca6dfa120f123af42bff6f0b3fec5a}{
+\index{DLL@{DLL}!destroy@{destroy}}
+\index{destroy@{destroy}!DLL@{DLL}}
+\subsubsection[{destroy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf StatusCode} DLL::destroy ({\bf Processus} $\ast$ {\em ptr})}}
+\label{classDLL_ac2ca6dfa120f123af42bff6f0b3fec5a}
 Destroy a \hyperlink{classProcessus}{Processus} from its pointer 
 
-Definition at line 334 of file D\+L\+L.\+cpp.
+Definition at line 334 of file DLL.cpp.
 
-
-
-References Status\+Code\+::\+F\+A\+I\+L\+U\+RE, m\+\_\+list\+Processus, m\+\_\+processus\+Destructors, Status\+Code\+::\+S\+U\+C\+C\+E\+SS, and Object\+::type().
+References StatusCode::FAILURE, m\_\-listProcessus, m\_\-processusDestructors, StatusCode::SUCCESS, and Object::type().
 
 
 \begin{DoxyCode}
-334                                          \{
-335   std::vector<identification>::const\_iterator iter;
-336   std::vector<DestructorProcessus>::const\_iterator destructor=
-      \hyperlink{classDLL_a5a00cc3723ff34be55c621505f15fc08}{m\_processusDestructors}.begin();
-337   \textcolor{keywordflow}{for} ( iter=\hyperlink{classDLL_a197e92b990184a27a74f4a0456897bd5}{m\_listProcessus}.begin() ;
-338         iter!=\hyperlink{classDLL_a197e92b990184a27a74f4a0456897bd5}{m\_listProcessus}.end() ;
-339         ++iter ) \{
-340     \textcolor{keywordflow}{if} ( 0==(ptr->\hyperlink{classObject_a84f99f70f144a83e1582d1d0f84e4e62}{type}()).compare(iter->first) )\{
+334                                          {
+335   std::vector<identification>::const_iterator iter;
+336   std::vector<DestructorProcessus>::const_iterator destructor=
+      m_processusDestructors.begin();
+337   for ( iter=m_listProcessus.begin() ;
+338         iter!=m_listProcessus.end() ;
+339         ++iter ) {
+340     if ( 0==(ptr->type()).compare(iter->first) ){
 341       ( (*destructor)( ptr ) );
-342       \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
-343     \}
+342       return StatusCode::SUCCESS;
+343     }
 344     destructor++;
-345   \}
-346   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
-347 \}
+345   }
+346   return StatusCode::FAILURE;
+347 }
 \end{DoxyCode}
-\mbox{\Hypertarget{classDLL_a4334ca0b1639c39d905c3553f5b9d507}\label{classDLL_a4334ca0b1639c39d905c3553f5b9d507}} 
-\index{D\+LL@{D\+LL}!destroy@{destroy}}
-\index{destroy@{destroy}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{destroy()}{destroy()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} D\+L\+L\+::destroy (\begin{DoxyParamCaption}\item[{\hyperlink{classObject}{Object} $\ast$}]{ }\end{DoxyParamCaption})}
+\hypertarget{classDLL_abbe40e8f9065dfcfef3df9decb60087b}{
+\index{DLL@{DLL}!destroy@{destroy}}
+\index{destroy@{destroy}!DLL@{DLL}}
+\subsubsection[{destroy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf StatusCode} DLL::destroy ({\bf Element} $\ast$ {\em ptr})}}
+\label{classDLL_abbe40e8f9065dfcfef3df9decb60087b}
+Destroy an \hyperlink{classElement}{Element} from its pointer 
 
-Destroy a \hyperlink{classObject}{Object} from its pointer \mbox{\Hypertarget{classDLL_a946b5d7e4b0b200b7acf190aa58bf9c4}\label{classDLL_a946b5d7e4b0b200b7acf190aa58bf9c4}} 
-\index{D\+LL@{D\+LL}!fatal@{fatal}}
-\index{fatal@{fatal}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{fatal()}{fatal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void D\+L\+L\+::fatal (\begin{DoxyParamCaption}\item[{std\+::string}]{mymsg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+Definition at line 316 of file DLL.cpp.
 
+References StatusCode::FAILURE, m\_\-elementDestructors, m\_\-listElements, StatusCode::SUCCESS, and Object::type().
 
-
-Definition at line 237 of file D\+L\+L.\+h.
-
-
-
-References Msg\+Svc\+::\+F\+A\+T\+AL, and Msg\+Svc\+::msg\+Svc().
+Referenced by DLLMgr::destroy().
 
 
 \begin{DoxyCode}
-237 \{ \hyperlink{classDLL_a6e66cd993e2d142b48691557ce8e4047}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a59c73cb29edfc9cdf35845e2b1301363}{MsgSvc::FATAL}   , mymsg, \hyperlink{classDLL_ad5e4d36d8c2575447f73acc2a703b405}{m\_name} ); \}
+316                                        {
+317   std::vector<identification>::const_iterator iter;
+318   std::vector<DestructorElement>::const_iterator destructor=m_elementDestructors.
+      begin();
+319   for ( iter=m_listElements.begin() ;
+320         iter!=m_listElements.end() ;
+321         ++iter ) {
+322     if ( 0==(ptr->type()).compare(iter->first) ){
+323       ( (*destructor)( ptr ) );
+324       return StatusCode::SUCCESS;
+325     }
+326     destructor++;
+327   }
+328   return StatusCode::FAILURE;
+329 }
 \end{DoxyCode}
-\mbox{\Hypertarget{classDLL_ada1bec81505d4e419e995004a2eb180e}\label{classDLL_ada1bec81505d4e419e995004a2eb180e}} 
-\index{D\+LL@{D\+LL}!fatal@{fatal}}
-\index{fatal@{fatal}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{fatal()}{fatal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void D\+L\+L\+::fatal (\begin{DoxyParamCaption}\item[{std\+::string}]{mymsg,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+\hypertarget{classDLL_ada1bec81505d4e419e995004a2eb180e}{
+\index{DLL@{DLL}!fatal@{fatal}}
+\index{fatal@{fatal}!DLL@{DLL}}
+\subsubsection[{fatal}]{\setlength{\rightskip}{0pt plus 5cm}void DLL::fatal (std::string {\em mymsg}, \/  std::string {\em name})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, private\mbox{]}}}}
+\label{classDLL_ada1bec81505d4e419e995004a2eb180e}
 
 
+Definition at line 244 of file DLL.h.
 
-Definition at line 244 of file D\+L\+L.\+h.
-
-
-
-References Msg\+Svc\+::\+F\+A\+T\+AL, and Msg\+Svc\+::msg\+Svc().
+References MsgSvc::FATAL, m\_\-log, and MsgSvc::msgSvc().
 
 
 \begin{DoxyCode}
-244 \{ \hyperlink{classDLL_a6e66cd993e2d142b48691557ce8e4047}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a59c73cb29edfc9cdf35845e2b1301363}{MsgSvc::FATAL}   , mymsg, \hyperlink{classDLL_a0a915d538771dde2cb0580cd340ee088}{name} ); \}
+244 { m_log.msgSvc (MsgSvc::FATAL   , mymsg, name ); }
 \end{DoxyCode}
-\mbox{\Hypertarget{classDLL_a2b7ea0c85b83a1dec03e4fce13c0d5d2}\label{classDLL_a2b7ea0c85b83a1dec03e4fce13c0d5d2}} 
-\index{D\+LL@{D\+LL}!info@{info}}
-\index{info@{info}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{info()}{info()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void D\+L\+L\+::info (\begin{DoxyParamCaption}\item[{std\+::string}]{mymsg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+\hypertarget{classDLL_a946b5d7e4b0b200b7acf190aa58bf9c4}{
+\index{DLL@{DLL}!fatal@{fatal}}
+\index{fatal@{fatal}!DLL@{DLL}}
+\subsubsection[{fatal}]{\setlength{\rightskip}{0pt plus 5cm}void DLL::fatal (std::string {\em mymsg})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, private\mbox{]}}}}
+\label{classDLL_a946b5d7e4b0b200b7acf190aa58bf9c4}
 
 
+Definition at line 237 of file DLL.h.
 
-Definition at line 235 of file D\+L\+L.\+h.
-
-
-
-References Msg\+Svc\+::\+I\+N\+FO, and Msg\+Svc\+::msg\+Svc().
+References MsgSvc::FATAL, m\_\-log, m\_\-name, and MsgSvc::msgSvc().
 
 
+\begin{DoxyCode}
+237 { m_log.msgSvc (MsgSvc::FATAL   , mymsg, m_name ); }
+\end{DoxyCode}
+\hypertarget{classDLL_ac7c5b201c76267167f3543d524d06046}{
+\index{DLL@{DLL}!info@{info}}
+\index{info@{info}!DLL@{DLL}}
+\subsubsection[{info}]{\setlength{\rightskip}{0pt plus 5cm}void DLL::info (std::string {\em mymsg}, \/  std::string {\em name})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, private\mbox{]}}}}
+\label{classDLL_ac7c5b201c76267167f3543d524d06046}
+
+
+Definition at line 242 of file DLL.h.
+
+References MsgSvc::INFO, m\_\-log, and MsgSvc::msgSvc().
+
+
+\begin{DoxyCode}
+242 { m_log.msgSvc (MsgSvc::INFO    , mymsg, name ); }
+\end{DoxyCode}
+\hypertarget{classDLL_a2b7ea0c85b83a1dec03e4fce13c0d5d2}{
+\index{DLL@{DLL}!info@{info}}
+\index{info@{info}!DLL@{DLL}}
+\subsubsection[{info}]{\setlength{\rightskip}{0pt plus 5cm}void DLL::info (std::string {\em mymsg})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, private\mbox{]}}}}
+\label{classDLL_a2b7ea0c85b83a1dec03e4fce13c0d5d2}
+
+
+Definition at line 235 of file DLL.h.
+
+References MsgSvc::INFO, m\_\-log, m\_\-name, and MsgSvc::msgSvc().
 
 Referenced by load(), and print().
 
 
 \begin{DoxyCode}
-235 \{ \hyperlink{classDLL_a6e66cd993e2d142b48691557ce8e4047}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{MsgSvc::INFO}    , mymsg, \hyperlink{classDLL_ad5e4d36d8c2575447f73acc2a703b405}{m\_name} ); \}
+235 { m_log.msgSvc (MsgSvc::INFO    , mymsg, m_name ); }
 \end{DoxyCode}
-\mbox{\Hypertarget{classDLL_ac7c5b201c76267167f3543d524d06046}\label{classDLL_ac7c5b201c76267167f3543d524d06046}} 
-\index{D\+LL@{D\+LL}!info@{info}}
-\index{info@{info}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{info()}{info()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void D\+L\+L\+::info (\begin{DoxyParamCaption}\item[{std\+::string}]{mymsg,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
-
-
-
-Definition at line 242 of file D\+L\+L.\+h.
-
-
-
-References Msg\+Svc\+::\+I\+N\+FO, and Msg\+Svc\+::msg\+Svc().
-
-
-\begin{DoxyCode}
-242 \{ \hyperlink{classDLL_a6e66cd993e2d142b48691557ce8e4047}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{MsgSvc::INFO}    , mymsg, \hyperlink{classDLL_a0a915d538771dde2cb0580cd340ee088}{name} ); \}
-\end{DoxyCode}
-\mbox{\Hypertarget{classDLL_ad2a4ae95995c0fa312ae31169df12d72}\label{classDLL_ad2a4ae95995c0fa312ae31169df12d72}} 
-\index{D\+LL@{D\+LL}!init@{init}}
-\index{init@{init}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{init()}{init()}}
-{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} D\+L\+L\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
+\hypertarget{classDLL_ad2a4ae95995c0fa312ae31169df12d72}{
+\index{DLL@{DLL}!init@{init}}
+\index{init@{init}!DLL@{DLL}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf StatusCode} DLL::init ()}}
+\label{classDLL_ad2a4ae95995c0fa312ae31169df12d72}
 initialization of the dll 
 
-Definition at line 172 of file D\+L\+L.\+cpp.
+Definition at line 172 of file DLL.cpp.
 
-
-
-References Proc\+Data\+Base\+::add(), application(), create\+Processus(), Status\+Code\+::\+F\+A\+I\+L\+U\+RE, m\+\_\+element\+Constructors, m\+\_\+element\+Destructors, m\+\_\+handle, m\+\_\+list\+Elements, m\+\_\+list\+Processus, m\+\_\+processus\+Constructors, m\+\_\+processus\+Destructors, Application\+::proc\+Db(), Status\+Code\+::\+S\+U\+C\+C\+E\+SS, and warning().
-
-
-
-Referenced by add\+Object(), and load().
-
-
-\begin{DoxyCode}
-172                         \{
-173   \textcolor{keywordtype}{bool} initOk = \textcolor{keyword}{true};
-174   std::vector<identification>::const\_iterator iter;
-175   \textcolor{keywordflow}{for} ( iter=\hyperlink{classDLL_a2e88d7167245fd7b6a000817583643ed}{m\_listElements}.begin() ;
-176         iter!=\hyperlink{classDLL_a2e88d7167245fd7b6a000817583643ed}{m\_listElements}.end() ;
-177         ++iter ) \{
-178     \hyperlink{classDLL_a104a81e667f9a54504c0faf095f77fc7}{ConstructorElement} constructor;
-179     \hyperlink{classDLL_a204f0c776712969410a2673db3d98cf5}{DestructorElement} destructor;
-180 \textcolor{preprocessor}{#ifdef WIN32}
-181     constructor = (\hyperlink{classDLL_a104a81e667f9a54504c0faf095f77fc7}{ConstructorElement})GetProcAddress(\hyperlink{classDLL_a2ca22015aef35c5d61f8daaf3c070154}{m\_handle},
-182                                                      (iter->first+
-183                                                       std::string(\textcolor{stringliteral}{"\_create"})).c\_str());
-184     destructor = (\hyperlink{classDLL_a204f0c776712969410a2673db3d98cf5}{DestructorElement})GetProcAddress(\hyperlink{classDLL_a2ca22015aef35c5d61f8daaf3c070154}{m\_handle},
-185                                                    (iter->first+
-186                                                     std::string(\textcolor{stringliteral}{"\_destroy"})).c\_str());
-187 \textcolor{preprocessor}{#else}
-188     constructor = (\hyperlink{classDLL_a104a81e667f9a54504c0faf095f77fc7}{ConstructorElement})dlsym(\hyperlink{classDLL_a2ca22015aef35c5d61f8daaf3c070154}{m\_handle},
-189                                            (iter->first+
-190                                            std::string(\textcolor{stringliteral}{"\_create"})).c\_str());
-191     destructor = (\hyperlink{classDLL_a204f0c776712969410a2673db3d98cf5}{DestructorElement})dlsym(\hyperlink{classDLL_a2ca22015aef35c5d61f8daaf3c070154}{m\_handle},
-192                                          (iter->first+
-193                                          std::string(\textcolor{stringliteral}{"\_destroy"})).c\_str());
-194 \textcolor{preprocessor}{#endif}
-195     \textcolor{keywordflow}{if} ( 0 == constructor) \{
-196       \hyperlink{classDLL_a4bbc341bad623eedb5c228c91ce2e858}{warning}(\textcolor{stringliteral}{"Could not find constructor of "}+iter->first+std::string(\textcolor{stringliteral}{" (\_create)"}),\textcolor{stringliteral}{"DLL::init"});
-197       initOk=\textcolor{keyword}{false};
-198     \}
-199     \textcolor{keywordflow}{if} ( 0 == destructor) \{
-200       \hyperlink{classDLL_a4bbc341bad623eedb5c228c91ce2e858}{warning}(\textcolor{stringliteral}{"Could not find destructor of "}+iter->first+std::string(\textcolor{stringliteral}{" (\_destroy)"}),\textcolor{stringliteral}{"DLL::init"});
-201       initOk=\textcolor{keyword}{false};
-202     \}
-203     \textcolor{keywordflow}{if} (initOk) \{
-204       \hyperlink{classDLL_a7ee65d305f4f6014f6499d69f162d024}{m\_elementConstructors}.push\_back( constructor );
-205       \hyperlink{classDLL_a5004587b4dac5d0ccb0ab99b167ef159}{m\_elementDestructors}.push\_back( destructor );
-206     \}
-207   \}
-208   \textcolor{keywordflow}{if} (!initOk)\{
-209     \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
-210   \}
-211 
-212   initOk=\textcolor{keyword}{true};
-213   \textcolor{keywordflow}{for} ( iter=\hyperlink{classDLL_a197e92b990184a27a74f4a0456897bd5}{m\_listProcessus}.begin() ;
-214         iter!=\hyperlink{classDLL_a197e92b990184a27a74f4a0456897bd5}{m\_listProcessus}.end() ;
-215         ++iter ) \{
-216     \hyperlink{classDLL_afbf4c85f3517962642944b80833a3607}{ConstructorProcessus} constructor;
-217     \hyperlink{classDLL_a203a61b2a683e2751b5f3fe5a7187a7e}{DestructorProcessus} destructor;
-218 \textcolor{preprocessor}{#ifdef WIN32}
-219     constructor = (\hyperlink{classDLL_afbf4c85f3517962642944b80833a3607}{ConstructorProcessus})GetProcAddress(
-      \hyperlink{classDLL_a2ca22015aef35c5d61f8daaf3c070154}{m\_handle},
-220                                                        (iter->first+
-221                                                         std::string(\textcolor{stringliteral}{"\_create"})).c\_str());
-222     destructor = (\hyperlink{classDLL_a203a61b2a683e2751b5f3fe5a7187a7e}{DestructorProcessus})GetProcAddress(\hyperlink{classDLL_a2ca22015aef35c5d61f8daaf3c070154}{m\_handle},
-223                                                      (iter->first+
-224                                                       std::string(\textcolor{stringliteral}{"\_destroy"})).c\_str());
-225 \textcolor{preprocessor}{#else}
-226     constructor = (\hyperlink{classDLL_afbf4c85f3517962642944b80833a3607}{ConstructorProcessus})dlsym(\hyperlink{classDLL_a2ca22015aef35c5d61f8daaf3c070154}{m\_handle},
-227                                              (iter->first+
-228                                              std::string(\textcolor{stringliteral}{"\_create"})).c\_str());
-229     destructor = (\hyperlink{classDLL_a203a61b2a683e2751b5f3fe5a7187a7e}{DestructorProcessus})dlsym(\hyperlink{classDLL_a2ca22015aef35c5d61f8daaf3c070154}{m\_handle},
-230                                            (iter->first+
-231                                            std::string(\textcolor{stringliteral}{"\_destroy"})).c\_str());
-232 \textcolor{preprocessor}{#endif}
-233     \textcolor{keywordflow}{if} ( 0 == constructor) \{
-234       \hyperlink{classDLL_a4bbc341bad623eedb5c228c91ce2e858}{warning}(\textcolor{stringliteral}{"Could not find constructor of "}+iter->first,\textcolor{stringliteral}{"DLL::init"});
-235       initOk=\textcolor{keyword}{false};
-236     \}
-237     \textcolor{keywordflow}{if} ( 0 == destructor) \{
-238       \hyperlink{classDLL_a4bbc341bad623eedb5c228c91ce2e858}{warning}(\textcolor{stringliteral}{"Could not find destructor of "}+iter->first,\textcolor{stringliteral}{"DLL::init"});
-239       initOk=\textcolor{keyword}{false};
-240     \}
-241     \textcolor{keywordflow}{if} (initOk)\{
-242       \hyperlink{classDLL_af9b49d23b767b742e38a7286de8e7c4d}{m\_processusConstructors}.push\_back( constructor );
-243       \hyperlink{classDLL_a5a00cc3723ff34be55c621505f15fc08}{m\_processusDestructors}.push\_back( destructor );
-244       \textcolor{comment}{// create the corresponding processus in the database}
-245       \hyperlink{classProcessus}{Processus}* \hyperlink{namespaceproc}{proc} = \hyperlink{classDLL_a9136bcd5e5ca7894bd337241803735c3}{createProcessus} ( iter->first );
-246       \textcolor{keywordflow}{if} ( 0==proc )\{
-247         initOk=\textcolor{keyword}{false};
-248       \}
-249       \textcolor{keywordflow}{else} \{
-250         \hyperlink{Tools_8h_a27885a3c35afe79029fb830f32f66458}{application}()->\hyperlink{classApplication_aa5c28af1a7e1c41dada2db2a4d03c57d}{procDb}()->\hyperlink{classProcDataBase_a0aafeb65a41b92a6d1fdd67f363ef826}{add}( proc);
-251       \}
-252     \}
-253   \}
-254   \textcolor{keywordflow}{if} (!initOk)\{
-255     \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
-256   \}
-257   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
-258 \}
-\end{DoxyCode}
-\mbox{\Hypertarget{classDLL_adc96628c3ffd637827615fb5a3c71119}\label{classDLL_adc96628c3ffd637827615fb5a3c71119}} 
-\index{D\+LL@{D\+LL}!list\+Elements@{list\+Elements}}
-\index{list\+Elements@{list\+Elements}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{list\+Elements()}{listElements()}}
-{\footnotesize\ttfamily \hyperlink{classDLL_a36792635c3cd36adbaaef2ff7152046e}{list\+Of\+Elements} D\+L\+L\+::list\+Elements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Get accessor to member m\+\_\+list\+Element \begin{DoxyReturn}{Returns}
-the current value of m\+\_\+list\+Element 
-\end{DoxyReturn}
-
-
-Definition at line 116 of file D\+L\+L.\+h.
-
-
-
-References m\+\_\+list\+Elements.
-
-
-\begin{DoxyCode}
-116                                  \{
-117     \textcolor{keywordflow}{return} \hyperlink{classDLL_a2e88d7167245fd7b6a000817583643ed}{m\_listElements};
-118   \}
-\end{DoxyCode}
-\mbox{\Hypertarget{classDLL_a3bde9f46fc00bcc1b0a22558cf0447da}\label{classDLL_a3bde9f46fc00bcc1b0a22558cf0447da}} 
-\index{D\+LL@{D\+LL}!list\+Objects@{list\+Objects}}
-\index{list\+Objects@{list\+Objects}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{list\+Objects()}{listObjects()}}
-{\footnotesize\ttfamily \hyperlink{classDLL_a68629aa6f9103c5a3082511ff8218b1e}{list\+Of\+Objects} D\+L\+L\+::list\+Objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Get accessor to member m\+\_\+list\+Objects \begin{DoxyReturn}{Returns}
-the current value of m\+\_\+list\+Objects 
-\end{DoxyReturn}
-
-
-Definition at line 132 of file D\+L\+L.\+h.
-
-
-
-References m\+\_\+list\+Objects.
-
-
-\begin{DoxyCode}
-132                                \{
-133     \textcolor{keywordflow}{return} \hyperlink{classDLL_af48201f52f29a849489e0104a440bcbb}{m\_listObjects};
-134   \}
-\end{DoxyCode}
-\mbox{\Hypertarget{classDLL_a52eb21bf2ac1a61ae8ae41663ce4c3f8}\label{classDLL_a52eb21bf2ac1a61ae8ae41663ce4c3f8}} 
-\index{D\+LL@{D\+LL}!list\+Processus@{list\+Processus}}
-\index{list\+Processus@{list\+Processus}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{list\+Processus()}{listProcessus()}}
-{\footnotesize\ttfamily \hyperlink{classDLL_aded1b0bb41b288ed4f34cb6d6632d486}{list\+Of\+Processus} D\+L\+L\+::list\+Processus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Get accessor to member m\+\_\+list\+Processus \begin{DoxyReturn}{Returns}
-the current value of m\+\_\+list\+Processus 
-\end{DoxyReturn}
-
-
-Definition at line 124 of file D\+L\+L.\+h.
-
-
-
-References m\+\_\+list\+Processus.
-
-
-\begin{DoxyCode}
-124                                    \{
-125     \textcolor{keywordflow}{return} \hyperlink{classDLL_a197e92b990184a27a74f4a0456897bd5}{m\_listProcessus};
-126   \}
-\end{DoxyCode}
-\mbox{\Hypertarget{classDLL_a64166d3479edf7e44fd539841e70fb3a}\label{classDLL_a64166d3479edf7e44fd539841e70fb3a}} 
-\index{D\+LL@{D\+LL}!load@{load}}
-\index{load@{load}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{load()}{load()}}
-{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} D\+L\+L\+::load (\begin{DoxyParamCaption}\item[{std\+::string}]{library }\end{DoxyParamCaption})}
-
-Load the library according to its name 
-
-Definition at line 118 of file D\+L\+L.\+cpp.
-
-
-
-References debug(), Status\+Code\+::\+F\+A\+I\+L\+U\+RE, info(), init(), m\+\_\+handle, name(), print(), set\+Name(), Status\+Code\+::\+S\+U\+C\+C\+E\+SS, and warning().
-
-
-
-Referenced by D\+L\+L\+Mgr\+::load().
-
-
-\begin{DoxyCode}
-118                                          \{
-119   \textcolor{keyword}{typedef} \hyperlink{classElement}{Element}* (*func) ();
-120 \textcolor{preprocessor}{#ifdef WIN32}
-121   \hyperlink{classDLL_a2ca22015aef35c5d61f8daaf3c070154}{m\_handle} = LoadLibrary ((library+std::string(\textcolor{stringliteral}{".dll"})).c\_str());
-122 \textcolor{preprocessor}{#else}
-123   m\_handle = dlopen( (std::string(\textcolor{stringliteral}{"lib"})+library+std::string(\textcolor{stringliteral}{".so"})).c\_str() , RTLD\_LAZY );
-124 \textcolor{preprocessor}{#endif}
-125   \textcolor{keywordflow}{if} ( NULL != m\_handle ) \{
-126 
-127     \textcolor{comment}{// get entry point}
-128     \hyperlink{classDLL_afc65a270b32a08d0681819cf2317aef0}{setName}(library);
-129     \hyperlink{classDLL_a6d72472c2f54dc82cbb6a5bbab70dae6}{DLL::EntryPoint} entryPoint;
-130 \textcolor{preprocessor}{#ifdef WIN32}
-131     entryPoint = (\hyperlink{classDLL_a6d72472c2f54dc82cbb6a5bbab70dae6}{DLL::EntryPoint})GetProcAddress(m\_handle,
-132                                                  (library+std::string(\textcolor{stringliteral}{"\_dll"})).c\_str());
-133 \textcolor{preprocessor}{#else}
-134     entryPoint = (\hyperlink{classDLL_a6d72472c2f54dc82cbb6a5bbab70dae6}{DLL::EntryPoint})dlsym(m\_handle,
-135                                        (library+std::string(\textcolor{stringliteral}{"\_dll"})).c\_str());
-136 \textcolor{preprocessor}{#endif}
-137     \textcolor{keywordflow}{if} ( !entryPoint ) \{
-138       \hyperlink{classDLL_a4bbc341bad623eedb5c228c91ce2e858}{warning}(\textcolor{stringliteral}{"No entry point found in library "}+library+\textcolor{stringliteral}{"."},\textcolor{stringliteral}{"DLL::load"});
-139       \textcolor{comment}{// could not find entry point}
-140 \textcolor{preprocessor}{#ifdef WIN32}
-141       FreeLibrary( m\_handle );
-142 \textcolor{preprocessor}{#else}
-143       dlclose( m\_handle );
-144 \textcolor{preprocessor}{#endif}
-145       \hyperlink{classDLL_a4bbc341bad623eedb5c228c91ce2e858}{warning}(\textcolor{stringliteral}{"Could not load dll entry point "}+\hyperlink{classDLL_a0a915d538771dde2cb0580cd340ee088}{name}(),\textcolor{stringliteral}{"DLL::load"});
-146       \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
-147     \}
-148     \textcolor{keywordflow}{else} \{
-149       \hyperlink{classDLL_ab3fb4a13b4308047d42b27b6943a47da}{debug}(\textcolor{stringliteral}{"Entry point found in library "}+library+\textcolor{stringliteral}{"."},\textcolor{stringliteral}{"DLL::load"});
-150       \textcolor{comment}{// entry point found : load list of objects}
-151       entryPoint ( \textcolor{keyword}{this} );
-152       \textcolor{comment}{// check if we can find constructors/destructors}
-153       \textcolor{keywordflow}{if} ( \hyperlink{classDLL_ad2a4ae95995c0fa312ae31169df12d72}{init}().isFailure() ) \{
-154     \hyperlink{classDLL_a2b7ea0c85b83a1dec03e4fce13c0d5d2}{info}(\textcolor{stringliteral}{"Could not find Constructors/Destructors in library "}+
-155          library+\textcolor{stringliteral}{"."},\textcolor{stringliteral}{"DLL::load"});
-156         \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
-157       \}
-158       \hyperlink{classDLL_ae45f8b4b291e9da806f4921dd7468cfc}{print}();
-159       \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
-160     \}
-161   \}
-162   \textcolor{keywordflow}{else} \{
-163     \hyperlink{classDLL_a4bbc341bad623eedb5c228c91ce2e858}{warning}(\textcolor{stringliteral}{"No handle on library "}+library+\textcolor{stringliteral}{"."},\textcolor{stringliteral}{"DLL::load"});
-164   \}
-165   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
-166 \}
-\end{DoxyCode}
-\mbox{\Hypertarget{classDLL_a3a4774ae240e805b9c3ce18b7418d7cc}\label{classDLL_a3a4774ae240e805b9c3ce18b7418d7cc}} 
-\index{D\+LL@{D\+LL}!msg@{msg}}
-\index{msg@{msg}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{msg()}{msg()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void D\+L\+L\+::msg (\begin{DoxyParamCaption}\item[{std\+::string}]{mymsg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
-
-
-
-Definition at line 232 of file D\+L\+L.\+h.
-
-
-
-References Msg\+Svc\+::msg\+Svc(), and Msg\+Svc\+::\+N\+O\+NE.
-
-
-\begin{DoxyCode}
-232 \{ \hyperlink{classDLL_a6e66cd993e2d142b48691557ce8e4047}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a9be9ae32fed8e1e6eba4a58692210fbd}{MsgSvc::NONE}    , mymsg, \hyperlink{classDLL_ad5e4d36d8c2575447f73acc2a703b405}{m\_name} ); \}
-\end{DoxyCode}
-\mbox{\Hypertarget{classDLL_a39585579e6dd045ee39cd74ebecc0525}\label{classDLL_a39585579e6dd045ee39cd74ebecc0525}} 
-\index{D\+LL@{D\+LL}!msg@{msg}}
-\index{msg@{msg}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{msg()}{msg()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void D\+L\+L\+::msg (\begin{DoxyParamCaption}\item[{std\+::string}]{mymsg,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
-
-
-
-Definition at line 239 of file D\+L\+L.\+h.
-
-
-
-References Msg\+Svc\+::msg\+Svc(), and Msg\+Svc\+::\+N\+O\+NE.
-
-
-\begin{DoxyCode}
-239 \{ \hyperlink{classDLL_a6e66cd993e2d142b48691557ce8e4047}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a9be9ae32fed8e1e6eba4a58692210fbd}{MsgSvc::NONE}    , mymsg, \hyperlink{classDLL_a0a915d538771dde2cb0580cd340ee088}{name} ); \}
-\end{DoxyCode}
-\mbox{\Hypertarget{classDLL_a0a915d538771dde2cb0580cd340ee088}\label{classDLL_a0a915d538771dde2cb0580cd340ee088}} 
-\index{D\+LL@{D\+LL}!name@{name}}
-\index{name@{name}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{name()}{name()}}
-{\footnotesize\ttfamily std\+::string D\+L\+L\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Get accessor to member m\+\_\+name \begin{DoxyReturn}{Returns}
-the current value of m\+\_\+name 
-\end{DoxyReturn}
-
-
-Definition at line 108 of file D\+L\+L.\+h.
-
-
-
-References m\+\_\+name.
-
-
-
-Referenced by create\+Element(), create\+Processus(), load(), print(), and set\+Name().
-
-
-\begin{DoxyCode}
-108                     \{
-109     \textcolor{keywordflow}{return} \hyperlink{classDLL_ad5e4d36d8c2575447f73acc2a703b405}{m\_name};
-110   \}
-\end{DoxyCode}
-\mbox{\Hypertarget{classDLL_a7d378e5aceb5b06e0fd7df6bc07f9ee5}\label{classDLL_a7d378e5aceb5b06e0fd7df6bc07f9ee5}} 
-\index{D\+LL@{D\+LL}!object\+List@{object\+List}}
-\index{object\+List@{object\+List}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{object\+List()}{objectList()}}
-{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ D\+L\+L\+::object\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-list of Objects 
-
-Definition at line 55 of file D\+L\+L.\+cpp.
-
-
-
-References m\+\_\+list\+Elements, and m\+\_\+list\+Processus.
-
-
-
-Referenced by add\+Object(), and D\+L\+L\+Mgr\+::load().
-
-
-\begin{DoxyCode}
-55                                        \{
-56   std::vector<std::string> list;
-57   std::vector<identification>::const\_iterator iter;
-58   \textcolor{keywordflow}{for} ( iter=\hyperlink{classDLL_a2e88d7167245fd7b6a000817583643ed}{m\_listElements}.begin() ;
-59         iter!=\hyperlink{classDLL_a2e88d7167245fd7b6a000817583643ed}{m\_listElements}.end() ;
-60         ++iter ) \{
-61     list.push\_back ( iter->first );
-62   \}
-63   \textcolor{keywordflow}{for} ( iter=\hyperlink{classDLL_a197e92b990184a27a74f4a0456897bd5}{m\_listProcessus}.begin() ;
-64         iter!=\hyperlink{classDLL_a197e92b990184a27a74f4a0456897bd5}{m\_listProcessus}.end() ;
-65         ++iter ) \{
-66     list.push\_back ( iter->first );
-67   \}
-68   \textcolor{keywordflow}{return} list;
-69 \}
-\end{DoxyCode}
-\mbox{\Hypertarget{classDLL_ae45f8b4b291e9da806f4921dd7468cfc}\label{classDLL_ae45f8b4b291e9da806f4921dd7468cfc}} 
-\index{D\+LL@{D\+LL}!print@{print}}
-\index{print@{print}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{print()}{print()}}
-{\footnotesize\ttfamily void D\+L\+L\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-print \hyperlink{classDLL}{D\+LL} information 
-
-Definition at line 74 of file D\+L\+L.\+cpp.
-
-
-
-References application(), info(), itos(), m\+\_\+list\+Elements, m\+\_\+list\+Processus, name(), Application\+::proc\+Db(), Proc\+Data\+Base\+::processus(), and Object\+::type().
-
-
-
-Referenced by add\+Object(), export\+\_\+base(), and load().
-
-
-\begin{DoxyCode}
-74                   \{
-75   \textcolor{keywordtype}{char} line [100];
-76   \hyperlink{classDLL_a2b7ea0c85b83a1dec03e4fce13c0d5d2}{info}(\textcolor{stringliteral}{"Symbols found in dll "}+\hyperlink{classDLL_a0a915d538771dde2cb0580cd340ee088}{name}()+\textcolor{stringliteral}{": "}+
-77          \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(\hyperlink{classDLL_a2e88d7167245fd7b6a000817583643ed}{m\_listElements}.size())+\textcolor{stringliteral}{" Element(s) - "}+
-78          \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(\hyperlink{classDLL_a197e92b990184a27a74f4a0456897bd5}{m\_listProcessus}.size())+\textcolor{stringliteral}{" Processus."});
-79   std::vector<identification>::const\_iterator iter;
-80   \textcolor{keywordflow}{if} ( \hyperlink{classDLL_a2e88d7167245fd7b6a000817583643ed}{m\_listElements}.size()>0 ) \{
-81     sprintf(line,\textcolor{stringliteral}{"
-      ============================================================================================"});
-82     \hyperlink{classDLL_a2b7ea0c85b83a1dec03e4fce13c0d5d2}{info}(line,\textcolor{stringliteral}{"DLL::print"});
-83     sprintf(line ,\textcolor{stringliteral}{"Element                    Description"});
-84     \hyperlink{classDLL_a2b7ea0c85b83a1dec03e4fce13c0d5d2}{info}(line,\textcolor{stringliteral}{"DLL::print"});
-85     \textcolor{keywordflow}{for} ( iter=\hyperlink{classDLL_a2e88d7167245fd7b6a000817583643ed}{m\_listElements}.begin() ;
-86       iter!=\hyperlink{classDLL_a2e88d7167245fd7b6a000817583643ed}{m\_listElements}.end() ;
-87       ++iter ) \{
-88       sprintf(line,\textcolor{stringliteral}{" %25s %65s "},
-89           iter->first.c\_str(),
-90           iter->second.c\_str());
-91       \hyperlink{classDLL_a2b7ea0c85b83a1dec03e4fce13c0d5d2}{info}(std::string(line),\textcolor{stringliteral}{"DLL::print"});
-92     \}
-93   \}
-94   \textcolor{keywordflow}{if} ( \hyperlink{classDLL_a197e92b990184a27a74f4a0456897bd5}{m\_listProcessus}.size() > 0 ) \{
-95     sprintf(line,\textcolor{stringliteral}{"
-      ============================================================================================"});
-96     \hyperlink{classDLL_a2b7ea0c85b83a1dec03e4fce13c0d5d2}{info}(line,\textcolor{stringliteral}{"DLL::print"});
-97     sprintf (line ,\textcolor{stringliteral}{"Processus                 Target Type"});
-98     \hyperlink{classDLL_a2b7ea0c85b83a1dec03e4fce13c0d5d2}{info}(line,\textcolor{stringliteral}{"DLL::print"});
-99     \textcolor{keywordflow}{for} ( iter=\hyperlink{classDLL_a197e92b990184a27a74f4a0456897bd5}{m\_listProcessus}.begin() ;
-100       iter!=\hyperlink{classDLL_a197e92b990184a27a74f4a0456897bd5}{m\_listProcessus}.end() ;
-101       ++iter ) \{
-102       sprintf(line,\textcolor{stringliteral}{" %25s %25s  "},
-103           iter->first.c\_str(),
-104           \hyperlink{Tools_8h_a27885a3c35afe79029fb830f32f66458}{application}()->\hyperlink{classApplication_aa5c28af1a7e1c41dada2db2a4d03c57d}{procDb}()->\hyperlink{classProcDataBase_a839b15c7bc0d73f5ff0f2516c3cb418e}{processus}(iter->first)->
-      \hyperlink{classObject_a84f99f70f144a83e1582d1d0f84e4e62}{type}().c\_str()
-105           \textcolor{comment}{//        application()->procDb()->processus(iter->first)->title().c\_str()}
-106           );
-107       \hyperlink{classDLL_a2b7ea0c85b83a1dec03e4fce13c0d5d2}{info}(std::string(line),\textcolor{stringliteral}{"DLL::print"});
-108     \}
-109   \}
-110   sprintf(line,\textcolor{stringliteral}{"
-      ============================================================================================"});
-111   \hyperlink{classDLL_a2b7ea0c85b83a1dec03e4fce13c0d5d2}{info}(line,\textcolor{stringliteral}{"DLL::print"});
-112 \}
-\end{DoxyCode}
-\mbox{\Hypertarget{classDLL_afc65a270b32a08d0681819cf2317aef0}\label{classDLL_afc65a270b32a08d0681819cf2317aef0}} 
-\index{D\+LL@{D\+LL}!set\+Name@{set\+Name}}
-\index{set\+Name@{set\+Name}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{set\+Name()}{setName()}}
-{\footnotesize\ttfamily void D\+L\+L\+::set\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Set accessor to member m\+\_\+name 
-\begin{DoxyParams}{Parameters}
-{\em name} & the new value for m\+\_\+name \\
-\hline
-\end{DoxyParams}
-
-
-Definition at line 100 of file D\+L\+L.\+h.
-
-
-
-References m\+\_\+name, and name().
-
-
+References ProcDataBase::add(), application(), createProcessus(), StatusCode::FAILURE, m\_\-elementConstructors, m\_\-elementDestructors, m\_\-handle, m\_\-listElements, m\_\-listProcessus, m\_\-processusConstructors, m\_\-processusDestructors, Application::procDb(), StatusCode::SUCCESS, and warning().
 
 Referenced by load().
 
 
 \begin{DoxyCode}
-100                                 \{
-101     \hyperlink{classDLL_ad5e4d36d8c2575447f73acc2a703b405}{m\_name} = \hyperlink{classDLL_a0a915d538771dde2cb0580cd340ee088}{name};
-102   \}
+172                         {
+173   bool initOk = true;
+174   std::vector<identification>::const_iterator iter;
+175   for ( iter=m_listElements.begin() ;
+176         iter!=m_listElements.end() ;
+177         ++iter ) {
+178     ConstructorElement constructor;
+179     DestructorElement destructor;
+180 #ifdef WIN32
+181     constructor = (ConstructorElement)GetProcAddress(m_handle,
+182                                                      (iter->first+
+183                                                       std::string("_create")).c_s
+      tr());
+184     destructor = (DestructorElement)GetProcAddress(m_handle,
+185                                                    (iter->first+
+186                                                     std::string("_destroy")).c_st
+      r());
+187 #else
+188     constructor = (ConstructorElement)dlsym(m_handle,
+189                                            (iter->first+
+190                                            std::string("_create")).c_str());
+191     destructor = (DestructorElement)dlsym(m_handle,
+192                                          (iter->first+
+193                                          std::string("_destroy")).c_str());
+194 #endif
+195     if ( 0 == constructor) {
+196       warning("Could not find constructor of "+iter->first+std::string(" (_create
+      )"),"DLL::init");
+197       initOk=false;
+198     }
+199     if ( 0 == destructor) {
+200       warning("Could not find destructor of "+iter->first+std::string(" (_destroy
+      )"),"DLL::init");
+201       initOk=false;
+202     }
+203     if (initOk) {
+204       m_elementConstructors.push_back( constructor );
+205       m_elementDestructors.push_back( destructor );
+206     }
+207   }
+208   if (!initOk){
+209     return StatusCode::FAILURE;
+210   }
+211 
+212   initOk=true;
+213   for ( iter=m_listProcessus.begin() ;
+214         iter!=m_listProcessus.end() ;
+215         ++iter ) {
+216     ConstructorProcessus constructor;
+217     DestructorProcessus destructor;
+218 #ifdef WIN32
+219     constructor = (ConstructorProcessus)GetProcAddress(m_handle,
+220                                                        (iter->first+
+221                                                         std::string("_create")).c
+      _str());
+222     destructor = (DestructorProcessus)GetProcAddress(m_handle,
+223                                                      (iter->first+
+224                                                       std::string("_destroy")).c_
+      str());
+225 #else
+226     constructor = (ConstructorProcessus)dlsym(m_handle,
+227                                              (iter->first+
+228                                              std::string("_create")).c_str());
+229     destructor = (DestructorProcessus)dlsym(m_handle,
+230                                            (iter->first+
+231                                            std::string("_destroy")).c_str());
+232 #endif
+233     if ( 0 == constructor) {
+234       warning("Could not find constructor of "+iter->first,"DLL::init");
+235       initOk=false;
+236     }
+237     if ( 0 == destructor) {
+238       warning("Could not find destructor of "+iter->first,"DLL::init");
+239       initOk=false;
+240     }
+241     if (initOk){
+242       m_processusConstructors.push_back( constructor );
+243       m_processusDestructors.push_back( destructor );
+244       // create the corresponding processus in the database
+245       Processus* proc = createProcessus ( iter->first );
+246       if ( 0==proc ){
+247         initOk=false;
+248       }
+249       else {
+250         application()->procDb()->add( proc);
+251       }
+252     }
+253   }
+254   if (!initOk){
+255     return StatusCode::FAILURE;
+256   }
+257   return StatusCode::SUCCESS;
+258 }
 \end{DoxyCode}
-\mbox{\Hypertarget{classDLL_a10147aebd7b2688354f8c372d468d4aa}\label{classDLL_a10147aebd7b2688354f8c372d468d4aa}} 
-\index{D\+LL@{D\+LL}!unload@{unload}}
-\index{unload@{unload}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{unload()}{unload()}}
-{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} D\+L\+L\+::unload (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\hypertarget{classDLL_adc96628c3ffd637827615fb5a3c71119}{
+\index{DLL@{DLL}!listElements@{listElements}}
+\index{listElements@{listElements}!DLL@{DLL}}
+\subsubsection[{listElements}]{\setlength{\rightskip}{0pt plus 5cm}{\bf listOfElements} DLL::listElements ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classDLL_adc96628c3ffd637827615fb5a3c71119}
+Get accessor to member m\_\-listElement \begin{DoxyReturn}{Returns}
+the current value of m\_\-listElement 
+\end{DoxyReturn}
 
+
+Definition at line 116 of file DLL.h.
+
+References m\_\-listElements.
+
+
+\begin{DoxyCode}
+116                                  {
+117     return m_listElements;
+118   }
+\end{DoxyCode}
+\hypertarget{classDLL_a3bde9f46fc00bcc1b0a22558cf0447da}{
+\index{DLL@{DLL}!listObjects@{listObjects}}
+\index{listObjects@{listObjects}!DLL@{DLL}}
+\subsubsection[{listObjects}]{\setlength{\rightskip}{0pt plus 5cm}{\bf listOfObjects} DLL::listObjects ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classDLL_a3bde9f46fc00bcc1b0a22558cf0447da}
+Get accessor to member m\_\-listObjects \begin{DoxyReturn}{Returns}
+the current value of m\_\-listObjects 
+\end{DoxyReturn}
+
+
+Definition at line 132 of file DLL.h.
+
+References m\_\-listObjects.
+
+
+\begin{DoxyCode}
+132                                {
+133     return m_listObjects;
+134   }
+\end{DoxyCode}
+\hypertarget{classDLL_a52eb21bf2ac1a61ae8ae41663ce4c3f8}{
+\index{DLL@{DLL}!listProcessus@{listProcessus}}
+\index{listProcessus@{listProcessus}!DLL@{DLL}}
+\subsubsection[{listProcessus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf listOfProcessus} DLL::listProcessus ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classDLL_a52eb21bf2ac1a61ae8ae41663ce4c3f8}
+Get accessor to member m\_\-listProcessus \begin{DoxyReturn}{Returns}
+the current value of m\_\-listProcessus 
+\end{DoxyReturn}
+
+
+Definition at line 124 of file DLL.h.
+
+References m\_\-listProcessus.
+
+
+\begin{DoxyCode}
+124                                    {
+125     return m_listProcessus;
+126   }
+\end{DoxyCode}
+\hypertarget{classDLL_a64166d3479edf7e44fd539841e70fb3a}{
+\index{DLL@{DLL}!load@{load}}
+\index{load@{load}!DLL@{DLL}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}{\bf StatusCode} DLL::load (std::string {\em library})}}
+\label{classDLL_a64166d3479edf7e44fd539841e70fb3a}
+Load the library according to its name 
+
+Definition at line 118 of file DLL.cpp.
+
+References debug(), StatusCode::FAILURE, info(), init(), m\_\-handle, name(), print(), setName(), StatusCode::SUCCESS, and warning().
+
+Referenced by DLLMgr::load().
+
+
+\begin{DoxyCode}
+118                                          {
+119   typedef Element* (*func) ();
+120 #ifdef WIN32
+121   m_handle = LoadLibrary ((library+std::string(".dll")).c_str());
+122 #else
+123   m_handle = dlopen( (std::string("lib")+library+std::string(".so")).c_str() , RT
+      LD_LAZY );
+124 #endif
+125   if ( NULL != m_handle ) {
+126 
+127     // get entry point
+128     setName(library);
+129     DLL::EntryPoint entryPoint;
+130 #ifdef WIN32
+131     entryPoint = (DLL::EntryPoint)GetProcAddress(m_handle,
+132                                                  (library+std::string("_dll")).c_
+      str());
+133 #else
+134     entryPoint = (DLL::EntryPoint)dlsym(m_handle,
+135                                        (library+std::string("_dll")).c_str());
+136 #endif
+137     if ( !entryPoint ) {
+138       warning("No entry point found in library "+library+".","DLL::load");
+139       // could not find entry point
+140 #ifdef WIN32
+141       FreeLibrary( m_handle );
+142 #else
+143       dlclose( m_handle );
+144 #endif
+145       warning("Could not load dll entry point "+name(),"DLL::load");
+146       return StatusCode::FAILURE;
+147     }
+148     else {
+149       debug("Entry point found in library "+library+".","DLL::load");
+150       // entry point found : load list of objects
+151       entryPoint ( this );
+152       // check if we can find constructors/destructors
+153       if ( init().isFailure() ) {
+154     info("Could not find Constructors/Destructors in library "+
+155          library+".","DLL::load");
+156         return StatusCode::FAILURE;
+157       }
+158       print();
+159       return StatusCode::SUCCESS;
+160     }
+161   }
+162   else {
+163     warning("No handle on library "+library+".","DLL::load");
+164   }
+165   return StatusCode::FAILURE;
+166 }
+\end{DoxyCode}
+\hypertarget{classDLL_a39585579e6dd045ee39cd74ebecc0525}{
+\index{DLL@{DLL}!msg@{msg}}
+\index{msg@{msg}!DLL@{DLL}}
+\subsubsection[{msg}]{\setlength{\rightskip}{0pt plus 5cm}void DLL::msg (std::string {\em mymsg}, \/  std::string {\em name})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, private\mbox{]}}}}
+\label{classDLL_a39585579e6dd045ee39cd74ebecc0525}
+
+
+Definition at line 239 of file DLL.h.
+
+References m\_\-log, MsgSvc::msgSvc(), and MsgSvc::NONE.
+
+
+\begin{DoxyCode}
+239 { m_log.msgSvc (MsgSvc::NONE    , mymsg, name ); }
+\end{DoxyCode}
+\hypertarget{classDLL_a3a4774ae240e805b9c3ce18b7418d7cc}{
+\index{DLL@{DLL}!msg@{msg}}
+\index{msg@{msg}!DLL@{DLL}}
+\subsubsection[{msg}]{\setlength{\rightskip}{0pt plus 5cm}void DLL::msg (std::string {\em mymsg})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, private\mbox{]}}}}
+\label{classDLL_a3a4774ae240e805b9c3ce18b7418d7cc}
+
+
+Definition at line 232 of file DLL.h.
+
+References m\_\-log, m\_\-name, MsgSvc::msgSvc(), and MsgSvc::NONE.
+
+
+\begin{DoxyCode}
+232 { m_log.msgSvc (MsgSvc::NONE    , mymsg, m_name ); }
+\end{DoxyCode}
+\hypertarget{classDLL_a0a915d538771dde2cb0580cd340ee088}{
+\index{DLL@{DLL}!name@{name}}
+\index{name@{name}!DLL@{DLL}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}std::string DLL::name ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classDLL_a0a915d538771dde2cb0580cd340ee088}
+Get accessor to member m\_\-name \begin{DoxyReturn}{Returns}
+the current value of m\_\-name 
+\end{DoxyReturn}
+
+
+Definition at line 108 of file DLL.h.
+
+References m\_\-name.
+
+Referenced by createElement(), createProcessus(), load(), and print().
+
+
+\begin{DoxyCode}
+108                     {
+109     return m_name;
+110   }
+\end{DoxyCode}
+\hypertarget{classDLL_a7d378e5aceb5b06e0fd7df6bc07f9ee5}{
+\index{DLL@{DLL}!objectList@{objectList}}
+\index{objectList@{objectList}!DLL@{DLL}}
+\subsubsection[{objectList}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$ std::string $>$ DLL::objectList ()}}
+\label{classDLL_a7d378e5aceb5b06e0fd7df6bc07f9ee5}
+list of Objects 
+
+Definition at line 55 of file DLL.cpp.
+
+References m\_\-listElements, and m\_\-listProcessus.
+
+Referenced by DLLMgr::load().
+
+
+\begin{DoxyCode}
+55                                        {
+56   std::vector<std::string> list;
+57   std::vector<identification>::const_iterator iter;
+58   for ( iter=m_listElements.begin() ;
+59         iter!=m_listElements.end() ;
+60         ++iter ) {
+61     list.push_back ( iter->first );
+62   }
+63   for ( iter=m_listProcessus.begin() ;
+64         iter!=m_listProcessus.end() ;
+65         ++iter ) {
+66     list.push_back ( iter->first );
+67   }
+68   return list;
+69 }
+\end{DoxyCode}
+\hypertarget{classDLL_ae45f8b4b291e9da806f4921dd7468cfc}{
+\index{DLL@{DLL}!print@{print}}
+\index{print@{print}!DLL@{DLL}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void DLL::print ()}}
+\label{classDLL_ae45f8b4b291e9da806f4921dd7468cfc}
+print \hyperlink{classDLL}{DLL} information 
+
+Definition at line 74 of file DLL.cpp.
+
+References application(), info(), itos(), m\_\-listElements, m\_\-listProcessus, name(), Application::procDb(), ProcDataBase::processus(), and Object::type().
+
+Referenced by export\_\-base(), and load().
+
+
+\begin{DoxyCode}
+74                   {
+75   char line [100];
+76   info("Symbols found in dll "+name()+": "+
+77          itos(m_listElements.size())+" Element(s) - "+
+78          itos(m_listProcessus.size())+" Processus.");
+79   std::vector<identification>::const_iterator iter;
+80   if ( m_listElements.size()>0 ) {
+81     sprintf(line,"===============================================================
+      =============================");
+82     info(line,"DLL::print");
+83     sprintf(line ,"Element                    Description");
+84     info(line,"DLL::print");
+85     for ( iter=m_listElements.begin() ;
+86       iter!=m_listElements.end() ;
+87       ++iter ) {
+88       sprintf(line," %25s %65s ",
+89           iter->first.c_str(),
+90           iter->second.c_str());
+91       info(std::string(line),"DLL::print");
+92     }
+93   }
+94   if ( m_listProcessus.size() > 0 ) {
+95     sprintf(line,"===============================================================
+      =============================");
+96     info(line,"DLL::print");
+97     sprintf (line ,"Processus                 Target Type");
+98     info(line,"DLL::print");
+99     for ( iter=m_listProcessus.begin() ;
+100       iter!=m_listProcessus.end() ;
+101       ++iter ) {
+102       sprintf(line," %25s %25s  ",
+103           iter->first.c_str(),
+104           application()->procDb()->processus(iter->first)->type().c_str()
+105           //        application()->procDb()->processus(iter->first)->title().c_st
+      r()
+106           );
+107       info(std::string(line),"DLL::print");
+108     }
+109   }
+110   sprintf(line,"=================================================================
+      ===========================");
+111   info(line,"DLL::print");
+112 }
+\end{DoxyCode}
+\hypertarget{classDLL_afc65a270b32a08d0681819cf2317aef0}{
+\index{DLL@{DLL}!setName@{setName}}
+\index{setName@{setName}!DLL@{DLL}}
+\subsubsection[{setName}]{\setlength{\rightskip}{0pt plus 5cm}void DLL::setName (std::string {\em name})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classDLL_afc65a270b32a08d0681819cf2317aef0}
+Set accessor to member m\_\-name 
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]the new value for m\_\-name \end{DoxyParams}
+
+
+Definition at line 100 of file DLL.h.
+
+References m\_\-name.
+
+Referenced by load().
+
+
+\begin{DoxyCode}
+100                                 {
+101     m_name = name;
+102   }
+\end{DoxyCode}
+\hypertarget{classDLL_a10147aebd7b2688354f8c372d468d4aa}{
+\index{DLL@{DLL}!unload@{unload}}
+\index{unload@{unload}!DLL@{DLL}}
+\subsubsection[{unload}]{\setlength{\rightskip}{0pt plus 5cm}{\bf StatusCode} DLL::unload ()}}
+\label{classDLL_a10147aebd7b2688354f8c372d468d4aa}
 Unload the library 
 
-Definition at line 263 of file D\+L\+L.\+cpp.
+Definition at line 263 of file DLL.cpp.
 
-
-
-References Status\+Code\+::\+F\+A\+I\+L\+U\+RE, m\+\_\+handle, and Status\+Code\+::\+S\+U\+C\+C\+E\+SS.
-
-
-\begin{DoxyCode}
-263                          \{
-264   \textcolor{keywordflow}{if} ( NULL != \hyperlink{classDLL_a2ca22015aef35c5d61f8daaf3c070154}{m\_handle} )\{
-265 \textcolor{preprocessor}{#ifdef WIN32}
-266     FreeLibrary( \hyperlink{classDLL_a2ca22015aef35c5d61f8daaf3c070154}{m\_handle} );
-267 \textcolor{preprocessor}{#else}
-268     dlclose( \hyperlink{classDLL_a2ca22015aef35c5d61f8daaf3c070154}{m\_handle} );
-269 \textcolor{preprocessor}{#endif}
-270     \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
-271   \}
-272   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
-273 \}
-\end{DoxyCode}
-\mbox{\Hypertarget{classDLL_a3b019cc98993af67fdc9b07b1921251b}\label{classDLL_a3b019cc98993af67fdc9b07b1921251b}} 
-\index{D\+LL@{D\+LL}!verbose@{verbose}}
-\index{verbose@{verbose}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{verbose()}{verbose()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void D\+L\+L\+::verbose (\begin{DoxyParamCaption}\item[{std\+::string}]{mymsg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
-
-
-
-Definition at line 233 of file D\+L\+L.\+h.
-
-
-
-References Msg\+Svc\+::msg\+Svc(), and Msg\+Svc\+::\+V\+E\+R\+B\+O\+SE.
+References StatusCode::FAILURE, m\_\-handle, and StatusCode::SUCCESS.
 
 
 \begin{DoxyCode}
-233 \{ \hyperlink{classDLL_a6e66cd993e2d142b48691557ce8e4047}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926af655256b06494ade5ba830abe5401ec9}{MsgSvc::VERBOSE} , mymsg, \hyperlink{classDLL_ad5e4d36d8c2575447f73acc2a703b405}{m\_name} ); \}
+263                          {
+264   if ( NULL != m_handle ){
+265 #ifdef WIN32
+266     FreeLibrary( m_handle );
+267 #else
+268     dlclose( m_handle );
+269 #endif
+270     return StatusCode::SUCCESS;
+271   }
+272   return StatusCode::FAILURE;
+273 }
 \end{DoxyCode}
-\mbox{\Hypertarget{classDLL_a721fa58107b11bb96181219f06f517e3}\label{classDLL_a721fa58107b11bb96181219f06f517e3}} 
-\index{D\+LL@{D\+LL}!verbose@{verbose}}
-\index{verbose@{verbose}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{verbose()}{verbose()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void D\+L\+L\+::verbose (\begin{DoxyParamCaption}\item[{std\+::string}]{mymsg,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+\hypertarget{classDLL_a721fa58107b11bb96181219f06f517e3}{
+\index{DLL@{DLL}!verbose@{verbose}}
+\index{verbose@{verbose}!DLL@{DLL}}
+\subsubsection[{verbose}]{\setlength{\rightskip}{0pt plus 5cm}void DLL::verbose (std::string {\em mymsg}, \/  std::string {\em name})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, private\mbox{]}}}}
+\label{classDLL_a721fa58107b11bb96181219f06f517e3}
 
 
+Definition at line 240 of file DLL.h.
 
-Definition at line 240 of file D\+L\+L.\+h.
-
-
-
-References Msg\+Svc\+::msg\+Svc(), and Msg\+Svc\+::\+V\+E\+R\+B\+O\+SE.
+References m\_\-log, MsgSvc::msgSvc(), and MsgSvc::VERBOSE.
 
 
 \begin{DoxyCode}
-240 \{ \hyperlink{classDLL_a6e66cd993e2d142b48691557ce8e4047}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926af655256b06494ade5ba830abe5401ec9}{MsgSvc::VERBOSE} , mymsg, \hyperlink{classDLL_a0a915d538771dde2cb0580cd340ee088}{name} ); \}
+240 { m_log.msgSvc (MsgSvc::VERBOSE , mymsg, name ); }
 \end{DoxyCode}
-\mbox{\Hypertarget{classDLL_a4bbc341bad623eedb5c228c91ce2e858}\label{classDLL_a4bbc341bad623eedb5c228c91ce2e858}} 
-\index{D\+LL@{D\+LL}!warning@{warning}}
-\index{warning@{warning}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{warning()}{warning()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void D\+L\+L\+::warning (\begin{DoxyParamCaption}\item[{std\+::string}]{mymsg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+\hypertarget{classDLL_a3b019cc98993af67fdc9b07b1921251b}{
+\index{DLL@{DLL}!verbose@{verbose}}
+\index{verbose@{verbose}!DLL@{DLL}}
+\subsubsection[{verbose}]{\setlength{\rightskip}{0pt plus 5cm}void DLL::verbose (std::string {\em mymsg})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, private\mbox{]}}}}
+\label{classDLL_a3b019cc98993af67fdc9b07b1921251b}
 
 
+Definition at line 233 of file DLL.h.
 
-Definition at line 236 of file D\+L\+L.\+h.
-
-
-
-References Msg\+Svc\+::msg\+Svc(), and Msg\+Svc\+::\+W\+A\+R\+N\+I\+NG.
+References m\_\-log, m\_\-name, MsgSvc::msgSvc(), and MsgSvc::VERBOSE.
 
 
+\begin{DoxyCode}
+233 { m_log.msgSvc (MsgSvc::VERBOSE , mymsg, m_name ); }
+\end{DoxyCode}
+\hypertarget{classDLL_a0f7d876098d5dcd412989a3b2a5dadf3}{
+\index{DLL@{DLL}!warning@{warning}}
+\index{warning@{warning}!DLL@{DLL}}
+\subsubsection[{warning}]{\setlength{\rightskip}{0pt plus 5cm}void DLL::warning (std::string {\em mymsg}, \/  std::string {\em name})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, private\mbox{]}}}}
+\label{classDLL_a0f7d876098d5dcd412989a3b2a5dadf3}
+
+
+Definition at line 243 of file DLL.h.
+
+References m\_\-log, MsgSvc::msgSvc(), and MsgSvc::WARNING.
+
+
+\begin{DoxyCode}
+243 { m_log.msgSvc (MsgSvc::WARNING , mymsg, name ); }
+\end{DoxyCode}
+\hypertarget{classDLL_a4bbc341bad623eedb5c228c91ce2e858}{
+\index{DLL@{DLL}!warning@{warning}}
+\index{warning@{warning}!DLL@{DLL}}
+\subsubsection[{warning}]{\setlength{\rightskip}{0pt plus 5cm}void DLL::warning (std::string {\em mymsg})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, private\mbox{]}}}}
+\label{classDLL_a4bbc341bad623eedb5c228c91ce2e858}
+
+
+Definition at line 236 of file DLL.h.
+
+References m\_\-log, m\_\-name, MsgSvc::msgSvc(), and MsgSvc::WARNING.
 
 Referenced by init(), and load().
 
 
 \begin{DoxyCode}
-236 \{ \hyperlink{classDLL_a6e66cd993e2d142b48691557ce8e4047}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a7cefae88f2ba26b2b05b676a383c834b}{MsgSvc::WARNING} , mymsg, \hyperlink{classDLL_ad5e4d36d8c2575447f73acc2a703b405}{m\_name} ); \}
-\end{DoxyCode}
-\mbox{\Hypertarget{classDLL_a0f7d876098d5dcd412989a3b2a5dadf3}\label{classDLL_a0f7d876098d5dcd412989a3b2a5dadf3}} 
-\index{D\+LL@{D\+LL}!warning@{warning}}
-\index{warning@{warning}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{warning()}{warning()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void D\+L\+L\+::warning (\begin{DoxyParamCaption}\item[{std\+::string}]{mymsg,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
-
-
-
-Definition at line 243 of file D\+L\+L.\+h.
-
-
-
-References Msg\+Svc\+::msg\+Svc(), and Msg\+Svc\+::\+W\+A\+R\+N\+I\+NG.
-
-
-\begin{DoxyCode}
-243 \{ \hyperlink{classDLL_a6e66cd993e2d142b48691557ce8e4047}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926a7cefae88f2ba26b2b05b676a383c834b}{MsgSvc::WARNING} , mymsg, \hyperlink{classDLL_a0a915d538771dde2cb0580cd340ee088}{name} ); \}
+236 { m_log.msgSvc (MsgSvc::WARNING , mymsg, m_name ); }
 \end{DoxyCode}
 
 
 \subsection{Member Data Documentation}
-\mbox{\Hypertarget{classDLL_a7ee65d305f4f6014f6499d69f162d024}\label{classDLL_a7ee65d305f4f6014f6499d69f162d024}} 
-\index{D\+LL@{D\+LL}!m\+\_\+element\+Constructors@{m\+\_\+element\+Constructors}}
-\index{m\+\_\+element\+Constructors@{m\+\_\+element\+Constructors}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{m\+\_\+element\+Constructors}{m\_elementConstructors}}
-{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classDLL_a104a81e667f9a54504c0faf095f77fc7}{Constructor\+Element}$>$ D\+L\+L\+::m\+\_\+element\+Constructors\hspace{0.3cm}{\ttfamily [private]}}
+\hypertarget{classDLL_a7ee65d305f4f6014f6499d69f162d024}{
+\index{DLL@{DLL}!m\_\-elementConstructors@{m\_\-elementConstructors}}
+\index{m\_\-elementConstructors@{m\_\-elementConstructors}!DLL@{DLL}}
+\subsubsection[{m\_\-elementConstructors}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<${\bf ConstructorElement}$>$ {\bf DLL::m\_\-elementConstructors}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classDLL_a7ee65d305f4f6014f6499d69f162d024}
 
 
+Definition at line 225 of file DLL.h.
 
-Definition at line 225 of file D\+L\+L.\+h.
-
-
-
-Referenced by create\+Element(), and init().
-
-\mbox{\Hypertarget{classDLL_a5004587b4dac5d0ccb0ab99b167ef159}\label{classDLL_a5004587b4dac5d0ccb0ab99b167ef159}} 
-\index{D\+LL@{D\+LL}!m\+\_\+element\+Destructors@{m\+\_\+element\+Destructors}}
-\index{m\+\_\+element\+Destructors@{m\+\_\+element\+Destructors}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{m\+\_\+element\+Destructors}{m\_elementDestructors}}
-{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classDLL_a204f0c776712969410a2673db3d98cf5}{Destructor\+Element}$>$ D\+L\+L\+::m\+\_\+element\+Destructors\hspace{0.3cm}{\ttfamily [private]}}
+Referenced by createElement(), and init().\hypertarget{classDLL_a5004587b4dac5d0ccb0ab99b167ef159}{
+\index{DLL@{DLL}!m\_\-elementDestructors@{m\_\-elementDestructors}}
+\index{m\_\-elementDestructors@{m\_\-elementDestructors}!DLL@{DLL}}
+\subsubsection[{m\_\-elementDestructors}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<${\bf DestructorElement}$>$ {\bf DLL::m\_\-elementDestructors}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classDLL_a5004587b4dac5d0ccb0ab99b167ef159}
 
 
+Definition at line 226 of file DLL.h.
 
-Definition at line 226 of file D\+L\+L.\+h.
+Referenced by destroy(), and init().\hypertarget{classDLL_a2ca22015aef35c5d61f8daaf3c070154}{
+\index{DLL@{DLL}!m\_\-handle@{m\_\-handle}}
+\index{m\_\-handle@{m\_\-handle}!DLL@{DLL}}
+\subsubsection[{m\_\-handle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ImageHandle} {\bf DLL::m\_\-handle}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classDLL_a2ca22015aef35c5d61f8daaf3c070154}
 
 
+Definition at line 221 of file DLL.h.
+
+Referenced by init(), load(), and unload().\hypertarget{classDLL_a2e88d7167245fd7b6a000817583643ed}{
+\index{DLL@{DLL}!m\_\-listElements@{m\_\-listElements}}
+\index{m\_\-listElements@{m\_\-listElements}!DLL@{DLL}}
+\subsubsection[{m\_\-listElements}]{\setlength{\rightskip}{0pt plus 5cm}{\bf listOfElements} {\bf DLL::m\_\-listElements}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classDLL_a2e88d7167245fd7b6a000817583643ed}
+
+
+Definition at line 222 of file DLL.h.
+
+Referenced by addElement(), containsObject(), createElement(), destroy(), init(), listElements(), objectList(), and print().\hypertarget{classDLL_af48201f52f29a849489e0104a440bcbb}{
+\index{DLL@{DLL}!m\_\-listObjects@{m\_\-listObjects}}
+\index{m\_\-listObjects@{m\_\-listObjects}!DLL@{DLL}}
+\subsubsection[{m\_\-listObjects}]{\setlength{\rightskip}{0pt plus 5cm}{\bf listOfObjects} {\bf DLL::m\_\-listObjects}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classDLL_af48201f52f29a849489e0104a440bcbb}
+
+
+Definition at line 224 of file DLL.h.
+
+Referenced by addObject(), and listObjects().\hypertarget{classDLL_a197e92b990184a27a74f4a0456897bd5}{
+\index{DLL@{DLL}!m\_\-listProcessus@{m\_\-listProcessus}}
+\index{m\_\-listProcessus@{m\_\-listProcessus}!DLL@{DLL}}
+\subsubsection[{m\_\-listProcessus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf listOfProcessus} {\bf DLL::m\_\-listProcessus}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classDLL_a197e92b990184a27a74f4a0456897bd5}
+
+
+Definition at line 223 of file DLL.h.
+
+Referenced by addProcessus(), containsObject(), createProcessus(), destroy(), init(), listProcessus(), objectList(), and print().\hypertarget{classDLL_a6e66cd993e2d142b48691557ce8e4047}{
+\index{DLL@{DLL}!m\_\-log@{m\_\-log}}
+\index{m\_\-log@{m\_\-log}!DLL@{DLL}}
+\subsubsection[{m\_\-log}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MsgSvc} {\bf DLL::m\_\-log}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classDLL_a6e66cd993e2d142b48691557ce8e4047}
+
+
+Definition at line 219 of file DLL.h.
+
+Referenced by debug(), fatal(), info(), msg(), verbose(), and warning().\hypertarget{classDLL_ad5e4d36d8c2575447f73acc2a703b405}{
+\index{DLL@{DLL}!m\_\-name@{m\_\-name}}
+\index{m\_\-name@{m\_\-name}!DLL@{DLL}}
+\subsubsection[{m\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf DLL::m\_\-name}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classDLL_ad5e4d36d8c2575447f73acc2a703b405}
+
+
+Definition at line 220 of file DLL.h.
+
+Referenced by debug(), fatal(), info(), msg(), name(), setName(), verbose(), and warning().\hypertarget{classDLL_a298d605445e22ef8147ae700848cd737}{
+\index{DLL@{DLL}!m\_\-objectConstructors@{m\_\-objectConstructors}}
+\index{m\_\-objectConstructors@{m\_\-objectConstructors}!DLL@{DLL}}
+\subsubsection[{m\_\-objectConstructors}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<${\bf ConstructorObject}$>$ {\bf DLL::m\_\-objectConstructors}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classDLL_a298d605445e22ef8147ae700848cd737}
+
+
+Definition at line 229 of file DLL.h.\hypertarget{classDLL_a8c34d91e0a5ccfc34fff7c66f542b2d7}{
+\index{DLL@{DLL}!m\_\-objectDestructors@{m\_\-objectDestructors}}
+\index{m\_\-objectDestructors@{m\_\-objectDestructors}!DLL@{DLL}}
+\subsubsection[{m\_\-objectDestructors}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<${\bf DestructorObject}$>$ {\bf DLL::m\_\-objectDestructors}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classDLL_a8c34d91e0a5ccfc34fff7c66f542b2d7}
+
+
+Definition at line 230 of file DLL.h.\hypertarget{classDLL_af9b49d23b767b742e38a7286de8e7c4d}{
+\index{DLL@{DLL}!m\_\-processusConstructors@{m\_\-processusConstructors}}
+\index{m\_\-processusConstructors@{m\_\-processusConstructors}!DLL@{DLL}}
+\subsubsection[{m\_\-processusConstructors}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<${\bf ConstructorProcessus}$>$ {\bf DLL::m\_\-processusConstructors}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classDLL_af9b49d23b767b742e38a7286de8e7c4d}
+
+
+Definition at line 227 of file DLL.h.
+
+Referenced by createProcessus(), and init().\hypertarget{classDLL_a5a00cc3723ff34be55c621505f15fc08}{
+\index{DLL@{DLL}!m\_\-processusDestructors@{m\_\-processusDestructors}}
+\index{m\_\-processusDestructors@{m\_\-processusDestructors}!DLL@{DLL}}
+\subsubsection[{m\_\-processusDestructors}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<${\bf DestructorProcessus}$>$ {\bf DLL::m\_\-processusDestructors}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classDLL_a5a00cc3723ff34be55c621505f15fc08}
+
+
+Definition at line 228 of file DLL.h.
 
 Referenced by destroy(), and init().
 
-\mbox{\Hypertarget{classDLL_a2ca22015aef35c5d61f8daaf3c070154}\label{classDLL_a2ca22015aef35c5d61f8daaf3c070154}} 
-\index{D\+LL@{D\+LL}!m\+\_\+handle@{m\+\_\+handle}}
-\index{m\+\_\+handle@{m\+\_\+handle}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{m\+\_\+handle}{m\_handle}}
-{\footnotesize\ttfamily \hyperlink{classDLL_addaefe5c907a5f357cc18718300f22b0}{Image\+Handle} D\+L\+L\+::m\+\_\+handle\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definition at line 221 of file D\+L\+L.\+h.
-
-
-
-Referenced by init(), load(), and unload().
-
-\mbox{\Hypertarget{classDLL_a2e88d7167245fd7b6a000817583643ed}\label{classDLL_a2e88d7167245fd7b6a000817583643ed}} 
-\index{D\+LL@{D\+LL}!m\+\_\+list\+Elements@{m\+\_\+list\+Elements}}
-\index{m\+\_\+list\+Elements@{m\+\_\+list\+Elements}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{m\+\_\+list\+Elements}{m\_listElements}}
-{\footnotesize\ttfamily \hyperlink{classDLL_a36792635c3cd36adbaaef2ff7152046e}{list\+Of\+Elements} D\+L\+L\+::m\+\_\+list\+Elements\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definition at line 222 of file D\+L\+L.\+h.
-
-
-
-Referenced by add\+Element(), contains\+Object(), create\+Element(), destroy(), init(), list\+Elements(), object\+List(), and print().
-
-\mbox{\Hypertarget{classDLL_af48201f52f29a849489e0104a440bcbb}\label{classDLL_af48201f52f29a849489e0104a440bcbb}} 
-\index{D\+LL@{D\+LL}!m\+\_\+list\+Objects@{m\+\_\+list\+Objects}}
-\index{m\+\_\+list\+Objects@{m\+\_\+list\+Objects}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{m\+\_\+list\+Objects}{m\_listObjects}}
-{\footnotesize\ttfamily \hyperlink{classDLL_a68629aa6f9103c5a3082511ff8218b1e}{list\+Of\+Objects} D\+L\+L\+::m\+\_\+list\+Objects\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definition at line 224 of file D\+L\+L.\+h.
-
-
-
-Referenced by add\+Object(), and list\+Objects().
-
-\mbox{\Hypertarget{classDLL_a197e92b990184a27a74f4a0456897bd5}\label{classDLL_a197e92b990184a27a74f4a0456897bd5}} 
-\index{D\+LL@{D\+LL}!m\+\_\+list\+Processus@{m\+\_\+list\+Processus}}
-\index{m\+\_\+list\+Processus@{m\+\_\+list\+Processus}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{m\+\_\+list\+Processus}{m\_listProcessus}}
-{\footnotesize\ttfamily \hyperlink{classDLL_aded1b0bb41b288ed4f34cb6d6632d486}{list\+Of\+Processus} D\+L\+L\+::m\+\_\+list\+Processus\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definition at line 223 of file D\+L\+L.\+h.
-
-
-
-Referenced by add\+Processus(), contains\+Object(), create\+Processus(), destroy(), init(), list\+Processus(), object\+List(), and print().
-
-\mbox{\Hypertarget{classDLL_a6e66cd993e2d142b48691557ce8e4047}\label{classDLL_a6e66cd993e2d142b48691557ce8e4047}} 
-\index{D\+LL@{D\+LL}!m\+\_\+log@{m\+\_\+log}}
-\index{m\+\_\+log@{m\+\_\+log}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{m\+\_\+log}{m\_log}}
-{\footnotesize\ttfamily \hyperlink{classMsgSvc}{Msg\+Svc} D\+L\+L\+::m\+\_\+log\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definition at line 219 of file D\+L\+L.\+h.
-
-\mbox{\Hypertarget{classDLL_ad5e4d36d8c2575447f73acc2a703b405}\label{classDLL_ad5e4d36d8c2575447f73acc2a703b405}} 
-\index{D\+LL@{D\+LL}!m\+\_\+name@{m\+\_\+name}}
-\index{m\+\_\+name@{m\+\_\+name}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{m\+\_\+name}{m\_name}}
-{\footnotesize\ttfamily std\+::string D\+L\+L\+::m\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definition at line 220 of file D\+L\+L.\+h.
-
-
-
-Referenced by name(), and set\+Name().
-
-\mbox{\Hypertarget{classDLL_a298d605445e22ef8147ae700848cd737}\label{classDLL_a298d605445e22ef8147ae700848cd737}} 
-\index{D\+LL@{D\+LL}!m\+\_\+object\+Constructors@{m\+\_\+object\+Constructors}}
-\index{m\+\_\+object\+Constructors@{m\+\_\+object\+Constructors}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{m\+\_\+object\+Constructors}{m\_objectConstructors}}
-{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classDLL_a67b9601085a9f972b9ac6876cd11398e}{Constructor\+Object}$>$ D\+L\+L\+::m\+\_\+object\+Constructors\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definition at line 229 of file D\+L\+L.\+h.
-
-\mbox{\Hypertarget{classDLL_a8c34d91e0a5ccfc34fff7c66f542b2d7}\label{classDLL_a8c34d91e0a5ccfc34fff7c66f542b2d7}} 
-\index{D\+LL@{D\+LL}!m\+\_\+object\+Destructors@{m\+\_\+object\+Destructors}}
-\index{m\+\_\+object\+Destructors@{m\+\_\+object\+Destructors}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{m\+\_\+object\+Destructors}{m\_objectDestructors}}
-{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classDLL_a4400d330cd793ae5f883ffa58384f637}{Destructor\+Object}$>$ D\+L\+L\+::m\+\_\+object\+Destructors\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definition at line 230 of file D\+L\+L.\+h.
-
-\mbox{\Hypertarget{classDLL_af9b49d23b767b742e38a7286de8e7c4d}\label{classDLL_af9b49d23b767b742e38a7286de8e7c4d}} 
-\index{D\+LL@{D\+LL}!m\+\_\+processus\+Constructors@{m\+\_\+processus\+Constructors}}
-\index{m\+\_\+processus\+Constructors@{m\+\_\+processus\+Constructors}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{m\+\_\+processus\+Constructors}{m\_processusConstructors}}
-{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classDLL_afbf4c85f3517962642944b80833a3607}{Constructor\+Processus}$>$ D\+L\+L\+::m\+\_\+processus\+Constructors\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definition at line 227 of file D\+L\+L.\+h.
-
-
-
-Referenced by create\+Processus(), and init().
-
-\mbox{\Hypertarget{classDLL_a5a00cc3723ff34be55c621505f15fc08}\label{classDLL_a5a00cc3723ff34be55c621505f15fc08}} 
-\index{D\+LL@{D\+LL}!m\+\_\+processus\+Destructors@{m\+\_\+processus\+Destructors}}
-\index{m\+\_\+processus\+Destructors@{m\+\_\+processus\+Destructors}!D\+LL@{D\+LL}}
-\subsubsection{\texorpdfstring{m\+\_\+processus\+Destructors}{m\_processusDestructors}}
-{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classDLL_a203a61b2a683e2751b5f3fe5a7187a7e}{Destructor\+Processus}$>$ D\+L\+L\+::m\+\_\+processus\+Destructors\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definition at line 228 of file D\+L\+L.\+h.
-
-
-
-Referenced by destroy(), and init().
-
-
-
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
 \item 
-/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/inc/\hyperlink{DLL_8h}{D\+L\+L.\+h}\item 
-/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/src/\hyperlink{DLL_8cpp}{D\+L\+L.\+cpp}\end{DoxyCompactItemize}
+/home/eleclhcb/LHCb/lbcat-\/cmake/CatKernel/inc/\hyperlink{DLL_8h}{DLL.h}\item 
+/home/eleclhcb/LHCb/lbcat-\/cmake/CatKernel/src/\hyperlink{DLL_8cpp}{DLL.cpp}\end{DoxyCompactItemize}

@@ -1,47 +1,49 @@
-\hypertarget{LSDelayChipV1_8h}{}\section{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Bcn/inc/\+L\+S\+Delay\+Chip\+V1.h File Reference}
-\label{LSDelayChipV1_8h}\index{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Bcn/inc/\+L\+S\+Delay\+Chip\+V1.\+h@{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Bcn/inc/\+L\+S\+Delay\+Chip\+V1.\+h}}
-{\ttfamily \#include \char`\"{}Element.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}Register.\+h\char`\"{}}\newline
-{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\hypertarget{LSDelayChipV1_8h}{
+\section{/home/eleclhcb/LHCb/lbcat-\/cmake/CatBcn/inc/LSDelayChipV1.h File Reference}
+\label{LSDelayChipV1_8h}\index{/home/eleclhcb/LHCb/lbcat-\/cmake/CatBcn/inc/LSDelayChipV1.h@{/home/eleclhcb/LHCb/lbcat-\/cmake/CatBcn/inc/LSDelayChipV1.h}}
+}
+{\ttfamily \#include \char`\"{}Element.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}Register.h\char`\"{}}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-struct \hyperlink{structconfRegData}{conf\+Reg\+Data}
+struct \hyperlink{structconfRegData}{confRegData}
 \item 
-struct \hyperlink{structstatRegData}{stat\+Reg\+Data}
+struct \hyperlink{structstatRegData}{statRegData}
 \item 
-class \hyperlink{classLSDelayChipV1}{L\+S\+Delay\+Chip\+V1}
+class \hyperlink{classLSDelayChipV1}{LSDelayChipV1}
 \end{DoxyCompactItemize}
-\subsection*{Macros}
+\subsection*{Defines}
 \begin{DoxyCompactItemize}
 \item 
-\#define \hyperlink{LSDelayChipV1_8h_a27e55e95b788d2cc312a439198c26971}{I\+N\+T\+\_\+\+T\+H\+\_\+0\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR}~0x00
+\#define \hyperlink{LSDelayChipV1_8h_a27e55e95b788d2cc312a439198c26971}{INT\_\-TH\_\-0\_\-CONFREG\_\-ADDR}~0x00
 \item 
-\#define \hyperlink{LSDelayChipV1_8h_a771c79d3381641a3bc709f4a69efcc28}{I\+N\+T\+\_\+\+T\+H\+\_\+1\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR}~0x02
+\#define \hyperlink{LSDelayChipV1_8h_a771c79d3381641a3bc709f4a69efcc28}{INT\_\-TH\_\-1\_\-CONFREG\_\-ADDR}~0x02
 \item 
-\#define \hyperlink{LSDelayChipV1_8h_a0a4946654da8e2065cc0b461f99d9bc8}{I\+N\+T\+\_\+\+T\+H\+\_\+2\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR}~0x10
+\#define \hyperlink{LSDelayChipV1_8h_a0a4946654da8e2065cc0b461f99d9bc8}{INT\_\-TH\_\-2\_\-CONFREG\_\-ADDR}~0x10
 \item 
-\#define \hyperlink{LSDelayChipV1_8h_af8cc01f53a4a2d46901b9f32372ab6ea}{I\+N\+T\+\_\+\+T\+H\+\_\+3\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR}~0x12
+\#define \hyperlink{LSDelayChipV1_8h_af8cc01f53a4a2d46901b9f32372ab6ea}{INT\_\-TH\_\-3\_\-CONFREG\_\-ADDR}~0x12
 \item 
-\#define \hyperlink{LSDelayChipV1_8h_ad1c6f1ce476a54a95469cd130dffa074}{A\+D\+C\+\_\+0\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR}~0x01
+\#define \hyperlink{LSDelayChipV1_8h_ad1c6f1ce476a54a95469cd130dffa074}{ADC\_\-0\_\-CONFREG\_\-ADDR}~0x01
 \item 
-\#define \hyperlink{LSDelayChipV1_8h_a83aa641dd89900461bdc2ed428f2bce9}{A\+D\+C\+\_\+1\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR}~0x03
+\#define \hyperlink{LSDelayChipV1_8h_a83aa641dd89900461bdc2ed428f2bce9}{ADC\_\-1\_\-CONFREG\_\-ADDR}~0x03
 \item 
-\#define \hyperlink{LSDelayChipV1_8h_abd577ee5c75174c74fc6886c1eaad80a}{A\+D\+C\+\_\+2\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR}~0x11
+\#define \hyperlink{LSDelayChipV1_8h_abd577ee5c75174c74fc6886c1eaad80a}{ADC\_\-2\_\-CONFREG\_\-ADDR}~0x11
 \item 
-\#define \hyperlink{LSDelayChipV1_8h_a19e4f86f88864d8c249bd537ef628f92}{A\+D\+C\+\_\+3\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR}~0x13
+\#define \hyperlink{LSDelayChipV1_8h_a19e4f86f88864d8c249bd537ef628f92}{ADC\_\-3\_\-CONFREG\_\-ADDR}~0x13
 \item 
-\#define \hyperlink{LSDelayChipV1_8h_adca5cc0cd52b4fe9328f3471b0b9c613}{D\+L\+L\+\_\+0\+\_\+\+S\+T\+A\+T\+R\+E\+G\+\_\+\+A\+D\+DR}~0x\+A0
+\#define \hyperlink{LSDelayChipV1_8h_adca5cc0cd52b4fe9328f3471b0b9c613}{DLL\_\-0\_\-STATREG\_\-ADDR}~0xA0
 \item 
-\#define \hyperlink{LSDelayChipV1_8h_a39e2f4a0151fcdf29a28e917154fa039}{D\+L\+L\+\_\+1\+\_\+\+S\+T\+A\+T\+R\+E\+G\+\_\+\+A\+D\+DR}~0x\+A1
+\#define \hyperlink{LSDelayChipV1_8h_a39e2f4a0151fcdf29a28e917154fa039}{DLL\_\-1\_\-STATREG\_\-ADDR}~0xA1
 \item 
-\#define \hyperlink{LSDelayChipV1_8h_a11ad4f0e8a466fc2da33308f351b9054}{D\+L\+L\+\_\+2\+\_\+\+S\+T\+A\+T\+R\+E\+G\+\_\+\+A\+D\+DR}~0x\+B0
+\#define \hyperlink{LSDelayChipV1_8h_a11ad4f0e8a466fc2da33308f351b9054}{DLL\_\-2\_\-STATREG\_\-ADDR}~0xB0
 \item 
-\#define \hyperlink{LSDelayChipV1_8h_ad23a65fd56cf8a5ba711228025ab5e48}{D\+L\+L\+\_\+3\+\_\+\+S\+T\+A\+T\+R\+E\+G\+\_\+\+A\+D\+DR}~0x\+B1
+\#define \hyperlink{LSDelayChipV1_8h_ad23a65fd56cf8a5ba711228025ab5e48}{DLL\_\-3\_\-STATREG\_\-ADDR}~0xB1
 \item 
-\#define \hyperlink{LSDelayChipV1_8h_a08aff1d45994f410f4f4a6e7e9a13db9}{C\+H\+A\+R\+G\+E\+P\+U\+M\+P\+\_\+\+S\+O\+F\+T\+\_\+\+R\+ST}~0x40
+\#define \hyperlink{LSDelayChipV1_8h_a08aff1d45994f410f4f4a6e7e9a13db9}{CHARGEPUMP\_\-SOFT\_\-RST}~0x40
 \item 
-\#define \hyperlink{LSDelayChipV1_8h_a2870f5a3cad23b2b4e7f16faefe8ef2e}{S\+C\+\_\+\+M\+O\+S\+I\+\_\+\+M\+I\+S\+O\+\_\+\+B\+Y\+P\+A\+SS}~0x\+FF
+\#define \hyperlink{LSDelayChipV1_8h_a2870f5a3cad23b2b4e7f16faefe8ef2e}{SC\_\-MOSI\_\-MISO\_\-BYPASS}~0xFF
 \end{DoxyCompactItemize}
 \subsection*{Typedefs}
 \begin{DoxyCompactItemize}
@@ -55,277 +57,203 @@ typedef unsigned char \hyperlink{LSDelayChipV1_8h_a3cb25ca6f51f003950f9625ff0553
 \subsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
-enum \hyperlink{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63}{L\+V\+D\+S\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+S\+E\+L\+E\+C\+T\+OR} \{ \hyperlink{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63a259de7b287dcc219dd6cda577c9ebc4c}{L\+O\+C\+U\+S\+\_\+3000\+\_\+\+UA} = 0, 
-\hyperlink{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63aaf5de18b5633f00e781bb74b6c3850d3}{L\+O\+C\+U\+S\+\_\+1400\+\_\+\+UA} = 1, 
-\hyperlink{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63a06d3e527062b8ffd220520be69e0d4e6}{L\+O\+C\+U\+S\+\_\+2300\+\_\+\+UA} = 2, 
-\hyperlink{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63abcd44318e3bbcab80cb33b8ac0638fa0}{L\+O\+C\+U\+S\+\_\+0350\+\_\+\+UA} = 3
+enum \hyperlink{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63}{LVDS\_\-OUTPUT\_\-CURRENT\_\-SELECTOR} \{ \hyperlink{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63a259de7b287dcc219dd6cda577c9ebc4c}{LOCUS\_\-3000\_\-UA} =  0, 
+\hyperlink{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63aaf5de18b5633f00e781bb74b6c3850d3}{LOCUS\_\-1400\_\-UA} =  1, 
+\hyperlink{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63a06d3e527062b8ffd220520be69e0d4e6}{LOCUS\_\-2300\_\-UA} =  2, 
+\hyperlink{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63abcd44318e3bbcab80cb33b8ac0638fa0}{LOCUS\_\-0350\_\-UA} =  3
  \}
 \end{DoxyCompactItemize}
 
 
-\subsection{Macro Definition Documentation}
-\mbox{\Hypertarget{LSDelayChipV1_8h_ad1c6f1ce476a54a95469cd130dffa074}\label{LSDelayChipV1_8h_ad1c6f1ce476a54a95469cd130dffa074}} 
-\index{L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}!A\+D\+C\+\_\+0\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR@{A\+D\+C\+\_\+0\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR}}
-\index{A\+D\+C\+\_\+0\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR@{A\+D\+C\+\_\+0\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR}!L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}}
-\subsubsection{\texorpdfstring{A\+D\+C\+\_\+0\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR}{ADC\_0\_CONFREG\_ADDR}}
-{\footnotesize\ttfamily \#define A\+D\+C\+\_\+0\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR~0x01}
+\subsection{Define Documentation}
+\hypertarget{LSDelayChipV1_8h_ad1c6f1ce476a54a95469cd130dffa074}{
+\index{LSDelayChipV1.h@{LSDelayChipV1.h}!ADC\_\-0\_\-CONFREG\_\-ADDR@{ADC\_\-0\_\-CONFREG\_\-ADDR}}
+\index{ADC\_\-0\_\-CONFREG\_\-ADDR@{ADC\_\-0\_\-CONFREG\_\-ADDR}!LSDelayChipV1.h@{LSDelayChipV1.h}}
+\subsubsection[{ADC\_\-0\_\-CONFREG\_\-ADDR}]{\setlength{\rightskip}{0pt plus 5cm}\#define ADC\_\-0\_\-CONFREG\_\-ADDR~0x01}}
+\label{LSDelayChipV1_8h_ad1c6f1ce476a54a95469cd130dffa074}
 
 
+Definition at line 27 of file LSDelayChipV1.h.
 
-Definition at line 27 of file L\+S\+Delay\+Chip\+V1.\+h.
+Referenced by LSDelayChipV1::checkConfigAddr().\hypertarget{LSDelayChipV1_8h_a83aa641dd89900461bdc2ed428f2bce9}{
+\index{LSDelayChipV1.h@{LSDelayChipV1.h}!ADC\_\-1\_\-CONFREG\_\-ADDR@{ADC\_\-1\_\-CONFREG\_\-ADDR}}
+\index{ADC\_\-1\_\-CONFREG\_\-ADDR@{ADC\_\-1\_\-CONFREG\_\-ADDR}!LSDelayChipV1.h@{LSDelayChipV1.h}}
+\subsubsection[{ADC\_\-1\_\-CONFREG\_\-ADDR}]{\setlength{\rightskip}{0pt plus 5cm}\#define ADC\_\-1\_\-CONFREG\_\-ADDR~0x03}}
+\label{LSDelayChipV1_8h_a83aa641dd89900461bdc2ed428f2bce9}
 
 
+Definition at line 28 of file LSDelayChipV1.h.
 
-Referenced by L\+S\+Delay\+Chip\+V1\+::check\+Config\+Addr().
+Referenced by LSDelayChipV1::checkConfigAddr().\hypertarget{LSDelayChipV1_8h_abd577ee5c75174c74fc6886c1eaad80a}{
+\index{LSDelayChipV1.h@{LSDelayChipV1.h}!ADC\_\-2\_\-CONFREG\_\-ADDR@{ADC\_\-2\_\-CONFREG\_\-ADDR}}
+\index{ADC\_\-2\_\-CONFREG\_\-ADDR@{ADC\_\-2\_\-CONFREG\_\-ADDR}!LSDelayChipV1.h@{LSDelayChipV1.h}}
+\subsubsection[{ADC\_\-2\_\-CONFREG\_\-ADDR}]{\setlength{\rightskip}{0pt plus 5cm}\#define ADC\_\-2\_\-CONFREG\_\-ADDR~0x11}}
+\label{LSDelayChipV1_8h_abd577ee5c75174c74fc6886c1eaad80a}
 
-\mbox{\Hypertarget{LSDelayChipV1_8h_a83aa641dd89900461bdc2ed428f2bce9}\label{LSDelayChipV1_8h_a83aa641dd89900461bdc2ed428f2bce9}} 
-\index{L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}!A\+D\+C\+\_\+1\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR@{A\+D\+C\+\_\+1\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR}}
-\index{A\+D\+C\+\_\+1\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR@{A\+D\+C\+\_\+1\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR}!L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}}
-\subsubsection{\texorpdfstring{A\+D\+C\+\_\+1\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR}{ADC\_1\_CONFREG\_ADDR}}
-{\footnotesize\ttfamily \#define A\+D\+C\+\_\+1\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR~0x03}
 
+Definition at line 29 of file LSDelayChipV1.h.
 
+Referenced by LSDelayChipV1::checkConfigAddr().\hypertarget{LSDelayChipV1_8h_a19e4f86f88864d8c249bd537ef628f92}{
+\index{LSDelayChipV1.h@{LSDelayChipV1.h}!ADC\_\-3\_\-CONFREG\_\-ADDR@{ADC\_\-3\_\-CONFREG\_\-ADDR}}
+\index{ADC\_\-3\_\-CONFREG\_\-ADDR@{ADC\_\-3\_\-CONFREG\_\-ADDR}!LSDelayChipV1.h@{LSDelayChipV1.h}}
+\subsubsection[{ADC\_\-3\_\-CONFREG\_\-ADDR}]{\setlength{\rightskip}{0pt plus 5cm}\#define ADC\_\-3\_\-CONFREG\_\-ADDR~0x13}}
+\label{LSDelayChipV1_8h_a19e4f86f88864d8c249bd537ef628f92}
 
-Definition at line 28 of file L\+S\+Delay\+Chip\+V1.\+h.
 
+Definition at line 30 of file LSDelayChipV1.h.
 
+Referenced by LSDelayChipV1::checkConfigAddr().\hypertarget{LSDelayChipV1_8h_a08aff1d45994f410f4f4a6e7e9a13db9}{
+\index{LSDelayChipV1.h@{LSDelayChipV1.h}!CHARGEPUMP\_\-SOFT\_\-RST@{CHARGEPUMP\_\-SOFT\_\-RST}}
+\index{CHARGEPUMP\_\-SOFT\_\-RST@{CHARGEPUMP\_\-SOFT\_\-RST}!LSDelayChipV1.h@{LSDelayChipV1.h}}
+\subsubsection[{CHARGEPUMP\_\-SOFT\_\-RST}]{\setlength{\rightskip}{0pt plus 5cm}\#define CHARGEPUMP\_\-SOFT\_\-RST~0x40}}
+\label{LSDelayChipV1_8h_a08aff1d45994f410f4f4a6e7e9a13db9}
 
-Referenced by L\+S\+Delay\+Chip\+V1\+::check\+Config\+Addr().
 
-\mbox{\Hypertarget{LSDelayChipV1_8h_abd577ee5c75174c74fc6886c1eaad80a}\label{LSDelayChipV1_8h_abd577ee5c75174c74fc6886c1eaad80a}} 
-\index{L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}!A\+D\+C\+\_\+2\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR@{A\+D\+C\+\_\+2\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR}}
-\index{A\+D\+C\+\_\+2\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR@{A\+D\+C\+\_\+2\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR}!L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}}
-\subsubsection{\texorpdfstring{A\+D\+C\+\_\+2\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR}{ADC\_2\_CONFREG\_ADDR}}
-{\footnotesize\ttfamily \#define A\+D\+C\+\_\+2\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR~0x11}
+Definition at line 38 of file LSDelayChipV1.h.
 
+Referenced by LSDelayChipV1::resetPumps().\hypertarget{LSDelayChipV1_8h_adca5cc0cd52b4fe9328f3471b0b9c613}{
+\index{LSDelayChipV1.h@{LSDelayChipV1.h}!DLL\_\-0\_\-STATREG\_\-ADDR@{DLL\_\-0\_\-STATREG\_\-ADDR}}
+\index{DLL\_\-0\_\-STATREG\_\-ADDR@{DLL\_\-0\_\-STATREG\_\-ADDR}!LSDelayChipV1.h@{LSDelayChipV1.h}}
+\subsubsection[{DLL\_\-0\_\-STATREG\_\-ADDR}]{\setlength{\rightskip}{0pt plus 5cm}\#define DLL\_\-0\_\-STATREG\_\-ADDR~0xA0}}
+\label{LSDelayChipV1_8h_adca5cc0cd52b4fe9328f3471b0b9c613}
 
 
-Definition at line 29 of file L\+S\+Delay\+Chip\+V1.\+h.
+Definition at line 32 of file LSDelayChipV1.h.
 
+Referenced by LSDelayChipV1::checkStatusAddr().\hypertarget{LSDelayChipV1_8h_a39e2f4a0151fcdf29a28e917154fa039}{
+\index{LSDelayChipV1.h@{LSDelayChipV1.h}!DLL\_\-1\_\-STATREG\_\-ADDR@{DLL\_\-1\_\-STATREG\_\-ADDR}}
+\index{DLL\_\-1\_\-STATREG\_\-ADDR@{DLL\_\-1\_\-STATREG\_\-ADDR}!LSDelayChipV1.h@{LSDelayChipV1.h}}
+\subsubsection[{DLL\_\-1\_\-STATREG\_\-ADDR}]{\setlength{\rightskip}{0pt plus 5cm}\#define DLL\_\-1\_\-STATREG\_\-ADDR~0xA1}}
+\label{LSDelayChipV1_8h_a39e2f4a0151fcdf29a28e917154fa039}
 
 
-Referenced by L\+S\+Delay\+Chip\+V1\+::check\+Config\+Addr().
+Definition at line 33 of file LSDelayChipV1.h.
 
-\mbox{\Hypertarget{LSDelayChipV1_8h_a19e4f86f88864d8c249bd537ef628f92}\label{LSDelayChipV1_8h_a19e4f86f88864d8c249bd537ef628f92}} 
-\index{L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}!A\+D\+C\+\_\+3\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR@{A\+D\+C\+\_\+3\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR}}
-\index{A\+D\+C\+\_\+3\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR@{A\+D\+C\+\_\+3\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR}!L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}}
-\subsubsection{\texorpdfstring{A\+D\+C\+\_\+3\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR}{ADC\_3\_CONFREG\_ADDR}}
-{\footnotesize\ttfamily \#define A\+D\+C\+\_\+3\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR~0x13}
+Referenced by LSDelayChipV1::checkStatusAddr().\hypertarget{LSDelayChipV1_8h_a11ad4f0e8a466fc2da33308f351b9054}{
+\index{LSDelayChipV1.h@{LSDelayChipV1.h}!DLL\_\-2\_\-STATREG\_\-ADDR@{DLL\_\-2\_\-STATREG\_\-ADDR}}
+\index{DLL\_\-2\_\-STATREG\_\-ADDR@{DLL\_\-2\_\-STATREG\_\-ADDR}!LSDelayChipV1.h@{LSDelayChipV1.h}}
+\subsubsection[{DLL\_\-2\_\-STATREG\_\-ADDR}]{\setlength{\rightskip}{0pt plus 5cm}\#define DLL\_\-2\_\-STATREG\_\-ADDR~0xB0}}
+\label{LSDelayChipV1_8h_a11ad4f0e8a466fc2da33308f351b9054}
 
 
+Definition at line 34 of file LSDelayChipV1.h.
 
-Definition at line 30 of file L\+S\+Delay\+Chip\+V1.\+h.
+Referenced by LSDelayChipV1::checkStatusAddr().\hypertarget{LSDelayChipV1_8h_ad23a65fd56cf8a5ba711228025ab5e48}{
+\index{LSDelayChipV1.h@{LSDelayChipV1.h}!DLL\_\-3\_\-STATREG\_\-ADDR@{DLL\_\-3\_\-STATREG\_\-ADDR}}
+\index{DLL\_\-3\_\-STATREG\_\-ADDR@{DLL\_\-3\_\-STATREG\_\-ADDR}!LSDelayChipV1.h@{LSDelayChipV1.h}}
+\subsubsection[{DLL\_\-3\_\-STATREG\_\-ADDR}]{\setlength{\rightskip}{0pt plus 5cm}\#define DLL\_\-3\_\-STATREG\_\-ADDR~0xB1}}
+\label{LSDelayChipV1_8h_ad23a65fd56cf8a5ba711228025ab5e48}
 
 
+Definition at line 35 of file LSDelayChipV1.h.
 
-Referenced by L\+S\+Delay\+Chip\+V1\+::check\+Config\+Addr().
+Referenced by LSDelayChipV1::checkStatusAddr().\hypertarget{LSDelayChipV1_8h_a27e55e95b788d2cc312a439198c26971}{
+\index{LSDelayChipV1.h@{LSDelayChipV1.h}!INT\_\-TH\_\-0\_\-CONFREG\_\-ADDR@{INT\_\-TH\_\-0\_\-CONFREG\_\-ADDR}}
+\index{INT\_\-TH\_\-0\_\-CONFREG\_\-ADDR@{INT\_\-TH\_\-0\_\-CONFREG\_\-ADDR}!LSDelayChipV1.h@{LSDelayChipV1.h}}
+\subsubsection[{INT\_\-TH\_\-0\_\-CONFREG\_\-ADDR}]{\setlength{\rightskip}{0pt plus 5cm}\#define INT\_\-TH\_\-0\_\-CONFREG\_\-ADDR~0x00}}
+\label{LSDelayChipV1_8h_a27e55e95b788d2cc312a439198c26971}
 
-\mbox{\Hypertarget{LSDelayChipV1_8h_a08aff1d45994f410f4f4a6e7e9a13db9}\label{LSDelayChipV1_8h_a08aff1d45994f410f4f4a6e7e9a13db9}} 
-\index{L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}!C\+H\+A\+R\+G\+E\+P\+U\+M\+P\+\_\+\+S\+O\+F\+T\+\_\+\+R\+ST@{C\+H\+A\+R\+G\+E\+P\+U\+M\+P\+\_\+\+S\+O\+F\+T\+\_\+\+R\+ST}}
-\index{C\+H\+A\+R\+G\+E\+P\+U\+M\+P\+\_\+\+S\+O\+F\+T\+\_\+\+R\+ST@{C\+H\+A\+R\+G\+E\+P\+U\+M\+P\+\_\+\+S\+O\+F\+T\+\_\+\+R\+ST}!L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}}
-\subsubsection{\texorpdfstring{C\+H\+A\+R\+G\+E\+P\+U\+M\+P\+\_\+\+S\+O\+F\+T\+\_\+\+R\+ST}{CHARGEPUMP\_SOFT\_RST}}
-{\footnotesize\ttfamily \#define C\+H\+A\+R\+G\+E\+P\+U\+M\+P\+\_\+\+S\+O\+F\+T\+\_\+\+R\+ST~0x40}
 
+Definition at line 22 of file LSDelayChipV1.h.
 
+Referenced by LSDelayChipV1::checkConfigAddr().\hypertarget{LSDelayChipV1_8h_a771c79d3381641a3bc709f4a69efcc28}{
+\index{LSDelayChipV1.h@{LSDelayChipV1.h}!INT\_\-TH\_\-1\_\-CONFREG\_\-ADDR@{INT\_\-TH\_\-1\_\-CONFREG\_\-ADDR}}
+\index{INT\_\-TH\_\-1\_\-CONFREG\_\-ADDR@{INT\_\-TH\_\-1\_\-CONFREG\_\-ADDR}!LSDelayChipV1.h@{LSDelayChipV1.h}}
+\subsubsection[{INT\_\-TH\_\-1\_\-CONFREG\_\-ADDR}]{\setlength{\rightskip}{0pt plus 5cm}\#define INT\_\-TH\_\-1\_\-CONFREG\_\-ADDR~0x02}}
+\label{LSDelayChipV1_8h_a771c79d3381641a3bc709f4a69efcc28}
 
-Definition at line 38 of file L\+S\+Delay\+Chip\+V1.\+h.
 
+Definition at line 23 of file LSDelayChipV1.h.
 
+Referenced by LSDelayChipV1::checkConfigAddr().\hypertarget{LSDelayChipV1_8h_a0a4946654da8e2065cc0b461f99d9bc8}{
+\index{LSDelayChipV1.h@{LSDelayChipV1.h}!INT\_\-TH\_\-2\_\-CONFREG\_\-ADDR@{INT\_\-TH\_\-2\_\-CONFREG\_\-ADDR}}
+\index{INT\_\-TH\_\-2\_\-CONFREG\_\-ADDR@{INT\_\-TH\_\-2\_\-CONFREG\_\-ADDR}!LSDelayChipV1.h@{LSDelayChipV1.h}}
+\subsubsection[{INT\_\-TH\_\-2\_\-CONFREG\_\-ADDR}]{\setlength{\rightskip}{0pt plus 5cm}\#define INT\_\-TH\_\-2\_\-CONFREG\_\-ADDR~0x10}}
+\label{LSDelayChipV1_8h_a0a4946654da8e2065cc0b461f99d9bc8}
 
-Referenced by L\+S\+Delay\+Chip\+V1\+::reset\+Pumps().
 
-\mbox{\Hypertarget{LSDelayChipV1_8h_adca5cc0cd52b4fe9328f3471b0b9c613}\label{LSDelayChipV1_8h_adca5cc0cd52b4fe9328f3471b0b9c613}} 
-\index{L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}!D\+L\+L\+\_\+0\+\_\+\+S\+T\+A\+T\+R\+E\+G\+\_\+\+A\+D\+DR@{D\+L\+L\+\_\+0\+\_\+\+S\+T\+A\+T\+R\+E\+G\+\_\+\+A\+D\+DR}}
-\index{D\+L\+L\+\_\+0\+\_\+\+S\+T\+A\+T\+R\+E\+G\+\_\+\+A\+D\+DR@{D\+L\+L\+\_\+0\+\_\+\+S\+T\+A\+T\+R\+E\+G\+\_\+\+A\+D\+DR}!L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}}
-\subsubsection{\texorpdfstring{D\+L\+L\+\_\+0\+\_\+\+S\+T\+A\+T\+R\+E\+G\+\_\+\+A\+D\+DR}{DLL\_0\_STATREG\_ADDR}}
-{\footnotesize\ttfamily \#define D\+L\+L\+\_\+0\+\_\+\+S\+T\+A\+T\+R\+E\+G\+\_\+\+A\+D\+DR~0x\+A0}
+Definition at line 24 of file LSDelayChipV1.h.
 
+Referenced by LSDelayChipV1::checkConfigAddr().\hypertarget{LSDelayChipV1_8h_af8cc01f53a4a2d46901b9f32372ab6ea}{
+\index{LSDelayChipV1.h@{LSDelayChipV1.h}!INT\_\-TH\_\-3\_\-CONFREG\_\-ADDR@{INT\_\-TH\_\-3\_\-CONFREG\_\-ADDR}}
+\index{INT\_\-TH\_\-3\_\-CONFREG\_\-ADDR@{INT\_\-TH\_\-3\_\-CONFREG\_\-ADDR}!LSDelayChipV1.h@{LSDelayChipV1.h}}
+\subsubsection[{INT\_\-TH\_\-3\_\-CONFREG\_\-ADDR}]{\setlength{\rightskip}{0pt plus 5cm}\#define INT\_\-TH\_\-3\_\-CONFREG\_\-ADDR~0x12}}
+\label{LSDelayChipV1_8h_af8cc01f53a4a2d46901b9f32372ab6ea}
 
 
-Definition at line 32 of file L\+S\+Delay\+Chip\+V1.\+h.
+Definition at line 25 of file LSDelayChipV1.h.
 
+Referenced by LSDelayChipV1::checkConfigAddr().\hypertarget{LSDelayChipV1_8h_a2870f5a3cad23b2b4e7f16faefe8ef2e}{
+\index{LSDelayChipV1.h@{LSDelayChipV1.h}!SC\_\-MOSI\_\-MISO\_\-BYPASS@{SC\_\-MOSI\_\-MISO\_\-BYPASS}}
+\index{SC\_\-MOSI\_\-MISO\_\-BYPASS@{SC\_\-MOSI\_\-MISO\_\-BYPASS}!LSDelayChipV1.h@{LSDelayChipV1.h}}
+\subsubsection[{SC\_\-MOSI\_\-MISO\_\-BYPASS}]{\setlength{\rightskip}{0pt plus 5cm}\#define SC\_\-MOSI\_\-MISO\_\-BYPASS~0xFF}}
+\label{LSDelayChipV1_8h_a2870f5a3cad23b2b4e7f16faefe8ef2e}
 
 
-Referenced by L\+S\+Delay\+Chip\+V1\+::check\+Status\+Addr().
-
-\mbox{\Hypertarget{LSDelayChipV1_8h_a39e2f4a0151fcdf29a28e917154fa039}\label{LSDelayChipV1_8h_a39e2f4a0151fcdf29a28e917154fa039}} 
-\index{L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}!D\+L\+L\+\_\+1\+\_\+\+S\+T\+A\+T\+R\+E\+G\+\_\+\+A\+D\+DR@{D\+L\+L\+\_\+1\+\_\+\+S\+T\+A\+T\+R\+E\+G\+\_\+\+A\+D\+DR}}
-\index{D\+L\+L\+\_\+1\+\_\+\+S\+T\+A\+T\+R\+E\+G\+\_\+\+A\+D\+DR@{D\+L\+L\+\_\+1\+\_\+\+S\+T\+A\+T\+R\+E\+G\+\_\+\+A\+D\+DR}!L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}}
-\subsubsection{\texorpdfstring{D\+L\+L\+\_\+1\+\_\+\+S\+T\+A\+T\+R\+E\+G\+\_\+\+A\+D\+DR}{DLL\_1\_STATREG\_ADDR}}
-{\footnotesize\ttfamily \#define D\+L\+L\+\_\+1\+\_\+\+S\+T\+A\+T\+R\+E\+G\+\_\+\+A\+D\+DR~0x\+A1}
-
-
-
-Definition at line 33 of file L\+S\+Delay\+Chip\+V1.\+h.
-
-
-
-Referenced by L\+S\+Delay\+Chip\+V1\+::check\+Status\+Addr().
-
-\mbox{\Hypertarget{LSDelayChipV1_8h_a11ad4f0e8a466fc2da33308f351b9054}\label{LSDelayChipV1_8h_a11ad4f0e8a466fc2da33308f351b9054}} 
-\index{L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}!D\+L\+L\+\_\+2\+\_\+\+S\+T\+A\+T\+R\+E\+G\+\_\+\+A\+D\+DR@{D\+L\+L\+\_\+2\+\_\+\+S\+T\+A\+T\+R\+E\+G\+\_\+\+A\+D\+DR}}
-\index{D\+L\+L\+\_\+2\+\_\+\+S\+T\+A\+T\+R\+E\+G\+\_\+\+A\+D\+DR@{D\+L\+L\+\_\+2\+\_\+\+S\+T\+A\+T\+R\+E\+G\+\_\+\+A\+D\+DR}!L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}}
-\subsubsection{\texorpdfstring{D\+L\+L\+\_\+2\+\_\+\+S\+T\+A\+T\+R\+E\+G\+\_\+\+A\+D\+DR}{DLL\_2\_STATREG\_ADDR}}
-{\footnotesize\ttfamily \#define D\+L\+L\+\_\+2\+\_\+\+S\+T\+A\+T\+R\+E\+G\+\_\+\+A\+D\+DR~0x\+B0}
-
-
-
-Definition at line 34 of file L\+S\+Delay\+Chip\+V1.\+h.
-
-
-
-Referenced by L\+S\+Delay\+Chip\+V1\+::check\+Status\+Addr().
-
-\mbox{\Hypertarget{LSDelayChipV1_8h_ad23a65fd56cf8a5ba711228025ab5e48}\label{LSDelayChipV1_8h_ad23a65fd56cf8a5ba711228025ab5e48}} 
-\index{L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}!D\+L\+L\+\_\+3\+\_\+\+S\+T\+A\+T\+R\+E\+G\+\_\+\+A\+D\+DR@{D\+L\+L\+\_\+3\+\_\+\+S\+T\+A\+T\+R\+E\+G\+\_\+\+A\+D\+DR}}
-\index{D\+L\+L\+\_\+3\+\_\+\+S\+T\+A\+T\+R\+E\+G\+\_\+\+A\+D\+DR@{D\+L\+L\+\_\+3\+\_\+\+S\+T\+A\+T\+R\+E\+G\+\_\+\+A\+D\+DR}!L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}}
-\subsubsection{\texorpdfstring{D\+L\+L\+\_\+3\+\_\+\+S\+T\+A\+T\+R\+E\+G\+\_\+\+A\+D\+DR}{DLL\_3\_STATREG\_ADDR}}
-{\footnotesize\ttfamily \#define D\+L\+L\+\_\+3\+\_\+\+S\+T\+A\+T\+R\+E\+G\+\_\+\+A\+D\+DR~0x\+B1}
-
-
-
-Definition at line 35 of file L\+S\+Delay\+Chip\+V1.\+h.
-
-
-
-Referenced by L\+S\+Delay\+Chip\+V1\+::check\+Status\+Addr().
-
-\mbox{\Hypertarget{LSDelayChipV1_8h_a27e55e95b788d2cc312a439198c26971}\label{LSDelayChipV1_8h_a27e55e95b788d2cc312a439198c26971}} 
-\index{L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}!I\+N\+T\+\_\+\+T\+H\+\_\+0\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR@{I\+N\+T\+\_\+\+T\+H\+\_\+0\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR}}
-\index{I\+N\+T\+\_\+\+T\+H\+\_\+0\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR@{I\+N\+T\+\_\+\+T\+H\+\_\+0\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR}!L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}}
-\subsubsection{\texorpdfstring{I\+N\+T\+\_\+\+T\+H\+\_\+0\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR}{INT\_TH\_0\_CONFREG\_ADDR}}
-{\footnotesize\ttfamily \#define I\+N\+T\+\_\+\+T\+H\+\_\+0\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR~0x00}
-
-
-
-Definition at line 22 of file L\+S\+Delay\+Chip\+V1.\+h.
-
-
-
-Referenced by L\+S\+Delay\+Chip\+V1\+::check\+Config\+Addr().
-
-\mbox{\Hypertarget{LSDelayChipV1_8h_a771c79d3381641a3bc709f4a69efcc28}\label{LSDelayChipV1_8h_a771c79d3381641a3bc709f4a69efcc28}} 
-\index{L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}!I\+N\+T\+\_\+\+T\+H\+\_\+1\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR@{I\+N\+T\+\_\+\+T\+H\+\_\+1\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR}}
-\index{I\+N\+T\+\_\+\+T\+H\+\_\+1\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR@{I\+N\+T\+\_\+\+T\+H\+\_\+1\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR}!L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}}
-\subsubsection{\texorpdfstring{I\+N\+T\+\_\+\+T\+H\+\_\+1\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR}{INT\_TH\_1\_CONFREG\_ADDR}}
-{\footnotesize\ttfamily \#define I\+N\+T\+\_\+\+T\+H\+\_\+1\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR~0x02}
-
-
-
-Definition at line 23 of file L\+S\+Delay\+Chip\+V1.\+h.
-
-
-
-Referenced by L\+S\+Delay\+Chip\+V1\+::check\+Config\+Addr().
-
-\mbox{\Hypertarget{LSDelayChipV1_8h_a0a4946654da8e2065cc0b461f99d9bc8}\label{LSDelayChipV1_8h_a0a4946654da8e2065cc0b461f99d9bc8}} 
-\index{L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}!I\+N\+T\+\_\+\+T\+H\+\_\+2\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR@{I\+N\+T\+\_\+\+T\+H\+\_\+2\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR}}
-\index{I\+N\+T\+\_\+\+T\+H\+\_\+2\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR@{I\+N\+T\+\_\+\+T\+H\+\_\+2\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR}!L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}}
-\subsubsection{\texorpdfstring{I\+N\+T\+\_\+\+T\+H\+\_\+2\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR}{INT\_TH\_2\_CONFREG\_ADDR}}
-{\footnotesize\ttfamily \#define I\+N\+T\+\_\+\+T\+H\+\_\+2\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR~0x10}
-
-
-
-Definition at line 24 of file L\+S\+Delay\+Chip\+V1.\+h.
-
-
-
-Referenced by L\+S\+Delay\+Chip\+V1\+::check\+Config\+Addr().
-
-\mbox{\Hypertarget{LSDelayChipV1_8h_af8cc01f53a4a2d46901b9f32372ab6ea}\label{LSDelayChipV1_8h_af8cc01f53a4a2d46901b9f32372ab6ea}} 
-\index{L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}!I\+N\+T\+\_\+\+T\+H\+\_\+3\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR@{I\+N\+T\+\_\+\+T\+H\+\_\+3\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR}}
-\index{I\+N\+T\+\_\+\+T\+H\+\_\+3\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR@{I\+N\+T\+\_\+\+T\+H\+\_\+3\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR}!L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}}
-\subsubsection{\texorpdfstring{I\+N\+T\+\_\+\+T\+H\+\_\+3\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR}{INT\_TH\_3\_CONFREG\_ADDR}}
-{\footnotesize\ttfamily \#define I\+N\+T\+\_\+\+T\+H\+\_\+3\+\_\+\+C\+O\+N\+F\+R\+E\+G\+\_\+\+A\+D\+DR~0x12}
-
-
-
-Definition at line 25 of file L\+S\+Delay\+Chip\+V1.\+h.
-
-
-
-Referenced by L\+S\+Delay\+Chip\+V1\+::check\+Config\+Addr().
-
-\mbox{\Hypertarget{LSDelayChipV1_8h_a2870f5a3cad23b2b4e7f16faefe8ef2e}\label{LSDelayChipV1_8h_a2870f5a3cad23b2b4e7f16faefe8ef2e}} 
-\index{L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}!S\+C\+\_\+\+M\+O\+S\+I\+\_\+\+M\+I\+S\+O\+\_\+\+B\+Y\+P\+A\+SS@{S\+C\+\_\+\+M\+O\+S\+I\+\_\+\+M\+I\+S\+O\+\_\+\+B\+Y\+P\+A\+SS}}
-\index{S\+C\+\_\+\+M\+O\+S\+I\+\_\+\+M\+I\+S\+O\+\_\+\+B\+Y\+P\+A\+SS@{S\+C\+\_\+\+M\+O\+S\+I\+\_\+\+M\+I\+S\+O\+\_\+\+B\+Y\+P\+A\+SS}!L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}}
-\subsubsection{\texorpdfstring{S\+C\+\_\+\+M\+O\+S\+I\+\_\+\+M\+I\+S\+O\+\_\+\+B\+Y\+P\+A\+SS}{SC\_MOSI\_MISO\_BYPASS}}
-{\footnotesize\ttfamily \#define S\+C\+\_\+\+M\+O\+S\+I\+\_\+\+M\+I\+S\+O\+\_\+\+B\+Y\+P\+A\+SS~0x\+FF}
-
-
-
-Definition at line 39 of file L\+S\+Delay\+Chip\+V1.\+h.
-
-
+Definition at line 39 of file LSDelayChipV1.h.
 
 \subsection{Typedef Documentation}
-\mbox{\Hypertarget{LSDelayChipV1_8h_adf928e51a60dba0df29d615401cc55a8}\label{LSDelayChipV1_8h_adf928e51a60dba0df29d615401cc55a8}} 
-\index{L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}!U16@{U16}}
-\index{U16@{U16}!L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}}
-\subsubsection{\texorpdfstring{U16}{U16}}
-{\footnotesize\ttfamily typedef unsigned short \hyperlink{ICECALv3_8h_adf928e51a60dba0df29d615401cc55a8}{U16}}
+\hypertarget{LSDelayChipV1_8h_adf928e51a60dba0df29d615401cc55a8}{
+\index{LSDelayChipV1.h@{LSDelayChipV1.h}!U16@{U16}}
+\index{U16@{U16}!LSDelayChipV1.h@{LSDelayChipV1.h}}
+\subsubsection[{U16}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned short {\bf U16}}}
+\label{LSDelayChipV1_8h_adf928e51a60dba0df29d615401cc55a8}
 
 
-
-Definition at line 42 of file L\+S\+Delay\+Chip\+V1.\+h.
-
-\mbox{\Hypertarget{LSDelayChipV1_8h_a811024d35b9b8a41095b1f583b649e56}\label{LSDelayChipV1_8h_a811024d35b9b8a41095b1f583b649e56}} 
-\index{L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}!U32@{U32}}
-\index{U32@{U32}!L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}}
-\subsubsection{\texorpdfstring{U32}{U32}}
-{\footnotesize\ttfamily typedef unsigned long \hyperlink{ICECALv3_8h_a811024d35b9b8a41095b1f583b649e56}{U32}}
+Definition at line 42 of file LSDelayChipV1.h.\hypertarget{LSDelayChipV1_8h_a811024d35b9b8a41095b1f583b649e56}{
+\index{LSDelayChipV1.h@{LSDelayChipV1.h}!U32@{U32}}
+\index{U32@{U32}!LSDelayChipV1.h@{LSDelayChipV1.h}}
+\subsubsection[{U32}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned long {\bf U32}}}
+\label{LSDelayChipV1_8h_a811024d35b9b8a41095b1f583b649e56}
 
 
-
-Definition at line 41 of file L\+S\+Delay\+Chip\+V1.\+h.
-
-\mbox{\Hypertarget{LSDelayChipV1_8h_a3cb25ca6f51f003950f9625ff05536fc}\label{LSDelayChipV1_8h_a3cb25ca6f51f003950f9625ff05536fc}} 
-\index{L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}!U8@{U8}}
-\index{U8@{U8}!L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}}
-\subsubsection{\texorpdfstring{U8}{U8}}
-{\footnotesize\ttfamily typedef unsigned char \hyperlink{ICECALv3_8h_a3cb25ca6f51f003950f9625ff05536fc}{U8}}
+Definition at line 41 of file LSDelayChipV1.h.\hypertarget{LSDelayChipV1_8h_a3cb25ca6f51f003950f9625ff05536fc}{
+\index{LSDelayChipV1.h@{LSDelayChipV1.h}!U8@{U8}}
+\index{U8@{U8}!LSDelayChipV1.h@{LSDelayChipV1.h}}
+\subsubsection[{U8}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned char {\bf U8}}}
+\label{LSDelayChipV1_8h_a3cb25ca6f51f003950f9625ff05536fc}
 
 
-
-Definition at line 43 of file L\+S\+Delay\+Chip\+V1.\+h.
-
-
+Definition at line 43 of file LSDelayChipV1.h.
 
 \subsection{Enumeration Type Documentation}
-\mbox{\Hypertarget{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63}\label{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63}} 
-\index{L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}!L\+V\+D\+S\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+S\+E\+L\+E\+C\+T\+OR@{L\+V\+D\+S\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+S\+E\+L\+E\+C\+T\+OR}}
-\index{L\+V\+D\+S\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+S\+E\+L\+E\+C\+T\+OR@{L\+V\+D\+S\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+S\+E\+L\+E\+C\+T\+OR}!L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}}
-\subsubsection{\texorpdfstring{L\+V\+D\+S\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+S\+E\+L\+E\+C\+T\+OR}{LVDS\_OUTPUT\_CURRENT\_SELECTOR}}
-{\footnotesize\ttfamily enum \hyperlink{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63}{L\+V\+D\+S\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+S\+E\+L\+E\+C\+T\+OR}}
+\hypertarget{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63}{
+\index{LSDelayChipV1.h@{LSDelayChipV1.h}!LVDS\_\-OUTPUT\_\-CURRENT\_\-SELECTOR@{LVDS\_\-OUTPUT\_\-CURRENT\_\-SELECTOR}}
+\index{LVDS\_\-OUTPUT\_\-CURRENT\_\-SELECTOR@{LVDS\_\-OUTPUT\_\-CURRENT\_\-SELECTOR}!LSDelayChipV1.h@{LSDelayChipV1.h}}
+\subsubsection[{LVDS\_\-OUTPUT\_\-CURRENT\_\-SELECTOR}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf LVDS\_\-OUTPUT\_\-CURRENT\_\-SELECTOR}}}
+\label{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{LOCUS\_\-3000\_\-UA@{LOCUS\_\-3000\_\-UA}!LSDelayChipV1.h@{LSDelayChipV1.h}}\index{LSDelayChipV1.h@{LSDelayChipV1.h}!LOCUS\_\-3000\_\-UA@{LOCUS\_\-3000\_\-UA}}\item[{\em 
+\hypertarget{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63a259de7b287dcc219dd6cda577c9ebc4c}{
+LOCUS\_\-3000\_\-UA}
+\label{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63a259de7b287dcc219dd6cda577c9ebc4c}
+}]\index{LOCUS\_\-1400\_\-UA@{LOCUS\_\-1400\_\-UA}!LSDelayChipV1.h@{LSDelayChipV1.h}}\index{LSDelayChipV1.h@{LSDelayChipV1.h}!LOCUS\_\-1400\_\-UA@{LOCUS\_\-1400\_\-UA}}\item[{\em 
+\hypertarget{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63aaf5de18b5633f00e781bb74b6c3850d3}{
+LOCUS\_\-1400\_\-UA}
+\label{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63aaf5de18b5633f00e781bb74b6c3850d3}
+}]\index{LOCUS\_\-2300\_\-UA@{LOCUS\_\-2300\_\-UA}!LSDelayChipV1.h@{LSDelayChipV1.h}}\index{LSDelayChipV1.h@{LSDelayChipV1.h}!LOCUS\_\-2300\_\-UA@{LOCUS\_\-2300\_\-UA}}\item[{\em 
+\hypertarget{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63a06d3e527062b8ffd220520be69e0d4e6}{
+LOCUS\_\-2300\_\-UA}
+\label{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63a06d3e527062b8ffd220520be69e0d4e6}
+}]\index{LOCUS\_\-0350\_\-UA@{LOCUS\_\-0350\_\-UA}!LSDelayChipV1.h@{LSDelayChipV1.h}}\index{LSDelayChipV1.h@{LSDelayChipV1.h}!LOCUS\_\-0350\_\-UA@{LOCUS\_\-0350\_\-UA}}\item[{\em 
+\hypertarget{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63abcd44318e3bbcab80cb33b8ac0638fa0}{
+LOCUS\_\-0350\_\-UA}
+\label{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63abcd44318e3bbcab80cb33b8ac0638fa0}
+}]\end{description}
+\end{Desc}
 
-\begin{DoxyEnumFields}{Enumerator}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+O\+C\+U\+S\+\_\+3000\+\_\+\+UA@{L\+O\+C\+U\+S\+\_\+3000\+\_\+\+UA}!L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}}\index{L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}!L\+O\+C\+U\+S\+\_\+3000\+\_\+\+UA@{L\+O\+C\+U\+S\+\_\+3000\+\_\+\+UA}}}\mbox{\Hypertarget{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63a259de7b287dcc219dd6cda577c9ebc4c}\label{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63a259de7b287dcc219dd6cda577c9ebc4c}} 
-L\+O\+C\+U\+S\+\_\+3000\+\_\+\+UA&\\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+O\+C\+U\+S\+\_\+1400\+\_\+\+UA@{L\+O\+C\+U\+S\+\_\+1400\+\_\+\+UA}!L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}}\index{L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}!L\+O\+C\+U\+S\+\_\+1400\+\_\+\+UA@{L\+O\+C\+U\+S\+\_\+1400\+\_\+\+UA}}}\mbox{\Hypertarget{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63aaf5de18b5633f00e781bb74b6c3850d3}\label{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63aaf5de18b5633f00e781bb74b6c3850d3}} 
-L\+O\+C\+U\+S\+\_\+1400\+\_\+\+UA&\\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+O\+C\+U\+S\+\_\+2300\+\_\+\+UA@{L\+O\+C\+U\+S\+\_\+2300\+\_\+\+UA}!L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}}\index{L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}!L\+O\+C\+U\+S\+\_\+2300\+\_\+\+UA@{L\+O\+C\+U\+S\+\_\+2300\+\_\+\+UA}}}\mbox{\Hypertarget{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63a06d3e527062b8ffd220520be69e0d4e6}\label{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63a06d3e527062b8ffd220520be69e0d4e6}} 
-L\+O\+C\+U\+S\+\_\+2300\+\_\+\+UA&\\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+O\+C\+U\+S\+\_\+0350\+\_\+\+UA@{L\+O\+C\+U\+S\+\_\+0350\+\_\+\+UA}!L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}}\index{L\+S\+Delay\+Chip\+V1.\+h@{L\+S\+Delay\+Chip\+V1.\+h}!L\+O\+C\+U\+S\+\_\+0350\+\_\+\+UA@{L\+O\+C\+U\+S\+\_\+0350\+\_\+\+UA}}}\mbox{\Hypertarget{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63abcd44318e3bbcab80cb33b8ac0638fa0}\label{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63abcd44318e3bbcab80cb33b8ac0638fa0}} 
-L\+O\+C\+U\+S\+\_\+0350\+\_\+\+UA&\\
-\hline
-
-\end{DoxyEnumFields}
 
 
-Definition at line 60 of file L\+S\+Delay\+Chip\+V1.\+h.
+Definition at line 60 of file LSDelayChipV1.h.
 
 
 \begin{DoxyCode}
-61       \{
-62         \hyperlink{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63a259de7b287dcc219dd6cda577c9ebc4c}{LOCUS\_3000\_UA} = 0,            \textcolor{comment}{// 3.0 mA}
-63         \hyperlink{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63aaf5de18b5633f00e781bb74b6c3850d3}{LOCUS\_1400\_UA} = 1,            \textcolor{comment}{// 1.4 mA}
-64         \hyperlink{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63a06d3e527062b8ffd220520be69e0d4e6}{LOCUS\_2300\_UA} = 2,            \textcolor{comment}{// 2.3 mA}
-65         \hyperlink{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63abcd44318e3bbcab80cb33b8ac0638fa0}{LOCUS\_0350\_UA} = 3            \textcolor{comment}{// .35 mA}
-66       \} \hyperlink{LSDelayChipV1_8h_a9dbbe19d91a9e4d61f7291c5aeabce63}{LVDS\_OUTPUT\_CURRENT\_SELECTOR};
+61       {
+62         LOCUS_3000_UA = 0,            // 3.0 mA
+63         LOCUS_1400_UA = 1,            // 1.4 mA
+64         LOCUS_2300_UA = 2,            // 2.3 mA
+65         LOCUS_0350_UA = 3            // .35 mA
+66       } LVDS_OUTPUT_CURRENT_SELECTOR;
 \end{DoxyCode}

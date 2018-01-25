@@ -1,108 +1,108 @@
-\hypertarget{namespaceAcquisition}{}\section{Acquisition Namespace Reference}
+\hypertarget{namespaceAcquisition}{
+\section{Acquisition Namespace Reference}
 \label{namespaceAcquisition}\index{Acquisition@{Acquisition}}
+}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-def \hyperlink{namespaceAcquisition_ae22e0bd9de0d84e8fcb0da5037e2c700}{Edit} (cat, obj, panel, path)
+def \hyperlink{namespaceAcquisition_a301faa6c22f2040780a48b501e4c6869}{Edit}
 \item 
-def \hyperlink{namespaceAcquisition_a0e0ed7939299c431d7eceb1dde96fa07}{Plot} (cat, obj, parent, \hyperlink{classObject_af99145335cc61ff6e2798ea17db009d2}{id})
+def \hyperlink{namespaceAcquisition_af35d4f9df19b1fe5aadcc3076e43c59b}{Plot}
 \end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{namespaceAcquisition_ae22e0bd9de0d84e8fcb0da5037e2c700}\label{namespaceAcquisition_ae22e0bd9de0d84e8fcb0da5037e2c700}} 
+\hypertarget{namespaceAcquisition_a301faa6c22f2040780a48b501e4c6869}{
 \index{Acquisition@{Acquisition}!Edit@{Edit}}
 \index{Edit@{Edit}!Acquisition@{Acquisition}}
-\subsubsection{\texorpdfstring{Edit()}{Edit()}}
-{\footnotesize\ttfamily def Acquisition.\+Edit (\begin{DoxyParamCaption}\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{panel,  }\item[{}]{path }\end{DoxyParamCaption})}
+\subsubsection[{Edit}]{\setlength{\rightskip}{0pt plus 5cm}def Acquisition::Edit ( {\em cat}, \/   {\em obj}, \/   {\em panel}, \/   {\em path})}}
+\label{namespaceAcquisition_a301faa6c22f2040780a48b501e4c6869}
 
 
-
-Definition at line 119 of file Acquisition.\+py.
+Definition at line 119 of file Acquisition.py.
 
 
 \begin{DoxyCode}
-119 \textcolor{keyword}{def }\hyperlink{namespaceAcquisition_ae22e0bd9de0d84e8fcb0da5037e2c700}{Edit} (cat, obj, panel, path):
-120     \textcolor{keywordflow}{return} \hyperlink{classAcquisition}{Acquisition}(cat, obj, panel, path)
+119                                 :
+120     return Acquisition(cat, obj, panel, path)
 121 
-122 \textcolor{comment}{#----------------------------------------------------------------------}
+122 #----------------------------------------------------------------------
 123 
+def Plot(cat, obj, parent, id):
 \end{DoxyCode}
-\mbox{\Hypertarget{namespaceAcquisition_a0e0ed7939299c431d7eceb1dde96fa07}\label{namespaceAcquisition_a0e0ed7939299c431d7eceb1dde96fa07}} 
+\hypertarget{namespaceAcquisition_af35d4f9df19b1fe5aadcc3076e43c59b}{
 \index{Acquisition@{Acquisition}!Plot@{Plot}}
 \index{Plot@{Plot}!Acquisition@{Acquisition}}
-\subsubsection{\texorpdfstring{Plot()}{Plot()}}
-{\footnotesize\ttfamily def Acquisition.\+Plot (\begin{DoxyParamCaption}\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{parent,  }\item[{}]{id }\end{DoxyParamCaption})}
+\subsubsection[{Plot}]{\setlength{\rightskip}{0pt plus 5cm}def Acquisition::Plot ( {\em cat}, \/   {\em obj}, \/   {\em parent}, \/   {\em id})}}
+\label{namespaceAcquisition_af35d4f9df19b1fe5aadcc3076e43c59b}
 
 
-
-Definition at line 124 of file Acquisition.\+py.
-
-
-
-References plotter.\+h1d().
+Definition at line 124 of file Acquisition.py.
 
 
 \begin{DoxyCode}
-124 \textcolor{keyword}{def }\hyperlink{namespaceAcquisition_a0e0ed7939299c431d7eceb1dde96fa07}{Plot}(cat, obj, parent, id):
+124                               :
 125     
-126     \textcolor{keywordflow}{if} (\textcolor{keywordflow}{not} obj.storeTrend() \textcolor{keywordflow}{and} \textcolor{keywordflow}{not} obj.storeSample):
-127         \textcolor{keywordflow}{return} \textcolor{keywordtype}{None}
+126     if (not obj.storeTrend() and not obj.storeSample):
+127         return None
 128     
-129     \textcolor{keyword}{from} mpl\_toolkits.mplot3d \textcolor{keyword}{import} Axes3D
-130     \textcolor{keyword}{import} matplotlib.ticker \textcolor{keyword}{as} ticker
-131     \textcolor{keyword}{from} matplotlib \textcolor{keyword}{import} cm
-132     \textcolor{keyword}{import} matplotlib \textcolor{keyword}{as} mpl
-133     \textcolor{keyword}{import} matplotlib.pyplot \textcolor{keyword}{as} plt
-134     \textcolor{keyword}{import} numpy \textcolor{keyword}{as} np
+129     from mpl_toolkits.mplot3d import Axes3D
+130     import matplotlib.ticker as ticker
+131     from matplotlib import cm
+132     import matplotlib as mpl
+133     import matplotlib.pyplot as plt
+134     import numpy as np
 135 
-136     plot=\hyperlink{namespaceplotter}{plotter}(parent,id)
+136     plot=plotter(parent,id)
 137     fig=plot.current()
 138 
-139     title = \textcolor{stringliteral}{'Acquisition - Channel(s) '}
+139     title = 'Acquisition - Channel(s) '
 140 
 141     channels=obj.channels()
 142     nch=0
-143     \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(0,8): 
-144         \textcolor{keywordflow}{if} (channels>>i&1): 
+143     for i in range(0,8): 
+144         if (channels>>i&1): 
 145             nch+=1
-146             title+=\textcolor{stringliteral}{' '}+str(i)
+146             title+=' '+str(i)
 147 
-148     fig.suptitle(title, fontsize=14, fontweight=\textcolor{stringliteral}{'bold'})
+148     fig.suptitle(title, fontsize=14, fontweight='bold')
 149     
 150     col=nch
 151     row=0
-152     \textcolor{keywordflow}{if} obj.storeSample() : row+=1
-153     \textcolor{keywordflow}{if} obj.storeTrend() : row+=2
+152     if obj.storeSample() : row+=1
+153     if obj.storeTrend() : row+=2
 154 
 155     index=0
 156 
-157     \textcolor{keywordflow}{if} obj.storeTrend() : 
-158         \textcolor{keywordflow}{for} c \textcolor{keywordflow}{in} range(0,col):
-159             pl=fig.add\_subplot(row,col,c+1)     
-160 \textcolor{comment}{#            h=h1d(pl,obj.hist1d(index), facecolor='blue',linestyle='dashed')}
-161             pl.plot(obj.hist1d(index).xbins(),obj.hist1d(index).bins(),\textcolor{stringliteral}{'ro'},color=\textcolor{stringliteral}{'blue'})
-162             pl.xaxis.set\_ticks([0,obj.depth()/2,obj.depth()-1])
-163             pl.grid(\textcolor{keyword}{True})
+157     if obj.storeTrend() : 
+158         for c in range(0,col):
+159             pl=fig.add_subplot(row,col,c+1)     
+160 #            h=h1d(pl,obj.hist1d(index), facecolor='blue',linestyle='dashed')
+161             pl.plot(obj.hist1d(index).xbins(),obj.hist1d(index).bins(),'ro',color
+      ='blue')
+162             pl.xaxis.set_ticks([0,obj.depth()/2,obj.depth()-1])
+163             pl.grid(True)
 164             index+=1
-165             pl=fig.add\_subplot(row,col,c+col+1)     
-166 \textcolor{comment}{#            h=h1d(pl,obj.hist1d(index), facecolor='green',linestyle='dashed')}
-167             pl.plot(obj.hist1d(index).xbins(),obj.hist1d(index).bins(),\textcolor{stringliteral}{'ro'},color=\textcolor{stringliteral}{'green'})
-168             pl.xaxis.set\_ticks([0,obj.depth()/2,obj.depth()-1])
-169             pl.grid(\textcolor{keyword}{True})
+165             pl=fig.add_subplot(row,col,c+col+1)     
+166 #            h=h1d(pl,obj.hist1d(index), facecolor='green',linestyle='dashed')
+167             pl.plot(obj.hist1d(index).xbins(),obj.hist1d(index).bins(),'ro',color
+      ='green')
+168             pl.xaxis.set_ticks([0,obj.depth()/2,obj.depth()-1])
+169             pl.grid(True)
 170             index+=1
-171             \textcolor{keywordflow}{if} (row==3): index+=1
+171             if (row==3): index+=1
 172 
-173     \textcolor{keywordflow}{if} obj.storeSample() : 
-174         \textcolor{keywordflow}{if} (row==3): index=2
-175         \textcolor{keywordflow}{for} c \textcolor{keywordflow}{in} range(0,col):
-176             pl=fig.add\_subplot(row,col,c+(row-1)*col+1)     
-177             h=\hyperlink{namespaceplotter_a5d9521541ff0c72bf439078efacf2f42}{h1d}(pl,obj.hist1d(index), facecolor=\textcolor{stringliteral}{'red'},linestyle=\textcolor{stringliteral}{'dashed'})
-178             pl.xaxis.set\_ticks([obj.hist1d(index).minX(),(obj.hist1d(index).maxX()+obj.hist1d(index).minX()
-      )/2.,obj.hist1d(index).maxX()])
-179             pl.grid(\textcolor{keyword}{True})
+173     if obj.storeSample() : 
+174         if (row==3): index=2
+175         for c in range(0,col):
+176             pl=fig.add_subplot(row,col,c+(row-1)*col+1)     
+177             h=h1d(pl,obj.hist1d(index), facecolor='red',linestyle='dashed')
+178             pl.xaxis.set_ticks([obj.hist1d(index).minX(),(obj.hist1d(index).maxX(
+      )+obj.hist1d(index).minX())/2.,obj.hist1d(index).maxX()])
+179             pl.grid(True)
 180             index+=1
-181             \textcolor{keywordflow}{if} (row==3): index+=2
+181             if (row==3): index+=2
 182 
-183     \textcolor{keywordflow}{return} plot
-184 \end{DoxyCode}
+183     return plot
+    return plot
+\end{DoxyCode}

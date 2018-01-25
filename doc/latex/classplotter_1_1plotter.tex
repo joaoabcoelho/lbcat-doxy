@@ -1,61 +1,55 @@
-\hypertarget{classplotter_1_1plotter}{}\section{plotter.\+plotter Class Reference}
-\label{classplotter_1_1plotter}\index{plotter.\+plotter@{plotter.\+plotter}}
-Inheritance diagram for plotter.\+plotter\+:\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=2.000000cm]{classplotter_1_1plotter}
-\end{center}
-\end{figure}
+\hypertarget{classplotter_1_1plotter}{
+\section{plotter::plotter Class Reference}
+\label{classplotter_1_1plotter}\index{plotter::plotter@{plotter::plotter}}
+}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-def \hyperlink{classplotter_1_1plotter_aa8c4aa595a3765f6f83ce75c1e9989ea}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, parent, \hyperlink{classplotter_1_1plotter_a9f4c4616f4fd21c3c9ae6dd320bfbeb6}{figid})
+def \hyperlink{classplotter_1_1plotter_ab319fa99fbf16ed41498db85d050e97d}{\_\-\_\-init\_\-\_\-}
 \item 
-def \hyperlink{classplotter_1_1plotter_a4c7ba64058a8be7d362958e469429ed6}{current} (self)
+def \hyperlink{classplotter_1_1plotter_a83bdf60482eec6abedcfd01099fe5f29}{current}
 \item 
-def \hyperlink{classplotter_1_1plotter_a6bdaaad7796180c8dbe453ea192d982e}{destroy} (self)
+def \hyperlink{classplotter_1_1plotter_a13d7be0a97584e46c5e8f27e70644948}{destroy}
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classplotter_1_1plotter_a8766011b81271bcd938237fc9253af45}{figure}
+\hyperlink{classplotter_1_1plotter_a3ecf2dd31540fd3973dd783f55fa4d8b}{figure}
 \item 
-\hyperlink{classplotter_1_1plotter_a9f4c4616f4fd21c3c9ae6dd320bfbeb6}{figid}
+\hyperlink{classplotter_1_1plotter_add440b02c1e73a0636b4caa318da5b1c}{figid}
 \item 
-\hyperlink{classplotter_1_1plotter_a4e223147b19d30bad6a7a0177f3fe08d}{canvas}
+\hyperlink{classplotter_1_1plotter_afd401096ff08062bea2ee921a8e58260}{canvas}
 \item 
-\hyperlink{classplotter_1_1plotter_a55f4eaa8635020a1f0d76241dcfee593}{toolbar}
+\hyperlink{classplotter_1_1plotter_a29e30bc0a8a999b5fbd9edd951f7e52d}{toolbar}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 24 of file plotter.\+py.
+Definition at line 24 of file plotter.py.
+
+\subsection{Member Function Documentation}
+\hypertarget{classplotter_1_1plotter_ab319fa99fbf16ed41498db85d050e97d}{
+\index{plotter::plotter@{plotter::plotter}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!plotter::plotter@{plotter::plotter}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def plotter::plotter::\_\-\_\-init\_\-\_\- ( {\em self}, \/   {\em parent}, \/   {\em figid})}}
+\label{classplotter_1_1plotter_ab319fa99fbf16ed41498db85d050e97d}
 
 
-
-\subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classplotter_1_1plotter_aa8c4aa595a3765f6f83ce75c1e9989ea}\label{classplotter_1_1plotter_aa8c4aa595a3765f6f83ce75c1e9989ea}} 
-\index{plotter\+::plotter@{plotter\+::plotter}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
-\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!plotter\+::plotter@{plotter\+::plotter}}
-\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
-{\footnotesize\ttfamily def plotter.\+plotter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{parent,  }\item[{}]{figid }\end{DoxyParamCaption})}
-
-
-
-Definition at line 25 of file plotter.\+py.
+Definition at line 25 of file plotter.py.
 
 
 \begin{DoxyCode}
-25         \textcolor{keyword}{def }\hyperlink{classwrapper_1_1ModuleDictWrapper_a9a7a794150502f51df687831583e13b9}{\_\_init\_\_}(self, parent,figid):
-26                 \textcolor{keywordflow}{if} (parent==\textcolor{keywordtype}{None}):
+25                                         :
+26                 if (parent==None):
 27                         self.figure = plt.figure(figid)
-28                 \textcolor{keywordflow}{else}:
-29                         wx.Panel.\_\_init\_\_(self, parent, id=-1)
+28                 else:
+29                         wx.Panel.__init__(self, parent, id=-1)
 30                         self.figid  = figid
 31                         self.figure = plt.figure(figid)
-32                         self.figure.subplots\_adjust(top=0.9,bottom=0.05,right=0.95,left=0.05)
+32                         self.figure.subplots_adjust(top=0.9,bottom=0.05,right=0.9
+      5,left=0.05)
 33                         self.canvas = Canvas(self, -1, self.figure)
 34                         self.toolbar = Toolbar(self.canvas)
 35                         self.toolbar.Realize()
@@ -64,103 +58,73 @@ Definition at line 25 of file plotter.\+py.
 38                         sizer.Add(self.toolbar, 0 , wx.LEFT | wx.EXPAND)
 39                         self.SetSizer(sizer)
 40                         
+    def current(self):
 \end{DoxyCode}
+\hypertarget{classplotter_1_1plotter_a83bdf60482eec6abedcfd01099fe5f29}{
+\index{plotter::plotter@{plotter::plotter}!current@{current}}
+\index{current@{current}!plotter::plotter@{plotter::plotter}}
+\subsubsection[{current}]{\setlength{\rightskip}{0pt plus 5cm}def plotter::plotter::current ( {\em self})}}
+\label{classplotter_1_1plotter_a83bdf60482eec6abedcfd01099fe5f29}
 
 
-\subsection{Member Function Documentation}
-\mbox{\Hypertarget{classplotter_1_1plotter_a4c7ba64058a8be7d362958e469429ed6}\label{classplotter_1_1plotter_a4c7ba64058a8be7d362958e469429ed6}} 
-\index{plotter\+::plotter@{plotter\+::plotter}!current@{current}}
-\index{current@{current}!plotter\+::plotter@{plotter\+::plotter}}
-\subsubsection{\texorpdfstring{current()}{current()}}
-{\footnotesize\ttfamily def plotter.\+plotter.\+current (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
-
-
-
-Definition at line 41 of file plotter.\+py.
-
-
-
-References plotter.\+plotter.\+figure.
+Definition at line 41 of file plotter.py.
 
 
 \begin{DoxyCode}
-41     \textcolor{keyword}{def }current(self):
-42             \textcolor{keywordflow}{return} self.figure
+41                      :
+42             return self.figure
 43 
+    def destroy(self):
 \end{DoxyCode}
-\mbox{\Hypertarget{classplotter_1_1plotter_a6bdaaad7796180c8dbe453ea192d982e}\label{classplotter_1_1plotter_a6bdaaad7796180c8dbe453ea192d982e}} 
-\index{plotter\+::plotter@{plotter\+::plotter}!destroy@{destroy}}
-\index{destroy@{destroy}!plotter\+::plotter@{plotter\+::plotter}}
-\subsubsection{\texorpdfstring{destroy()}{destroy()}}
-{\footnotesize\ttfamily def plotter.\+plotter.\+destroy (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+\hypertarget{classplotter_1_1plotter_a13d7be0a97584e46c5e8f27e70644948}{
+\index{plotter::plotter@{plotter::plotter}!destroy@{destroy}}
+\index{destroy@{destroy}!plotter::plotter@{plotter::plotter}}
+\subsubsection[{destroy}]{\setlength{\rightskip}{0pt plus 5cm}def plotter::plotter::destroy ( {\em self})}}
+\label{classplotter_1_1plotter_a13d7be0a97584e46c5e8f27e70644948}
 
 
-
-Definition at line 44 of file plotter.\+py.
-
-
-
-References plotter.\+plotter.\+canvas, and plotter.\+h1d().
+Definition at line 44 of file plotter.py.
 
 
 \begin{DoxyCode}
-44     \textcolor{keyword}{def }destroy(self):
+44                      :
 45         self.canvas.Destroy()
 46 
+def h1d(fig, histo ,
 \end{DoxyCode}
 
 
 \subsection{Member Data Documentation}
-\mbox{\Hypertarget{classplotter_1_1plotter_a4e223147b19d30bad6a7a0177f3fe08d}\label{classplotter_1_1plotter_a4e223147b19d30bad6a7a0177f3fe08d}} 
-\index{plotter\+::plotter@{plotter\+::plotter}!canvas@{canvas}}
-\index{canvas@{canvas}!plotter\+::plotter@{plotter\+::plotter}}
-\subsubsection{\texorpdfstring{canvas}{canvas}}
-{\footnotesize\ttfamily plotter.\+plotter.\+canvas}
+\hypertarget{classplotter_1_1plotter_afd401096ff08062bea2ee921a8e58260}{
+\index{plotter::plotter@{plotter::plotter}!canvas@{canvas}}
+\index{canvas@{canvas}!plotter::plotter@{plotter::plotter}}
+\subsubsection[{canvas}]{\setlength{\rightskip}{0pt plus 5cm}{\bf plotter::plotter::canvas}}}
+\label{classplotter_1_1plotter_afd401096ff08062bea2ee921a8e58260}
 
 
-
-Definition at line 33 of file plotter.\+py.
-
-
-
-Referenced by plotter.\+plotter.\+destroy().
-
-\mbox{\Hypertarget{classplotter_1_1plotter_a9f4c4616f4fd21c3c9ae6dd320bfbeb6}\label{classplotter_1_1plotter_a9f4c4616f4fd21c3c9ae6dd320bfbeb6}} 
-\index{plotter\+::plotter@{plotter\+::plotter}!figid@{figid}}
-\index{figid@{figid}!plotter\+::plotter@{plotter\+::plotter}}
-\subsubsection{\texorpdfstring{figid}{figid}}
-{\footnotesize\ttfamily plotter.\+plotter.\+figid}
+Definition at line 33 of file plotter.py.\hypertarget{classplotter_1_1plotter_add440b02c1e73a0636b4caa318da5b1c}{
+\index{plotter::plotter@{plotter::plotter}!figid@{figid}}
+\index{figid@{figid}!plotter::plotter@{plotter::plotter}}
+\subsubsection[{figid}]{\setlength{\rightskip}{0pt plus 5cm}{\bf plotter::plotter::figid}}}
+\label{classplotter_1_1plotter_add440b02c1e73a0636b4caa318da5b1c}
 
 
-
-Definition at line 30 of file plotter.\+py.
-
-\mbox{\Hypertarget{classplotter_1_1plotter_a8766011b81271bcd938237fc9253af45}\label{classplotter_1_1plotter_a8766011b81271bcd938237fc9253af45}} 
-\index{plotter\+::plotter@{plotter\+::plotter}!figure@{figure}}
-\index{figure@{figure}!plotter\+::plotter@{plotter\+::plotter}}
-\subsubsection{\texorpdfstring{figure}{figure}}
-{\footnotesize\ttfamily plotter.\+plotter.\+figure}
+Definition at line 30 of file plotter.py.\hypertarget{classplotter_1_1plotter_a3ecf2dd31540fd3973dd783f55fa4d8b}{
+\index{plotter::plotter@{plotter::plotter}!figure@{figure}}
+\index{figure@{figure}!plotter::plotter@{plotter::plotter}}
+\subsubsection[{figure}]{\setlength{\rightskip}{0pt plus 5cm}{\bf plotter::plotter::figure}}}
+\label{classplotter_1_1plotter_a3ecf2dd31540fd3973dd783f55fa4d8b}
 
 
-
-Definition at line 27 of file plotter.\+py.
-
-
-
-Referenced by plotter.\+plotter.\+current().
-
-\mbox{\Hypertarget{classplotter_1_1plotter_a55f4eaa8635020a1f0d76241dcfee593}\label{classplotter_1_1plotter_a55f4eaa8635020a1f0d76241dcfee593}} 
-\index{plotter\+::plotter@{plotter\+::plotter}!toolbar@{toolbar}}
-\index{toolbar@{toolbar}!plotter\+::plotter@{plotter\+::plotter}}
-\subsubsection{\texorpdfstring{toolbar}{toolbar}}
-{\footnotesize\ttfamily plotter.\+plotter.\+toolbar}
+Definition at line 27 of file plotter.py.\hypertarget{classplotter_1_1plotter_a29e30bc0a8a999b5fbd9edd951f7e52d}{
+\index{plotter::plotter@{plotter::plotter}!toolbar@{toolbar}}
+\index{toolbar@{toolbar}!plotter::plotter@{plotter::plotter}}
+\subsubsection[{toolbar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf plotter::plotter::toolbar}}}
+\label{classplotter_1_1plotter_a29e30bc0a8a999b5fbd9edd951f7e52d}
 
 
+Definition at line 34 of file plotter.py.
 
-Definition at line 34 of file plotter.\+py.
-
-
-
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
 \item 
-/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Python/python/\hyperlink{plotter_8py}{plotter.\+py}\end{DoxyCompactItemize}
+/home/eleclhcb/LHCb/lbcat-\/cmake/CatPython/python/\hyperlink{plotter_8py}{plotter.py}\end{DoxyCompactItemize}

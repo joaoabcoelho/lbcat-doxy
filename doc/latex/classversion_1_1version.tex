@@ -1,168 +1,131 @@
-\hypertarget{classversion_1_1version}{}\section{version.\+version Class Reference}
-\label{classversion_1_1version}\index{version.\+version@{version.\+version}}
+\hypertarget{classversion_1_1version}{
+\section{version::version Class Reference}
+\label{classversion_1_1version}\index{version::version@{version::version}}
+}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-def \hyperlink{classversion_1_1version_a2a76e6aff129fda5b01dff50807ea388}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+def \hyperlink{classversion_1_1version_a7c9925e88fe2daf87a15de7b9a6f785b}{\_\-\_\-init\_\-\_\-}
 \item 
-def \hyperlink{classversion_1_1version_a59c02faaf269452d4574d8a7978871cc}{read} (self)
+def \hyperlink{classversion_1_1version_ac4231b167690c0cbc57a6bb9a3a12a9f}{read}
 \item 
-def \hyperlink{classversion_1_1version_a286cc1eb62e2aebe8c572f449b0041bf}{info} (self)
+def \hyperlink{classversion_1_1version_a9b2a04cf6c7accb654a20c992eda01a3}{info}
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classversion_1_1version_a1b3a3618376b629cb88066864c489a3c}{versfile}
+\hyperlink{classversion_1_1version_ac8aa5f4a7b6d0c1119f87488296fdb15}{versfile}
 \item 
-\hyperlink{classversion_1_1version_af4cef468b0397eb1728ceaf65a31ce14}{number}
+\hyperlink{classversion_1_1version_aae0cbe7734a585046f80415c90f7bdb0}{number}
 \item 
-\hyperlink{classversion_1_1version_a13223788120e350890af3fb0dcd1b260}{date}
+\hyperlink{classversion_1_1version_ac0217c7361fc9a925fa51c58610dfc69}{date}
 \item 
-\hyperlink{classversion_1_1version_a917f6a98ea7478ddbb874d3aff79a1c9}{copyright}
+\hyperlink{classversion_1_1version_aa401bc80238c2e5f09faf35940a49343}{copyright}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 3 of file version.\+py.
-
-
-
-\subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classversion_1_1version_a2a76e6aff129fda5b01dff50807ea388}\label{classversion_1_1version_a2a76e6aff129fda5b01dff50807ea388}} 
-\index{version\+::version@{version\+::version}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
-\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!version\+::version@{version\+::version}}
-\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
-{\footnotesize\ttfamily def version.\+version.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
-
-
-
-Definition at line 4 of file version.\+py.
-
-
-\begin{DoxyCode}
-4     \textcolor{keyword}{def }\hyperlink{classwrapper_1_1ModuleDictWrapper_a9a7a794150502f51df687831583e13b9}{\_\_init\_\_}(self):
-5         self.versfile=file(os.environ.get(\textcolor{stringliteral}{"CATPATH"})+\textcolor{stringliteral}{"/.catversion"},\textcolor{stringliteral}{'r')}
-6 \textcolor{stringliteral}{        self.read()}
-7 \textcolor{stringliteral}{        self.versfile.close()}
-\textcolor{stringliteral}{\end{DoxyCode}
-
+Definition at line 3 of file version.py.
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classversion_1_1version_a286cc1eb62e2aebe8c572f449b0041bf}\label{classversion_1_1version_a286cc1eb62e2aebe8c572f449b0041bf}} 
-\index{version\+::version@{version\+::version}!info@{info}}
-\index{info@{info}!version\+::version@{version\+::version}}
-\subsubsection{\texorpdfstring{info()}{info()}}
-{\footnotesize\ttfamily def version.\+version.\+info (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+\hypertarget{classversion_1_1version_a7c9925e88fe2daf87a15de7b9a6f785b}{
+\index{version::version@{version::version}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!version::version@{version::version}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def version::version::\_\-\_\-init\_\-\_\- ( {\em self})}}
+\label{classversion_1_1version_a7c9925e88fe2daf87a15de7b9a6f785b}
 
 
-
-Definition at line 24 of file version.\+py.
-
-
-
-References version.\+version.\+copyright, version.\+version.\+date, and version.\+version.\+number.
+Definition at line 4 of file version.py.
 
 
 \begin{DoxyCode}
-24     \textcolor{keyword}{def }info(self):
-25         \textcolor{keywordflow}{print} \textcolor{stringliteral}{"CAT application version "}+self.number+\textcolor{stringliteral}{" - "}+self.date+\textcolor{stringliteral}{" - Copyright "}+self.copyright
-26 \end{DoxyCode}
-\mbox{\Hypertarget{classversion_1_1version_a59c02faaf269452d4574d8a7978871cc}\label{classversion_1_1version_a59c02faaf269452d4574d8a7978871cc}} 
-\index{version\+::version@{version\+::version}!read@{read}}
-\index{read@{read}!version\+::version@{version\+::version}}
-\subsubsection{\texorpdfstring{read()}{read()}}
-{\footnotesize\ttfamily def version.\+version.\+read (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+4                       :
+5         self.versfile=file(os.environ.get("CATPATH")+"/.catversion",'r')
+6         self.read()
+7         self.versfile.close()
+    def read(self):
+\end{DoxyCode}
+\hypertarget{classversion_1_1version_a9b2a04cf6c7accb654a20c992eda01a3}{
+\index{version::version@{version::version}!info@{info}}
+\index{info@{info}!version::version@{version::version}}
+\subsubsection[{info}]{\setlength{\rightskip}{0pt plus 5cm}def version::version::info ( {\em self})}}
+\label{classversion_1_1version_a9b2a04cf6c7accb654a20c992eda01a3}
 
 
-
-Definition at line 8 of file version.\+py.
-
-
-
-References version.\+version.\+versfile.
+Definition at line 24 of file version.py.
 
 
 \begin{DoxyCode}
-8     \textcolor{keyword}{def }read(self):
+24                   :
+25         print "CAT application version "+self.number+" - "+self.date+" - Copyrigh
+      t "+self.copyright
+        print "CAT application version "+self.number+" - "+self.date+" - Copyrigh
+      t "+self.copyright
+\end{DoxyCode}
+\hypertarget{classversion_1_1version_ac4231b167690c0cbc57a6bb9a3a12a9f}{
+\index{version::version@{version::version}!read@{read}}
+\index{read@{read}!version::version@{version::version}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}def version::version::read ( {\em self})}}
+\label{classversion_1_1version_ac4231b167690c0cbc57a6bb9a3a12a9f}
+
+
+Definition at line 8 of file version.py.
+
+
+\begin{DoxyCode}
+8                   :
 9         lines=self.versfile.readlines()
-10         \textcolor{keywordflow}{for} l \textcolor{keywordflow}{in} lines:
+10         for l in lines:
 11             lsp=l.split()
-12             \textcolor{keywordflow}{if} lsp[0] \textcolor{keywordflow}{in} (\textcolor{stringliteral}{"version"},\textcolor{stringliteral}{"Version"},\textcolor{stringliteral}{"VERSION"}):
+12             if lsp[0] in ("version","Version","VERSION"):
 13                 self.number=lsp[1]
-14                 \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} lsp[2:]:
+14                 for i in lsp[2:]:
 15                     self.number=self.number+i
-16             \textcolor{keywordflow}{if} lsp[0] \textcolor{keywordflow}{in} (\textcolor{stringliteral}{"date"},\textcolor{stringliteral}{"Date"},\textcolor{stringliteral}{"DATE"}):
+16             if lsp[0] in ("date","Date","DATE"):
 17                 self.date=lsp[1]
-18                 \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} lsp[2:]:
+18                 for i in lsp[2:]:
 19                     self.date=self.date+i
-20             \textcolor{keywordflow}{if} lsp[0] \textcolor{keywordflow}{in} (\textcolor{stringliteral}{"copyright"},\textcolor{stringliteral}{"Copyright"},\textcolor{stringliteral}{"COPYRIGHT"}):
+20             if lsp[0] in ("copyright","Copyright","COPYRIGHT"):
 21                 self.copyright=lsp[1]
-22                 \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} lsp[2:]:
+22                 for i in lsp[2:]:
 23                     self.copyright=self.copyright+i
+    def info(self):
 \end{DoxyCode}
 
 
 \subsection{Member Data Documentation}
-\mbox{\Hypertarget{classversion_1_1version_a917f6a98ea7478ddbb874d3aff79a1c9}\label{classversion_1_1version_a917f6a98ea7478ddbb874d3aff79a1c9}} 
-\index{version\+::version@{version\+::version}!copyright@{copyright}}
-\index{copyright@{copyright}!version\+::version@{version\+::version}}
-\subsubsection{\texorpdfstring{copyright}{copyright}}
-{\footnotesize\ttfamily version.\+version.\+copyright}
+\hypertarget{classversion_1_1version_aa401bc80238c2e5f09faf35940a49343}{
+\index{version::version@{version::version}!copyright@{copyright}}
+\index{copyright@{copyright}!version::version@{version::version}}
+\subsubsection[{copyright}]{\setlength{\rightskip}{0pt plus 5cm}{\bf version::version::copyright}}}
+\label{classversion_1_1version_aa401bc80238c2e5f09faf35940a49343}
 
 
-
-Definition at line 21 of file version.\+py.
-
-
-
-Referenced by version.\+version.\+info().
-
-\mbox{\Hypertarget{classversion_1_1version_a13223788120e350890af3fb0dcd1b260}\label{classversion_1_1version_a13223788120e350890af3fb0dcd1b260}} 
-\index{version\+::version@{version\+::version}!date@{date}}
-\index{date@{date}!version\+::version@{version\+::version}}
-\subsubsection{\texorpdfstring{date}{date}}
-{\footnotesize\ttfamily version.\+version.\+date}
+Definition at line 21 of file version.py.\hypertarget{classversion_1_1version_ac0217c7361fc9a925fa51c58610dfc69}{
+\index{version::version@{version::version}!date@{date}}
+\index{date@{date}!version::version@{version::version}}
+\subsubsection[{date}]{\setlength{\rightskip}{0pt plus 5cm}{\bf version::version::date}}}
+\label{classversion_1_1version_ac0217c7361fc9a925fa51c58610dfc69}
 
 
-
-Definition at line 17 of file version.\+py.
-
-
-
-Referenced by version.\+version.\+info().
-
-\mbox{\Hypertarget{classversion_1_1version_af4cef468b0397eb1728ceaf65a31ce14}\label{classversion_1_1version_af4cef468b0397eb1728ceaf65a31ce14}} 
-\index{version\+::version@{version\+::version}!number@{number}}
-\index{number@{number}!version\+::version@{version\+::version}}
-\subsubsection{\texorpdfstring{number}{number}}
-{\footnotesize\ttfamily version.\+version.\+number}
+Definition at line 17 of file version.py.\hypertarget{classversion_1_1version_aae0cbe7734a585046f80415c90f7bdb0}{
+\index{version::version@{version::version}!number@{number}}
+\index{number@{number}!version::version@{version::version}}
+\subsubsection[{number}]{\setlength{\rightskip}{0pt plus 5cm}{\bf version::version::number}}}
+\label{classversion_1_1version_aae0cbe7734a585046f80415c90f7bdb0}
 
 
-
-Definition at line 13 of file version.\+py.
-
-
-
-Referenced by version.\+version.\+info().
-
-\mbox{\Hypertarget{classversion_1_1version_a1b3a3618376b629cb88066864c489a3c}\label{classversion_1_1version_a1b3a3618376b629cb88066864c489a3c}} 
-\index{version\+::version@{version\+::version}!versfile@{versfile}}
-\index{versfile@{versfile}!version\+::version@{version\+::version}}
-\subsubsection{\texorpdfstring{versfile}{versfile}}
-{\footnotesize\ttfamily version.\+version.\+versfile}
+Definition at line 13 of file version.py.\hypertarget{classversion_1_1version_ac8aa5f4a7b6d0c1119f87488296fdb15}{
+\index{version::version@{version::version}!versfile@{versfile}}
+\index{versfile@{versfile}!version::version@{version::version}}
+\subsubsection[{versfile}]{\setlength{\rightskip}{0pt plus 5cm}{\bf version::version::versfile}}}
+\label{classversion_1_1version_ac8aa5f4a7b6d0c1119f87488296fdb15}
 
 
+Definition at line 5 of file version.py.
 
-Definition at line 5 of file version.\+py.
-
-
-
-Referenced by version.\+version.\+read().
-
-
-
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
 \item 
-/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Python/python/\hyperlink{version_8py}{version.\+py}\end{DoxyCompactItemize}
+/home/eleclhcb/LHCb/lbcat-\/cmake/CatPython/python/\hyperlink{version_8py}{version.py}\end{DoxyCompactItemize}

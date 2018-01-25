@@ -1,59 +1,19 @@
-\hypertarget{CatCaloUpgrade__load_8cpp}{}\section{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Calo\+Upgrade/src/\+Cat\+Calo\+Upgrade\+\_\+load.cpp File Reference}
-\label{CatCaloUpgrade__load_8cpp}\index{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Calo\+Upgrade/src/\+Cat\+Calo\+Upgrade\+\_\+load.\+cpp@{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Calo\+Upgrade/src/\+Cat\+Calo\+Upgrade\+\_\+load.\+cpp}}
-{\ttfamily \#include $<$iostream$>$}\newline
-{\ttfamily \#include \char`\"{}D\+L\+L.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}F\+E\+B\+\_\+v1.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}C\+U\+\_\+v1.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}Seq\+P\+G\+A.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}Fe\+P\+G\+A.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}Usb\+F\+T\+M\+L\+Interface.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}Usb\+M\+L\+Spi\+Bus.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}Usb\+M\+L\+I2c\+Bus.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}I\+C\+Phaser.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}Emulate\+F\+E.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}Test\+U\+S\+B.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}Test\+I2\+C.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}Test\+S\+P\+I.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}Acquisition.\+h\char`\"{}}\newline
-\subsection*{Functions}
-\begin{DoxyCompactItemize}
-\item 
-\hyperlink{CatCaloUpgrade__load_8cpp_af2b4ef5242b66f76c8d232d81b41c384}{D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+LL} (Cat\+Calo\+Upgrade)
-\end{DoxyCompactItemize}
-
-
-\subsection{Function Documentation}
-\mbox{\Hypertarget{CatCaloUpgrade__load_8cpp_af2b4ef5242b66f76c8d232d81b41c384}\label{CatCaloUpgrade__load_8cpp_af2b4ef5242b66f76c8d232d81b41c384}} 
-\index{Cat\+Calo\+Upgrade\+\_\+load.\+cpp@{Cat\+Calo\+Upgrade\+\_\+load.\+cpp}!D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+LL@{D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+LL}}
-\index{D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+LL@{D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+LL}!Cat\+Calo\+Upgrade\+\_\+load.\+cpp@{Cat\+Calo\+Upgrade\+\_\+load.\+cpp}}
-\subsubsection{\texorpdfstring{D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+L\+L()}{DECLARE\_DLL()}}
-{\footnotesize\ttfamily D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+LL (\begin{DoxyParamCaption}\item[{Cat\+Calo\+Upgrade}]{ }\end{DoxyParamCaption})}
-
-
-
-Definition at line 26 of file Cat\+Calo\+Upgrade\+\_\+load.\+cpp.
-
-
-
-References D\+E\+C\+L\+A\+R\+E\+\_\+\+E\+L\+E\+M\+E\+NT, D\+E\+C\+L\+A\+R\+E\+\_\+\+P\+R\+O\+C\+E\+S\+S\+US, F\+A\+C\+T\+O\+RY, and C\+A\+T\+App\+::\+I2C.
-
-
-\begin{DoxyCode}
-27 \{
-28   \hyperlink{DLL_8h_a3cf59a4b090c171501973779974e42a2}{DECLARE\_ELEMENT}   ( \hyperlink{classFEB__v1}{FEB\_v1}, Proto v1 of the Upgrade LHCb Calo front-end board);
-29   \hyperlink{DLL_8h_a3cf59a4b090c171501973779974e42a2}{DECLARE\_ELEMENT}   ( \hyperlink{classCU__v1}{CU\_v1}, Proto v1 of the Upgrade LHCb Calo Control board);
-30   \hyperlink{DLL_8h_a3cf59a4b090c171501973779974e42a2}{DECLARE\_ELEMENT}   ( \hyperlink{classSeqPGA}{SeqPGA}, \hyperlink{classSeqPGA}{SeqPGA} FPGA description);
-31   \hyperlink{DLL_8h_a3cf59a4b090c171501973779974e42a2}{DECLARE\_ELEMENT}   ( \hyperlink{classFePGA}{FePGA}, \hyperlink{classFePGA}{FePGA} FPGA description);
-32     
-33   \hyperlink{DLL_8h_a3cf59a4b090c171501973779974e42a2}{DECLARE\_ELEMENT}   ( \hyperlink{classUsbFTMLInterface}{UsbFTMLInterface}, USB FT245 interface description);
-34   \hyperlink{DLL_8h_a3cf59a4b090c171501973779974e42a2}{DECLARE\_ELEMENT}   ( \hyperlink{classUsbMLSpiBus}{UsbMLSpiBus}, USB Spi Bus);
-35   \hyperlink{DLL_8h_a3cf59a4b090c171501973779974e42a2}{DECLARE\_ELEMENT}   ( \hyperlink{classUsbMLI2cBus}{UsbMLI2cBus}, USB I2c Bus);
-36   \hyperlink{DLL_8h_a3cf59a4b090c171501973779974e42a2}{DECLARE\_ELEMENT}   ( \hyperlink{classICPhaser}{ICPhaser}, ICECAL Delay Chip);
-37   \hyperlink{DLL_8h_aef2212dc8e888f762b7c0e2b2fcb0cdf}{DECLARE\_PROCESSUS} ( \hyperlink{namespaceEmulateFE}{EmulateFE}     , Emulation of the front-end fpga processing)
-      ;
-38   \hyperlink{DLL_8h_aef2212dc8e888f762b7c0e2b2fcb0cdf}{DECLARE\_PROCESSUS} ( \hyperlink{namespaceTestI2C}{TestI2C}       , Test of the \hyperlink{namespaceCATApp_addde02095b318dd29aad22bf91fbf5c7af0a8d8add7a4fb23e99e6ea6e09e5a59}{I2C} interface);
-39   \hyperlink{DLL_8h_aef2212dc8e888f762b7c0e2b2fcb0cdf}{DECLARE\_PROCESSUS} ( \hyperlink{namespaceTestSPI}{TestSPI}       , Test of the SPI interface);
-40   \hyperlink{DLL_8h_aef2212dc8e888f762b7c0e2b2fcb0cdf}{DECLARE\_PROCESSUS} ( \hyperlink{namespaceTestUSB}{TestUSB}       , Test of the USB interface);
-41   \hyperlink{DLL_8h_aef2212dc8e888f762b7c0e2b2fcb0cdf}{DECLARE\_PROCESSUS} ( \hyperlink{namespaceAcquisition}{Acquisition}   , \hyperlink{namespaceAcquisition}{Acquisition} task);
-42 \}
-\end{DoxyCode}
+\hypertarget{CatCaloUpgrade__load_8cpp}{
+\section{/home/eleclhcb/LHCb/lbcat-\/cmake/CatCaloUpgrade/src/CatCaloUpgrade\_\-load.cpp File Reference}
+\label{CatCaloUpgrade__load_8cpp}\index{/home/eleclhcb/LHCb/lbcat-\/cmake/CatCaloUpgrade/src/CatCaloUpgrade\_\-load.cpp@{/home/eleclhcb/LHCb/lbcat-\/cmake/CatCaloUpgrade/src/CatCaloUpgrade\_\-load.cpp}}
+}
+{\ttfamily \#include $<$iostream$>$}\par
+{\ttfamily \#include \char`\"{}DLL.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}FEB\_\-v1.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}CU\_\-v1.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}SeqPGA.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}FePGA.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}UsbFTMLInterface.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}UsbMLSpiBus.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}UsbMLI2cBus.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}ICPhaser.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}EmulateFE.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}TestUSB.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}TestI2C.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}TestSPI.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}Acquisition.h\char`\"{}}\par

@@ -1,51 +1,53 @@
-\hypertarget{Timing_8h}{}\section{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/inc/\+Timing.h File Reference}
-\label{Timing_8h}\index{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/inc/\+Timing.\+h@{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/inc/\+Timing.\+h}}
-{\ttfamily \#include \char`\"{}Kernel.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}System\+Base.\+h\char`\"{}}\newline
+\hypertarget{Timing_8h}{
+\section{/home/eleclhcb/LHCb/lbcat-\/cmake/CatKernel/inc/Timing.h File Reference}
+\label{Timing_8h}\index{/home/eleclhcb/LHCb/lbcat-\/cmake/CatKernel/inc/Timing.h@{/home/eleclhcb/LHCb/lbcat-\/cmake/CatKernel/inc/Timing.h}}
+}
+{\ttfamily \#include \char`\"{}Kernel.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}SystemBase.h\char`\"{}}\par
 \subsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
- \hyperlink{namespaceSystem}{System}
+namespace \hyperlink{namespaceSystem}{System}
 \end{DoxyCompactItemize}
 \subsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
-enum \hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1a}{System\+::\+Time\+Type} \{ \newline
-\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa64832eae7c2445025f46f1edffee0dc9}{System\+::\+Year}, 
-\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa9cb8038eade78dc7e9eea70e011bf486}{System\+::\+Month}, 
-\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aadfe8009835ec554da788b9f760d87b70}{System\+::\+Day}, 
-\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa7892c9d3e6ae2e92369991add3309b7f}{System\+::\+Hour}, 
-\newline
-\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa586582933928c3e070299d678e0e2b64}{System\+::\+Min}, 
-\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa6d191428f7f4db75520ed5e52a6951ea}{System\+::\+Sec}, 
-\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa1b7bae23a29567151c8b8103104c620a}{System\+::milli\+Sec}, 
-\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aac1b8171b8958dbf619ac6e53eea30ee8}{System\+::micro\+Sec}, 
-\newline
-\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa6f2f428d84545df4ed7b5b9022ed7e23}{System\+::nano\+Sec}
- \}\begin{DoxyCompactList}\small\item\em Time type for conversion. \end{DoxyCompactList}
-\end{DoxyCompactItemize}
+enum \hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1a}{System::TimeType} \{ \par
+\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa64832eae7c2445025f46f1edffee0dc9}{System::Year}, 
+\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa9cb8038eade78dc7e9eea70e011bf486}{System::Month}, 
+\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aadfe8009835ec554da788b9f760d87b70}{System::Day}, 
+\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa7892c9d3e6ae2e92369991add3309b7f}{System::Hour}, 
+\par
+\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa586582933928c3e070299d678e0e2b64}{System::Min}, 
+\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa6d191428f7f4db75520ed5e52a6951ea}{System::Sec}, 
+\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa1b7bae23a29567151c8b8103104c620a}{System::milliSec}, 
+\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aac1b8171b8958dbf619ac6e53eea30ee8}{System::microSec}, 
+\par
+\hyperlink{namespaceSystem_a15db094516c062b412df2453b4350f1aa6f2f428d84545df4ed7b5b9022ed7e23}{System::nanoSec}
+ \}
+\begin{DoxyCompactList}\small\item\em Time type for conversion. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} \hyperlink{namespaceSystem_a1013a898a3fc9cf6844b8af2c99f2396}{System\+::adjust\+Time} (Time\+Type typ, \hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} timevalue)
-\begin{DoxyCompactList}\small\item\em Convert time from OS native time to requested representation (Experts only) \end{DoxyCompactList}\item 
-\hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} \hyperlink{namespaceSystem_a98918aff92ea8947b8b5a3c48f0ab1fe}{System\+::ellapsed\+Time} (Time\+Type typ=milli\+Sec, Info\+Type fetch=Times, long pid=-\/1)
+\hyperlink{struct____longlong}{longlong} \hyperlink{namespaceSystem_a1013a898a3fc9cf6844b8af2c99f2396}{System::adjustTime} (TimeType typ, \hyperlink{struct____longlong}{longlong} timevalue)
+\begin{DoxyCompactList}\small\item\em Convert time from OS native time to requested representation (Experts only). \item\end{DoxyCompactList}\item 
+\hyperlink{struct____longlong}{longlong} \hyperlink{namespaceSystem_a98918aff92ea8947b8b5a3c48f0ab1fe}{System::ellapsedTime} (TimeType typ=milliSec, InfoType fetch=Times, long pid=-\/1)
 \item 
-\hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} \hyperlink{namespaceSystem_a52400aecb0f63c891b51bc958ea064e9}{System\+::kernel\+Time} (Time\+Type typ=milli\+Sec, Info\+Type fetch=Times, long pid=-\/1)
+\hyperlink{struct____longlong}{longlong} \hyperlink{namespaceSystem_a52400aecb0f63c891b51bc958ea064e9}{System::kernelTime} (TimeType typ=milliSec, InfoType fetch=Times, long pid=-\/1)
 \item 
-\hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} \hyperlink{namespaceSystem_a8a8a351f0cd9f68163ff6b520cde55c1}{System\+::user\+Time} (Time\+Type typ=milli\+Sec, Info\+Type fetch=Times, long pid=-\/1)
+\hyperlink{struct____longlong}{longlong} \hyperlink{namespaceSystem_a8a8a351f0cd9f68163ff6b520cde55c1}{System::userTime} (TimeType typ=milliSec, InfoType fetch=Times, long pid=-\/1)
 \item 
-\hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} \hyperlink{namespaceSystem_ada4da1a560bc9a436b2b04d3a15cd655}{System\+::cpu\+Time} (Time\+Type typ=milli\+Sec, Info\+Type fetch=Times, long pid=-\/1)
+\hyperlink{struct____longlong}{longlong} \hyperlink{namespaceSystem_ada4da1a560bc9a436b2b04d3a15cd655}{System::cpuTime} (TimeType typ=milliSec, InfoType fetch=Times, long pid=-\/1)
 \item 
-\hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} \hyperlink{namespaceSystem_a5c0293a51a0a32d5ea7907b9749a977f}{System\+::remaining\+Time} (Time\+Type typ=milli\+Sec, Info\+Type fetch=Quota, long pid=-\/1)
+\hyperlink{struct____longlong}{longlong} \hyperlink{namespaceSystem_a5c0293a51a0a32d5ea7907b9749a977f}{System::remainingTime} (TimeType typ=milliSec, InfoType fetch=Quota, long pid=-\/1)
 \item 
-\hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} \hyperlink{namespaceSystem_a90888edb3659d54b56e8c9744357202e}{System\+::creation\+Time} (Time\+Type typ=milli\+Sec, Info\+Type fetch=Times, long pid=-\/1)
+\hyperlink{struct____longlong}{longlong} \hyperlink{namespaceSystem_a90888edb3659d54b56e8c9744357202e}{System::creationTime} (TimeType typ=milliSec, InfoType fetch=Times, long pid=-\/1)
 \item 
-\hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} \hyperlink{namespaceSystem_a1191eba9e2a1ac98985ec50e0820ab06}{System\+::system\+Start} (Time\+Type typ=Sec)
+\hyperlink{struct____longlong}{longlong} \hyperlink{namespaceSystem_a1191eba9e2a1ac98985ec50e0820ab06}{System::systemStart} (TimeType typ=Sec)
 \item 
-\hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} \hyperlink{namespaceSystem_a96965372858744c96c7cdf155693d8a0}{System\+::up\+Time} (Time\+Type typ=Hour)
+\hyperlink{struct____longlong}{longlong} \hyperlink{namespaceSystem_a96965372858744c96c7cdf155693d8a0}{System::upTime} (TimeType typ=Hour)
 \item 
-\hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} \hyperlink{namespaceSystem_ac41cf56db5c2f85828309490742a93d6}{System\+::current\+Time} (Time\+Type typ=milli\+Sec)
+\hyperlink{struct____longlong}{longlong} \hyperlink{namespaceSystem_ac41cf56db5c2f85828309490742a93d6}{System::currentTime} (TimeType typ=milliSec)
 \item 
-\hyperlink{Kernel_8h_a2e10ca87f14998150dd86073beff4e97}{longlong} \hyperlink{namespaceSystem_ad25a2f7dd8fd06ea18ea328a7bd26e79}{System\+::tick\+Count} ()
+\hyperlink{struct____longlong}{longlong} \hyperlink{namespaceSystem_ad25a2f7dd8fd06ea18ea328a7bd26e79}{System::tickCount} ()
 \end{DoxyCompactItemize}

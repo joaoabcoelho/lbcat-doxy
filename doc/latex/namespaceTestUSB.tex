@@ -1,159 +1,158 @@
-\hypertarget{namespaceTestUSB}{}\section{Test\+U\+SB Namespace Reference}
-\label{namespaceTestUSB}\index{Test\+U\+SB@{Test\+U\+SB}}
+\hypertarget{namespaceTestUSB}{
+\section{TestUSB Namespace Reference}
+\label{namespaceTestUSB}\index{TestUSB@{TestUSB}}
+}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-def \hyperlink{namespaceTestUSB_a5ac50521a0047976653a8b8783d3c346}{Edit} (cat, obj, panel, path)
+def \hyperlink{namespaceTestUSB_aa754fe9c69716d79c8b234607ae89b9e}{Edit}
 \item 
-def \hyperlink{namespaceTestUSB_af66fa28368bc9d14d6e07b01ea2ff6d3}{create\+Plots} (cat, obj, run)
+def \hyperlink{namespaceTestUSB_ac5dfad60b265b2657e058fbac7f65062}{createPlots}
 \item 
-def \hyperlink{namespaceTestUSB_aa46663c366817be094cc2fd11bf14c64}{update\+Plots} (figs, obj)
+def \hyperlink{namespaceTestUSB_ac6a13f8454d9fcbe9c3391f1d758d5f0}{updatePlots}
 \item 
-def \hyperlink{namespaceTestUSB_addf95447225d96da0174da67621d6491}{Plot} (cat, obj, parent, \hyperlink{classObject_af99145335cc61ff6e2798ea17db009d2}{id})
+def \hyperlink{namespaceTestUSB_ac2da13ae016cb78599ea9e921006ae59}{Plot}
 \end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{namespaceTestUSB_af66fa28368bc9d14d6e07b01ea2ff6d3}\label{namespaceTestUSB_af66fa28368bc9d14d6e07b01ea2ff6d3}} 
-\index{Test\+U\+SB@{Test\+U\+SB}!create\+Plots@{create\+Plots}}
-\index{create\+Plots@{create\+Plots}!Test\+U\+SB@{Test\+U\+SB}}
-\subsubsection{\texorpdfstring{create\+Plots()}{createPlots()}}
-{\footnotesize\ttfamily def Test\+U\+S\+B.\+create\+Plots (\begin{DoxyParamCaption}\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{run }\end{DoxyParamCaption})}
+\hypertarget{namespaceTestUSB_ac5dfad60b265b2657e058fbac7f65062}{
+\index{TestUSB@{TestUSB}!createPlots@{createPlots}}
+\index{createPlots@{createPlots}!TestUSB@{TestUSB}}
+\subsubsection[{createPlots}]{\setlength{\rightskip}{0pt plus 5cm}def TestUSB::createPlots ( {\em cat}, \/   {\em obj}, \/   {\em run})}}
+\label{namespaceTestUSB_ac5dfad60b265b2657e058fbac7f65062}
 
 
-
-Definition at line 45 of file Test\+U\+S\+B.\+py.
+Definition at line 45 of file TestUSB.py.
 
 
 \begin{DoxyCode}
-45 \textcolor{keyword}{def }\hyperlink{namespaceTestUSB_af66fa28368bc9d14d6e07b01ea2ff6d3}{createPlots}(cat, obj, run):
+45                               :
 46     fig = plt.figure(figsize=(10,10))
-47     fig.suptitle(\textcolor{stringliteral}{"Run "}+str(run), fontsize=14, fontweight=\textcolor{stringliteral}{'bold'})
-48     \textcolor{keywordflow}{for} vplot \textcolor{keywordflow}{in} [1,2]:
-49         ax = fig.add\_subplot(2,1,vplot)
+47     fig.suptitle("Run "+str(run), fontsize=14, fontweight='bold')
+48     for vplot in [1,2]:
+49         ax = fig.add_subplot(2,1,vplot)
 50     fig.show()    
-51     \textcolor{keywordflow}{return} [fig]
+51     return [fig]
 52 
+def updatePlots(figs, obj):
 \end{DoxyCode}
-\mbox{\Hypertarget{namespaceTestUSB_a5ac50521a0047976653a8b8783d3c346}\label{namespaceTestUSB_a5ac50521a0047976653a8b8783d3c346}} 
-\index{Test\+U\+SB@{Test\+U\+SB}!Edit@{Edit}}
-\index{Edit@{Edit}!Test\+U\+SB@{Test\+U\+SB}}
-\subsubsection{\texorpdfstring{Edit()}{Edit()}}
-{\footnotesize\ttfamily def Test\+U\+S\+B.\+Edit (\begin{DoxyParamCaption}\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{panel,  }\item[{}]{path }\end{DoxyParamCaption})}
+\hypertarget{namespaceTestUSB_aa754fe9c69716d79c8b234607ae89b9e}{
+\index{TestUSB@{TestUSB}!Edit@{Edit}}
+\index{Edit@{Edit}!TestUSB@{TestUSB}}
+\subsubsection[{Edit}]{\setlength{\rightskip}{0pt plus 5cm}def TestUSB::Edit ( {\em cat}, \/   {\em obj}, \/   {\em panel}, \/   {\em path})}}
+\label{namespaceTestUSB_aa754fe9c69716d79c8b234607ae89b9e}
 
 
-
-Definition at line 40 of file Test\+U\+S\+B.\+py.
+Definition at line 40 of file TestUSB.py.
 
 
 \begin{DoxyCode}
-40 \textcolor{keyword}{def }\hyperlink{namespaceTestUSB_a5ac50521a0047976653a8b8783d3c346}{Edit} (cat, obj, panel, path):
-41     \textcolor{keywordflow}{return} \hyperlink{classTestUSB}{TestUSB}(cat, obj, panel, path)
+40                                 :
+41     return TestUSB(cat, obj, panel, path)
 42 
-43 \textcolor{comment}{#----------------------------------------------------------------------}
+43 #----------------------------------------------------------------------
 44 
+def createPlots(cat, obj, run):
 \end{DoxyCode}
-\mbox{\Hypertarget{namespaceTestUSB_addf95447225d96da0174da67621d6491}\label{namespaceTestUSB_addf95447225d96da0174da67621d6491}} 
-\index{Test\+U\+SB@{Test\+U\+SB}!Plot@{Plot}}
-\index{Plot@{Plot}!Test\+U\+SB@{Test\+U\+SB}}
-\subsubsection{\texorpdfstring{Plot()}{Plot()}}
-{\footnotesize\ttfamily def Test\+U\+S\+B.\+Plot (\begin{DoxyParamCaption}\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{parent,  }\item[{}]{id }\end{DoxyParamCaption})}
+\hypertarget{namespaceTestUSB_ac2da13ae016cb78599ea9e921006ae59}{
+\index{TestUSB@{TestUSB}!Plot@{Plot}}
+\index{Plot@{Plot}!TestUSB@{TestUSB}}
+\subsubsection[{Plot}]{\setlength{\rightskip}{0pt plus 5cm}def TestUSB::Plot ( {\em cat}, \/   {\em obj}, \/   {\em parent}, \/   {\em id})}}
+\label{namespaceTestUSB_ac2da13ae016cb78599ea9e921006ae59}
 
 
-
-Definition at line 89 of file Test\+U\+S\+B.\+py.
-
-
-
-References plotter.\+h1d(), Object.\+name(), and Object.\+title().
+Definition at line 89 of file TestUSB.py.
 
 
 \begin{DoxyCode}
-89 \textcolor{keyword}{def }\hyperlink{namespaceTestUSB_addf95447225d96da0174da67621d6491}{Plot}(cat, obj, parent, id):
-90     \textcolor{keyword}{from} mpl\_toolkits.mplot3d \textcolor{keyword}{import} Axes3D
-91     \textcolor{keyword}{from} matplotlib \textcolor{keyword}{import} cm
-92     \textcolor{keyword}{import} matplotlib \textcolor{keyword}{as} mpl
-93     \textcolor{keyword}{import} matplotlib.pyplot \textcolor{keyword}{as} plt
-94     \textcolor{keyword}{import} numpy \textcolor{keyword}{as} np
+89                               :
+90     from mpl_toolkits.mplot3d import Axes3D
+91     from matplotlib import cm
+92     import matplotlib as mpl
+93     import matplotlib.pyplot as plt
+94     import numpy as np
 95 
-96     plot=\hyperlink{namespaceplotter}{plotter}(parent,id)
+96     plot=plotter(parent,id)
 97     fig=plot.current()
-98     fig.suptitle(\textcolor{stringliteral}{'TestSuite - Plot capabilities'}, fontsize=14, fontweight=\textcolor{stringliteral}{'bold'})
+98     fig.suptitle('TestSuite - Plot capabilities', fontsize=14, fontweight='bold')
+      
 99     
-100     \textcolor{comment}{# plot of data set 0}
-101     p1=fig.add\_subplot(2,3,1)
-102     p1.plot(obj.data(0), \textcolor{stringliteral}{'bo'}, obj.data().vector(1),\textcolor{stringliteral}{'k'})
-103     p1.set\_title(\textcolor{stringliteral}{r'$\(\backslash\)sigma\_0='}+str(obj.sigma(0))+\textcolor{stringliteral}{'$'})
+100     # plot of data set 0
+101     p1=fig.add_subplot(2,3,1)
+102     p1.plot(obj.data(0), 'bo', obj.data().vector(1),'k')
+103     p1.set_title(r'$\sigma_0='+str(obj.sigma(0))+'$')
 104     
-105     \textcolor{comment}{# plot of data set 1}
-106     p2=fig.add\_subplot(2,3,2)
-107     p2.plot(obj.data(1), \textcolor{stringliteral}{'r--'})
-108     p2.set\_title(\textcolor{stringliteral}{r'$\(\backslash\)sigma\_1='}+str(obj.sigma(1))+\textcolor{stringliteral}{'$'})
+105     # plot of data set 1
+106     p2=fig.add_subplot(2,3,2)
+107     p2.plot(obj.data(1), 'r--')
+108     p2.set_title(r'$\sigma_1='+str(obj.sigma(1))+'$')
 109     
-110     \textcolor{comment}{# plot of data set 0 (histogram)}
+110     # plot of data set 0 (histogram)
 111     plt.subplot(2,3,3)
 112     n, bins, h=plt.hist(obj.data().vector(0), 10)
 113     plt.title(obj.data().title(0))    
-114     plt.grid(\textcolor{keyword}{True})
+114     plt.grid(True)
 115 
-116     \textcolor{comment}{# plot of data set 1 (histogram)    }
+116     # plot of data set 1 (histogram)    
 117     plt.subplot(2,3,4)
 118     plt.hist(obj.data().vector(1), 20)
-119     plt.title(obj.data().name(1)+\textcolor{stringliteral}{" : "}+obj.data().title(1))
-120     plt.grid(\textcolor{keyword}{True})
+119     plt.title(obj.data().name(1)+" : "+obj.data().title(1))
+120     plt.grid(True)
 121 
-122     \textcolor{comment}{# plot histo root}
-123     p5=fig.add\_subplot(2,3,5)
-124     h1=\hyperlink{namespaceplotter_a5d9521541ff0c72bf439078efacf2f42}{h1d}(p5, obj.hist1d(0), facecolor=\textcolor{stringliteral}{'red'},linestyle=\textcolor{stringliteral}{'dashed'})
-125     p5.grid(\textcolor{keyword}{True})
+122     # plot histo root
+123     p5=fig.add_subplot(2,3,5)
+124     h1=h1d(p5, obj.hist1d(0), facecolor='red',linestyle='dashed')
+125     p5.grid(True)
 126 
+##     # plot examples
 \end{DoxyCode}
-\mbox{\Hypertarget{namespaceTestUSB_aa46663c366817be094cc2fd11bf14c64}\label{namespaceTestUSB_aa46663c366817be094cc2fd11bf14c64}} 
-\index{Test\+U\+SB@{Test\+U\+SB}!update\+Plots@{update\+Plots}}
-\index{update\+Plots@{update\+Plots}!Test\+U\+SB@{Test\+U\+SB}}
-\subsubsection{\texorpdfstring{update\+Plots()}{updatePlots()}}
-{\footnotesize\ttfamily def Test\+U\+S\+B.\+update\+Plots (\begin{DoxyParamCaption}\item[{}]{figs,  }\item[{}]{obj }\end{DoxyParamCaption})}
+\hypertarget{namespaceTestUSB_ac6a13f8454d9fcbe9c3391f1d758d5f0}{
+\index{TestUSB@{TestUSB}!updatePlots@{updatePlots}}
+\index{updatePlots@{updatePlots}!TestUSB@{TestUSB}}
+\subsubsection[{updatePlots}]{\setlength{\rightskip}{0pt plus 5cm}def TestUSB::updatePlots ( {\em figs}, \/   {\em obj})}}
+\label{namespaceTestUSB_ac6a13f8454d9fcbe9c3391f1d758d5f0}
 
 
-
-Definition at line 53 of file Test\+U\+S\+B.\+py.
+Definition at line 53 of file TestUSB.py.
 
 
 \begin{DoxyCode}
-53 \textcolor{keyword}{def }\hyperlink{namespaceTestUSB_aa46663c366817be094cc2fd11bf14c64}{updatePlots}(figs, obj):
+53                           :
 54     fig = figs[0]
-55     ax1 = fig.add\_subplot(2,1,1)
-56     lines, = ax1.plot([],[], \textcolor{stringliteral}{'bo'})
-57     \textcolor{comment}{#Autoscale on unknown axis and known lims on the other}
-58     ax1.set\_autoscaley\_on(\textcolor{keyword}{True})
-59 \textcolor{comment}{#    ax.set\_xlim(self.min\_x, self.max\_x)}
-60     \textcolor{comment}{#Other stuff}
+55     ax1 = fig.add_subplot(2,1,1)
+56     lines, = ax1.plot([],[], 'bo')
+57     #Autoscale on unknown axis and known lims on the other
+58     ax1.set_autoscaley_on(True)
+59 #    ax.set_xlim(self.min_x, self.max_x)
+60     #Other stuff
 61     ax1.grid()        
-62     lines.set\_xdata(obj.data(0))
-63     lines.set\_ydata(obj.data(1))
-64     \textcolor{comment}{#Need both of these in order to rescale}
+62     lines.set_xdata(obj.data(0))
+63     lines.set_ydata(obj.data(1))
+64     #Need both of these in order to rescale
 65     ax1.relim()
-66     ax1.autoscale\_view()
+66     ax1.autoscale_view()
 67 
-68     ax2 = fig.add\_subplot(2,1,2)
-69     lines, = ax2.plot([],[], \textcolor{stringliteral}{'bo'})
-70     \textcolor{comment}{#Autoscale on unknown axis and known lims on the other}
-71     ax2.set\_autoscaley\_on(\textcolor{keyword}{True})
-72 \textcolor{comment}{#    ax.set\_xlim(self.min\_x, self.max\_x)}
-73     \textcolor{comment}{#Other stuff}
+68     ax2 = fig.add_subplot(2,1,2)
+69     lines, = ax2.plot([],[], 'bo')
+70     #Autoscale on unknown axis and known lims on the other
+71     ax2.set_autoscaley_on(True)
+72 #    ax.set_xlim(self.min_x, self.max_x)
+73     #Other stuff
 74     ax2.grid()        
-75     lines.set\_xdata(obj.data(2))
-76     lines.set\_ydata(obj.data(3))
-77     \textcolor{comment}{#Need both of these in order to rescale}
+75     lines.set_xdata(obj.data(2))
+76     lines.set_ydata(obj.data(3))
+77     #Need both of these in order to rescale
 78     ax2.relim()
-79     ax2.autoscale\_view()
+79     ax2.autoscale_view()
 80 
-81     \textcolor{comment}{#We need to draw *and* flush}
+81     #We need to draw *and* flush
 82     fig.canvas.draw()
-83     fig.canvas.flush\_events()
+83     fig.canvas.flush_events()
 84     fig.show()
-85     \textcolor{keywordflow}{return} fig
+85     return fig
 86     
-87 \textcolor{comment}{#----------------------------------------------------------------------}
+87 #----------------------------------------------------------------------
 88 
+def Plot(cat, obj, parent, id):
 \end{DoxyCode}

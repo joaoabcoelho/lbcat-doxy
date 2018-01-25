@@ -1,90 +1,73 @@
-\hypertarget{classgui_1_1SplashScreen}{}\section{gui.\+Splash\+Screen Class Reference}
-\label{classgui_1_1SplashScreen}\index{gui.\+Splash\+Screen@{gui.\+Splash\+Screen}}
-Inheritance diagram for gui.\+Splash\+Screen\+:\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=2.000000cm]{classgui_1_1SplashScreen}
-\end{center}
-\end{figure}
+\hypertarget{classgui_1_1SplashScreen}{
+\section{gui::SplashScreen Class Reference}
+\label{classgui_1_1SplashScreen}\index{gui::SplashScreen@{gui::SplashScreen}}
+}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-def \hyperlink{classgui_1_1SplashScreen_a411d1bed7464fb12e7dd682de7ca9084}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, file)
+def \hyperlink{classgui_1_1SplashScreen_a08e9365f0b47bb455680041a0633e3c8}{\_\-\_\-init\_\-\_\-}
 \item 
-def \hyperlink{classgui_1_1SplashScreen_a2688263042c784a3d7cb7947fabe0edb}{On\+Close} (self, evt)
+def \hyperlink{classgui_1_1SplashScreen_adb3ce57f701b24353cf0985e730c75aa}{OnClose}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 45 of file gui.\+py.
-
-
-
-\subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classgui_1_1SplashScreen_a411d1bed7464fb12e7dd682de7ca9084}\label{classgui_1_1SplashScreen_a411d1bed7464fb12e7dd682de7ca9084}} 
-\index{gui\+::\+Splash\+Screen@{gui\+::\+Splash\+Screen}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
-\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!gui\+::\+Splash\+Screen@{gui\+::\+Splash\+Screen}}
-\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
-{\footnotesize\ttfamily def gui.\+Splash\+Screen.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{file }\end{DoxyParamCaption})}
-
-
-
-Definition at line 46 of file gui.\+py.
-
-
-
-References gui.\+Splash\+Screen.\+On\+Close().
-
-
-\begin{DoxyCode}
-46     \textcolor{keyword}{def }\hyperlink{classwrapper_1_1ModuleDictWrapper_a9a7a794150502f51df687831583e13b9}{\_\_init\_\_}(self, file):
-47         bmp = wx.Bitmap(file)
-48         wx.SplashScreen.\_\_init\_\_(self, bmp,
-49                                  wx.SPLASH\_CENTRE\_ON\_SCREEN | wx.SPLASH\_TIMEOUT,
-50                                  5000, \textcolor{keywordtype}{None}, -1)
-51         self.Bind(wx.EVT\_CLOSE, self.OnClose)
-52         \textcolor{comment}{#        self.fc = wx.FutureCall(2000, gui.ShowMain())}
-53 
-\end{DoxyCode}
-
+Definition at line 45 of file gui.py.
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classgui_1_1SplashScreen_a2688263042c784a3d7cb7947fabe0edb}\label{classgui_1_1SplashScreen_a2688263042c784a3d7cb7947fabe0edb}} 
-\index{gui\+::\+Splash\+Screen@{gui\+::\+Splash\+Screen}!On\+Close@{On\+Close}}
-\index{On\+Close@{On\+Close}!gui\+::\+Splash\+Screen@{gui\+::\+Splash\+Screen}}
-\subsubsection{\texorpdfstring{On\+Close()}{OnClose()}}
-{\footnotesize\ttfamily def gui.\+Splash\+Screen.\+On\+Close (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{evt }\end{DoxyParamCaption})}
+\hypertarget{classgui_1_1SplashScreen_a08e9365f0b47bb455680041a0633e3c8}{
+\index{gui::SplashScreen@{gui::SplashScreen}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!gui::SplashScreen@{gui::SplashScreen}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def gui::SplashScreen::\_\-\_\-init\_\-\_\- ( {\em self}, \/   {\em file})}}
+\label{classgui_1_1SplashScreen_a08e9365f0b47bb455680041a0633e3c8}
 
 
-
-Definition at line 54 of file gui.\+py.
-
-
-
-Referenced by gui.\+Splash\+Screen.\+\_\+\+\_\+init\+\_\+\+\_\+().
+Definition at line 46 of file gui.py.
 
 
 \begin{DoxyCode}
-54     \textcolor{keyword}{def }OnClose(self, evt):
-55         \textcolor{comment}{# Make sure the default handler runs too so this window gets}
-56         \textcolor{comment}{# destroyed}
+46                             :
+47         bmp = wx.Bitmap(file)
+48         wx.SplashScreen.__init__(self, bmp,
+49                                  wx.SPLASH_CENTRE_ON_SCREEN | wx.SPLASH_TIMEOUT,
+50                                  5000, None, -1)
+51         self.Bind(wx.EVT_CLOSE, self.OnClose)
+52         #        self.fc = wx.FutureCall(2000, gui.ShowMain())
+53 
+    def OnClose(self, evt):
+\end{DoxyCode}
+\hypertarget{classgui_1_1SplashScreen_adb3ce57f701b24353cf0985e730c75aa}{
+\index{gui::SplashScreen@{gui::SplashScreen}!OnClose@{OnClose}}
+\index{OnClose@{OnClose}!gui::SplashScreen@{gui::SplashScreen}}
+\subsubsection[{OnClose}]{\setlength{\rightskip}{0pt plus 5cm}def gui::SplashScreen::OnClose ( {\em self}, \/   {\em evt})}}
+\label{classgui_1_1SplashScreen_adb3ce57f701b24353cf0985e730c75aa}
+
+
+Definition at line 54 of file gui.py.
+
+
+\begin{DoxyCode}
+54                           :
+55         # Make sure the default handler runs too so this window gets
+56         # destroyed
 57         evt.Skip()
 58         self.Hide()
-59         \textcolor{comment}{# if the timer is still running then go ahead and show the}
-60         \textcolor{comment}{# main frame now}
-61         \textcolor{keywordflow}{if} self.fc.IsRunning():
+59         # if the timer is still running then go ahead and show the
+60         # main frame now
+61         if self.fc.IsRunning():
 62             self.fc.Stop()
 63             gui.ShowMain()
-64             \textcolor{keywordflow}{if} self.fc.IsRunning():
+64             if self.fc.IsRunning():
 65                 self.Raise()
 66             gui.ShowTips()
 67             
-68 \textcolor{comment}{#---------------------------------------------------------------------------}
+68 #---------------------------------------------------------------------------
+class Gui(wx.App):
 \end{DoxyCode}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
 \item 
-/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Python/python/\hyperlink{gui_8py}{gui.\+py}\end{DoxyCompactItemize}
+/home/eleclhcb/LHCb/lbcat-\/cmake/CatPython/python/\hyperlink{gui_8py}{gui.py}\end{DoxyCompactItemize}

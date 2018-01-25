@@ -1,32 +1,32 @@
-\hypertarget{classStatusCode}{}\section{Status\+Code Class Reference}
-\label{classStatusCode}\index{Status\+Code@{Status\+Code}}
+\hypertarget{classStatusCode}{
+\section{StatusCode Class Reference}
+\label{classStatusCode}\index{StatusCode@{StatusCode}}
+}
 
 
-{\ttfamily \#include $<$Gaudi\+Kernel/\+Status\+Code.\+h$>$}
-
-\subsection*{Public Types}
+{\ttfamily \#include $<$GaudiKernel/StatusCode.h$>$}\subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-enum \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4b}{Type} \{ \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{F\+A\+I\+L\+U\+RE} = 0, 
-\hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{S\+U\+C\+C\+E\+SS} = 1
+enum \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4b}{Type} \{ \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{FAILURE} =  0, 
+\hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{SUCCESS} =  1
  \}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classStatusCode_aaf803a555dd2d841418328a747059b3e}{Status\+Code} (unsigned long code=\hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{S\+U\+C\+C\+E\+SS})
-\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
-bool \hyperlink{classStatusCode_acfe5ce8b2bb7d3d651fb0108c18c05c3}{is\+Success} () const
+\hyperlink{classStatusCode_aaf803a555dd2d841418328a747059b3e}{StatusCode} (unsigned long code=SUCCESS)
+\begin{DoxyCompactList}\small\item\em Constructor. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classStatusCode_aa9517f7106b77565d0eda20a9b37e705}{isSuccess} () const 
 \item 
-bool \hyperlink{classStatusCode_a5dd22dc6eb2c52fc4cabc58f6dea2eb7}{is\+Failure} () const
+bool \hyperlink{classStatusCode_aa5d4d426deef86d8595b08abf6efa5f7}{isFailure} () const 
 \item 
-\hyperlink{classStatusCode}{Status\+Code} \& \hyperlink{classStatusCode_af5179c5605558840cefe14e2794265de}{operator=} (unsigned long value)
-\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\hyperlink{classStatusCode}{StatusCode} \& \hyperlink{classStatusCode_af5179c5605558840cefe14e2794265de}{operator=} (unsigned long value)
+\begin{DoxyCompactList}\small\item\em Assignment operator. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-unsigned long \hyperlink{classStatusCode_aff37ebcb323b897044b42d303cf72d93}{d\+\_\+code}
-\begin{DoxyCompactList}\small\item\em The status code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+unsigned long \hyperlink{classStatusCode_aff37ebcb323b897044b42d303cf72d93}{d\_\-code}
+\begin{DoxyCompactList}\small\item\em The status code. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -41,159 +41,135 @@ Sebastien Ponce
 \end{DoxyAuthor}
 
 
-Definition at line 16 of file Status\+Code.\+h.
-
-
+Definition at line 16 of file StatusCode.h.
 
 \subsection{Member Enumeration Documentation}
-\mbox{\Hypertarget{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4b}\label{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4b}} 
-\index{Status\+Code@{Status\+Code}!Type@{Type}}
-\index{Type@{Type}!Status\+Code@{Status\+Code}}
-\subsubsection{\texorpdfstring{Type}{Type}}
-{\footnotesize\ttfamily enum \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4b}{Status\+Code\+::\+Type}}
+\hypertarget{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4b}{
+\index{StatusCode@{StatusCode}!Type@{Type}}
+\index{Type@{Type}!StatusCode@{StatusCode}}
+\subsubsection[{Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf StatusCode::Type}}}
+\label{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4b}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{FAILURE@{FAILURE}!StatusCode@{StatusCode}}\index{StatusCode@{StatusCode}!FAILURE@{FAILURE}}\item[{\em 
+\hypertarget{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{
+FAILURE}
+\label{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}
+}]\index{SUCCESS@{SUCCESS}!StatusCode@{StatusCode}}\index{StatusCode@{StatusCode}!SUCCESS@{SUCCESS}}\item[{\em 
+\hypertarget{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{
+SUCCESS}
+\label{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}
+}]\end{description}
+\end{Desc}
 
-\begin{DoxyEnumFields}{Enumerator}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+A\+I\+L\+U\+RE@{F\+A\+I\+L\+U\+RE}!Status\+Code@{Status\+Code}}\index{Status\+Code@{Status\+Code}!F\+A\+I\+L\+U\+RE@{F\+A\+I\+L\+U\+RE}}}\mbox{\Hypertarget{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}\label{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}} 
-F\+A\+I\+L\+U\+RE&\\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+U\+C\+C\+E\+SS@{S\+U\+C\+C\+E\+SS}!Status\+Code@{Status\+Code}}\index{Status\+Code@{Status\+Code}!S\+U\+C\+C\+E\+SS@{S\+U\+C\+C\+E\+SS}}}\mbox{\Hypertarget{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}\label{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}} 
-S\+U\+C\+C\+E\+SS&\\
-\hline
-
-\end{DoxyEnumFields}
 
 
-Definition at line 18 of file Status\+Code.\+h.
+Definition at line 18 of file StatusCode.h.
 
 
 \begin{DoxyCode}
-18             \{
-19     \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{FAILURE} = 0,
-20     \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{SUCCESS} = 1
-21   \};
+18             {
+19     FAILURE = 0,
+20     SUCCESS = 1
+21   };
 \end{DoxyCode}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classStatusCode_aaf803a555dd2d841418328a747059b3e}\label{classStatusCode_aaf803a555dd2d841418328a747059b3e}} 
-\index{Status\+Code@{Status\+Code}!Status\+Code@{Status\+Code}}
-\index{Status\+Code@{Status\+Code}!Status\+Code@{Status\+Code}}
-\subsubsection{\texorpdfstring{Status\+Code()}{StatusCode()}}
-{\footnotesize\ttfamily Status\+Code\+::\+Status\+Code (\begin{DoxyParamCaption}\item[{unsigned long}]{code = {\ttfamily \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{S\+U\+C\+C\+E\+SS}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
+\hypertarget{classStatusCode_aaf803a555dd2d841418328a747059b3e}{
+\index{StatusCode@{StatusCode}!StatusCode@{StatusCode}}
+\index{StatusCode@{StatusCode}!StatusCode@{StatusCode}}
+\subsubsection[{StatusCode}]{\setlength{\rightskip}{0pt plus 5cm}StatusCode::StatusCode (unsigned long {\em code} = {\ttfamily SUCCESS})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classStatusCode_aaf803a555dd2d841418328a747059b3e}
 
 
 Constructor. 
 
-
-
-Definition at line 61 of file Status\+Code.\+h.
+Definition at line 61 of file StatusCode.h.
 
 
 \begin{DoxyCode}
-61                                                   : \hyperlink{classStatusCode_aff37ebcb323b897044b42d303cf72d93}{d\_code}(code) \{
-62 \}
+61                                                   : d_code(code) {
+62 }
 \end{DoxyCode}
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classStatusCode_a5dd22dc6eb2c52fc4cabc58f6dea2eb7}\label{classStatusCode_a5dd22dc6eb2c52fc4cabc58f6dea2eb7}} 
-\index{Status\+Code@{Status\+Code}!is\+Failure@{is\+Failure}}
-\index{is\+Failure@{is\+Failure}!Status\+Code@{Status\+Code}}
-\subsubsection{\texorpdfstring{is\+Failure()}{isFailure()}}
-{\footnotesize\ttfamily bool Status\+Code\+::is\+Failure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+\hypertarget{classStatusCode_aa5d4d426deef86d8595b08abf6efa5f7}{
+\index{StatusCode@{StatusCode}!isFailure@{isFailure}}
+\index{isFailure@{isFailure}!StatusCode@{StatusCode}}
+\subsubsection[{isFailure}]{\setlength{\rightskip}{0pt plus 5cm}bool StatusCode::isFailure () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classStatusCode_aa5d4d426deef86d8595b08abf6efa5f7}
+Test for a status code of FAILURE. N.B. This is a specific type of failure where there aren't any more appropriate staus codes. To test for any failure use : if ( !StatusCode.\hyperlink{classStatusCode_aa9517f7106b77565d0eda20a9b37e705}{isSuccess()} ) ... 
 
-Test for a status code of F\+A\+I\+L\+U\+RE. N.\+B. This is a specific type of failure where there aren\textquotesingle{}t any more appropriate staus codes. To test for any failure use \+: if ( !\+Status\+Code.\hyperlink{classStatusCode_acfe5ce8b2bb7d3d651fb0108c18c05c3}{is\+Success()} ) ... 
+Definition at line 68 of file StatusCode.h.
 
-Definition at line 68 of file Status\+Code.\+h.
+References d\_\-code, and SUCCESS.
 
-
-
-References d\+\_\+code, and S\+U\+C\+C\+E\+SS.
-
-
-
-Referenced by A3\+P\+E\+::clock\+Division(), L\+S\+Delay\+Chip\+V1\+::config\+Reg\+Bulk\+Read(), L\+S\+Delay\+Chip\+V1\+::config\+Reg\+Bulk\+Write(), A3\+P\+E\+::enable\+Storage(), export\+\_\+base(), A3\+P\+E\+::fifo\+Depth(), A3\+P\+E\+::fifo\+Latency(), F\+E\+B\+\_\+v1\+::gbt\+Acknowledge\+Config(), F\+E\+B\+\_\+v1\+::gbt\+D\+L\+L\+Reset(), A3\+P\+E\+::latency\+A\+X(), A3\+P\+E\+::length\+A\+X(), A3\+P\+E\+::n\+Trigger(), A3\+P\+E\+::pipeline(), Phaser\+::read(), I\+C\+Phaser\+::read(), I\+C\+Phaser\+::reset(), A3\+P\+E\+::reset(), A3\+P\+E\+::set\+Add\+From\+A\+X\+Ram(), A3\+P\+E\+::set\+Add\+To\+A\+X\+Ram(), A3\+P\+E\+::set\+A\+X\+Ram\+Usb(), F\+E\+B\+\_\+v1\+::set\+Calib\+Cte(), F\+E\+B\+\_\+v1\+::set\+Clock80\+M\+Hz\+Falling\+Edge(), A3\+P\+E\+::set\+Clock\+Division(), F\+E\+B\+\_\+v1\+::set\+Clock\+Falling\+Edge(), F\+E\+B\+\_\+v1\+::set\+Disable\+Subtract(), A3\+P\+E\+::set\+Fifo\+Depth(), A3\+P\+E\+::set\+Fifo\+Latency(), F\+E\+B\+\_\+v1\+::set\+Gain4(), F\+E\+B\+\_\+v1\+::set\+Gbt80\+M\+Hz\+Clk\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Clock\+Strength(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Data\+Path(), F\+E\+B\+\_\+v1\+::set\+Gbt\+D\+L\+L\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Enable\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Mode(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Term\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Track\+Mode(), F\+E\+B\+\_\+v1\+::set\+Global\+Pseudo\+P\+M\+Enable(), F\+E\+B\+\_\+v1\+::set\+Inject\+Mode\+F\+E(), F\+E\+B\+\_\+v1\+::set\+Latency(), A3\+P\+E\+::set\+Latency\+A\+X(), F\+E\+B\+\_\+v1\+::set\+Latency\+L\+L\+T(), F\+E\+B\+\_\+v1\+::set\+Latency\+L\+L\+T\+Corner(), F\+E\+B\+\_\+v1\+::set\+Latency\+L\+L\+T\+Side\+Nb(), F\+E\+B\+\_\+v1\+::set\+Latency\+L\+L\+T\+Up\+Nb(), A3\+P\+E\+::set\+Length\+A\+X(), F\+E\+B\+\_\+v1\+::set\+Mask\+L\+L\+T(), F\+E\+B\+\_\+v1\+::set\+Mask\+L\+L\+T\+Corner(), F\+E\+B\+\_\+v1\+::set\+Mask\+L\+L\+T\+Side\+Nb(), F\+E\+B\+\_\+v1\+::set\+Mask\+L\+L\+T\+Up\+Nb(), A3\+P\+E\+::set\+N\+Trigger(), F\+E\+B\+\_\+v1\+::set\+Old\+Subtract(), F\+E\+B\+\_\+v1\+::set\+Output\+Eport(), A3\+P\+E\+::set\+Pipeline(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+A\+D\+C\+Enable(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+P\+M\+Enable(), A3\+P\+E\+::set\+Read\+Pattern\+Fifo\+Usb(), A3\+P\+E\+::set\+Read\+To\+A\+X\+Ram\+Usb(), A3\+P\+E\+::set\+Read\+Trigger\+Fifo\+Usb(), A3\+P\+E\+::set\+Software\+Trigger(), F\+E\+B\+\_\+v1\+::set\+Spy\+Mode\+F\+E(), F\+E\+B\+\_\+v1\+::set\+Stop\+Inj\+Loop(), F\+E\+B\+\_\+v1\+::set\+Test\+Duration(), F\+E\+B\+\_\+v1\+::set\+Threshold(), A3\+P\+E\+::set\+Trigger\+Delay(), A3\+P\+E\+::set\+Trigger\+Rate(), A3\+P\+E\+::set\+Write\+From\+A\+X\+Ram\+Usb(), A3\+P\+E\+::set\+Write\+Storage\+Fifo\+Usb(), I\+C\+E\+C\+A\+Lv3\+::spi\+Read(), I\+C\+E\+C\+A\+Lv3\+::spi\+Write(), A3\+P\+E\+::start\+Sequence\+A\+X(), I\+C\+Phaser\+::status(), Application\+::svc\+Running(), A3\+P\+E\+::trigger\+Delay(), A3\+P\+E\+::trigger\+Rate(), Phaser\+::write(), and I\+C\+Phaser\+::write().
+Referenced by A3PE::clockDivision(), LSDelayChipV1::configRegBulkRead(), LSDelayChipV1::configRegBulkWrite(), A3PE::enableStorage(), export\_\-base(), A3PE::fifoDepth(), A3PE::fifoLatency(), FEB\_\-v1::gbtAcknowledgeConfig(), FEB\_\-v1::gbtDLLReset(), A3PE::latencyAX(), A3PE::lengthAX(), A3PE::nTrigger(), A3PE::pipeline(), ICPhaser::read(), Phaser::read(), ICPhaser::reset(), A3PE::reset(), A3PE::setAddFromAXRam(), A3PE::setAddToAXRam(), A3PE::setAXRamUsb(), FEB\_\-v1::setCalibCte(), FEB\_\-v1::setClock80MHzFallingEdge(), A3PE::setClockDivision(), FEB\_\-v1::setClockFallingEdge(), FEB\_\-v1::setDisableSubtract(), A3PE::setFifoDepth(), A3PE::setFifoLatency(), FEB\_\-v1::setGain4(), FEB\_\-v1::setGbt80MHzClkEport(), FEB\_\-v1::setGbtClockStrength(), FEB\_\-v1::setGbtDataPath(), FEB\_\-v1::setGbtDLLEport(), FEB\_\-v1::setGbtEnableEport(), FEB\_\-v1::setGbtMode(), FEB\_\-v1::setGbtTermEport(), FEB\_\-v1::setGbtTrackMode(), FEB\_\-v1::setGlobalPseudoPMEnable(), FEB\_\-v1::setInjectModeFE(), FEB\_\-v1::setLatency(), A3PE::setLatencyAX(), FEB\_\-v1::setLatencyLLT(), FEB\_\-v1::setLatencyLLTCorner(), FEB\_\-v1::setLatencyLLTSideNb(), FEB\_\-v1::setLatencyLLTUpNb(), A3PE::setLengthAX(), FEB\_\-v1::setMaskLLT(), FEB\_\-v1::setMaskLLTCorner(), FEB\_\-v1::setMaskLLTSideNb(), FEB\_\-v1::setMaskLLTUpNb(), A3PE::setNTrigger(), FEB\_\-v1::setOldSubtract(), FEB\_\-v1::setOutputEport(), A3PE::setPipeline(), FEB\_\-v1::setPseudoADCEnable(), FEB\_\-v1::setPseudoPMEnable(), A3PE::setReadPatternFifoUsb(), A3PE::setReadToAXRamUsb(), A3PE::setReadTriggerFifoUsb(), A3PE::setSoftwareTrigger(), FEB\_\-v1::setSpyModeFE(), FEB\_\-v1::setStopInjLoop(), FEB\_\-v1::setTestDuration(), FEB\_\-v1::setThreshold(), A3PE::setTriggerDelay(), A3PE::setTriggerRate(), A3PE::setWriteFromAXRamUsb(), A3PE::setWriteStorageFifoUsb(), ICECALv3::spiRead(), ICECALv3::spiWrite(), A3PE::startSequenceAX(), ICPhaser::status(), Application::svcRunning(), A3PE::triggerDelay(), A3PE::triggerRate(), ICPhaser::write(), and Phaser::write().
 
 
 \begin{DoxyCode}
-68                                         \{
-69   \textcolor{keywordflow}{return} (\hyperlink{classStatusCode_aff37ebcb323b897044b42d303cf72d93}{d\_code} != \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{SUCCESS} );
-70 \}
+68                                         {
+69   return (d_code != SUCCESS );
+70 }
 \end{DoxyCode}
-\mbox{\Hypertarget{classStatusCode_acfe5ce8b2bb7d3d651fb0108c18c05c3}\label{classStatusCode_acfe5ce8b2bb7d3d651fb0108c18c05c3}} 
-\index{Status\+Code@{Status\+Code}!is\+Success@{is\+Success}}
-\index{is\+Success@{is\+Success}!Status\+Code@{Status\+Code}}
-\subsubsection{\texorpdfstring{is\+Success()}{isSuccess()}}
-{\footnotesize\ttfamily bool Status\+Code\+::is\+Success (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+\hypertarget{classStatusCode_aa9517f7106b77565d0eda20a9b37e705}{
+\index{StatusCode@{StatusCode}!isSuccess@{isSuccess}}
+\index{isSuccess@{isSuccess}!StatusCode@{StatusCode}}
+\subsubsection[{isSuccess}]{\setlength{\rightskip}{0pt plus 5cm}bool StatusCode::isSuccess () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classStatusCode_aa9517f7106b77565d0eda20a9b37e705}
+Test for a status code of SUCCESS. N.B. This is the only case where a function has succeeded. 
 
-Test for a status code of S\+U\+C\+C\+E\+SS. N.\+B. This is the only case where a function has succeeded. 
+Definition at line 64 of file StatusCode.h.
 
-Definition at line 64 of file Status\+Code.\+h.
+References d\_\-code, and SUCCESS.
 
-
-
-References d\+\_\+code, and S\+U\+C\+C\+E\+SS.
-
-
-
-Referenced by export\+\_\+base(), and D\+L\+L\+Mgr\+::load().
+Referenced by export\_\-base(), and DLLMgr::load().
 
 
 \begin{DoxyCode}
-64                                         \{
-65   \textcolor{keywordflow}{return} (\hyperlink{classStatusCode_aff37ebcb323b897044b42d303cf72d93}{d\_code} == \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{SUCCESS} );
-66 \}
+64                                         {
+65   return (d_code == SUCCESS );
+66 }
 \end{DoxyCode}
-\mbox{\Hypertarget{classStatusCode_af5179c5605558840cefe14e2794265de}\label{classStatusCode_af5179c5605558840cefe14e2794265de}} 
-\index{Status\+Code@{Status\+Code}!operator=@{operator=}}
-\index{operator=@{operator=}!Status\+Code@{Status\+Code}}
-\subsubsection{\texorpdfstring{operator=()}{operator=()}}
-{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} \& Status\+Code\+::operator= (\begin{DoxyParamCaption}\item[{unsigned long}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
+\hypertarget{classStatusCode_af5179c5605558840cefe14e2794265de}{
+\index{StatusCode@{StatusCode}!operator=@{operator=}}
+\index{operator=@{operator=}!StatusCode@{StatusCode}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf StatusCode} \& StatusCode::operator= (unsigned long {\em value})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classStatusCode_af5179c5605558840cefe14e2794265de}
 
 
 Assignment operator. 
 
+Definition at line 84 of file StatusCode.h.
 
-
-Definition at line 84 of file Status\+Code.\+h.
-
-
-
-References d\+\_\+code.
+References d\_\-code.
 
 
 \begin{DoxyCode}
-84                                                               \{
-85   \hyperlink{classStatusCode_aff37ebcb323b897044b42d303cf72d93}{d\_code} = value;
-86   \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
-87 \}
+84                                                               {
+85   d_code = value;
+86   return *this;
+87 }
 \end{DoxyCode}
 
 
 \subsection{Member Data Documentation}
-\mbox{\Hypertarget{classStatusCode_aff37ebcb323b897044b42d303cf72d93}\label{classStatusCode_aff37ebcb323b897044b42d303cf72d93}} 
-\index{Status\+Code@{Status\+Code}!d\+\_\+code@{d\+\_\+code}}
-\index{d\+\_\+code@{d\+\_\+code}!Status\+Code@{Status\+Code}}
-\subsubsection{\texorpdfstring{d\+\_\+code}{d\_code}}
-{\footnotesize\ttfamily unsigned long Status\+Code\+::d\+\_\+code\hspace{0.3cm}{\ttfamily [protected]}}
-
+\hypertarget{classStatusCode_aff37ebcb323b897044b42d303cf72d93}{
+\index{StatusCode@{StatusCode}!d\_\-code@{d\_\-code}}
+\index{d\_\-code@{d\_\-code}!StatusCode@{StatusCode}}
+\subsubsection[{d\_\-code}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long {\bf StatusCode::d\_\-code}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classStatusCode_aff37ebcb323b897044b42d303cf72d93}
 
 
 The status code. 
 
+Definition at line 58 of file StatusCode.h.
 
+Referenced by isFailure(), isSuccess(), and operator=().
 
-Definition at line 58 of file Status\+Code.\+h.
-
-
-
-Referenced by is\+Failure(), is\+Success(), and operator=().
-
-
-
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
 \item 
-/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/inc/\hyperlink{StatusCode_8h}{Status\+Code.\+h}\end{DoxyCompactItemize}
+/home/eleclhcb/LHCb/lbcat-\/cmake/CatKernel/inc/\hyperlink{StatusCode_8h}{StatusCode.h}\end{DoxyCompactItemize}

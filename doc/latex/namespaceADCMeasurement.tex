@@ -1,130 +1,132 @@
-\hypertarget{namespaceADCMeasurement}{}\section{A\+D\+C\+Measurement Namespace Reference}
-\label{namespaceADCMeasurement}\index{A\+D\+C\+Measurement@{A\+D\+C\+Measurement}}
+\hypertarget{namespaceADCMeasurement}{
+\section{ADCMeasurement Namespace Reference}
+\label{namespaceADCMeasurement}\index{ADCMeasurement@{ADCMeasurement}}
+}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-def \hyperlink{namespaceADCMeasurement_a6da448e6e3b79716e5b7fef078c662d8}{Edit} (cat, obj, panel, path)
+def \hyperlink{namespaceADCMeasurement_a201fc534845b6f266457f888b7544a42}{Edit}
 \item 
-def \hyperlink{namespaceADCMeasurement_ac7c6b7cd094e2747ee244094afbbb7d0}{create\+Plot} (cat, obj, run)
+def \hyperlink{namespaceADCMeasurement_acb07f4f2b43333a8ed4c95bf33d6a4b0}{createPlot}
 \item 
-def \hyperlink{namespaceADCMeasurement_a7de3411faf8be50e833090d1c10cc44f}{update\+Plot} (fig, obj)
+def \hyperlink{namespaceADCMeasurement_a711a07185db6732546b49e91a07bfc3f}{updatePlot}
 \end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{namespaceADCMeasurement_ac7c6b7cd094e2747ee244094afbbb7d0}\label{namespaceADCMeasurement_ac7c6b7cd094e2747ee244094afbbb7d0}} 
-\index{A\+D\+C\+Measurement@{A\+D\+C\+Measurement}!create\+Plot@{create\+Plot}}
-\index{create\+Plot@{create\+Plot}!A\+D\+C\+Measurement@{A\+D\+C\+Measurement}}
-\subsubsection{\texorpdfstring{create\+Plot()}{createPlot()}}
-{\footnotesize\ttfamily def A\+D\+C\+Measurement.\+create\+Plot (\begin{DoxyParamCaption}\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{run }\end{DoxyParamCaption})}
+\hypertarget{namespaceADCMeasurement_acb07f4f2b43333a8ed4c95bf33d6a4b0}{
+\index{ADCMeasurement@{ADCMeasurement}!createPlot@{createPlot}}
+\index{createPlot@{createPlot}!ADCMeasurement@{ADCMeasurement}}
+\subsubsection[{createPlot}]{\setlength{\rightskip}{0pt plus 5cm}def ADCMeasurement::createPlot ( {\em cat}, \/   {\em obj}, \/   {\em run})}}
+\label{namespaceADCMeasurement_acb07f4f2b43333a8ed4c95bf33d6a4b0}
 
 
-
-Definition at line 47 of file A\+D\+C\+Measurement.\+py.
+Definition at line 47 of file ADCMeasurement.py.
 
 
 \begin{DoxyCode}
-47 \textcolor{keyword}{def }\hyperlink{namespaceADCMeasurement_ac7c6b7cd094e2747ee244094afbbb7d0}{createPlot}(cat, obj, run):
+47                              :
 48     fig = plt.figure(figsize=(10,10))
-49     fig.suptitle(\textcolor{stringliteral}{"Run "}+str(run), fontsize=14, fontweight=\textcolor{stringliteral}{'bold'})
-50     \textcolor{keywordflow}{print} \textcolor{stringliteral}{"create plot"}, obj
+49     fig.suptitle("Run "+str(run), fontsize=14, fontweight='bold')
+50     print "create plot", obj
 51 
-52     ax = fig.add\_subplot(2,2,1)
-53     plt.ylabel(\textcolor{stringliteral}{"voltage (V)"})
-54     ax.set\_autoscaley\_on(\textcolor{keyword}{False})
+52     ax = fig.add_subplot(2,2,1)
+53     plt.ylabel("voltage (V)")
+54     ax.set_autoscaley_on(False)
 55     ax.grid()
 56 
-57     ax = fig.add\_subplot(2,2,3)
-58     plt.ylabel(\textcolor{stringliteral}{"Ramp Setting"})
-59     plt.xlabel(\textcolor{stringliteral}{"time (s)"})
-60 \textcolor{comment}{#    ax.set\_autoscaley\_on(False)}
+57     ax = fig.add_subplot(2,2,3)
+58     plt.ylabel("Ramp Setting")
+59     plt.xlabel("time (s)")
+60 #    ax.set_autoscaley_on(False)
 61     ax.grid()
 62 
-63     ax = fig.add\_subplot(2,2,2)
-64     plt.ylabel(\textcolor{stringliteral}{"Ramp Measurement"})
-65 \textcolor{comment}{#    ax.set\_autoscaley\_on(False)}
+63     ax = fig.add_subplot(2,2,2)
+64     plt.ylabel("Ramp Measurement")
+65 #    ax.set_autoscaley_on(False)
 66     ax.grid()        
 67 
-68     ax = fig.add\_subplot(2,2,4)
-69     plt.ylabel(\textcolor{stringliteral}{"Ramp Ratio"})
-70     plt.xlabel(\textcolor{stringliteral}{"time (s)"})
-71  \textcolor{comment}{#   ax.set\_autoscaley\_on(False)}
+68     ax = fig.add_subplot(2,2,4)
+69     plt.ylabel("Ramp Ratio")
+70     plt.xlabel("time (s)")
+71  #   ax.set_autoscaley_on(False)
 72     ax.grid()        
 73 
 74     fig.show()    
-75     \textcolor{keywordflow}{return} fig
+75     return fig
 76 
+def updatePlot(fig, obj):
 \end{DoxyCode}
-\mbox{\Hypertarget{namespaceADCMeasurement_a6da448e6e3b79716e5b7fef078c662d8}\label{namespaceADCMeasurement_a6da448e6e3b79716e5b7fef078c662d8}} 
-\index{A\+D\+C\+Measurement@{A\+D\+C\+Measurement}!Edit@{Edit}}
-\index{Edit@{Edit}!A\+D\+C\+Measurement@{A\+D\+C\+Measurement}}
-\subsubsection{\texorpdfstring{Edit()}{Edit()}}
-{\footnotesize\ttfamily def A\+D\+C\+Measurement.\+Edit (\begin{DoxyParamCaption}\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{panel,  }\item[{}]{path }\end{DoxyParamCaption})}
+\hypertarget{namespaceADCMeasurement_a201fc534845b6f266457f888b7544a42}{
+\index{ADCMeasurement@{ADCMeasurement}!Edit@{Edit}}
+\index{Edit@{Edit}!ADCMeasurement@{ADCMeasurement}}
+\subsubsection[{Edit}]{\setlength{\rightskip}{0pt plus 5cm}def ADCMeasurement::Edit ( {\em cat}, \/   {\em obj}, \/   {\em panel}, \/   {\em path})}}
+\label{namespaceADCMeasurement_a201fc534845b6f266457f888b7544a42}
 
 
-
-Definition at line 42 of file A\+D\+C\+Measurement.\+py.
+Definition at line 42 of file ADCMeasurement.py.
 
 
 \begin{DoxyCode}
-42 \textcolor{keyword}{def }\hyperlink{namespaceADCMeasurement_a6da448e6e3b79716e5b7fef078c662d8}{Edit} (cat, obj, panel, path):
-43     \textcolor{keywordflow}{return} \hyperlink{classADCMeasurement}{ADCMeasurement}(cat, obj, panel, path)
+42                                 :
+43     return ADCMeasurement(cat, obj, panel, path)
 44 
-45 \textcolor{comment}{#----------------------------------------------------------------------}
+45 #----------------------------------------------------------------------
 46 
+def createPlot(cat, obj, run):
 \end{DoxyCode}
-\mbox{\Hypertarget{namespaceADCMeasurement_a7de3411faf8be50e833090d1c10cc44f}\label{namespaceADCMeasurement_a7de3411faf8be50e833090d1c10cc44f}} 
-\index{A\+D\+C\+Measurement@{A\+D\+C\+Measurement}!update\+Plot@{update\+Plot}}
-\index{update\+Plot@{update\+Plot}!A\+D\+C\+Measurement@{A\+D\+C\+Measurement}}
-\subsubsection{\texorpdfstring{update\+Plot()}{updatePlot()}}
-{\footnotesize\ttfamily def A\+D\+C\+Measurement.\+update\+Plot (\begin{DoxyParamCaption}\item[{}]{fig,  }\item[{}]{obj }\end{DoxyParamCaption})}
+\hypertarget{namespaceADCMeasurement_a711a07185db6732546b49e91a07bfc3f}{
+\index{ADCMeasurement@{ADCMeasurement}!updatePlot@{updatePlot}}
+\index{updatePlot@{updatePlot}!ADCMeasurement@{ADCMeasurement}}
+\subsubsection[{updatePlot}]{\setlength{\rightskip}{0pt plus 5cm}def ADCMeasurement::updatePlot ( {\em fig}, \/   {\em obj})}}
+\label{namespaceADCMeasurement_a711a07185db6732546b49e91a07bfc3f}
 
 
-
-Definition at line 77 of file A\+D\+C\+Measurement.\+py.
+Definition at line 77 of file ADCMeasurement.py.
 
 
 \begin{DoxyCode}
-77 \textcolor{keyword}{def }\hyperlink{namespaceADCMeasurement_a7de3411faf8be50e833090d1c10cc44f}{updatePlot}(fig, obj):
-78     ax = fig.add\_subplot(2, 2, 1)
-79     l = ax.plot([], [], \textcolor{stringliteral}{'co-'}, [], [], \textcolor{stringliteral}{'g^-'})
-80     l[0].set\_xdata(obj.data(0))
-81     l[0].set\_ydata(obj.data(1))
-82     l[1].set\_xdata(obj.data(0))
-83     l[1].set\_ydata(obj.data(2))
+77                         :
+78     ax = fig.add_subplot(2, 2, 1)
+79     l = ax.plot([], [], 'co-', [], [], 'g^-')
+80     l[0].set_xdata(obj.data(0))
+81     l[0].set_ydata(obj.data(1))
+82     l[1].set_xdata(obj.data(0))
+83     l[1].set_ydata(obj.data(2))
 84     ax.relim()
-85     ax.autoscale\_view()
-86     ax.set\_ylim(0.,0.2)
+85     ax.autoscale_view()
+86     ax.set_ylim(0.,0.2)
 87 
-88     ax = fig.add\_subplot(2, 2, 3)
-89     l, = ax.plot([], [], \textcolor{stringliteral}{'co-'} )
-90     l.set\_xdata(obj.data(0))
-91     l.set\_ydata(obj.data(3))
+88     ax = fig.add_subplot(2, 2, 3)
+89     l, = ax.plot([], [], 'co-' )
+90     l.set_xdata(obj.data(0))
+91     l.set_ydata(obj.data(3))
 92     ax.relim()
-93     ax.autoscale\_view()
+93     ax.autoscale_view()
 94 
-95     ax = fig.add\_subplot(2, 2, 2)
-96     l = ax.plot([], [], \textcolor{stringliteral}{'ro-'}, [], [], \textcolor{stringliteral}{'b^-'})
-97     l[0].set\_xdata(obj.data(0))
-98     l[0].set\_ydata(obj.data(4))
-99     l[1].set\_xdata(obj.data(0))
-100     l[1].set\_ydata(obj.data(5))
+95     ax = fig.add_subplot(2, 2, 2)
+96     l = ax.plot([], [], 'ro-', [], [], 'b^-')
+97     l[0].set_xdata(obj.data(0))
+98     l[0].set_ydata(obj.data(4))
+99     l[1].set_xdata(obj.data(0))
+100     l[1].set_ydata(obj.data(5))
 101     ax.relim()
-102     ax.autoscale\_view()
-103 \textcolor{comment}{#    ax.set\_ylim(2000.,4096)}
+102     ax.autoscale_view()
+103 #    ax.set_ylim(2000.,4096)
 104 
-105     ax = fig.add\_subplot(2, 2, 4)
-106     l = ax.plot([], [], \textcolor{stringliteral}{'ro-'}, [], [], \textcolor{stringliteral}{'b^-'})
-107     l[0].set\_xdata(obj.data(0))
-108     l[0].set\_ydata(obj.data(6))
-109     l[1].set\_xdata(obj.data(0))
-110     l[1].set\_ydata(obj.data(7))
+105     ax = fig.add_subplot(2, 2, 4)
+106     l = ax.plot([], [], 'ro-', [], [], 'b^-')
+107     l[0].set_xdata(obj.data(0))
+108     l[0].set_ydata(obj.data(6))
+109     l[1].set_xdata(obj.data(0))
+110     l[1].set_ydata(obj.data(7))
 111     ax.relim()
-112     ax.autoscale\_view()
-113 \textcolor{comment}{#    ax.set\_ylim(0.,0.001)}
+112     ax.autoscale_view()
+113 #    ax.set_ylim(0.,0.001)
 114 
 115     fig.canvas.draw()
-116 \textcolor{comment}{#    fig.canvas.flush\_events()}
+116 #    fig.canvas.flush_events()
 117 
-118 \textcolor{comment}{#----------------------------------------------------------------------}
-119 \end{DoxyCode}
+118 #----------------------------------------------------------------------
+#----------------------------------------------------------------------
+\end{DoxyCode}

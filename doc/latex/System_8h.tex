@@ -1,46 +1,48 @@
-\hypertarget{System_8h}{}\section{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/inc/\+System.h File Reference}
-\label{System_8h}\index{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/inc/\+System.\+h@{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/inc/\+System.\+h}}
-{\ttfamily \#include $<$string$>$}\newline
-{\ttfamily \#include $<$vector$>$}\newline
-{\ttfamily \#include $<$typeinfo$>$}\newline
-{\ttfamily \#include \char`\"{}Timing.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}Module\+Info.\+h\char`\"{}}\newline
+\hypertarget{System_8h}{
+\section{/home/eleclhcb/LHCb/lbcat-\/cmake/CatKernel/inc/System.h File Reference}
+\label{System_8h}\index{/home/eleclhcb/LHCb/lbcat-\/cmake/CatKernel/inc/System.h@{/home/eleclhcb/LHCb/lbcat-\/cmake/CatKernel/inc/System.h}}
+}
+{\ttfamily \#include $<$string$>$}\par
+{\ttfamily \#include $<$vector$>$}\par
+{\ttfamily \#include $<$typeinfo$>$}\par
+{\ttfamily \#include \char`\"{}Timing.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}ModuleInfo.h\char`\"{}}\par
 \subsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
- \hyperlink{namespaceSystem}{System}
+namespace \hyperlink{namespaceSystem}{System}
 \end{DoxyCompactItemize}
 \subsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
-typedef void $\ast$ \hyperlink{namespaceSystem_ad0b1bc3494d9fecebf85204f61224ac6}{System\+::\+Thread\+Handle}
-\begin{DoxyCompactList}\small\item\em A Thread handle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+typedef void $\ast$ \hyperlink{namespaceSystem_ad0b1bc3494d9fecebf85204f61224ac6}{System::ThreadHandle}
+\begin{DoxyCompactList}\small\item\em A Thread handle. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-const std\+::string \& \hyperlink{namespaceSystem_a89320a729880098922e8b505db1137ec}{System\+::host\+Name} ()
-\begin{DoxyCompactList}\small\item\em Host name. \end{DoxyCompactList}\item 
-const std\+::string \& \hyperlink{namespaceSystem_a08f605cda93733c3b7593517ed18557c}{System\+::os\+Name} ()
-\begin{DoxyCompactList}\small\item\em OS name. \end{DoxyCompactList}\item 
-const std\+::string \& \hyperlink{namespaceSystem_aee568b62f9bcad983dcb3f0c30631854}{System\+::os\+Version} ()
-\begin{DoxyCompactList}\small\item\em OS version. \end{DoxyCompactList}\item 
-const std\+::string \& \hyperlink{namespaceSystem_a21d0ee3eb17ae5ed59b3c6c01efce8d9}{System\+::machine\+Type} ()
-\begin{DoxyCompactList}\small\item\em Machine type. \end{DoxyCompactList}\item 
-const std\+::string \& \hyperlink{namespaceSystem_a8a4ea73b74e0f6b8225e571e21ba4e2f}{System\+::account\+Name} ()
-\begin{DoxyCompactList}\small\item\em User login name. \end{DoxyCompactList}\item 
-long \hyperlink{namespaceSystem_a45f2f8ee27a6b62a7eb104306db16dc9}{System\+::num\+Cmd\+Line\+Args} ()
-\begin{DoxyCompactList}\small\item\em Number of arguments passed to the commandline. \end{DoxyCompactList}\item 
-long \hyperlink{namespaceSystem_aacf2e08c0661f343a44dc174a6931bc6}{System\+::argc} ()
-\begin{DoxyCompactList}\small\item\em Number of arguments passed to the commandline (==\hyperlink{namespaceSystem_a45f2f8ee27a6b62a7eb104306db16dc9}{num\+Cmd\+Line\+Args()}); just to match argv call... \end{DoxyCompactList}\item 
-const std\+::vector$<$ std\+::string $>$ \hyperlink{namespaceSystem_ac5277fb525c07b07bbd94a61e62bc0f5}{System\+::cmd\+Line\+Args} ()
-\begin{DoxyCompactList}\small\item\em Command line arguments including executable name as arg\mbox{[}0\mbox{]} as vector of strings. \end{DoxyCompactList}\item 
-char $\ast$$\ast$ \hyperlink{namespaceSystem_ae3520381fd902d4fce860586feeb6c27}{System\+::argv} ()
-\begin{DoxyCompactList}\small\item\em char$\ast$$\ast$ command line arguments including executable name as arg\mbox{[}0\mbox{]}; You may not modify them! \end{DoxyCompactList}\item 
-const std\+::string \hyperlink{namespaceSystem_af83af19ba6c1083e5643390dfd65f7aa}{System\+::get\+Env} (const char $\ast$\hyperlink{classvar}{var})
-\begin{DoxyCompactList}\small\item\em get a particular environment variable \end{DoxyCompactList}\item 
-const std\+::vector$<$ std\+::string $>$ \hyperlink{namespaceSystem_a072d542bc6ae51093df9c93db06f4e2d}{System\+::get\+Env} ()
-\begin{DoxyCompactList}\small\item\em get all environment variables \end{DoxyCompactList}\item 
-int \hyperlink{namespaceSystem_acbc43cfe7bf59f05d1723317cc9c0098}{System\+::set\+Env} (const std\+::string \&name, const std\+::string \&value, int overwrite=1)
-\begin{DoxyCompactList}\small\item\em set an environment variables. \end{DoxyCompactList}\item 
-Thread\+Handle \hyperlink{namespaceSystem_a44291b84679d3ed0cb8e9ffdc12b9d73}{System\+::thread\+Self} ()
-\begin{DoxyCompactList}\small\item\em thread handle \char`\"{}accessor\char`\"{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+const std::string \& \hyperlink{namespaceSystem_a89320a729880098922e8b505db1137ec}{System::hostName} ()
+\begin{DoxyCompactList}\small\item\em Host name. \item\end{DoxyCompactList}\item 
+const std::string \& \hyperlink{namespaceSystem_a08f605cda93733c3b7593517ed18557c}{System::osName} ()
+\begin{DoxyCompactList}\small\item\em OS name. \item\end{DoxyCompactList}\item 
+const std::string \& \hyperlink{namespaceSystem_aee568b62f9bcad983dcb3f0c30631854}{System::osVersion} ()
+\begin{DoxyCompactList}\small\item\em OS \hyperlink{namespaceversion}{version}. \item\end{DoxyCompactList}\item 
+const std::string \& \hyperlink{namespaceSystem_a21d0ee3eb17ae5ed59b3c6c01efce8d9}{System::machineType} ()
+\begin{DoxyCompactList}\small\item\em Machine type. \item\end{DoxyCompactList}\item 
+const std::string \& \hyperlink{namespaceSystem_a8a4ea73b74e0f6b8225e571e21ba4e2f}{System::accountName} ()
+\begin{DoxyCompactList}\small\item\em User login name. \item\end{DoxyCompactList}\item 
+long \hyperlink{namespaceSystem_a45f2f8ee27a6b62a7eb104306db16dc9}{System::numCmdLineArgs} ()
+\begin{DoxyCompactList}\small\item\em Number of \hyperlink{namespacearguments}{arguments} passed to the commandline. \item\end{DoxyCompactList}\item 
+long \hyperlink{namespaceSystem_aacf2e08c0661f343a44dc174a6931bc6}{System::argc} ()
+\begin{DoxyCompactList}\small\item\em Number of \hyperlink{namespacearguments}{arguments} passed to the commandline (==numCmdLineArgs()); just to match argv call... \item\end{DoxyCompactList}\item 
+const std::vector$<$ std::string $>$ \hyperlink{namespaceSystem_ac5277fb525c07b07bbd94a61e62bc0f5}{System::cmdLineArgs} ()
+\begin{DoxyCompactList}\small\item\em Command line \hyperlink{namespacearguments}{arguments} including executable name as arg\mbox{[}0\mbox{]} as vector of strings. \item\end{DoxyCompactList}\item 
+char $\ast$$\ast$ \hyperlink{namespaceSystem_ae3520381fd902d4fce860586feeb6c27}{System::argv} ()
+\begin{DoxyCompactList}\small\item\em char$\ast$$\ast$ command line \hyperlink{namespacearguments}{arguments} including executable name as arg\mbox{[}0\mbox{]}; You may not modify them! \item\end{DoxyCompactList}\item 
+const std::string \hyperlink{namespaceSystem_af83af19ba6c1083e5643390dfd65f7aa}{System::getEnv} (const char $\ast$\hyperlink{classvar}{var})
+\begin{DoxyCompactList}\small\item\em get a particular environment variable \item\end{DoxyCompactList}\item 
+const std::vector$<$ std::string $>$ \hyperlink{namespaceSystem_a072d542bc6ae51093df9c93db06f4e2d}{System::getEnv} ()
+\begin{DoxyCompactList}\small\item\em get all environment variables \item\end{DoxyCompactList}\item 
+int \hyperlink{namespaceSystem_acbc43cfe7bf59f05d1723317cc9c0098}{System::setEnv} (const std::string \&name, const std::string \&value, int overwrite=1)
+\begin{DoxyCompactList}\small\item\em set an environment variables. \item\end{DoxyCompactList}\item 
+ThreadHandle \hyperlink{namespaceSystem_a44291b84679d3ed0cb8e9ffdc12b9d73}{System::threadSelf} ()
+\begin{DoxyCompactList}\small\item\em thread handle \char`\"{}accessor\char`\"{} \item\end{DoxyCompactList}\end{DoxyCompactItemize}

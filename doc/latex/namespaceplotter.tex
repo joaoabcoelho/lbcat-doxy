@@ -1,5 +1,7 @@
-\hypertarget{namespaceplotter}{}\section{plotter Namespace Reference}
+\hypertarget{namespaceplotter}{
+\section{plotter Namespace Reference}
 \label{namespaceplotter}\index{plotter@{plotter}}
+}
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
@@ -8,29 +10,24 @@ class \hyperlink{classplotter_1_1plotter}{plotter}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-def \hyperlink{namespaceplotter_a5d9521541ff0c72bf439078efacf2f42}{h1d} (fig, histo, alpha=0.\+5, facecolor=\textquotesingle{}green\textquotesingle{}, edgecolor=\textquotesingle{}yellow\textquotesingle{}, linestyle=\textquotesingle{}dashed\textquotesingle{})
+def \hyperlink{namespaceplotter_a5dd79e4c86f4022d8195f06c86bb23f6}{h1d}
 \end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{namespaceplotter_a5d9521541ff0c72bf439078efacf2f42}\label{namespaceplotter_a5d9521541ff0c72bf439078efacf2f42}} 
+\hypertarget{namespaceplotter_a5dd79e4c86f4022d8195f06c86bb23f6}{
 \index{plotter@{plotter}!h1d@{h1d}}
 \index{h1d@{h1d}!plotter@{plotter}}
-\subsubsection{\texorpdfstring{h1d()}{h1d()}}
-{\footnotesize\ttfamily def plotter.\+h1d (\begin{DoxyParamCaption}\item[{}]{fig,  }\item[{}]{histo,  }\item[{}]{alpha = {\ttfamily 0.5},  }\item[{}]{facecolor = {\ttfamily \textquotesingle{}green\textquotesingle{}},  }\item[{}]{edgecolor = {\ttfamily \textquotesingle{}yellow\textquotesingle{}},  }\item[{}]{linestyle = {\ttfamily \textquotesingle{}dashed\textquotesingle{}} }\end{DoxyParamCaption})}
+\subsubsection[{h1d}]{\setlength{\rightskip}{0pt plus 5cm}def plotter::h1d ( {\em fig}, \/   {\em histo}, \/   {\em alpha} = {\ttfamily 0.5}, \/   {\em facecolor} = {\ttfamily 'green'}, \/   {\em edgecolor} = {\ttfamily 'yellow'}, \/   {\em linestyle} = {\ttfamily 'dashed'})}}
+\label{namespaceplotter_a5dd79e4c86f4022d8195f06c86bb23f6}
 
 
-
-Definition at line 51 of file plotter.\+py.
-
-
-
-Referenced by plotter.\+plotter.\+destroy(), A3\+P\+E\+\_\+\+Bit\+Flip.\+Plot(), Storage\+Fifo\+Acquisition.\+Plot(), Storage\+Fifo.\+Plot(), Test\+Suite.\+Plot(), Test\+I2\+C.\+Plot(), Test\+S\+P\+I.\+Plot(), Test\+U\+S\+B.\+Plot(), and Acquisition.\+Plot().
+Definition at line 47 of file plotter.py.
 
 
 \begin{DoxyCode}
-51         linestyle=\textcolor{stringliteral}{'dashed'}):
-52         \textcolor{keyword}{import} numpy \textcolor{keyword}{as} np
+51                            :
+52         import numpy as np
 53         left=np.array(histo.edges()[:-1])
 54         right=np.array(histo.edges()[1:])
 55         bottom = np.zeros(len(left))
@@ -56,13 +53,16 @@ Referenced by plotter.\+plotter.\+destroy(), A3\+P\+E\+\_\+\+Bit\+Flip.\+Plot(),
 75                                   alpha=alpha,
 76                                   linestyle=linestyle)
 77         max=histo.maxY()
-78         fig.add\_patch(patch)
-79         fig.set\_xlim(histo.minX(), histo.maxX())
-80         \textcolor{keywordflow}{if} (max>0):
-81                 fig.set\_ylim(0.,max*1.05)
-82         \textcolor{keywordflow}{else}:
-83                 fig.set\_ylim(max*1.05,0.)
-84                 
+78         fig.add_patch(patch)
+79         fig.set_xlim(histo.minX(), histo.maxX())
+80         if (max>0):
+81                 fig.set_ylim(0.,max*1.05)
+82         else:
+83                 fig.set_ylim(max*1.05,0.)
+84                 ##     ax.set_ylim(-0.1, 20.0)
+85                 ##              print left, right, bottom, top
+86                 ##              cat.info("n="+str(n)+" bins="+str(bins))
 87 
 88 
+## def Rooplot (h):
 \end{DoxyCode}

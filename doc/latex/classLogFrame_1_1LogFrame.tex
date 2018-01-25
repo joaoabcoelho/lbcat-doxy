@@ -1,195 +1,169 @@
-\hypertarget{classLogFrame_1_1LogFrame}{}\section{Log\+Frame.\+Log\+Frame Class Reference}
-\label{classLogFrame_1_1LogFrame}\index{Log\+Frame.\+Log\+Frame@{Log\+Frame.\+Log\+Frame}}
-Inheritance diagram for Log\+Frame.\+Log\+Frame\+:\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=2.000000cm]{classLogFrame_1_1LogFrame}
-\end{center}
-\end{figure}
+\hypertarget{classLogFrame_1_1LogFrame}{
+\section{LogFrame::LogFrame Class Reference}
+\label{classLogFrame_1_1LogFrame}\index{LogFrame::LogFrame@{LogFrame::LogFrame}}
+}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-def \hyperlink{classLogFrame_1_1LogFrame_a756d5bc714b55aa93a21301a9986f8b1}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, app, parent, title)
+def \hyperlink{classLogFrame_1_1LogFrame_a0a15c587216b88be327898693793c55e}{\_\-\_\-init\_\-\_\-}
 \item 
-def \hyperlink{classLogFrame_1_1LogFrame_af3d0abc16c93855ab9d760ff7b4c7d3e}{on\+Idle} (self, event)
+def \hyperlink{classLogFrame_1_1LogFrame_ad4fa2b05a213e2899ce5bdce7d02d23f}{onIdle}
 \item 
-def \hyperlink{classLogFrame_1_1LogFrame_a79ee5eea72f19f0a14aa047123125e1e}{on\+Close\+Confirm} (self, event)
+def \hyperlink{classLogFrame_1_1LogFrame_ab0f6e78490bf48c51b61d44ac025ec6e}{onCloseConfirm}
 \item 
-def \hyperlink{classLogFrame_1_1LogFrame_afa3d32e2694b9e5a50279cbaf31cddba}{on\+Close} (self, event)
+def \hyperlink{classLogFrame_1_1LogFrame_aed95678395171c7b69755b8391c1bb74}{onClose}
 \item 
-def \hyperlink{classLogFrame_1_1LogFrame_a53ce12d6947a1e35da471e5cb9d6011b}{on\+Exit} (self, event)
+def \hyperlink{classLogFrame_1_1LogFrame_a5db4211e2790c9f6f09e6c2cecc144b2}{onExit}
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classLogFrame_1_1LogFrame_a851670425cc5380695a0790467740716}{path}
+\hyperlink{classLogFrame_1_1LogFrame_a944ed19f97020b9ce09b56a0b1f036d9}{path}
 \item 
-\hyperlink{classLogFrame_1_1LogFrame_af2f7bf9b22dcc769064bfdc91296977e}{panel}
+\hyperlink{classLogFrame_1_1LogFrame_a32d544d8fe1641e885737f9a0525be7f}{panel}
 \end{DoxyCompactItemize}
 \subsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-string \hyperlink{classLogFrame_1_1LogFrame_a59c2a62bec07d62ee3db2615338443ae}{overview\+Text} = \char`\"{}C\+AT Configuration Window\char`\"{}
+string \hyperlink{classLogFrame_1_1LogFrame_a61a37e9b6e320a82c09e29a93bd6e210}{overviewText} = \char`\"{}CAT Configuration Window\char`\"{}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 22 of file Log\+Frame.\+py.
-
-
-
-\subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classLogFrame_1_1LogFrame_a756d5bc714b55aa93a21301a9986f8b1}\label{classLogFrame_1_1LogFrame_a756d5bc714b55aa93a21301a9986f8b1}} 
-\index{Log\+Frame\+::\+Log\+Frame@{Log\+Frame\+::\+Log\+Frame}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
-\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!Log\+Frame\+::\+Log\+Frame@{Log\+Frame\+::\+Log\+Frame}}
-\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
-{\footnotesize\ttfamily def Log\+Frame.\+Log\+Frame.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{app,  }\item[{}]{parent,  }\item[{}]{title }\end{DoxyParamCaption})}
-
-
-
-Definition at line 24 of file Log\+Frame.\+py.
-
-
-\begin{DoxyCode}
-24     \textcolor{keyword}{def }\hyperlink{classwrapper_1_1ModuleDictWrapper_a9a7a794150502f51df687831583e13b9}{\_\_init\_\_}(self,app,parent,title): 
-25         wx.Frame.\_\_init\_\_(self, parent, wx.NewId(), title)
-26         self.path=os.path.join(os.environ.get(\textcolor{stringliteral}{"CATLAL"}), \textcolor{stringliteral}{"CatPython"}, \textcolor{stringliteral}{"python"})
-27         res=xrc.XmlResource(os.path.join(self.path,\textcolor{stringliteral}{"xrc/ConfPanel.xrc"}))
-28         self.panel=res.LoadPanel(self, \textcolor{stringliteral}{"ConfPanel"})
-29 
-\end{DoxyCode}
-
+Definition at line 22 of file LogFrame.py.
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classLogFrame_1_1LogFrame_afa3d32e2694b9e5a50279cbaf31cddba}\label{classLogFrame_1_1LogFrame_afa3d32e2694b9e5a50279cbaf31cddba}} 
-\index{Log\+Frame\+::\+Log\+Frame@{Log\+Frame\+::\+Log\+Frame}!on\+Close@{on\+Close}}
-\index{on\+Close@{on\+Close}!Log\+Frame\+::\+Log\+Frame@{Log\+Frame\+::\+Log\+Frame}}
-\subsubsection{\texorpdfstring{on\+Close()}{onClose()}}
-{\footnotesize\ttfamily def Log\+Frame.\+Log\+Frame.\+on\+Close (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{event }\end{DoxyParamCaption})}
+\hypertarget{classLogFrame_1_1LogFrame_a0a15c587216b88be327898693793c55e}{
+\index{LogFrame::LogFrame@{LogFrame::LogFrame}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!LogFrame::LogFrame@{LogFrame::LogFrame}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def LogFrame::LogFrame::\_\-\_\-init\_\-\_\- ( {\em self}, \/   {\em app}, \/   {\em parent}, \/   {\em title})}}
+\label{classLogFrame_1_1LogFrame_a0a15c587216b88be327898693793c55e}
 
-\begin{DoxyVerb}Closes the application\end{DoxyVerb}
- 
 
-Definition at line 42 of file Log\+Frame.\+py.
+Definition at line 24 of file LogFrame.py.
 
 
 \begin{DoxyCode}
-42     \textcolor{keyword}{def }onClose(self, event):
-43         \textcolor{stringliteral}{'''Closes the application'''}
+24                                        : 
+25         wx.Frame.__init__(self, parent, wx.NewId(), title)
+26         self.path=os.path.join(os.environ.get("CATLAL"), "CatPython", "python")
+27         res=xrc.XmlResource(os.path.join(self.path,"xrc/ConfPanel.xrc"))
+28         self.panel=res.LoadPanel(self, "ConfPanel")
+29 
+\end{DoxyCode}
+\hypertarget{classLogFrame_1_1LogFrame_aed95678395171c7b69755b8391c1bb74}{
+\index{LogFrame::LogFrame@{LogFrame::LogFrame}!onClose@{onClose}}
+\index{onClose@{onClose}!LogFrame::LogFrame@{LogFrame::LogFrame}}
+\subsubsection[{onClose}]{\setlength{\rightskip}{0pt plus 5cm}def LogFrame::LogFrame::onClose ( {\em self}, \/   {\em event})}}
+\label{classLogFrame_1_1LogFrame_aed95678395171c7b69755b8391c1bb74}
+\begin{DoxyVerb}Closes the application\end{DoxyVerb}
+ 
+
+Definition at line 42 of file LogFrame.py.
+
+
+\begin{DoxyCode}
+42                             :
+43         '''Closes the application'''
 44         self.Destroy()
 45 
+    def onExit(self, event):
 \end{DoxyCode}
-\mbox{\Hypertarget{classLogFrame_1_1LogFrame_a79ee5eea72f19f0a14aa047123125e1e}\label{classLogFrame_1_1LogFrame_a79ee5eea72f19f0a14aa047123125e1e}} 
-\index{Log\+Frame\+::\+Log\+Frame@{Log\+Frame\+::\+Log\+Frame}!on\+Close\+Confirm@{on\+Close\+Confirm}}
-\index{on\+Close\+Confirm@{on\+Close\+Confirm}!Log\+Frame\+::\+Log\+Frame@{Log\+Frame\+::\+Log\+Frame}}
-\subsubsection{\texorpdfstring{on\+Close\+Confirm()}{onCloseConfirm()}}
-{\footnotesize\ttfamily def Log\+Frame.\+Log\+Frame.\+on\+Close\+Confirm (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{event }\end{DoxyParamCaption})}
-
+\hypertarget{classLogFrame_1_1LogFrame_ab0f6e78490bf48c51b61d44ac025ec6e}{
+\index{LogFrame::LogFrame@{LogFrame::LogFrame}!onCloseConfirm@{onCloseConfirm}}
+\index{onCloseConfirm@{onCloseConfirm}!LogFrame::LogFrame@{LogFrame::LogFrame}}
+\subsubsection[{onCloseConfirm}]{\setlength{\rightskip}{0pt plus 5cm}def LogFrame::LogFrame::onCloseConfirm ( {\em self}, \/   {\em event})}}
+\label{classLogFrame_1_1LogFrame_ab0f6e78490bf48c51b61d44ac025ec6e}
 \begin{DoxyVerb}Closes the application\end{DoxyVerb}
  
 
-Definition at line 35 of file Log\+Frame.\+py.
+Definition at line 35 of file LogFrame.py.
 
 
 \begin{DoxyCode}
-35     \textcolor{keyword}{def }onCloseConfirm(self, event):
-36         \textcolor{stringliteral}{'''Closes the application'''}
-37         dlg = wx.MessageDialog(self, \textcolor{stringliteral}{"Exit the program?"}, \textcolor{stringliteral}{"Exit"}, wx.YES\_NO | wx.ICON\_QUESTION)
-38         \textcolor{keywordflow}{if} dlg.ShowModal() == wx.ID\_YES:
-39             dlg.Destroy()  \textcolor{comment}{# frame}
+35                                    :
+36         '''Closes the application'''
+37         dlg = wx.MessageDialog(self, "Exit the program?", "Exit", wx.YES_NO | wx.
+      ICON_QUESTION)
+38         if dlg.ShowModal() == wx.ID_YES:
+39             dlg.Destroy()  # frame
 40         self.Destroy()
 41 
+    def onClose(self, event):
 \end{DoxyCode}
-\mbox{\Hypertarget{classLogFrame_1_1LogFrame_a53ce12d6947a1e35da471e5cb9d6011b}\label{classLogFrame_1_1LogFrame_a53ce12d6947a1e35da471e5cb9d6011b}} 
-\index{Log\+Frame\+::\+Log\+Frame@{Log\+Frame\+::\+Log\+Frame}!on\+Exit@{on\+Exit}}
-\index{on\+Exit@{on\+Exit}!Log\+Frame\+::\+Log\+Frame@{Log\+Frame\+::\+Log\+Frame}}
-\subsubsection{\texorpdfstring{on\+Exit()}{onExit()}}
-{\footnotesize\ttfamily def Log\+Frame.\+Log\+Frame.\+on\+Exit (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{event }\end{DoxyParamCaption})}
-
+\hypertarget{classLogFrame_1_1LogFrame_a5db4211e2790c9f6f09e6c2cecc144b2}{
+\index{LogFrame::LogFrame@{LogFrame::LogFrame}!onExit@{onExit}}
+\index{onExit@{onExit}!LogFrame::LogFrame@{LogFrame::LogFrame}}
+\subsubsection[{onExit}]{\setlength{\rightskip}{0pt plus 5cm}def LogFrame::LogFrame::onExit ( {\em self}, \/   {\em event})}}
+\label{classLogFrame_1_1LogFrame_a5db4211e2790c9f6f09e6c2cecc144b2}
 \begin{DoxyVerb}Exit the app\end{DoxyVerb}
  
 
-Definition at line 46 of file Log\+Frame.\+py.
+Definition at line 46 of file LogFrame.py.
 
 
 \begin{DoxyCode}
-46     \textcolor{keyword}{def }onExit(self, event):
-47         \textcolor{stringliteral}{'''Exit the app'''}
-48         self.Close(\textcolor{keyword}{True})
-49 \textcolor{comment}{#        exit(2)}
+46                            :
+47         '''Exit the app'''
+48         self.Close(True)
+49 #        exit(2)
 50 
 51 
 52 
-53 \textcolor{comment}{#----------------------------------------------------------------------------}
+53 #----------------------------------------------------------------------------
 54 
 55 
 56 
-57 \end{DoxyCode}
-\mbox{\Hypertarget{classLogFrame_1_1LogFrame_af3d0abc16c93855ab9d760ff7b4c7d3e}\label{classLogFrame_1_1LogFrame_af3d0abc16c93855ab9d760ff7b4c7d3e}} 
-\index{Log\+Frame\+::\+Log\+Frame@{Log\+Frame\+::\+Log\+Frame}!on\+Idle@{on\+Idle}}
-\index{on\+Idle@{on\+Idle}!Log\+Frame\+::\+Log\+Frame@{Log\+Frame\+::\+Log\+Frame}}
-\subsubsection{\texorpdfstring{on\+Idle()}{onIdle()}}
-{\footnotesize\ttfamily def Log\+Frame.\+Log\+Frame.\+on\+Idle (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{event }\end{DoxyParamCaption})}
 
+\end{DoxyCode}
+\hypertarget{classLogFrame_1_1LogFrame_ad4fa2b05a213e2899ce5bdce7d02d23f}{
+\index{LogFrame::LogFrame@{LogFrame::LogFrame}!onIdle@{onIdle}}
+\index{onIdle@{onIdle}!LogFrame::LogFrame@{LogFrame::LogFrame}}
+\subsubsection[{onIdle}]{\setlength{\rightskip}{0pt plus 5cm}def LogFrame::LogFrame::onIdle ( {\em self}, \/   {\em event})}}
+\label{classLogFrame_1_1LogFrame_ad4fa2b05a213e2899ce5bdce7d02d23f}
 \begin{DoxyVerb}Responds to idle time in the system\end{DoxyVerb}
  
 
-Definition at line 30 of file Log\+Frame.\+py.
+Definition at line 30 of file LogFrame.py.
 
 
 \begin{DoxyCode}
-30     \textcolor{keyword}{def }onIdle(self, event):
-31         \textcolor{stringliteral}{'''Responds to idle time in the system'''}
-32         \textcolor{comment}{# when the timer says it's time, we do the actual downloading in the main thread (wx doesn't work
-       well in secondary threads)}
-33         \textcolor{keywordflow}{print} \textcolor{stringliteral}{"hello"}
+30                            :
+31         '''Responds to idle time in the system'''
+32         # when the timer says it's time, we do the actual downloading in the main
+       thread (wx doesn't work well in secondary threads)
+33         print "hello"
 34         
+    def onCloseConfirm(self, event):
 \end{DoxyCode}
 
 
 \subsection{Member Data Documentation}
-\mbox{\Hypertarget{classLogFrame_1_1LogFrame_a59c2a62bec07d62ee3db2615338443ae}\label{classLogFrame_1_1LogFrame_a59c2a62bec07d62ee3db2615338443ae}} 
-\index{Log\+Frame\+::\+Log\+Frame@{Log\+Frame\+::\+Log\+Frame}!overview\+Text@{overview\+Text}}
-\index{overview\+Text@{overview\+Text}!Log\+Frame\+::\+Log\+Frame@{Log\+Frame\+::\+Log\+Frame}}
-\subsubsection{\texorpdfstring{overview\+Text}{overviewText}}
-{\footnotesize\ttfamily string Log\+Frame.\+Log\+Frame.\+overview\+Text = \char`\"{}C\+AT Configuration Window\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+\hypertarget{classLogFrame_1_1LogFrame_a61a37e9b6e320a82c09e29a93bd6e210}{
+\index{LogFrame::LogFrame@{LogFrame::LogFrame}!overviewText@{overviewText}}
+\index{overviewText@{overviewText}!LogFrame::LogFrame@{LogFrame::LogFrame}}
+\subsubsection[{overviewText}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf LogFrame::LogFrame::overviewText} = \char`\"{}CAT Configuration Window\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classLogFrame_1_1LogFrame_a61a37e9b6e320a82c09e29a93bd6e210}
 
 
-
-Definition at line 23 of file Log\+Frame.\+py.
-
-\mbox{\Hypertarget{classLogFrame_1_1LogFrame_af2f7bf9b22dcc769064bfdc91296977e}\label{classLogFrame_1_1LogFrame_af2f7bf9b22dcc769064bfdc91296977e}} 
-\index{Log\+Frame\+::\+Log\+Frame@{Log\+Frame\+::\+Log\+Frame}!panel@{panel}}
-\index{panel@{panel}!Log\+Frame\+::\+Log\+Frame@{Log\+Frame\+::\+Log\+Frame}}
-\subsubsection{\texorpdfstring{panel}{panel}}
-{\footnotesize\ttfamily Log\+Frame.\+Log\+Frame.\+panel}
+Definition at line 23 of file LogFrame.py.\hypertarget{classLogFrame_1_1LogFrame_a32d544d8fe1641e885737f9a0525be7f}{
+\index{LogFrame::LogFrame@{LogFrame::LogFrame}!panel@{panel}}
+\index{panel@{panel}!LogFrame::LogFrame@{LogFrame::LogFrame}}
+\subsubsection[{panel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf LogFrame::LogFrame::panel}}}
+\label{classLogFrame_1_1LogFrame_a32d544d8fe1641e885737f9a0525be7f}
 
 
-
-Definition at line 28 of file Log\+Frame.\+py.
-
-
-
-Referenced by A3\+P\+E\+\_\+\+Bit\+Flip.\+A3\+P\+E\+\_\+\+Bit\+Flip.\+\_\+\+\_\+init\+\_\+\+\_\+(), Emulate\+F\+E.\+Emulate\+F\+E.\+\_\+\+\_\+init\+\_\+\+\_\+(), Acquisition.\+Acquisition.\+\_\+\+\_\+init\+\_\+\+\_\+(), object.\+object.\+get\+Control(), Proto40\+M\+Hz\+\_\+v1.\+Proto40\+M\+Hz\+\_\+v1.\+get\+File(), and proc.\+proc.\+page().
-
-\mbox{\Hypertarget{classLogFrame_1_1LogFrame_a851670425cc5380695a0790467740716}\label{classLogFrame_1_1LogFrame_a851670425cc5380695a0790467740716}} 
-\index{Log\+Frame\+::\+Log\+Frame@{Log\+Frame\+::\+Log\+Frame}!path@{path}}
-\index{path@{path}!Log\+Frame\+::\+Log\+Frame@{Log\+Frame\+::\+Log\+Frame}}
-\subsubsection{\texorpdfstring{path}{path}}
-{\footnotesize\ttfamily Log\+Frame.\+Log\+Frame.\+path}
+Definition at line 28 of file LogFrame.py.\hypertarget{classLogFrame_1_1LogFrame_a944ed19f97020b9ce09b56a0b1f036d9}{
+\index{LogFrame::LogFrame@{LogFrame::LogFrame}!path@{path}}
+\index{path@{path}!LogFrame::LogFrame@{LogFrame::LogFrame}}
+\subsubsection[{path}]{\setlength{\rightskip}{0pt plus 5cm}{\bf LogFrame::LogFrame::path}}}
+\label{classLogFrame_1_1LogFrame_a944ed19f97020b9ce09b56a0b1f036d9}
 
 
+Definition at line 26 of file LogFrame.py.
 
-Definition at line 26 of file Log\+Frame.\+py.
-
-
-
-Referenced by element.\+element.\+loadxrc(), and proc.\+proc.\+loadxrc().
-
-
-
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
 \item 
-/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Python/python/\hyperlink{LogFrame_8py}{Log\+Frame.\+py}\end{DoxyCompactItemize}
+/home/eleclhcb/LHCb/lbcat-\/cmake/CatPython/python/\hyperlink{LogFrame_8py}{LogFrame.py}\end{DoxyCompactItemize}

@@ -1,1976 +1,1578 @@
-\hypertarget{classOptions}{}\section{Options Class Reference}
+\hypertarget{classOptions}{
+\section{Options Class Reference}
 \label{classOptions}\index{Options@{Options}}
+}
 
 
-{\ttfamily \#include $<$Options.\+h$>$}
-
-\subsection*{Public Member Functions}
+{\ttfamily \#include $<$Options.h$>$}\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classOptions_ab72fb640172a6109e34c8a5366563753}{Options} ()
 \item 
-\hyperlink{classOptions_a86ddb85b183f8b58af5481f30a42fa92}{$\sim$\+Options} ()
+\hyperlink{classOptions_a86ddb85b183f8b58af5481f30a42fa92}{$\sim$Options} ()
 \item 
-void \hyperlink{classOptions_a5d8ab053c941a944a53c0bfe871058a1}{set\+Log\+Output\+Level} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926}{Msg\+Svc\+::\+Msg\+Level} \hyperlink{classOptions_a2d11716f34070dd7991648a26eb5d244}{log\+Output\+Level})
+void \hyperlink{classOptions_a5d8ab053c941a944a53c0bfe871058a1}{setLogOutputLevel} (\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926}{MsgSvc::MsgLevel} logOutputLevel)
 \item 
-\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926}{Msg\+Svc\+::\+Msg\+Level} \hyperlink{classOptions_a2d11716f34070dd7991648a26eb5d244}{log\+Output\+Level} ()
+\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926}{MsgSvc::MsgLevel} \hyperlink{classOptions_a2d11716f34070dd7991648a26eb5d244}{logOutputLevel} ()
 \item 
-void \hyperlink{classOptions_adac15a8dbae0183ae7cecc09ebba6887}{set\+Print\+Freq} (unsigned long \hyperlink{classOptions_a67021ffef9f666bba4696f89807b2a70}{print\+Freq})
+void \hyperlink{classOptions_adac15a8dbae0183ae7cecc09ebba6887}{setPrintFreq} (unsigned long printFreq)
 \item 
-unsigned long \hyperlink{classOptions_a67021ffef9f666bba4696f89807b2a70}{print\+Freq} ()
+unsigned long \hyperlink{classOptions_a67021ffef9f666bba4696f89807b2a70}{printFreq} ()
 \item 
-void \hyperlink{classOptions_a7df298047f1506fa2244cf096da96409}{set\+Plot\+Freq} (unsigned long \hyperlink{classOptions_a1e20abb20c1a2187f9455b39cd9d26ae}{plot\+Freq})
+void \hyperlink{classOptions_a7df298047f1506fa2244cf096da96409}{setPlotFreq} (unsigned long plotFreq)
 \item 
-unsigned long \hyperlink{classOptions_a1e20abb20c1a2187f9455b39cd9d26ae}{plot\+Freq} ()
+unsigned long \hyperlink{classOptions_a1e20abb20c1a2187f9455b39cd9d26ae}{plotFreq} ()
 \item 
-void \hyperlink{classOptions_a0d362af154c7d2e30a7bf340eb061fa5}{set\+Stop\+On\+Error} (bool \hyperlink{classOptions_afcd7b27fdf474050d912571e09525efe}{stop\+On\+Error})
+void \hyperlink{classOptions_a0d362af154c7d2e30a7bf340eb061fa5}{setStopOnError} (bool stopOnError)
 \item 
-bool \hyperlink{classOptions_afcd7b27fdf474050d912571e09525efe}{stop\+On\+Error} ()
+bool \hyperlink{classOptions_afcd7b27fdf474050d912571e09525efe}{stopOnError} ()
 \item 
-void \hyperlink{classOptions_aed19a55eb2c418f333bc97615cf4a3a8}{set\+Run\+Number} (unsigned long \hyperlink{classOptions_a2d9447919fe90f9ce8df5530526cbb27}{run\+Number})
+void \hyperlink{classOptions_aed19a55eb2c418f333bc97615cf4a3a8}{setRunNumber} (unsigned long runNumber)
 \item 
-unsigned long \hyperlink{classOptions_a2d9447919fe90f9ce8df5530526cbb27}{run\+Number} ()
+unsigned long \hyperlink{classOptions_a2d9447919fe90f9ce8df5530526cbb27}{runNumber} ()
 \item 
-void \hyperlink{classOptions_a7bf3fb2833021f8900eb105b0a9c02c5}{set\+Run\+Number\+Management} (bool \hyperlink{classOptions_a7654a2c3d67baae08f61edc18bec367e}{run\+Number\+Management})
+void \hyperlink{classOptions_a7bf3fb2833021f8900eb105b0a9c02c5}{setRunNumberManagement} (bool runNumberManagement)
 \item 
-bool \hyperlink{classOptions_a7654a2c3d67baae08f61edc18bec367e}{run\+Number\+Management} ()
+bool \hyperlink{classOptions_a7654a2c3d67baae08f61edc18bec367e}{runNumberManagement} ()
 \item 
-void \hyperlink{classOptions_a3cebd8308183414ef2e0de0e7922c87a}{set\+Current\+Path} (std\+::string \hyperlink{classOptions_ab9cf7442a712fe8593f6cf5cfff36a5d}{current\+Path})
+void \hyperlink{classOptions_a3cebd8308183414ef2e0de0e7922c87a}{setCurrentPath} (std::string currentPath)
 \item 
-std\+::string \hyperlink{classOptions_ab9cf7442a712fe8593f6cf5cfff36a5d}{current\+Path} ()
+std::string \hyperlink{classOptions_ab9cf7442a712fe8593f6cf5cfff36a5d}{currentPath} ()
 \item 
-void \hyperlink{classOptions_a8c32e222956c77ed2ec5387318f91394}{set\+Storage\+Path} (std\+::string \hyperlink{classOptions_a3992b9247441a3e60e55c8c5fe32b394}{storage\+Path})
+void \hyperlink{classOptions_a8c32e222956c77ed2ec5387318f91394}{setStoragePath} (std::string storagePath)
 \item 
-std\+::string \hyperlink{classOptions_a3992b9247441a3e60e55c8c5fe32b394}{storage\+Path} ()
+std::string \hyperlink{classOptions_a3992b9247441a3e60e55c8c5fe32b394}{storagePath} ()
 \item 
-std\+::string \hyperlink{classOptions_aa5fe6b85088f3012226869480790a383}{storage\+Full\+Path} ()
+std::string \hyperlink{classOptions_aa5fe6b85088f3012226869480790a383}{storageFullPath} ()
 \item 
-void \hyperlink{classOptions_aed5e6919526bcfa5cf4961230bd20e37}{set\+Storage\+Dir} (std\+::string filename)
+void \hyperlink{classOptions_aed5e6919526bcfa5cf4961230bd20e37}{setStorageDir} (std::string filename)
 \item 
-std\+::string \hyperlink{classOptions_a5e8026ed2674f8f5db444b52fea27fda}{storage\+Dir} ()
+std::string \hyperlink{classOptions_a5e8026ed2674f8f5db444b52fea27fda}{storageDir} ()
 \item 
-void \hyperlink{classOptions_ac163281337998af5ca3b7a9617337fef}{set\+Storage\+File} (std\+::string filename=std\+::string(\char`\"{}\char`\"{}))
+void \hyperlink{classOptions_ac163281337998af5ca3b7a9617337fef}{setStorageFile} (std::string filename=std::string(\char`\"{}\char`\"{}))
 \item 
-std\+::string \hyperlink{classOptions_a6661fe4edd501f7e97527b8f9354ef84}{storage\+File} ()
+std::string \hyperlink{classOptions_a6661fe4edd501f7e97527b8f9354ef84}{storageFile} ()
 \item 
-std\+::string \hyperlink{classOptions_a68c501133588cd4b1c80219adb926e8d}{storage\+File\+Full\+Name} ()
+std::string \hyperlink{classOptions_a68c501133588cd4b1c80219adb926e8d}{storageFileFullName} ()
 \item 
-std\+::string \hyperlink{classOptions_ab1cd9f237e9c18fd72323c74565453f8}{data\+File\+Full\+Name} ()
+std::string \hyperlink{classOptions_ab1cd9f237e9c18fd72323c74565453f8}{dataFileFullName} ()
 \item 
-std\+::string \hyperlink{classOptions_a166984c16a957bf2e8e0f0a1ce39eb73}{data\+File} ()
+std::string \hyperlink{classOptions_a166984c16a957bf2e8e0f0a1ce39eb73}{dataFile} ()
 \item 
-std\+::string \hyperlink{classOptions_a739a9b788fc937ad55d10d6b47ff1e8c}{log\+File} ()
+std::string \hyperlink{classOptions_a739a9b788fc937ad55d10d6b47ff1e8c}{logFile} ()
 \item 
-void \hyperlink{classOptions_ae6f39f4b0b4bd260fbb5a2f0b5f4786e}{set\+Data\+Storage} (bool \hyperlink{classOptions_aed7799d10139fa542055b982cb820192}{data\+Storage})
+void \hyperlink{classOptions_ae6f39f4b0b4bd260fbb5a2f0b5f4786e}{setDataStorage} (bool dataStorage)
 \item 
-bool \hyperlink{classOptions_aed7799d10139fa542055b982cb820192}{data\+Storage} ()
+bool \hyperlink{classOptions_aed7799d10139fa542055b982cb820192}{dataStorage} ()
 \item 
-void \hyperlink{classOptions_a96f0288f5317cf371589f4db07e913b0}{set\+Log\+Storage} (bool \hyperlink{classOptions_a33735fffe17485937ab7579d8716b7ee}{log\+Storage})
+void \hyperlink{classOptions_a96f0288f5317cf371589f4db07e913b0}{setLogStorage} (bool logStorage)
 \item 
-bool \hyperlink{classOptions_a33735fffe17485937ab7579d8716b7ee}{log\+Storage} ()
+bool \hyperlink{classOptions_a33735fffe17485937ab7579d8716b7ee}{logStorage} ()
 \item 
-void \hyperlink{classOptions_a52e2995912a71f51c230dd6bf28b6a94}{set\+Log\+Def\+File} (std\+::string \hyperlink{classOptions_aca5ce5262ca717eaad5ff9db92ad1948}{def\+File})
+void \hyperlink{classOptions_a52e2995912a71f51c230dd6bf28b6a94}{setLogDefFile} (std::string defFile)
 \item 
-std\+::string \hyperlink{classOptions_a5d362ec7f7969bd72c3c94b8e3d5ba97}{log\+Def\+File} ()
+std::string \hyperlink{classOptions_a5d362ec7f7969bd72c3c94b8e3d5ba97}{logDefFile} ()
 \item 
-void \hyperlink{classOptions_a3c8bed9867ac5805489d78061e55bd1a}{set\+Def\+File} (std\+::string def)
+void \hyperlink{classOptions_a3c8bed9867ac5805489d78061e55bd1a}{setDefFile} (std::string def)
 \item 
-std\+::string \hyperlink{classOptions_aca5ce5262ca717eaad5ff9db92ad1948}{def\+File} ()
+std::string \hyperlink{classOptions_aca5ce5262ca717eaad5ff9db92ad1948}{defFile} ()
 \item 
-void \hyperlink{classOptions_ae6a0fdaa736948f5040deb3eb6889268}{set\+N\+Evt} (unsigned long \hyperlink{classOptions_ad769b256263a4ac24dd6f989ae724ab7}{n\+Evt})
+void \hyperlink{classOptions_ae6a0fdaa736948f5040deb3eb6889268}{setNEvt} (unsigned long nEvt)
 \item 
-unsigned long \hyperlink{classOptions_ad769b256263a4ac24dd6f989ae724ab7}{n\+Evt} ()
+unsigned long \hyperlink{classOptions_ad769b256263a4ac24dd6f989ae724ab7}{nEvt} ()
 \item 
-void \hyperlink{classOptions_a6d732c0591188469287581bac8a4e3cd}{set\+N\+Evt\+Max} (int \hyperlink{classOptions_ad1f3b03d734c806a2feca418b26bcc9b}{n\+Evt\+Max})
+void \hyperlink{classOptions_a6d732c0591188469287581bac8a4e3cd}{setNEvtMax} (int nEvtMax)
 \item 
-int \hyperlink{classOptions_ad1f3b03d734c806a2feca418b26bcc9b}{n\+Evt\+Max} ()
+int \hyperlink{classOptions_ad1f3b03d734c806a2feca418b26bcc9b}{nEvtMax} ()
 \item 
-void \hyperlink{classOptions_aaa921f68319ea83b5c5a13e37a831c7a}{set\+Time\+Max} (unsigned long \hyperlink{classOptions_a4569b8790af48109c8639bec7b626fa6}{time\+Max})
+void \hyperlink{classOptions_aaa921f68319ea83b5c5a13e37a831c7a}{setTimeMax} (unsigned long timeMax)
 \item 
-unsigned long \hyperlink{classOptions_a4569b8790af48109c8639bec7b626fa6}{time\+Max} ()
+unsigned long \hyperlink{classOptions_a4569b8790af48109c8639bec7b626fa6}{timeMax} ()
 \item 
-void \hyperlink{classOptions_a45368b495036869c67fe0e6bf9abc4e6}{set\+N\+Errors} (unsigned long \hyperlink{classOptions_acc6474323f0bbe17fa844e9a086b90b8}{n\+Errors})
+void \hyperlink{classOptions_a45368b495036869c67fe0e6bf9abc4e6}{setNErrors} (unsigned long nErrors)
 \item 
-unsigned long \hyperlink{classOptions_acc6474323f0bbe17fa844e9a086b90b8}{n\+Errors} ()
+unsigned long \hyperlink{classOptions_acc6474323f0bbe17fa844e9a086b90b8}{nErrors} ()
 \item 
-void \hyperlink{classOptions_a0bf512fc9126cd76acabaa4c3b65d7fb}{inc\+Run\+Number} ()
+void \hyperlink{classOptions_a0bf512fc9126cd76acabaa4c3b65d7fb}{incRunNumber} ()
 \item 
-void \hyperlink{classOptions_aa950f9861182c76c4005668e0b7f012a}{inc\+N\+Evt} ()
+void \hyperlink{classOptions_aa950f9861182c76c4005668e0b7f012a}{incNEvt} ()
 \item 
-void \hyperlink{classOptions_ae5d12fb2571255033ef6b35300921b39}{inc\+N\+Errors} ()
+void \hyperlink{classOptions_ae5d12fb2571255033ef6b35300921b39}{incNErrors} ()
 \item 
-std\+::ofstream $\ast$ \hyperlink{classOptions_acfc9aa4c7dc41691571f2b37d3fe86af}{stream} ()
+std::ofstream $\ast$ \hyperlink{classOptions_acfc9aa4c7dc41691571f2b37d3fe86af}{stream} ()
 \item 
-void \hyperlink{classOptions_af7df7a64e597f0bed79ca979f8144daa}{set\+Stream} (std\+::string file=std\+::string(\char`\"{}\char`\"{}))
+void \hyperlink{classOptions_af7df7a64e597f0bed79ca979f8144daa}{setStream} (std::string file=std::string(\char`\"{}\char`\"{}))
 \item 
 void \hyperlink{classOptions_a3f4593f64bc8c8afc3ade9237adb83e1}{print} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classMsgSvc}{Msg\+Svc} \hyperlink{classOptions_a80d2caed71dd935c104f0133504251e9}{m\+\_\+log}
+\hyperlink{classMsgSvc}{MsgSvc} \hyperlink{classOptions_a80d2caed71dd935c104f0133504251e9}{m\_\-log}
 \item 
-\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926}{Msg\+Svc\+::\+Msg\+Level} \hyperlink{classOptions_a9ecfefe6bf44ff519369f38eb5c8147a}{m\+\_\+log\+Output\+Level}
+\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926}{MsgSvc::MsgLevel} \hyperlink{classOptions_a9ecfefe6bf44ff519369f38eb5c8147a}{m\_\-logOutputLevel}
 \item 
-std\+::string \hyperlink{classOptions_a9d82ad17fc1fd2315fc8a9e8d0d34f33}{m\+\_\+current\+Path}
+std::string \hyperlink{classOptions_a9d82ad17fc1fd2315fc8a9e8d0d34f33}{m\_\-currentPath}
 \item 
-bool \hyperlink{classOptions_a244898bb30c9f716bdc335b4d85d1dfb}{m\+\_\+data\+Storage}
+bool \hyperlink{classOptions_a244898bb30c9f716bdc335b4d85d1dfb}{m\_\-dataStorage}
 \item 
-bool \hyperlink{classOptions_ab7ffad5110df714233470725ef98be6e}{m\+\_\+log\+Storage}
+bool \hyperlink{classOptions_ab7ffad5110df714233470725ef98be6e}{m\_\-logStorage}
 \item 
-std\+::string \hyperlink{classOptions_a88d9ed92fceb1c91e4df59bc1f81ab3b}{m\+\_\+storage\+Dir}
+std::string \hyperlink{classOptions_a88d9ed92fceb1c91e4df59bc1f81ab3b}{m\_\-storageDir}
 \item 
-std\+::string \hyperlink{classOptions_a4d952db4e93d3aae6db86d89faa3677a}{m\+\_\+storage\+File}
+std::string \hyperlink{classOptions_a4d952db4e93d3aae6db86d89faa3677a}{m\_\-storageFile}
 \item 
-std\+::string \hyperlink{classOptions_ab077e872fd03f7bf64f3a354d0c4a2f5}{m\+\_\+storage\+Default}
+std::string \hyperlink{classOptions_ab077e872fd03f7bf64f3a354d0c4a2f5}{m\_\-storageDefault}
 \item 
-std\+::string \hyperlink{classOptions_ad125e827cb30bc9b63875ec45b31ef5e}{m\+\_\+storage\+Path}
+std::string \hyperlink{classOptions_ad125e827cb30bc9b63875ec45b31ef5e}{m\_\-storagePath}
 \item 
-std\+::string \hyperlink{classOptions_a59ff5f2cab2490fb529367de13a2321a}{m\+\_\+def\+File}
+std::string \hyperlink{classOptions_a59ff5f2cab2490fb529367de13a2321a}{m\_\-defFile}
 \item 
-bool \hyperlink{classOptions_a879c2741a290595adb3f74633f3a3987}{m\+\_\+stop\+On\+Error}
+bool \hyperlink{classOptions_a879c2741a290595adb3f74633f3a3987}{m\_\-stopOnError}
 \item 
-unsigned long \hyperlink{classOptions_a5e3bb1f2dfc4bf10cab08a33253cc4db}{m\+\_\+n\+Evt}
+unsigned long \hyperlink{classOptions_a5e3bb1f2dfc4bf10cab08a33253cc4db}{m\_\-nEvt}
 \item 
-unsigned long \hyperlink{classOptions_ae6460776ac3433103d88729a6811fc56}{m\+\_\+n\+Errors}
+unsigned long \hyperlink{classOptions_ae6460776ac3433103d88729a6811fc56}{m\_\-nErrors}
 \item 
-unsigned long \hyperlink{classOptions_acf8f96cbc3245ec4b3b47bd3bfa0d742}{m\+\_\+print\+Freq}
+unsigned long \hyperlink{classOptions_acf8f96cbc3245ec4b3b47bd3bfa0d742}{m\_\-printFreq}
 \item 
-unsigned long \hyperlink{classOptions_aa7f7161bc67732b310937afb137657a0}{m\+\_\+plot\+Freq}
+unsigned long \hyperlink{classOptions_aa7f7161bc67732b310937afb137657a0}{m\_\-plotFreq}
 \item 
-int \hyperlink{classOptions_a825a47258257937a8caa902f5fff7e8a}{m\+\_\+n\+Evt\+Max}
+int \hyperlink{classOptions_a825a47258257937a8caa902f5fff7e8a}{m\_\-nEvtMax}
 \item 
-int \hyperlink{classOptions_a2584abb6745a082f73e2917732cd00e1}{m\+\_\+time\+Max}
+int \hyperlink{classOptions_a2584abb6745a082f73e2917732cd00e1}{m\_\-timeMax}
 \item 
-unsigned long \hyperlink{classOptions_a1762c644c5f87feabe12f84f17a1a351}{m\+\_\+run\+Number}
+unsigned long \hyperlink{classOptions_a1762c644c5f87feabe12f84f17a1a351}{m\_\-runNumber}
 \item 
-bool \hyperlink{classOptions_a2ad2d67b98fc5fbea4cbbd781ccb6183}{m\+\_\+run\+Number\+Management}
+bool \hyperlink{classOptions_a2ad2d67b98fc5fbea4cbbd781ccb6183}{m\_\-runNumberManagement}
 \item 
-bool \hyperlink{classOptions_ae4461f1dd3357c0478098fc32e809405}{m\+\_\+batch}
+bool \hyperlink{classOptions_ae4461f1dd3357c0478098fc32e809405}{m\_\-batch}
 \item 
-std\+::ofstream $\ast$ \hyperlink{classOptions_a8c5485cd614fa90de6b1aa85a7d2191b}{m\+\_\+stream}
+std::ofstream $\ast$ \hyperlink{classOptions_a8c5485cd614fa90de6b1aa85a7d2191b}{m\_\-stream}
 \item 
-std\+::ofstream $\ast$ \hyperlink{classOptions_a65c3a025880fb38373b599b87d600eef}{m\+\_\+log\+Stream}
+std::ofstream $\ast$ \hyperlink{classOptions_a65c3a025880fb38373b599b87d600eef}{m\_\-logStream}
 \item 
-std\+::ofstream $\ast$ \hyperlink{classOptions_aebb2db3fb07ea1f73b27bde841be69d8}{m\+\_\+log\+Def\+Stream}
+std::ofstream $\ast$ \hyperlink{classOptions_aebb2db3fb07ea1f73b27bde841be69d8}{m\_\-logDefStream}
 \item 
-std\+::string \hyperlink{classOptions_abaef6cdcc8422b199084510d173edbe6}{m\+\_\+log\+Def\+File}
+std::string \hyperlink{classOptions_abaef6cdcc8422b199084510d173edbe6}{m\_\-logDefFile}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 25 of file Options.\+h.
-
-
+Definition at line 25 of file Options.h.
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classOptions_ab72fb640172a6109e34c8a5366563753}\label{classOptions_ab72fb640172a6109e34c8a5366563753}} 
+\hypertarget{classOptions_ab72fb640172a6109e34c8a5366563753}{
 \index{Options@{Options}!Options@{Options}}
 \index{Options@{Options}!Options@{Options}}
-\subsubsection{\texorpdfstring{Options()}{Options()}}
-{\footnotesize\ttfamily Options\+::\+Options (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\subsubsection[{Options}]{\setlength{\rightskip}{0pt plus 5cm}Options::Options ()}}
+\label{classOptions_ab72fb640172a6109e34c8a5366563753}
 
 
+Definition at line 19 of file Options.cpp.
 
-Definition at line 19 of file Options.\+cpp.
-
-
-
-References Msg\+Svc\+::\+I\+N\+FO, m\+\_\+log\+Def\+Stream, m\+\_\+log\+Stream, m\+\_\+storage\+Default, m\+\_\+stream, set\+Current\+Path(), set\+Data\+Storage(), set\+Log\+Def\+File(), set\+Log\+Output\+Level(), set\+Log\+Storage(), set\+N\+Errors(), set\+N\+Evt(), set\+N\+Evt\+Max(), set\+Plot\+Freq(), set\+Print\+Freq(), set\+Run\+Number(), set\+Run\+Number\+Management(), set\+Storage\+Dir(), set\+Storage\+File(), set\+Storage\+Path(), set\+Stream(), and set\+Time\+Max().
+References MsgSvc::INFO, m\_\-logDefStream, m\_\-logStream, m\_\-storageDefault, m\_\-stream, setCurrentPath(), setDataStorage(), setLogDefFile(), setLogOutputLevel(), setLogStorage(), setNErrors(), setNEvt(), setNEvtMax(), setPlotFreq(), setPrintFreq(), setRunNumber(), setRunNumberManagement(), setStorageDir(), setStorageFile(), setStoragePath(), setStream(), and setTimeMax().
 
 
 \begin{DoxyCode}
-19                    \{
-20   \hyperlink{classOptions_a65c3a025880fb38373b599b87d600eef}{m\_logStream}    = 0;
-21   \hyperlink{classOptions_aebb2db3fb07ea1f73b27bde841be69d8}{m\_logDefStream} = 0;
-22   \hyperlink{classOptions_a8c5485cd614fa90de6b1aa85a7d2191b}{m\_stream}       = 0;
+19                    {
+20   m_logStream    = 0;
+21   m_logDefStream = 0;
+22   m_stream       = 0;
 23 
-24   \hyperlink{classOptions_a52e2995912a71f51c230dd6bf28b6a94}{setLogDefFile}(\textcolor{stringliteral}{"session.log"});
-25   \hyperlink{classOptions_af7df7a64e597f0bed79ca979f8144daa}{setStream}();
+24   setLogDefFile("session.log");
+25   setStream();
 26 
-27   \hyperlink{classOptions_a5d8ab053c941a944a53c0bfe871058a1}{setLogOutputLevel}( \hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{MsgSvc::INFO} );
+27   setLogOutputLevel( MsgSvc::INFO );
 28 
-29   \hyperlink{classOptions_a6d732c0591188469287581bac8a4e3cd}{setNEvtMax}   ( 100  );
-30   \hyperlink{classOptions_aaa921f68319ea83b5c5a13e37a831c7a}{setTimeMax}   ( 100  );
-31   \hyperlink{classOptions_ae6a0fdaa736948f5040deb3eb6889268}{setNEvt}      ( 0    );
-32   \hyperlink{classOptions_a45368b495036869c67fe0e6bf9abc4e6}{setNErrors}   ( 0    );
-33   \hyperlink{classOptions_aed19a55eb2c418f333bc97615cf4a3a8}{setRunNumber} ( 0    );
-34   \hyperlink{classOptions_adac15a8dbae0183ae7cecc09ebba6887}{setPrintFreq} ( 0    );
-35   \hyperlink{classOptions_a7df298047f1506fa2244cf096da96409}{setPlotFreq} ( 0    );
+29   setNEvtMax   ( 100  );
+30   setTimeMax   ( 100  );
+31   setNEvt      ( 0    );
+32   setNErrors   ( 0    );
+33   setRunNumber ( 0    );
+34   setPrintFreq ( 0    );
+35   setPlotFreq ( 0    );
 36 
-37   \hyperlink{classOptions_a7bf3fb2833021f8900eb105b0a9c02c5}{setRunNumberManagement}(\textcolor{keyword}{true});
+37   setRunNumberManagement(true);
 38 
-39   \hyperlink{classOptions_aed5e6919526bcfa5cf4961230bd20e37}{setStorageDir}(\textcolor{stringliteral}{"Run"});
+39   setStorageDir("Run");
 40 
-41   \hyperlink{classOptions_ab077e872fd03f7bf64f3a354d0c4a2f5}{m\_storageDefault}=std::string(\textcolor{stringliteral}{"run"});
-42   \hyperlink{classOptions_ac163281337998af5ca3b7a9617337fef}{setStorageFile}();
-43   \hyperlink{classOptions_ae6f39f4b0b4bd260fbb5a2f0b5f4786e}{setDataStorage} ( \textcolor{keyword}{false} );
-44   \hyperlink{classOptions_a96f0288f5317cf371589f4db07e913b0}{setLogStorage}  ( \textcolor{keyword}{false} );
+41   m_storageDefault=std::string("run");
+42   setStorageFile();
+43   setDataStorage ( false );
+44   setLogStorage  ( false );
 45 
-46 \textcolor{preprocessor}{#ifdef WIN32}
-47   \textcolor{keywordtype}{char} buffer[\_MAX\_PATH];
-48   getcwd(buffer,\_MAX\_PATH);
-49   \hyperlink{classOptions_a8c32e222956c77ed2ec5387318f91394}{setStoragePath}( std::string(buffer) );
-50 \textcolor{preprocessor}{#else}
-51   \textcolor{keywordtype}{char} buffer[256];
+46 #ifdef WIN32
+47   char buffer[_MAX_PATH];
+48   getcwd(buffer,_MAX_PATH);
+49   setStoragePath( std::string(buffer) );
+50 #else
+51   char buffer[256];
 52   getcwd(buffer,256);
-53   \hyperlink{classOptions_a8c32e222956c77ed2ec5387318f91394}{setStoragePath}( std::string(buffer)+std::string(\textcolor{stringliteral}{"/data"}) );
-54 \textcolor{preprocessor}{#endif}
+53   setStoragePath( std::string(buffer)+std::string("/data") );
+54 #endif
 55 
-56   \hyperlink{classOptions_a3cebd8308183414ef2e0de0e7922c87a}{setCurrentPath}( std::string(buffer) );
+56   setCurrentPath( std::string(buffer) );
 57 
-58 \}
+58 }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_a86ddb85b183f8b58af5481f30a42fa92}\label{classOptions_a86ddb85b183f8b58af5481f30a42fa92}} 
-\index{Options@{Options}!````~Options@{$\sim$\+Options}}
-\index{````~Options@{$\sim$\+Options}!Options@{Options}}
-\subsubsection{\texorpdfstring{$\sim$\+Options()}{~Options()}}
-{\footnotesize\ttfamily Options\+::$\sim$\+Options (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\hypertarget{classOptions_a86ddb85b183f8b58af5481f30a42fa92}{
+\index{Options@{Options}!$\sim$Options@{$\sim$Options}}
+\index{$\sim$Options@{$\sim$Options}!Options@{Options}}
+\subsubsection[{$\sim$Options}]{\setlength{\rightskip}{0pt plus 5cm}Options::$\sim$Options ()}}
+\label{classOptions_a86ddb85b183f8b58af5481f30a42fa92}
 
 
+Definition at line 63 of file Options.cpp.
 
-Definition at line 63 of file Options.\+cpp.
-
-
-
-References m\+\_\+log\+Def\+Stream.
+References m\_\-logDefStream.
 
 
 \begin{DoxyCode}
-63                   \{
-64   \textcolor{keywordflow}{if} ( 0!=\hyperlink{classOptions_aebb2db3fb07ea1f73b27bde841be69d8}{m\_logDefStream})\{
-65     \hyperlink{classOptions_aebb2db3fb07ea1f73b27bde841be69d8}{m\_logDefStream}->close();
-66     \textcolor{keyword}{delete} \hyperlink{classOptions_aebb2db3fb07ea1f73b27bde841be69d8}{m\_logDefStream};
-67     \hyperlink{classOptions_aebb2db3fb07ea1f73b27bde841be69d8}{m\_logDefStream}=0;
-68   \}
-69 \}
+63                   {
+64   if ( 0!=m_logDefStream){
+65     m_logDefStream->close();
+66     delete m_logDefStream;
+67     m_logDefStream=0;
+68   }
+69 }
 \end{DoxyCode}
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classOptions_ab9cf7442a712fe8593f6cf5cfff36a5d}\label{classOptions_ab9cf7442a712fe8593f6cf5cfff36a5d}} 
-\index{Options@{Options}!current\+Path@{current\+Path}}
-\index{current\+Path@{current\+Path}!Options@{Options}}
-\subsubsection{\texorpdfstring{current\+Path()}{currentPath()}}
-{\footnotesize\ttfamily std\+::string Options\+::current\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Get accessor to member m\+\_\+current\+Path \begin{DoxyReturn}{Returns}
-the current value of m\+\_\+current\+Path 
+\hypertarget{classOptions_ab9cf7442a712fe8593f6cf5cfff36a5d}{
+\index{Options@{Options}!currentPath@{currentPath}}
+\index{currentPath@{currentPath}!Options@{Options}}
+\subsubsection[{currentPath}]{\setlength{\rightskip}{0pt plus 5cm}std::string Options::currentPath ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_ab9cf7442a712fe8593f6cf5cfff36a5d}
+Get accessor to member m\_\-currentPath \begin{DoxyReturn}{Returns}
+the current value of m\_\-currentPath 
 \end{DoxyReturn}
 
 
-Definition at line 135 of file Options.\+h.
+Definition at line 135 of file Options.h.
 
+References m\_\-currentPath.
 
-
-References m\+\_\+current\+Path.
-
-
-
-Referenced by export\+\_\+base(), and set\+Current\+Path().
+Referenced by export\_\-base().
 
 
 \begin{DoxyCode}
-135                                  \{
-136                 \textcolor{keywordflow}{return} \hyperlink{classOptions_a9d82ad17fc1fd2315fc8a9e8d0d34f33}{m\_currentPath};
-137         \}
+135                                  {
+136                 return m_currentPath;
+137         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_a166984c16a957bf2e8e0f0a1ce39eb73}\label{classOptions_a166984c16a957bf2e8e0f0a1ce39eb73}} 
-\index{Options@{Options}!data\+File@{data\+File}}
-\index{data\+File@{data\+File}!Options@{Options}}
-\subsubsection{\texorpdfstring{data\+File()}{dataFile()}}
-{\footnotesize\ttfamily std\+::string Options\+::data\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-Get accessor to member m\+\_\+data\+File \begin{DoxyReturn}{Returns}
-the current value of m\+\_\+data\+File 
+\hypertarget{classOptions_a166984c16a957bf2e8e0f0a1ce39eb73}{
+\index{Options@{Options}!dataFile@{dataFile}}
+\index{dataFile@{dataFile}!Options@{Options}}
+\subsubsection[{dataFile}]{\setlength{\rightskip}{0pt plus 5cm}std::string Options::dataFile ()}}
+\label{classOptions_a166984c16a957bf2e8e0f0a1ce39eb73}
+Get accessor to member m\_\-dataFile \begin{DoxyReturn}{Returns}
+the current value of m\_\-dataFile 
 \end{DoxyReturn}
 
 
-Definition at line 83 of file Options.\+cpp.
+Definition at line 83 of file Options.cpp.
 
+References m\_\-storageFile.
 
-
-References m\+\_\+storage\+File.
-
-
-
-Referenced by data\+File\+Full\+Name(), and export\+\_\+base().
+Referenced by export\_\-base().
 
 
 \begin{DoxyCode}
-83                              \{
+83                              {
 84   std::string id;
-85   \textcolor{keywordtype}{id}.append(std::string(\textcolor{stringliteral}{".root"}));
-86   std::string file = \hyperlink{classOptions_a4d952db4e93d3aae6db86d89faa3677a}{m\_storageFile}+id;
-87   \textcolor{keywordflow}{return} file;
-88 \}
+85   id.append(std::string(".root"));
+86   std::string file = m_storageFile+id;
+87   return file;
+88 }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_ab1cd9f237e9c18fd72323c74565453f8}\label{classOptions_ab1cd9f237e9c18fd72323c74565453f8}} 
-\index{Options@{Options}!data\+File\+Full\+Name@{data\+File\+Full\+Name}}
-\index{data\+File\+Full\+Name@{data\+File\+Full\+Name}!Options@{Options}}
-\subsubsection{\texorpdfstring{data\+File\+Full\+Name()}{dataFileFullName()}}
-{\footnotesize\ttfamily std\+::string Options\+::data\+File\+Full\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Get accessor to member m\+\_\+storage\+File \begin{DoxyReturn}{Returns}
-the current value of m\+\_\+storage\+File 
+\hypertarget{classOptions_ab1cd9f237e9c18fd72323c74565453f8}{
+\index{Options@{Options}!dataFileFullName@{dataFileFullName}}
+\index{dataFileFullName@{dataFileFullName}!Options@{Options}}
+\subsubsection[{dataFileFullName}]{\setlength{\rightskip}{0pt plus 5cm}std::string Options::dataFileFullName ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_ab1cd9f237e9c18fd72323c74565453f8}
+Get accessor to member m\_\-storageFile \begin{DoxyReturn}{Returns}
+the current value of m\_\-storageFile 
 \end{DoxyReturn}
 
 
-Definition at line 219 of file Options.\+h.
+Definition at line 219 of file Options.h.
 
+References m\_\-storageFile, and storageFullPath().
 
-
-References data\+File(), log\+File(), m\+\_\+storage\+File, and storage\+Full\+Path().
-
-
-
-Referenced by Processus\+::close\+Root\+File(), export\+\_\+base(), and Processus\+::open\+Root\+File().
+Referenced by Processus::closeRootFile(), export\_\-base(), and Processus::openRootFile().
 
 
 \begin{DoxyCode}
-219                                      \{
-220                 std::string file = \hyperlink{classOptions_aa5fe6b85088f3012226869480790a383}{storageFullPath}();
-221                 file.append(\textcolor{stringliteral}{"/"});
-222                 file.append(\hyperlink{classOptions_a4d952db4e93d3aae6db86d89faa3677a}{m\_storageFile});
-223                 file.append(\textcolor{stringliteral}{".root"});
-224                 \textcolor{comment}{//    std::cout << " OPTIONS ->" << file << " " << storageFullPath()<< " " << m\_storageFile
-        << std::endl;}
-225                 \textcolor{keywordflow}{return} file;
-226         \}
+219                                      {
+220                 std::string file = storageFullPath();
+221                 file.append("/");
+222                 file.append(m_storageFile);
+223                 file.append(".root");
+224                 //    std::cout << " OPTIONS ->" << file << " " << storageFullPat
+      h()<< " " << m_storageFile  << std::endl;
+225                 return file;
+226         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_aed7799d10139fa542055b982cb820192}\label{classOptions_aed7799d10139fa542055b982cb820192}} 
-\index{Options@{Options}!data\+Storage@{data\+Storage}}
-\index{data\+Storage@{data\+Storage}!Options@{Options}}
-\subsubsection{\texorpdfstring{data\+Storage()}{dataStorage()}}
-{\footnotesize\ttfamily bool Options\+::data\+Storage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Get accessor to member m\+\_\+data\+Storage \begin{DoxyReturn}{Returns}
-the current value of m\+\_\+data\+Storage 
+\hypertarget{classOptions_aed7799d10139fa542055b982cb820192}{
+\index{Options@{Options}!dataStorage@{dataStorage}}
+\index{dataStorage@{dataStorage}!Options@{Options}}
+\subsubsection[{dataStorage}]{\setlength{\rightskip}{0pt plus 5cm}bool Options::dataStorage ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_aed7799d10139fa542055b982cb820192}
+Get accessor to member m\_\-dataStorage \begin{DoxyReturn}{Returns}
+the current value of m\_\-dataStorage 
 \end{DoxyReturn}
 
 
-Definition at line 252 of file Options.\+h.
+Definition at line 252 of file Options.h.
 
+References m\_\-dataStorage.
 
-
-References m\+\_\+data\+Storage.
-
-
-
-Referenced by Processus\+::close\+Root\+File(), Emulate\+F\+E\+::execute(), export\+\_\+base(), Emulate\+F\+E\+::initialize(), A\+D\+C\+Measurement\+::initialize(), Processus\+::open\+Root\+File(), Application\+::prepare(), and set\+Data\+Storage().
+Referenced by Processus::closeRootFile(), EmulateFE::execute(), export\_\-base(), ADCMeasurement::initialize(), EmulateFE::initialize(), Processus::openRootFile(), and Application::prepare().
 
 
 \begin{DoxyCode}
-252                             \{
-253                 \textcolor{keywordflow}{return} \hyperlink{classOptions_a244898bb30c9f716bdc335b4d85d1dfb}{m\_dataStorage};
-254         \}
+252                             {
+253                 return m_dataStorage;
+254         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_aca5ce5262ca717eaad5ff9db92ad1948}\label{classOptions_aca5ce5262ca717eaad5ff9db92ad1948}} 
-\index{Options@{Options}!def\+File@{def\+File}}
-\index{def\+File@{def\+File}!Options@{Options}}
-\subsubsection{\texorpdfstring{def\+File()}{defFile()}}
-{\footnotesize\ttfamily std\+::string Options\+::def\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Get accessor to member m\+\_\+def\+File \begin{DoxyReturn}{Returns}
-the current value of m\+\_\+def\+File 
+\hypertarget{classOptions_aca5ce5262ca717eaad5ff9db92ad1948}{
+\index{Options@{Options}!defFile@{defFile}}
+\index{defFile@{defFile}!Options@{Options}}
+\subsubsection[{defFile}]{\setlength{\rightskip}{0pt plus 5cm}std::string Options::defFile ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_aca5ce5262ca717eaad5ff9db92ad1948}
+Get accessor to member m\_\-defFile \begin{DoxyReturn}{Returns}
+the current value of m\_\-defFile 
 \end{DoxyReturn}
 
 
-Definition at line 301 of file Options.\+h.
+Definition at line 301 of file Options.h.
 
+References m\_\-defFile.
 
-
-References m\+\_\+def\+File.
-
-
-
-Referenced by export\+\_\+base(), and set\+Log\+Def\+File().
+Referenced by export\_\-base().
 
 
 \begin{DoxyCode}
-301                              \{
-302                 \textcolor{keywordflow}{return} \hyperlink{classOptions_a59ff5f2cab2490fb529367de13a2321a}{m\_defFile};
-303         \}
+301                              {
+302                 return m_defFile;
+303         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_ae5d12fb2571255033ef6b35300921b39}\label{classOptions_ae5d12fb2571255033ef6b35300921b39}} 
-\index{Options@{Options}!inc\+N\+Errors@{inc\+N\+Errors}}
-\index{inc\+N\+Errors@{inc\+N\+Errors}!Options@{Options}}
-\subsubsection{\texorpdfstring{inc\+N\+Errors()}{incNErrors()}}
-{\footnotesize\ttfamily void Options\+::inc\+N\+Errors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
+\hypertarget{classOptions_ae5d12fb2571255033ef6b35300921b39}{
+\index{Options@{Options}!incNErrors@{incNErrors}}
+\index{incNErrors@{incNErrors}!Options@{Options}}
+\subsubsection[{incNErrors}]{\setlength{\rightskip}{0pt plus 5cm}void Options::incNErrors ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_ae5d12fb2571255033ef6b35300921b39}
 Incrementation of the current number of errors 
 
-Definition at line 384 of file Options.\+h.
+Definition at line 384 of file Options.h.
 
+References nErrors(), and setNErrors().
 
-
-References n\+Errors(), and set\+N\+Errors().
-
-
-
-Referenced by export\+\_\+base(), and Application\+::loop().
+Referenced by export\_\-base(), and Application::loop().
 
 
 \begin{DoxyCode}
-384                           \{
-385                 \hyperlink{classOptions_a45368b495036869c67fe0e6bf9abc4e6}{setNErrors} ( \hyperlink{classOptions_acc6474323f0bbe17fa844e9a086b90b8}{nErrors}() + 1 );
-386         \}
+384                           {
+385                 setNErrors ( nErrors() + 1 );
+386         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_aa950f9861182c76c4005668e0b7f012a}\label{classOptions_aa950f9861182c76c4005668e0b7f012a}} 
-\index{Options@{Options}!inc\+N\+Evt@{inc\+N\+Evt}}
-\index{inc\+N\+Evt@{inc\+N\+Evt}!Options@{Options}}
-\subsubsection{\texorpdfstring{inc\+N\+Evt()}{incNEvt()}}
-{\footnotesize\ttfamily void Options\+::inc\+N\+Evt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
+\hypertarget{classOptions_aa950f9861182c76c4005668e0b7f012a}{
+\index{Options@{Options}!incNEvt@{incNEvt}}
+\index{incNEvt@{incNEvt}!Options@{Options}}
+\subsubsection[{incNEvt}]{\setlength{\rightskip}{0pt plus 5cm}void Options::incNEvt ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_aa950f9861182c76c4005668e0b7f012a}
 Incrementation of the current evt number 
 
-Definition at line 377 of file Options.\+h.
+Definition at line 377 of file Options.h.
 
+References nEvt(), and setNEvt().
 
-
-References n\+Evt(), and set\+N\+Evt().
-
-
-
-Referenced by export\+\_\+base(), and Application\+::loop().
+Referenced by export\_\-base(), and Application::loop().
 
 
 \begin{DoxyCode}
-377                        \{
-378                 \hyperlink{classOptions_ae6a0fdaa736948f5040deb3eb6889268}{setNEvt} ( \hyperlink{classOptions_ad769b256263a4ac24dd6f989ae724ab7}{nEvt}() + 1 );
-379         \}
+377                        {
+378                 setNEvt ( nEvt() + 1 );
+379         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_a0bf512fc9126cd76acabaa4c3b65d7fb}\label{classOptions_a0bf512fc9126cd76acabaa4c3b65d7fb}} 
-\index{Options@{Options}!inc\+Run\+Number@{inc\+Run\+Number}}
-\index{inc\+Run\+Number@{inc\+Run\+Number}!Options@{Options}}
-\subsubsection{\texorpdfstring{inc\+Run\+Number()}{incRunNumber()}}
-{\footnotesize\ttfamily void Options\+::inc\+Run\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
+\hypertarget{classOptions_a0bf512fc9126cd76acabaa4c3b65d7fb}{
+\index{Options@{Options}!incRunNumber@{incRunNumber}}
+\index{incRunNumber@{incRunNumber}!Options@{Options}}
+\subsubsection[{incRunNumber}]{\setlength{\rightskip}{0pt plus 5cm}void Options::incRunNumber ()}}
+\label{classOptions_a0bf512fc9126cd76acabaa4c3b65d7fb}
 Incrementation of the current \hyperlink{classRun}{Run} number 
 
-Definition at line 74 of file Options.\+cpp.
+Definition at line 74 of file Options.cpp.
 
+References runNumber(), and setRunNumber().
 
-
-References run\+Number(), and set\+Run\+Number().
-
-
-
-Referenced by export\+\_\+base(), n\+Errors(), and Application\+::terminate().
+Referenced by export\_\-base(), and Application::terminate().
 
 
 \begin{DoxyCode}
-74                              \{
-75   \hyperlink{classOptions_aed19a55eb2c418f333bc97615cf4a3a8}{setRunNumber}( \hyperlink{classOptions_a2d9447919fe90f9ce8df5530526cbb27}{runNumber}()+1 );
-76 \}
+74                              {
+75   setRunNumber( runNumber()+1 );
+76 }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_a5d362ec7f7969bd72c3c94b8e3d5ba97}\label{classOptions_a5d362ec7f7969bd72c3c94b8e3d5ba97}} 
-\index{Options@{Options}!log\+Def\+File@{log\+Def\+File}}
-\index{log\+Def\+File@{log\+Def\+File}!Options@{Options}}
-\subsubsection{\texorpdfstring{log\+Def\+File()}{logDefFile()}}
-{\footnotesize\ttfamily std\+::string Options\+::log\+Def\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Get accessor to member m\+\_\+log\+Def\+Storage \begin{DoxyReturn}{Returns}
-the current value of m\+\_\+log\+Def\+Storage 
+\hypertarget{classOptions_a5d362ec7f7969bd72c3c94b8e3d5ba97}{
+\index{Options@{Options}!logDefFile@{logDefFile}}
+\index{logDefFile@{logDefFile}!Options@{Options}}
+\subsubsection[{logDefFile}]{\setlength{\rightskip}{0pt plus 5cm}std::string Options::logDefFile ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_a5d362ec7f7969bd72c3c94b8e3d5ba97}
+Get accessor to member m\_\-logDefStorage \begin{DoxyReturn}{Returns}
+the current value of m\_\-logDefStorage 
 \end{DoxyReturn}
 
 
-Definition at line 285 of file Options.\+h.
+Definition at line 285 of file Options.h.
 
+References m\_\-logDefFile.
 
-
-References m\+\_\+log\+Def\+File.
-
-
-
-Referenced by export\+\_\+base().
+Referenced by export\_\-base().
 
 
 \begin{DoxyCode}
-285                                 \{
-286                 \textcolor{keywordflow}{return} \hyperlink{classOptions_abaef6cdcc8422b199084510d173edbe6}{m\_logDefFile};
-287         \}
+285                                 {
+286                 return m_logDefFile;
+287         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_a739a9b788fc937ad55d10d6b47ff1e8c}\label{classOptions_a739a9b788fc937ad55d10d6b47ff1e8c}} 
-\index{Options@{Options}!log\+File@{log\+File}}
-\index{log\+File@{log\+File}!Options@{Options}}
-\subsubsection{\texorpdfstring{log\+File()}{logFile()}}
-{\footnotesize\ttfamily std\+::string Options\+::log\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-Get accessor to member m\+\_\+log\+File \begin{DoxyReturn}{Returns}
-the current value of m\+\_\+log\+File 
+\hypertarget{classOptions_a739a9b788fc937ad55d10d6b47ff1e8c}{
+\index{Options@{Options}!logFile@{logFile}}
+\index{logFile@{logFile}!Options@{Options}}
+\subsubsection[{logFile}]{\setlength{\rightskip}{0pt plus 5cm}std::string Options::logFile ()}}
+\label{classOptions_a739a9b788fc937ad55d10d6b47ff1e8c}
+Get accessor to member m\_\-logFile \begin{DoxyReturn}{Returns}
+the current value of m\_\-logFile 
 \end{DoxyReturn}
 
 
-Definition at line 95 of file Options.\+cpp.
+Definition at line 95 of file Options.cpp.
 
+References m\_\-storageFile.
 
-
-References m\+\_\+storage\+File.
-
-
-
-Referenced by data\+File\+Full\+Name(), and export\+\_\+base().
+Referenced by export\_\-base().
 
 
 \begin{DoxyCode}
-95                             \{
+95                             {
 96   std::string id;
-97   \textcolor{keywordtype}{id}.append(std::string(\textcolor{stringliteral}{".log"}));
-98   std::string file = \hyperlink{classOptions_a4d952db4e93d3aae6db86d89faa3677a}{m\_storageFile}+id;
-99   \textcolor{keywordflow}{return} file;
-100 \}
+97   id.append(std::string(".log"));
+98   std::string file = m_storageFile+id;
+99   return file;
+100 }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_a2d11716f34070dd7991648a26eb5d244}\label{classOptions_a2d11716f34070dd7991648a26eb5d244}} 
-\index{Options@{Options}!log\+Output\+Level@{log\+Output\+Level}}
-\index{log\+Output\+Level@{log\+Output\+Level}!Options@{Options}}
-\subsubsection{\texorpdfstring{log\+Output\+Level()}{logOutputLevel()}}
-{\footnotesize\ttfamily \hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926}{Msg\+Svc\+::\+Msg\+Level} Options\+::log\+Output\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Get accessor to member m\+\_\+log\+Output\+Level \begin{DoxyReturn}{Returns}
-the current value of m\+\_\+log\+Output\+Level 
+\hypertarget{classOptions_a2d11716f34070dd7991648a26eb5d244}{
+\index{Options@{Options}!logOutputLevel@{logOutputLevel}}
+\index{logOutputLevel@{logOutputLevel}!Options@{Options}}
+\subsubsection[{logOutputLevel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MsgSvc::MsgLevel} Options::logOutputLevel ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_a2d11716f34070dd7991648a26eb5d244}
+Get accessor to member m\_\-logOutputLevel \begin{DoxyReturn}{Returns}
+the current value of m\_\-logOutputLevel 
 \end{DoxyReturn}
 
 
-Definition at line 42 of file Options.\+h.
+Definition at line 42 of file Options.h.
 
+References m\_\-logOutputLevel.
 
-
-References m\+\_\+log\+Output\+Level.
-
-
-
-Referenced by export\+\_\+base(), and set\+Log\+Output\+Level().
+Referenced by export\_\-base().
 
 
 \begin{DoxyCode}
-42                                          \{
-43                 \textcolor{keywordflow}{return} \hyperlink{classOptions_a9ecfefe6bf44ff519369f38eb5c8147a}{m\_logOutputLevel};
-44         \}
+42                                          {
+43                 return m_logOutputLevel;
+44         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_a33735fffe17485937ab7579d8716b7ee}\label{classOptions_a33735fffe17485937ab7579d8716b7ee}} 
-\index{Options@{Options}!log\+Storage@{log\+Storage}}
-\index{log\+Storage@{log\+Storage}!Options@{Options}}
-\subsubsection{\texorpdfstring{log\+Storage()}{logStorage()}}
-{\footnotesize\ttfamily bool Options\+::log\+Storage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Get accessor to member m\+\_\+log\+Storage \begin{DoxyReturn}{Returns}
-the current value of m\+\_\+log\+Storage 
+\hypertarget{classOptions_a33735fffe17485937ab7579d8716b7ee}{
+\index{Options@{Options}!logStorage@{logStorage}}
+\index{logStorage@{logStorage}!Options@{Options}}
+\subsubsection[{logStorage}]{\setlength{\rightskip}{0pt plus 5cm}bool Options::logStorage ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_a33735fffe17485937ab7579d8716b7ee}
+Get accessor to member m\_\-logStorage \begin{DoxyReturn}{Returns}
+the current value of m\_\-logStorage 
 \end{DoxyReturn}
 
 
-Definition at line 268 of file Options.\+h.
+Definition at line 268 of file Options.h.
 
+References m\_\-logStorage.
 
-
-References m\+\_\+log\+Storage.
-
-
-
-Referenced by export\+\_\+base(), Application\+::prepare(), set\+Log\+Storage(), set\+Stream(), and Application\+::terminate().
+Referenced by export\_\-base(), Application::prepare(), setStream(), and Application::terminate().
 
 
 \begin{DoxyCode}
-268                            \{
-269                 \textcolor{keywordflow}{return} \hyperlink{classOptions_ab7ffad5110df714233470725ef98be6e}{m\_logStorage};
-270         \}
+268                            {
+269                 return m_logStorage;
+270         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_acc6474323f0bbe17fa844e9a086b90b8}\label{classOptions_acc6474323f0bbe17fa844e9a086b90b8}} 
-\index{Options@{Options}!n\+Errors@{n\+Errors}}
-\index{n\+Errors@{n\+Errors}!Options@{Options}}
-\subsubsection{\texorpdfstring{n\+Errors()}{nErrors()}}
-{\footnotesize\ttfamily unsigned long Options\+::n\+Errors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Get accessor to member m\+\_\+n\+Errors \begin{DoxyReturn}{Returns}
-the current value of m\+\_\+n\+Errors 
+\hypertarget{classOptions_acc6474323f0bbe17fa844e9a086b90b8}{
+\index{Options@{Options}!nErrors@{nErrors}}
+\index{nErrors@{nErrors}!Options@{Options}}
+\subsubsection[{nErrors}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Options::nErrors ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_acc6474323f0bbe17fa844e9a086b90b8}
+Get accessor to member m\_\-nErrors \begin{DoxyReturn}{Returns}
+the current value of m\_\-nErrors 
 \end{DoxyReturn}
 
 
-Definition at line 365 of file Options.\+h.
+Definition at line 365 of file Options.h.
 
+References m\_\-nErrors.
 
-
-References inc\+Run\+Number(), and m\+\_\+n\+Errors.
-
-
-
-Referenced by Processus\+::end\+Processing(), export\+\_\+base(), inc\+N\+Errors(), Application\+::loop(), set\+N\+Errors(), Application\+::set\+State(), and Processus\+::set\+State().
+Referenced by Processus::endProcessing(), export\_\-base(), incNErrors(), Application::loop(), Processus::setState(), and Application::setState().
 
 
 \begin{DoxyCode}
-365                                  \{
-366                 \textcolor{keywordflow}{return} \hyperlink{classOptions_ae6460776ac3433103d88729a6811fc56}{m\_nErrors};
-367         \}
+365                                  {
+366                 return m_nErrors;
+367         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_ad769b256263a4ac24dd6f989ae724ab7}\label{classOptions_ad769b256263a4ac24dd6f989ae724ab7}} 
-\index{Options@{Options}!n\+Evt@{n\+Evt}}
-\index{n\+Evt@{n\+Evt}!Options@{Options}}
-\subsubsection{\texorpdfstring{n\+Evt()}{nEvt()}}
-{\footnotesize\ttfamily unsigned long Options\+::n\+Evt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Get accessor to member m\+\_\+n\+Evt \begin{DoxyReturn}{Returns}
-the current value of m\+\_\+n\+Evt 
+\hypertarget{classOptions_ad769b256263a4ac24dd6f989ae724ab7}{
+\index{Options@{Options}!nEvt@{nEvt}}
+\index{nEvt@{nEvt}!Options@{Options}}
+\subsubsection[{nEvt}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Options::nEvt ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_ad769b256263a4ac24dd6f989ae724ab7}
+Get accessor to member m\_\-nEvt \begin{DoxyReturn}{Returns}
+the current value of m\_\-nEvt 
 \end{DoxyReturn}
 
 
-Definition at line 317 of file Options.\+h.
+Definition at line 317 of file Options.h.
 
+References m\_\-nEvt.
 
-
-References m\+\_\+n\+Evt.
-
-
-
-Referenced by Processus\+::end\+Processing(), Acquisition\+::execute(), A\+D\+C\+Measurement\+::execute(), Current\+Measurement\+::execute(), export\+\_\+base(), inc\+N\+Evt(), Application\+::loop(), set\+N\+Evt(), Application\+::set\+State(), Processus\+::set\+State(), Application\+::svc\+Running(), and Application\+::terminate().
+Referenced by Processus::endProcessing(), CurrentMeasurement::execute(), ADCMeasurement::execute(), Acquisition::execute(), export\_\-base(), incNEvt(), Application::loop(), Processus::setState(), Application::setState(), Application::svcRunning(), and Application::terminate().
 
 
 \begin{DoxyCode}
-317                               \{
-318                 \textcolor{keywordflow}{return} \hyperlink{classOptions_a5e3bb1f2dfc4bf10cab08a33253cc4db}{m\_nEvt};
-319         \}
+317                               {
+318                 return m_nEvt;
+319         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_ad1f3b03d734c806a2feca418b26bcc9b}\label{classOptions_ad1f3b03d734c806a2feca418b26bcc9b}} 
-\index{Options@{Options}!n\+Evt\+Max@{n\+Evt\+Max}}
-\index{n\+Evt\+Max@{n\+Evt\+Max}!Options@{Options}}
-\subsubsection{\texorpdfstring{n\+Evt\+Max()}{nEvtMax()}}
-{\footnotesize\ttfamily int Options\+::n\+Evt\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Get accessor to member m\+\_\+n\+Evt\+Max \begin{DoxyReturn}{Returns}
-the current value of m\+\_\+n\+Evt\+Max 
+\hypertarget{classOptions_ad1f3b03d734c806a2feca418b26bcc9b}{
+\index{Options@{Options}!nEvtMax@{nEvtMax}}
+\index{nEvtMax@{nEvtMax}!Options@{Options}}
+\subsubsection[{nEvtMax}]{\setlength{\rightskip}{0pt plus 5cm}int Options::nEvtMax ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_ad1f3b03d734c806a2feca418b26bcc9b}
+Get accessor to member m\_\-nEvtMax \begin{DoxyReturn}{Returns}
+the current value of m\_\-nEvtMax 
 \end{DoxyReturn}
 
 
-Definition at line 333 of file Options.\+h.
+Definition at line 333 of file Options.h.
 
+References m\_\-nEvtMax.
 
-
-References m\+\_\+n\+Evt\+Max.
-
-
-
-Referenced by export\+\_\+base(), set\+N\+Evt\+Max(), Application\+::set\+State(), and Application\+::svc\+Running().
+Referenced by export\_\-base(), Application::setState(), and Application::svcRunning().
 
 
 \begin{DoxyCode}
-333                        \{
-334                 \textcolor{keywordflow}{return} \hyperlink{classOptions_a825a47258257937a8caa902f5fff7e8a}{m\_nEvtMax};
-335         \}
+333                        {
+334                 return m_nEvtMax;
+335         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_a1e20abb20c1a2187f9455b39cd9d26ae}\label{classOptions_a1e20abb20c1a2187f9455b39cd9d26ae}} 
-\index{Options@{Options}!plot\+Freq@{plot\+Freq}}
-\index{plot\+Freq@{plot\+Freq}!Options@{Options}}
-\subsubsection{\texorpdfstring{plot\+Freq()}{plotFreq()}}
-{\footnotesize\ttfamily unsigned long Options\+::plot\+Freq (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Get accessor to member m\+\_\+plot\+Freq \begin{DoxyReturn}{Returns}
-the current value of m\+\_\+plot\+Freq 
+\hypertarget{classOptions_a1e20abb20c1a2187f9455b39cd9d26ae}{
+\index{Options@{Options}!plotFreq@{plotFreq}}
+\index{plotFreq@{plotFreq}!Options@{Options}}
+\subsubsection[{plotFreq}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Options::plotFreq ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_a1e20abb20c1a2187f9455b39cd9d26ae}
+Get accessor to member m\_\-plotFreq \begin{DoxyReturn}{Returns}
+the current value of m\_\-plotFreq 
 \end{DoxyReturn}
 
 
-Definition at line 74 of file Options.\+h.
+Definition at line 74 of file Options.h.
 
+References m\_\-plotFreq.
 
-
-References m\+\_\+plot\+Freq.
-
-
-
-Referenced by export\+\_\+base(), and set\+Plot\+Freq().
+Referenced by export\_\-base().
 
 
 \begin{DoxyCode}
-74                                   \{
-75                 \textcolor{keywordflow}{return} \hyperlink{classOptions_aa7f7161bc67732b310937afb137657a0}{m\_plotFreq};
-76         \}
+74                                   {
+75                 return m_plotFreq;
+76         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_a3f4593f64bc8c8afc3ade9237adb83e1}\label{classOptions_a3f4593f64bc8c8afc3ade9237adb83e1}} 
+\hypertarget{classOptions_a3f4593f64bc8c8afc3ade9237adb83e1}{
 \index{Options@{Options}!print@{print}}
 \index{print@{print}!Options@{Options}}
-\subsubsection{\texorpdfstring{print()}{print()}}
-{\footnotesize\ttfamily void Options\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void Options::print ()}}
+\label{classOptions_a3f4593f64bc8c8afc3ade9237adb83e1}
 
 
+Definition at line 107 of file Options.cpp.
 
-Definition at line 107 of file Options.\+cpp.
+References MsgSvc::INFO, m\_\-batch, m\_\-currentPath, m\_\-dataStorage, m\_\-defFile, m\_\-log, m\_\-logDefFile, m\_\-logStorage, m\_\-nErrors, m\_\-nEvt, m\_\-nEvtMax, m\_\-plotFreq, m\_\-printFreq, m\_\-runNumber, m\_\-runNumberManagement, m\_\-stopOnError, m\_\-storageDefault, m\_\-storageDir, m\_\-storageFile, m\_\-storagePath, and MsgSvc::msgSvc().
 
-
-
-References Msg\+Svc\+::\+I\+N\+FO, m\+\_\+batch, m\+\_\+current\+Path, m\+\_\+data\+Storage, m\+\_\+def\+File, m\+\_\+log, m\+\_\+log\+Def\+File, m\+\_\+log\+Storage, m\+\_\+n\+Errors, m\+\_\+n\+Evt, m\+\_\+n\+Evt\+Max, m\+\_\+plot\+Freq, m\+\_\+print\+Freq, m\+\_\+run\+Number, m\+\_\+run\+Number\+Management, m\+\_\+stop\+On\+Error, m\+\_\+storage\+Default, m\+\_\+storage\+Dir, m\+\_\+storage\+File, m\+\_\+storage\+Path, and Msg\+Svc\+::msg\+Svc().
-
-
-
-Referenced by export\+\_\+base(), and set\+Stream().
+Referenced by export\_\-base().
 
 
 \begin{DoxyCode}
-107                    \{
-108   \textcolor{keywordtype}{char} output[250];
-109   sprintf(output,\textcolor{stringliteral}{"Events to process           : %ld"},\hyperlink{classOptions_a825a47258257937a8caa902f5fff7e8a}{m\_nEvtMax});               
-      \hyperlink{classOptions_a80d2caed71dd935c104f0133504251e9}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc}(\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{MsgSvc::INFO},output,\textcolor{stringliteral}{"Options::help"});\textcolor{comment}{//< number of events to process}
-110   sprintf(output,\textcolor{stringliteral}{"Current run number          : %ld"},\hyperlink{classOptions_a1762c644c5f87feabe12f84f17a1a351}{m\_runNumber});             
-      \hyperlink{classOptions_a80d2caed71dd935c104f0133504251e9}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc}(\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{MsgSvc::INFO},output,\textcolor{stringliteral}{"Options::help"});\textcolor{comment}{//< Current Run Number}
-111   sprintf(output,\textcolor{stringliteral}{"Events processed            : %ld"},\hyperlink{classOptions_a5e3bb1f2dfc4bf10cab08a33253cc4db}{m\_nEvt});                  
-      \hyperlink{classOptions_a80d2caed71dd935c104f0133504251e9}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc}(\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{MsgSvc::INFO},output,\textcolor{stringliteral}{"Options::help"});\textcolor{comment}{//< number of events processed}
-112   sprintf(output,\textcolor{stringliteral}{"Number of errors            : %ld"},\hyperlink{classOptions_ae6460776ac3433103d88729a6811fc56}{m\_nErrors});               
-      \hyperlink{classOptions_a80d2caed71dd935c104f0133504251e9}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc}(\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{MsgSvc::INFO},output,\textcolor{stringliteral}{"Options::help"});\textcolor{comment}{//< number of errors in present
-       process}
-113   sprintf(output,\textcolor{stringliteral}{"Stop on error flag          : %i"},\hyperlink{classOptions_a879c2741a290595adb3f74633f3a3987}{m\_stopOnError});            
-      \hyperlink{classOptions_a80d2caed71dd935c104f0133504251e9}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc}(\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{MsgSvc::INFO},output,\textcolor{stringliteral}{"Options::help"});
-114   sprintf(output,\textcolor{stringliteral}{"Printout frequency          : %ld"},\hyperlink{classOptions_acf8f96cbc3245ec4b3b47bd3bfa0d742}{m\_printFreq});             
-      \hyperlink{classOptions_a80d2caed71dd935c104f0133504251e9}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc}(\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{MsgSvc::INFO},output,\textcolor{stringliteral}{"Options::help"});\textcolor{comment}{//< Evt Number Output Frequency}
-115   sprintf(output,\textcolor{stringliteral}{"Plot update frequency       : %ld"},\hyperlink{classOptions_aa7f7161bc67732b310937afb137657a0}{m\_plotFreq});             
-      \hyperlink{classOptions_a80d2caed71dd935c104f0133504251e9}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc}(\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{MsgSvc::INFO},output,\textcolor{stringliteral}{"Options::help"});\textcolor{comment}{//< Evt Number plot Frequency}
-116   sprintf(output,\textcolor{stringliteral}{"Automatic run number flag   : %i"},\hyperlink{classOptions_a2ad2d67b98fc5fbea4cbbd781ccb6183}{m\_runNumberManagement});    
-      \hyperlink{classOptions_a80d2caed71dd935c104f0133504251e9}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc}(\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{MsgSvc::INFO},output,\textcolor{stringliteral}{"Options::help"});\textcolor{comment}{//< Run Number Automatically
-       Managed}
-117   sprintf(output,\textcolor{stringliteral}{"Storage flag                : %i"},\hyperlink{classOptions_a244898bb30c9f716bdc335b4d85d1dfb}{m\_dataStorage});            
-      \hyperlink{classOptions_a80d2caed71dd935c104f0133504251e9}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc}(\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{MsgSvc::INFO},output,\textcolor{stringliteral}{"Options::help"});
-118   sprintf(output,\textcolor{stringliteral}{"Storage filename            : %s"},\hyperlink{classOptions_a4d952db4e93d3aae6db86d89faa3677a}{m\_storageFile}.c\_str());    
-      \hyperlink{classOptions_a80d2caed71dd935c104f0133504251e9}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc}(\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{MsgSvc::INFO},output,\textcolor{stringliteral}{"Options::help"});\textcolor{comment}{//< data & log file name for
-       storage}
-119   sprintf(output,\textcolor{stringliteral}{"Storage directory           : %s"},\hyperlink{classOptions_a88d9ed92fceb1c91e4df59bc1f81ab3b}{m\_storageDir}.c\_str());     
-      \hyperlink{classOptions_a80d2caed71dd935c104f0133504251e9}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc}(\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{MsgSvc::INFO},output,\textcolor{stringliteral}{"Options::help"});\textcolor{comment}{//< data & log directory name for
-       storage}
-120   sprintf(output,\textcolor{stringliteral}{"Storage default filename    : %s"},\hyperlink{classOptions_ab077e872fd03f7bf64f3a354d0c4a2f5}{m\_storageDefault}.c\_str()); 
-      \hyperlink{classOptions_a80d2caed71dd935c104f0133504251e9}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc}(\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{MsgSvc::INFO},output,\textcolor{stringliteral}{"Options::help"});\textcolor{comment}{//< data & log default file name
-       for storage}
-121   sprintf(output,\textcolor{stringliteral}{"Storage path                : %s"},\hyperlink{classOptions_ad125e827cb30bc9b63875ec45b31ef5e}{m\_storagePath}.c\_str());    
-      \hyperlink{classOptions_a80d2caed71dd935c104f0133504251e9}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc}(\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{MsgSvc::INFO},output,\textcolor{stringliteral}{"Options::help"});\textcolor{comment}{//< data & log file path for
-       storage}
-122   sprintf(output,\textcolor{stringliteral}{"Log Storage flag            : %i"},\hyperlink{classOptions_ab7ffad5110df714233470725ef98be6e}{m\_logStorage});             
-      \hyperlink{classOptions_a80d2caed71dd935c104f0133504251e9}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc}(\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{MsgSvc::INFO},output,\textcolor{stringliteral}{"Options::help"});\textcolor{comment}{//< Log Storage boolean}
-123   sprintf(output,\textcolor{stringliteral}{"Log default filename        : %s"},\hyperlink{classOptions_abaef6cdcc8422b199084510d173edbe6}{m\_logDefFile}.c\_str());     
-      \hyperlink{classOptions_a80d2caed71dd935c104f0133504251e9}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc}(\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{MsgSvc::INFO},output,\textcolor{stringliteral}{"Options::help"});\textcolor{comment}{//< default log file name for
-       storage}
-124   sprintf(output,\textcolor{stringliteral}{"Application current path    : %s"},\hyperlink{classOptions_a9d82ad17fc1fd2315fc8a9e8d0d34f33}{m\_currentPath}.c\_str());    
-      \hyperlink{classOptions_a80d2caed71dd935c104f0133504251e9}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc}(\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{MsgSvc::INFO},output,\textcolor{stringliteral}{"Options::help"});
-125   sprintf(output,\textcolor{stringliteral}{"Current definition filename : %s"},\hyperlink{classOptions_a59ff5f2cab2490fb529367de13a2321a}{m\_defFile}.c\_str());        
-      \hyperlink{classOptions_a80d2caed71dd935c104f0133504251e9}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc}(\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{MsgSvc::INFO},output,\textcolor{stringliteral}{"Options::help"});\textcolor{comment}{//< Definition file}
-126   sprintf(output,\textcolor{stringliteral}{"Batch run flag              : %i"},\hyperlink{classOptions_ae4461f1dd3357c0478098fc32e809405}{m\_batch});                  
-      \hyperlink{classOptions_a80d2caed71dd935c104f0133504251e9}{m\_log}.\hyperlink{classMsgSvc_ad25f18047920cc59a314e5098259711c}{msgSvc}(\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926ad2fcf3f3e734fc41ee097cc23670ce51}{MsgSvc::INFO},output,\textcolor{stringliteral}{"Options::help"});\textcolor{comment}{//< batch mode}
-127 \}
+107                    {
+108   char output[250];
+109   sprintf(output,"Events to process           : %ld",m_nEvtMax);               
+      m_log.msgSvc(MsgSvc::INFO,output,"Options::help");//< number of events to process
+      
+110   sprintf(output,"Current run number          : %ld",m_runNumber);             
+      m_log.msgSvc(MsgSvc::INFO,output,"Options::help");//< Current Run Number
+111   sprintf(output,"Events processed            : %ld",m_nEvt);                  
+      m_log.msgSvc(MsgSvc::INFO,output,"Options::help");//< number of events processed
+112   sprintf(output,"Number of errors            : %ld",m_nErrors);               
+      m_log.msgSvc(MsgSvc::INFO,output,"Options::help");//< number of errors in present
+       process
+113   sprintf(output,"Stop on error flag          : %i",m_stopOnError);            
+      m_log.msgSvc(MsgSvc::INFO,output,"Options::help");
+114   sprintf(output,"Printout frequency          : %ld",m_printFreq);             
+      m_log.msgSvc(MsgSvc::INFO,output,"Options::help");//< Evt Number Output Frequency
+      
+115   sprintf(output,"Plot update frequency       : %ld",m_plotFreq);             
+      m_log.msgSvc(MsgSvc::INFO,output,"Options::help");//< Evt Number plot Frequency
+116   sprintf(output,"Automatic run number flag   : %i",m_runNumberManagement);    
+      m_log.msgSvc(MsgSvc::INFO,output,"Options::help");//< Run Number Automatically Ma
+      naged
+117   sprintf(output,"Storage flag                : %i",m_dataStorage);            
+      m_log.msgSvc(MsgSvc::INFO,output,"Options::help");
+118   sprintf(output,"Storage filename            : %s",m_storageFile.c_str());    
+      m_log.msgSvc(MsgSvc::INFO,output,"Options::help");//< data & log file name for st
+      orage
+119   sprintf(output,"Storage directory           : %s",m_storageDir.c_str());     
+      m_log.msgSvc(MsgSvc::INFO,output,"Options::help");//< data & log directory name f
+      or storage
+120   sprintf(output,"Storage default filename    : %s",m_storageDefault.c_str()); 
+      m_log.msgSvc(MsgSvc::INFO,output,"Options::help");//< data & log default file nam
+      e for storage
+121   sprintf(output,"Storage path                : %s",m_storagePath.c_str());    
+      m_log.msgSvc(MsgSvc::INFO,output,"Options::help");//< data & log file path for st
+      orage
+122   sprintf(output,"Log Storage flag            : %i",m_logStorage);             
+      m_log.msgSvc(MsgSvc::INFO,output,"Options::help");//< Log Storage boolean
+123   sprintf(output,"Log default filename        : %s",m_logDefFile.c_str());     
+      m_log.msgSvc(MsgSvc::INFO,output,"Options::help");//< default log file name for s
+      torage
+124   sprintf(output,"Application current path    : %s",m_currentPath.c_str());    
+      m_log.msgSvc(MsgSvc::INFO,output,"Options::help");
+125   sprintf(output,"Current definition filename : %s",m_defFile.c_str());        
+      m_log.msgSvc(MsgSvc::INFO,output,"Options::help");//< Definition file
+126   sprintf(output,"Batch run flag              : %i",m_batch);                  
+      m_log.msgSvc(MsgSvc::INFO,output,"Options::help");//< batch mode
+127 }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_a67021ffef9f666bba4696f89807b2a70}\label{classOptions_a67021ffef9f666bba4696f89807b2a70}} 
-\index{Options@{Options}!print\+Freq@{print\+Freq}}
-\index{print\+Freq@{print\+Freq}!Options@{Options}}
-\subsubsection{\texorpdfstring{print\+Freq()}{printFreq()}}
-{\footnotesize\ttfamily unsigned long Options\+::print\+Freq (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Get accessor to member m\+\_\+print\+Freq \begin{DoxyReturn}{Returns}
-the current value of m\+\_\+print\+Freq 
+\hypertarget{classOptions_a67021ffef9f666bba4696f89807b2a70}{
+\index{Options@{Options}!printFreq@{printFreq}}
+\index{printFreq@{printFreq}!Options@{Options}}
+\subsubsection[{printFreq}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Options::printFreq ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_a67021ffef9f666bba4696f89807b2a70}
+Get accessor to member m\_\-printFreq \begin{DoxyReturn}{Returns}
+the current value of m\_\-printFreq 
 \end{DoxyReturn}
 
 
-Definition at line 58 of file Options.\+h.
+Definition at line 58 of file Options.h.
 
+References m\_\-printFreq.
 
-
-References m\+\_\+print\+Freq.
-
-
-
-Referenced by export\+\_\+base(), Application\+::loop(), and set\+Print\+Freq().
+Referenced by export\_\-base(), and Application::loop().
 
 
 \begin{DoxyCode}
-58                                    \{
-59                 \textcolor{keywordflow}{return} \hyperlink{classOptions_acf8f96cbc3245ec4b3b47bd3bfa0d742}{m\_printFreq};
-60         \}
+58                                    {
+59                 return m_printFreq;
+60         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_a2d9447919fe90f9ce8df5530526cbb27}\label{classOptions_a2d9447919fe90f9ce8df5530526cbb27}} 
-\index{Options@{Options}!run\+Number@{run\+Number}}
-\index{run\+Number@{run\+Number}!Options@{Options}}
-\subsubsection{\texorpdfstring{run\+Number()}{runNumber()}}
-{\footnotesize\ttfamily unsigned long Options\+::run\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Get accessor to member m\+\_\+run\+Number \begin{DoxyReturn}{Returns}
-the current value of m\+\_\+run\+Number 
+\hypertarget{classOptions_a2d9447919fe90f9ce8df5530526cbb27}{
+\index{Options@{Options}!runNumber@{runNumber}}
+\index{runNumber@{runNumber}!Options@{Options}}
+\subsubsection[{runNumber}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Options::runNumber ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_a2d9447919fe90f9ce8df5530526cbb27}
+Get accessor to member m\_\-runNumber \begin{DoxyReturn}{Returns}
+the current value of m\_\-runNumber 
 \end{DoxyReturn}
 
 
-Definition at line 107 of file Options.\+h.
+Definition at line 107 of file Options.h.
 
+References m\_\-runNumber.
 
-
-References m\+\_\+run\+Number.
-
-
-
-Referenced by Application\+::bookkeeping(), Processus\+::end\+Processing(), export\+\_\+base(), inc\+Run\+Number(), Acquisition\+::initialize(), Current\+Measurement\+::initialize(), A\+D\+C\+Measurement\+::initialize(), set\+Run\+Number(), and Application\+::set\+State().
+Referenced by Application::bookkeeping(), Processus::endProcessing(), export\_\-base(), incRunNumber(), CurrentMeasurement::initialize(), ADCMeasurement::initialize(), Acquisition::initialize(), and Application::setState().
 
 
 \begin{DoxyCode}
-107                                    \{
-108                 \textcolor{keywordflow}{return} \hyperlink{classOptions_a1762c644c5f87feabe12f84f17a1a351}{m\_runNumber};
-109         \}
+107                                    {
+108                 return m_runNumber;
+109         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_a7654a2c3d67baae08f61edc18bec367e}\label{classOptions_a7654a2c3d67baae08f61edc18bec367e}} 
-\index{Options@{Options}!run\+Number\+Management@{run\+Number\+Management}}
-\index{run\+Number\+Management@{run\+Number\+Management}!Options@{Options}}
-\subsubsection{\texorpdfstring{run\+Number\+Management()}{runNumberManagement()}}
-{\footnotesize\ttfamily bool Options\+::run\+Number\+Management (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Get accessor to member m\+\_\+run\+Number\+Management \begin{DoxyReturn}{Returns}
-the current value of m\+\_\+run\+Number\+Management 
+\hypertarget{classOptions_a7654a2c3d67baae08f61edc18bec367e}{
+\index{Options@{Options}!runNumberManagement@{runNumberManagement}}
+\index{runNumberManagement@{runNumberManagement}!Options@{Options}}
+\subsubsection[{runNumberManagement}]{\setlength{\rightskip}{0pt plus 5cm}bool Options::runNumberManagement ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_a7654a2c3d67baae08f61edc18bec367e}
+Get accessor to member m\_\-runNumberManagement \begin{DoxyReturn}{Returns}
+the current value of m\_\-runNumberManagement 
 \end{DoxyReturn}
 
 
-Definition at line 123 of file Options.\+h.
+Definition at line 123 of file Options.h.
 
+References m\_\-runNumberManagement.
 
-
-References m\+\_\+run\+Number\+Management.
-
-
-
-Referenced by export\+\_\+base(), set\+Run\+Number\+Management(), and Application\+::terminate().
+Referenced by export\_\-base(), and Application::terminate().
 
 
 \begin{DoxyCode}
-123                                     \{
-124                 \textcolor{keywordflow}{return} \hyperlink{classOptions_a2ad2d67b98fc5fbea4cbbd781ccb6183}{m\_runNumberManagement};
-125         \}
+123                                     {
+124                 return m_runNumberManagement;
+125         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_a3cebd8308183414ef2e0de0e7922c87a}\label{classOptions_a3cebd8308183414ef2e0de0e7922c87a}} 
-\index{Options@{Options}!set\+Current\+Path@{set\+Current\+Path}}
-\index{set\+Current\+Path@{set\+Current\+Path}!Options@{Options}}
-\subsubsection{\texorpdfstring{set\+Current\+Path()}{setCurrentPath()}}
-{\footnotesize\ttfamily void Options\+::set\+Current\+Path (\begin{DoxyParamCaption}\item[{std\+::string}]{current\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\hypertarget{classOptions_a3cebd8308183414ef2e0de0e7922c87a}{
+\index{Options@{Options}!setCurrentPath@{setCurrentPath}}
+\index{setCurrentPath@{setCurrentPath}!Options@{Options}}
+\subsubsection[{setCurrentPath}]{\setlength{\rightskip}{0pt plus 5cm}void Options::setCurrentPath (std::string {\em currentPath})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_a3cebd8308183414ef2e0de0e7922c87a}
 
 
+Definition at line 127 of file Options.h.
 
-Definition at line 127 of file Options.\+h.
+References m\_\-currentPath.
 
-
-
-References current\+Path(), and m\+\_\+current\+Path.
-
-
-
-Referenced by export\+\_\+base(), and Options().
+Referenced by export\_\-base(), and Options().
 
 
 \begin{DoxyCode}
-127                                                     \{
-128                 \hyperlink{classOptions_a9d82ad17fc1fd2315fc8a9e8d0d34f33}{m\_currentPath} = \hyperlink{classOptions_ab9cf7442a712fe8593f6cf5cfff36a5d}{currentPath};
-129         \}
+127                                                     {
+128                 m_currentPath = currentPath;
+129         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_ae6f39f4b0b4bd260fbb5a2f0b5f4786e}\label{classOptions_ae6f39f4b0b4bd260fbb5a2f0b5f4786e}} 
-\index{Options@{Options}!set\+Data\+Storage@{set\+Data\+Storage}}
-\index{set\+Data\+Storage@{set\+Data\+Storage}!Options@{Options}}
-\subsubsection{\texorpdfstring{set\+Data\+Storage()}{setDataStorage()}}
-{\footnotesize\ttfamily void Options\+::set\+Data\+Storage (\begin{DoxyParamCaption}\item[{bool}]{data\+Storage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Set accessor to member m\+\_\+data\+Storage 
+\hypertarget{classOptions_ae6f39f4b0b4bd260fbb5a2f0b5f4786e}{
+\index{Options@{Options}!setDataStorage@{setDataStorage}}
+\index{setDataStorage@{setDataStorage}!Options@{Options}}
+\subsubsection[{setDataStorage}]{\setlength{\rightskip}{0pt plus 5cm}void Options::setDataStorage (bool {\em dataStorage})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_ae6f39f4b0b4bd260fbb5a2f0b5f4786e}
+Set accessor to member m\_\-dataStorage 
 \begin{DoxyParams}{Parameters}
-{\em data\+Storage} & the new value for m\+\_\+data\+Storage \\
-\hline
-\end{DoxyParams}
+\item[{\em dataStorage}]the new value for m\_\-dataStorage \end{DoxyParams}
 
 
-Definition at line 244 of file Options.\+h.
+Definition at line 244 of file Options.h.
 
+References m\_\-dataStorage.
 
-
-References data\+Storage(), and m\+\_\+data\+Storage.
-
-
-
-Referenced by export\+\_\+base(), and Options().
+Referenced by export\_\-base(), and Options().
 
 
 \begin{DoxyCode}
-244                                                \{
-245                 \hyperlink{classOptions_a244898bb30c9f716bdc335b4d85d1dfb}{m\_dataStorage} = \hyperlink{classOptions_aed7799d10139fa542055b982cb820192}{dataStorage};
-246         \}
+244                                                {
+245                 m_dataStorage = dataStorage;
+246         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_a3c8bed9867ac5805489d78061e55bd1a}\label{classOptions_a3c8bed9867ac5805489d78061e55bd1a}} 
-\index{Options@{Options}!set\+Def\+File@{set\+Def\+File}}
-\index{set\+Def\+File@{set\+Def\+File}!Options@{Options}}
-\subsubsection{\texorpdfstring{set\+Def\+File()}{setDefFile()}}
-{\footnotesize\ttfamily void Options\+::set\+Def\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{def }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Set accessor to member m\+\_\+def\+File 
+\hypertarget{classOptions_a3c8bed9867ac5805489d78061e55bd1a}{
+\index{Options@{Options}!setDefFile@{setDefFile}}
+\index{setDefFile@{setDefFile}!Options@{Options}}
+\subsubsection[{setDefFile}]{\setlength{\rightskip}{0pt plus 5cm}void Options::setDefFile (std::string {\em def})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_a3c8bed9867ac5805489d78061e55bd1a}
+Set accessor to member m\_\-defFile 
 \begin{DoxyParams}{Parameters}
-{\em def\+File} & the new value for m\+\_\+def\+File \\
-\hline
-\end{DoxyParams}
+\item[{\em defFile}]the new value for m\_\-defFile \end{DoxyParams}
 
 
-Definition at line 293 of file Options.\+h.
+Definition at line 293 of file Options.h.
 
+References m\_\-defFile.
 
-
-References m\+\_\+def\+File.
-
-
-
-Referenced by export\+\_\+base().
+Referenced by export\_\-base().
 
 
 \begin{DoxyCode}
-293                                         \{
-294                 \hyperlink{classOptions_a59ff5f2cab2490fb529367de13a2321a}{m\_defFile} = def;
-295         \}
+293                                         {
+294                 m_defFile = def;
+295         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_a52e2995912a71f51c230dd6bf28b6a94}\label{classOptions_a52e2995912a71f51c230dd6bf28b6a94}} 
-\index{Options@{Options}!set\+Log\+Def\+File@{set\+Log\+Def\+File}}
-\index{set\+Log\+Def\+File@{set\+Log\+Def\+File}!Options@{Options}}
-\subsubsection{\texorpdfstring{set\+Log\+Def\+File()}{setLogDefFile()}}
-{\footnotesize\ttfamily void Options\+::set\+Log\+Def\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{def\+File }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Set accessor to member m\+\_\+log\+Def\+File 
+\hypertarget{classOptions_a52e2995912a71f51c230dd6bf28b6a94}{
+\index{Options@{Options}!setLogDefFile@{setLogDefFile}}
+\index{setLogDefFile@{setLogDefFile}!Options@{Options}}
+\subsubsection[{setLogDefFile}]{\setlength{\rightskip}{0pt plus 5cm}void Options::setLogDefFile (std::string {\em defFile})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_a52e2995912a71f51c230dd6bf28b6a94}
+Set accessor to member m\_\-logDefFile 
 \begin{DoxyParams}{Parameters}
-{\em log\+Def\+Storage} & the new value for m\+\_\+log\+Def\+File \\
-\hline
-\end{DoxyParams}
+\item[{\em logDefStorage}]the new value for m\_\-logDefFile \end{DoxyParams}
 
 
-Definition at line 276 of file Options.\+h.
+Definition at line 276 of file Options.h.
 
+References m\_\-logDefFile, and m\_\-logDefStream.
 
-
-References def\+File(), m\+\_\+log\+Def\+File, and m\+\_\+log\+Def\+Stream.
-
-
-
-Referenced by export\+\_\+base(), and Options().
+Referenced by export\_\-base(), and Options().
 
 
 \begin{DoxyCode}
-276                                                \{
-277                 \hyperlink{classOptions_abaef6cdcc8422b199084510d173edbe6}{m\_logDefFile} = \hyperlink{classOptions_aca5ce5262ca717eaad5ff9db92ad1948}{defFile};
-278                 \hyperlink{classOptions_aebb2db3fb07ea1f73b27bde841be69d8}{m\_logDefStream} = \textcolor{keyword}{new} std::ofstream( \hyperlink{classOptions_aca5ce5262ca717eaad5ff9db92ad1948}{defFile}.c\_str() );
-279         \}
+276                                                {
+277                 m_logDefFile = defFile;
+278                 m_logDefStream = new std::ofstream( defFile.c_str() );
+279         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_a5d8ab053c941a944a53c0bfe871058a1}\label{classOptions_a5d8ab053c941a944a53c0bfe871058a1}} 
-\index{Options@{Options}!set\+Log\+Output\+Level@{set\+Log\+Output\+Level}}
-\index{set\+Log\+Output\+Level@{set\+Log\+Output\+Level}!Options@{Options}}
-\subsubsection{\texorpdfstring{set\+Log\+Output\+Level()}{setLogOutputLevel()}}
-{\footnotesize\ttfamily void Options\+::set\+Log\+Output\+Level (\begin{DoxyParamCaption}\item[{\hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926}{Msg\+Svc\+::\+Msg\+Level}}]{log\+Output\+Level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Set accessor to member m\+\_\+log\+Output\+Level 
+\hypertarget{classOptions_a5d8ab053c941a944a53c0bfe871058a1}{
+\index{Options@{Options}!setLogOutputLevel@{setLogOutputLevel}}
+\index{setLogOutputLevel@{setLogOutputLevel}!Options@{Options}}
+\subsubsection[{setLogOutputLevel}]{\setlength{\rightskip}{0pt plus 5cm}void Options::setLogOutputLevel ({\bf MsgSvc::MsgLevel} {\em logOutputLevel})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_a5d8ab053c941a944a53c0bfe871058a1}
+Set accessor to member m\_\-logOutputLevel 
 \begin{DoxyParams}{Parameters}
-{\em log\+Output\+Level} & the new value for m\+\_\+log\+Output\+Level \\
-\hline
-\end{DoxyParams}
+\item[{\em logOutputLevel}]the new value for m\_\-logOutputLevel \end{DoxyParams}
 
 
-Definition at line 34 of file Options.\+h.
+Definition at line 34 of file Options.h.
 
+References m\_\-logOutputLevel.
 
-
-References log\+Output\+Level(), and m\+\_\+log\+Output\+Level.
-
-
-
-Referenced by export\+\_\+base(), and Options().
+Referenced by export\_\-base(), and Options().
 
 
 \begin{DoxyCode}
-34                                                                \{
-35                 \hyperlink{classOptions_a9ecfefe6bf44ff519369f38eb5c8147a}{m\_logOutputLevel} = \hyperlink{classOptions_a2d11716f34070dd7991648a26eb5d244}{logOutputLevel};
-36         \}
+34                                                                {
+35                 m_logOutputLevel = logOutputLevel;
+36         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_a96f0288f5317cf371589f4db07e913b0}\label{classOptions_a96f0288f5317cf371589f4db07e913b0}} 
-\index{Options@{Options}!set\+Log\+Storage@{set\+Log\+Storage}}
-\index{set\+Log\+Storage@{set\+Log\+Storage}!Options@{Options}}
-\subsubsection{\texorpdfstring{set\+Log\+Storage()}{setLogStorage()}}
-{\footnotesize\ttfamily void Options\+::set\+Log\+Storage (\begin{DoxyParamCaption}\item[{bool}]{log\+Storage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Set accessor to member m\+\_\+log\+Storage 
+\hypertarget{classOptions_a96f0288f5317cf371589f4db07e913b0}{
+\index{Options@{Options}!setLogStorage@{setLogStorage}}
+\index{setLogStorage@{setLogStorage}!Options@{Options}}
+\subsubsection[{setLogStorage}]{\setlength{\rightskip}{0pt plus 5cm}void Options::setLogStorage (bool {\em logStorage})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_a96f0288f5317cf371589f4db07e913b0}
+Set accessor to member m\_\-logStorage 
 \begin{DoxyParams}{Parameters}
-{\em log\+Storage} & the new value for m\+\_\+log\+Storage \\
-\hline
-\end{DoxyParams}
+\item[{\em logStorage}]the new value for m\_\-logStorage \end{DoxyParams}
 
 
-Definition at line 260 of file Options.\+h.
+Definition at line 260 of file Options.h.
 
+References m\_\-logStorage.
 
-
-References log\+Storage(), and m\+\_\+log\+Storage.
-
-
-
-Referenced by export\+\_\+base(), and Options().
+Referenced by export\_\-base(), and Options().
 
 
 \begin{DoxyCode}
-260                                              \{
-261                 \hyperlink{classOptions_ab7ffad5110df714233470725ef98be6e}{m\_logStorage} = \hyperlink{classOptions_a33735fffe17485937ab7579d8716b7ee}{logStorage};
-262         \}
+260                                              {
+261                 m_logStorage = logStorage;
+262         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_a45368b495036869c67fe0e6bf9abc4e6}\label{classOptions_a45368b495036869c67fe0e6bf9abc4e6}} 
-\index{Options@{Options}!set\+N\+Errors@{set\+N\+Errors}}
-\index{set\+N\+Errors@{set\+N\+Errors}!Options@{Options}}
-\subsubsection{\texorpdfstring{set\+N\+Errors()}{setNErrors()}}
-{\footnotesize\ttfamily void Options\+::set\+N\+Errors (\begin{DoxyParamCaption}\item[{unsigned long}]{n\+Errors }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Set accessor to member m\+\_\+n\+Errors 
+\hypertarget{classOptions_a45368b495036869c67fe0e6bf9abc4e6}{
+\index{Options@{Options}!setNErrors@{setNErrors}}
+\index{setNErrors@{setNErrors}!Options@{Options}}
+\subsubsection[{setNErrors}]{\setlength{\rightskip}{0pt plus 5cm}void Options::setNErrors (unsigned long {\em nErrors})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_a45368b495036869c67fe0e6bf9abc4e6}
+Set accessor to member m\_\-nErrors 
 \begin{DoxyParams}{Parameters}
-{\em n\+Errors} & the new value for m\+\_\+n\+Errors \\
-\hline
-\end{DoxyParams}
+\item[{\em nErrors}]the new value for m\_\-nErrors \end{DoxyParams}
 
 
-Definition at line 357 of file Options.\+h.
+Definition at line 357 of file Options.h.
 
+References m\_\-nErrors.
 
-
-References m\+\_\+n\+Errors, and n\+Errors().
-
-
-
-Referenced by export\+\_\+base(), inc\+N\+Errors(), Options(), Application\+::prepare(), and Processus\+::start\+Processing().
+Referenced by export\_\-base(), incNErrors(), Options(), Application::prepare(), and Processus::startProcessing().
 
 
 \begin{DoxyCode}
-357                                                 \{
-358                 \hyperlink{classOptions_ae6460776ac3433103d88729a6811fc56}{m\_nErrors} = \hyperlink{classOptions_acc6474323f0bbe17fa844e9a086b90b8}{nErrors};
-359         \}
+357                                                 {
+358                 m_nErrors = nErrors;
+359         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_ae6a0fdaa736948f5040deb3eb6889268}\label{classOptions_ae6a0fdaa736948f5040deb3eb6889268}} 
-\index{Options@{Options}!set\+N\+Evt@{set\+N\+Evt}}
-\index{set\+N\+Evt@{set\+N\+Evt}!Options@{Options}}
-\subsubsection{\texorpdfstring{set\+N\+Evt()}{setNEvt()}}
-{\footnotesize\ttfamily void Options\+::set\+N\+Evt (\begin{DoxyParamCaption}\item[{unsigned long}]{n\+Evt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Set accessor to member m\+\_\+n\+Evt 
+\hypertarget{classOptions_ae6a0fdaa736948f5040deb3eb6889268}{
+\index{Options@{Options}!setNEvt@{setNEvt}}
+\index{setNEvt@{setNEvt}!Options@{Options}}
+\subsubsection[{setNEvt}]{\setlength{\rightskip}{0pt plus 5cm}void Options::setNEvt (unsigned long {\em nEvt})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_ae6a0fdaa736948f5040deb3eb6889268}
+Set accessor to member m\_\-nEvt 
 \begin{DoxyParams}{Parameters}
-{\em n\+Evt} & the new value for m\+\_\+n\+Evt \\
-\hline
-\end{DoxyParams}
+\item[{\em nEvt}]the new value for m\_\-nEvt \end{DoxyParams}
 
 
-Definition at line 309 of file Options.\+h.
+Definition at line 309 of file Options.h.
 
+References m\_\-nEvt.
 
-
-References m\+\_\+n\+Evt, and n\+Evt().
-
-
-
-Referenced by export\+\_\+base(), inc\+N\+Evt(), Options(), Application\+::prepare(), and Application\+::terminate().
+Referenced by export\_\-base(), incNEvt(), Options(), Application::prepare(), and Application::terminate().
 
 
 \begin{DoxyCode}
-309                                           \{
-310                 \hyperlink{classOptions_a5e3bb1f2dfc4bf10cab08a33253cc4db}{m\_nEvt} = \hyperlink{classOptions_ad769b256263a4ac24dd6f989ae724ab7}{nEvt};
-311         \}
+309                                           {
+310                 m_nEvt = nEvt;
+311         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_a6d732c0591188469287581bac8a4e3cd}\label{classOptions_a6d732c0591188469287581bac8a4e3cd}} 
-\index{Options@{Options}!set\+N\+Evt\+Max@{set\+N\+Evt\+Max}}
-\index{set\+N\+Evt\+Max@{set\+N\+Evt\+Max}!Options@{Options}}
-\subsubsection{\texorpdfstring{set\+N\+Evt\+Max()}{setNEvtMax()}}
-{\footnotesize\ttfamily void Options\+::set\+N\+Evt\+Max (\begin{DoxyParamCaption}\item[{int}]{n\+Evt\+Max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Set accessor to member m\+\_\+n\+Evt\+Max 
+\hypertarget{classOptions_a6d732c0591188469287581bac8a4e3cd}{
+\index{Options@{Options}!setNEvtMax@{setNEvtMax}}
+\index{setNEvtMax@{setNEvtMax}!Options@{Options}}
+\subsubsection[{setNEvtMax}]{\setlength{\rightskip}{0pt plus 5cm}void Options::setNEvtMax (int {\em nEvtMax})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_a6d732c0591188469287581bac8a4e3cd}
+Set accessor to member m\_\-nEvtMax 
 \begin{DoxyParams}{Parameters}
-{\em n\+Evt\+Max} & the new value for m\+\_\+n\+Evt\+Max \\
-\hline
-\end{DoxyParams}
+\item[{\em nEvtMax}]the new value for m\_\-nEvtMax \end{DoxyParams}
 
 
-Definition at line 325 of file Options.\+h.
+Definition at line 325 of file Options.h.
 
+References m\_\-nEvtMax.
 
-
-References m\+\_\+n\+Evt\+Max, and n\+Evt\+Max().
-
-
-
-Referenced by export\+\_\+base(), Options(), and Application\+::prepare().
+Referenced by export\_\-base(), Options(), and Application::prepare().
 
 
 \begin{DoxyCode}
-325                                       \{
-326                 \hyperlink{classOptions_a825a47258257937a8caa902f5fff7e8a}{m\_nEvtMax} = \hyperlink{classOptions_ad1f3b03d734c806a2feca418b26bcc9b}{nEvtMax};
-327         \}
+325                                       {
+326                 m_nEvtMax = nEvtMax;
+327         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_a7df298047f1506fa2244cf096da96409}\label{classOptions_a7df298047f1506fa2244cf096da96409}} 
-\index{Options@{Options}!set\+Plot\+Freq@{set\+Plot\+Freq}}
-\index{set\+Plot\+Freq@{set\+Plot\+Freq}!Options@{Options}}
-\subsubsection{\texorpdfstring{set\+Plot\+Freq()}{setPlotFreq()}}
-{\footnotesize\ttfamily void Options\+::set\+Plot\+Freq (\begin{DoxyParamCaption}\item[{unsigned long}]{plot\+Freq }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Set accessor to member m\+\_\+plot\+Freq 
+\hypertarget{classOptions_a7df298047f1506fa2244cf096da96409}{
+\index{Options@{Options}!setPlotFreq@{setPlotFreq}}
+\index{setPlotFreq@{setPlotFreq}!Options@{Options}}
+\subsubsection[{setPlotFreq}]{\setlength{\rightskip}{0pt plus 5cm}void Options::setPlotFreq (unsigned long {\em plotFreq})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_a7df298047f1506fa2244cf096da96409}
+Set accessor to member m\_\-plotFreq 
 \begin{DoxyParams}{Parameters}
-{\em plot\+Freq} & the new value for m\+\_\+plot\+Freq \\
-\hline
-\end{DoxyParams}
+\item[{\em plotFreq}]the new value for m\_\-plotFreq \end{DoxyParams}
 
 
-Definition at line 66 of file Options.\+h.
+Definition at line 66 of file Options.h.
 
+References m\_\-plotFreq.
 
-
-References m\+\_\+plot\+Freq, and plot\+Freq().
-
-
-
-Referenced by export\+\_\+base(), and Options().
+Referenced by export\_\-base(), and Options().
 
 
 \begin{DoxyCode}
-66                                                   \{
-67                 \hyperlink{classOptions_aa7f7161bc67732b310937afb137657a0}{m\_plotFreq} = \hyperlink{classOptions_a1e20abb20c1a2187f9455b39cd9d26ae}{plotFreq};
-68         \}
+66                                                   {
+67                 m_plotFreq = plotFreq;
+68         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_adac15a8dbae0183ae7cecc09ebba6887}\label{classOptions_adac15a8dbae0183ae7cecc09ebba6887}} 
-\index{Options@{Options}!set\+Print\+Freq@{set\+Print\+Freq}}
-\index{set\+Print\+Freq@{set\+Print\+Freq}!Options@{Options}}
-\subsubsection{\texorpdfstring{set\+Print\+Freq()}{setPrintFreq()}}
-{\footnotesize\ttfamily void Options\+::set\+Print\+Freq (\begin{DoxyParamCaption}\item[{unsigned long}]{print\+Freq }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Set accessor to member m\+\_\+print\+Freq 
+\hypertarget{classOptions_adac15a8dbae0183ae7cecc09ebba6887}{
+\index{Options@{Options}!setPrintFreq@{setPrintFreq}}
+\index{setPrintFreq@{setPrintFreq}!Options@{Options}}
+\subsubsection[{setPrintFreq}]{\setlength{\rightskip}{0pt plus 5cm}void Options::setPrintFreq (unsigned long {\em printFreq})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_adac15a8dbae0183ae7cecc09ebba6887}
+Set accessor to member m\_\-printFreq 
 \begin{DoxyParams}{Parameters}
-{\em Print\+Freq} & the new value for m\+\_\+\+Print\+Freq \\
-\hline
-\end{DoxyParams}
+\item[{\em PrintFreq}]the new value for m\_\-PrintFreq \end{DoxyParams}
 
 
-Definition at line 50 of file Options.\+h.
+Definition at line 50 of file Options.h.
 
+References m\_\-printFreq.
 
-
-References m\+\_\+print\+Freq, and print\+Freq().
-
-
-
-Referenced by export\+\_\+base(), and Options().
+Referenced by export\_\-base(), and Options().
 
 
 \begin{DoxyCode}
-50                                                     \{
-51                 \hyperlink{classOptions_acf8f96cbc3245ec4b3b47bd3bfa0d742}{m\_printFreq} = \hyperlink{classOptions_a67021ffef9f666bba4696f89807b2a70}{printFreq};
-52         \}
+50                                                     {
+51                 m_printFreq = printFreq;
+52         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_aed19a55eb2c418f333bc97615cf4a3a8}\label{classOptions_aed19a55eb2c418f333bc97615cf4a3a8}} 
-\index{Options@{Options}!set\+Run\+Number@{set\+Run\+Number}}
-\index{set\+Run\+Number@{set\+Run\+Number}!Options@{Options}}
-\subsubsection{\texorpdfstring{set\+Run\+Number()}{setRunNumber()}}
-{\footnotesize\ttfamily void Options\+::set\+Run\+Number (\begin{DoxyParamCaption}\item[{unsigned long}]{run\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Set accessor to member m\+\_\+run\+Number 
+\hypertarget{classOptions_aed19a55eb2c418f333bc97615cf4a3a8}{
+\index{Options@{Options}!setRunNumber@{setRunNumber}}
+\index{setRunNumber@{setRunNumber}!Options@{Options}}
+\subsubsection[{setRunNumber}]{\setlength{\rightskip}{0pt plus 5cm}void Options::setRunNumber (unsigned long {\em runNumber})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_aed19a55eb2c418f333bc97615cf4a3a8}
+Set accessor to member m\_\-runNumber 
 \begin{DoxyParams}{Parameters}
-{\em run\+Number} & the new value for m\+\_\+run\+Number \\
-\hline
-\end{DoxyParams}
+\item[{\em runNumber}]the new value for m\_\-runNumber \end{DoxyParams}
 
 
-Definition at line 99 of file Options.\+h.
+Definition at line 99 of file Options.h.
 
+References m\_\-runNumber.
 
-
-References m\+\_\+run\+Number, and run\+Number().
-
-
-
-Referenced by export\+\_\+base(), inc\+Run\+Number(), Application\+::load\+History\+File(), and Options().
+Referenced by export\_\-base(), incRunNumber(), Application::loadHistoryFile(), and Options().
 
 
 \begin{DoxyCode}
-99                                                     \{
-100                 \hyperlink{classOptions_a1762c644c5f87feabe12f84f17a1a351}{m\_runNumber} = \hyperlink{classOptions_a2d9447919fe90f9ce8df5530526cbb27}{runNumber};
-101         \}
+99                                                     {
+100                 m_runNumber = runNumber;
+101         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_a7bf3fb2833021f8900eb105b0a9c02c5}\label{classOptions_a7bf3fb2833021f8900eb105b0a9c02c5}} 
-\index{Options@{Options}!set\+Run\+Number\+Management@{set\+Run\+Number\+Management}}
-\index{set\+Run\+Number\+Management@{set\+Run\+Number\+Management}!Options@{Options}}
-\subsubsection{\texorpdfstring{set\+Run\+Number\+Management()}{setRunNumberManagement()}}
-{\footnotesize\ttfamily void Options\+::set\+Run\+Number\+Management (\begin{DoxyParamCaption}\item[{bool}]{run\+Number\+Management }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Set accessor to member m\+\_\+run\+Number\+Management 
+\hypertarget{classOptions_a7bf3fb2833021f8900eb105b0a9c02c5}{
+\index{Options@{Options}!setRunNumberManagement@{setRunNumberManagement}}
+\index{setRunNumberManagement@{setRunNumberManagement}!Options@{Options}}
+\subsubsection[{setRunNumberManagement}]{\setlength{\rightskip}{0pt plus 5cm}void Options::setRunNumberManagement (bool {\em runNumberManagement})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_a7bf3fb2833021f8900eb105b0a9c02c5}
+Set accessor to member m\_\-runNumberManagement 
 \begin{DoxyParams}{Parameters}
-{\em run\+Number\+Management} & the new value for m\+\_\+run\+Number\+Management \\
-\hline
-\end{DoxyParams}
+\item[{\em runNumberManagement}]the new value for m\_\-runNumberManagement \end{DoxyParams}
 
 
-Definition at line 115 of file Options.\+h.
+Definition at line 115 of file Options.h.
 
+References m\_\-runNumberManagement.
 
-
-References m\+\_\+run\+Number\+Management, and run\+Number\+Management().
-
-
-
-Referenced by export\+\_\+base(), and Options().
+Referenced by export\_\-base(), and Options().
 
 
 \begin{DoxyCode}
-115                                                                \{
-116                 \hyperlink{classOptions_a2ad2d67b98fc5fbea4cbbd781ccb6183}{m\_runNumberManagement} = \hyperlink{classOptions_a7654a2c3d67baae08f61edc18bec367e}{runNumberManagement};
-117         \}
+115                                                                {
+116                 m_runNumberManagement = runNumberManagement;
+117         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_a0d362af154c7d2e30a7bf340eb061fa5}\label{classOptions_a0d362af154c7d2e30a7bf340eb061fa5}} 
-\index{Options@{Options}!set\+Stop\+On\+Error@{set\+Stop\+On\+Error}}
-\index{set\+Stop\+On\+Error@{set\+Stop\+On\+Error}!Options@{Options}}
-\subsubsection{\texorpdfstring{set\+Stop\+On\+Error()}{setStopOnError()}}
-{\footnotesize\ttfamily void Options\+::set\+Stop\+On\+Error (\begin{DoxyParamCaption}\item[{bool}]{stop\+On\+Error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Set accessor to member m\+\_\+stop\+On\+Error 
+\hypertarget{classOptions_a0d362af154c7d2e30a7bf340eb061fa5}{
+\index{Options@{Options}!setStopOnError@{setStopOnError}}
+\index{setStopOnError@{setStopOnError}!Options@{Options}}
+\subsubsection[{setStopOnError}]{\setlength{\rightskip}{0pt plus 5cm}void Options::setStopOnError (bool {\em stopOnError})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_a0d362af154c7d2e30a7bf340eb061fa5}
+Set accessor to member m\_\-stopOnError 
 \begin{DoxyParams}{Parameters}
-{\em stop\+On\+Error} & the new value for m\+\_\+stop\+On\+Error \\
-\hline
-\end{DoxyParams}
+\item[{\em stopOnError}]the new value for m\_\-stopOnError \end{DoxyParams}
 
 
-Definition at line 83 of file Options.\+h.
+Definition at line 83 of file Options.h.
 
+References m\_\-stopOnError.
 
-
-References m\+\_\+stop\+On\+Error, and stop\+On\+Error().
-
-
-
-Referenced by export\+\_\+base().
+Referenced by export\_\-base().
 
 
 \begin{DoxyCode}
-83                                                \{
-84                 \hyperlink{classOptions_a879c2741a290595adb3f74633f3a3987}{m\_stopOnError} = \hyperlink{classOptions_afcd7b27fdf474050d912571e09525efe}{stopOnError};
-85         \}
+83                                                {
+84                 m_stopOnError = stopOnError;
+85         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_aed5e6919526bcfa5cf4961230bd20e37}\label{classOptions_aed5e6919526bcfa5cf4961230bd20e37}} 
-\index{Options@{Options}!set\+Storage\+Dir@{set\+Storage\+Dir}}
-\index{set\+Storage\+Dir@{set\+Storage\+Dir}!Options@{Options}}
-\subsubsection{\texorpdfstring{set\+Storage\+Dir()}{setStorageDir()}}
-{\footnotesize\ttfamily void Options\+::set\+Storage\+Dir (\begin{DoxyParamCaption}\item[{std\+::string}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Set accessor to member m\+\_\+storage\+Dir 
+\hypertarget{classOptions_aed5e6919526bcfa5cf4961230bd20e37}{
+\index{Options@{Options}!setStorageDir@{setStorageDir}}
+\index{setStorageDir@{setStorageDir}!Options@{Options}}
+\subsubsection[{setStorageDir}]{\setlength{\rightskip}{0pt plus 5cm}void Options::setStorageDir (std::string {\em filename})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_aed5e6919526bcfa5cf4961230bd20e37}
+Set accessor to member m\_\-storageDir 
 \begin{DoxyParams}{Parameters}
-{\em Storage\+Dir} & the new value for m\+\_\+storage\+Dir \\
-\hline
-\end{DoxyParams}
+\item[{\em StorageDir}]the new value for m\_\-storageDir \end{DoxyParams}
 
 
-Definition at line 172 of file Options.\+h.
+Definition at line 172 of file Options.h.
 
+References m\_\-storageDir.
 
-
-References m\+\_\+storage\+Dir.
-
-
-
-Referenced by export\+\_\+base(), and Options().
+Referenced by export\_\-base(), and Options().
 
 
 \begin{DoxyCode}
-172                                                \{
-173                 \hyperlink{classOptions_a88d9ed92fceb1c91e4df59bc1f81ab3b}{m\_storageDir} = filename;
-174         \}
+172                                                {
+173                 m_storageDir = filename;
+174         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_ac163281337998af5ca3b7a9617337fef}\label{classOptions_ac163281337998af5ca3b7a9617337fef}} 
-\index{Options@{Options}!set\+Storage\+File@{set\+Storage\+File}}
-\index{set\+Storage\+File@{set\+Storage\+File}!Options@{Options}}
-\subsubsection{\texorpdfstring{set\+Storage\+File()}{setStorageFile()}}
-{\footnotesize\ttfamily void Options\+::set\+Storage\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{filename = {\ttfamily std\+:\+:string(\char`\"{}\char`\"{})} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Set accessor to member m\+\_\+\+Storage\+File 
+\hypertarget{classOptions_ac163281337998af5ca3b7a9617337fef}{
+\index{Options@{Options}!setStorageFile@{setStorageFile}}
+\index{setStorageFile@{setStorageFile}!Options@{Options}}
+\subsubsection[{setStorageFile}]{\setlength{\rightskip}{0pt plus 5cm}void Options::setStorageFile (std::string {\em filename} = {\ttfamily std::string(\char`\"{}\char`\"{})})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_ac163281337998af5ca3b7a9617337fef}
+Set accessor to member m\_\-StorageFile 
 \begin{DoxyParams}{Parameters}
-{\em Storage\+File} & the new value for m\+\_\+\+Storage\+File \\
-\hline
-\end{DoxyParams}
+\item[{\em StorageFile}]the new value for m\_\-StorageFile \end{DoxyParams}
 
 
-Definition at line 188 of file Options.\+h.
+Definition at line 188 of file Options.h.
 
+References m\_\-storageDefault, and m\_\-storageFile.
 
-
-References m\+\_\+storage\+Default, and m\+\_\+storage\+File.
-
-
-
-Referenced by export\+\_\+base(), Options(), Application\+::prepare(), and set\+Stream().
+Referenced by export\_\-base(), Options(), Application::prepare(), and setStream().
 
 
 \begin{DoxyCode}
-188                                                               \{
-189                 \textcolor{keywordflow}{if} (std::string(\textcolor{stringliteral}{""})==filename) \{
-190                         \hyperlink{classOptions_a4d952db4e93d3aae6db86d89faa3677a}{m\_storageFile} = \hyperlink{classOptions_ab077e872fd03f7bf64f3a354d0c4a2f5}{m\_storageDefault};
-191                         \textcolor{keywordflow}{return};
-192                 \}
-193                 \hyperlink{classOptions_a4d952db4e93d3aae6db86d89faa3677a}{m\_storageFile} = filename;
-194         \}
+188                                                               {
+189                 if (std::string("")==filename) {
+190                         m_storageFile = m_storageDefault;
+191                         return;
+192                 }
+193                 m_storageFile = filename;
+194         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_a8c32e222956c77ed2ec5387318f91394}\label{classOptions_a8c32e222956c77ed2ec5387318f91394}} 
-\index{Options@{Options}!set\+Storage\+Path@{set\+Storage\+Path}}
-\index{set\+Storage\+Path@{set\+Storage\+Path}!Options@{Options}}
-\subsubsection{\texorpdfstring{set\+Storage\+Path()}{setStoragePath()}}
-{\footnotesize\ttfamily void Options\+::set\+Storage\+Path (\begin{DoxyParamCaption}\item[{std\+::string}]{storage\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Set accessor to member m\+\_\+storage\+Path 
+\hypertarget{classOptions_a8c32e222956c77ed2ec5387318f91394}{
+\index{Options@{Options}!setStoragePath@{setStoragePath}}
+\index{setStoragePath@{setStoragePath}!Options@{Options}}
+\subsubsection[{setStoragePath}]{\setlength{\rightskip}{0pt plus 5cm}void Options::setStoragePath (std::string {\em storagePath})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_a8c32e222956c77ed2ec5387318f91394}
+Set accessor to member m\_\-storagePath 
 \begin{DoxyParams}{Parameters}
-{\em storage\+Path} & the new value for m\+\_\+storage\+Path \\
-\hline
-\end{DoxyParams}
+\item[{\em storagePath}]the new value for m\_\-storagePath \end{DoxyParams}
 
 
-Definition at line 143 of file Options.\+h.
+Definition at line 143 of file Options.h.
 
+References m\_\-storagePath.
 
-
-References m\+\_\+storage\+Path, and storage\+Path().
-
-
-
-Referenced by export\+\_\+base(), and Options().
+Referenced by export\_\-base(), and Options().
 
 
 \begin{DoxyCode}
-143                                                     \{
-144                 \hyperlink{classOptions_ad125e827cb30bc9b63875ec45b31ef5e}{m\_storagePath} = \hyperlink{classOptions_a3992b9247441a3e60e55c8c5fe32b394}{storagePath};
-145         \}
+143                                                     {
+144                 m_storagePath = storagePath;
+145         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_af7df7a64e597f0bed79ca979f8144daa}\label{classOptions_af7df7a64e597f0bed79ca979f8144daa}} 
-\index{Options@{Options}!set\+Stream@{set\+Stream}}
-\index{set\+Stream@{set\+Stream}!Options@{Options}}
-\subsubsection{\texorpdfstring{set\+Stream()}{setStream()}}
-{\footnotesize\ttfamily void Options\+::set\+Stream (\begin{DoxyParamCaption}\item[{std\+::string}]{file = {\ttfamily std\+:\+:string(\char`\"{}\char`\"{})} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Set accessor to member m\+\_\+n\+Evt 
+\hypertarget{classOptions_af7df7a64e597f0bed79ca979f8144daa}{
+\index{Options@{Options}!setStream@{setStream}}
+\index{setStream@{setStream}!Options@{Options}}
+\subsubsection[{setStream}]{\setlength{\rightskip}{0pt plus 5cm}void Options::setStream (std::string {\em file} = {\ttfamily std::string(\char`\"{}\char`\"{})})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_af7df7a64e597f0bed79ca979f8144daa}
+Set accessor to member m\_\-nEvt 
 \begin{DoxyParams}{Parameters}
-{\em n\+Evt} & the new value for m\+\_\+n\+Evt \\
-\hline
-\end{DoxyParams}
+\item[{\em nEvt}]the new value for m\_\-nEvt \end{DoxyParams}
 
 
-Definition at line 400 of file Options.\+h.
+Definition at line 400 of file Options.h.
 
+References logStorage(), m\_\-logDefStream, m\_\-logStream, m\_\-stream, setStorageFile(), and storageFileFullName().
 
-
-References log\+Storage(), m\+\_\+log\+Def\+Stream, m\+\_\+log\+Stream, m\+\_\+stream, print(), set\+Storage\+File(), and storage\+File\+Full\+Name().
-
-
-
-Referenced by export\+\_\+base(), Options(), Application\+::prepare(), and Application\+::terminate().
+Referenced by export\_\-base(), Options(), Application::prepare(), and Application::terminate().
 
 
 \begin{DoxyCode}
-400                                                         \{
-401                 \textcolor{keywordflow}{if} (file.compare(\textcolor{stringliteral}{""})==0 ) \{
-402                         \textcolor{keywordflow}{if} (\hyperlink{classOptions_a8c5485cd614fa90de6b1aa85a7d2191b}{m\_stream} == \hyperlink{classOptions_a65c3a025880fb38373b599b87d600eef}{m\_logStream} && 0!=
-      \hyperlink{classOptions_a65c3a025880fb38373b599b87d600eef}{m\_logStream} ) \{
-403                                 \hyperlink{classOptions_a65c3a025880fb38373b599b87d600eef}{m\_logStream}->close();
-404                                 \textcolor{keyword}{delete} \hyperlink{classOptions_a65c3a025880fb38373b599b87d600eef}{m\_logStream};
-405                                 \hyperlink{classOptions_a65c3a025880fb38373b599b87d600eef}{m\_logStream} = 0;
-406                         \}
-407                         \hyperlink{classOptions_a8c5485cd614fa90de6b1aa85a7d2191b}{m\_stream}=\hyperlink{classOptions_aebb2db3fb07ea1f73b27bde841be69d8}{m\_logDefStream};
-408                 \}
-409                 \textcolor{keywordflow}{else} \{
-410                         \textcolor{keywordflow}{if} ( !\hyperlink{classOptions_a33735fffe17485937ab7579d8716b7ee}{logStorage} () ) \{
-411                                 \hyperlink{classOptions_ac163281337998af5ca3b7a9617337fef}{setStorageFile} ( file );
-412                         \}
-413                         \textcolor{keywordflow}{else} \{
-414                                 \textcolor{keywordflow}{if} ( 0!=\hyperlink{classOptions_a65c3a025880fb38373b599b87d600eef}{m\_logStream}) \{
-415                                         \hyperlink{classOptions_a65c3a025880fb38373b599b87d600eef}{m\_logStream}->close();
-416                                         \textcolor{keyword}{delete} \hyperlink{classOptions_a65c3a025880fb38373b599b87d600eef}{m\_logStream};
-417                                         \hyperlink{classOptions_a65c3a025880fb38373b599b87d600eef}{m\_logStream}=0;
-418                                 \}
-419                                 \hyperlink{classOptions_ac163281337998af5ca3b7a9617337fef}{setStorageFile}(file);
-420                                 std::string name = \hyperlink{classOptions_a68c501133588cd4b1c80219adb926e8d}{storageFileFullName}();
-421                                 name.append(\textcolor{stringliteral}{".log"});
-422                                 \hyperlink{classOptions_a65c3a025880fb38373b599b87d600eef}{m\_logStream} = \textcolor{keyword}{new} std::ofstream( name.c\_str() );
-423                                 \hyperlink{classOptions_a8c5485cd614fa90de6b1aa85a7d2191b}{m\_stream}=\hyperlink{classOptions_a65c3a025880fb38373b599b87d600eef}{m\_logStream};
-424                         \}
-425                 \}
-426         \}
+400                                                         {
+401                 if (file.compare("")==0 ) {
+402                         if (m_stream == m_logStream && 0!=m_logStream ) {
+403                                 m_logStream->close();
+404                                 delete m_logStream;
+405                                 m_logStream = 0;
+406                         }
+407                         m_stream=m_logDefStream;
+408                 }
+409                 else {
+410                         if ( !logStorage () ) {
+411                                 setStorageFile ( file );
+412                         }
+413                         else {
+414                                 if ( 0!=m_logStream) {
+415                                         m_logStream->close();
+416                                         delete m_logStream;
+417                                         m_logStream=0;
+418                                 }
+419                                 setStorageFile(file);
+420                                 std::string name = storageFileFullName();
+421                                 name.append(".log");
+422                                 m_logStream = new std::ofstream( name.c_str() );
+423                                 m_stream=m_logStream;
+424                         }
+425                 }
+426         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_aaa921f68319ea83b5c5a13e37a831c7a}\label{classOptions_aaa921f68319ea83b5c5a13e37a831c7a}} 
-\index{Options@{Options}!set\+Time\+Max@{set\+Time\+Max}}
-\index{set\+Time\+Max@{set\+Time\+Max}!Options@{Options}}
-\subsubsection{\texorpdfstring{set\+Time\+Max()}{setTimeMax()}}
-{\footnotesize\ttfamily void Options\+::set\+Time\+Max (\begin{DoxyParamCaption}\item[{unsigned long}]{time\+Max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Set accessor to member m\+\_\+time\+Max 
+\hypertarget{classOptions_aaa921f68319ea83b5c5a13e37a831c7a}{
+\index{Options@{Options}!setTimeMax@{setTimeMax}}
+\index{setTimeMax@{setTimeMax}!Options@{Options}}
+\subsubsection[{setTimeMax}]{\setlength{\rightskip}{0pt plus 5cm}void Options::setTimeMax (unsigned long {\em timeMax})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_aaa921f68319ea83b5c5a13e37a831c7a}
+Set accessor to member m\_\-timeMax 
 \begin{DoxyParams}{Parameters}
-{\em time\+Max} & the new value for m\+\_\+time\+Max \\
-\hline
-\end{DoxyParams}
+\item[{\em timeMax}]the new value for m\_\-timeMax \end{DoxyParams}
 
 
-Definition at line 341 of file Options.\+h.
+Definition at line 341 of file Options.h.
 
+References m\_\-timeMax.
 
-
-References m\+\_\+time\+Max, and time\+Max().
-
-
-
-Referenced by Options(), and Application\+::prepare().
+Referenced by Options(), and Application::prepare().
 
 
 \begin{DoxyCode}
-341                                                 \{
-342                 \hyperlink{classOptions_a2584abb6745a082f73e2917732cd00e1}{m\_timeMax} = \hyperlink{classOptions_a4569b8790af48109c8639bec7b626fa6}{timeMax};
-343         \}
+341                                                 {
+342                 m_timeMax = timeMax;
+343         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_afcd7b27fdf474050d912571e09525efe}\label{classOptions_afcd7b27fdf474050d912571e09525efe}} 
-\index{Options@{Options}!stop\+On\+Error@{stop\+On\+Error}}
-\index{stop\+On\+Error@{stop\+On\+Error}!Options@{Options}}
-\subsubsection{\texorpdfstring{stop\+On\+Error()}{stopOnError()}}
-{\footnotesize\ttfamily bool Options\+::stop\+On\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Get accessor to member m\+\_\+stop\+On\+Error \begin{DoxyReturn}{Returns}
-the current value of m\+\_\+stop\+On\+Error 
+\hypertarget{classOptions_afcd7b27fdf474050d912571e09525efe}{
+\index{Options@{Options}!stopOnError@{stopOnError}}
+\index{stopOnError@{stopOnError}!Options@{Options}}
+\subsubsection[{stopOnError}]{\setlength{\rightskip}{0pt plus 5cm}bool Options::stopOnError ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_afcd7b27fdf474050d912571e09525efe}
+Get accessor to member m\_\-stopOnError \begin{DoxyReturn}{Returns}
+the current value of m\_\-stopOnError 
 \end{DoxyReturn}
 
 
-Definition at line 91 of file Options.\+h.
+Definition at line 91 of file Options.h.
 
+References m\_\-stopOnError.
 
-
-References m\+\_\+stop\+On\+Error.
-
-
-
-Referenced by export\+\_\+base(), Application\+::loop(), and set\+Stop\+On\+Error().
+Referenced by export\_\-base(), and Application::loop().
 
 
 \begin{DoxyCode}
-91                             \{
-92                 \textcolor{keywordflow}{return} \hyperlink{classOptions_a879c2741a290595adb3f74633f3a3987}{m\_stopOnError};
-93         \}
+91                             {
+92                 return m_stopOnError;
+93         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_a5e8026ed2674f8f5db444b52fea27fda}\label{classOptions_a5e8026ed2674f8f5db444b52fea27fda}} 
-\index{Options@{Options}!storage\+Dir@{storage\+Dir}}
-\index{storage\+Dir@{storage\+Dir}!Options@{Options}}
-\subsubsection{\texorpdfstring{storage\+Dir()}{storageDir()}}
-{\footnotesize\ttfamily std\+::string Options\+::storage\+Dir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Get accessor to member m\+\_\+storage\+Dir \begin{DoxyReturn}{Returns}
-the current value of m\+\_\+storage\+Dir 
+\hypertarget{classOptions_a5e8026ed2674f8f5db444b52fea27fda}{
+\index{Options@{Options}!storageDir@{storageDir}}
+\index{storageDir@{storageDir}!Options@{Options}}
+\subsubsection[{storageDir}]{\setlength{\rightskip}{0pt plus 5cm}std::string Options::storageDir ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_a5e8026ed2674f8f5db444b52fea27fda}
+Get accessor to member m\_\-storageDir \begin{DoxyReturn}{Returns}
+the current value of m\_\-storageDir 
 \end{DoxyReturn}
 
 
-Definition at line 180 of file Options.\+h.
+Definition at line 180 of file Options.h.
 
+References m\_\-storageDir.
 
-
-References m\+\_\+storage\+Dir.
-
-
-
-Referenced by export\+\_\+base().
+Referenced by export\_\-base().
 
 
 \begin{DoxyCode}
-180                                \{
-181                 \textcolor{keywordflow}{return} \hyperlink{classOptions_a88d9ed92fceb1c91e4df59bc1f81ab3b}{m\_storageDir};
-182         \}
+180                                {
+181                 return m_storageDir;
+182         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_a6661fe4edd501f7e97527b8f9354ef84}\label{classOptions_a6661fe4edd501f7e97527b8f9354ef84}} 
-\index{Options@{Options}!storage\+File@{storage\+File}}
-\index{storage\+File@{storage\+File}!Options@{Options}}
-\subsubsection{\texorpdfstring{storage\+File()}{storageFile()}}
-{\footnotesize\ttfamily std\+::string Options\+::storage\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Get accessor to member m\+\_\+storage\+File \begin{DoxyReturn}{Returns}
-the current value of m\+\_\+storage\+File 
+\hypertarget{classOptions_a6661fe4edd501f7e97527b8f9354ef84}{
+\index{Options@{Options}!storageFile@{storageFile}}
+\index{storageFile@{storageFile}!Options@{Options}}
+\subsubsection[{storageFile}]{\setlength{\rightskip}{0pt plus 5cm}std::string Options::storageFile ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_a6661fe4edd501f7e97527b8f9354ef84}
+Get accessor to member m\_\-storageFile \begin{DoxyReturn}{Returns}
+the current value of m\_\-storageFile 
 \end{DoxyReturn}
 
 
-Definition at line 200 of file Options.\+h.
+Definition at line 200 of file Options.h.
 
+References m\_\-storageFile.
 
-
-References m\+\_\+storage\+File.
-
-
-
-Referenced by export\+\_\+base(), and Application\+::prepare().
+Referenced by export\_\-base(), and Application::prepare().
 
 
 \begin{DoxyCode}
-200                                 \{
-201                 \textcolor{keywordflow}{return} \hyperlink{classOptions_a4d952db4e93d3aae6db86d89faa3677a}{m\_storageFile};
-202         \}
+200                                 {
+201                 return m_storageFile;
+202         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_a68c501133588cd4b1c80219adb926e8d}\label{classOptions_a68c501133588cd4b1c80219adb926e8d}} 
-\index{Options@{Options}!storage\+File\+Full\+Name@{storage\+File\+Full\+Name}}
-\index{storage\+File\+Full\+Name@{storage\+File\+Full\+Name}!Options@{Options}}
-\subsubsection{\texorpdfstring{storage\+File\+Full\+Name()}{storageFileFullName()}}
-{\footnotesize\ttfamily std\+::string Options\+::storage\+File\+Full\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Get accessor to member m\+\_\+storage\+File \begin{DoxyReturn}{Returns}
-the current value of m\+\_\+storage\+File 
+\hypertarget{classOptions_a68c501133588cd4b1c80219adb926e8d}{
+\index{Options@{Options}!storageFileFullName@{storageFileFullName}}
+\index{storageFileFullName@{storageFileFullName}!Options@{Options}}
+\subsubsection[{storageFileFullName}]{\setlength{\rightskip}{0pt plus 5cm}std::string Options::storageFileFullName ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_a68c501133588cd4b1c80219adb926e8d}
+Get accessor to member m\_\-storageFile \begin{DoxyReturn}{Returns}
+the current value of m\_\-storageFile 
 \end{DoxyReturn}
 
 
-Definition at line 208 of file Options.\+h.
+Definition at line 208 of file Options.h.
 
+References m\_\-storageFile, and storageFullPath().
 
-
-References m\+\_\+storage\+File, and storage\+Full\+Path().
-
-
-
-Referenced by export\+\_\+base(), and set\+Stream().
+Referenced by export\_\-base(), and setStream().
 
 
 \begin{DoxyCode}
-208                                         \{
-209                 std::string file = \hyperlink{classOptions_aa5fe6b85088f3012226869480790a383}{storageFullPath}();
-210                 file.append(\textcolor{stringliteral}{"/"});
-211                 file.append(\hyperlink{classOptions_a4d952db4e93d3aae6db86d89faa3677a}{m\_storageFile});
-212                 \textcolor{keywordflow}{return} file;
-213         \}
+208                                         {
+209                 std::string file = storageFullPath();
+210                 file.append("/");
+211                 file.append(m_storageFile);
+212                 return file;
+213         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_aa5fe6b85088f3012226869480790a383}\label{classOptions_aa5fe6b85088f3012226869480790a383}} 
-\index{Options@{Options}!storage\+Full\+Path@{storage\+Full\+Path}}
-\index{storage\+Full\+Path@{storage\+Full\+Path}!Options@{Options}}
-\subsubsection{\texorpdfstring{storage\+Full\+Path()}{storageFullPath()}}
-{\footnotesize\ttfamily std\+::string Options\+::storage\+Full\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Get accessor to member m\+\_\+storage\+Path \begin{DoxyReturn}{Returns}
-the current value of m\+\_\+storage\+Path 
+\hypertarget{classOptions_aa5fe6b85088f3012226869480790a383}{
+\index{Options@{Options}!storageFullPath@{storageFullPath}}
+\index{storageFullPath@{storageFullPath}!Options@{Options}}
+\subsubsection[{storageFullPath}]{\setlength{\rightskip}{0pt plus 5cm}std::string Options::storageFullPath ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_aa5fe6b85088f3012226869480790a383}
+Get accessor to member m\_\-storagePath \begin{DoxyReturn}{Returns}
+the current value of m\_\-storagePath 
 \end{DoxyReturn}
 
 
-Definition at line 159 of file Options.\+h.
+Definition at line 159 of file Options.h.
 
+References itos(), m\_\-runNumber, m\_\-storageDir, and m\_\-storagePath.
 
-
-References itos(), m\+\_\+run\+Number, m\+\_\+storage\+Dir, and m\+\_\+storage\+Path.
-
-
-
-Referenced by data\+File\+Full\+Name(), export\+\_\+base(), Emulate\+F\+E\+::generate\+File(), Application\+::prepare(), and storage\+File\+Full\+Name().
+Referenced by dataFileFullName(), export\_\-base(), EmulateFE::generateFile(), Application::prepare(), and storageFileFullName().
 
 
 \begin{DoxyCode}
-159                                      \{
-160                 std::string path = \hyperlink{classOptions_ad125e827cb30bc9b63875ec45b31ef5e}{m\_storagePath};
-161                 path.append(\textcolor{stringliteral}{"/"});
-162                 path.append(\hyperlink{classOptions_a88d9ed92fceb1c91e4df59bc1f81ab3b}{m\_storageDir});
-163                 path.append(\textcolor{stringliteral}{"\_"});
-164                 path.append(\hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos}(\hyperlink{classOptions_a1762c644c5f87feabe12f84f17a1a351}{m\_runNumber}));
-165                 \textcolor{keywordflow}{return} path;
-166         \}
+159                                      {
+160                 std::string path = m_storagePath;
+161                 path.append("/");
+162                 path.append(m_storageDir);
+163                 path.append("_");
+164                 path.append(itos(m_runNumber));
+165                 return path;
+166         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_a3992b9247441a3e60e55c8c5fe32b394}\label{classOptions_a3992b9247441a3e60e55c8c5fe32b394}} 
-\index{Options@{Options}!storage\+Path@{storage\+Path}}
-\index{storage\+Path@{storage\+Path}!Options@{Options}}
-\subsubsection{\texorpdfstring{storage\+Path()}{storagePath()}}
-{\footnotesize\ttfamily std\+::string Options\+::storage\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Get accessor to member m\+\_\+storage\+Path \begin{DoxyReturn}{Returns}
-the current value of m\+\_\+storage\+Path 
+\hypertarget{classOptions_a3992b9247441a3e60e55c8c5fe32b394}{
+\index{Options@{Options}!storagePath@{storagePath}}
+\index{storagePath@{storagePath}!Options@{Options}}
+\subsubsection[{storagePath}]{\setlength{\rightskip}{0pt plus 5cm}std::string Options::storagePath ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_a3992b9247441a3e60e55c8c5fe32b394}
+Get accessor to member m\_\-storagePath \begin{DoxyReturn}{Returns}
+the current value of m\_\-storagePath 
 \end{DoxyReturn}
 
 
-Definition at line 151 of file Options.\+h.
+Definition at line 151 of file Options.h.
 
+References m\_\-storagePath.
 
-
-References m\+\_\+storage\+Path.
-
-
-
-Referenced by export\+\_\+base(), and set\+Storage\+Path().
+Referenced by export\_\-base().
 
 
 \begin{DoxyCode}
-151                                  \{
-152                 \textcolor{keywordflow}{return} \hyperlink{classOptions_ad125e827cb30bc9b63875ec45b31ef5e}{m\_storagePath};
-153         \}
+151                                  {
+152                 return m_storagePath;
+153         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_acfc9aa4c7dc41691571f2b37d3fe86af}\label{classOptions_acfc9aa4c7dc41691571f2b37d3fe86af}} 
+\hypertarget{classOptions_acfc9aa4c7dc41691571f2b37d3fe86af}{
 \index{Options@{Options}!stream@{stream}}
 \index{stream@{stream}!Options@{Options}}
-\subsubsection{\texorpdfstring{stream()}{stream()}}
-{\footnotesize\ttfamily std\+::ofstream$\ast$ Options\+::stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Get accessor to member m\+\_\+log\+Stream \begin{DoxyReturn}{Returns}
-the current value of m\+\_\+log\+Stream 
+\subsubsection[{stream}]{\setlength{\rightskip}{0pt plus 5cm}std::ofstream$\ast$ Options::stream ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_acfc9aa4c7dc41691571f2b37d3fe86af}
+Get accessor to member m\_\-logStream \begin{DoxyReturn}{Returns}
+the current value of m\_\-logStream 
 \end{DoxyReturn}
 
 
-Definition at line 392 of file Options.\+h.
+Definition at line 392 of file Options.h.
 
-
-
-References m\+\_\+stream.
+References m\_\-stream.
 
 
 \begin{DoxyCode}
-392                                \{
-393                 \textcolor{keywordflow}{return} \hyperlink{classOptions_a8c5485cd614fa90de6b1aa85a7d2191b}{m\_stream};
-394         \}
+392                                {
+393                 return m_stream;
+394         }
 \end{DoxyCode}
-\mbox{\Hypertarget{classOptions_a4569b8790af48109c8639bec7b626fa6}\label{classOptions_a4569b8790af48109c8639bec7b626fa6}} 
-\index{Options@{Options}!time\+Max@{time\+Max}}
-\index{time\+Max@{time\+Max}!Options@{Options}}
-\subsubsection{\texorpdfstring{time\+Max()}{timeMax()}}
-{\footnotesize\ttfamily unsigned long Options\+::time\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Get accessor to member m\+\_\+time\+Max \begin{DoxyReturn}{Returns}
-the current value of m\+\_\+time\+Max 
+\hypertarget{classOptions_a4569b8790af48109c8639bec7b626fa6}{
+\index{Options@{Options}!timeMax@{timeMax}}
+\index{timeMax@{timeMax}!Options@{Options}}
+\subsubsection[{timeMax}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Options::timeMax ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classOptions_a4569b8790af48109c8639bec7b626fa6}
+Get accessor to member m\_\-timeMax \begin{DoxyReturn}{Returns}
+the current value of m\_\-timeMax 
 \end{DoxyReturn}
 
 
-Definition at line 349 of file Options.\+h.
+Definition at line 349 of file Options.h.
 
-
-
-References m\+\_\+time\+Max.
-
-
-
-Referenced by set\+Time\+Max().
+References m\_\-timeMax.
 
 
 \begin{DoxyCode}
-349                                  \{
-350                 \textcolor{keywordflow}{return} \hyperlink{classOptions_a2584abb6745a082f73e2917732cd00e1}{m\_timeMax};
-351         \}
+349                                  {
+350                 return m_timeMax;
+351         }
 \end{DoxyCode}
 
 
 \subsection{Member Data Documentation}
-\mbox{\Hypertarget{classOptions_ae4461f1dd3357c0478098fc32e809405}\label{classOptions_ae4461f1dd3357c0478098fc32e809405}} 
-\index{Options@{Options}!m\+\_\+batch@{m\+\_\+batch}}
-\index{m\+\_\+batch@{m\+\_\+batch}!Options@{Options}}
-\subsubsection{\texorpdfstring{m\+\_\+batch}{m\_batch}}
-{\footnotesize\ttfamily bool Options\+::m\+\_\+batch\hspace{0.3cm}{\ttfamily [private]}}
+\hypertarget{classOptions_ae4461f1dd3357c0478098fc32e809405}{
+\index{Options@{Options}!m\_\-batch@{m\_\-batch}}
+\index{m\_\-batch@{m\_\-batch}!Options@{Options}}
+\subsubsection[{m\_\-batch}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf Options::m\_\-batch}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classOptions_ae4461f1dd3357c0478098fc32e809405}
 
 
+Definition at line 456 of file Options.h.
 
-Definition at line 456 of file Options.\+h.
+Referenced by print().\hypertarget{classOptions_a9d82ad17fc1fd2315fc8a9e8d0d34f33}{
+\index{Options@{Options}!m\_\-currentPath@{m\_\-currentPath}}
+\index{m\_\-currentPath@{m\_\-currentPath}!Options@{Options}}
+\subsubsection[{m\_\-currentPath}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf Options::m\_\-currentPath}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classOptions_a9d82ad17fc1fd2315fc8a9e8d0d34f33}
 
 
+Definition at line 438 of file Options.h.
 
-Referenced by print().
+Referenced by currentPath(), print(), and setCurrentPath().\hypertarget{classOptions_a244898bb30c9f716bdc335b4d85d1dfb}{
+\index{Options@{Options}!m\_\-dataStorage@{m\_\-dataStorage}}
+\index{m\_\-dataStorage@{m\_\-dataStorage}!Options@{Options}}
+\subsubsection[{m\_\-dataStorage}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf Options::m\_\-dataStorage}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classOptions_a244898bb30c9f716bdc335b4d85d1dfb}
 
-\mbox{\Hypertarget{classOptions_a9d82ad17fc1fd2315fc8a9e8d0d34f33}\label{classOptions_a9d82ad17fc1fd2315fc8a9e8d0d34f33}} 
-\index{Options@{Options}!m\+\_\+current\+Path@{m\+\_\+current\+Path}}
-\index{m\+\_\+current\+Path@{m\+\_\+current\+Path}!Options@{Options}}
-\subsubsection{\texorpdfstring{m\+\_\+current\+Path}{m\_currentPath}}
-{\footnotesize\ttfamily std\+::string Options\+::m\+\_\+current\+Path\hspace{0.3cm}{\ttfamily [private]}}
 
+Definition at line 439 of file Options.h.
 
+Referenced by dataStorage(), print(), and setDataStorage().\hypertarget{classOptions_a59ff5f2cab2490fb529367de13a2321a}{
+\index{Options@{Options}!m\_\-defFile@{m\_\-defFile}}
+\index{m\_\-defFile@{m\_\-defFile}!Options@{Options}}
+\subsubsection[{m\_\-defFile}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf Options::m\_\-defFile}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classOptions_a59ff5f2cab2490fb529367de13a2321a}
 
-Definition at line 438 of file Options.\+h.
 
+Definition at line 445 of file Options.h.
 
+Referenced by defFile(), print(), and setDefFile().\hypertarget{classOptions_a80d2caed71dd935c104f0133504251e9}{
+\index{Options@{Options}!m\_\-log@{m\_\-log}}
+\index{m\_\-log@{m\_\-log}!Options@{Options}}
+\subsubsection[{m\_\-log}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MsgSvc} {\bf Options::m\_\-log}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classOptions_a80d2caed71dd935c104f0133504251e9}
 
-Referenced by current\+Path(), print(), and set\+Current\+Path().
 
-\mbox{\Hypertarget{classOptions_a244898bb30c9f716bdc335b4d85d1dfb}\label{classOptions_a244898bb30c9f716bdc335b4d85d1dfb}} 
-\index{Options@{Options}!m\+\_\+data\+Storage@{m\+\_\+data\+Storage}}
-\index{m\+\_\+data\+Storage@{m\+\_\+data\+Storage}!Options@{Options}}
-\subsubsection{\texorpdfstring{m\+\_\+data\+Storage}{m\_dataStorage}}
-{\footnotesize\ttfamily bool Options\+::m\+\_\+data\+Storage\hspace{0.3cm}{\ttfamily [private]}}
+Definition at line 435 of file Options.h.
 
+Referenced by print().\hypertarget{classOptions_abaef6cdcc8422b199084510d173edbe6}{
+\index{Options@{Options}!m\_\-logDefFile@{m\_\-logDefFile}}
+\index{m\_\-logDefFile@{m\_\-logDefFile}!Options@{Options}}
+\subsubsection[{m\_\-logDefFile}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf Options::m\_\-logDefFile}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classOptions_abaef6cdcc8422b199084510d173edbe6}
 
 
-Definition at line 439 of file Options.\+h.
+Definition at line 461 of file Options.h.
 
+Referenced by logDefFile(), print(), and setLogDefFile().\hypertarget{classOptions_aebb2db3fb07ea1f73b27bde841be69d8}{
+\index{Options@{Options}!m\_\-logDefStream@{m\_\-logDefStream}}
+\index{m\_\-logDefStream@{m\_\-logDefStream}!Options@{Options}}
+\subsubsection[{m\_\-logDefStream}]{\setlength{\rightskip}{0pt plus 5cm}std::ofstream$\ast$ {\bf Options::m\_\-logDefStream}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classOptions_aebb2db3fb07ea1f73b27bde841be69d8}
 
 
-Referenced by data\+Storage(), print(), and set\+Data\+Storage().
+Definition at line 460 of file Options.h.
 
-\mbox{\Hypertarget{classOptions_a59ff5f2cab2490fb529367de13a2321a}\label{classOptions_a59ff5f2cab2490fb529367de13a2321a}} 
-\index{Options@{Options}!m\+\_\+def\+File@{m\+\_\+def\+File}}
-\index{m\+\_\+def\+File@{m\+\_\+def\+File}!Options@{Options}}
-\subsubsection{\texorpdfstring{m\+\_\+def\+File}{m\_defFile}}
-{\footnotesize\ttfamily std\+::string Options\+::m\+\_\+def\+File\hspace{0.3cm}{\ttfamily [private]}}
+Referenced by Options(), setLogDefFile(), setStream(), and $\sim$Options().\hypertarget{classOptions_a9ecfefe6bf44ff519369f38eb5c8147a}{
+\index{Options@{Options}!m\_\-logOutputLevel@{m\_\-logOutputLevel}}
+\index{m\_\-logOutputLevel@{m\_\-logOutputLevel}!Options@{Options}}
+\subsubsection[{m\_\-logOutputLevel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MsgSvc::MsgLevel} {\bf Options::m\_\-logOutputLevel}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classOptions_a9ecfefe6bf44ff519369f38eb5c8147a}
 
 
+Definition at line 436 of file Options.h.
 
-Definition at line 445 of file Options.\+h.
+Referenced by logOutputLevel(), and setLogOutputLevel().\hypertarget{classOptions_ab7ffad5110df714233470725ef98be6e}{
+\index{Options@{Options}!m\_\-logStorage@{m\_\-logStorage}}
+\index{m\_\-logStorage@{m\_\-logStorage}!Options@{Options}}
+\subsubsection[{m\_\-logStorage}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf Options::m\_\-logStorage}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classOptions_ab7ffad5110df714233470725ef98be6e}
 
 
+Definition at line 440 of file Options.h.
 
-Referenced by def\+File(), print(), and set\+Def\+File().
+Referenced by logStorage(), print(), and setLogStorage().\hypertarget{classOptions_a65c3a025880fb38373b599b87d600eef}{
+\index{Options@{Options}!m\_\-logStream@{m\_\-logStream}}
+\index{m\_\-logStream@{m\_\-logStream}!Options@{Options}}
+\subsubsection[{m\_\-logStream}]{\setlength{\rightskip}{0pt plus 5cm}std::ofstream$\ast$ {\bf Options::m\_\-logStream}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classOptions_a65c3a025880fb38373b599b87d600eef}
 
-\mbox{\Hypertarget{classOptions_a80d2caed71dd935c104f0133504251e9}\label{classOptions_a80d2caed71dd935c104f0133504251e9}} 
-\index{Options@{Options}!m\+\_\+log@{m\+\_\+log}}
-\index{m\+\_\+log@{m\+\_\+log}!Options@{Options}}
-\subsubsection{\texorpdfstring{m\+\_\+log}{m\_log}}
-{\footnotesize\ttfamily \hyperlink{classMsgSvc}{Msg\+Svc} Options\+::m\+\_\+log\hspace{0.3cm}{\ttfamily [private]}}
 
+Definition at line 459 of file Options.h.
 
+Referenced by Options(), and setStream().\hypertarget{classOptions_ae6460776ac3433103d88729a6811fc56}{
+\index{Options@{Options}!m\_\-nErrors@{m\_\-nErrors}}
+\index{m\_\-nErrors@{m\_\-nErrors}!Options@{Options}}
+\subsubsection[{m\_\-nErrors}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long {\bf Options::m\_\-nErrors}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classOptions_ae6460776ac3433103d88729a6811fc56}
 
-Definition at line 435 of file Options.\+h.
 
+Definition at line 448 of file Options.h.
 
+Referenced by nErrors(), print(), and setNErrors().\hypertarget{classOptions_a5e3bb1f2dfc4bf10cab08a33253cc4db}{
+\index{Options@{Options}!m\_\-nEvt@{m\_\-nEvt}}
+\index{m\_\-nEvt@{m\_\-nEvt}!Options@{Options}}
+\subsubsection[{m\_\-nEvt}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long {\bf Options::m\_\-nEvt}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classOptions_a5e3bb1f2dfc4bf10cab08a33253cc4db}
 
-Referenced by print().
 
-\mbox{\Hypertarget{classOptions_abaef6cdcc8422b199084510d173edbe6}\label{classOptions_abaef6cdcc8422b199084510d173edbe6}} 
-\index{Options@{Options}!m\+\_\+log\+Def\+File@{m\+\_\+log\+Def\+File}}
-\index{m\+\_\+log\+Def\+File@{m\+\_\+log\+Def\+File}!Options@{Options}}
-\subsubsection{\texorpdfstring{m\+\_\+log\+Def\+File}{m\_logDefFile}}
-{\footnotesize\ttfamily std\+::string Options\+::m\+\_\+log\+Def\+File\hspace{0.3cm}{\ttfamily [private]}}
+Definition at line 447 of file Options.h.
 
+Referenced by nEvt(), print(), and setNEvt().\hypertarget{classOptions_a825a47258257937a8caa902f5fff7e8a}{
+\index{Options@{Options}!m\_\-nEvtMax@{m\_\-nEvtMax}}
+\index{m\_\-nEvtMax@{m\_\-nEvtMax}!Options@{Options}}
+\subsubsection[{m\_\-nEvtMax}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Options::m\_\-nEvtMax}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classOptions_a825a47258257937a8caa902f5fff7e8a}
 
 
-Definition at line 461 of file Options.\+h.
+Definition at line 451 of file Options.h.
 
+Referenced by nEvtMax(), print(), and setNEvtMax().\hypertarget{classOptions_aa7f7161bc67732b310937afb137657a0}{
+\index{Options@{Options}!m\_\-plotFreq@{m\_\-plotFreq}}
+\index{m\_\-plotFreq@{m\_\-plotFreq}!Options@{Options}}
+\subsubsection[{m\_\-plotFreq}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long {\bf Options::m\_\-plotFreq}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classOptions_aa7f7161bc67732b310937afb137657a0}
 
 
-Referenced by log\+Def\+File(), print(), and set\+Log\+Def\+File().
+Definition at line 450 of file Options.h.
 
-\mbox{\Hypertarget{classOptions_aebb2db3fb07ea1f73b27bde841be69d8}\label{classOptions_aebb2db3fb07ea1f73b27bde841be69d8}} 
-\index{Options@{Options}!m\+\_\+log\+Def\+Stream@{m\+\_\+log\+Def\+Stream}}
-\index{m\+\_\+log\+Def\+Stream@{m\+\_\+log\+Def\+Stream}!Options@{Options}}
-\subsubsection{\texorpdfstring{m\+\_\+log\+Def\+Stream}{m\_logDefStream}}
-{\footnotesize\ttfamily std\+::ofstream$\ast$ Options\+::m\+\_\+log\+Def\+Stream\hspace{0.3cm}{\ttfamily [private]}}
+Referenced by plotFreq(), print(), and setPlotFreq().\hypertarget{classOptions_acf8f96cbc3245ec4b3b47bd3bfa0d742}{
+\index{Options@{Options}!m\_\-printFreq@{m\_\-printFreq}}
+\index{m\_\-printFreq@{m\_\-printFreq}!Options@{Options}}
+\subsubsection[{m\_\-printFreq}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long {\bf Options::m\_\-printFreq}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classOptions_acf8f96cbc3245ec4b3b47bd3bfa0d742}
 
 
+Definition at line 449 of file Options.h.
 
-Definition at line 460 of file Options.\+h.
+Referenced by print(), printFreq(), and setPrintFreq().\hypertarget{classOptions_a1762c644c5f87feabe12f84f17a1a351}{
+\index{Options@{Options}!m\_\-runNumber@{m\_\-runNumber}}
+\index{m\_\-runNumber@{m\_\-runNumber}!Options@{Options}}
+\subsubsection[{m\_\-runNumber}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long {\bf Options::m\_\-runNumber}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classOptions_a1762c644c5f87feabe12f84f17a1a351}
 
 
+Definition at line 453 of file Options.h.
 
-Referenced by Options(), set\+Log\+Def\+File(), set\+Stream(), and $\sim$\+Options().
+Referenced by print(), runNumber(), setRunNumber(), and storageFullPath().\hypertarget{classOptions_a2ad2d67b98fc5fbea4cbbd781ccb6183}{
+\index{Options@{Options}!m\_\-runNumberManagement@{m\_\-runNumberManagement}}
+\index{m\_\-runNumberManagement@{m\_\-runNumberManagement}!Options@{Options}}
+\subsubsection[{m\_\-runNumberManagement}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf Options::m\_\-runNumberManagement}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classOptions_a2ad2d67b98fc5fbea4cbbd781ccb6183}
 
-\mbox{\Hypertarget{classOptions_a9ecfefe6bf44ff519369f38eb5c8147a}\label{classOptions_a9ecfefe6bf44ff519369f38eb5c8147a}} 
-\index{Options@{Options}!m\+\_\+log\+Output\+Level@{m\+\_\+log\+Output\+Level}}
-\index{m\+\_\+log\+Output\+Level@{m\+\_\+log\+Output\+Level}!Options@{Options}}
-\subsubsection{\texorpdfstring{m\+\_\+log\+Output\+Level}{m\_logOutputLevel}}
-{\footnotesize\ttfamily \hyperlink{classMsgSvc_ae671eb7301996cd049d2da8a65925926}{Msg\+Svc\+::\+Msg\+Level} Options\+::m\+\_\+log\+Output\+Level\hspace{0.3cm}{\ttfamily [private]}}
 
+Definition at line 455 of file Options.h.
 
+Referenced by print(), runNumberManagement(), and setRunNumberManagement().\hypertarget{classOptions_a879c2741a290595adb3f74633f3a3987}{
+\index{Options@{Options}!m\_\-stopOnError@{m\_\-stopOnError}}
+\index{m\_\-stopOnError@{m\_\-stopOnError}!Options@{Options}}
+\subsubsection[{m\_\-stopOnError}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf Options::m\_\-stopOnError}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classOptions_a879c2741a290595adb3f74633f3a3987}
 
-Definition at line 436 of file Options.\+h.
 
+Definition at line 446 of file Options.h.
 
+Referenced by print(), setStopOnError(), and stopOnError().\hypertarget{classOptions_ab077e872fd03f7bf64f3a354d0c4a2f5}{
+\index{Options@{Options}!m\_\-storageDefault@{m\_\-storageDefault}}
+\index{m\_\-storageDefault@{m\_\-storageDefault}!Options@{Options}}
+\subsubsection[{m\_\-storageDefault}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf Options::m\_\-storageDefault}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classOptions_ab077e872fd03f7bf64f3a354d0c4a2f5}
 
-Referenced by log\+Output\+Level(), and set\+Log\+Output\+Level().
 
-\mbox{\Hypertarget{classOptions_ab7ffad5110df714233470725ef98be6e}\label{classOptions_ab7ffad5110df714233470725ef98be6e}} 
-\index{Options@{Options}!m\+\_\+log\+Storage@{m\+\_\+log\+Storage}}
-\index{m\+\_\+log\+Storage@{m\+\_\+log\+Storage}!Options@{Options}}
-\subsubsection{\texorpdfstring{m\+\_\+log\+Storage}{m\_logStorage}}
-{\footnotesize\ttfamily bool Options\+::m\+\_\+log\+Storage\hspace{0.3cm}{\ttfamily [private]}}
+Definition at line 443 of file Options.h.
 
+Referenced by Options(), print(), and setStorageFile().\hypertarget{classOptions_a88d9ed92fceb1c91e4df59bc1f81ab3b}{
+\index{Options@{Options}!m\_\-storageDir@{m\_\-storageDir}}
+\index{m\_\-storageDir@{m\_\-storageDir}!Options@{Options}}
+\subsubsection[{m\_\-storageDir}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf Options::m\_\-storageDir}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classOptions_a88d9ed92fceb1c91e4df59bc1f81ab3b}
 
 
-Definition at line 440 of file Options.\+h.
+Definition at line 441 of file Options.h.
 
+Referenced by print(), setStorageDir(), storageDir(), and storageFullPath().\hypertarget{classOptions_a4d952db4e93d3aae6db86d89faa3677a}{
+\index{Options@{Options}!m\_\-storageFile@{m\_\-storageFile}}
+\index{m\_\-storageFile@{m\_\-storageFile}!Options@{Options}}
+\subsubsection[{m\_\-storageFile}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf Options::m\_\-storageFile}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classOptions_a4d952db4e93d3aae6db86d89faa3677a}
 
 
-Referenced by log\+Storage(), print(), and set\+Log\+Storage().
+Definition at line 442 of file Options.h.
 
-\mbox{\Hypertarget{classOptions_a65c3a025880fb38373b599b87d600eef}\label{classOptions_a65c3a025880fb38373b599b87d600eef}} 
-\index{Options@{Options}!m\+\_\+log\+Stream@{m\+\_\+log\+Stream}}
-\index{m\+\_\+log\+Stream@{m\+\_\+log\+Stream}!Options@{Options}}
-\subsubsection{\texorpdfstring{m\+\_\+log\+Stream}{m\_logStream}}
-{\footnotesize\ttfamily std\+::ofstream$\ast$ Options\+::m\+\_\+log\+Stream\hspace{0.3cm}{\ttfamily [private]}}
+Referenced by dataFile(), dataFileFullName(), logFile(), print(), setStorageFile(), storageFile(), and storageFileFullName().\hypertarget{classOptions_ad125e827cb30bc9b63875ec45b31ef5e}{
+\index{Options@{Options}!m\_\-storagePath@{m\_\-storagePath}}
+\index{m\_\-storagePath@{m\_\-storagePath}!Options@{Options}}
+\subsubsection[{m\_\-storagePath}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf Options::m\_\-storagePath}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classOptions_ad125e827cb30bc9b63875ec45b31ef5e}
 
 
+Definition at line 444 of file Options.h.
 
-Definition at line 459 of file Options.\+h.
+Referenced by print(), setStoragePath(), storageFullPath(), and storagePath().\hypertarget{classOptions_a8c5485cd614fa90de6b1aa85a7d2191b}{
+\index{Options@{Options}!m\_\-stream@{m\_\-stream}}
+\index{m\_\-stream@{m\_\-stream}!Options@{Options}}
+\subsubsection[{m\_\-stream}]{\setlength{\rightskip}{0pt plus 5cm}std::ofstream$\ast$ {\bf Options::m\_\-stream}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classOptions_a8c5485cd614fa90de6b1aa85a7d2191b}
 
 
+Definition at line 458 of file Options.h.
 
-Referenced by Options(), and set\+Stream().
+Referenced by Options(), setStream(), and stream().\hypertarget{classOptions_a2584abb6745a082f73e2917732cd00e1}{
+\index{Options@{Options}!m\_\-timeMax@{m\_\-timeMax}}
+\index{m\_\-timeMax@{m\_\-timeMax}!Options@{Options}}
+\subsubsection[{m\_\-timeMax}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Options::m\_\-timeMax}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classOptions_a2584abb6745a082f73e2917732cd00e1}
 
-\mbox{\Hypertarget{classOptions_ae6460776ac3433103d88729a6811fc56}\label{classOptions_ae6460776ac3433103d88729a6811fc56}} 
-\index{Options@{Options}!m\+\_\+n\+Errors@{m\+\_\+n\+Errors}}
-\index{m\+\_\+n\+Errors@{m\+\_\+n\+Errors}!Options@{Options}}
-\subsubsection{\texorpdfstring{m\+\_\+n\+Errors}{m\_nErrors}}
-{\footnotesize\ttfamily unsigned long Options\+::m\+\_\+n\+Errors\hspace{0.3cm}{\ttfamily [private]}}
 
+Definition at line 452 of file Options.h.
 
+Referenced by setTimeMax(), and timeMax().
 
-Definition at line 448 of file Options.\+h.
-
-
-
-Referenced by n\+Errors(), print(), and set\+N\+Errors().
-
-\mbox{\Hypertarget{classOptions_a5e3bb1f2dfc4bf10cab08a33253cc4db}\label{classOptions_a5e3bb1f2dfc4bf10cab08a33253cc4db}} 
-\index{Options@{Options}!m\+\_\+n\+Evt@{m\+\_\+n\+Evt}}
-\index{m\+\_\+n\+Evt@{m\+\_\+n\+Evt}!Options@{Options}}
-\subsubsection{\texorpdfstring{m\+\_\+n\+Evt}{m\_nEvt}}
-{\footnotesize\ttfamily unsigned long Options\+::m\+\_\+n\+Evt\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definition at line 447 of file Options.\+h.
-
-
-
-Referenced by n\+Evt(), print(), and set\+N\+Evt().
-
-\mbox{\Hypertarget{classOptions_a825a47258257937a8caa902f5fff7e8a}\label{classOptions_a825a47258257937a8caa902f5fff7e8a}} 
-\index{Options@{Options}!m\+\_\+n\+Evt\+Max@{m\+\_\+n\+Evt\+Max}}
-\index{m\+\_\+n\+Evt\+Max@{m\+\_\+n\+Evt\+Max}!Options@{Options}}
-\subsubsection{\texorpdfstring{m\+\_\+n\+Evt\+Max}{m\_nEvtMax}}
-{\footnotesize\ttfamily int Options\+::m\+\_\+n\+Evt\+Max\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definition at line 451 of file Options.\+h.
-
-
-
-Referenced by n\+Evt\+Max(), print(), and set\+N\+Evt\+Max().
-
-\mbox{\Hypertarget{classOptions_aa7f7161bc67732b310937afb137657a0}\label{classOptions_aa7f7161bc67732b310937afb137657a0}} 
-\index{Options@{Options}!m\+\_\+plot\+Freq@{m\+\_\+plot\+Freq}}
-\index{m\+\_\+plot\+Freq@{m\+\_\+plot\+Freq}!Options@{Options}}
-\subsubsection{\texorpdfstring{m\+\_\+plot\+Freq}{m\_plotFreq}}
-{\footnotesize\ttfamily unsigned long Options\+::m\+\_\+plot\+Freq\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definition at line 450 of file Options.\+h.
-
-
-
-Referenced by plot\+Freq(), print(), and set\+Plot\+Freq().
-
-\mbox{\Hypertarget{classOptions_acf8f96cbc3245ec4b3b47bd3bfa0d742}\label{classOptions_acf8f96cbc3245ec4b3b47bd3bfa0d742}} 
-\index{Options@{Options}!m\+\_\+print\+Freq@{m\+\_\+print\+Freq}}
-\index{m\+\_\+print\+Freq@{m\+\_\+print\+Freq}!Options@{Options}}
-\subsubsection{\texorpdfstring{m\+\_\+print\+Freq}{m\_printFreq}}
-{\footnotesize\ttfamily unsigned long Options\+::m\+\_\+print\+Freq\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definition at line 449 of file Options.\+h.
-
-
-
-Referenced by print(), print\+Freq(), and set\+Print\+Freq().
-
-\mbox{\Hypertarget{classOptions_a1762c644c5f87feabe12f84f17a1a351}\label{classOptions_a1762c644c5f87feabe12f84f17a1a351}} 
-\index{Options@{Options}!m\+\_\+run\+Number@{m\+\_\+run\+Number}}
-\index{m\+\_\+run\+Number@{m\+\_\+run\+Number}!Options@{Options}}
-\subsubsection{\texorpdfstring{m\+\_\+run\+Number}{m\_runNumber}}
-{\footnotesize\ttfamily unsigned long Options\+::m\+\_\+run\+Number\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definition at line 453 of file Options.\+h.
-
-
-
-Referenced by print(), run\+Number(), set\+Run\+Number(), and storage\+Full\+Path().
-
-\mbox{\Hypertarget{classOptions_a2ad2d67b98fc5fbea4cbbd781ccb6183}\label{classOptions_a2ad2d67b98fc5fbea4cbbd781ccb6183}} 
-\index{Options@{Options}!m\+\_\+run\+Number\+Management@{m\+\_\+run\+Number\+Management}}
-\index{m\+\_\+run\+Number\+Management@{m\+\_\+run\+Number\+Management}!Options@{Options}}
-\subsubsection{\texorpdfstring{m\+\_\+run\+Number\+Management}{m\_runNumberManagement}}
-{\footnotesize\ttfamily bool Options\+::m\+\_\+run\+Number\+Management\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definition at line 455 of file Options.\+h.
-
-
-
-Referenced by print(), run\+Number\+Management(), and set\+Run\+Number\+Management().
-
-\mbox{\Hypertarget{classOptions_a879c2741a290595adb3f74633f3a3987}\label{classOptions_a879c2741a290595adb3f74633f3a3987}} 
-\index{Options@{Options}!m\+\_\+stop\+On\+Error@{m\+\_\+stop\+On\+Error}}
-\index{m\+\_\+stop\+On\+Error@{m\+\_\+stop\+On\+Error}!Options@{Options}}
-\subsubsection{\texorpdfstring{m\+\_\+stop\+On\+Error}{m\_stopOnError}}
-{\footnotesize\ttfamily bool Options\+::m\+\_\+stop\+On\+Error\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definition at line 446 of file Options.\+h.
-
-
-
-Referenced by print(), set\+Stop\+On\+Error(), and stop\+On\+Error().
-
-\mbox{\Hypertarget{classOptions_ab077e872fd03f7bf64f3a354d0c4a2f5}\label{classOptions_ab077e872fd03f7bf64f3a354d0c4a2f5}} 
-\index{Options@{Options}!m\+\_\+storage\+Default@{m\+\_\+storage\+Default}}
-\index{m\+\_\+storage\+Default@{m\+\_\+storage\+Default}!Options@{Options}}
-\subsubsection{\texorpdfstring{m\+\_\+storage\+Default}{m\_storageDefault}}
-{\footnotesize\ttfamily std\+::string Options\+::m\+\_\+storage\+Default\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definition at line 443 of file Options.\+h.
-
-
-
-Referenced by Options(), print(), and set\+Storage\+File().
-
-\mbox{\Hypertarget{classOptions_a88d9ed92fceb1c91e4df59bc1f81ab3b}\label{classOptions_a88d9ed92fceb1c91e4df59bc1f81ab3b}} 
-\index{Options@{Options}!m\+\_\+storage\+Dir@{m\+\_\+storage\+Dir}}
-\index{m\+\_\+storage\+Dir@{m\+\_\+storage\+Dir}!Options@{Options}}
-\subsubsection{\texorpdfstring{m\+\_\+storage\+Dir}{m\_storageDir}}
-{\footnotesize\ttfamily std\+::string Options\+::m\+\_\+storage\+Dir\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definition at line 441 of file Options.\+h.
-
-
-
-Referenced by print(), set\+Storage\+Dir(), storage\+Dir(), and storage\+Full\+Path().
-
-\mbox{\Hypertarget{classOptions_a4d952db4e93d3aae6db86d89faa3677a}\label{classOptions_a4d952db4e93d3aae6db86d89faa3677a}} 
-\index{Options@{Options}!m\+\_\+storage\+File@{m\+\_\+storage\+File}}
-\index{m\+\_\+storage\+File@{m\+\_\+storage\+File}!Options@{Options}}
-\subsubsection{\texorpdfstring{m\+\_\+storage\+File}{m\_storageFile}}
-{\footnotesize\ttfamily std\+::string Options\+::m\+\_\+storage\+File\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definition at line 442 of file Options.\+h.
-
-
-
-Referenced by data\+File(), data\+File\+Full\+Name(), log\+File(), print(), set\+Storage\+File(), storage\+File(), and storage\+File\+Full\+Name().
-
-\mbox{\Hypertarget{classOptions_ad125e827cb30bc9b63875ec45b31ef5e}\label{classOptions_ad125e827cb30bc9b63875ec45b31ef5e}} 
-\index{Options@{Options}!m\+\_\+storage\+Path@{m\+\_\+storage\+Path}}
-\index{m\+\_\+storage\+Path@{m\+\_\+storage\+Path}!Options@{Options}}
-\subsubsection{\texorpdfstring{m\+\_\+storage\+Path}{m\_storagePath}}
-{\footnotesize\ttfamily std\+::string Options\+::m\+\_\+storage\+Path\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definition at line 444 of file Options.\+h.
-
-
-
-Referenced by print(), set\+Storage\+Path(), storage\+Full\+Path(), and storage\+Path().
-
-\mbox{\Hypertarget{classOptions_a8c5485cd614fa90de6b1aa85a7d2191b}\label{classOptions_a8c5485cd614fa90de6b1aa85a7d2191b}} 
-\index{Options@{Options}!m\+\_\+stream@{m\+\_\+stream}}
-\index{m\+\_\+stream@{m\+\_\+stream}!Options@{Options}}
-\subsubsection{\texorpdfstring{m\+\_\+stream}{m\_stream}}
-{\footnotesize\ttfamily std\+::ofstream$\ast$ Options\+::m\+\_\+stream\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definition at line 458 of file Options.\+h.
-
-
-
-Referenced by Options(), set\+Stream(), and stream().
-
-\mbox{\Hypertarget{classOptions_a2584abb6745a082f73e2917732cd00e1}\label{classOptions_a2584abb6745a082f73e2917732cd00e1}} 
-\index{Options@{Options}!m\+\_\+time\+Max@{m\+\_\+time\+Max}}
-\index{m\+\_\+time\+Max@{m\+\_\+time\+Max}!Options@{Options}}
-\subsubsection{\texorpdfstring{m\+\_\+time\+Max}{m\_timeMax}}
-{\footnotesize\ttfamily int Options\+::m\+\_\+time\+Max\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definition at line 452 of file Options.\+h.
-
-
-
-Referenced by set\+Time\+Max(), and time\+Max().
-
-
-
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
 \item 
-/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/inc/\hyperlink{Options_8h}{Options.\+h}\item 
-/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/src/\hyperlink{Options_8cpp}{Options.\+cpp}\end{DoxyCompactItemize}
+/home/eleclhcb/LHCb/lbcat-\/cmake/CatKernel/inc/\hyperlink{Options_8h}{Options.h}\item 
+/home/eleclhcb/LHCb/lbcat-\/cmake/CatKernel/src/\hyperlink{Options_8cpp}{Options.cpp}\end{DoxyCompactItemize}
