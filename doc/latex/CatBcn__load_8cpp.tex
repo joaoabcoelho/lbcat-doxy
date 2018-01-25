@@ -1,10 +1,44 @@
-\hypertarget{CatBcn__load_8cpp}{
-\section{/home/eleclhcb/LHCb/lbcat-\/cmake/CatBcn/src/CatBcn\_\-load.cpp File Reference}
-\label{CatBcn__load_8cpp}\index{/home/eleclhcb/LHCb/lbcat-\/cmake/CatBcn/src/CatBcn\_\-load.cpp@{/home/eleclhcb/LHCb/lbcat-\/cmake/CatBcn/src/CatBcn\_\-load.cpp}}
-}
-{\ttfamily \#include $<$iostream$>$}\par
-{\ttfamily \#include \char`\"{}DLL.h\char`\"{}}\par
-{\ttfamily \#include \char`\"{}LSDelayChipV1.h\char`\"{}}\par
-{\ttfamily \#include \char`\"{}ICECALv3.h\char`\"{}}\par
-{\ttfamily \#include \char`\"{}MSOxxxx.h\char`\"{}}\par
-{\ttfamily \#include \char`\"{}A11713B.h\char`\"{}}\par
+\hypertarget{CatBcn__load_8cpp}{}\section{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Bcn/src/\+Cat\+Bcn\+\_\+load.cpp File Reference}
+\label{CatBcn__load_8cpp}\index{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Bcn/src/\+Cat\+Bcn\+\_\+load.\+cpp@{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Bcn/src/\+Cat\+Bcn\+\_\+load.\+cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}D\+L\+L.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}L\+S\+Delay\+Chip\+V1.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}I\+C\+E\+C\+A\+Lv3.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}M\+S\+Oxxxx.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}A11713\+B.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{CatBcn__load_8cpp_aa31c72296cc56429bdc678bcafac95c1}{D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+LL} (Cat\+Bcn)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{CatBcn__load_8cpp_aa31c72296cc56429bdc678bcafac95c1}\label{CatBcn__load_8cpp_aa31c72296cc56429bdc678bcafac95c1}} 
+\index{Cat\+Bcn\+\_\+load.\+cpp@{Cat\+Bcn\+\_\+load.\+cpp}!D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+LL@{D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+LL}}
+\index{D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+LL@{D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+LL}!Cat\+Bcn\+\_\+load.\+cpp@{Cat\+Bcn\+\_\+load.\+cpp}}
+\subsubsection{\texorpdfstring{D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+L\+L()}{DECLARE\_DLL()}}
+{\footnotesize\ttfamily D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+LL (\begin{DoxyParamCaption}\item[{Cat\+Bcn}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 21 of file Cat\+Bcn\+\_\+load.\+cpp.
+
+
+
+References D\+E\+C\+L\+A\+R\+E\+\_\+\+E\+L\+E\+M\+E\+NT, and F\+A\+C\+T\+O\+RY.
+
+
+\begin{DoxyCode}
+22 \{
+23   \textcolor{comment}{//DECLARE\_ELEMENT   ( Proto40MHz\_v1, Proto v1 of the Upgrade LHCb Calo 40MHz front-end);}
+24   \textcolor{comment}{//DECLARE\_ELEMENT   ( A3PE, A3PE FPGA description);}
+25   \textcolor{comment}{//DECLARE\_ELEMENT   ( ICPhaser, ICECAL Delay Chip);}
+26   \hyperlink{DLL_8h_a3cf59a4b090c171501973779974e42a2}{DECLARE\_ELEMENT}   ( \hyperlink{classLSDelayChipV1}{LSDelayChipV1}, La Salle Delay Chip V1);
+27   \hyperlink{DLL_8h_a3cf59a4b090c171501973779974e42a2}{DECLARE\_ELEMENT}   ( \hyperlink{classICECALv3}{ICECALv3}, Calorimeter Upgrade IC v3);
+28   \hyperlink{DLL_8h_a3cf59a4b090c171501973779974e42a2}{DECLARE\_ELEMENT}   ( \hyperlink{classMSOxxxx}{MSOxxxx}, Agilent Oscilloscope MSO series);
+29     \hyperlink{DLL_8h_a3cf59a4b090c171501973779974e42a2}{DECLARE\_ELEMENT}   ( A11713B, Agilent 2-ch Attenuator);
+30   \textcolor{comment}{//DECLARE\_PROCESSUS ( Acquisition , Acquisition processus);}
+31   \textcolor{comment}{//DECLARE\_PROCESSUS ( A3PE\_BitFlip , A3PE Bit Flip test processus);}
+32 \}
+\end{DoxyCode}

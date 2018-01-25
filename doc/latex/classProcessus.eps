@@ -5,7 +5,7 @@
 %%For: 
 %Magnification: 1.00
 %%Orientation: Portrait
-%%BoundingBox: 0 0 500 1292.52
+%%BoundingBox: 0 0 500 1360.544218
 %%Pages: 0
 %%BeginSetup
 %%EndSetup
@@ -19,12 +19,12 @@
 /marginwidth 10 def
 /distx 20 def
 /disty 40 def
-/boundaspect 0.386842 def  % aspect ratio of the BoundingBox (width/height)
+/boundaspect 0.367500 def  % aspect ratio of the BoundingBox (width/height)
 /boundx 500 def
 /boundy boundx boundaspect div def
 /xspacing 0 def
 /yspacing 0 def
-/rows 19 def
+/rows 20 def
 /cols 2 def
 /scalefactor 0 def
 /boxfont /Times-Roman findfont fontheight scalefont def
@@ -178,6 +178,7 @@ boxfont setfont
 (Attrib) cw
 (A3PE_BitFlip) cw
 (Acquisition) cw
+(Acquisition) cw
 (ADCMeasurement) cw
 (CurrentMeasurement) cw
 (EmulateFE) cw
@@ -203,69 +204,72 @@ boundx scalefactor div boundy scalefactor div scale
 
 % ----- classes -----
 
- (Processus) 0 16 box
- (Object) 0 17 box
- (Attrib) 0 18 box
- (A3PE_BitFlip) 1 15 box
- (Acquisition) 1 14 box
- (ADCMeasurement) 1 13 box
- (CurrentMeasurement) 1 12 box
- (EmulateFE) 1 11 box
- (PhaserRampExec) 1 10 box
- (PhaserScan) 1 9 box
- (ProcessusWrap) 1 8 box
- (RegisterTest) 1 7 box
- (StorageFifo) 1 6 box
- (StorageFifoAcquisition) 1 5 box
- (TestI2C) 1 4 box
- (TestSPI) 1 3 box
- (TestSuite) 1 2 box
- (TestUSB) 1 1 box
- (UsbFTInterfaceTest) 1 0 box
+ (Processus) 0.000000 17.000000 box
+ (Object) 0.000000 18.000000 box
+ (Attrib) 0.000000 19.000000 box
+ (A3PE_BitFlip) 1.000000 16.000000 box
+ (Acquisition) 1.000000 15.000000 box
+ (Acquisition) 1.000000 14.000000 box
+ (ADCMeasurement) 1.000000 13.000000 box
+ (CurrentMeasurement) 1.000000 12.000000 box
+ (EmulateFE) 1.000000 11.000000 box
+ (PhaserRampExec) 1.000000 10.000000 box
+ (PhaserScan) 1.000000 9.000000 box
+ (ProcessusWrap) 1.000000 8.000000 box
+ (RegisterTest) 1.000000 7.000000 box
+ (StorageFifo) 1.000000 6.000000 box
+ (StorageFifoAcquisition) 1.000000 5.000000 box
+ (TestI2C) 1.000000 4.000000 box
+ (TestSPI) 1.000000 3.000000 box
+ (TestSuite) 1.000000 2.000000 box
+ (TestUSB) 1.000000 1.000000 box
+ (UsbFTInterfaceTest) 1.000000 0.000000 box
 
 % ----- relations -----
 
 solid
-0 0 16 out
+0 0.000000 17.000000 out
 solid
-1 0 17 in
+1 0.000000 18.000000 in
 solid
-0 0 17 out
+0 0.000000 18.000000 out
 solid
-1 0 18 in
+1 0.000000 19.000000 in
 solid
-1 0 15.25 out
+1 0.000000 16.250000 out
 solid
-0 0 15.5 hedge
+0 0.000000 16.500000 hedge
 solid
-0 0 14.5 hedge
+0 0.000000 15.500000 hedge
 solid
-0 0 13.5 hedge
+0 0.000000 14.500000 hedge
 solid
-0 0 12.5 hedge
+0 0.000000 13.500000 hedge
 solid
-0 0 11.5 hedge
+0 0.000000 12.500000 hedge
 solid
-0 0 10.5 hedge
+0 0.000000 11.500000 hedge
 solid
-0 0 9.5 hedge
+0 0.000000 10.500000 hedge
 solid
-0 0 8.5 hedge
+0 0.000000 9.500000 hedge
 solid
-0 0 7.5 hedge
+0 0.000000 8.500000 hedge
 solid
-0 0 6.5 hedge
+0 0.000000 7.500000 hedge
 solid
-0 0 5.5 hedge
+0 0.000000 6.500000 hedge
 solid
-0 0 4.5 hedge
+0 0.000000 5.500000 hedge
 solid
-0 0 3.5 hedge
+0 0.000000 4.500000 hedge
 solid
-0 0 2.5 hedge
+0 0.000000 3.500000 hedge
 solid
-0 0 1.5 hedge
+0 0.000000 2.500000 hedge
 solid
-0 0 0.5 hedge
+0 0.000000 1.500000 hedge
 solid
-0 16 0.5 vedge
+0 0.000000 0.500000 hedge
+solid
+0.000000 17.000000 0.500000 vedge

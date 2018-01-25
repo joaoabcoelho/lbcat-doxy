@@ -1,48 +1,46 @@
-\hypertarget{ModuleInfo_8h}{
-\section{/home/eleclhcb/LHCb/lbcat-\/cmake/CatKernel/inc/ModuleInfo.h File Reference}
-\label{ModuleInfo_8h}\index{/home/eleclhcb/LHCb/lbcat-\/cmake/CatKernel/inc/ModuleInfo.h@{/home/eleclhcb/LHCb/lbcat-\/cmake/CatKernel/inc/ModuleInfo.h}}
-}
-{\ttfamily \#include \char`\"{}Kernel.h\char`\"{}}\par
-{\ttfamily \#include $<$string$>$}\par
-{\ttfamily \#include $<$vector$>$}\par
+\hypertarget{ModuleInfo_8h}{}\section{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/inc/\+Module\+Info.h File Reference}
+\label{ModuleInfo_8h}\index{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/inc/\+Module\+Info.\+h@{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/inc/\+Module\+Info.\+h}}
+{\ttfamily \#include \char`\"{}Kernel.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
 \subsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
-namespace \hyperlink{namespaceSystem}{System}
+ \hyperlink{namespaceSystem}{System}
 \end{DoxyCompactItemize}
 \subsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
-typedef void $\ast$ \hyperlink{namespaceSystem_a21dca3f6170a2b0a0ea3028040ba21b3}{System::ImageHandle}
-\begin{DoxyCompactList}\small\item\em Definition of an image handle. \item\end{DoxyCompactList}\item 
-typedef void $\ast$ \hyperlink{namespaceSystem_a7490ee4911e28ad26aa0fcdd00a629df}{System::ProcessHandle}
-\begin{DoxyCompactList}\small\item\em Definition of the process handle. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+typedef void $\ast$ \hyperlink{namespaceSystem_a21dca3f6170a2b0a0ea3028040ba21b3}{System\+::\+Image\+Handle}
+\begin{DoxyCompactList}\small\item\em Definition of an image handle. \end{DoxyCompactList}\item 
+typedef void $\ast$ \hyperlink{namespaceSystem_a7490ee4911e28ad26aa0fcdd00a629df}{System\+::\+Process\+Handle}
+\begin{DoxyCompactList}\small\item\em Definition of the process handle. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
-enum \hyperlink{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5}{System::ModuleType} \{ \hyperlink{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5a674d015a465c28de6e2f385f071c25a2}{System::UNKNOWN}, 
-\hyperlink{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5a2caa15b2f0df35f7d8b6c3d3f9f52d44}{System::SHAREDLIB}, 
-\hyperlink{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5a130859e092dc88d9e2eed92640885830}{System::EXECUTABLE}
+enum \hyperlink{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5}{System\+::\+Module\+Type} \{ \hyperlink{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5a674d015a465c28de6e2f385f071c25a2}{System\+::\+U\+N\+K\+N\+O\+WN}, 
+\hyperlink{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5a2caa15b2f0df35f7d8b6c3d3f9f52d44}{System\+::\+S\+H\+A\+R\+E\+D\+L\+IB}, 
+\hyperlink{namespaceSystem_a12d36cf455e22c1e75ef65a2105df4c5a130859e092dc88d9e2eed92640885830}{System\+::\+E\+X\+E\+C\+U\+T\+A\+B\+LE}
  \}
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-const std::string \& \hyperlink{namespaceSystem_add155d288552032434ee9e25d130ad72}{System::moduleName} ()
-\begin{DoxyCompactList}\small\item\em Get the name of the (executable/DLL) file without file-\/type. \item\end{DoxyCompactList}\item 
-const std::string \& \hyperlink{namespaceSystem_abbb9e2ab2f883bfe24805d89bef43792}{System::moduleNameFull} ()
-\begin{DoxyCompactList}\small\item\em Get the full name of the (executable/DLL) file. \item\end{DoxyCompactList}\item 
-const ModuleType \hyperlink{namespaceSystem_aa0cb1193baa6883c2686a0a87d56d228}{System::moduleType} ()
-\begin{DoxyCompactList}\small\item\em Get type of the module. \item\end{DoxyCompactList}\item 
-ProcessHandle \hyperlink{namespaceSystem_a563f947d4a2921f4348ff4f8e909a9f2}{System::processHandle} ()
-\begin{DoxyCompactList}\small\item\em Handle to running process. \item\end{DoxyCompactList}\item 
-ImageHandle \hyperlink{namespaceSystem_ab88d0de1d6850b6f95522e9c242eeab0}{System::moduleHandle} ()
-\begin{DoxyCompactList}\small\item\em Handle to currently executed module. \item\end{DoxyCompactList}\item 
-ImageHandle \hyperlink{namespaceSystem_a89399871d8d0f573f39f97f7f4a6320b}{System::exeHandle} ()
-\begin{DoxyCompactList}\small\item\em Handle to the executable file running. \item\end{DoxyCompactList}\item 
-const std::string \& \hyperlink{namespaceSystem_aff38aaecd202e69eab2707a36adc8df8}{System::exeName} ()
-\begin{DoxyCompactList}\small\item\em Name of the executable file running. \item\end{DoxyCompactList}\item 
-const std::vector$<$ std::string $>$ \hyperlink{namespaceSystem_af1b504f8287b1957eeab91fb89cbd56f}{System::linkedModules} ()
-\begin{DoxyCompactList}\small\item\em Vector of names of linked modules. \item\end{DoxyCompactList}\item 
-void \hyperlink{namespaceSystem_af2318f71452b7e844f0b654a8bd93018}{System::setModuleHandle} (ImageHandle handle)
-\begin{DoxyCompactList}\small\item\em Attach module handle. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+const std\+::string \& \hyperlink{namespaceSystem_add155d288552032434ee9e25d130ad72}{System\+::module\+Name} ()
+\begin{DoxyCompactList}\small\item\em Get the name of the (executable/\+D\+LL) file without file-\/type. \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{namespaceSystem_abbb9e2ab2f883bfe24805d89bef43792}{System\+::module\+Name\+Full} ()
+\begin{DoxyCompactList}\small\item\em Get the full name of the (executable/\+D\+LL) file. \end{DoxyCompactList}\item 
+const Module\+Type \hyperlink{namespaceSystem_aa0cb1193baa6883c2686a0a87d56d228}{System\+::module\+Type} ()
+\begin{DoxyCompactList}\small\item\em Get type of the module. \end{DoxyCompactList}\item 
+Process\+Handle \hyperlink{namespaceSystem_a563f947d4a2921f4348ff4f8e909a9f2}{System\+::process\+Handle} ()
+\begin{DoxyCompactList}\small\item\em Handle to running process. \end{DoxyCompactList}\item 
+Image\+Handle \hyperlink{namespaceSystem_ab88d0de1d6850b6f95522e9c242eeab0}{System\+::module\+Handle} ()
+\begin{DoxyCompactList}\small\item\em Handle to currently executed module. \end{DoxyCompactList}\item 
+Image\+Handle \hyperlink{namespaceSystem_a89399871d8d0f573f39f97f7f4a6320b}{System\+::exe\+Handle} ()
+\begin{DoxyCompactList}\small\item\em Handle to the executable file running. \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{namespaceSystem_aff38aaecd202e69eab2707a36adc8df8}{System\+::exe\+Name} ()
+\begin{DoxyCompactList}\small\item\em Name of the executable file running. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::string $>$ \hyperlink{namespaceSystem_af1b504f8287b1957eeab91fb89cbd56f}{System\+::linked\+Modules} ()
+\begin{DoxyCompactList}\small\item\em Vector of names of linked modules. \end{DoxyCompactList}\item 
+void \hyperlink{namespaceSystem_af2318f71452b7e844f0b654a8bd93018}{System\+::set\+Module\+Handle} (Image\+Handle handle)
+\begin{DoxyCompactList}\small\item\em Attach module handle. \end{DoxyCompactList}\end{DoxyCompactItemize}

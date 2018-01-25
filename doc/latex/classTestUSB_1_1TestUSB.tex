@@ -1,90 +1,120 @@
-\hypertarget{classTestUSB_1_1TestUSB}{
-\section{TestUSB::TestUSB Class Reference}
-\label{classTestUSB_1_1TestUSB}\index{TestUSB::TestUSB@{TestUSB::TestUSB}}
-}
+\hypertarget{classTestUSB_1_1TestUSB}{}\section{Test\+U\+S\+B.\+Test\+U\+SB Class Reference}
+\label{classTestUSB_1_1TestUSB}\index{Test\+U\+S\+B.\+Test\+U\+SB@{Test\+U\+S\+B.\+Test\+U\+SB}}
+Inheritance diagram for Test\+U\+S\+B.\+Test\+U\+SB\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classTestUSB_1_1TestUSB}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-def \hyperlink{classTestUSB_1_1TestUSB_aea14af8402396bd8e601252a2b4e478f}{\_\-\_\-init\_\-\_\-}
+def \hyperlink{classTestUSB_1_1TestUSB_a5b0c3f54b8c11fa9a0e02767bf409b6e}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, cat, obj, panel, path)
 \item 
-def \hyperlink{classTestUSB_1_1TestUSB_a0dc8c506a09d50d93fbfd9bad58d11d4}{onApply}
+def \hyperlink{classTestUSB_1_1TestUSB_a84bfb6f16ea97644b1369e853a0da21b}{on\+Apply} (self, event)
 \item 
-def \hyperlink{classTestUSB_1_1TestUSB_a06ebe37772fabab427b7dd89a192f12d}{update}
+def \hyperlink{classTestUSB_1_1TestUSB_a89c7535b44613d7a31879376527aadc7}{update} (self)
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classTestUSB_1_1TestUSB_a91f2d0bdbd9a0a59936c41d9f894882a}{s1}
+\hyperlink{classTestUSB_1_1TestUSB_a1c2db95a9c835bae85479461f8c5d722}{s1}
 \item 
-\hyperlink{classTestUSB_1_1TestUSB_a3180c62896ef7f8c8115a8736fba2dc9}{s2}
+\hyperlink{classTestUSB_1_1TestUSB_adc6c526d953e95dc252a9f186c8c66d7}{s2}
 \item 
-\hyperlink{classTestUSB_1_1TestUSB_ae82803b0f4d3e1a45bb5e80dba5a12d9}{s3}
+\hyperlink{classTestUSB_1_1TestUSB_a2983f5d10e563e44de3beac6fc9cb165}{s3}
 \item 
-\hyperlink{classTestUSB_1_1TestUSB_acf77fb78e3a4ad7443f8b3a5a035d7dc}{s4}
+\hyperlink{classTestUSB_1_1TestUSB_a0e240d453ee3a58d9d9438dae4aa42ba}{s4}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 9 of file TestUSB.py.
+Definition at line 9 of file Test\+U\+S\+B.\+py.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTestUSB_1_1TestUSB_a5b0c3f54b8c11fa9a0e02767bf409b6e}\label{classTestUSB_1_1TestUSB_a5b0c3f54b8c11fa9a0e02767bf409b6e}} 
+\index{Test\+U\+S\+B\+::\+Test\+U\+SB@{Test\+U\+S\+B\+::\+Test\+U\+SB}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!Test\+U\+S\+B\+::\+Test\+U\+SB@{Test\+U\+S\+B\+::\+Test\+U\+SB}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def Test\+U\+S\+B.\+Test\+U\+S\+B.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{panel,  }\item[{}]{path }\end{DoxyParamCaption})}
+
+
+
+Definition at line 10 of file Test\+U\+S\+B.\+py.
+
+
+
+References element.\+element.\+loadxrc(), and proc.\+proc.\+loadxrc().
+
+
+\begin{DoxyCode}
+10     \textcolor{keyword}{def }\hyperlink{classwrapper_1_1ModuleDictWrapper_a9a7a794150502f51df687831583e13b9}{\_\_init\_\_}(self, cat, obj, panel, path):
+11         proc.\_\_init\_\_(self,cat,obj,panel,path)
+12         self.loadxrc()
+13         self.s1=self.getControl(\textcolor{stringliteral}{"s1"})
+14         self.s2=self.getControl(\textcolor{stringliteral}{"s2"})
+15         self.s3=self.getControl(\textcolor{stringliteral}{"s3"})
+16         self.s4=self.getControl(\textcolor{stringliteral}{"s4"})
+17         self.update()
+18         self.panel.Bind(wx.EVT\_BUTTON, self.onApply, id=xrc.XRCID(\textcolor{stringliteral}{"Apply"}))
+19 
+\end{DoxyCode}
+
 
 \subsection{Member Function Documentation}
-\hypertarget{classTestUSB_1_1TestUSB_aea14af8402396bd8e601252a2b4e478f}{
-\index{TestUSB::TestUSB@{TestUSB::TestUSB}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
-\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!TestUSB::TestUSB@{TestUSB::TestUSB}}
-\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def TestUSB::TestUSB::\_\-\_\-init\_\-\_\- ( {\em self}, \/   {\em cat}, \/   {\em obj}, \/   {\em panel}, \/   {\em path})}}
-\label{classTestUSB_1_1TestUSB_aea14af8402396bd8e601252a2b4e478f}
+\mbox{\Hypertarget{classTestUSB_1_1TestUSB_a84bfb6f16ea97644b1369e853a0da21b}\label{classTestUSB_1_1TestUSB_a84bfb6f16ea97644b1369e853a0da21b}} 
+\index{Test\+U\+S\+B\+::\+Test\+U\+SB@{Test\+U\+S\+B\+::\+Test\+U\+SB}!on\+Apply@{on\+Apply}}
+\index{on\+Apply@{on\+Apply}!Test\+U\+S\+B\+::\+Test\+U\+SB@{Test\+U\+S\+B\+::\+Test\+U\+SB}}
+\subsubsection{\texorpdfstring{on\+Apply()}{onApply()}}
+{\footnotesize\ttfamily def Test\+U\+S\+B.\+Test\+U\+S\+B.\+on\+Apply (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{event }\end{DoxyParamCaption})}
 
 
-Definition at line 10 of file TestUSB.py.
+
+Definition at line 20 of file Test\+U\+S\+B.\+py.
 
 
-\begin{DoxyCode}
-10                                              :
-11         proc.__init__(self,cat,obj,panel,path)
-12         self.loadxrc()
-13         self.s1=self.getControl("s1")
-14         self.s2=self.getControl("s2")
-15         self.s3=self.getControl("s3")
-16         self.s4=self.getControl("s4")
-17         self.update()
-18         self.panel.Bind(wx.EVT_BUTTON, self.onApply, id=xrc.XRCID("Apply"))
-19 
-    def onApply(self, event):
-\end{DoxyCode}
-\hypertarget{classTestUSB_1_1TestUSB_a0dc8c506a09d50d93fbfd9bad58d11d4}{
-\index{TestUSB::TestUSB@{TestUSB::TestUSB}!onApply@{onApply}}
-\index{onApply@{onApply}!TestUSB::TestUSB@{TestUSB::TestUSB}}
-\subsubsection[{onApply}]{\setlength{\rightskip}{0pt plus 5cm}def TestUSB::TestUSB::onApply ( {\em self}, \/   {\em event})}}
-\label{classTestUSB_1_1TestUSB_a0dc8c506a09d50d93fbfd9bad58d11d4}
+
+References object.\+object.\+obj, Cfg\+Frame.\+Cfg\+Frame.\+obj, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s1, Storage\+Fifo.\+Storage\+Fifo.\+s1, Test\+U\+S\+B.\+Test\+U\+S\+B.\+s1, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s1, Test\+I2\+C.\+Test\+I2\+C.\+s1, Test\+I2\+C.\+Test\+I2\+C.\+s2, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s2, Test\+U\+S\+B.\+Test\+U\+S\+B.\+s2, Storage\+Fifo.\+Storage\+Fifo.\+s2, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s2, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s3, Storage\+Fifo.\+Storage\+Fifo.\+s3, Test\+U\+S\+B.\+Test\+U\+S\+B.\+s3, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s3, Test\+I2\+C.\+Test\+I2\+C.\+s3, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s4, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s4, Test\+U\+S\+B.\+Test\+U\+S\+B.\+s4, Storage\+Fifo.\+Storage\+Fifo.\+s4, and Test\+I2\+C.\+Test\+I2\+C.\+s4.
 
 
-Definition at line 20 of file TestUSB.py.
+
+Referenced by A3\+P\+E\+\_\+\+Bit\+Flip.\+A3\+P\+E\+\_\+\+Bit\+Flip.\+\_\+\+\_\+init\+\_\+\+\_\+(), and Emulate\+F\+E.\+Emulate\+F\+E.\+\_\+\+\_\+init\+\_\+\+\_\+().
 
 
 \begin{DoxyCode}
-20                             :
+20     \textcolor{keyword}{def }onApply(self, event):
 21         v1 = float(self.s1.GetValue())
 22         v2 = float(self.s2.GetValue())
 23         v3 = float(self.s3.GetValue())
 24         v4 = float(self.s4.GetValue())
 25         self.obj.setSigma(v1,v2,v3,v4)
 26 
-    def update(self):
 \end{DoxyCode}
-\hypertarget{classTestUSB_1_1TestUSB_a06ebe37772fabab427b7dd89a192f12d}{
-\index{TestUSB::TestUSB@{TestUSB::TestUSB}!update@{update}}
-\index{update@{update}!TestUSB::TestUSB@{TestUSB::TestUSB}}
-\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}def TestUSB::TestUSB::update ( {\em self})}}
-\label{classTestUSB_1_1TestUSB_a06ebe37772fabab427b7dd89a192f12d}
+\mbox{\Hypertarget{classTestUSB_1_1TestUSB_a89c7535b44613d7a31879376527aadc7}\label{classTestUSB_1_1TestUSB_a89c7535b44613d7a31879376527aadc7}} 
+\index{Test\+U\+S\+B\+::\+Test\+U\+SB@{Test\+U\+S\+B\+::\+Test\+U\+SB}!update@{update}}
+\index{update@{update}!Test\+U\+S\+B\+::\+Test\+U\+SB@{Test\+U\+S\+B\+::\+Test\+U\+SB}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily def Test\+U\+S\+B.\+Test\+U\+S\+B.\+update (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
 
-Definition at line 27 of file TestUSB.py.
+
+Definition at line 27 of file Test\+U\+S\+B.\+py.
+
+
+
+References object.\+object.\+obj, Cfg\+Frame.\+Cfg\+Frame.\+obj, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s1, Test\+I2\+C.\+Test\+I2\+C.\+s1, Storage\+Fifo.\+Storage\+Fifo.\+s1, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s1, Test\+U\+S\+B.\+Test\+U\+S\+B.\+s1, Storage\+Fifo.\+Storage\+Fifo.\+s2, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s2, Test\+I2\+C.\+Test\+I2\+C.\+s2, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s2, Test\+U\+S\+B.\+Test\+U\+S\+B.\+s2, Storage\+Fifo.\+Storage\+Fifo.\+s3, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s3, Test\+I2\+C.\+Test\+I2\+C.\+s3, Test\+U\+S\+B.\+Test\+U\+S\+B.\+s3, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s3, Storage\+Fifo\+Acquisition.\+Storage\+Fifo\+Acquisition.\+s4, Test\+S\+P\+I.\+Test\+S\+P\+I.\+s4, Storage\+Fifo.\+Storage\+Fifo.\+s4, Test\+U\+S\+B.\+Test\+U\+S\+B.\+s4, and Test\+I2\+C.\+Test\+I2\+C.\+s4.
+
+
+
+Referenced by App\+Frame.\+App\+Frame.\+delete\+Hardware(), Conf\+Frame.\+Conf\+Frame.\+on\+Change(), Graph\+Frame.\+Graph\+Frame.\+on\+Change(), Cfg\+Frame.\+Cfg\+Frame.\+on\+Change(), Conf\+Frame.\+Conf\+Frame.\+on\+Edit(), App\+Frame.\+App\+Frame.\+on\+Load(), Conf\+Frame.\+Conf\+Frame.\+on\+Re\+Load(), Graph\+Frame.\+Graph\+Frame.\+on\+Re\+Load(), Cfg\+Frame.\+Cfg\+Frame.\+on\+Re\+Load(), and App\+Frame.\+App\+Frame.\+on\+Re\+Load().
 
 
 \begin{DoxyCode}
-27                     :
+27     \textcolor{keyword}{def }update(self):
 28         v1=self.obj.sigma(0)
 29         v2=self.obj.sigma(1)
 30         v3=self.obj.sigma(2)
@@ -95,43 +125,70 @@ Definition at line 27 of file TestUSB.py.
 35         self.s3.SetValue(str(v3))
 36         self.s4.SetValue(str(v4))        
 37 
-38 #----------------------------------------------------------------------
+38 \textcolor{comment}{#----------------------------------------------------------------------}
 39 
-def Edit (cat, obj, panel, path):
 \end{DoxyCode}
 
 
 \subsection{Member Data Documentation}
-\hypertarget{classTestUSB_1_1TestUSB_a91f2d0bdbd9a0a59936c41d9f894882a}{
-\index{TestUSB::TestUSB@{TestUSB::TestUSB}!s1@{s1}}
-\index{s1@{s1}!TestUSB::TestUSB@{TestUSB::TestUSB}}
-\subsubsection[{s1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TestUSB::TestUSB::s1}}}
-\label{classTestUSB_1_1TestUSB_a91f2d0bdbd9a0a59936c41d9f894882a}
+\mbox{\Hypertarget{classTestUSB_1_1TestUSB_a1c2db95a9c835bae85479461f8c5d722}\label{classTestUSB_1_1TestUSB_a1c2db95a9c835bae85479461f8c5d722}} 
+\index{Test\+U\+S\+B\+::\+Test\+U\+SB@{Test\+U\+S\+B\+::\+Test\+U\+SB}!s1@{s1}}
+\index{s1@{s1}!Test\+U\+S\+B\+::\+Test\+U\+SB@{Test\+U\+S\+B\+::\+Test\+U\+SB}}
+\subsubsection{\texorpdfstring{s1}{s1}}
+{\footnotesize\ttfamily Test\+U\+S\+B.\+Test\+U\+S\+B.\+s1}
 
 
-Definition at line 13 of file TestUSB.py.\hypertarget{classTestUSB_1_1TestUSB_a3180c62896ef7f8c8115a8736fba2dc9}{
-\index{TestUSB::TestUSB@{TestUSB::TestUSB}!s2@{s2}}
-\index{s2@{s2}!TestUSB::TestUSB@{TestUSB::TestUSB}}
-\subsubsection[{s2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TestUSB::TestUSB::s2}}}
-\label{classTestUSB_1_1TestUSB_a3180c62896ef7f8c8115a8736fba2dc9}
+
+Definition at line 13 of file Test\+U\+S\+B.\+py.
 
 
-Definition at line 14 of file TestUSB.py.\hypertarget{classTestUSB_1_1TestUSB_ae82803b0f4d3e1a45bb5e80dba5a12d9}{
-\index{TestUSB::TestUSB@{TestUSB::TestUSB}!s3@{s3}}
-\index{s3@{s3}!TestUSB::TestUSB@{TestUSB::TestUSB}}
-\subsubsection[{s3}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TestUSB::TestUSB::s3}}}
-\label{classTestUSB_1_1TestUSB_ae82803b0f4d3e1a45bb5e80dba5a12d9}
+
+Referenced by Test\+U\+S\+B.\+Test\+U\+S\+B.\+on\+Apply(), Test\+Suite.\+Test\+Suite.\+on\+Apply(), Current\+Measurement.\+Current\+Measurement.\+on\+Apply(), A\+D\+C\+Measurement.\+Current\+Measurement.\+on\+Apply(), Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+on\+Apply(), Test\+U\+S\+B.\+Test\+U\+S\+B.\+update(), Test\+Suite.\+Test\+Suite.\+update(), Current\+Measurement.\+Current\+Measurement.\+update(), A\+D\+C\+Measurement.\+Current\+Measurement.\+update(), and Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+update().
+
+\mbox{\Hypertarget{classTestUSB_1_1TestUSB_adc6c526d953e95dc252a9f186c8c66d7}\label{classTestUSB_1_1TestUSB_adc6c526d953e95dc252a9f186c8c66d7}} 
+\index{Test\+U\+S\+B\+::\+Test\+U\+SB@{Test\+U\+S\+B\+::\+Test\+U\+SB}!s2@{s2}}
+\index{s2@{s2}!Test\+U\+S\+B\+::\+Test\+U\+SB@{Test\+U\+S\+B\+::\+Test\+U\+SB}}
+\subsubsection{\texorpdfstring{s2}{s2}}
+{\footnotesize\ttfamily Test\+U\+S\+B.\+Test\+U\+S\+B.\+s2}
 
 
-Definition at line 15 of file TestUSB.py.\hypertarget{classTestUSB_1_1TestUSB_acf77fb78e3a4ad7443f8b3a5a035d7dc}{
-\index{TestUSB::TestUSB@{TestUSB::TestUSB}!s4@{s4}}
-\index{s4@{s4}!TestUSB::TestUSB@{TestUSB::TestUSB}}
-\subsubsection[{s4}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TestUSB::TestUSB::s4}}}
-\label{classTestUSB_1_1TestUSB_acf77fb78e3a4ad7443f8b3a5a035d7dc}
+
+Definition at line 14 of file Test\+U\+S\+B.\+py.
 
 
-Definition at line 16 of file TestUSB.py.
 
-The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+Referenced by Test\+U\+S\+B.\+Test\+U\+S\+B.\+on\+Apply(), Test\+Suite.\+Test\+Suite.\+on\+Apply(), Current\+Measurement.\+Current\+Measurement.\+on\+Apply(), A\+D\+C\+Measurement.\+Current\+Measurement.\+on\+Apply(), Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+on\+Apply(), Test\+U\+S\+B.\+Test\+U\+S\+B.\+update(), Test\+Suite.\+Test\+Suite.\+update(), Current\+Measurement.\+Current\+Measurement.\+update(), A\+D\+C\+Measurement.\+Current\+Measurement.\+update(), and Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+update().
+
+\mbox{\Hypertarget{classTestUSB_1_1TestUSB_a2983f5d10e563e44de3beac6fc9cb165}\label{classTestUSB_1_1TestUSB_a2983f5d10e563e44de3beac6fc9cb165}} 
+\index{Test\+U\+S\+B\+::\+Test\+U\+SB@{Test\+U\+S\+B\+::\+Test\+U\+SB}!s3@{s3}}
+\index{s3@{s3}!Test\+U\+S\+B\+::\+Test\+U\+SB@{Test\+U\+S\+B\+::\+Test\+U\+SB}}
+\subsubsection{\texorpdfstring{s3}{s3}}
+{\footnotesize\ttfamily Test\+U\+S\+B.\+Test\+U\+S\+B.\+s3}
+
+
+
+Definition at line 15 of file Test\+U\+S\+B.\+py.
+
+
+
+Referenced by Test\+U\+S\+B.\+Test\+U\+S\+B.\+on\+Apply(), Test\+Suite.\+Test\+Suite.\+on\+Apply(), Current\+Measurement.\+Current\+Measurement.\+on\+Apply(), A\+D\+C\+Measurement.\+Current\+Measurement.\+on\+Apply(), Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+on\+Apply(), Test\+U\+S\+B.\+Test\+U\+S\+B.\+update(), Test\+Suite.\+Test\+Suite.\+update(), Current\+Measurement.\+Current\+Measurement.\+update(), A\+D\+C\+Measurement.\+Current\+Measurement.\+update(), and Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+update().
+
+\mbox{\Hypertarget{classTestUSB_1_1TestUSB_a0e240d453ee3a58d9d9438dae4aa42ba}\label{classTestUSB_1_1TestUSB_a0e240d453ee3a58d9d9438dae4aa42ba}} 
+\index{Test\+U\+S\+B\+::\+Test\+U\+SB@{Test\+U\+S\+B\+::\+Test\+U\+SB}!s4@{s4}}
+\index{s4@{s4}!Test\+U\+S\+B\+::\+Test\+U\+SB@{Test\+U\+S\+B\+::\+Test\+U\+SB}}
+\subsubsection{\texorpdfstring{s4}{s4}}
+{\footnotesize\ttfamily Test\+U\+S\+B.\+Test\+U\+S\+B.\+s4}
+
+
+
+Definition at line 16 of file Test\+U\+S\+B.\+py.
+
+
+
+Referenced by Test\+U\+S\+B.\+Test\+U\+S\+B.\+on\+Apply(), Test\+Suite.\+Test\+Suite.\+on\+Apply(), Current\+Measurement.\+Current\+Measurement.\+on\+Apply(), A\+D\+C\+Measurement.\+Current\+Measurement.\+on\+Apply(), Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+on\+Apply(), Test\+U\+S\+B.\+Test\+U\+S\+B.\+update(), Test\+Suite.\+Test\+Suite.\+update(), Current\+Measurement.\+Current\+Measurement.\+update(), A\+D\+C\+Measurement.\+Current\+Measurement.\+update(), and Usb\+F\+T\+Interface\+Test.\+Usb\+F\+T\+Interface\+Test.\+update().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-/home/eleclhcb/LHCb/lbcat-\/cmake/CatCaloUpgrade/python/proc/\hyperlink{TestUSB_8py}{TestUSB.py}\end{DoxyCompactItemize}
+/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Calo\+Upgrade/python/proc/\hyperlink{TestUSB_8py}{Test\+U\+S\+B.\+py}\end{DoxyCompactItemize}

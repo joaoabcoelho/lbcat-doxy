@@ -1,158 +1,159 @@
-\hypertarget{namespaceTestSPI}{
-\section{TestSPI Namespace Reference}
-\label{namespaceTestSPI}\index{TestSPI@{TestSPI}}
-}
+\hypertarget{namespaceTestSPI}{}\section{Test\+S\+PI Namespace Reference}
+\label{namespaceTestSPI}\index{Test\+S\+PI@{Test\+S\+PI}}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-def \hyperlink{namespaceTestSPI_ab75f8521928b5bb20dfb02b2fe8820d4}{Edit}
+def \hyperlink{namespaceTestSPI_a429973652f05db8fc083bd9fd23aec45}{Edit} (cat, obj, panel, path)
 \item 
-def \hyperlink{namespaceTestSPI_a30bc048fd0f31200f3a9bd9751139552}{createPlots}
+def \hyperlink{namespaceTestSPI_a65240a18ad5f101a6f1ef2f48599e4e4}{create\+Plots} (cat, obj, run)
 \item 
-def \hyperlink{namespaceTestSPI_af2d9c99fbaf7eb8abe974ea72714a904}{updatePlots}
+def \hyperlink{namespaceTestSPI_a3663ea314c061192225a8256794f56c9}{update\+Plots} (figs, obj)
 \item 
-def \hyperlink{namespaceTestSPI_aeae7bd62487a521487e2c5a3a1c3a6e7}{Plot}
+def \hyperlink{namespaceTestSPI_aa79a00eee7db10f56d427696a5724a8a}{Plot} (cat, obj, parent, \hyperlink{classObject_af99145335cc61ff6e2798ea17db009d2}{id})
 \end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
-\hypertarget{namespaceTestSPI_a30bc048fd0f31200f3a9bd9751139552}{
-\index{TestSPI@{TestSPI}!createPlots@{createPlots}}
-\index{createPlots@{createPlots}!TestSPI@{TestSPI}}
-\subsubsection[{createPlots}]{\setlength{\rightskip}{0pt plus 5cm}def TestSPI::createPlots ( {\em cat}, \/   {\em obj}, \/   {\em run})}}
-\label{namespaceTestSPI_a30bc048fd0f31200f3a9bd9751139552}
+\mbox{\Hypertarget{namespaceTestSPI_a65240a18ad5f101a6f1ef2f48599e4e4}\label{namespaceTestSPI_a65240a18ad5f101a6f1ef2f48599e4e4}} 
+\index{Test\+S\+PI@{Test\+S\+PI}!create\+Plots@{create\+Plots}}
+\index{create\+Plots@{create\+Plots}!Test\+S\+PI@{Test\+S\+PI}}
+\subsubsection{\texorpdfstring{create\+Plots()}{createPlots()}}
+{\footnotesize\ttfamily def Test\+S\+P\+I.\+create\+Plots (\begin{DoxyParamCaption}\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{run }\end{DoxyParamCaption})}
 
 
-Definition at line 45 of file TestSPI.py.
+
+Definition at line 45 of file Test\+S\+P\+I.\+py.
 
 
 \begin{DoxyCode}
-45                               :
+45 \textcolor{keyword}{def }\hyperlink{namespaceTestSPI_a65240a18ad5f101a6f1ef2f48599e4e4}{createPlots}(cat, obj, run):
 46     fig = plt.figure(figsize=(10,10))
-47     fig.suptitle("Run "+str(run), fontsize=14, fontweight='bold')
-48     for vplot in [1,2]:
-49         ax = fig.add_subplot(2,1,vplot)
+47     fig.suptitle(\textcolor{stringliteral}{"Run "}+str(run), fontsize=14, fontweight=\textcolor{stringliteral}{'bold'})
+48     \textcolor{keywordflow}{for} vplot \textcolor{keywordflow}{in} [1,2]:
+49         ax = fig.add\_subplot(2,1,vplot)
 50     fig.show()    
-51     return [fig]
+51     \textcolor{keywordflow}{return} [fig]
 52 
-def updatePlots(figs, obj):
 \end{DoxyCode}
-\hypertarget{namespaceTestSPI_ab75f8521928b5bb20dfb02b2fe8820d4}{
-\index{TestSPI@{TestSPI}!Edit@{Edit}}
-\index{Edit@{Edit}!TestSPI@{TestSPI}}
-\subsubsection[{Edit}]{\setlength{\rightskip}{0pt plus 5cm}def TestSPI::Edit ( {\em cat}, \/   {\em obj}, \/   {\em panel}, \/   {\em path})}}
-\label{namespaceTestSPI_ab75f8521928b5bb20dfb02b2fe8820d4}
+\mbox{\Hypertarget{namespaceTestSPI_a429973652f05db8fc083bd9fd23aec45}\label{namespaceTestSPI_a429973652f05db8fc083bd9fd23aec45}} 
+\index{Test\+S\+PI@{Test\+S\+PI}!Edit@{Edit}}
+\index{Edit@{Edit}!Test\+S\+PI@{Test\+S\+PI}}
+\subsubsection{\texorpdfstring{Edit()}{Edit()}}
+{\footnotesize\ttfamily def Test\+S\+P\+I.\+Edit (\begin{DoxyParamCaption}\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{panel,  }\item[{}]{path }\end{DoxyParamCaption})}
 
 
-Definition at line 40 of file TestSPI.py.
+
+Definition at line 40 of file Test\+S\+P\+I.\+py.
 
 
 \begin{DoxyCode}
-40                                 :
-41     return TestSPI(cat, obj, panel, path)
+40 \textcolor{keyword}{def }\hyperlink{namespaceTestSPI_a429973652f05db8fc083bd9fd23aec45}{Edit} (cat, obj, panel, path):
+41     \textcolor{keywordflow}{return} \hyperlink{classTestSPI}{TestSPI}(cat, obj, panel, path)
 42 
-43 #----------------------------------------------------------------------
+43 \textcolor{comment}{#----------------------------------------------------------------------}
 44 
-def createPlots(cat, obj, run):
 \end{DoxyCode}
-\hypertarget{namespaceTestSPI_aeae7bd62487a521487e2c5a3a1c3a6e7}{
-\index{TestSPI@{TestSPI}!Plot@{Plot}}
-\index{Plot@{Plot}!TestSPI@{TestSPI}}
-\subsubsection[{Plot}]{\setlength{\rightskip}{0pt plus 5cm}def TestSPI::Plot ( {\em cat}, \/   {\em obj}, \/   {\em parent}, \/   {\em id})}}
-\label{namespaceTestSPI_aeae7bd62487a521487e2c5a3a1c3a6e7}
+\mbox{\Hypertarget{namespaceTestSPI_aa79a00eee7db10f56d427696a5724a8a}\label{namespaceTestSPI_aa79a00eee7db10f56d427696a5724a8a}} 
+\index{Test\+S\+PI@{Test\+S\+PI}!Plot@{Plot}}
+\index{Plot@{Plot}!Test\+S\+PI@{Test\+S\+PI}}
+\subsubsection{\texorpdfstring{Plot()}{Plot()}}
+{\footnotesize\ttfamily def Test\+S\+P\+I.\+Plot (\begin{DoxyParamCaption}\item[{}]{cat,  }\item[{}]{obj,  }\item[{}]{parent,  }\item[{}]{id }\end{DoxyParamCaption})}
 
 
-Definition at line 89 of file TestSPI.py.
+
+Definition at line 89 of file Test\+S\+P\+I.\+py.
+
+
+
+References plotter.\+h1d(), Object.\+name(), and Object.\+title().
 
 
 \begin{DoxyCode}
-89                               :
-90     from mpl_toolkits.mplot3d import Axes3D
-91     from matplotlib import cm
-92     import matplotlib as mpl
-93     import matplotlib.pyplot as plt
-94     import numpy as np
+89 \textcolor{keyword}{def }\hyperlink{namespaceTestSPI_aa79a00eee7db10f56d427696a5724a8a}{Plot}(cat, obj, parent, id):
+90     \textcolor{keyword}{from} mpl\_toolkits.mplot3d \textcolor{keyword}{import} Axes3D
+91     \textcolor{keyword}{from} matplotlib \textcolor{keyword}{import} cm
+92     \textcolor{keyword}{import} matplotlib \textcolor{keyword}{as} mpl
+93     \textcolor{keyword}{import} matplotlib.pyplot \textcolor{keyword}{as} plt
+94     \textcolor{keyword}{import} numpy \textcolor{keyword}{as} np
 95 
-96     plot=plotter(parent,id)
+96     plot=\hyperlink{namespaceplotter}{plotter}(parent,id)
 97     fig=plot.current()
-98     fig.suptitle('TestSuite - Plot capabilities', fontsize=14, fontweight='bold')
-      
+98     fig.suptitle(\textcolor{stringliteral}{'TestSuite - Plot capabilities'}, fontsize=14, fontweight=\textcolor{stringliteral}{'bold'})
 99     
-100     # plot of data set 0
-101     p1=fig.add_subplot(2,3,1)
-102     p1.plot(obj.data(0), 'bo', obj.data().vector(1),'k')
-103     p1.set_title(r'$\sigma_0='+str(obj.sigma(0))+'$')
+100     \textcolor{comment}{# plot of data set 0}
+101     p1=fig.add\_subplot(2,3,1)
+102     p1.plot(obj.data(0), \textcolor{stringliteral}{'bo'}, obj.data().vector(1),\textcolor{stringliteral}{'k'})
+103     p1.set\_title(\textcolor{stringliteral}{r'$\(\backslash\)sigma\_0='}+str(obj.sigma(0))+\textcolor{stringliteral}{'$'})
 104     
-105     # plot of data set 1
-106     p2=fig.add_subplot(2,3,2)
-107     p2.plot(obj.data(1), 'r--')
-108     p2.set_title(r'$\sigma_1='+str(obj.sigma(1))+'$')
+105     \textcolor{comment}{# plot of data set 1}
+106     p2=fig.add\_subplot(2,3,2)
+107     p2.plot(obj.data(1), \textcolor{stringliteral}{'r--'})
+108     p2.set\_title(\textcolor{stringliteral}{r'$\(\backslash\)sigma\_1='}+str(obj.sigma(1))+\textcolor{stringliteral}{'$'})
 109     
-110     # plot of data set 0 (histogram)
+110     \textcolor{comment}{# plot of data set 0 (histogram)}
 111     plt.subplot(2,3,3)
 112     n, bins, h=plt.hist(obj.data().vector(0), 10)
 113     plt.title(obj.data().title(0))    
-114     plt.grid(True)
+114     plt.grid(\textcolor{keyword}{True})
 115 
-116     # plot of data set 1 (histogram)    
+116     \textcolor{comment}{# plot of data set 1 (histogram)    }
 117     plt.subplot(2,3,4)
 118     plt.hist(obj.data().vector(1), 20)
-119     plt.title(obj.data().name(1)+" : "+obj.data().title(1))
-120     plt.grid(True)
+119     plt.title(obj.data().name(1)+\textcolor{stringliteral}{" : "}+obj.data().title(1))
+120     plt.grid(\textcolor{keyword}{True})
 121 
-122     # plot histo root
-123     p5=fig.add_subplot(2,3,5)
-124     h1=h1d(p5, obj.hist1d(0), facecolor='red',linestyle='dashed')
-125     p5.grid(True)
+122     \textcolor{comment}{# plot histo root}
+123     p5=fig.add\_subplot(2,3,5)
+124     h1=\hyperlink{namespaceplotter_a5d9521541ff0c72bf439078efacf2f42}{h1d}(p5, obj.hist1d(0), facecolor=\textcolor{stringliteral}{'red'},linestyle=\textcolor{stringliteral}{'dashed'})
+125     p5.grid(\textcolor{keyword}{True})
 126 
-##     # plot examples
 \end{DoxyCode}
-\hypertarget{namespaceTestSPI_af2d9c99fbaf7eb8abe974ea72714a904}{
-\index{TestSPI@{TestSPI}!updatePlots@{updatePlots}}
-\index{updatePlots@{updatePlots}!TestSPI@{TestSPI}}
-\subsubsection[{updatePlots}]{\setlength{\rightskip}{0pt plus 5cm}def TestSPI::updatePlots ( {\em figs}, \/   {\em obj})}}
-\label{namespaceTestSPI_af2d9c99fbaf7eb8abe974ea72714a904}
+\mbox{\Hypertarget{namespaceTestSPI_a3663ea314c061192225a8256794f56c9}\label{namespaceTestSPI_a3663ea314c061192225a8256794f56c9}} 
+\index{Test\+S\+PI@{Test\+S\+PI}!update\+Plots@{update\+Plots}}
+\index{update\+Plots@{update\+Plots}!Test\+S\+PI@{Test\+S\+PI}}
+\subsubsection{\texorpdfstring{update\+Plots()}{updatePlots()}}
+{\footnotesize\ttfamily def Test\+S\+P\+I.\+update\+Plots (\begin{DoxyParamCaption}\item[{}]{figs,  }\item[{}]{obj }\end{DoxyParamCaption})}
 
 
-Definition at line 53 of file TestSPI.py.
+
+Definition at line 53 of file Test\+S\+P\+I.\+py.
 
 
 \begin{DoxyCode}
-53                           :
+53 \textcolor{keyword}{def }\hyperlink{namespaceTestSPI_a3663ea314c061192225a8256794f56c9}{updatePlots}(figs, obj):
 54     fig = figs[0]
-55     ax1 = fig.add_subplot(2,1,1)
-56     lines, = ax1.plot([],[], 'bo')
-57     #Autoscale on unknown axis and known lims on the other
-58     ax1.set_autoscaley_on(True)
-59 #    ax.set_xlim(self.min_x, self.max_x)
-60     #Other stuff
+55     ax1 = fig.add\_subplot(2,1,1)
+56     lines, = ax1.plot([],[], \textcolor{stringliteral}{'bo'})
+57     \textcolor{comment}{#Autoscale on unknown axis and known lims on the other}
+58     ax1.set\_autoscaley\_on(\textcolor{keyword}{True})
+59 \textcolor{comment}{#    ax.set\_xlim(self.min\_x, self.max\_x)}
+60     \textcolor{comment}{#Other stuff}
 61     ax1.grid()        
-62     lines.set_xdata(obj.data(0))
-63     lines.set_ydata(obj.data(1))
-64     #Need both of these in order to rescale
+62     lines.set\_xdata(obj.data(0))
+63     lines.set\_ydata(obj.data(1))
+64     \textcolor{comment}{#Need both of these in order to rescale}
 65     ax1.relim()
-66     ax1.autoscale_view()
+66     ax1.autoscale\_view()
 67 
-68     ax2 = fig.add_subplot(2,1,2)
-69     lines, = ax2.plot([],[], 'bo')
-70     #Autoscale on unknown axis and known lims on the other
-71     ax2.set_autoscaley_on(True)
-72 #    ax.set_xlim(self.min_x, self.max_x)
-73     #Other stuff
+68     ax2 = fig.add\_subplot(2,1,2)
+69     lines, = ax2.plot([],[], \textcolor{stringliteral}{'bo'})
+70     \textcolor{comment}{#Autoscale on unknown axis and known lims on the other}
+71     ax2.set\_autoscaley\_on(\textcolor{keyword}{True})
+72 \textcolor{comment}{#    ax.set\_xlim(self.min\_x, self.max\_x)}
+73     \textcolor{comment}{#Other stuff}
 74     ax2.grid()        
-75     lines.set_xdata(obj.data(2))
-76     lines.set_ydata(obj.data(3))
-77     #Need both of these in order to rescale
+75     lines.set\_xdata(obj.data(2))
+76     lines.set\_ydata(obj.data(3))
+77     \textcolor{comment}{#Need both of these in order to rescale}
 78     ax2.relim()
-79     ax2.autoscale_view()
+79     ax2.autoscale\_view()
 80 
-81     #We need to draw *and* flush
+81     \textcolor{comment}{#We need to draw *and* flush}
 82     fig.canvas.draw()
-83     fig.canvas.flush_events()
+83     fig.canvas.flush\_events()
 84     fig.show()
-85     return fig
+85     \textcolor{keywordflow}{return} fig
 86     
-87 #----------------------------------------------------------------------
+87 \textcolor{comment}{#----------------------------------------------------------------------}
 88 
-def Plot(cat, obj, parent, id):
 \end{DoxyCode}

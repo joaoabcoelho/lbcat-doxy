@@ -1,76 +1,69 @@
-\hypertarget{Tools_8h}{
-\section{/home/eleclhcb/LHCb/lbcat-\/cmake/CatKernel/inc/Tools.h File Reference}
-\label{Tools_8h}\index{/home/eleclhcb/LHCb/lbcat-\/cmake/CatKernel/inc/Tools.h@{/home/eleclhcb/LHCb/lbcat-\/cmake/CatKernel/inc/Tools.h}}
-}
-{\ttfamily \#include $<$iostream$>$}\par
-{\ttfamily \#include $<$string$>$}\par
-{\ttfamily \#include $<$vector$>$}\par
-{\ttfamily \#include $<$stdio.h$>$}\par
-{\ttfamily \#include $<$time.h$>$}\par
-{\ttfamily \#include \char`\"{}StatusCode.h\char`\"{}}\par
-{\ttfamily \#include \char`\"{}var.h\char`\"{}}\par
-\subsection*{Defines}
-\begin{DoxyCompactItemize}
-\item 
-\#define \hyperlink{Tools_8h_af445f0dd9777733ae2b757c1a8509ae4}{TOOLS\_\-H}~1
-\end{DoxyCompactItemize}
+\hypertarget{Tools_8h}{}\section{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/inc/\+Tools.h File Reference}
+\label{Tools_8h}\index{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/inc/\+Tools.\+h@{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/inc/\+Tools.\+h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Status\+Code.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}var.\+h\char`\"{}}\newline
 \subsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
-typedef bool($\ast$ \hyperlink{Tools_8h_ada01722b28b812683943ad8beee5a641}{AskPrinter} )(std::string)
+typedef bool($\ast$ \hyperlink{Tools_8h_ada04ae2ece601eee3ed8890417c69c79}{Ask\+Printer}) (std\+::string)
 \item 
-typedef bool($\ast$ \hyperlink{Tools_8h_ae65a888066cb957eef56d44d9ed71bb9}{GraphPrinter} )()
+typedef bool($\ast$ \hyperlink{Tools_8h_ab98aa44fb38bf52bc63a352b6fab30c3}{Graph\+Printer}) ()
 \item 
-typedef std::vector$<$ bool $>$ \hyperlink{Tools_8h_a16025e92b541c606122d8b4af59c2e76}{bits}
+typedef std\+::vector$<$ bool $>$ \hyperlink{Tools_8h_a16025e92b541c606122d8b4af59c2e76}{bits}
 \item 
-typedef std::vector$<$ std::string $>$ \hyperlink{Tools_8h_a3691191ee3160cd3594dce0138ef60fa}{commands}
+typedef std\+::vector$<$ std\+::string $>$ \hyperlink{Tools_8h_a3691191ee3160cd3594dce0138ef60fa}{commands}
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{Tools_8h_a71443363ed67070e753a3c172f694834}{setApplication} (\hyperlink{classApplication}{Application} $\ast$)
+void \hyperlink{Tools_8h_a71443363ed67070e753a3c172f694834}{set\+Application} (\hyperlink{classApplication}{Application} $\ast$)
 \item 
 \hyperlink{classApplication}{Application} $\ast$ \hyperlink{Tools_8h_a27885a3c35afe79029fb830f32f66458}{application} ()
 \item 
-void \hyperlink{Tools_8h_a74d6a3fc8194eaac3e1f888db0542be9}{wait} (int nbr\_\-ms)
+void \hyperlink{Tools_8h_a74d6a3fc8194eaac3e1f888db0542be9}{wait} (int nbr\+\_\+ms)
 \item 
-std::string \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos} (int)
+std\+::string \hyperlink{Tools_8h_af330027dbdafb9a30768b3613c553e60}{itos} (int)
 \item 
-std::string \hyperlink{Tools_8h_ae78000c70889d75d67813c6cb83010a6}{ftos} (float)
+std\+::string \hyperlink{Tools_8h_ae78000c70889d75d67813c6cb83010a6}{ftos} (float)
 \item 
-std::string \hyperlink{Tools_8h_aae00470a2514793db62faac5737ad13a}{dtos} (float)
+std\+::string \hyperlink{Tools_8h_aae00470a2514793db62faac5737ad13a}{dtos} (float)
 \item 
-int \hyperlink{Tools_8h_ad434992aaedc45d3979e0af7e4fab88a}{stoi} (std::string)
+int \hyperlink{Tools_8h_ad434992aaedc45d3979e0af7e4fab88a}{stoi} (std\+::string)
 \item 
-std::vector$<$ bool $>$ \hyperlink{Tools_8h_a3697e4f3058ec4db63300f2eb247f24b}{itob} (int, int)
+std\+::vector$<$ bool $>$ \hyperlink{Tools_8h_a3697e4f3058ec4db63300f2eb247f24b}{itob} (int, int)
 \item 
-std::string \hyperlink{Tools_8h_adc37030be213033de444249d1eabcb5f}{btos} (std::vector$<$ bool $>$)
+std\+::string \hyperlink{Tools_8h_adc37030be213033de444249d1eabcb5f}{btos} (std\+::vector$<$ bool $>$)
 \item 
-double \hyperlink{Tools_8h_a4614569667ab6ef4acbb3de1684fad18}{toDouble} (std::string)
+double \hyperlink{Tools_8h_a4614569667ab6ef4acbb3de1684fad18}{to\+Double} (std\+::string)
 \item 
-std::string \hyperlink{Tools_8h_abc173afc73ad0d12dbe41fd0b2ec3fe9}{command} (std::string, std::vector$<$ std::string $>$ \&)
+std\+::string \hyperlink{Tools_8h_abc173afc73ad0d12dbe41fd0b2ec3fe9}{command} (std\+::string, std\+::vector$<$ std\+::string $>$ \&)
 \item 
-\hyperlink{classStatusCode}{StatusCode} \hyperlink{Tools_8h_adfed7b4994e290e76fabe16c036cd3bb}{checkCmd} (std::string, \hyperlink{Tools_8h_a3691191ee3160cd3594dce0138ef60fa}{commands}, \hyperlink{var_8h_a2a1c35ad624b5ab1fedf9a5719b81b4e}{vars} \&)
+\hyperlink{classStatusCode}{Status\+Code} \hyperlink{Tools_8h_adfed7b4994e290e76fabe16c036cd3bb}{check\+Cmd} (std\+::string, \hyperlink{Tools_8h_a3691191ee3160cd3594dce0138ef60fa}{commands}, \hyperlink{var_8h_a2a1c35ad624b5ab1fedf9a5719b81b4e}{vars} \&)
 \item 
-bool \hyperlink{Tools_8h_aab17830074d8c3f0a2d51250a3f25448}{isInt} (const char $\ast$)
+bool \hyperlink{Tools_8h_aab17830074d8c3f0a2d51250a3f25448}{is\+Int} (const char $\ast$)
 \item 
-bool \hyperlink{Tools_8h_abc401576ac280d0efb91bbc51517342f}{isFloat} (const char $\ast$)
+bool \hyperlink{Tools_8h_abc401576ac280d0efb91bbc51517342f}{is\+Float} (const char $\ast$)
 \item 
-bool \hyperlink{Tools_8h_a9784540dfe9517a442d708f6d97cd6b3}{askSvc} (std::string)
+bool \hyperlink{Tools_8h_a9784540dfe9517a442d708f6d97cd6b3}{ask\+Svc} (std\+::string)
 \item 
-std::string \hyperlink{Tools_8h_a92163d3538ec10edcc89ce3baac0673e}{inputSvc} (std::string)
+std\+::string \hyperlink{Tools_8h_a92163d3538ec10edcc89ce3baac0673e}{input\+Svc} (std\+::string)
 \end{DoxyCompactItemize}
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-unsigned int const \hyperlink{Tools_8h_af12064860bdd98010020cdfe76ad399f}{BIT} = 1
+unsigned int const \hyperlink{Tools_8h_af12064860bdd98010020cdfe76ad399f}{B\+IT} =1
 \item 
-unsigned int const \hyperlink{Tools_8h_adc91e2e8a94e01ff9ded64a285465895}{OCTET} = 8
+unsigned int const \hyperlink{Tools_8h_adc91e2e8a94e01ff9ded64a285465895}{O\+C\+T\+ET} =8
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Function \hyperlink{namespacetools}{tools}
+Function tools
 
 \begin{DoxyAuthor}{Author}
 Frederic Machefert 
@@ -80,470 +73,527 @@ Frederic Machefert
 \end{DoxyDate}
 
 
-Definition in file \hyperlink{Tools_8h_source}{Tools.h}.
-
-\subsection{Define Documentation}
-\hypertarget{Tools_8h_af445f0dd9777733ae2b757c1a8509ae4}{
-\index{Tools.h@{Tools.h}!TOOLS\_\-H@{TOOLS\_\-H}}
-\index{TOOLS\_\-H@{TOOLS\_\-H}!Tools.h@{Tools.h}}
-\subsubsection[{TOOLS\_\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define TOOLS\_\-H~1}}
-\label{Tools_8h_af445f0dd9777733ae2b757c1a8509ae4}
-
-
-Definition at line 14 of file Tools.h.
-
 \subsection{Typedef Documentation}
-\hypertarget{Tools_8h_ada01722b28b812683943ad8beee5a641}{
-\index{Tools.h@{Tools.h}!AskPrinter@{AskPrinter}}
-\index{AskPrinter@{AskPrinter}!Tools.h@{Tools.h}}
-\subsubsection[{AskPrinter}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool( $\ast$ {\bf AskPrinter})(std::string)}}
-\label{Tools_8h_ada01722b28b812683943ad8beee5a641}
+\mbox{\Hypertarget{Tools_8h_ada04ae2ece601eee3ed8890417c69c79}\label{Tools_8h_ada04ae2ece601eee3ed8890417c69c79}} 
+\index{Tools.\+h@{Tools.\+h}!Ask\+Printer@{Ask\+Printer}}
+\index{Ask\+Printer@{Ask\+Printer}!Tools.\+h@{Tools.\+h}}
+\subsubsection{\texorpdfstring{Ask\+Printer}{AskPrinter}}
+{\footnotesize\ttfamily typedef bool( $\ast$ Ask\+Printer) (std\+::string)}
 
 
-Definition at line 36 of file Tools.h.\hypertarget{Tools_8h_a16025e92b541c606122d8b4af59c2e76}{
-\index{Tools.h@{Tools.h}!bits@{bits}}
-\index{bits@{bits}!Tools.h@{Tools.h}}
-\subsubsection[{bits}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::vector$<$bool$>$ {\bf bits}}}
-\label{Tools_8h_a16025e92b541c606122d8b4af59c2e76}
+
+Definition at line 36 of file Tools.\+h.
+
+\mbox{\Hypertarget{Tools_8h_a16025e92b541c606122d8b4af59c2e76}\label{Tools_8h_a16025e92b541c606122d8b4af59c2e76}} 
+\index{Tools.\+h@{Tools.\+h}!bits@{bits}}
+\index{bits@{bits}!Tools.\+h@{Tools.\+h}}
+\subsubsection{\texorpdfstring{bits}{bits}}
+{\footnotesize\ttfamily typedef std\+::vector$<$bool$>$ \hyperlink{Tools_8h_a16025e92b541c606122d8b4af59c2e76}{bits}}
 
 
-Definition at line 40 of file Tools.h.\hypertarget{Tools_8h_a3691191ee3160cd3594dce0138ef60fa}{
-\index{Tools.h@{Tools.h}!commands@{commands}}
-\index{commands@{commands}!Tools.h@{Tools.h}}
-\subsubsection[{commands}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::vector$<$std::string$>$ {\bf commands}}}
-\label{Tools_8h_a3691191ee3160cd3594dce0138ef60fa}
+
+Definition at line 40 of file Tools.\+h.
+
+\mbox{\Hypertarget{Tools_8h_a3691191ee3160cd3594dce0138ef60fa}\label{Tools_8h_a3691191ee3160cd3594dce0138ef60fa}} 
+\index{Tools.\+h@{Tools.\+h}!commands@{commands}}
+\index{commands@{commands}!Tools.\+h@{Tools.\+h}}
+\subsubsection{\texorpdfstring{commands}{commands}}
+{\footnotesize\ttfamily typedef std\+::vector$<$std\+::string$>$ \hyperlink{Tools_8h_a3691191ee3160cd3594dce0138ef60fa}{commands}}
 
 
-Definition at line 42 of file Tools.h.\hypertarget{Tools_8h_ae65a888066cb957eef56d44d9ed71bb9}{
-\index{Tools.h@{Tools.h}!GraphPrinter@{GraphPrinter}}
-\index{GraphPrinter@{GraphPrinter}!Tools.h@{Tools.h}}
-\subsubsection[{GraphPrinter}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool( $\ast$ {\bf GraphPrinter})()}}
-\label{Tools_8h_ae65a888066cb957eef56d44d9ed71bb9}
+
+Definition at line 42 of file Tools.\+h.
+
+\mbox{\Hypertarget{Tools_8h_ab98aa44fb38bf52bc63a352b6fab30c3}\label{Tools_8h_ab98aa44fb38bf52bc63a352b6fab30c3}} 
+\index{Tools.\+h@{Tools.\+h}!Graph\+Printer@{Graph\+Printer}}
+\index{Graph\+Printer@{Graph\+Printer}!Tools.\+h@{Tools.\+h}}
+\subsubsection{\texorpdfstring{Graph\+Printer}{GraphPrinter}}
+{\footnotesize\ttfamily typedef bool( $\ast$ Graph\+Printer) ()}
 
 
-Definition at line 38 of file Tools.h.
+
+Definition at line 38 of file Tools.\+h.
+
+
 
 \subsection{Function Documentation}
-\hypertarget{Tools_8h_a27885a3c35afe79029fb830f32f66458}{
-\index{Tools.h@{Tools.h}!application@{application}}
-\index{application@{application}!Tools.h@{Tools.h}}
-\subsubsection[{application}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Application}$\ast$ application ()}}
-\label{Tools_8h_a27885a3c35afe79029fb830f32f66458}
+\mbox{\Hypertarget{Tools_8h_a27885a3c35afe79029fb830f32f66458}\label{Tools_8h_a27885a3c35afe79029fb830f32f66458}} 
+\index{Tools.\+h@{Tools.\+h}!application@{application}}
+\index{application@{application}!Tools.\+h@{Tools.\+h}}
+\subsubsection{\texorpdfstring{application()}{application()}}
+{\footnotesize\ttfamily \hyperlink{classApplication}{Application}$\ast$ application (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 return entry point for the application 
 
-Definition at line 42 of file Tools.cpp.
-
-Referenced by Application::bookkeeping(), checkCmd(), Computer::Computer(), CurrentMeasurement::execute(), ADCMeasurement::execute(), TestI2C::execute(), Acquisition::execute(), DLL::init(), CurrentMeasurement::initialize(), ADCMeasurement::initialize(), Acquisition::initialize(), isInt(), Application::loadHistoryFile(), MsgSvc::log(), MsgSvc::msgSvc(), Application::network(), NI6008::NI6008(), DLL::print(), ProcDataBase::ProcDataBase(), Server::start(), wait(), and Computer::$\sim$Computer().
+Definition at line 42 of file Tools.\+cpp.
 
 
-\begin{DoxyCode}
-42                            {
-43   return gApp;
-44 }
-\end{DoxyCode}
-\hypertarget{Tools_8h_a9784540dfe9517a442d708f6d97cd6b3}{
-\index{Tools.h@{Tools.h}!askSvc@{askSvc}}
-\index{askSvc@{askSvc}!Tools.h@{Tools.h}}
-\subsubsection[{askSvc}]{\setlength{\rightskip}{0pt plus 5cm}bool askSvc (std::string)}}
-\label{Tools_8h_a9784540dfe9517a442d708f6d97cd6b3}
+
+References g\+App.
 
 
-Definition at line 242 of file Tools.cpp.
+
+Referenced by Application\+::bookkeeping(), check\+Cmd(), Computer\+::\+Computer(), Acquisition\+::execute(), Test\+I2\+C\+::execute(), A\+D\+C\+Measurement\+::execute(), Current\+Measurement\+::execute(), D\+L\+L\+::init(), Acquisition\+::initialize(), A\+D\+C\+Measurement\+::initialize(), Current\+Measurement\+::initialize(), is\+Int(), Application\+::load\+History\+File(), Msg\+Svc\+::log(), Msg\+Svc\+::msg\+Svc(), Application\+::network(), N\+I6008\+::\+N\+I6008(), D\+L\+L\+::print(), Proc\+Data\+Base\+::\+Proc\+Data\+Base(), Server\+::\+Server(), Processus\+::set\+State(), Server\+::start(), wait(), and Computer\+::$\sim$\+Computer().
 
 
 \begin{DoxyCode}
-242                              {
-243   /*
-244   AskPrinter asker = application() -> options() -> askPrinter ();
-245   return asker ( msg);
-246   */
-247   return false;
-248 }
+42                            \{
+43   \textcolor{keywordflow}{return} \hyperlink{Tools_8cpp_aea679c7117e896daafaf36140158c9ee}{gApp};
+44 \}
 \end{DoxyCode}
-\hypertarget{Tools_8h_adc37030be213033de444249d1eabcb5f}{
-\index{Tools.h@{Tools.h}!btos@{btos}}
-\index{btos@{btos}!Tools.h@{Tools.h}}
-\subsubsection[{btos}]{\setlength{\rightskip}{0pt plus 5cm}std::string btos (std::vector$<$ bool $>$)}}
-\label{Tools_8h_adc37030be213033de444249d1eabcb5f}
-Conversion from binary (std::vector$<$std::string$>$) to std::string 
+\mbox{\Hypertarget{Tools_8h_a9784540dfe9517a442d708f6d97cd6b3}\label{Tools_8h_a9784540dfe9517a442d708f6d97cd6b3}} 
+\index{Tools.\+h@{Tools.\+h}!ask\+Svc@{ask\+Svc}}
+\index{ask\+Svc@{ask\+Svc}!Tools.\+h@{Tools.\+h}}
+\subsubsection{\texorpdfstring{ask\+Svc()}{askSvc()}}
+{\footnotesize\ttfamily bool ask\+Svc (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})}
 
-Definition at line 67 of file Tools.cpp.
+
+
+Definition at line 242 of file Tools.\+cpp.
+
+
+\begin{DoxyCode}
+242                              \{
+243   \textcolor{comment}{/*}
+244 \textcolor{comment}{  AskPrinter asker = application() -> options() -> askPrinter ();}
+245 \textcolor{comment}{  return asker ( msg);}
+246 \textcolor{comment}{  */}
+247   \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+248 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{Tools_8h_adc37030be213033de444249d1eabcb5f}\label{Tools_8h_adc37030be213033de444249d1eabcb5f}} 
+\index{Tools.\+h@{Tools.\+h}!btos@{btos}}
+\index{btos@{btos}!Tools.\+h@{Tools.\+h}}
+\subsubsection{\texorpdfstring{btos()}{btos()}}
+{\footnotesize\ttfamily std\+::string btos (\begin{DoxyParamCaption}\item[{std\+::vector$<$ bool $>$}]{ }\end{DoxyParamCaption})}
+
+Conversion from binary (std\+::vector$<$std\+::string$>$) to std\+::string 
+
+Definition at line 67 of file Tools.\+cpp.
+
+
 
 References itos().
 
-Referenced by IOdata::dump().
+
+
+Referenced by I\+Odata\+::dump().
 
 
 \begin{DoxyCode}
-67                                     {   
-68   int i=bits.size()-1;
+67                                     \{   
+68   \textcolor{keywordtype}{int} i=\hyperlink{Tools_8h_a16025e92b541c606122d8b4af59c2e76}{bits}.size()-1;
 69   std::string output;
-70   while(i>=0){
-71     output+=itos(bits[i]);
+70   \textcolor{keywordflow}{while}(i>=0)\{
+71     output+=\hyperlink{Tools_8cpp_a20f271409637c91b02c586644cb542e0}{itos}(\hyperlink{Tools_8h_a16025e92b541c606122d8b4af59c2e76}{bits}[i]);
 72     i--;
-73   } 
-74   return output;
-75 }   
+73   \} 
+74   \textcolor{keywordflow}{return} output;
+75 \}   
 \end{DoxyCode}
-\hypertarget{Tools_8h_adfed7b4994e290e76fabe16c036cd3bb}{
-\index{Tools.h@{Tools.h}!checkCmd@{checkCmd}}
-\index{checkCmd@{checkCmd}!Tools.h@{Tools.h}}
-\subsubsection[{checkCmd}]{\setlength{\rightskip}{0pt plus 5cm}{\bf StatusCode} checkCmd (std::string, \/  {\bf commands}, \/  {\bf vars} \&)}}
-\label{Tools_8h_adfed7b4994e290e76fabe16c036cd3bb}
+\mbox{\Hypertarget{Tools_8h_adfed7b4994e290e76fabe16c036cd3bb}\label{Tools_8h_adfed7b4994e290e76fabe16c036cd3bb}} 
+\index{Tools.\+h@{Tools.\+h}!check\+Cmd@{check\+Cmd}}
+\index{check\+Cmd@{check\+Cmd}!Tools.\+h@{Tools.\+h}}
+\subsubsection{\texorpdfstring{check\+Cmd()}{checkCmd()}}
+{\footnotesize\ttfamily \hyperlink{classStatusCode}{Status\+Code} check\+Cmd (\begin{DoxyParamCaption}\item[{std\+::string}]{,  }\item[{\hyperlink{Tools_8h_a3691191ee3160cd3594dce0138ef60fa}{commands}}]{,  }\item[{\hyperlink{var_8h_a2a1c35ad624b5ab1fedf9a5719b81b4e}{vars} \&}]{ }\end{DoxyParamCaption})}
+
 check the format of an instruction 
 
-Definition at line 126 of file Tools.cpp.
+Definition at line 126 of file Tools.\+cpp.
 
-References application(), StatusCode::FAILURE, images::index, Object::info(), isFloat(), isInt(), cat::size, StatusCode::SUCCESS, and Object::warning().
+
+
+References application(), Status\+Code\+::\+F\+A\+I\+L\+U\+RE, images\+::index, Object\+::info(), is\+Float(), is\+Int(), cat\+::size, Status\+Code\+::\+S\+U\+C\+C\+E\+SS, and Object\+::warning().
 
 
 \begin{DoxyCode}
-126                                                                               {
-127   int size = instruction.size();
-128   if ( size<=0 ){
-129     return StatusCode::FAILURE;
-130   }
+126                                                                               \{
+127   \textcolor{keywordtype}{int} \hyperlink{namespacecat_a3eae50bb86a614752045105e00365a46}{size} = instruction.size();
+128   \textcolor{keywordflow}{if} ( size<=0 )\{
+129     \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
+130   \}
 131 
-132   // line is empty
-133   if ( format.empty() ||  std::string::npos==format.find_first_not_of(' ') ) {
-134     return StatusCode::FAILURE;
-135   }
+132   \textcolor{comment}{// line is empty}
+133   \textcolor{keywordflow}{if} ( format.empty() ||  std::string::npos==format.find\_first\_not\_of(\textcolor{charliteral}{' '}) ) \{
+134     \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
+135   \}
 136 
-137   // split the format in a vector of strings 
-138   // decode the main command
+137   \textcolor{comment}{// split the format in a vector of strings }
+138   \textcolor{comment}{// decode the main command}
 139   std::string line = std::string (format, 
-140                   format.find_first_not_of(' ') , 
+140                   format.find\_first\_not\_of(\textcolor{charliteral}{' '}) , 
 141                   format.size());
 142   std::vector<std::string> cmd;
-143   std::string separator(1,' ');
-144   unsigned int ipos = line.find( separator );
-145   cmd.push_back ( std::string( line, 0, ipos ) );
-146   if ( 0!=std::string ( line , 0 , ipos ).compare(instruction[0]) ){
-147     application()->info(std::string ( line , 0 , ipos )+" "+instruction[0],"");
-148     return StatusCode::FAILURE;
-149   }
+143   std::string separator(1,\textcolor{charliteral}{' '});
+144   \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} ipos = line.find( separator );
+145   cmd.push\_back ( std::string( line, 0, ipos ) );
+146   \textcolor{keywordflow}{if} ( 0!=std::string ( line , 0 , ipos ).compare(instruction[0]) )\{
+147     \hyperlink{Tools_8cpp_a27885a3c35afe79029fb830f32f66458}{application}()->\hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(std::string ( line , 0 , ipos )+\textcolor{stringliteral}{" "}+instruction[0],\textcolor{stringliteral}{""});
+148     \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
+149   \}
 150 
-151   unsigned int pos ;
+151   \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} pos ;
 152 
 153   std::string str = line;
-154   while ( ipos!=std::string::npos ){
+154   \textcolor{keywordflow}{while} ( ipos!=std::string::npos )\{
 155     std::string tmp = std::string (str, ipos , str.size());
 156     str = tmp;
-157     pos=str.find_first_not_of( ' ' );    
-158     if ( pos == std::string::npos ) {      
-159       break;
-160     }
+157     pos=str.find\_first\_not\_of( \textcolor{charliteral}{' '} );    
+158     \textcolor{keywordflow}{if} ( pos == std::string::npos ) \{      
+159       \textcolor{keywordflow}{break};
+160     \}
 161     std::string arg;
 162     ipos = str.find(separator,pos);
 163   
-164     if (ipos==std::string::npos){
+164     \textcolor{keywordflow}{if} (ipos==std::string::npos)\{
 165       arg =  std::string(str , pos );
-166     }
-167     else {
+166     \}
+167     \textcolor{keywordflow}{else} \{
 168       arg = std::string(str , pos, ipos - 1);
-169     }
-170     cmd.push_back(arg);
-171   }
+169     \}
+170     cmd.push\_back(arg);
+171   \}
 172 
-173   // check parameter number
-174   if ( instruction.size() != cmd.size() ){
-175     application()->info("wrong number of parameter. a enelver !!!!","");
-176     return StatusCode::FAILURE;
-177   }
-178   // no parameter
-179   if ( 1==cmd.size() ){
-180     return StatusCode::SUCCESS;
-181   }
-182   // decode the format
-183   for (unsigned int index = 1; index < cmd.size() ; ++index){
-184     // int ?
-185     if ( 0==cmd[index].compare("%i") || 0==cmd[index].compare("%I") ){
-186       if ( !isInt ( instruction[index].c_str() ) ) {
-187     application()->warning("We expect an integer parameter ["+instruction[index]+
-      "]","checkCmd");
-188     return StatusCode::FAILURE;
-189       }
-190       varlist.push_back ( var( atoi(instruction[index].c_str()) ) );
-191     }
-192     // float ?
-193     if ( 0==cmd[index].compare("%f") || 0==cmd[index].compare("%F") ){
-194       if ( !isFloat ( instruction[index].c_str() ) ) {
-195     application()->warning("We expect a float parameter ["+instruction[index]+"]"
-      ,"checkCmd");
-196     return StatusCode::FAILURE;
-197       }
-198       varlist.push_back( var ( atof(instruction[index].c_str()) ) );
-199     }
-200   }
-201   return StatusCode::SUCCESS;
-202 }
+173   \textcolor{comment}{// check parameter number}
+174   \textcolor{keywordflow}{if} ( instruction.size() != cmd.size() )\{
+175     \hyperlink{Tools_8cpp_a27885a3c35afe79029fb830f32f66458}{application}()->\hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"wrong number of parameter. a enelver !!!!"},\textcolor{stringliteral}{""});
+176     \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
+177   \}
+178   \textcolor{comment}{// no parameter}
+179   \textcolor{keywordflow}{if} ( 1==cmd.size() )\{
+180     \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
+181   \}
+182   \textcolor{comment}{// decode the format}
+183   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \hyperlink{namespaceimages_a54407fd574970b3178647ae096321a57}{index} = 1; \hyperlink{namespaceimages_a54407fd574970b3178647ae096321a57}{index} < cmd.size() ; ++\hyperlink{namespaceimages_a54407fd574970b3178647ae096321a57}{index})\{
+184     \textcolor{comment}{// int ?}
+185     \textcolor{keywordflow}{if} ( 0==cmd[\hyperlink{namespaceimages_a54407fd574970b3178647ae096321a57}{index}].compare(\textcolor{stringliteral}{"%i"}) || 0==cmd[\hyperlink{namespaceimages_a54407fd574970b3178647ae096321a57}{index}].compare(\textcolor{stringliteral}{"%I"}) )\{
+186       \textcolor{keywordflow}{if} ( !\hyperlink{Tools_8cpp_a9cfc57e458c74c6992c89e2f9312ea36}{isInt} ( instruction[\hyperlink{namespaceimages_a54407fd574970b3178647ae096321a57}{index}].c\_str() ) ) \{
+187     \hyperlink{Tools_8cpp_a27885a3c35afe79029fb830f32f66458}{application}()->\hyperlink{classObject_a65cd4fda577711660821fd2cd5a3b4c9}{warning}(\textcolor{stringliteral}{"We expect an integer parameter ["}+instruction[
+      \hyperlink{namespaceimages_a54407fd574970b3178647ae096321a57}{index}]+\textcolor{stringliteral}{"]"},\textcolor{stringliteral}{"checkCmd"});
+188     \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
+189       \}
+190       varlist.push\_back ( \hyperlink{classvar}{var}( atoi(instruction[\hyperlink{namespaceimages_a54407fd574970b3178647ae096321a57}{index}].c\_str()) ) );
+191     \}
+192     \textcolor{comment}{// float ?}
+193     \textcolor{keywordflow}{if} ( 0==cmd[\hyperlink{namespaceimages_a54407fd574970b3178647ae096321a57}{index}].compare(\textcolor{stringliteral}{"%f"}) || 0==cmd[\hyperlink{namespaceimages_a54407fd574970b3178647ae096321a57}{index}].compare(\textcolor{stringliteral}{"%F"}) )\{
+194       \textcolor{keywordflow}{if} ( !\hyperlink{Tools_8cpp_ae7615ca3a69f79ae0e70767043c49387}{isFloat} ( instruction[\hyperlink{namespaceimages_a54407fd574970b3178647ae096321a57}{index}].c\_str() ) ) \{
+195     \hyperlink{Tools_8cpp_a27885a3c35afe79029fb830f32f66458}{application}()->\hyperlink{classObject_a65cd4fda577711660821fd2cd5a3b4c9}{warning}(\textcolor{stringliteral}{"We expect a float parameter ["}+instruction[
+      \hyperlink{namespaceimages_a54407fd574970b3178647ae096321a57}{index}]+\textcolor{stringliteral}{"]"},\textcolor{stringliteral}{"checkCmd"});
+196     \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4ba3da73d4c469762eb9d3c960368252b26}{StatusCode::FAILURE};
+197       \}
+198       varlist.push\_back( \hyperlink{classvar}{var} ( atof(instruction[\hyperlink{namespaceimages_a54407fd574970b3178647ae096321a57}{index}].c\_str()) ) );
+199     \}
+200   \}
+201   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
+202 \}
 \end{DoxyCode}
-\hypertarget{Tools_8h_abc173afc73ad0d12dbe41fd0b2ec3fe9}{
-\index{Tools.h@{Tools.h}!command@{command}}
-\index{command@{command}!Tools.h@{Tools.h}}
-\subsubsection[{command}]{\setlength{\rightskip}{0pt plus 5cm}std::string command (std::string, \/  std::vector$<$ std::string $>$ \&)}}
-\label{Tools_8h_abc173afc73ad0d12dbe41fd0b2ec3fe9}
-extract vector of std::string out of a command \hypertarget{Tools_8h_aae00470a2514793db62faac5737ad13a}{
-\index{Tools.h@{Tools.h}!dtos@{dtos}}
-\index{dtos@{dtos}!Tools.h@{Tools.h}}
-\subsubsection[{dtos}]{\setlength{\rightskip}{0pt plus 5cm}std::string dtos (float)}}
-\label{Tools_8h_aae00470a2514793db62faac5737ad13a}
-Conversion from double to std::string \hypertarget{Tools_8h_ae78000c70889d75d67813c6cb83010a6}{
-\index{Tools.h@{Tools.h}!ftos@{ftos}}
-\index{ftos@{ftos}!Tools.h@{Tools.h}}
-\subsubsection[{ftos}]{\setlength{\rightskip}{0pt plus 5cm}std::string ftos (float)}}
-\label{Tools_8h_ae78000c70889d75d67813c6cb83010a6}
-Conversion from float to std::string 
+\mbox{\Hypertarget{Tools_8h_abc173afc73ad0d12dbe41fd0b2ec3fe9}\label{Tools_8h_abc173afc73ad0d12dbe41fd0b2ec3fe9}} 
+\index{Tools.\+h@{Tools.\+h}!command@{command}}
+\index{command@{command}!Tools.\+h@{Tools.\+h}}
+\subsubsection{\texorpdfstring{command()}{command()}}
+{\footnotesize\ttfamily std\+::string command (\begin{DoxyParamCaption}\item[{std\+::string}]{,  }\item[{std\+::vector$<$ std\+::string $>$ \&}]{ }\end{DoxyParamCaption})}
 
-Definition at line 53 of file Tools.cpp.
+extract vector of std\+::string out of a command \mbox{\Hypertarget{Tools_8h_aae00470a2514793db62faac5737ad13a}\label{Tools_8h_aae00470a2514793db62faac5737ad13a}} 
+\index{Tools.\+h@{Tools.\+h}!dtos@{dtos}}
+\index{dtos@{dtos}!Tools.\+h@{Tools.\+h}}
+\subsubsection{\texorpdfstring{dtos()}{dtos()}}
+{\footnotesize\ttfamily std\+::string dtos (\begin{DoxyParamCaption}\item[{float}]{ }\end{DoxyParamCaption})}
 
-Referenced by Processus::endProcessing(), PhaserRampExec::finalize(), Server\_\-NI6008::setAIRange(), Server\_\-NI6008::setAORange(), Server\_\-NI6008::status(), and ICECALv3::version().
+Conversion from double to std\+::string \mbox{\Hypertarget{Tools_8h_ae78000c70889d75d67813c6cb83010a6}\label{Tools_8h_ae78000c70889d75d67813c6cb83010a6}} 
+\index{Tools.\+h@{Tools.\+h}!ftos@{ftos}}
+\index{ftos@{ftos}!Tools.\+h@{Tools.\+h}}
+\subsubsection{\texorpdfstring{ftos()}{ftos()}}
+{\footnotesize\ttfamily std\+::string ftos (\begin{DoxyParamCaption}\item[{float}]{ }\end{DoxyParamCaption})}
+
+Conversion from float to std\+::string 
+
+Definition at line 53 of file Tools.\+cpp.
+
+
+
+Referenced by Processus\+::end\+Processing(), Phaser\+Ramp\+Exec\+::finalize(), Server\+\_\+\+N\+I6008\+::set\+A\+I\+Range(), Server\+\_\+\+N\+I6008\+::set\+A\+O\+Range(), Server\+\_\+\+N\+I6008\+::status(), and I\+C\+E\+C\+A\+Lv3\+::version().
 
 
 \begin{DoxyCode}
-53                        {    
-54   char val[20];
-55   sprintf(val,"%f",f);
+53                        \{    
+54   \textcolor{keywordtype}{char} val[20];
+55   sprintf(val,\textcolor{stringliteral}{"%f"},\hyperlink{namespacecat_ac4e5e84140346d3c05a72261c63ef7b1}{f});
 56   std::string str(val);
-57   return str;
-58 }
+57   \textcolor{keywordflow}{return} str;
+58 \}
 \end{DoxyCode}
-\hypertarget{Tools_8h_a92163d3538ec10edcc89ce3baac0673e}{
-\index{Tools.h@{Tools.h}!inputSvc@{inputSvc}}
-\index{inputSvc@{inputSvc}!Tools.h@{Tools.h}}
-\subsubsection[{inputSvc}]{\setlength{\rightskip}{0pt plus 5cm}std::string inputSvc (std::string)}}
-\label{Tools_8h_a92163d3538ec10edcc89ce3baac0673e}
+\mbox{\Hypertarget{Tools_8h_a92163d3538ec10edcc89ce3baac0673e}\label{Tools_8h_a92163d3538ec10edcc89ce3baac0673e}} 
+\index{Tools.\+h@{Tools.\+h}!input\+Svc@{input\+Svc}}
+\index{input\+Svc@{input\+Svc}!Tools.\+h@{Tools.\+h}}
+\subsubsection{\texorpdfstring{input\+Svc()}{inputSvc()}}
+{\footnotesize\ttfamily std\+::string input\+Svc (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})}
 
 
-Definition at line 259 of file Tools.cpp.
+
+Definition at line 259 of file Tools.\+cpp.
 
 
 \begin{DoxyCode}
-259                                     {
-260   /*
-261   InputSvc inp = application() -> options() -> inputSvc ();
-262   return inp ( msg );
-263   */
-264   return std::string("not implemented.");
-265 }
+259                                     \{
+260   \textcolor{comment}{/*}
+261 \textcolor{comment}{  InputSvc inp = application() -> options() -> inputSvc ();}
+262 \textcolor{comment}{  return inp ( msg );}
+263 \textcolor{comment}{  */}
+264   \textcolor{keywordflow}{return} std::string(\textcolor{stringliteral}{"not implemented."});
+265 \}
 \end{DoxyCode}
-\hypertarget{Tools_8h_abc401576ac280d0efb91bbc51517342f}{
-\index{Tools.h@{Tools.h}!isFloat@{isFloat}}
-\index{isFloat@{isFloat}!Tools.h@{Tools.h}}
-\subsubsection[{isFloat}]{\setlength{\rightskip}{0pt plus 5cm}bool isFloat (const char $\ast$)}}
-\label{Tools_8h_abc401576ac280d0efb91bbc51517342f}
+\mbox{\Hypertarget{Tools_8h_abc401576ac280d0efb91bbc51517342f}\label{Tools_8h_abc401576ac280d0efb91bbc51517342f}} 
+\index{Tools.\+h@{Tools.\+h}!is\+Float@{is\+Float}}
+\index{is\+Float@{is\+Float}!Tools.\+h@{Tools.\+h}}
+\subsubsection{\texorpdfstring{is\+Float()}{isFloat()}}
+{\footnotesize\ttfamily bool is\+Float (\begin{DoxyParamCaption}\item[{const char $\ast$}]{ }\end{DoxyParamCaption})}
+
 check if string is compatible with float 
 
-Definition at line 206 of file Tools.cpp.
+Definition at line 206 of file Tools.\+cpp.
 
-Referenced by checkCmd().
+
+
+Referenced by check\+Cmd().
 
 
 \begin{DoxyCode}
-206                                   {
-207   const char *pChain = chain;
-208   while (*pChain!='\0') {
-209     if ( *pChain!='0' && *pChain!='1' && *pChain!='2' && *pChain!='3' &&
-210      *pChain!='4' && *pChain!='5' && *pChain!='6' && *pChain!='7' &&
-211      *pChain!='8' && *pChain!='9' && *pChain!='+' && *pChain!='-' &&
-212      *pChain!='.' ){
-213       return false;
-214     }
+206                                   \{
+207   \textcolor{keyword}{const} \textcolor{keywordtype}{char} *pChain = chain;
+208   \textcolor{keywordflow}{while} (*pChain!=\textcolor{charliteral}{'\(\backslash\)0'}) \{
+209     \textcolor{keywordflow}{if} ( *pChain!=\textcolor{charliteral}{'0'} && *pChain!=\textcolor{charliteral}{'1'} && *pChain!=\textcolor{charliteral}{'2'} && *pChain!=\textcolor{charliteral}{'3'} &&
+210      *pChain!=\textcolor{charliteral}{'4'} && *pChain!=\textcolor{charliteral}{'5'} && *pChain!=\textcolor{charliteral}{'6'} && *pChain!=\textcolor{charliteral}{'7'} &&
+211      *pChain!=\textcolor{charliteral}{'8'} && *pChain!=\textcolor{charliteral}{'9'} && *pChain!=\textcolor{charliteral}{'+'} && *pChain!=\textcolor{charliteral}{'-'} &&
+212      *pChain!=\textcolor{charliteral}{'.'} )\{
+213       \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+214     \}
 215     pChain++;
-216   }
-217   return true;
-218 } 
+216   \}
+217   \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+218 \} 
 \end{DoxyCode}
-\hypertarget{Tools_8h_aab17830074d8c3f0a2d51250a3f25448}{
-\index{Tools.h@{Tools.h}!isInt@{isInt}}
-\index{isInt@{isInt}!Tools.h@{Tools.h}}
-\subsubsection[{isInt}]{\setlength{\rightskip}{0pt plus 5cm}bool isInt (const char $\ast$)}}
-\label{Tools_8h_aab17830074d8c3f0a2d51250a3f25448}
+\mbox{\Hypertarget{Tools_8h_aab17830074d8c3f0a2d51250a3f25448}\label{Tools_8h_aab17830074d8c3f0a2d51250a3f25448}} 
+\index{Tools.\+h@{Tools.\+h}!is\+Int@{is\+Int}}
+\index{is\+Int@{is\+Int}!Tools.\+h@{Tools.\+h}}
+\subsubsection{\texorpdfstring{is\+Int()}{isInt()}}
+{\footnotesize\ttfamily bool is\+Int (\begin{DoxyParamCaption}\item[{const char $\ast$}]{ }\end{DoxyParamCaption})}
+
 check if string is compatible with int 
 
-Definition at line 223 of file Tools.cpp.
+Definition at line 223 of file Tools.\+cpp.
 
-References application(), and Object::info().
 
-Referenced by checkCmd().
+
+References application(), and Object\+::info().
+
+
+
+Referenced by check\+Cmd().
 
 
 \begin{DoxyCode}
-223                                 {
-224   const char *pChain = chain;  
-225   bool first = true;
-226   while (*pChain!='\0') {
-227     if ( ( *pChain<'0' || *pChain>'9' ) ){
-228       application()->info(chain,"");
-229       if ( !first || *pChain!='-' ){ 
-230     return false;
-231       }
-232     }
-233     first = false;
+223                                 \{
+224   \textcolor{keyword}{const} \textcolor{keywordtype}{char} *pChain = chain;  
+225   \textcolor{keywordtype}{bool} first = \textcolor{keyword}{true};
+226   \textcolor{keywordflow}{while} (*pChain!=\textcolor{charliteral}{'\(\backslash\)0'}) \{
+227     \textcolor{keywordflow}{if} ( ( *pChain<'0' || *pChain>\textcolor{charliteral}{'9'} ) )\{
+228       \hyperlink{Tools_8cpp_a27885a3c35afe79029fb830f32f66458}{application}()->\hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(chain,\textcolor{stringliteral}{""});
+229       \textcolor{keywordflow}{if} ( !first || *pChain!=\textcolor{charliteral}{'-'} )\{ 
+230     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+231       \}
+232     \}
+233     first = \textcolor{keyword}{false};
 234     pChain++;
-235   }
-236   return true;
-237 } 
+235   \}
+236   \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+237 \} 
 \end{DoxyCode}
-\hypertarget{Tools_8h_a3697e4f3058ec4db63300f2eb247f24b}{
-\index{Tools.h@{Tools.h}!itob@{itob}}
-\index{itob@{itob}!Tools.h@{Tools.h}}
-\subsubsection[{itob}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$bool$>$ itob (int, \/  int)}}
-\label{Tools_8h_a3697e4f3058ec4db63300f2eb247f24b}
-Conversion from integer to binary (std::string) 
+\mbox{\Hypertarget{Tools_8h_a3697e4f3058ec4db63300f2eb247f24b}\label{Tools_8h_a3697e4f3058ec4db63300f2eb247f24b}} 
+\index{Tools.\+h@{Tools.\+h}!itob@{itob}}
+\index{itob@{itob}!Tools.\+h@{Tools.\+h}}
+\subsubsection{\texorpdfstring{itob()}{itob()}}
+{\footnotesize\ttfamily std\+::vector$<$bool$>$ itob (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{int}]{ }\end{DoxyParamCaption})}
 
-Definition at line 77 of file Tools.cpp.
+Conversion from integer to binary (std\+::string) 
 
-Referenced by IOdata::dump().
+Definition at line 77 of file Tools.\+cpp.
+
+
+
+Referenced by I\+Odata\+::dump().
 
 
 \begin{DoxyCode}
-77                                       {
-78   int i=nbit-1; 
-79   int power; 
-80   std::vector<bool> bits(nbit);
-81   //    int limit=1<<(nbit-1);
-82   //int vsat=(val<limit)?val:int(limit-1); //saturation
-83   int vsat=val;
-84   while(i>=0){
+77                                       \{
+78   \textcolor{keywordtype}{int} i=nbit-1; 
+79   \textcolor{keywordtype}{int} power; 
+80   std::vector<bool> \hyperlink{Tools_8h_a16025e92b541c606122d8b4af59c2e76}{bits}(nbit);
+81   \textcolor{comment}{//    int limit=1<<(nbit-1);}
+82   \textcolor{comment}{//int vsat=(val<limit)?val:int(limit-1); //saturation}
+83   \textcolor{keywordtype}{int} vsat=val;
+84   \textcolor{keywordflow}{while}(i>=0)\{
 85     power=1<<i;
-86     bits[i]=(vsat/power==1);
+86     \hyperlink{Tools_8h_a16025e92b541c606122d8b4af59c2e76}{bits}[i]=(vsat/power==1);
 87     vsat=vsat%power;
 88     i--;
-89   }
-90   return bits;
-91 }
+89   \}
+90   \textcolor{keywordflow}{return} \hyperlink{Tools_8h_a16025e92b541c606122d8b4af59c2e76}{bits};
+91 \}
 \end{DoxyCode}
-\hypertarget{Tools_8h_af330027dbdafb9a30768b3613c553e60}{
-\index{Tools.h@{Tools.h}!itos@{itos}}
-\index{itos@{itos}!Tools.h@{Tools.h}}
-\subsubsection[{itos}]{\setlength{\rightskip}{0pt plus 5cm}std::string itos (int)}}
-\label{Tools_8h_af330027dbdafb9a30768b3613c553e60}
-Conversion from int (long) to std::string 
+\mbox{\Hypertarget{Tools_8h_af330027dbdafb9a30768b3613c553e60}\label{Tools_8h_af330027dbdafb9a30768b3613c553e60}} 
+\index{Tools.\+h@{Tools.\+h}!itos@{itos}}
+\index{itos@{itos}!Tools.\+h@{Tools.\+h}}
+\subsubsection{\texorpdfstring{itos()}{itos()}}
+{\footnotesize\ttfamily std\+::string itos (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
 
-Definition at line 46 of file Tools.cpp.
+Conversion from int (long) to std\+::string 
 
-Referenced by DCU::acquire(), btos(), FEB\_\-v1::calibCte(), MSOxxxx::channelDisplay(), MSOxxxx::channelDisplayName(), MSOxxxx::channelOffset(), MSOxxxx::channelScale(), ICECALv3::checkChNumber(), LSDelayChipV1::checkConfigAddr(), LSDelayChipV1::checkStatusAddr(), FEB\_\-v1::clock80MHzFallingEdge(), FEB\_\-v1::clockFallingEdge(), UsbFTMLInterface::close(), UsbFTInterface::close(), SpecsMezzanine::cmdline(), SpecsSlave::detect(), FEB\_\-v1::disableSubtract(), IOdata::dump(), A3PE::dumpFromAX(), Processus::endProcessing(), Acquisition::execute(), PhaserRampExec::execute(), FEB\_\-v1::FEB\_\-v1(), PhaserRampExec::finalize(), FEB\_\-v1::gain4(), FEB\_\-v1::gbt80MHzClkEport(), FEB\_\-v1::gbtAcknowledgeConfig(), FEB\_\-v1::gbtDataPath(), FEB\_\-v1::gbtDLLEport(), FEB\_\-v1::gbtDLLReset(), FEB\_\-v1::gbtEnableEport(), FEB\_\-v1::gbtMode(), FEB\_\-v1::gbtStatus(), FEB\_\-v1::gbtTermEport(), FEB\_\-v1::gbtTrackMode(), EmulateFE::generateFile(), ICECALv3::getAnalogCh(), LSDelayChipV1::getConfigReg(), ICECALv3::getDelayLineCh(), ICECALv3::getMainReg(), FEB\_\-v1::globalPseudoPMEnable(), SpecsSlave::init(), SpecsMaster::init(), NI6008::init(), UsbFTMLInterface::init(), UsbFTInterface::init(), CurrentMeasurement::initialize(), A3PE\_\-BitFlip::initialize(), FEB\_\-v1::injectModeFE(), FEB\_\-v1::latency(), FEB\_\-v1::latencyLLT(), A3PE::loadFromAX(), Application::loadHistoryFile(), A3PE::loadPattern(), A3PE::loadStorage(), A3PE::loadToAX(), A3PE::loadTrigger(), Application::loop(), FEB\_\-v1::maskLLT(), Data::name(), FEB\_\-v1::oldSubtract(), MSOxxxx::open(), DLL::print(), FEB\_\-v1::probeEnable(), FEB\_\-v1::pseudoADCEnable(), FEB\_\-v1::pseudoPMEnable(), UsbSpiBus::read(), UsbFTMLInterface::read(), ICPhaser::read(), UsbFTInterface::read(), Phaser::read(), SpecsSlave::reset(), SpecsMaster::reset(), FEB\_\-v1::resetFE(), FEB\_\-v1::resetFifoInjectFE(), FEB\_\-v1::resetFifoSpyFE(), SpecsSlave::resetInternal(), Server\_\-NI6008::Server\_\-NI6008(), A3PE::setAddFromAXRam(), A3PE::setAddToAXRam(), A3PE::setAXRamUsb(), FEB\_\-v1::setCalibCte(), FEB\_\-v1::setClock80MHzFallingEdge(), A3PE::setClockDivision(), FEB\_\-v1::setClockFallingEdge(), LSDelayChipV1::setConfigReg(), UsbSpiBus::setDataLength(), FEB\_\-v1::setDisableSubtract(), A3PE::setEnableADC(), A3PE::setFifoDepth(), A3PE::setFifoLatency(), FEB\_\-v1::setGain4(), FEB\_\-v1::setGbt80MHzClkEport(), FEB\_\-v1::setGbtClockStrength(), FEB\_\-v1::setGbtDataPath(), FEB\_\-v1::setGbtDLLEport(), FEB\_\-v1::setGbtEnableEport(), FEB\_\-v1::setGbtMode(), FEB\_\-v1::setGbtTermEport(), FEB\_\-v1::setGbtTrackMode(), FEB\_\-v1::setGlobalPseudoPMEnable(), FEB\_\-v1::setInjectModeFE(), A3PE::setInternalAXSequence(), FEB\_\-v1::setLatency(), A3PE::setLatencyAX(), A3PE::setLengthAX(), A3PE::setNTrigger(), FEB\_\-v1::setOldSubtract(), FEB\_\-v1::setOutputEport(), ICPhaser::setPhase(), Phaser::setPhase(), A3PE::setPipeline(), FEB\_\-v1::setPseudoADCEnable(), FEB\_\-v1::setPseudoPMEnable(), RAM::setSize(), A3PE::setSoftwareTrigger(), FEB\_\-v1::setSpareForTrigEnable(), SpecsMaster::setSpeed(), FEB\_\-v1::setSpyModeFE(), FEB\_\-v1::setStopInjLoop(), FEB\_\-v1::setTestDuration(), FEB\_\-v1::setThreshold(), A3PE::setTriggerDelay(), A3PE::setTriggerRate(), IOdata::setU16(), IOdata::setU32(), IOdata::setU8(), MSOxxxx::setupAvgVoltage(), MSOxxxx::setupDeltaTime(), MSOxxxx::setupJitter(), LSDelayChipV1::showConfig(), TestSuite::sigma(), FEB\_\-v1::spareForTrigEnable(), SpecsI2c::SpecsI2c(), SpecsInterface::specsReadI2c(), SpecsInterface::specsReadParallel(), SpecsInterface::specsReadRegister(), SpecsInterface::specsWriteI2c(), SpecsInterface::specsWriteParallel(), SpecsInterface::specsWriteRegister(), ICECALv3::spiAddressScan(), LSDelayChipV1::spiBERTest(), FEB\_\-v1::spyModeFE(), FEB\_\-v1::spyModeSeq(), Server\_\-NI6008::status(), FEB\_\-v1::statusRegister(), FEB\_\-v1::stopInjLoop(), Options::storageFullPath(), Application::terminate(), FEB\_\-v1::testDuration(), FEB\_\-v1::threshold(), Data::title(), MSOxxxx::triggerConfig(), UsbFTMLInterface::usbRead(), UsbFTInterface::usbRead(), UsbFTMLInterface::usbReadU16(), UsbFTInterface::usbReadU16(), UsbFTMLInterface::usbReadU32(), UsbFTInterface::usbReadU32(), UsbFTMLInterface::usbReadU8(), UsbFTInterface::usbReadU8(), UsbFTMLInterface::usbWrite(), UsbFTInterface::usbWrite(), UsbFTMLInterface::usbWriteRead(), UsbFTInterface::usbWriteRead(), UsbFTMLInterface::usbWriteU16(), UsbFTInterface::usbWriteU16(), UsbFTMLInterface::usbWriteU32(), UsbFTInterface::usbWriteU32(), UsbFTMLInterface::usbWriteU8(), UsbFTInterface::usbWriteU8(), Data::vectorPtr(), ICECALv3::version(), wait(), MSOxxxx::waveformCapture(), UsbSpiBus::write(), UsbFTMLInterface::write(), ICPhaser::write(), UsbFTInterface::write(), and Phaser::write().
+Definition at line 46 of file Tools.\+cpp.
+
+
+
+Referenced by D\+C\+U\+::acquire(), btos(), F\+E\+B\+\_\+v1\+::calib\+Cte(), M\+S\+Oxxxx\+::channel\+Display(), M\+S\+Oxxxx\+::channel\+Display\+Name(), M\+S\+Oxxxx\+::channel\+Offset(), M\+S\+Oxxxx\+::channel\+Scale(), I\+C\+E\+C\+A\+Lv3\+::check\+Ch\+Number(), L\+S\+Delay\+Chip\+V1\+::check\+Config\+Addr(), L\+S\+Delay\+Chip\+V1\+::check\+Status\+Addr(), F\+E\+B\+\_\+v1\+::clock80\+M\+Hz\+Falling\+Edge(), F\+E\+B\+\_\+v1\+::clock\+Falling\+Edge(), Usb\+F\+T\+Interface\+::close(), Usb\+F\+T\+M\+L\+Interface\+::close(), Specs\+Mezzanine\+::cmdline(), Specs\+Slave\+::detect(), F\+E\+B\+\_\+v1\+::disable\+Subtract(), I\+Odata\+::dump(), A3\+P\+E\+::dump\+From\+A\+X(), Processus\+::end\+Processing(), Acquisition\+::execute(), Phaser\+Ramp\+Exec\+::execute(), F\+E\+B\+\_\+v1\+::\+F\+E\+B\+\_\+v1(), Phaser\+Ramp\+Exec\+::finalize(), F\+E\+B\+\_\+v1\+::gain4(), F\+E\+B\+\_\+v1\+::gbt80\+M\+Hz\+Clk\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+Acknowledge\+Config(), F\+E\+B\+\_\+v1\+::gbt\+Data\+Path(), F\+E\+B\+\_\+v1\+::gbt\+D\+L\+L\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+D\+L\+L\+Reset(), F\+E\+B\+\_\+v1\+::gbt\+Enable\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+Mode(), F\+E\+B\+\_\+v1\+::gbt\+Status(), F\+E\+B\+\_\+v1\+::gbt\+Term\+Eport(), F\+E\+B\+\_\+v1\+::gbt\+Track\+Mode(), Emulate\+F\+E\+::generate\+File(), I\+C\+E\+C\+A\+Lv3\+::get\+Analog\+Ch(), L\+S\+Delay\+Chip\+V1\+::get\+Config\+Reg(), I\+C\+E\+C\+A\+Lv3\+::get\+Delay\+Line\+Ch(), I\+C\+E\+C\+A\+Lv3\+::get\+Main\+Reg(), F\+E\+B\+\_\+v1\+::global\+Pseudo\+P\+M\+Enable(), N\+I6008\+::init(), Specs\+Slave\+::init(), Specs\+Master\+::init(), Usb\+F\+T\+M\+L\+Interface\+::init(), Usb\+F\+T\+Interface\+::init(), A3\+P\+E\+\_\+\+Bit\+Flip\+::initialize(), Current\+Measurement\+::initialize(), F\+E\+B\+\_\+v1\+::inject\+Mode\+F\+E(), F\+E\+B\+\_\+v1\+::latency(), F\+E\+B\+\_\+v1\+::latency\+L\+L\+T(), A3\+P\+E\+::load\+From\+A\+X(), Application\+::load\+History\+File(), A3\+P\+E\+::load\+Pattern(), A3\+P\+E\+::load\+Storage(), A3\+P\+E\+::load\+To\+A\+X(), A3\+P\+E\+::load\+Trigger(), Application\+::loop(), F\+E\+B\+\_\+v1\+::mask\+L\+L\+T(), Data\+::name(), F\+E\+B\+\_\+v1\+::old\+Subtract(), M\+S\+Oxxxx\+::open(), D\+L\+L\+::print(), F\+E\+B\+\_\+v1\+::probe\+Enable(), F\+E\+B\+\_\+v1\+::pseudo\+A\+D\+C\+Enable(), F\+E\+B\+\_\+v1\+::pseudo\+P\+M\+Enable(), Phaser\+::read(), I\+C\+Phaser\+::read(), Usb\+Spi\+Bus\+::read(), Usb\+F\+T\+M\+L\+Interface\+::read(), Usb\+F\+T\+Interface\+::read(), Specs\+Master\+::reset(), Specs\+Slave\+::reset(), F\+E\+B\+\_\+v1\+::reset\+F\+E(), F\+E\+B\+\_\+v1\+::reset\+Fifo\+Inject\+F\+E(), F\+E\+B\+\_\+v1\+::reset\+Fifo\+Spy\+F\+E(), Specs\+Slave\+::reset\+Internal(), Server\+\_\+\+N\+I6008\+::\+Server\+\_\+\+N\+I6008(), A3\+P\+E\+::set\+Add\+From\+A\+X\+Ram(), A3\+P\+E\+::set\+Add\+To\+A\+X\+Ram(), A3\+P\+E\+::set\+A\+X\+Ram\+Usb(), F\+E\+B\+\_\+v1\+::set\+Calib\+Cte(), F\+E\+B\+\_\+v1\+::set\+Clock80\+M\+Hz\+Falling\+Edge(), A3\+P\+E\+::set\+Clock\+Division(), F\+E\+B\+\_\+v1\+::set\+Clock\+Falling\+Edge(), L\+S\+Delay\+Chip\+V1\+::set\+Config\+Reg(), Usb\+Spi\+Bus\+::set\+Data\+Length(), F\+E\+B\+\_\+v1\+::set\+Disable\+Subtract(), A3\+P\+E\+::set\+Enable\+A\+D\+C(), A3\+P\+E\+::set\+Fifo\+Depth(), A3\+P\+E\+::set\+Fifo\+Latency(), F\+E\+B\+\_\+v1\+::set\+Gain4(), F\+E\+B\+\_\+v1\+::set\+Gbt80\+M\+Hz\+Clk\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Clock\+Strength(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Data\+Path(), F\+E\+B\+\_\+v1\+::set\+Gbt\+D\+L\+L\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Enable\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Mode(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Term\+Eport(), F\+E\+B\+\_\+v1\+::set\+Gbt\+Track\+Mode(), F\+E\+B\+\_\+v1\+::set\+Global\+Pseudo\+P\+M\+Enable(), F\+E\+B\+\_\+v1\+::set\+Inject\+Mode\+F\+E(), A3\+P\+E\+::set\+Internal\+A\+X\+Sequence(), F\+E\+B\+\_\+v1\+::set\+Latency(), A3\+P\+E\+::set\+Latency\+A\+X(), A3\+P\+E\+::set\+Length\+A\+X(), A3\+P\+E\+::set\+N\+Trigger(), F\+E\+B\+\_\+v1\+::set\+Old\+Subtract(), F\+E\+B\+\_\+v1\+::set\+Output\+Eport(), Phaser\+::set\+Phase(), I\+C\+Phaser\+::set\+Phase(), A3\+P\+E\+::set\+Pipeline(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+A\+D\+C\+Enable(), F\+E\+B\+\_\+v1\+::set\+Pseudo\+P\+M\+Enable(), R\+A\+M\+::set\+Size(), A3\+P\+E\+::set\+Software\+Trigger(), F\+E\+B\+\_\+v1\+::set\+Spare\+For\+Trig\+Enable(), Specs\+Master\+::set\+Speed(), F\+E\+B\+\_\+v1\+::set\+Spy\+Mode\+F\+E(), F\+E\+B\+\_\+v1\+::set\+Stop\+Inj\+Loop(), F\+E\+B\+\_\+v1\+::set\+Test\+Duration(), F\+E\+B\+\_\+v1\+::set\+Threshold(), A3\+P\+E\+::set\+Trigger\+Delay(), A3\+P\+E\+::set\+Trigger\+Rate(), I\+Odata\+::set\+U16(), I\+Odata\+::set\+U32(), I\+Odata\+::set\+U8(), M\+S\+Oxxxx\+::setup\+Avg\+Voltage(), M\+S\+Oxxxx\+::setup\+Delta\+Time(), M\+S\+Oxxxx\+::setup\+Jitter(), L\+S\+Delay\+Chip\+V1\+::show\+Config(), Test\+Suite\+::sigma(), F\+E\+B\+\_\+v1\+::spare\+For\+Trig\+Enable(), Specs\+I2c\+::\+Specs\+I2c(), Specs\+Interface\+::specs\+Read\+I2c(), Specs\+Interface\+::specs\+Read\+Parallel(), Specs\+Interface\+::specs\+Read\+Register(), Specs\+Interface\+::specs\+Write\+I2c(), Specs\+Interface\+::specs\+Write\+Parallel(), Specs\+Interface\+::specs\+Write\+Register(), I\+C\+E\+C\+A\+Lv3\+::spi\+Address\+Scan(), L\+S\+Delay\+Chip\+V1\+::spi\+B\+E\+R\+Test(), F\+E\+B\+\_\+v1\+::spy\+Mode\+F\+E(), F\+E\+B\+\_\+v1\+::spy\+Mode\+Seq(), Server\+\_\+\+N\+I6008\+::status(), F\+E\+B\+\_\+v1\+::status\+Register(), F\+E\+B\+\_\+v1\+::stop\+Inj\+Loop(), Options\+::storage\+Full\+Path(), Application\+::terminate(), F\+E\+B\+\_\+v1\+::test\+Duration(), F\+E\+B\+\_\+v1\+::threshold(), Data\+::title(), M\+S\+Oxxxx\+::trigger\+Config(), Usb\+F\+T\+Interface\+::usb\+Read(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Read(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Read\+U16(), Usb\+F\+T\+Interface\+::usb\+Read\+U16(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Read\+U32(), Usb\+F\+T\+Interface\+::usb\+Read\+U32(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Read\+U8(), Usb\+F\+T\+Interface\+::usb\+Read\+U8(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write(), Usb\+F\+T\+Interface\+::usb\+Write(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+Read(), Usb\+F\+T\+Interface\+::usb\+Write\+Read(), Usb\+F\+T\+Interface\+::usb\+Write\+U16(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+U16(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+U32(), Usb\+F\+T\+Interface\+::usb\+Write\+U32(), Usb\+F\+T\+Interface\+::usb\+Write\+U8(), Usb\+F\+T\+M\+L\+Interface\+::usb\+Write\+U8(), Data\+::vector\+Ptr(), I\+C\+E\+C\+A\+Lv3\+::version(), wait(), M\+S\+Oxxxx\+::waveform\+Capture(), Phaser\+::write(), I\+C\+Phaser\+::write(), Usb\+Spi\+Bus\+::write(), Usb\+F\+T\+M\+L\+Interface\+::write(), and Usb\+F\+T\+Interface\+::write().
 
 
 \begin{DoxyCode}
-46                      {  
-47   char val[20];
-48   sprintf(val,"%d",i);
+46                      \{  
+47   \textcolor{keywordtype}{char} val[20];
+48   sprintf(val,\textcolor{stringliteral}{"%d"},i);
 49   std::string str(val);
-50   return str;
-51 }
+50   \textcolor{keywordflow}{return} str;
+51 \}
 \end{DoxyCode}
-\hypertarget{Tools_8h_a71443363ed67070e753a3c172f694834}{
-\index{Tools.h@{Tools.h}!setApplication@{setApplication}}
-\index{setApplication@{setApplication}!Tools.h@{Tools.h}}
-\subsubsection[{setApplication}]{\setlength{\rightskip}{0pt plus 5cm}void setApplication ({\bf Application} $\ast$)}}
-\label{Tools_8h_a71443363ed67070e753a3c172f694834}
+\mbox{\Hypertarget{Tools_8h_a71443363ed67070e753a3c172f694834}\label{Tools_8h_a71443363ed67070e753a3c172f694834}} 
+\index{Tools.\+h@{Tools.\+h}!set\+Application@{set\+Application}}
+\index{set\+Application@{set\+Application}!Tools.\+h@{Tools.\+h}}
+\subsubsection{\texorpdfstring{set\+Application()}{setApplication()}}
+{\footnotesize\ttfamily void set\+Application (\begin{DoxyParamCaption}\item[{\hyperlink{classApplication}{Application} $\ast$}]{ }\end{DoxyParamCaption})}
+
 Define entry point for the application 
 
-Definition at line 38 of file Tools.cpp.
+Definition at line 38 of file Tools.\+cpp.
 
-Referenced by Application::Application().
+
+
+References gui\+::cat.
+
+
+
+Referenced by Application\+::\+Application().
 
 
 \begin{DoxyCode}
-38                                       {
-39   gApp = cat;  
-40 }
+38                                       \{
+39   \hyperlink{Tools_8cpp_aea679c7117e896daafaf36140158c9ee}{gApp} = \hyperlink{namespacegui_a3a26ff3a3c51b7dea987a548f1ca8109}{cat};  
+40 \}
 \end{DoxyCode}
-\hypertarget{Tools_8h_ad434992aaedc45d3979e0af7e4fab88a}{
-\index{Tools.h@{Tools.h}!stoi@{stoi}}
-\index{stoi@{stoi}!Tools.h@{Tools.h}}
-\subsubsection[{stoi}]{\setlength{\rightskip}{0pt plus 5cm}int stoi (std::string)}}
-\label{Tools_8h_ad434992aaedc45d3979e0af7e4fab88a}
-Conversion from binary (std::string) to integer 
+\mbox{\Hypertarget{Tools_8h_ad434992aaedc45d3979e0af7e4fab88a}\label{Tools_8h_ad434992aaedc45d3979e0af7e4fab88a}} 
+\index{Tools.\+h@{Tools.\+h}!stoi@{stoi}}
+\index{stoi@{stoi}!Tools.\+h@{Tools.\+h}}
+\subsubsection{\texorpdfstring{stoi()}{stoi()}}
+{\footnotesize\ttfamily int stoi (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})}
 
-Definition at line 93 of file Tools.cpp.
+Conversion from binary (std\+::string) to integer 
 
-References cat::size.
+Definition at line 93 of file Tools.\+cpp.
+
+
+
+References cat\+::size.
 
 
 \begin{DoxyCode}
-93                          {  
-94   const unsigned int codage=2;
-95   int result=0;
-96   char h[codage]={'0','1'};
-97   const unsigned int size=value.size();
-98   const char* word=value.c_str();
-99   unsigned int pos=0;
-100   while (pos<size){
-101     bool isSeen=false;
-102     for (unsigned int j=0; j<codage && !isSeen; j++){
-103       if (h[j]==word[pos]){
-104     result+=int(j*pow(2.,(int)(size-pos-1)));
-105     isSeen=true;
-106       }
-107     }
+93                          \{  
+94   \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} codage=2;
+95   \textcolor{keywordtype}{int} result=0;
+96   \textcolor{keywordtype}{char} h[codage]=\{\textcolor{charliteral}{'0'},\textcolor{charliteral}{'1'}\};
+97   \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \hyperlink{namespacecat_a3eae50bb86a614752045105e00365a46}{size}=value.size();
+98   \textcolor{keyword}{const} \textcolor{keywordtype}{char}* word=value.c\_str();
+99   \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} pos=0;
+100   \textcolor{keywordflow}{while} (pos<size)\{
+101     \textcolor{keywordtype}{bool} isSeen=\textcolor{keyword}{false};
+102     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} j=0; j<codage && !isSeen; j++)\{
+103       \textcolor{keywordflow}{if} (h[j]==word[pos])\{
+104     result+=int(j*pow(2.,(\textcolor{keywordtype}{int})(size-pos-1)));
+105     isSeen=\textcolor{keyword}{true};
+106       \}
+107     \}
 108     pos++;
-109   }
-110   return result;
-111 }
+109   \}
+110   \textcolor{keywordflow}{return} result;
+111 \}
 \end{DoxyCode}
-\hypertarget{Tools_8h_a4614569667ab6ef4acbb3de1684fad18}{
-\index{Tools.h@{Tools.h}!toDouble@{toDouble}}
-\index{toDouble@{toDouble}!Tools.h@{Tools.h}}
-\subsubsection[{toDouble}]{\setlength{\rightskip}{0pt plus 5cm}double toDouble (std::string)}}
-\label{Tools_8h_a4614569667ab6ef4acbb3de1684fad18}
+\mbox{\Hypertarget{Tools_8h_a4614569667ab6ef4acbb3de1684fad18}\label{Tools_8h_a4614569667ab6ef4acbb3de1684fad18}} 
+\index{Tools.\+h@{Tools.\+h}!to\+Double@{to\+Double}}
+\index{to\+Double@{to\+Double}!Tools.\+h@{Tools.\+h}}
+\subsubsection{\texorpdfstring{to\+Double()}{toDouble()}}
+{\footnotesize\ttfamily double to\+Double (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
 Conversion from string (potentially with a comma) to a double 
 
-Definition at line 113 of file Tools.cpp.
+Definition at line 113 of file Tools.\+cpp.
 
 
 \begin{DoxyCode}
-113                             {
-114     // do not use a reference, since we're going to modify this string
-115     // If you do not care about ',' or '.' in your string use a 
-116     // reference instead.
-117     size_t found = s.find(",");
-118     if(found != std::string::npos)
-119         s[found]='.'; // Change ',' to '.'
-120     return atof(s.c_str());
-121 }
+113                             \{
+114     \textcolor{comment}{// do not use a reference, since we're going to modify this string}
+115     \textcolor{comment}{// If you do not care about ',' or '.' in your string use a }
+116     \textcolor{comment}{// reference instead.}
+117     \textcolor{keywordtype}{size\_t} found = s.find(\textcolor{stringliteral}{","});
+118     \textcolor{keywordflow}{if}(found != std::string::npos)
+119         s[found]=\textcolor{charliteral}{'.'}; \textcolor{comment}{// Change ',' to '.'}
+120     \textcolor{keywordflow}{return} atof(s.c\_str());
+121 \}
 \end{DoxyCode}
-\hypertarget{Tools_8h_a74d6a3fc8194eaac3e1f888db0542be9}{
-\index{Tools.h@{Tools.h}!wait@{wait}}
-\index{wait@{wait}!Tools.h@{Tools.h}}
-\subsubsection[{wait}]{\setlength{\rightskip}{0pt plus 5cm}void wait (int {\em nbr\_\-ms})}}
-\label{Tools_8h_a74d6a3fc8194eaac3e1f888db0542be9}
+\mbox{\Hypertarget{Tools_8h_a74d6a3fc8194eaac3e1f888db0542be9}\label{Tools_8h_a74d6a3fc8194eaac3e1f888db0542be9}} 
+\index{Tools.\+h@{Tools.\+h}!wait@{wait}}
+\index{wait@{wait}!Tools.\+h@{Tools.\+h}}
+\subsubsection{\texorpdfstring{wait()}{wait()}}
+{\footnotesize\ttfamily void wait (\begin{DoxyParamCaption}\item[{int}]{nbr\+\_\+ms }\end{DoxyParamCaption})}
+
 system wait for a few seconds 
 
-Definition at line 271 of file Tools.cpp.
+Definition at line 271 of file Tools.\+cpp.
 
-References application(), itos(), and Object::verbose().
 
-Referenced by CurrentMeasurement::execute(), ADCMeasurement::execute(), UsbFTMLInterface::init(), and UsbFTInterface::init().
+
+References application(), itos(), and Object\+::verbose().
+
+
+
+Referenced by A\+D\+C\+Measurement\+::execute(), Current\+Measurement\+::execute(), Usb\+F\+T\+Interface\+::init(), and Usb\+F\+T\+M\+L\+Interface\+::init().
 
 
 \begin{DoxyCode}
-272 {
-273   application()->verbose("wait for "+itos(n)+" ms.","Tools::wait");
-274 #ifdef WIN32
+272 \{
+273   \hyperlink{Tools_8cpp_a27885a3c35afe79029fb830f32f66458}{application}()->\hyperlink{classObject_a83d2db2df682907ea1115ad721c1c4a1}{verbose}(\textcolor{stringliteral}{"wait for "}+\hyperlink{Tools_8cpp_a20f271409637c91b02c586644cb542e0}{itos}(n)+\textcolor{stringliteral}{" ms."},\textcolor{stringliteral}{"Tools::wait"});
+274 \textcolor{preprocessor}{#ifdef WIN32}
 275   Sleep( n );
-276 #else
+276 \textcolor{preprocessor}{#else}
 277   usleep( 1000 * n );
-278 #endif
-279 }
+278 \textcolor{preprocessor}{#endif}
+279 \}
 \end{DoxyCode}
 
 
 \subsection{Variable Documentation}
-\hypertarget{Tools_8h_af12064860bdd98010020cdfe76ad399f}{
-\index{Tools.h@{Tools.h}!BIT@{BIT}}
-\index{BIT@{BIT}!Tools.h@{Tools.h}}
-\subsubsection[{BIT}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int const {\bf BIT} = 1}}
-\label{Tools_8h_af12064860bdd98010020cdfe76ad399f}
+\mbox{\Hypertarget{Tools_8h_af12064860bdd98010020cdfe76ad399f}\label{Tools_8h_af12064860bdd98010020cdfe76ad399f}} 
+\index{Tools.\+h@{Tools.\+h}!B\+IT@{B\+IT}}
+\index{B\+IT@{B\+IT}!Tools.\+h@{Tools.\+h}}
+\subsubsection{\texorpdfstring{B\+IT}{BIT}}
+{\footnotesize\ttfamily unsigned int const B\+IT =1}
 
 
-Definition at line 44 of file Tools.h.\hypertarget{Tools_8h_adc91e2e8a94e01ff9ded64a285465895}{
-\index{Tools.h@{Tools.h}!OCTET@{OCTET}}
-\index{OCTET@{OCTET}!Tools.h@{Tools.h}}
-\subsubsection[{OCTET}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int const {\bf OCTET} = 8}}
-\label{Tools_8h_adc91e2e8a94e01ff9ded64a285465895}
+
+Definition at line 44 of file Tools.\+h.
+
+\mbox{\Hypertarget{Tools_8h_adc91e2e8a94e01ff9ded64a285465895}\label{Tools_8h_adc91e2e8a94e01ff9ded64a285465895}} 
+\index{Tools.\+h@{Tools.\+h}!O\+C\+T\+ET@{O\+C\+T\+ET}}
+\index{O\+C\+T\+ET@{O\+C\+T\+ET}!Tools.\+h@{Tools.\+h}}
+\subsubsection{\texorpdfstring{O\+C\+T\+ET}{OCTET}}
+{\footnotesize\ttfamily unsigned int const O\+C\+T\+ET =8}
 
 
-Definition at line 45 of file Tools.h.
+
+Definition at line 45 of file Tools.\+h.
+

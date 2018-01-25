@@ -23,7 +23,7 @@ var searchData=
   ['updatestate',['updateState',['../classServer.html#abaa0b878f4f96454339f1989ec12cc6b',1,'Server']]],
   ['uptime',['upTime',['../namespaceSystem.html#a96965372858744c96c7cdf155693d8a0',1,'System']]],
   ['usage',['Usage',['../classarguments_1_1Usage.html',1,'arguments']]],
-  ['usb',['usb',['../classProto40MHz__v1.html#aee48500fba238c4caf8502db32ebb991',1,'Proto40MHz_v1::usb()'],['../classFePGA.html#a4a7889dc3c2f88f623876ca475e66410',1,'FePGA::usb()'],['../classSeqPGA.html#a10c68ea9de38eb0445d47e4b21b580a1',1,'SeqPGA::usb()'],['../classIOdata.html#a99aa7bed39364c4359ab8a7596bc013cabd27b3ded09d67a97f98b5004101856f',1,'IOdata::USB()']]],
+  ['usb',['USB',['../classIOdata.html#a99aa7bed39364c4359ab8a7596bc013cabd27b3ded09d67a97f98b5004101856f',1,'IOdata::USB()'],['../classProto40MHz__v1.html#aee48500fba238c4caf8502db32ebb991',1,'Proto40MHz_v1::usb()'],['../classFePGA.html#a4a7889dc3c2f88f623876ca475e66410',1,'FePGA::usb()'],['../classSeqPGA.html#a10c68ea9de38eb0445d47e4b21b580a1',1,'SeqPGA::usb()']]],
   ['usb_5fcloseall',['USB_CloseAll',['../LALUsbML_8h.html#aa48b8127fdc6a7ff5e2c6f14f6b20812',1,'USB_CloseAll(void):&#160;LALUsbML.h'],['../LALUsb_8h.html#aa48b8127fdc6a7ff5e2c6f14f6b20812',1,'USB_CloseAll(void):&#160;LALUsb.h']]],
   ['usb_5feraseeepromdata',['USB_EraseEEpromData',['../LALUsbML_8h.html#a25ed5b8ccaca68b01967f7cae160348b',1,'USB_EraseEEpromData(int id):&#160;LALUsbML.h'],['../LALUsb_8h.html#a25ed5b8ccaca68b01967f7cae160348b',1,'USB_EraseEEpromData(int id):&#160;LALUsb.h']]],
   ['usb_5ferror',['USB_Error',['../LALUsbML_8h.html#aa7e5a2302774d5aa1d48a2a1cfc46e86',1,'USB_Error():&#160;LALUsbML.h'],['../LALUsb_8h.html#aa7e5a2302774d5aa1d48a2a1cfc46e86',1,'USB_Error():&#160;LALUsb.h']]],

@@ -1,81 +1,97 @@
-\hypertarget{System_8cpp}{
-\section{/home/eleclhcb/LHCb/lbcat-\/cmake/CatKernel/src/System.cpp File Reference}
-\label{System_8cpp}\index{/home/eleclhcb/LHCb/lbcat-\/cmake/CatKernel/src/System.cpp@{/home/eleclhcb/LHCb/lbcat-\/cmake/CatKernel/src/System.cpp}}
-}
-{\ttfamily \#include $<$ctime$>$}\par
-{\ttfamily \#include $<$cstring$>$}\par
-{\ttfamily \#include $<$cstdlib$>$}\par
-{\ttfamily \#include $<$iostream$>$}\par
-{\ttfamily \#include $<$typeinfo$>$}\par
-{\ttfamily \#include \char`\"{}System.h\char`\"{}}\par
-{\ttfamily \#include $<$errno.h$>$}\par
-{\ttfamily \#include $<$string.h$>$}\par
-{\ttfamily \#include \char`\"{}sys/times.h\char`\"{}}\par
-{\ttfamily \#include \char`\"{}unistd.h\char`\"{}}\par
-{\ttfamily \#include \char`\"{}libgen.h\char`\"{}}\par
-{\ttfamily \#include $<$cstdio$>$}\par
-{\ttfamily \#include $<$cxxabi.h$>$}\par
-{\ttfamily \#include \char`\"{}dlfcn.h\char`\"{}}\par
-{\ttfamily \#include $<$sys/utsname.h$>$}\par
-\subsection*{Defines}
+\hypertarget{System_8cpp}{}\section{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/src/\+System.cpp File Reference}
+\label{System_8cpp}\index{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/src/\+System.\+cpp@{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Kernel/src/\+System.\+cpp}}
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$typeinfo$>$}\newline
+{\ttfamily \#include \char`\"{}System.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}sys/times.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}unistd.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}libgen.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$cxxabi.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}dlfcn.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$sys/utsname.\+h$>$}\newline
+\subsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \hyperlink{System_8cpp_a26a14d4c6f24d815dbef9afc2ca1230f}{SYSTEM\_\-CPP}
+\#define \hyperlink{System_8cpp_a26a14d4c6f24d815dbef9afc2ca1230f}{S\+Y\+S\+T\+E\+M\+\_\+\+C\+PP}
 \end{DoxyCompactItemize}
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-const char $\ast$ \hyperlink{System_8cpp_aeb1178bfb945acb342646149dc7fb612}{SHLIB\_\-SUFFIX} = \char`\"{}.so\char`\"{}
+const char $\ast$ \hyperlink{System_8cpp_aeb1178bfb945acb342646149dc7fb612}{S\+H\+L\+I\+B\+\_\+\+S\+U\+F\+F\+IX} = \char`\"{}.so\char`\"{}
 \item 
 char $\ast$$\ast$ \hyperlink{System_8cpp_aa006daaf11f1e2e45a6ababaf463212b}{environ}
 \item 
-static std::vector$<$ std::string $>$ \hyperlink{System_8cpp_a0e3e7e0e9b26e5996e551f639a2295a7}{s\_\-argvStrings}
+static std\+::vector$<$ std\+::string $>$ \hyperlink{System_8cpp_a0e3e7e0e9b26e5996e551f639a2295a7}{s\+\_\+argv\+Strings}
 \item 
-static std::vector$<$ const char $\ast$ $>$ \hyperlink{System_8cpp_a05afb231f779de83550ec9b6564d14c5}{s\_\-argvChars}
+static std\+::vector$<$ const char $\ast$ $>$ \hyperlink{System_8cpp_a05afb231f779de83550ec9b6564d14c5}{s\+\_\+argv\+Chars}
 \end{DoxyCompactItemize}
 
 
-\subsection{Define Documentation}
-\hypertarget{System_8cpp_a26a14d4c6f24d815dbef9afc2ca1230f}{
-\index{System.cpp@{System.cpp}!SYSTEM\_\-CPP@{SYSTEM\_\-CPP}}
-\index{SYSTEM\_\-CPP@{SYSTEM\_\-CPP}!System.cpp@{System.cpp}}
-\subsubsection[{SYSTEM\_\-CPP}]{\setlength{\rightskip}{0pt plus 5cm}\#define SYSTEM\_\-CPP}}
-\label{System_8cpp_a26a14d4c6f24d815dbef9afc2ca1230f}
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{System_8cpp_a26a14d4c6f24d815dbef9afc2ca1230f}\label{System_8cpp_a26a14d4c6f24d815dbef9afc2ca1230f}} 
+\index{System.\+cpp@{System.\+cpp}!S\+Y\+S\+T\+E\+M\+\_\+\+C\+PP@{S\+Y\+S\+T\+E\+M\+\_\+\+C\+PP}}
+\index{S\+Y\+S\+T\+E\+M\+\_\+\+C\+PP@{S\+Y\+S\+T\+E\+M\+\_\+\+C\+PP}!System.\+cpp@{System.\+cpp}}
+\subsubsection{\texorpdfstring{S\+Y\+S\+T\+E\+M\+\_\+\+C\+PP}{SYSTEM\_CPP}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+T\+E\+M\+\_\+\+C\+PP}
 
 
-Definition at line 14 of file System.cpp.
+
+Definition at line 14 of file System.\+cpp.
+
+
 
 \subsection{Variable Documentation}
-\hypertarget{System_8cpp_aa006daaf11f1e2e45a6ababaf463212b}{
-\index{System.cpp@{System.cpp}!environ@{environ}}
-\index{environ@{environ}!System.cpp@{System.cpp}}
-\subsubsection[{environ}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$$\ast$ {\bf environ}}}
-\label{System_8cpp_aa006daaf11f1e2e45a6ababaf463212b}
+\mbox{\Hypertarget{System_8cpp_aa006daaf11f1e2e45a6ababaf463212b}\label{System_8cpp_aa006daaf11f1e2e45a6ababaf463212b}} 
+\index{System.\+cpp@{System.\+cpp}!environ@{environ}}
+\index{environ@{environ}!System.\+cpp@{System.\+cpp}}
+\subsubsection{\texorpdfstring{environ}{environ}}
+{\footnotesize\ttfamily char$\ast$$\ast$ environ}
 
 
-Referenced by System::getEnv().\hypertarget{System_8cpp_a05afb231f779de83550ec9b6564d14c5}{
-\index{System.cpp@{System.cpp}!s\_\-argvChars@{s\_\-argvChars}}
-\index{s\_\-argvChars@{s\_\-argvChars}!System.cpp@{System.cpp}}
-\subsubsection[{s\_\-argvChars}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$const char$\ast$$>$ {\bf s\_\-argvChars}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
-\label{System_8cpp_a05afb231f779de83550ec9b6564d14c5}
+
+Referenced by System\+::get\+Env().
+
+\mbox{\Hypertarget{System_8cpp_a05afb231f779de83550ec9b6564d14c5}\label{System_8cpp_a05afb231f779de83550ec9b6564d14c5}} 
+\index{System.\+cpp@{System.\+cpp}!s\+\_\+argv\+Chars@{s\+\_\+argv\+Chars}}
+\index{s\+\_\+argv\+Chars@{s\+\_\+argv\+Chars}!System.\+cpp@{System.\+cpp}}
+\subsubsection{\texorpdfstring{s\+\_\+argv\+Chars}{s\_argvChars}}
+{\footnotesize\ttfamily std\+::vector$<$const char$\ast$$>$ s\+\_\+argv\+Chars\hspace{0.3cm}{\ttfamily [static]}}
 
 
-Definition at line 36 of file System.cpp.
 
-Referenced by System::argv(), and System::cmdLineArgs().\hypertarget{System_8cpp_a0e3e7e0e9b26e5996e551f639a2295a7}{
-\index{System.cpp@{System.cpp}!s\_\-argvStrings@{s\_\-argvStrings}}
-\index{s\_\-argvStrings@{s\_\-argvStrings}!System.cpp@{System.cpp}}
-\subsubsection[{s\_\-argvStrings}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$std::string$>$ {\bf s\_\-argvStrings}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
-\label{System_8cpp_a0e3e7e0e9b26e5996e551f639a2295a7}
+Definition at line 36 of file System.\+cpp.
 
 
-Definition at line 35 of file System.cpp.
 
-Referenced by System::cmdLineArgs().\hypertarget{System_8cpp_aeb1178bfb945acb342646149dc7fb612}{
-\index{System.cpp@{System.cpp}!SHLIB\_\-SUFFIX@{SHLIB\_\-SUFFIX}}
-\index{SHLIB\_\-SUFFIX@{SHLIB\_\-SUFFIX}!System.cpp@{System.cpp}}
-\subsubsection[{SHLIB\_\-SUFFIX}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ {\bf SHLIB\_\-SUFFIX} = \char`\"{}.so\char`\"{}}}
-\label{System_8cpp_aeb1178bfb945acb342646149dc7fb612}
+Referenced by System\+::argv(), and System\+::cmd\+Line\+Args().
+
+\mbox{\Hypertarget{System_8cpp_a0e3e7e0e9b26e5996e551f639a2295a7}\label{System_8cpp_a0e3e7e0e9b26e5996e551f639a2295a7}} 
+\index{System.\+cpp@{System.\+cpp}!s\+\_\+argv\+Strings@{s\+\_\+argv\+Strings}}
+\index{s\+\_\+argv\+Strings@{s\+\_\+argv\+Strings}!System.\+cpp@{System.\+cpp}}
+\subsubsection{\texorpdfstring{s\+\_\+argv\+Strings}{s\_argvStrings}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ s\+\_\+argv\+Strings\hspace{0.3cm}{\ttfamily [static]}}
 
 
-Definition at line 22 of file System.cpp.
+
+Definition at line 35 of file System.\+cpp.
+
+
+
+Referenced by System\+::cmd\+Line\+Args().
+
+\mbox{\Hypertarget{System_8cpp_aeb1178bfb945acb342646149dc7fb612}\label{System_8cpp_aeb1178bfb945acb342646149dc7fb612}} 
+\index{System.\+cpp@{System.\+cpp}!S\+H\+L\+I\+B\+\_\+\+S\+U\+F\+F\+IX@{S\+H\+L\+I\+B\+\_\+\+S\+U\+F\+F\+IX}}
+\index{S\+H\+L\+I\+B\+\_\+\+S\+U\+F\+F\+IX@{S\+H\+L\+I\+B\+\_\+\+S\+U\+F\+F\+IX}!System.\+cpp@{System.\+cpp}}
+\subsubsection{\texorpdfstring{S\+H\+L\+I\+B\+\_\+\+S\+U\+F\+F\+IX}{SHLIB\_SUFFIX}}
+{\footnotesize\ttfamily const char$\ast$ S\+H\+L\+I\+B\+\_\+\+S\+U\+F\+F\+IX = \char`\"{}.so\char`\"{}}
+
+
+
+Definition at line 22 of file System.\+cpp.
+

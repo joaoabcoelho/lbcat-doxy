@@ -1,122 +1,150 @@
-\hypertarget{classgui_1_1Gui}{
-\section{gui::Gui Class Reference}
-\label{classgui_1_1Gui}\index{gui::Gui@{gui::Gui}}
-}
+\hypertarget{classgui_1_1Gui}{}\section{gui.\+Gui Class Reference}
+\label{classgui_1_1Gui}\index{gui.\+Gui@{gui.\+Gui}}
+Inheritance diagram for gui.\+Gui\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgui_1_1Gui}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-def \hyperlink{classgui_1_1Gui_a063380e8fa617c69752ce2f071699a07}{OnInit}
+def \hyperlink{classgui_1_1Gui_aadde570d41694a77449af20a9c9ecd93}{On\+Init} (self, app=None)
 \item 
-def \hyperlink{classgui_1_1Gui_ae75ecf31b32e2df9c23baf87cf4a7c10}{Start}
+def \hyperlink{classgui_1_1Gui_acfdb1311df034a58ca8dc817b6002ca2}{Start} (self)
 \item 
-def \hyperlink{classgui_1_1Gui_aa27add666d31a15ac8a5a2937e0bec70}{ShowMain}
+def \hyperlink{classgui_1_1Gui_a676a880af81990ff051f7f6e4b12e9db}{Show\+Main} (self)
 \item 
-def \hyperlink{classgui_1_1Gui_a530fc2229d33c71374c9c40217bcdda8}{ShowTips}
+def \hyperlink{classgui_1_1Gui_ad535e23af581441535c3d9e9e13422c8}{Show\+Tips} (self)
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classgui_1_1Gui_a9a969f7b54f7e42900732a01995771ab}{appFrame}
+\hyperlink{classgui_1_1Gui_a8dd3e3c3487fdde75eaa7d9b6b68cfa4}{app\+Frame}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 69 of file gui.py.
+Definition at line 69 of file gui.\+py.
+
+
 
 \subsection{Member Function Documentation}
-\hypertarget{classgui_1_1Gui_a063380e8fa617c69752ce2f071699a07}{
-\index{gui::Gui@{gui::Gui}!OnInit@{OnInit}}
-\index{OnInit@{OnInit}!gui::Gui@{gui::Gui}}
-\subsubsection[{OnInit}]{\setlength{\rightskip}{0pt plus 5cm}def gui::Gui::OnInit ( {\em self}, \/   {\em app} = {\ttfamily None})}}
-\label{classgui_1_1Gui_a063380e8fa617c69752ce2f071699a07}
-\begin{DoxyVerb}
-Create and show the splash screen.
+\mbox{\Hypertarget{classgui_1_1Gui_aadde570d41694a77449af20a9c9ecd93}\label{classgui_1_1Gui_aadde570d41694a77449af20a9c9ecd93}} 
+\index{gui\+::\+Gui@{gui\+::\+Gui}!On\+Init@{On\+Init}}
+\index{On\+Init@{On\+Init}!gui\+::\+Gui@{gui\+::\+Gui}}
+\subsubsection{\texorpdfstring{On\+Init()}{OnInit()}}
+{\footnotesize\ttfamily def gui.\+Gui.\+On\+Init (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{app = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create and show the splash screen.
 It will then create and show the main frame when it is time to do so.
 \end{DoxyVerb}
  
 
-Definition at line 70 of file gui.py.
+Definition at line 70 of file gui.\+py.
 
 
 \begin{DoxyCode}
-70                               :
-71         """
-72         Create and show the splash screen.
-73         It will then create and show the main frame when it is time to do so.
-74         """
-75         self.appFrame=AppFrame(cat, None, "CAT Application")
+70     \textcolor{keyword}{def }OnInit(self, app=None):
+71         \textcolor{stringliteral}{"""}
+72 \textcolor{stringliteral}{        Create and show the splash screen.}
+73 \textcolor{stringliteral}{        It will then create and show the main frame when it is time to do so.}
+74 \textcolor{stringliteral}{        """}
+75         self.appFrame=\hyperlink{namespaceAppFrame}{AppFrame}(cat, \textcolor{keywordtype}{None}, \textcolor{stringliteral}{"CAT Application"})
 76         self.SetTopWindow(self.appFrame)
-77         return True
-    def Start(self):
+77         \textcolor{keywordflow}{return} \textcolor{keyword}{True}
 \end{DoxyCode}
-\hypertarget{classgui_1_1Gui_aa27add666d31a15ac8a5a2937e0bec70}{
-\index{gui::Gui@{gui::Gui}!ShowMain@{ShowMain}}
-\index{ShowMain@{ShowMain}!gui::Gui@{gui::Gui}}
-\subsubsection[{ShowMain}]{\setlength{\rightskip}{0pt plus 5cm}def gui::Gui::ShowMain ( {\em self})}}
-\label{classgui_1_1Gui_aa27add666d31a15ac8a5a2937e0bec70}
+\mbox{\Hypertarget{classgui_1_1Gui_a676a880af81990ff051f7f6e4b12e9db}\label{classgui_1_1Gui_a676a880af81990ff051f7f6e4b12e9db}} 
+\index{gui\+::\+Gui@{gui\+::\+Gui}!Show\+Main@{Show\+Main}}
+\index{Show\+Main@{Show\+Main}!gui\+::\+Gui@{gui\+::\+Gui}}
+\subsubsection{\texorpdfstring{Show\+Main()}{ShowMain()}}
+{\footnotesize\ttfamily def gui.\+Gui.\+Show\+Main (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
 
-Definition at line 86 of file gui.py.
+
+Definition at line 86 of file gui.\+py.
+
+
+
+References gui.\+Gui.\+app\+Frame.
+
+
+
+Referenced by gui.\+Gui.\+Start().
 
 
 \begin{DoxyCode}
-86                       :
+86     \textcolor{keyword}{def }ShowMain(self):
 87         self.appFrame.Show()
-    def ShowTips(self):
 \end{DoxyCode}
-\hypertarget{classgui_1_1Gui_a530fc2229d33c71374c9c40217bcdda8}{
-\index{gui::Gui@{gui::Gui}!ShowTips@{ShowTips}}
-\index{ShowTips@{ShowTips}!gui::Gui@{gui::Gui}}
-\subsubsection[{ShowTips}]{\setlength{\rightskip}{0pt plus 5cm}def gui::Gui::ShowTips ( {\em self})}}
-\label{classgui_1_1Gui_a530fc2229d33c71374c9c40217bcdda8}
+\mbox{\Hypertarget{classgui_1_1Gui_ad535e23af581441535c3d9e9e13422c8}\label{classgui_1_1Gui_ad535e23af581441535c3d9e9e13422c8}} 
+\index{gui\+::\+Gui@{gui\+::\+Gui}!Show\+Tips@{Show\+Tips}}
+\index{Show\+Tips@{Show\+Tips}!gui\+::\+Gui@{gui\+::\+Gui}}
+\subsubsection{\texorpdfstring{Show\+Tips()}{ShowTips()}}
+{\footnotesize\ttfamily def gui.\+Gui.\+Show\+Tips (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
 
-Definition at line 88 of file gui.py.
+
+Definition at line 88 of file gui.\+py.
+
+
+
+References gui.\+Gui.\+app\+Frame.
 
 
 \begin{DoxyCode}
-88                       :
+88     \textcolor{keyword}{def }ShowTips(self):
 89         wx.CallAfter(self.appFrame.ShowTip)
 90 
-91 #---------------------------------------------------------------------------
-92 # main
-def main( argsCat=None ):
+91 \textcolor{comment}{#---------------------------------------------------------------------------}
+92 \textcolor{comment}{# main}
 \end{DoxyCode}
-\hypertarget{classgui_1_1Gui_ae75ecf31b32e2df9c23baf87cf4a7c10}{
-\index{gui::Gui@{gui::Gui}!Start@{Start}}
-\index{Start@{Start}!gui::Gui@{gui::Gui}}
-\subsubsection[{Start}]{\setlength{\rightskip}{0pt plus 5cm}def gui::Gui::Start ( {\em self})}}
-\label{classgui_1_1Gui_ae75ecf31b32e2df9c23baf87cf4a7c10}
+\mbox{\Hypertarget{classgui_1_1Gui_acfdb1311df034a58ca8dc817b6002ca2}\label{classgui_1_1Gui_acfdb1311df034a58ca8dc817b6002ca2}} 
+\index{gui\+::\+Gui@{gui\+::\+Gui}!Start@{Start}}
+\index{Start@{Start}!gui\+::\+Gui@{gui\+::\+Gui}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily def gui.\+Gui.\+Start (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
 
-Definition at line 78 of file gui.py.
+
+Definition at line 78 of file gui.\+py.
+
+
+
+References gui.\+Gui.\+Show\+Main().
 
 
 \begin{DoxyCode}
-78                    :
-79         if args.banner:
-80             splash = SplashScreen(os.path.join(os.environ.get("CATPYTHONROOT"),
-81                                                "python/images/cat.bmp"))
+78     \textcolor{keyword}{def }Start(self):
+79         \textcolor{keywordflow}{if} args.banner:
+80             splash = SplashScreen(os.path.join(os.environ.get(\textcolor{stringliteral}{"CATPYTHONROOT"}),
+81                                                \textcolor{stringliteral}{"python/images/cat.bmp"}))
 82             splash.Show()
-83         else:
+83         \textcolor{keywordflow}{else}:
 84             self.ShowMain()
-85             #ShowTip()
-    def ShowMain(self):
+85             \textcolor{comment}{#ShowTip()}
 \end{DoxyCode}
 
 
 \subsection{Member Data Documentation}
-\hypertarget{classgui_1_1Gui_a9a969f7b54f7e42900732a01995771ab}{
-\index{gui::Gui@{gui::Gui}!appFrame@{appFrame}}
-\index{appFrame@{appFrame}!gui::Gui@{gui::Gui}}
-\subsubsection[{appFrame}]{\setlength{\rightskip}{0pt plus 5cm}{\bf gui::Gui::appFrame}}}
-\label{classgui_1_1Gui_a9a969f7b54f7e42900732a01995771ab}
+\mbox{\Hypertarget{classgui_1_1Gui_a8dd3e3c3487fdde75eaa7d9b6b68cfa4}\label{classgui_1_1Gui_a8dd3e3c3487fdde75eaa7d9b6b68cfa4}} 
+\index{gui\+::\+Gui@{gui\+::\+Gui}!app\+Frame@{app\+Frame}}
+\index{app\+Frame@{app\+Frame}!gui\+::\+Gui@{gui\+::\+Gui}}
+\subsubsection{\texorpdfstring{app\+Frame}{appFrame}}
+{\footnotesize\ttfamily gui.\+Gui.\+app\+Frame}
 
 
-Definition at line 75 of file gui.py.
 
-The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+Definition at line 75 of file gui.\+py.
+
+
+
+Referenced by gui.\+Gui.\+Show\+Main(), and gui.\+Gui.\+Show\+Tips().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-/home/eleclhcb/LHCb/lbcat-\/cmake/CatPython/python/\hyperlink{gui_8py}{gui.py}\end{DoxyCompactItemize}
+/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Python/python/\hyperlink{gui_8py}{gui.\+py}\end{DoxyCompactItemize}

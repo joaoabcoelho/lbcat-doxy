@@ -5,7 +5,7 @@
 %%For: 
 %Magnification: 1.00
 %%Orientation: Portrait
-%%BoundingBox: 0 0 500 340.909
+%%BoundingBox: 0 0 500 344.827586
 %%Pages: 0
 %%BeginSetup
 %%EndSetup
@@ -19,7 +19,7 @@
 /marginwidth 10 def
 /distx 20 def
 /disty 40 def
-/boundaspect 1.46667 def  % aspect ratio of the BoundingBox (width/height)
+/boundaspect 1.450000 def  % aspect ratio of the BoundingBox (width/height)
 /boundx 500 def
 /boundy boundx boundaspect div def
 /xspacing 0 def
@@ -173,9 +173,9 @@
 
 boxfont setfont
 1 boundaspect scale
-(ProtoFEB_v1::ProtoFEB_v1) cw
-(element::element) cw
-(object::object) cw
+(ProtoFEB_v1.ProtoFEB_v1) cw
+(element.element) cw
+(object.object) cw
 /boxwidth boxwidth marginwidth 2 mul add def
 /xspacing boxwidth distx add def
 /yspacing boxheight disty add def
@@ -187,17 +187,17 @@ boundx scalefactor div boundy scalefactor div scale
 
 % ----- classes -----
 
- (ProtoFEB_v1::ProtoFEB_v1) 0 0 box
- (element::element) 0 1 box
- (object::object) 0 2 box
+ (ProtoFEB_v1.ProtoFEB_v1) 0.000000 0.000000 box
+ (element.element) 0.000000 1.000000 box
+ (object.object) 0.000000 2.000000 box
 
 % ----- relations -----
 
 solid
-0 0 0 out
+0 0.000000 0.000000 out
 solid
-1 0 1 in
+1 0.000000 1.000000 in
 solid
-0 0 1 out
+0 0.000000 1.000000 out
 solid
-1 0 2 in
+1 0.000000 2.000000 in

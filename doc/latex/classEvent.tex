@@ -1,39 +1,45 @@
-\hypertarget{classEvent}{
-\section{Event Class Reference}
+\hypertarget{classEvent}{}\section{Event Class Reference}
 \label{classEvent}\index{Event@{Event}}
-}
 
 
-{\ttfamily \#include $<$include/Event.h$>$}\subsection*{Public Member Functions}
+{\ttfamily \#include $<$include/\+Event.\+h$>$}
+
+Inheritance diagram for Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classEvent}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classEvent_a5a40dd4708297f7031e29b39e039ae10}{Event} ()
-\begin{DoxyCompactList}\small\item\em Standard constructor. \item\end{DoxyCompactList}\item 
-virtual \hyperlink{classEvent_a7704ec01ce91e673885792054214b3d2}{$\sim$Event} ()
-\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\item 
-void \hyperlink{classEvent_a3b8cf87617622d58b29e2400b5aeb481}{setRun} (unsigned long irun)
+\begin{DoxyCompactList}\small\item\em Standard constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classEvent_a7704ec01ce91e673885792054214b3d2}{$\sim$\+Event} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classEvent_a3b8cf87617622d58b29e2400b5aeb481}{set\+Run} (unsigned long irun)
 \item 
-void \hyperlink{classEvent_a04c03ff6f9c2470be922bca4da71afe4}{Clear} (Option\_\-t $\ast$option=\char`\"{}\char`\"{})
+void \hyperlink{classEvent_a04c03ff6f9c2470be922bca4da71afe4}{Clear} (Option\+\_\+t $\ast$option=\char`\"{}\char`\"{})
 \item 
-void \hyperlink{classEvent_a32bf7bf773b68f07ef29c561e80d404f}{newEvt} ()
+void \hyperlink{classEvent_a32bf7bf773b68f07ef29c561e80d404f}{new\+Evt} ()
 \item 
-void \hyperlink{classEvent_a5bca3178f77846a68aafd8ebc9fa38d0}{addData} (int, int, int)
+void \hyperlink{classEvent_a5bca3178f77846a68aafd8ebc9fa38d0}{add\+Data} (int, int, int)
 \item 
-TClonesArray $\ast$ \hyperlink{classEvent_a50e0385cff686a988e779226062d4ba3}{getData} ()
+T\+Clones\+Array $\ast$ \hyperlink{classEvent_a50e0385cff686a988e779226062d4ba3}{get\+Data} ()
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-ClassDef(\hyperlink{classEvent}{Event}, 1) protected unsigned long \hyperlink{classEvent_ae71a25ddbd57cb78f964a98f688e7b01}{nData}
+Class\+Def(\hyperlink{classEvent}{Event}, 1) protected unsigned long \hyperlink{classEvent_ae71a25ddbd57cb78f964a98f688e7b01}{n\+Data}
 \item 
-TClonesArray $\ast$ \hyperlink{classEvent_ac59cc6743d8d652c347dba08ab66c2f6}{raw}
+T\+Clones\+Array $\ast$ \hyperlink{classEvent_ac59cc6743d8d652c347dba08ab66c2f6}{raw}
 \item 
-TRef \hyperlink{classEvent_a969eb9ae4ae0b7342502baaea6844f3b}{fLastData}
+T\+Ref \hyperlink{classEvent_a969eb9ae4ae0b7342502baaea6844f3b}{f\+Last\+Data}
 \end{DoxyCompactItemize}
 \subsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-static TClonesArray $\ast$ \hyperlink{classEvent_a3584dd1f773c5746f674d63d74f4ec88}{fgData}
+static T\+Clones\+Array $\ast$ \hyperlink{classEvent_a3584dd1f773c5746f674d63d74f4ec88}{fg\+Data}
 \end{DoxyCompactItemize}
 
 
@@ -46,168 +52,223 @@ Frédéric Machefert
 \end{DoxyDate}
 
 
-Definition at line 23 of file Event.h.
+Definition at line 23 of file Event.\+h.
+
+
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classEvent_a5a40dd4708297f7031e29b39e039ae10}{
+\mbox{\Hypertarget{classEvent_a5a40dd4708297f7031e29b39e039ae10}\label{classEvent_a5a40dd4708297f7031e29b39e039ae10}} 
 \index{Event@{Event}!Event@{Event}}
 \index{Event@{Event}!Event@{Event}}
-\subsubsection[{Event}]{\setlength{\rightskip}{0pt plus 5cm}Event::Event ()}}
-\label{classEvent_a5a40dd4708297f7031e29b39e039ae10}
+\subsubsection{\texorpdfstring{Event()}{Event()}}
+{\footnotesize\ttfamily Event\+::\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
-Standard constructor. \hypertarget{classEvent_a7704ec01ce91e673885792054214b3d2}{
-\index{Event@{Event}!$\sim$Event@{$\sim$Event}}
-\index{$\sim$Event@{$\sim$Event}!Event@{Event}}
-\subsubsection[{$\sim$Event}]{\setlength{\rightskip}{0pt plus 5cm}Event::$\sim$Event ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
-\label{classEvent_a7704ec01ce91e673885792054214b3d2}
+
+Standard constructor. 
+
+\mbox{\Hypertarget{classEvent_a7704ec01ce91e673885792054214b3d2}\label{classEvent_a7704ec01ce91e673885792054214b3d2}} 
+\index{Event@{Event}!````~Event@{$\sim$\+Event}}
+\index{````~Event@{$\sim$\+Event}!Event@{Event}}
+\subsubsection{\texorpdfstring{$\sim$\+Event()}{~Event()}}
+{\footnotesize\ttfamily Event\+::$\sim$\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
 
 
 Destructor. 
 
-Definition at line 35 of file Event.cpp.
+
+
+Definition at line 35 of file Event.\+cpp.
+
+
 
 References Clear().
 
 
 \begin{DoxyCode}
-35               {
-36   Clear();
-37 }
+35               \{
+36   \hyperlink{classEvent_a04c03ff6f9c2470be922bca4da71afe4}{Clear}();
+37 \}
 \end{DoxyCode}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classEvent_a5bca3178f77846a68aafd8ebc9fa38d0}{
-\index{Event@{Event}!addData@{addData}}
-\index{addData@{addData}!Event@{Event}}
-\subsubsection[{addData}]{\setlength{\rightskip}{0pt plus 5cm}void Event::addData (int {\em evt}, \/  int {\em chl}, \/  int {\em value})}}
-\label{classEvent_a5bca3178f77846a68aafd8ebc9fa38d0}
+\mbox{\Hypertarget{classEvent_a5bca3178f77846a68aafd8ebc9fa38d0}\label{classEvent_a5bca3178f77846a68aafd8ebc9fa38d0}} 
+\index{Event@{Event}!add\+Data@{add\+Data}}
+\index{add\+Data@{add\+Data}!Event@{Event}}
+\subsubsection{\texorpdfstring{add\+Data()}{addData()}}
+{\footnotesize\ttfamily void Event\+::add\+Data (\begin{DoxyParamCaption}\item[{int}]{evt,  }\item[{int}]{chl,  }\item[{int}]{value }\end{DoxyParamCaption})}
 
 
-Definition at line 40 of file Event.cpp.
 
-References fLastData, nData, and raw.
+Definition at line 40 of file Event.\+cpp.
+
+
+
+References f\+Last\+Data, n\+Data, and raw.
+
+
+
+Referenced by set\+Run().
 
 
 \begin{DoxyCode}
-40                                                    {
-41   TClonesArray &rawdata = *raw;
-42    Data *val = new(rawdata[nData++]) Data( evt , chl , value );
-43    //Save reference to last Data in the collection of Datas
-44    fLastData = val;
-45 }
+40                                                    \{
+41   TClonesArray &rawdata = *\hyperlink{classEvent_ac59cc6743d8d652c347dba08ab66c2f6}{raw};
+42    \hyperlink{classData}{Data} *val = \textcolor{keyword}{new}(rawdata[\hyperlink{classEvent_ae71a25ddbd57cb78f964a98f688e7b01}{nData}++]) \hyperlink{classData}{Data}( evt , chl , value );
+43    \textcolor{comment}{//Save reference to last Data in the collection of Datas}
+44    \hyperlink{classEvent_a969eb9ae4ae0b7342502baaea6844f3b}{fLastData} = val;
+45 \}
 \end{DoxyCode}
-\hypertarget{classEvent_a04c03ff6f9c2470be922bca4da71afe4}{
+\mbox{\Hypertarget{classEvent_a04c03ff6f9c2470be922bca4da71afe4}\label{classEvent_a04c03ff6f9c2470be922bca4da71afe4}} 
 \index{Event@{Event}!Clear@{Clear}}
 \index{Clear@{Clear}!Event@{Event}}
-\subsubsection[{Clear}]{\setlength{\rightskip}{0pt plus 5cm}void Event::Clear (Option\_\-t $\ast$ {\em option} = {\ttfamily \char`\"{}\char`\"{}})}}
-\label{classEvent_a04c03ff6f9c2470be922bca4da71afe4}
+\subsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void Event\+::\+Clear (\begin{DoxyParamCaption}\item[{Option\+\_\+t $\ast$}]{option = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
 
 
-Definition at line 48 of file Event.cpp.
+
+Definition at line 48 of file Event.\+cpp.
+
+
 
 References raw.
 
-Referenced by $\sim$Event().
+
+
+Referenced by set\+Run(), and $\sim$\+Event().
 
 
 \begin{DoxyCode}
-49 {
-50   raw->Clear("C"); //will also call Data::Clear
-51 }
+49 \{
+50   \hyperlink{classEvent_ac59cc6743d8d652c347dba08ab66c2f6}{raw}->Clear(\textcolor{stringliteral}{"C"}); \textcolor{comment}{//will also call Data::Clear}
+51 \}
 \end{DoxyCode}
-\hypertarget{classEvent_a50e0385cff686a988e779226062d4ba3}{
-\index{Event@{Event}!getData@{getData}}
-\index{getData@{getData}!Event@{Event}}
-\subsubsection[{getData}]{\setlength{\rightskip}{0pt plus 5cm}TClonesArray$\ast$ Event::getData ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
-\label{classEvent_a50e0385cff686a988e779226062d4ba3}
+\mbox{\Hypertarget{classEvent_a50e0385cff686a988e779226062d4ba3}\label{classEvent_a50e0385cff686a988e779226062d4ba3}} 
+\index{Event@{Event}!get\+Data@{get\+Data}}
+\index{get\+Data@{get\+Data}!Event@{Event}}
+\subsubsection{\texorpdfstring{get\+Data()}{getData()}}
+{\footnotesize\ttfamily T\+Clones\+Array$\ast$ Event\+::get\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
-Definition at line 34 of file Event.h.
 
-References fgData.
+Definition at line 34 of file Event.\+h.
+
+
+
+References fg\+Data.
 
 
 \begin{DoxyCode}
-34 { return fgData;}
+34 \{ \textcolor{keywordflow}{return} \hyperlink{classEvent_a3584dd1f773c5746f674d63d74f4ec88}{fgData};\}
 \end{DoxyCode}
-\hypertarget{classEvent_a32bf7bf773b68f07ef29c561e80d404f}{
-\index{Event@{Event}!newEvt@{newEvt}}
-\index{newEvt@{newEvt}!Event@{Event}}
-\subsubsection[{newEvt}]{\setlength{\rightskip}{0pt plus 5cm}void Event::newEvt ()}}
-\label{classEvent_a32bf7bf773b68f07ef29c561e80d404f}
+\mbox{\Hypertarget{classEvent_a32bf7bf773b68f07ef29c561e80d404f}\label{classEvent_a32bf7bf773b68f07ef29c561e80d404f}} 
+\index{Event@{Event}!new\+Evt@{new\+Evt}}
+\index{new\+Evt@{new\+Evt}!Event@{Event}}
+\subsubsection{\texorpdfstring{new\+Evt()}{newEvt()}}
+{\footnotesize\ttfamily void Event\+::new\+Evt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
-Definition at line 54 of file Event.cpp.
+
+Definition at line 54 of file Event.\+cpp.
+
+
+
+Referenced by set\+Run().
 
 
 \begin{DoxyCode}
-55 {
+55 \{
 56    EvtHdr.newEvt();
-57    /*
-58    data->Clear("C"); //will also call Data::Clear
-59    nData = 0 ;
-60   */
-61 }
+57    \textcolor{comment}{/*}
+58 \textcolor{comment}{   data->Clear("C"); //will also call Data::Clear}
+59 \textcolor{comment}{   nData = 0 ;}
+60 \textcolor{comment}{  */}
+61 \}
 \end{DoxyCode}
-\hypertarget{classEvent_a3b8cf87617622d58b29e2400b5aeb481}{
-\index{Event@{Event}!setRun@{setRun}}
-\index{setRun@{setRun}!Event@{Event}}
-\subsubsection[{setRun}]{\setlength{\rightskip}{0pt plus 5cm}void Event::setRun (unsigned long {\em irun})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
-\label{classEvent_a3b8cf87617622d58b29e2400b5aeb481}
+\mbox{\Hypertarget{classEvent_a3b8cf87617622d58b29e2400b5aeb481}\label{classEvent_a3b8cf87617622d58b29e2400b5aeb481}} 
+\index{Event@{Event}!set\+Run@{set\+Run}}
+\index{set\+Run@{set\+Run}!Event@{Event}}
+\subsubsection{\texorpdfstring{set\+Run()}{setRun()}}
+{\footnotesize\ttfamily void Event\+::set\+Run (\begin{DoxyParamCaption}\item[{unsigned long}]{irun }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
-Definition at line 28 of file Event.h.
+
+Definition at line 28 of file Event.\+h.
+
+
+
+References add\+Data(), Clear(), and new\+Evt().
 
 
 \begin{DoxyCode}
-28                                      {
+28                                      \{
 29     EvtHdr.setRun ( irun );
-30   }  
+30   \}  
 \end{DoxyCode}
 
 
 \subsection{Member Data Documentation}
-\hypertarget{classEvent_a3584dd1f773c5746f674d63d74f4ec88}{
-\index{Event@{Event}!fgData@{fgData}}
-\index{fgData@{fgData}!Event@{Event}}
-\subsubsection[{fgData}]{\setlength{\rightskip}{0pt plus 5cm}TClonesArray$\ast$ {\bf Event::fgData}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
-\label{classEvent_a3584dd1f773c5746f674d63d74f4ec88}
+\mbox{\Hypertarget{classEvent_a3584dd1f773c5746f674d63d74f4ec88}\label{classEvent_a3584dd1f773c5746f674d63d74f4ec88}} 
+\index{Event@{Event}!fg\+Data@{fg\+Data}}
+\index{fg\+Data@{fg\+Data}!Event@{Event}}
+\subsubsection{\texorpdfstring{fg\+Data}{fgData}}
+{\footnotesize\ttfamily T\+Clones\+Array$\ast$ Event\+::fg\+Data\hspace{0.3cm}{\ttfamily [static]}}
 
 
-Definition at line 42 of file Event.h.
 
-Referenced by getData().\hypertarget{classEvent_a969eb9ae4ae0b7342502baaea6844f3b}{
-\index{Event@{Event}!fLastData@{fLastData}}
-\index{fLastData@{fLastData}!Event@{Event}}
-\subsubsection[{fLastData}]{\setlength{\rightskip}{0pt plus 5cm}TRef {\bf Event::fLastData}}}
-\label{classEvent_a969eb9ae4ae0b7342502baaea6844f3b}
+Definition at line 42 of file Event.\+h.
 
 
-Definition at line 43 of file Event.h.
 
-Referenced by addData().\hypertarget{classEvent_ae71a25ddbd57cb78f964a98f688e7b01}{
-\index{Event@{Event}!nData@{nData}}
-\index{nData@{nData}!Event@{Event}}
-\subsubsection[{nData}]{\setlength{\rightskip}{0pt plus 5cm}ClassDef ({\bf Event},1) protected unsigned long {\bf Event::nData}}}
-\label{classEvent_ae71a25ddbd57cb78f964a98f688e7b01}
+Referenced by get\+Data().
+
+\mbox{\Hypertarget{classEvent_a969eb9ae4ae0b7342502baaea6844f3b}\label{classEvent_a969eb9ae4ae0b7342502baaea6844f3b}} 
+\index{Event@{Event}!f\+Last\+Data@{f\+Last\+Data}}
+\index{f\+Last\+Data@{f\+Last\+Data}!Event@{Event}}
+\subsubsection{\texorpdfstring{f\+Last\+Data}{fLastData}}
+{\footnotesize\ttfamily T\+Ref Event\+::f\+Last\+Data}
 
 
-Definition at line 35 of file Event.h.
 
-Referenced by addData().\hypertarget{classEvent_ac59cc6743d8d652c347dba08ab66c2f6}{
+Definition at line 43 of file Event.\+h.
+
+
+
+Referenced by add\+Data().
+
+\mbox{\Hypertarget{classEvent_ae71a25ddbd57cb78f964a98f688e7b01}\label{classEvent_ae71a25ddbd57cb78f964a98f688e7b01}} 
+\index{Event@{Event}!n\+Data@{n\+Data}}
+\index{n\+Data@{n\+Data}!Event@{Event}}
+\subsubsection{\texorpdfstring{n\+Data}{nData}}
+{\footnotesize\ttfamily Class\+Def (\hyperlink{classEvent}{Event},1) protected unsigned long Event\+::n\+Data}
+
+
+
+Definition at line 35 of file Event.\+h.
+
+
+
+Referenced by add\+Data().
+
+\mbox{\Hypertarget{classEvent_ac59cc6743d8d652c347dba08ab66c2f6}\label{classEvent_ac59cc6743d8d652c347dba08ab66c2f6}} 
 \index{Event@{Event}!raw@{raw}}
 \index{raw@{raw}!Event@{Event}}
-\subsubsection[{raw}]{\setlength{\rightskip}{0pt plus 5cm}TClonesArray$\ast$ {\bf Event::raw}}}
-\label{classEvent_ac59cc6743d8d652c347dba08ab66c2f6}
+\subsubsection{\texorpdfstring{raw}{raw}}
+{\footnotesize\ttfamily T\+Clones\+Array$\ast$ Event\+::raw}
 
 
-Definition at line 41 of file Event.h.
 
-Referenced by addData(), and Clear().
+Definition at line 41 of file Event.\+h.
 
-The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+
+
+Referenced by add\+Data(), and Clear().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/home/eleclhcb/LHCb/lbcat-\/cmake/CatCaloEvent/inc/\hyperlink{Event_8h}{Event.h}\item 
-/home/eleclhcb/LHCb/lbcat-\/cmake/CatCaloEvent/src/\hyperlink{Event_8cpp}{Event.cpp}\end{DoxyCompactItemize}
+/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Calo\+Event/inc/\hyperlink{Event_8h}{Event.\+h}\item 
+/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Calo\+Event/src/\hyperlink{Event_8cpp}{Event.\+cpp}\end{DoxyCompactItemize}

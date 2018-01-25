@@ -1,9 +1,39 @@
-\hypertarget{CatNI__load_8cpp}{
-\section{/home/eleclhcb/LHCb/lbcat-\/cmake/CatNI/src/CatNI\_\-load.cpp File Reference}
-\label{CatNI__load_8cpp}\index{/home/eleclhcb/LHCb/lbcat-\/cmake/CatNI/src/CatNI\_\-load.cpp@{/home/eleclhcb/LHCb/lbcat-\/cmake/CatNI/src/CatNI\_\-load.cpp}}
-}
-{\ttfamily \#include $<$iostream$>$}\par
-{\ttfamily \#include \char`\"{}DLL.h\char`\"{}}\par
-{\ttfamily \#include \char`\"{}NI6008.h\char`\"{}}\par
-{\ttfamily \#include \char`\"{}CurrentMeasurement.h\char`\"{}}\par
-{\ttfamily \#include \char`\"{}ADCMeasurement.h\char`\"{}}\par
+\hypertarget{CatNI__load_8cpp}{}\section{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+N\+I/src/\+Cat\+N\+I\+\_\+load.cpp File Reference}
+\label{CatNI__load_8cpp}\index{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+N\+I/src/\+Cat\+N\+I\+\_\+load.\+cpp@{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+N\+I/src/\+Cat\+N\+I\+\_\+load.\+cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}D\+L\+L.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}N\+I6008.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Current\+Measurement.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}A\+D\+C\+Measurement.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{CatNI__load_8cpp_a742efb3875873b5b5869b9c309e93d9c}{D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+LL} (Cat\+NI)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{CatNI__load_8cpp_a742efb3875873b5b5869b9c309e93d9c}\label{CatNI__load_8cpp_a742efb3875873b5b5869b9c309e93d9c}} 
+\index{Cat\+N\+I\+\_\+load.\+cpp@{Cat\+N\+I\+\_\+load.\+cpp}!D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+LL@{D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+LL}}
+\index{D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+LL@{D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+LL}!Cat\+N\+I\+\_\+load.\+cpp@{Cat\+N\+I\+\_\+load.\+cpp}}
+\subsubsection{\texorpdfstring{D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+L\+L()}{DECLARE\_DLL()}}
+{\footnotesize\ttfamily D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+LL (\begin{DoxyParamCaption}\item[{Cat\+NI}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 15 of file Cat\+N\+I\+\_\+load.\+cpp.
+
+
+
+References D\+E\+C\+L\+A\+R\+E\+\_\+\+E\+L\+E\+M\+E\+NT, D\+E\+C\+L\+A\+R\+E\+\_\+\+P\+R\+O\+C\+E\+S\+S\+US, and F\+A\+C\+T\+O\+RY.
+
+
+\begin{DoxyCode}
+16 \{
+17   \hyperlink{DLL_8h_a3cf59a4b090c171501973779974e42a2}{DECLARE\_ELEMENT}   ( \hyperlink{classNI6008}{NI6008}, \hyperlink{classNI6008}{NI6008} acquisition system);
+18   \hyperlink{DLL_8h_aef2212dc8e888f762b7c0e2b2fcb0cdf}{DECLARE\_PROCESSUS} ( \hyperlink{namespaceCurrentMeasurement}{CurrentMeasurement}, 
+      \hyperlink{namespaceCurrentMeasurement}{CurrentMeasurement} with \hyperlink{classNI6008}{NI6008} acquisition);
+19   \hyperlink{DLL_8h_aef2212dc8e888f762b7c0e2b2fcb0cdf}{DECLARE\_PROCESSUS} ( \hyperlink{namespaceADCMeasurement}{ADCMeasurement}, 
+      \hyperlink{namespaceADCMeasurement}{ADCMeasurement} with \hyperlink{classNI6008}{NI6008} acquisition);
+20 \}
+\end{DoxyCode}

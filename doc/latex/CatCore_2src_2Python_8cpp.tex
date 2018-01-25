@@ -1,155 +1,158 @@
-\hypertarget{CatCore_2src_2Python_8cpp}{
-\section{/home/eleclhcb/LHCb/lbcat-\/cmake/CatCore/src/Python.cpp File Reference}
-\label{CatCore_2src_2Python_8cpp}\index{/home/eleclhcb/LHCb/lbcat-\/cmake/CatCore/src/Python.cpp@{/home/eleclhcb/LHCb/lbcat-\/cmake/CatCore/src/Python.cpp}}
-}
-{\ttfamily \#include $<$vector$>$}\par
-{\ttfamily \#include $<$list$>$}\par
-{\ttfamily \#include \char`\"{}IOobject.h\char`\"{}}\par
-{\ttfamily \#include \char`\"{}IOdata.h\char`\"{}}\par
-{\ttfamily \#include \char`\"{}Interface.h\char`\"{}}\par
-{\ttfamily \#include \char`\"{}RAM.h\char`\"{}}\par
-{\ttfamily \#include \char`\"{}Register.h\char`\"{}}\par
-{\ttfamily \#include \char`\"{}UsbI2cBus.h\char`\"{}}\par
-{\ttfamily \#include \char`\"{}UsbSpiBus.h\char`\"{}}\par
-{\ttfamily \#include $<$boost/python.hpp$>$}\par
-{\ttfamily \#include $<$boost/python/suite/indexing/vector\_\-indexing\_\-suite.hpp$>$}\par
+\hypertarget{CatCore_2src_2Python_8cpp}{}\section{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Core/src/\+Python.cpp File Reference}
+\label{CatCore_2src_2Python_8cpp}\index{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Core/src/\+Python.\+cpp@{/home/eleclhcb/\+L\+H\+Cb/lbcat-\/cmake/\+Cat\+Core/src/\+Python.\+cpp}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include \char`\"{}I\+Oobject.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}I\+Odata.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}R\+A\+M.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Register.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Usb\+I2c\+Bus.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Usb\+Spi\+Bus.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$boost/python.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/python/suite/indexing/vector\+\_\+indexing\+\_\+suite.\+hpp$>$}\newline
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-struct \hyperlink{structInterfaceWrap}{InterfaceWrap}
+struct \hyperlink{structInterfaceWrap}{Interface\+Wrap}
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{CatCore_2src_2Python_8cpp_a432dea4d9a17dbc171e9ae81a683bb21}{BOOST\_\-PYTHON\_\-MODULE} (libCatCore)
+\hyperlink{CatCore_2src_2Python_8cpp_a432dea4d9a17dbc171e9ae81a683bb21}{B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+LE} (lib\+Cat\+Core)
 \end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
-\hypertarget{CatCore_2src_2Python_8cpp_a432dea4d9a17dbc171e9ae81a683bb21}{
-\index{CatCore/src/Python.cpp@{CatCore/src/Python.cpp}!BOOST\_\-PYTHON\_\-MODULE@{BOOST\_\-PYTHON\_\-MODULE}}
-\index{BOOST\_\-PYTHON\_\-MODULE@{BOOST\_\-PYTHON\_\-MODULE}!CatCore/src/Python.cpp@{CatCore/src/Python.cpp}}
-\subsubsection[{BOOST\_\-PYTHON\_\-MODULE}]{\setlength{\rightskip}{0pt plus 5cm}BOOST\_\-PYTHON\_\-MODULE (libCatCore)}}
-\label{CatCore_2src_2Python_8cpp_a432dea4d9a17dbc171e9ae81a683bb21}
+\mbox{\Hypertarget{CatCore_2src_2Python_8cpp_a432dea4d9a17dbc171e9ae81a683bb21}\label{CatCore_2src_2Python_8cpp_a432dea4d9a17dbc171e9ae81a683bb21}} 
+\index{Cat\+Core/src/\+Python.\+cpp@{Cat\+Core/src/\+Python.\+cpp}!B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+LE@{B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+LE}}
+\index{B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+LE@{B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+LE}!Cat\+Core/src/\+Python.\+cpp@{Cat\+Core/src/\+Python.\+cpp}}
+\subsubsection{\texorpdfstring{B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E()}{BOOST\_PYTHON\_MODULE()}}
+{\footnotesize\ttfamily B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+LE (\begin{DoxyParamCaption}\item[{lib\+Cat\+Core}]{ }\end{DoxyParamCaption})}
 
 
-Definition at line 27 of file Python.cpp.
 
-References IOobject::address(), IOdata::address(), UsbSpiBus::aSS(), IOdata::block(), IOdata::bus(), UsbSpiBus::clockDivider(), IOdata::dataU16(), IOdata::dataU32(), IOdata::dataU8(), IOdata::defDataU16(), IOdata::defDataU32(), IOdata::defDataU8(), IOobject::dump(), IOdata::dump(), Register::getBit(), IOdata::header(), IOobject::help(), UsbSpiBus::help(), UsbI2cBus::help(), Interface::help(), IOobject::init(), UsbSpiBus::init(), UsbI2cBus::init(), Interface::init(), IOobject::io(), IOdata::length(), UsbSpiBus::lSBFirst(), IOdata::mode(), IOdata::outputSelect(), RAM::raz(), IOobject::read(), Interface::read(), UsbI2cBus::regAddress(), UsbSpiBus::regClockDivider(), UsbSpiBus::regCtrl(), UsbI2cBus::regData(), UsbSpiBus::regRxData(), UsbSpiBus::regSlaveSelect(), UsbSpiBus::regTxData(), IOobject::reset(), UsbSpiBus::reset(), UsbI2cBus::reset(), Interface::reset(), UsbSpiBus::rxNeg(), IOobject::setAddress(), IOdata::setAddress(), UsbSpiBus::setASS(), Register::setBit(), IOdata::setBlock(), IOdata::setBus(), UsbSpiBus::setClockDivider(), IOdata::setHeader(), IOdata::setLength(), UsbSpiBus::setLSBFirst(), IOdata::setMode(), IOdata::setOutputSelect(), UsbSpiBus::setRxNeg(), RAM::setSize(), IOdata::setSubAddress(), UsbSpiBus::setTxNeg(), IOdata::setU16(), IOdata::setU32(), IOdata::setU8(), IOdata::setWordSize(), IOdata::subAddress(), UsbSpiBus::txNeg(), IOobject::update(), UsbSpiBus::update(), UsbI2cBus::update(), Interface::update(), IOdata::wordSize(), IOobject::write(), and Interface::write().
+Definition at line 27 of file Python.\+cpp.
+
+
+
+References I\+Odata\+::address(), I\+Oobject\+::address(), Usb\+Spi\+Bus\+::a\+S\+S(), I\+Odata\+::block(), I\+Odata\+::bus(), Usb\+Spi\+Bus\+::clock\+Divider(), I\+Odata\+::data\+U16(), I\+Odata\+::data\+U32(), I\+Odata\+::data\+U8(), I\+Odata\+::def\+Data\+U16(), I\+Odata\+::def\+Data\+U32(), I\+Odata\+::def\+Data\+U8(), I\+Oobject\+::dump(), I\+Odata\+::dump(), Register\+::get\+Bit(), I\+Odata\+::header(), Interface\+::help(), Usb\+I2c\+Bus\+::help(), Usb\+Spi\+Bus\+::help(), I\+Oobject\+::help(), Interface\+::init(), Usb\+I2c\+Bus\+::init(), Usb\+Spi\+Bus\+::init(), I\+Oobject\+::init(), I\+Oobject\+::io(), I\+Odata\+::length(), Usb\+Spi\+Bus\+::l\+S\+B\+First(), I\+Odata\+::mode(), I\+Odata\+::output\+Select(), R\+A\+M\+::raz(), Interface\+::read(), I\+Oobject\+::read(), Usb\+I2c\+Bus\+::reg\+Address(), Usb\+Spi\+Bus\+::reg\+Clock\+Divider(), Usb\+Spi\+Bus\+::reg\+Ctrl(), Usb\+I2c\+Bus\+::reg\+Data(), Usb\+Spi\+Bus\+::reg\+Rx\+Data(), Usb\+Spi\+Bus\+::reg\+Slave\+Select(), Usb\+Spi\+Bus\+::reg\+Tx\+Data(), I\+Oobject\+::reset(), Interface\+::reset(), Usb\+I2c\+Bus\+::reset(), Usb\+Spi\+Bus\+::reset(), Usb\+Spi\+Bus\+::rx\+Neg(), I\+Odata\+::set\+Address(), I\+Oobject\+::set\+Address(), Usb\+Spi\+Bus\+::set\+A\+S\+S(), Register\+::set\+Bit(), I\+Odata\+::set\+Block(), I\+Odata\+::set\+Bus(), Usb\+Spi\+Bus\+::set\+Clock\+Divider(), I\+Odata\+::set\+Header(), I\+Odata\+::set\+Length(), Usb\+Spi\+Bus\+::set\+L\+S\+B\+First(), I\+Odata\+::set\+Mode(), I\+Odata\+::set\+Output\+Select(), Usb\+Spi\+Bus\+::set\+Rx\+Neg(), R\+A\+M\+::set\+Size(), I\+Odata\+::set\+Sub\+Address(), Usb\+Spi\+Bus\+::set\+Tx\+Neg(), I\+Odata\+::set\+U16(), I\+Odata\+::set\+U32(), I\+Odata\+::set\+U8(), I\+Odata\+::set\+Word\+Size(), I\+Odata\+::sub\+Address(), Usb\+Spi\+Bus\+::tx\+Neg(), Interface\+::update(), I\+Oobject\+::update(), Usb\+I2c\+Bus\+::update(), Usb\+Spi\+Bus\+::update(), I\+Odata\+::word\+Size(), Interface\+::write(), and I\+Oobject\+::write().
 
 
 \begin{DoxyCode}
-28 {
-29   class_< std::vector<unsigned long> >("ULongVec")
-30     .def(vector_indexing_suite< std::vector<unsigned long> >())
+28 \{
+29   class\_< std::vector<unsigned long> >(\textcolor{stringliteral}{"ULongVec"})
+30     .def(vector\_indexing\_suite< std::vector<unsigned long> >())
 31     ;
 32 
-33   class_<InterfaceWrap, boost::noncopyable, bases<Element> >("Interface")
-34     .def("help",pure_virtual(&Interface::help))
-35     .def("init",pure_virtual(&Interface::init))
-36     .def("reset",pure_virtual(&Interface::reset))
-37     .def("update",pure_virtual(&Interface::update))
-38     .def("read",pure_virtual(&Interface::read))
-39     .def("write",pure_virtual(&Interface::write))
+33   class\_<InterfaceWrap, boost::noncopyable, bases<Element> >(\textcolor{stringliteral}{"Interface"})
+34     .def(\textcolor{stringliteral}{"help"},pure\_virtual(&\hyperlink{classInterface_aedd3cf1d964c837e7848ccf81dc9c760}{Interface::help}))
+35     .def(\textcolor{stringliteral}{"init"},pure\_virtual(&\hyperlink{classInterface_a1d095c113b1e89d1f5f68323856fee63}{Interface::init}))
+36     .def(\textcolor{stringliteral}{"reset"},pure\_virtual(&\hyperlink{classInterface_a4d44329cea9981a9e0392eaaf99efadd}{Interface::reset}))
+37     .def(\textcolor{stringliteral}{"update"},pure\_virtual(&\hyperlink{classInterface_a30e71ffbe36091df9f7c0838dd4b60d2}{Interface::update}))
+38     .def(\textcolor{stringliteral}{"read"},pure\_virtual(&\hyperlink{classInterface_a99136b67c8e6cbcaa0477c36940ac2ef}{Interface::read}))
+39     .def(\textcolor{stringliteral}{"write"},pure\_virtual(&\hyperlink{classInterface_ad665cacbaf490a26c1c4ba192022e68a}{Interface::write}))
 40   ;
 41 
-42   class_<UsbI2cBus, bases<Interface> >("UsbI2cBus")
-43     .def("help"      ,&UsbI2cBus::help)
-44     .def("init"      ,&UsbI2cBus::init)
-45     .def("reset"     ,&UsbI2cBus::reset)
-46     .def("update"    ,&UsbI2cBus::update)
-47     .def("regData"   ,&UsbI2cBus::regData,return_value_policy<reference_existing_
-      object>())
-48     .def("regAddress",&UsbI2cBus::regAddress,return_value_policy<reference_existi
-      ng_object>())
+42   class\_<UsbI2cBus, bases<Interface> >(\textcolor{stringliteral}{"UsbI2cBus"})
+43     .def(\textcolor{stringliteral}{"help"}      ,&\hyperlink{classUsbI2cBus_a5c3349f89fff94a8eae3d9752f5fcf6a}{UsbI2cBus::help})
+44     .def(\textcolor{stringliteral}{"init"}      ,&\hyperlink{classUsbI2cBus_a595c6e7f618e4f8c6b45e2dcf0fbdabb}{UsbI2cBus::init})
+45     .def(\textcolor{stringliteral}{"reset"}     ,&\hyperlink{classUsbI2cBus_a4063433fd349fff112f4e2ceb3d35072}{UsbI2cBus::reset})
+46     .def(\textcolor{stringliteral}{"update"}    ,&\hyperlink{classUsbI2cBus_a40bd44e6fe19f3e9c52bd4b4e14b80a9}{UsbI2cBus::update})
+47     .def(\textcolor{stringliteral}{"regData"}   ,&\hyperlink{classUsbI2cBus_adbd9f85503b361a5b170df2c6c1e733b}{UsbI2cBus::regData},return\_value\_policy<reference\_existing\_object>(
+      ))
+48     .def(\textcolor{stringliteral}{"regAddress"},&\hyperlink{classUsbI2cBus_a3fb938828d8d0592076ad8cf5821b35b}{UsbI2cBus::regAddress},
+      return\_value\_policy<reference\_existing\_object>())
 49   ;
 50 
-51   class_<UsbSpiBus, bases<Interface> >("UsbSpiBus")
-52     .def("help"          ,&UsbSpiBus::help)
-53     .def("init"          ,&UsbSpiBus::init)
-54     .def("reset"         ,&UsbSpiBus::reset)
-55     .def("update"        ,&UsbSpiBus::update)
-56     .def("setTxNeg"      ,&UsbSpiBus::setTxNeg)
-57     .def("txNeg"         ,&UsbSpiBus::txNeg)
-58     .def("setRxNeg"      ,&UsbSpiBus::setRxNeg)
-59     .def("rxNeg"         ,&UsbSpiBus::rxNeg)
-60     .def("setASS"        ,&UsbSpiBus::setASS)
-61     .def("aSS"           ,&UsbSpiBus::aSS)
-62     .def("setLSBFirst"   ,&UsbSpiBus::setLSBFirst)
-63     .def("lSBFirst"      ,&UsbSpiBus::lSBFirst)
-64     .def("setClockDivider",&UsbSpiBus::setClockDivider)
-65     .def("clockDivider"   ,&UsbSpiBus::clockDivider)
-66     .def("regCtrl"       ,&UsbSpiBus::regCtrl,return_value_policy<reference_exist
-      ing_object>())
-67     .def("regClockDivider",&UsbSpiBus::regClockDivider,return_value_policy<refere
-      nce_existing_object>())
-68     .def("regSlaveSelect",&UsbSpiBus::regSlaveSelect,return_value_policy<referenc
-      e_existing_object>())
-69     .def("regRxData"     ,&UsbSpiBus::regRxData,return_value_policy<reference_exi
-      sting_object>())
-70     .def("regTxData"     ,&UsbSpiBus::regTxData,return_value_policy<reference_exi
-      sting_object>())
+51   class\_<UsbSpiBus, bases<Interface> >(\textcolor{stringliteral}{"UsbSpiBus"})
+52     .def(\textcolor{stringliteral}{"help"}          ,&\hyperlink{classUsbSpiBus_a3543b3bbad0c137fde32fdc554a09a5d}{UsbSpiBus::help})
+53     .def(\textcolor{stringliteral}{"init"}          ,&\hyperlink{classUsbSpiBus_a38203aaf0806b9a1c7cc0686831a7ce9}{UsbSpiBus::init})
+54     .def(\textcolor{stringliteral}{"reset"}         ,&\hyperlink{classUsbSpiBus_aa795a27f7429f0c0285056964659d433}{UsbSpiBus::reset})
+55     .def(\textcolor{stringliteral}{"update"}        ,&\hyperlink{classUsbSpiBus_a3e26195827351bf88db56dafd1e7de26}{UsbSpiBus::update})
+56     .def(\textcolor{stringliteral}{"setTxNeg"}      ,&\hyperlink{classUsbSpiBus_a6b15114d79e0d8002ba42f0301ff22a1}{UsbSpiBus::setTxNeg})
+57     .def(\textcolor{stringliteral}{"txNeg"}         ,&\hyperlink{classUsbSpiBus_a08605d71903fc384ed119842833485f1}{UsbSpiBus::txNeg})
+58     .def(\textcolor{stringliteral}{"setRxNeg"}      ,&\hyperlink{classUsbSpiBus_aa6c039bb03737e9fd943cbdd2b23388c}{UsbSpiBus::setRxNeg})
+59     .def(\textcolor{stringliteral}{"rxNeg"}         ,&\hyperlink{classUsbSpiBus_ab24f6e85697305b26997b8dec3f18254}{UsbSpiBus::rxNeg})
+60     .def(\textcolor{stringliteral}{"setASS"}        ,&\hyperlink{classUsbSpiBus_a1a0278c7994ba1fa84919383bd816047}{UsbSpiBus::setASS})
+61     .def(\textcolor{stringliteral}{"aSS"}           ,&\hyperlink{classUsbSpiBus_afd9b0823f348dddc7fed8ae97d248e9c}{UsbSpiBus::aSS})
+62     .def(\textcolor{stringliteral}{"setLSBFirst"}   ,&\hyperlink{classUsbSpiBus_ab601d59e0b5110c2275c1cc298664e27}{UsbSpiBus::setLSBFirst})
+63     .def(\textcolor{stringliteral}{"lSBFirst"}      ,&\hyperlink{classUsbSpiBus_af6af49c1ac52cc0586570c1f43d0bc25}{UsbSpiBus::lSBFirst})
+64     .def(\textcolor{stringliteral}{"setClockDivider"},&\hyperlink{classUsbSpiBus_a8cd3c808e7b72d8bc0f1d85a774e8c99}{UsbSpiBus::setClockDivider})
+65     .def(\textcolor{stringliteral}{"clockDivider"}   ,&\hyperlink{classUsbSpiBus_aa7a56b8aedb646ba46408cb5016dde1c}{UsbSpiBus::clockDivider})
+66     .def(\textcolor{stringliteral}{"regCtrl"}       ,&\hyperlink{classUsbSpiBus_a22900de7a32af6916f74584f2172424a}{UsbSpiBus::regCtrl},
+      return\_value\_policy<reference\_existing\_object>())
+67     .def(\textcolor{stringliteral}{"regClockDivider"},&\hyperlink{classUsbSpiBus_a338edc7bdac1abd1998890bb1aa0509a}{UsbSpiBus::regClockDivider},
+      return\_value\_policy<reference\_existing\_object>())
+68     .def(\textcolor{stringliteral}{"regSlaveSelect"},&\hyperlink{classUsbSpiBus_a9bc70ad9842d8aa8f89b24599bfd6238}{UsbSpiBus::regSlaveSelect},
+      return\_value\_policy<reference\_existing\_object>())
+69     .def(\textcolor{stringliteral}{"regRxData"}     ,&\hyperlink{classUsbSpiBus_adb0c94f37c7e6008ed4540efa94559b3}{UsbSpiBus::regRxData},
+      return\_value\_policy<reference\_existing\_object>())
+70     .def(\textcolor{stringliteral}{"regTxData"}     ,&\hyperlink{classUsbSpiBus_ab8044b2af7209f9eb37c0a96e3e28637}{UsbSpiBus::regTxData},
+      return\_value\_policy<reference\_existing\_object>())
 71   ;
 72 
-73   unsigned long int (IOdata::*dataU8x) (unsigned long int) = (&IOdata::dataU8);
-74   unsigned long int (IOdata::*dataU16x)(unsigned long int) = (&IOdata::dataU16);
-75   unsigned long int (IOdata::*dataU32x)(unsigned long int) = (&IOdata::dataU32);
+73   \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} int (\hyperlink{classIOdata}{IOdata}::*dataU8x) (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} int) = (&
+      \hyperlink{classIOdata_a75e9c318dbac3a39402179070943d4bc}{IOdata::dataU8});
+74   \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} int (\hyperlink{classIOdata}{IOdata}::*dataU16x)(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} int) = (&
+      \hyperlink{classIOdata_a8d8528b731c6cf117f8c5b9b2473390c}{IOdata::dataU16});
+75   \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} int (\hyperlink{classIOdata}{IOdata}::*dataU32x)(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} int) = (&
+      \hyperlink{classIOdata_ab0e3cd09f46c1c3712f797116f6da074}{IOdata::dataU32});
 76 
-77   class_<IOdata, bases<Object> >("IOdata")
-78     .def("setAddress"            ,&IOdata::setAddress)
-79     .def("setHeader"            ,&IOdata::setHeader)
-80     .def("setSubAddress"         ,&IOdata::setSubAddress)
-81     .def("setOutputSelect"       ,&IOdata::setOutputSelect)
-82     .def("setMode"               ,&IOdata::setMode)
-83     .def("setWordSize"           ,&IOdata::setWordSize)
-84     .def("setLength"             ,&IOdata::setLength)
-85     .def("setBlock"              ,&IOdata::setBlock)
-86     .def("setBus"                ,&IOdata::setBus)
-87     .def("address"               ,&IOdata::address)
-88     .def("header"                ,&IOdata::header)
-89     .def("subAddress"            ,&IOdata::subAddress)
-90     .def("outputSelect"          ,&IOdata::outputSelect)
-91     .def("mode"                  ,&IOdata::mode)
-92     .def("wordSize"              ,&IOdata::wordSize)
-93     .def("length"                ,&IOdata::length)
-94     .def("block"                 ,&IOdata::block)
-95     .def("bus"                   ,&IOdata::bus)
-96     .def("dump"                  ,&IOdata::dump)
-97     .def("defU8"                 ,&IOdata::defDataU8)
-98     .def("detU16"                ,&IOdata::defDataU16)
-99     .def("detU32"                ,&IOdata::defDataU32)
-100     .def("setU8"                 ,&IOdata::setU8)
-101     .def("setU16"                ,&IOdata::setU16)
-102     .def("setU32"                ,&IOdata::setU32)
-103     .def("dataU8"                ,dataU8x)
-104     .def("dataU16"               ,dataU16x)
-105     .def("dataU32"               ,dataU32x)
+77   class\_<IOdata, bases<Object> >(\textcolor{stringliteral}{"IOdata"})
+78     .def(\textcolor{stringliteral}{"setAddress"}            ,&\hyperlink{classIOdata_af98cbfbc28346ebb9b64ca0203af1463}{IOdata::setAddress})
+79     .def(\textcolor{stringliteral}{"setHeader"}            ,&\hyperlink{classIOdata_a9a850f401542d416adf061e30f7dfdd5}{IOdata::setHeader})
+80     .def(\textcolor{stringliteral}{"setSubAddress"}         ,&\hyperlink{classIOdata_aeca09aa9a8c2ccc4c3a728b2ddcf4b2a}{IOdata::setSubAddress})
+81     .def(\textcolor{stringliteral}{"setOutputSelect"}       ,&\hyperlink{classIOdata_a09675d3efa14ba00cc22f8ff8d463389}{IOdata::setOutputSelect})
+82     .def(\textcolor{stringliteral}{"setMode"}               ,&\hyperlink{classIOdata_ad81e9fd3f2cd9dcaffd9eabddf8f867e}{IOdata::setMode})
+83     .def(\textcolor{stringliteral}{"setWordSize"}           ,&\hyperlink{classIOdata_a20f30a9f4673713616447b1b5e9817d5}{IOdata::setWordSize})
+84     .def(\textcolor{stringliteral}{"setLength"}             ,&\hyperlink{classIOdata_affaf98e7f9e596263e914b055f8f93c2}{IOdata::setLength})
+85     .def(\textcolor{stringliteral}{"setBlock"}              ,&\hyperlink{classIOdata_a334f07d85e3dc8069551dcd8ab942e9c}{IOdata::setBlock})
+86     .def(\textcolor{stringliteral}{"setBus"}                ,&\hyperlink{classIOdata_aca154b90e490608b5b5c0ead58e1fafc}{IOdata::setBus})
+87     .def(\textcolor{stringliteral}{"address"}               ,&\hyperlink{classIOdata_afe410c86881b8c2082a08e5ce9843306}{IOdata::address})
+88     .def(\textcolor{stringliteral}{"header"}                ,&\hyperlink{classIOdata_a503396d8deb6e098c15f963e4201e01b}{IOdata::header})
+89     .def(\textcolor{stringliteral}{"subAddress"}            ,&\hyperlink{classIOdata_a25df48b84364a468373260f823ed9c5f}{IOdata::subAddress})
+90     .def(\textcolor{stringliteral}{"outputSelect"}          ,&\hyperlink{classIOdata_aaa410b57a4607857d45ac6a7cd013307}{IOdata::outputSelect})
+91     .def(\textcolor{stringliteral}{"mode"}                  ,&\hyperlink{classIOdata_aae2073c3bc6bc9f620dc0fca7fccc9a7}{IOdata::mode})
+92     .def(\textcolor{stringliteral}{"wordSize"}              ,&\hyperlink{classIOdata_a91f9e8b4095ca8365a824e43be36b143}{IOdata::wordSize})
+93     .def(\textcolor{stringliteral}{"length"}                ,&\hyperlink{classIOdata_abb40e71ce0290832a24857b4a1e7b1a3}{IOdata::length})
+94     .def(\textcolor{stringliteral}{"block"}                 ,&\hyperlink{classIOdata_aeda27840c9a9b7b3b86efc71c56cd868}{IOdata::block})
+95     .def(\textcolor{stringliteral}{"bus"}                   ,&\hyperlink{classIOdata_ab904bcca0e8e3bebc3299e47ca93a8a1}{IOdata::bus})
+96     .def(\textcolor{stringliteral}{"dump"}                  ,&\hyperlink{classIOdata_a208e24222bf2044a4ff8bbb1a6bdc13b}{IOdata::dump})
+97     .def(\textcolor{stringliteral}{"defU8"}                 ,&\hyperlink{classIOdata_a80bb230b61062b447db5832e43bf7b44}{IOdata::defDataU8})
+98     .def(\textcolor{stringliteral}{"detU16"}                ,&\hyperlink{classIOdata_a9e37c736d6dfb5223ed45786fad403da}{IOdata::defDataU16})
+99     .def(\textcolor{stringliteral}{"detU32"}                ,&\hyperlink{classIOdata_a78e50aa4a6c967cba195e77fe911a8c3}{IOdata::defDataU32})
+100     .def(\textcolor{stringliteral}{"setU8"}                 ,&\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{IOdata::setU8})
+101     .def(\textcolor{stringliteral}{"setU16"}                ,&\hyperlink{classIOdata_aa9ade5ce3944c8e2b831533b6f876caf}{IOdata::setU16})
+102     .def(\textcolor{stringliteral}{"setU32"}                ,&\hyperlink{classIOdata_abbed9a057203bc763f97b85fb385f36b}{IOdata::setU32})
+103     .def(\textcolor{stringliteral}{"dataU8"}                ,dataU8x)
+104     .def(\textcolor{stringliteral}{"dataU16"}               ,dataU16x)
+105     .def(\textcolor{stringliteral}{"dataU32"}               ,dataU32x)
 106   ;
 107 
-108   class_<IOobject, bases <Element> >("IOobject")
-109     .def("help",  &IOobject::help)
-110     .def("init",  &IOobject::init)
-111     .def("reset", &IOobject::reset)
-112     .def("update",&IOobject::update)
-113     .def("setAddress",&IOobject::setAddress)
-114     .def("address"   ,&IOobject::address)
-115     .def("io",    &IOobject::io,return_value_policy<reference_existing_object>())
-      
-116     .def("read",  &IOobject::read)
-117     .def("write", &IOobject::write)
-118     .def("dump"  , &IOobject::dump) 
+108   class\_<IOobject, bases <Element> >(\textcolor{stringliteral}{"IOobject"})
+109     .def(\textcolor{stringliteral}{"help"},  &\hyperlink{classIOobject_a0520d82a9773c764fbaede59fe6f8a17}{IOobject::help})
+110     .def(\textcolor{stringliteral}{"init"},  &\hyperlink{classIOobject_ab989e175734dd73797343e63cec6b174}{IOobject::init})
+111     .def(\textcolor{stringliteral}{"reset"}, &\hyperlink{classIOobject_abccbc7a65366ec1257ff41a8e3245af8}{IOobject::reset})
+112     .def(\textcolor{stringliteral}{"update"},&\hyperlink{classIOobject_a0100b4ddcfe8f0b551a3f0dc5201988d}{IOobject::update})
+113     .def(\textcolor{stringliteral}{"setAddress"},&\hyperlink{classIOobject_ae0d372aaeafe3da3c239677118deb2ac}{IOobject::setAddress})
+114     .def(\textcolor{stringliteral}{"address"}   ,&\hyperlink{classIOobject_a95f0d3f092ea1ae3037ac60f0674d095}{IOobject::address})
+115     .def(\textcolor{stringliteral}{"io"},    &\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{IOobject::io},return\_value\_policy<reference\_existing\_object>())
+116     .def(\textcolor{stringliteral}{"read"},  &\hyperlink{classIOobject_aa07610c11963b1db6710e3c76ceea456}{IOobject::read})
+117     .def(\textcolor{stringliteral}{"write"}, &\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{IOobject::write})
+118     .def(\textcolor{stringliteral}{"dump"}  , &\hyperlink{classIOobject_a1247f08c84c1732a76caf07e987871e9}{IOobject::dump}) 
 119     ;
 120 
-121   class_<Register, bases <IOobject> >("Register")
-122     .def("setBit", &Register::setBit)
-123     .def("getBit", &Register::getBit)
+121   class\_<Register, bases <IOobject> >(\textcolor{stringliteral}{"Register"})
+122     .def(\textcolor{stringliteral}{"setBit"}, &\hyperlink{classRegister_ab094246dd12aa7e0aa0ca917f4e70b31}{Register::setBit})
+123     .def(\textcolor{stringliteral}{"getBit"}, &\hyperlink{classRegister_a5d27c9ff548817eee097ba4fdc8e8f69}{Register::getBit})
 124     ;
 125 
-126   class_<RAM, bases <IOobject> >("RAM")
-127     .def("setSize", &RAM::setSize)
-128     .def("raz",     &RAM::raz)
+126   class\_<RAM, bases <IOobject> >(\textcolor{stringliteral}{"RAM"})
+127     .def(\textcolor{stringliteral}{"setSize"}, &\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{RAM::setSize})
+128     .def(\textcolor{stringliteral}{"raz"},     &\hyperlink{classRAM_aac835f84bf892cd4d95b5d7a0caa62f0}{RAM::raz})
 129     ;
 130   ;
 131 
-132 }
+132 \}
 \end{DoxyCode}
