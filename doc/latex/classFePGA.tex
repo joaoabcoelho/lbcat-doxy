@@ -30,10 +30,6 @@ void \hyperlink{classFePGA_ae6425fbad1a8db57025efaf387a6f41b}{help} ()
 \begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
 \hyperlink{classStatusCode}{Status\+Code} \hyperlink{classFePGA_a5355858b1b8deedcc12acff80f025804}{init} ()
 \item 
-void \hyperlink{classFePGA_aa58fc0a09d8efa7abc2766bf5bb67327}{Make\+Register} (\hyperlink{classRegister}{Register} $\ast$reg, std\+::string \hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name}, unsigned int \hyperlink{classAttrib_a235f773af19c900264a190b00a3b4ad7}{add})
-\item 
-void \hyperlink{classFePGA_ac3af50fbe7f8f7a8c6adbcb164cbbf47}{Make\+R\+AM} (\hyperlink{classRAM}{R\+AM} $\ast$ram, std\+::string \hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name}, unsigned int \hyperlink{classAttrib_a235f773af19c900264a190b00a3b4ad7}{add})
-\item 
 void \hyperlink{classFePGA_abdf7a9dd901351a7eafd748d35172a3c}{reset} ()
 \item 
 void \hyperlink{classFePGA_a79d95b2fccf4d2ea473e6cf6980d6cf6}{reset\+Usb} ()
@@ -105,6 +101,13 @@ unsigned long int \hyperlink{classFePGA_adf1c43786131d0f500b4662a877229c7}{i2c\+
 \hyperlink{classStatusCode}{Status\+Code} \hyperlink{classFePGA_a45e1cfdf1f303f3958bf6a83c4e8039b}{i2c\+Write} (unsigned long int, unsigned long int)
 \item 
 \hyperlink{classStatusCode}{Status\+Code} \hyperlink{classFePGA_ac7698a9f59f7290a6bb648030976597f}{transmit\+Spi} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRegister}{Register} $\ast$ \hyperlink{classFePGA_a83286ca5b6d8dbab0e95903d8f424783}{Make\+Register} (std\+::string \hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name}, unsigned int \hyperlink{classAttrib_a235f773af19c900264a190b00a3b4ad7}{add})
+\item 
+\hyperlink{classRAM}{R\+AM} $\ast$ \hyperlink{classFePGA_a77a1e1c120fca21125b5e43f3679d522}{Make\+R\+AM} (std\+::string \hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name}, unsigned int \hyperlink{classAttrib_a235f773af19c900264a190b00a3b4ad7}{add})
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -213,32 +216,18 @@ References Attrib\+::add(), Hierarchy\+::add\+Child(), Object\+::debug(), Attrib
 36   \hyperlink{classFePGA_afb7947e600a66d914ee524acec3d8b1f}{m\_usb}->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\textcolor{stringliteral}{"Usb"});
 37   \hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(\hyperlink{classFePGA_afb7947e600a66d914ee524acec3d8b1f}{m\_usb});
 38 
-39   \textcolor{comment}{// For some reason the registers have to}
-40   \textcolor{comment}{// be created outside of the MakeRegister}
-41   \textcolor{comment}{// function}
-42   \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}       = \textcolor{keyword}{new} \hyperlink{classRegister}{Register}();
-43   \hyperlink{classFePGA_aeff1a2370237a06b50e1ae23d933c862}{m\_resetReg}       = \textcolor{keyword}{new} \hyperlink{classRegister}{Register}();
-44   \hyperlink{classFePGA_a569eb8410924bec1c8279ca80dc37a6a}{m\_addSpiReg}      = \textcolor{keyword}{new} \hyperlink{classRegister}{Register}();
-45   \hyperlink{classFePGA_a003ee241fb5f32fb3442174db3fe6f49}{m\_transmitSpiReg} = \textcolor{keyword}{new} \hyperlink{classRegister}{Register}();
-46   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}     = \textcolor{keyword}{new} \hyperlink{classRegister}{Register}();
+39   \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}       = \hyperlink{classFePGA_a83286ca5b6d8dbab0e95903d8f424783}{MakeRegister}(\textcolor{stringliteral}{"SetupReg"},       0x01);
+40   \hyperlink{classFePGA_aeff1a2370237a06b50e1ae23d933c862}{m\_resetReg}       = \hyperlink{classFePGA_a83286ca5b6d8dbab0e95903d8f424783}{MakeRegister}(\textcolor{stringliteral}{"ResetReg"},       0x02);
+41   \hyperlink{classFePGA_a569eb8410924bec1c8279ca80dc37a6a}{m\_addSpiReg}      = \hyperlink{classFePGA_a83286ca5b6d8dbab0e95903d8f424783}{MakeRegister}(\textcolor{stringliteral}{"AddSpiReg"},      0x03);
+42   \hyperlink{classFePGA_a003ee241fb5f32fb3442174db3fe6f49}{m\_transmitSpiReg} = \hyperlink{classFePGA_a83286ca5b6d8dbab0e95903d8f424783}{MakeRegister}(\textcolor{stringliteral}{"TransmitSpiReg"}, 0x0B);
+43   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}     = \hyperlink{classFePGA_a83286ca5b6d8dbab0e95903d8f424783}{MakeRegister}(\textcolor{stringliteral}{"CtrlSpiReg"},     0x0E);
+44 
+45   \hyperlink{classFePGA_a3ee7f973bfad39b48bbc1a185e9ffaec}{m\_rxSpiFifo} = \hyperlink{classFePGA_a77a1e1c120fca21125b5e43f3679d522}{MakeRAM}(\textcolor{stringliteral}{"RxSpiFifo"}, 0x0C);
+46   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo} = \hyperlink{classFePGA_a77a1e1c120fca21125b5e43f3679d522}{MakeRAM}(\textcolor{stringliteral}{"TxSpiFifo"}, 0x0D);
 47 
-48   \hyperlink{classFePGA_aa58fc0a09d8efa7abc2766bf5bb67327}{MakeRegister}(\hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg},       \textcolor{stringliteral}{"SetupReg"},       0x01);
-49   \hyperlink{classFePGA_aa58fc0a09d8efa7abc2766bf5bb67327}{MakeRegister}(\hyperlink{classFePGA_aeff1a2370237a06b50e1ae23d933c862}{m\_resetReg},       \textcolor{stringliteral}{"ResetReg"},       0x02);
-50   \hyperlink{classFePGA_aa58fc0a09d8efa7abc2766bf5bb67327}{MakeRegister}(\hyperlink{classFePGA_a569eb8410924bec1c8279ca80dc37a6a}{m\_addSpiReg},      \textcolor{stringliteral}{"AddSpiReg"},      0x03);
-51   \hyperlink{classFePGA_aa58fc0a09d8efa7abc2766bf5bb67327}{MakeRegister}(\hyperlink{classFePGA_a003ee241fb5f32fb3442174db3fe6f49}{m\_transmitSpiReg}, \textcolor{stringliteral}{"TransmitSpiReg"}, 0x0B);
-52   \hyperlink{classFePGA_aa58fc0a09d8efa7abc2766bf5bb67327}{MakeRegister}(\hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg},     \textcolor{stringliteral}{"CtrlSpiReg"},     0x0E);
-53 
-54   \textcolor{comment}{// Same applies to the RAMs}
-55   \hyperlink{classFePGA_a3ee7f973bfad39b48bbc1a185e9ffaec}{m\_rxSpiFifo}   = \textcolor{keyword}{new} \hyperlink{classRAM}{RAM}();
-56   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}   = \textcolor{keyword}{new} \hyperlink{classRAM}{RAM}();
-57 
-58   \hyperlink{classFePGA_ac3af50fbe7f8f7a8c6adbcb164cbbf47}{MakeRAM}(\hyperlink{classFePGA_a3ee7f973bfad39b48bbc1a185e9ffaec}{m\_rxSpiFifo}, \textcolor{stringliteral}{"RxSpiFifo"}, 0x0C);
-59   \hyperlink{classFePGA_ac3af50fbe7f8f7a8c6adbcb164cbbf47}{MakeRAM}(\hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}, \textcolor{stringliteral}{"TxSpiFifo"}, 0x0D);
-60 
-61   \hyperlink{classFePGA_a97fc9347c90d9a31d99ccb499cc06eee}{m\_testFifo}   = \textcolor{keyword}{new} \hyperlink{classRAM}{RAM}();
-62   \hyperlink{classFePGA_ac3af50fbe7f8f7a8c6adbcb164cbbf47}{MakeRAM}(\hyperlink{classFePGA_a97fc9347c90d9a31d99ccb499cc06eee}{m\_testFifo}, \textcolor{stringliteral}{"TestFifo"}, 0x05);
-63 
-64 \}
+48   \hyperlink{classFePGA_a97fc9347c90d9a31d99ccb499cc06eee}{m\_testFifo}  = \hyperlink{classFePGA_a77a1e1c120fca21125b5e43f3679d522}{MakeRAM}(\textcolor{stringliteral}{"TestFifo"},  0x05);
+49 
+50 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_aa445095a44c521b6b7803feaef6c16ba}\label{classFePGA_aa445095a44c521b6b7803feaef6c16ba}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!````~Fe\+P\+GA@{$\sim$\+Fe\+P\+GA}}
@@ -265,7 +254,7 @@ Definition at line 31 of file Fe\+P\+G\+A.\+h.
 
 
 
-Definition at line 103 of file Fe\+P\+G\+A.\+h.
+Definition at line 100 of file Fe\+P\+G\+A.\+h.
 
 
 
@@ -273,7 +262,7 @@ References m\+\_\+add\+I2c\+Reg.
 
 
 \begin{DoxyCode}
-103 \{ \textcolor{keywordflow}{return} \hyperlink{classFePGA_af3ef3467ba803e6d3b970ea8982d6246}{m\_addI2cReg};    \}
+100 \{ \textcolor{keywordflow}{return} \hyperlink{classFePGA_af3ef3467ba803e6d3b970ea8982d6246}{m\_addI2cReg};    \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_ae6425fbad1a8db57025efaf387a6f41b}\label{classFePGA_ae6425fbad1a8db57025efaf387a6f41b}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!help@{help}}
@@ -309,7 +298,7 @@ References Object\+::info(), and Object\+::name().
 
 
 
-Definition at line 81 of file Fe\+P\+G\+A.\+h.
+Definition at line 78 of file Fe\+P\+G\+A.\+h.
 
 
 
@@ -321,9 +310,9 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
 
 
 \begin{DoxyCode}
-81                     \{
-82     \textcolor{keywordflow}{return} \hyperlink{classFePGA_a09fdde4002008daa0d15672772dd4483}{m\_usbi2c};
-83   \}
+78                     \{
+79     \textcolor{keywordflow}{return} \hyperlink{classFePGA_a09fdde4002008daa0d15672772dd4483}{m\_usbi2c};
+80   \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_a26b690b730b5f668ab28fb8deab8326b}\label{classFePGA_a26b690b730b5f668ab28fb8deab8326b}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!i2c\+Add@{i2c\+Add}}
@@ -333,7 +322,7 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
 
 
 
-Definition at line 412 of file Fe\+P\+G\+A.\+cpp.
+Definition at line 404 of file Fe\+P\+G\+A.\+cpp.
 
 
 
@@ -345,11 +334,11 @@ Referenced by test\+Sequence().
 
 
 \begin{DoxyCode}
-412                                \{
-413   \hyperlink{classFePGA_af3ef3467ba803e6d3b970ea8982d6246}{m\_addI2cReg}->\hyperlink{classIOobject_aa07610c11963b1db6710e3c76ceea456}{read}();
-414   \textcolor{keywordflow}{return} ( \hyperlink{classFePGA_af3ef3467ba803e6d3b970ea8982d6246}{m\_addI2cReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a75e9c318dbac3a39402179070943d4bc}{dataU8}(0) + (\hyperlink{classFePGA_af3ef3467ba803e6d3b970ea8982d6246}{m\_addI2cReg}->
+404                                \{
+405   \hyperlink{classFePGA_af3ef3467ba803e6d3b970ea8982d6246}{m\_addI2cReg}->\hyperlink{classIOobject_aa07610c11963b1db6710e3c76ceea456}{read}();
+406   \textcolor{keywordflow}{return} ( \hyperlink{classFePGA_af3ef3467ba803e6d3b970ea8982d6246}{m\_addI2cReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a75e9c318dbac3a39402179070943d4bc}{dataU8}(0) + (\hyperlink{classFePGA_af3ef3467ba803e6d3b970ea8982d6246}{m\_addI2cReg}->
       \hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a75e9c318dbac3a39402179070943d4bc}{dataU8}(1)<<8) ) ; \textcolor{comment}{//WARNING !!!! What Values to put here ??}
-415 \}
+407 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_a5577463c8478cb6d54fc3c75b26cd819}\label{classFePGA_a5577463c8478cb6d54fc3c75b26cd819}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!i2c\+Buffer@{i2c\+Buffer}}
@@ -359,7 +348,7 @@ Referenced by test\+Sequence().
 
 
 
-Definition at line 392 of file Fe\+P\+G\+A.\+cpp.
+Definition at line 384 of file Fe\+P\+G\+A.\+cpp.
 
 
 
@@ -371,9 +360,9 @@ Referenced by test\+Sequence().
 
 
 \begin{DoxyCode}
-392                                   \{
-393   \textcolor{keywordflow}{return} \hyperlink{classFePGA_a173664ffd6a73f454ae31f51e689dd16}{m\_i2cBuffer};
-394 \}
+384                                   \{
+385   \textcolor{keywordflow}{return} \hyperlink{classFePGA_a173664ffd6a73f454ae31f51e689dd16}{m\_i2cBuffer};
+386 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_a9c261a09d323c07ec4b9e925d4dfc353}\label{classFePGA_a9c261a09d323c07ec4b9e925d4dfc353}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!i2c\+Data@{i2c\+Data}}
@@ -383,7 +372,7 @@ Referenced by test\+Sequence().
 
 
 
-Definition at line 399 of file Fe\+P\+G\+A.\+cpp.
+Definition at line 391 of file Fe\+P\+G\+A.\+cpp.
 
 
 
@@ -395,10 +384,10 @@ Referenced by i2c\+Read(), and test\+Sequence().
 
 
 \begin{DoxyCode}
-399                                 \{
-400   \textcolor{keywordflow}{return} ( ((\hyperlink{classFePGA_adb390ea8de4a6cbce648dc62e4405f32}{m\_masterI2cReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a75e9c318dbac3a39402179070943d4bc}{dataU8}(0))&0xFF) ) ; \textcolor{comment}{//WARNING !!!! What Values to
+391                                 \{
+392   \textcolor{keywordflow}{return} ( ((\hyperlink{classFePGA_adb390ea8de4a6cbce648dc62e4405f32}{m\_masterI2cReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a75e9c318dbac3a39402179070943d4bc}{dataU8}(0))&0xFF) ) ; \textcolor{comment}{//WARNING !!!! What Values to
        put here ??}
-401 \}
+393 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_a210cf57766c4f818ea61af671e91cfeb}\label{classFePGA_a210cf57766c4f818ea61af671e91cfeb}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!i2c\+G\+B\+T\+S\+CA@{i2c\+G\+B\+T\+S\+CA}}
@@ -408,7 +397,7 @@ Referenced by i2c\+Read(), and test\+Sequence().
 
 
 
-Definition at line 379 of file Fe\+P\+G\+A.\+cpp.
+Definition at line 371 of file Fe\+P\+G\+A.\+cpp.
 
 
 
@@ -420,10 +409,10 @@ Referenced by test\+Sequence().
 
 
 \begin{DoxyCode}
-379                       \{
-380   \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_aa07610c11963b1db6710e3c76ceea456}{read}();
-381   \textcolor{keywordflow}{return} (! ( \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a75e9c318dbac3a39402179070943d4bc}{dataU8}(0) & 1 ) ) ;
-382 \}
+371                       \{
+372   \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_aa07610c11963b1db6710e3c76ceea456}{read}();
+373   \textcolor{keywordflow}{return} (! ( \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a75e9c318dbac3a39402179070943d4bc}{dataU8}(0) & 1 ) ) ;
+374 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_a939c5c23077210a2ad851a12694657a4}\label{classFePGA_a939c5c23077210a2ad851a12694657a4}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!i2c\+Read@{i2c\+Read}}
@@ -433,7 +422,7 @@ Referenced by test\+Sequence().
 
 
 
-Definition at line 435 of file Fe\+P\+G\+A.\+cpp.
+Definition at line 427 of file Fe\+P\+G\+A.\+cpp.
 
 
 
@@ -445,31 +434,31 @@ Referenced by i2c\+Read(), and test\+Sequence().
 
 
 \begin{DoxyCode}
-435                           \{
-436   \hyperlink{classObject_aac010553f022165573714b7014a15f0d}{debug}(\textcolor{stringliteral}{"setting position of read i2c protocol"},\textcolor{stringliteral}{"i2c read"});
-437   \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_aa07610c11963b1db6710e3c76ceea456}{read}();
-438   \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \hyperlink{namespaceshell_a5ea2525995cedc3efd69ea8a7f034d1e}{data} = \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a75e9c318dbac3a39402179070943d4bc}{dataU8}()[0];\textcolor{comment}{//WARNING !!!! What Values to put
+427                           \{
+428   \hyperlink{classObject_aac010553f022165573714b7014a15f0d}{debug}(\textcolor{stringliteral}{"setting position of read i2c protocol"},\textcolor{stringliteral}{"i2c read"});
+429   \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_aa07610c11963b1db6710e3c76ceea456}{read}();
+430   \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \hyperlink{namespaceshell_a5ea2525995cedc3efd69ea8a7f034d1e}{data} = \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a75e9c318dbac3a39402179070943d4bc}{dataU8}()[0];\textcolor{comment}{//WARNING !!!! What Values to put
        here ??}
-439   data |= (1 << 2)  ;     
-440   \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,data);
-441   \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
-442     
-443   \hyperlink{classObject_aac010553f022165573714b7014a15f0d}{debug}(\textcolor{stringliteral}{"setting subadd value in the frame"},\textcolor{stringliteral}{"i2c write"});
-444   \hyperlink{classFePGA_adb390ea8de4a6cbce648dc62e4405f32}{m\_masterI2cReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a80bb230b61062b447db5832e43bf7b44}{defDataU8}(2);
-445   \hyperlink{classFePGA_adb390ea8de4a6cbce648dc62e4405f32}{m\_masterI2cReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,\hyperlink{classFePGA_aba8c2c8d8e0d136826b9dd4c2d7c2e90}{m\_i2cSubAdd}&0xFF);\textcolor{comment}{//WARNING !!!! What
+431   data |= (1 << 2)  ;     
+432   \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,data);
+433   \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
+434     
+435   \hyperlink{classObject_aac010553f022165573714b7014a15f0d}{debug}(\textcolor{stringliteral}{"setting subadd value in the frame"},\textcolor{stringliteral}{"i2c write"});
+436   \hyperlink{classFePGA_adb390ea8de4a6cbce648dc62e4405f32}{m\_masterI2cReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a80bb230b61062b447db5832e43bf7b44}{defDataU8}(2);
+437   \hyperlink{classFePGA_adb390ea8de4a6cbce648dc62e4405f32}{m\_masterI2cReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,\hyperlink{classFePGA_aba8c2c8d8e0d136826b9dd4c2d7c2e90}{m\_i2cSubAdd}&0xFF);\textcolor{comment}{//WARNING !!!! What
        Values to put here ??}
-446   \hyperlink{classFePGA_adb390ea8de4a6cbce648dc62e4405f32}{m\_masterI2cReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,(\hyperlink{classFePGA_aba8c2c8d8e0d136826b9dd4c2d7c2e90}{m\_i2cSubAdd}>>8)&0xFF);\textcolor{comment}{//WARNING !!!! What
+438   \hyperlink{classFePGA_adb390ea8de4a6cbce648dc62e4405f32}{m\_masterI2cReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,(\hyperlink{classFePGA_aba8c2c8d8e0d136826b9dd4c2d7c2e90}{m\_i2cSubAdd}>>8)&0xFF);\textcolor{comment}{//WARNING !!!! What
        Values to put here ??}
-447 
-448   \hyperlink{classObject_aac010553f022165573714b7014a15f0d}{debug}(\textcolor{stringliteral}{"i2c write of the register"},\textcolor{stringliteral}{"i2c read"});
-449   \hyperlink{classFePGA_adb390ea8de4a6cbce648dc62e4405f32}{m\_masterI2cReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
-450 
-451   \hyperlink{classObject_aac010553f022165573714b7014a15f0d}{debug}(\textcolor{stringliteral}{"i2c read of the addressed register"},\textcolor{stringliteral}{"i2c read"});
-452   \hyperlink{classFePGA_adb390ea8de4a6cbce648dc62e4405f32}{m\_masterI2cReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a80bb230b61062b447db5832e43bf7b44}{defDataU8}(1);\textcolor{comment}{//WARNING !!!! What Values to put here ??}
-453   \hyperlink{classFePGA_adb390ea8de4a6cbce648dc62e4405f32}{m\_masterI2cReg}->\hyperlink{classIOobject_aa07610c11963b1db6710e3c76ceea456}{read}();
-454 
-455   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
-456 \}
+439 
+440   \hyperlink{classObject_aac010553f022165573714b7014a15f0d}{debug}(\textcolor{stringliteral}{"i2c write of the register"},\textcolor{stringliteral}{"i2c read"});
+441   \hyperlink{classFePGA_adb390ea8de4a6cbce648dc62e4405f32}{m\_masterI2cReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
+442 
+443   \hyperlink{classObject_aac010553f022165573714b7014a15f0d}{debug}(\textcolor{stringliteral}{"i2c read of the addressed register"},\textcolor{stringliteral}{"i2c read"});
+444   \hyperlink{classFePGA_adb390ea8de4a6cbce648dc62e4405f32}{m\_masterI2cReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a80bb230b61062b447db5832e43bf7b44}{defDataU8}(1);\textcolor{comment}{//WARNING !!!! What Values to put here ??}
+445   \hyperlink{classFePGA_adb390ea8de4a6cbce648dc62e4405f32}{m\_masterI2cReg}->\hyperlink{classIOobject_aa07610c11963b1db6710e3c76ceea456}{read}();
+446 
+447   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
+448 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_adf1c43786131d0f500b4662a877229c7}\label{classFePGA_adf1c43786131d0f500b4662a877229c7}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!i2c\+Read@{i2c\+Read}}
@@ -479,7 +468,7 @@ Referenced by i2c\+Read(), and test\+Sequence().
 
 
 
-Definition at line 480 of file Fe\+P\+G\+A.\+cpp.
+Definition at line 472 of file Fe\+P\+G\+A.\+cpp.
 
 
 
@@ -487,11 +476,11 @@ References i2c\+Data(), i2c\+Read(), and set\+I2c\+Sub\+Add().
 
 
 \begin{DoxyCode}
-480                                                         \{
-481   \hyperlink{classFePGA_a37c1ee5bf89667c641f321479697166f}{setI2cSubAdd}(subadd);
-482   \hyperlink{classFePGA_a939c5c23077210a2ad851a12694657a4}{i2cRead}();
-483   \textcolor{keywordflow}{return} \hyperlink{classFePGA_a9c261a09d323c07ec4b9e925d4dfc353}{i2cData}();
-484 \}
+472                                                         \{
+473   \hyperlink{classFePGA_a37c1ee5bf89667c641f321479697166f}{setI2cSubAdd}(subadd);
+474   \hyperlink{classFePGA_a939c5c23077210a2ad851a12694657a4}{i2cRead}();
+475   \textcolor{keywordflow}{return} \hyperlink{classFePGA_a9c261a09d323c07ec4b9e925d4dfc353}{i2cData}();
+476 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_ab51ac1c71e33f7444212de0e89e1f436}\label{classFePGA_ab51ac1c71e33f7444212de0e89e1f436}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!i2c\+Sub\+Add@{i2c\+Sub\+Add}}
@@ -501,7 +490,7 @@ References i2c\+Data(), i2c\+Read(), and set\+I2c\+Sub\+Add().
 
 
 
-Definition at line 425 of file Fe\+P\+G\+A.\+cpp.
+Definition at line 417 of file Fe\+P\+G\+A.\+cpp.
 
 
 
@@ -513,9 +502,9 @@ Referenced by test\+Sequence().
 
 
 \begin{DoxyCode}
-425                                   \{
-426   \textcolor{keywordflow}{return} \hyperlink{classFePGA_aba8c2c8d8e0d136826b9dd4c2d7c2e90}{m\_i2cSubAdd}; 
-427 \}
+417                                   \{
+418   \textcolor{keywordflow}{return} \hyperlink{classFePGA_aba8c2c8d8e0d136826b9dd4c2d7c2e90}{m\_i2cSubAdd}; 
+419 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_a27b9c9bb486cea35b1bbcac5da96f527}\label{classFePGA_a27b9c9bb486cea35b1bbcac5da96f527}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!i2c\+Write@{i2c\+Write}}
@@ -525,7 +514,7 @@ Referenced by test\+Sequence().
 
 
 
-Definition at line 459 of file Fe\+P\+G\+A.\+cpp.
+Definition at line 451 of file Fe\+P\+G\+A.\+cpp.
 
 
 
@@ -537,30 +526,30 @@ Referenced by i2c\+Write(), and test\+Sequence().
 
 
 \begin{DoxyCode}
-459                           \{
-460   \hyperlink{classObject_aac010553f022165573714b7014a15f0d}{debug}(\textcolor{stringliteral}{"setting position of write i2c protocol"},\textcolor{stringliteral}{"i2c write"});
-461   \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_aa07610c11963b1db6710e3c76ceea456}{read}();
-462   \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \hyperlink{namespaceshell_a5ea2525995cedc3efd69ea8a7f034d1e}{data} = \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a75e9c318dbac3a39402179070943d4bc}{dataU8}()[0]; \textcolor{comment}{//WARNING !!!! What Values to
+451                           \{
+452   \hyperlink{classObject_aac010553f022165573714b7014a15f0d}{debug}(\textcolor{stringliteral}{"setting position of write i2c protocol"},\textcolor{stringliteral}{"i2c write"});
+453   \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_aa07610c11963b1db6710e3c76ceea456}{read}();
+454   \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \hyperlink{namespaceshell_a5ea2525995cedc3efd69ea8a7f034d1e}{data} = \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a75e9c318dbac3a39402179070943d4bc}{dataU8}()[0]; \textcolor{comment}{//WARNING !!!! What Values to
        put here ??}
-463   data &= ~(1 << 2)  ; 
-464   \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,data); \textcolor{comment}{//WARNING !!!! What Values to put here ??}
-465   \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
+455   data &= ~(1 << 2)  ; 
+456   \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,data); \textcolor{comment}{//WARNING !!!! What Values to put here ??}
+457   \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
+458 
+459   \hyperlink{classObject_aac010553f022165573714b7014a15f0d}{debug}(\textcolor{stringliteral}{"setting subadd value in the frame"},\textcolor{stringliteral}{"i2c write"});
+460   \hyperlink{classFePGA_adb390ea8de4a6cbce648dc62e4405f32}{m\_masterI2cReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a80bb230b61062b447db5832e43bf7b44}{defDataU8}(3);
+461   \hyperlink{classFePGA_adb390ea8de4a6cbce648dc62e4405f32}{m\_masterI2cReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,\hyperlink{classFePGA_aba8c2c8d8e0d136826b9dd4c2d7c2e90}{m\_i2cSubAdd}&0xFF); \textcolor{comment}{//WARNING !!!! What
+       Values to put here ??}
+462   \hyperlink{classFePGA_adb390ea8de4a6cbce648dc62e4405f32}{m\_masterI2cReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,(\hyperlink{classFePGA_aba8c2c8d8e0d136826b9dd4c2d7c2e90}{m\_i2cSubAdd}>>8)&0xFF); \textcolor{comment}{//WARNING !!!! What
+       Values to put here ??}
+463 
+464   \hyperlink{classObject_aac010553f022165573714b7014a15f0d}{debug}(\textcolor{stringliteral}{"setting buffer value in the frame"},\textcolor{stringliteral}{"i2c write"});
+465   \hyperlink{classFePGA_adb390ea8de4a6cbce648dc62e4405f32}{m\_masterI2cReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(2,\hyperlink{classFePGA_a173664ffd6a73f454ae31f51e689dd16}{m\_i2cBuffer}&0xFF); \textcolor{comment}{//WARNING !!!! What
+       Values to put here ??}
 466 
-467   \hyperlink{classObject_aac010553f022165573714b7014a15f0d}{debug}(\textcolor{stringliteral}{"setting subadd value in the frame"},\textcolor{stringliteral}{"i2c write"});
-468   \hyperlink{classFePGA_adb390ea8de4a6cbce648dc62e4405f32}{m\_masterI2cReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a80bb230b61062b447db5832e43bf7b44}{defDataU8}(3);
-469   \hyperlink{classFePGA_adb390ea8de4a6cbce648dc62e4405f32}{m\_masterI2cReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,\hyperlink{classFePGA_aba8c2c8d8e0d136826b9dd4c2d7c2e90}{m\_i2cSubAdd}&0xFF); \textcolor{comment}{//WARNING !!!! What
-       Values to put here ??}
-470   \hyperlink{classFePGA_adb390ea8de4a6cbce648dc62e4405f32}{m\_masterI2cReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,(\hyperlink{classFePGA_aba8c2c8d8e0d136826b9dd4c2d7c2e90}{m\_i2cSubAdd}>>8)&0xFF); \textcolor{comment}{//WARNING !!!! What
-       Values to put here ??}
-471 
-472   \hyperlink{classObject_aac010553f022165573714b7014a15f0d}{debug}(\textcolor{stringliteral}{"setting buffer value in the frame"},\textcolor{stringliteral}{"i2c write"});
-473   \hyperlink{classFePGA_adb390ea8de4a6cbce648dc62e4405f32}{m\_masterI2cReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(2,\hyperlink{classFePGA_a173664ffd6a73f454ae31f51e689dd16}{m\_i2cBuffer}&0xFF); \textcolor{comment}{//WARNING !!!! What
-       Values to put here ??}
-474 
-475 
-476   \hyperlink{classObject_aac010553f022165573714b7014a15f0d}{debug}(\textcolor{stringliteral}{"i2c write"},\textcolor{stringliteral}{"i2c write"});
-477   \textcolor{keywordflow}{return} \hyperlink{classFePGA_adb390ea8de4a6cbce648dc62e4405f32}{m\_masterI2cReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
-478 \}
+467 
+468   \hyperlink{classObject_aac010553f022165573714b7014a15f0d}{debug}(\textcolor{stringliteral}{"i2c write"},\textcolor{stringliteral}{"i2c write"});
+469   \textcolor{keywordflow}{return} \hyperlink{classFePGA_adb390ea8de4a6cbce648dc62e4405f32}{m\_masterI2cReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
+470 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_a45e1cfdf1f303f3958bf6a83c4e8039b}\label{classFePGA_a45e1cfdf1f303f3958bf6a83c4e8039b}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!i2c\+Write@{i2c\+Write}}
@@ -570,7 +559,7 @@ Referenced by i2c\+Write(), and test\+Sequence().
 
 
 
-Definition at line 487 of file Fe\+P\+G\+A.\+cpp.
+Definition at line 479 of file Fe\+P\+G\+A.\+cpp.
 
 
 
@@ -578,11 +567,11 @@ References i2c\+Write(), set\+I2c\+Buffer(), and set\+I2c\+Sub\+Add().
 
 
 \begin{DoxyCode}
-487                                                                            \{
-488   \hyperlink{classFePGA_a37c1ee5bf89667c641f321479697166f}{setI2cSubAdd}(subadd);
-489   \hyperlink{classFePGA_aaf52ed549f6b79d53f49c3f85c5fbad2}{setI2cBuffer}(value);
-490   \textcolor{keywordflow}{return} \hyperlink{classFePGA_a27b9c9bb486cea35b1bbcac5da96f527}{i2cWrite}();
-491 \}
+479                                                                            \{
+480   \hyperlink{classFePGA_a37c1ee5bf89667c641f321479697166f}{setI2cSubAdd}(subadd);
+481   \hyperlink{classFePGA_aaf52ed549f6b79d53f49c3f85c5fbad2}{setI2cBuffer}(value);
+482   \textcolor{keywordflow}{return} \hyperlink{classFePGA_a27b9c9bb486cea35b1bbcac5da96f527}{i2cWrite}();
+483 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_a5355858b1b8deedcc12acff80f025804}\label{classFePGA_a5355858b1b8deedcc12acff80f025804}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!init@{init}}
@@ -605,7 +594,7 @@ Definition at line 42 of file Fe\+P\+G\+A.\+h.
 
 
 
-References Attrib\+::add(), Make\+R\+A\+M(), Make\+Register(), Object\+::name(), and Status\+Code\+::\+S\+U\+C\+C\+E\+SS.
+References Status\+Code\+::\+S\+U\+C\+C\+E\+SS.
 
 
 \begin{DoxyCode}
@@ -613,15 +602,15 @@ References Attrib\+::add(), Make\+R\+A\+M(), Make\+Register(), Object\+::name(),
 43     \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
 44   \};
 \end{DoxyCode}
-\mbox{\Hypertarget{classFePGA_ac3af50fbe7f8f7a8c6adbcb164cbbf47}\label{classFePGA_ac3af50fbe7f8f7a8c6adbcb164cbbf47}} 
+\mbox{\Hypertarget{classFePGA_a77a1e1c120fca21125b5e43f3679d522}\label{classFePGA_a77a1e1c120fca21125b5e43f3679d522}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!Make\+R\+AM@{Make\+R\+AM}}
 \index{Make\+R\+AM@{Make\+R\+AM}!Fe\+P\+GA@{Fe\+P\+GA}}
 \subsubsection{\texorpdfstring{Make\+R\+A\+M()}{MakeRAM()}}
-{\footnotesize\ttfamily void Fe\+P\+G\+A\+::\+Make\+R\+AM (\begin{DoxyParamCaption}\item[{\hyperlink{classRAM}{R\+AM} $\ast$}]{ram,  }\item[{std\+::string}]{name,  }\item[{unsigned int}]{add }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \hyperlink{classRAM}{R\+AM} $\ast$ Fe\+P\+G\+A\+::\+Make\+R\+AM (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{unsigned int}]{add }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Definition at line 76 of file Fe\+P\+G\+A.\+cpp.
+Definition at line 65 of file Fe\+P\+G\+A.\+cpp.
 
 
 
@@ -629,28 +618,31 @@ References Hierarchy\+::add\+Child(), I\+Oobject\+::io(), m\+\_\+usb, I\+Odata\+
 
 
 
-Referenced by Fe\+P\+G\+A(), and init().
+Referenced by Fe\+P\+G\+A(), and transmit\+Spi().
 
 
 \begin{DoxyCode}
-76                                                              \{
-77 
-78   ram   ->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name});
-79   ram   ->\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{setSize}(16, 1024);        
-80   ram   ->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_af98cbfbc28346ebb9b64ca0203af1463}{setAddress}(\hyperlink{classAttrib_a235f773af19c900264a190b00a3b4ad7}{add});
-81   \hyperlink{classFePGA_afb7947e600a66d914ee524acec3d8b1f}{m\_usb} ->\hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(ram);
-82 
-83 \}
+65                                                    \{
+66 
+67   \hyperlink{classRAM}{RAM}* ram = \textcolor{keyword}{new} \hyperlink{classRAM}{RAM}();
+68   ram   ->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name});
+69   ram   ->\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{setSize}(16, 1024);        
+70   ram   ->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_af98cbfbc28346ebb9b64ca0203af1463}{setAddress}(\hyperlink{classAttrib_a235f773af19c900264a190b00a3b4ad7}{add});
+71   \hyperlink{classFePGA_afb7947e600a66d914ee524acec3d8b1f}{m\_usb} ->\hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(ram);
+72 
+73   \textcolor{keywordflow}{return} ram;
+74 
+75 \}
 \end{DoxyCode}
-\mbox{\Hypertarget{classFePGA_aa58fc0a09d8efa7abc2766bf5bb67327}\label{classFePGA_aa58fc0a09d8efa7abc2766bf5bb67327}} 
+\mbox{\Hypertarget{classFePGA_a83286ca5b6d8dbab0e95903d8f424783}\label{classFePGA_a83286ca5b6d8dbab0e95903d8f424783}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!Make\+Register@{Make\+Register}}
 \index{Make\+Register@{Make\+Register}!Fe\+P\+GA@{Fe\+P\+GA}}
 \subsubsection{\texorpdfstring{Make\+Register()}{MakeRegister()}}
-{\footnotesize\ttfamily void Fe\+P\+G\+A\+::\+Make\+Register (\begin{DoxyParamCaption}\item[{\hyperlink{classRegister}{Register} $\ast$}]{reg,  }\item[{std\+::string}]{name,  }\item[{unsigned int}]{add }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \hyperlink{classRegister}{Register} $\ast$ Fe\+P\+G\+A\+::\+Make\+Register (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{unsigned int}]{add }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Definition at line 66 of file Fe\+P\+G\+A.\+cpp.
+Definition at line 52 of file Fe\+P\+G\+A.\+cpp.
 
 
 
@@ -658,19 +650,22 @@ References Hierarchy\+::add\+Child(), I\+Odata\+::\+Byte, I\+Odata\+::def\+Data\
 
 
 
-Referenced by Fe\+P\+G\+A(), and init().
+Referenced by Fe\+P\+G\+A(), and transmit\+Spi().
 
 
 \begin{DoxyCode}
-66                                                                        \{
-67 
-68   reg   ->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name});
-69   reg   ->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a80bb230b61062b447db5832e43bf7b44}{defDataU8}(2);     
-70   reg   ->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_af98cbfbc28346ebb9b64ca0203af1463}{setAddress}(\hyperlink{classAttrib_a235f773af19c900264a190b00a3b4ad7}{add});
-71   reg   ->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a20f30a9f4673713616447b1b5e9817d5}{setWordSize}(\hyperlink{classIOdata_a37c53ebf4bf8d866aac8af572962a84ca00156611f08eeb1b5d361de809dafb8e}{IOdata::Byte});
-72   \hyperlink{classFePGA_afb7947e600a66d914ee524acec3d8b1f}{m\_usb} ->\hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(reg);
-73 
-74 \}
+52                                                              \{
+53 
+54   \hyperlink{classRegister}{Register}* reg = \textcolor{keyword}{new} \hyperlink{classRegister}{Register}();
+55   reg   ->\hyperlink{classObject_ae30fea75683c2d149b6b6d17c09ecd0c}{setName}(\hyperlink{classObject_a300f4c05dd468c7bb8b3c968868443c1}{name});
+56   reg   ->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a80bb230b61062b447db5832e43bf7b44}{defDataU8}(2);     
+57   reg   ->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_af98cbfbc28346ebb9b64ca0203af1463}{setAddress}(\hyperlink{classAttrib_a235f773af19c900264a190b00a3b4ad7}{add});
+58   reg   ->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a20f30a9f4673713616447b1b5e9817d5}{setWordSize}(\hyperlink{classIOdata_a37c53ebf4bf8d866aac8af572962a84ca00156611f08eeb1b5d361de809dafb8e}{IOdata::Byte});
+59   \hyperlink{classFePGA_afb7947e600a66d914ee524acec3d8b1f}{m\_usb} ->\hyperlink{classHierarchy_ad677774ff38fcb257c04a3a10d471fac}{addChild}(reg);
+60 
+61   \textcolor{keywordflow}{return} reg;
+62 
+63 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_a2bcd2c468fc3e1bcadc9bd8800b325a0}\label{classFePGA_a2bcd2c468fc3e1bcadc9bd8800b325a0}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!master\+I2c\+Reg@{master\+I2c\+Reg}}
@@ -680,7 +675,7 @@ Referenced by Fe\+P\+G\+A(), and init().
 
 
 
-Definition at line 102 of file Fe\+P\+G\+A.\+h.
+Definition at line 99 of file Fe\+P\+G\+A.\+h.
 
 
 
@@ -688,7 +683,7 @@ References m\+\_\+master\+I2c\+Reg.
 
 
 \begin{DoxyCode}
-102 \{ \textcolor{keywordflow}{return} \hyperlink{classFePGA_adb390ea8de4a6cbce648dc62e4405f32}{m\_masterI2cReg}; \}
+99 \{ \textcolor{keywordflow}{return} \hyperlink{classFePGA_adb390ea8de4a6cbce648dc62e4405f32}{m\_masterI2cReg}; \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_abdf7a9dd901351a7eafd748d35172a3c}\label{classFePGA_abdf7a9dd901351a7eafd748d35172a3c}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!reset@{reset}}
@@ -702,7 +697,7 @@ Implements \hyperlink{classElement_a69efffa22f06909d768149715565cb56}{Element}.
 
 
 
-Definition at line 57 of file Fe\+P\+G\+A.\+h.
+Definition at line 54 of file Fe\+P\+G\+A.\+h.
 
 
 
@@ -714,12 +709,12 @@ Referenced by C\+U\+\_\+v1\+::reset().
 
 
 \begin{DoxyCode}
-57                \{
-58     \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"FePGA reset."});
-59     \hyperlink{classFePGA_aeff1a2370237a06b50e1ae23d933c862}{m\_resetReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,1);
-60     \hyperlink{classFePGA_aeff1a2370237a06b50e1ae23d933c862}{m\_resetReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,0);
-61     \hyperlink{classFePGA_aeff1a2370237a06b50e1ae23d933c862}{m\_resetReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
-62   \};
+54                \{
+55     \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"FePGA reset."});
+56     \hyperlink{classFePGA_aeff1a2370237a06b50e1ae23d933c862}{m\_resetReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,1);
+57     \hyperlink{classFePGA_aeff1a2370237a06b50e1ae23d933c862}{m\_resetReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,0);
+58     \hyperlink{classFePGA_aeff1a2370237a06b50e1ae23d933c862}{m\_resetReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
+59   \};
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_a79d95b2fccf4d2ea473e6cf6980d6cf6}\label{classFePGA_a79d95b2fccf4d2ea473e6cf6980d6cf6}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!reset\+Usb@{reset\+Usb}}
@@ -729,7 +724,7 @@ Referenced by C\+U\+\_\+v1\+::reset().
 
 
 
-Definition at line 66 of file Fe\+P\+G\+A.\+h.
+Definition at line 63 of file Fe\+P\+G\+A.\+h.
 
 
 
@@ -737,14 +732,14 @@ References I\+Oobject\+::dump(), Object\+::info(), I\+Oobject\+::io(), m\+\_\+re
 
 
 \begin{DoxyCode}
-66                  \{
-67     \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"Usb TxRx reset."});
-68     \hyperlink{classFePGA_aeff1a2370237a06b50e1ae23d933c862}{m\_resetReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,2);
-69     \hyperlink{classFePGA_aeff1a2370237a06b50e1ae23d933c862}{m\_resetReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,0); 
-70     \hyperlink{classFePGA_aeff1a2370237a06b50e1ae23d933c862}{m\_resetReg}->\hyperlink{classIOobject_a1247f08c84c1732a76caf07e987871e9}{dump}();
-71     \hyperlink{classFePGA_aeff1a2370237a06b50e1ae23d933c862}{m\_resetReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
-72     
-73   \};
+63                  \{
+64     \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"Usb TxRx reset."});
+65     \hyperlink{classFePGA_aeff1a2370237a06b50e1ae23d933c862}{m\_resetReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,2);
+66     \hyperlink{classFePGA_aeff1a2370237a06b50e1ae23d933c862}{m\_resetReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,0); 
+67     \hyperlink{classFePGA_aeff1a2370237a06b50e1ae23d933c862}{m\_resetReg}->\hyperlink{classIOobject_a1247f08c84c1732a76caf07e987871e9}{dump}();
+68     \hyperlink{classFePGA_aeff1a2370237a06b50e1ae23d933c862}{m\_resetReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
+69     
+70   \};
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_a2da860f836e04ecc54056d0bf8cc8f98}\label{classFePGA_a2da860f836e04ecc54056d0bf8cc8f98}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!set\+I2c\+Add@{set\+I2c\+Add}}
@@ -754,7 +749,7 @@ References I\+Oobject\+::dump(), Object\+::info(), I\+Oobject\+::io(), m\+\_\+re
 
 
 
-Definition at line 406 of file Fe\+P\+G\+A.\+cpp.
+Definition at line 398 of file Fe\+P\+G\+A.\+cpp.
 
 
 
@@ -766,12 +761,12 @@ Referenced by test\+Sequence().
 
 
 \begin{DoxyCode}
-406                                                     \{
-407   \hyperlink{classFePGA_af3ef3467ba803e6d3b970ea8982d6246}{m\_addI2cReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,value&0xFF); \textcolor{comment}{//WARNING !!!! What Values to put here ??}
-408   \hyperlink{classFePGA_af3ef3467ba803e6d3b970ea8982d6246}{m\_addI2cReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,(value&0xFF00)>>8); \textcolor{comment}{//WARNING !!!! What Values to put here
+398                                                     \{
+399   \hyperlink{classFePGA_af3ef3467ba803e6d3b970ea8982d6246}{m\_addI2cReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,value&0xFF); \textcolor{comment}{//WARNING !!!! What Values to put here ??}
+400   \hyperlink{classFePGA_af3ef3467ba803e6d3b970ea8982d6246}{m\_addI2cReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,(value&0xFF00)>>8); \textcolor{comment}{//WARNING !!!! What Values to put here
        ??}
-409   \textcolor{keywordflow}{return} \hyperlink{classFePGA_af3ef3467ba803e6d3b970ea8982d6246}{m\_addI2cReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
-410 \}
+401   \textcolor{keywordflow}{return} \hyperlink{classFePGA_af3ef3467ba803e6d3b970ea8982d6246}{m\_addI2cReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
+402 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_aaf52ed549f6b79d53f49c3f85c5fbad2}\label{classFePGA_aaf52ed549f6b79d53f49c3f85c5fbad2}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!set\+I2c\+Buffer@{set\+I2c\+Buffer}}
@@ -781,7 +776,7 @@ Referenced by test\+Sequence().
 
 
 
-Definition at line 387 of file Fe\+P\+G\+A.\+cpp.
+Definition at line 379 of file Fe\+P\+G\+A.\+cpp.
 
 
 
@@ -793,10 +788,10 @@ Referenced by i2c\+Write(), and test\+Sequence().
 
 
 \begin{DoxyCode}
-387                                                        \{
-388   \hyperlink{classFePGA_a173664ffd6a73f454ae31f51e689dd16}{m\_i2cBuffer} = value;
-389   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
-390 \}
+379                                                        \{
+380   \hyperlink{classFePGA_a173664ffd6a73f454ae31f51e689dd16}{m\_i2cBuffer} = value;
+381   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
+382 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_ac9a16de5f01fda901494abe61efb5029}\label{classFePGA_ac9a16de5f01fda901494abe61efb5029}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!set\+I2c\+G\+B\+T\+S\+CA@{set\+I2c\+G\+B\+T\+S\+CA}}
@@ -806,7 +801,7 @@ Referenced by i2c\+Write(), and test\+Sequence().
 
 
 
-Definition at line 370 of file Fe\+P\+G\+A.\+cpp.
+Definition at line 362 of file Fe\+P\+G\+A.\+cpp.
 
 
 
@@ -818,14 +813,14 @@ Referenced by test\+Sequence().
 
 
 \begin{DoxyCode}
-370                                           \{
-371   \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_aa07610c11963b1db6710e3c76ceea456}{read}();
-372   \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \hyperlink{namespaceshell_a5ea2525995cedc3efd69ea8a7f034d1e}{data}=\hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a75e9c318dbac3a39402179070943d4bc}{dataU8}()[0];
-373   \textcolor{keywordflow}{if} (!value) data |= 1  ;
-374   \textcolor{keywordflow}{else}        data &= ~1 ;
-375   \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,data);
-376   \textcolor{keywordflow}{return} \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
-377 \}
+362                                           \{
+363   \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_aa07610c11963b1db6710e3c76ceea456}{read}();
+364   \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \hyperlink{namespaceshell_a5ea2525995cedc3efd69ea8a7f034d1e}{data}=\hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a75e9c318dbac3a39402179070943d4bc}{dataU8}()[0];
+365   \textcolor{keywordflow}{if} (!value) data |= 1  ;
+366   \textcolor{keywordflow}{else}        data &= ~1 ;
+367   \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,data);
+368   \textcolor{keywordflow}{return} \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
+369 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_a37c1ee5bf89667c641f321479697166f}\label{classFePGA_a37c1ee5bf89667c641f321479697166f}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!set\+I2c\+Sub\+Add@{set\+I2c\+Sub\+Add}}
@@ -835,7 +830,7 @@ Referenced by test\+Sequence().
 
 
 
-Definition at line 420 of file Fe\+P\+G\+A.\+cpp.
+Definition at line 412 of file Fe\+P\+G\+A.\+cpp.
 
 
 
@@ -847,10 +842,10 @@ Referenced by i2c\+Read(), i2c\+Write(), and test\+Sequence().
 
 
 \begin{DoxyCode}
-420                                                        \{
-421   \hyperlink{classFePGA_aba8c2c8d8e0d136826b9dd4c2d7c2e90}{m\_i2cSubAdd} = value;
-422   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
-423 \}
+412                                                        \{
+413   \hyperlink{classFePGA_aba8c2c8d8e0d136826b9dd4c2d7c2e90}{m\_i2cSubAdd} = value;
+414   \textcolor{keywordflow}{return} \hyperlink{classStatusCode_a6f565cbeadc76d14c72f047e5e85eb4badd0da38d3ba0d922efd1f4619bc37ad8}{StatusCode::SUCCESS};
+415 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_a2cd235d1971625d6742d4f3107489a07}\label{classFePGA_a2cd235d1971625d6742d4f3107489a07}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!set\+Spi\+Add@{set\+Spi\+Add}}
@@ -860,7 +855,7 @@ Referenced by i2c\+Read(), i2c\+Write(), and test\+Sequence().
 
 
 
-Definition at line 85 of file Fe\+P\+G\+A.\+cpp.
+Definition at line 77 of file Fe\+P\+G\+A.\+cpp.
 
 
 
@@ -872,11 +867,11 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), a
 
 
 \begin{DoxyCode}
-85                                                     \{
-86   \hyperlink{classFePGA_a569eb8410924bec1c8279ca80dc37a6a}{m\_addSpiReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,value&0xFF);
-87   \hyperlink{classFePGA_a569eb8410924bec1c8279ca80dc37a6a}{m\_addSpiReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,(value>>8) & 0xFF);
-88   \textcolor{keywordflow}{return} \hyperlink{classFePGA_a569eb8410924bec1c8279ca80dc37a6a}{m\_addSpiReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
-89 \}
+77                                                     \{
+78   \hyperlink{classFePGA_a569eb8410924bec1c8279ca80dc37a6a}{m\_addSpiReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,value&0xFF);
+79   \hyperlink{classFePGA_a569eb8410924bec1c8279ca80dc37a6a}{m\_addSpiReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,(value>>8) & 0xFF);
+80   \textcolor{keywordflow}{return} \hyperlink{classFePGA_a569eb8410924bec1c8279ca80dc37a6a}{m\_addSpiReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
+81 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_a59b840619341df26918a6c26e8b8e72b}\label{classFePGA_a59b840619341df26918a6c26e8b8e72b}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!set\+Spi\+G\+B\+T\+S\+CA@{set\+Spi\+G\+B\+T\+S\+CA}}
@@ -886,7 +881,7 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), a
 
 
 
-Definition at line 219 of file Fe\+P\+G\+A.\+cpp.
+Definition at line 211 of file Fe\+P\+G\+A.\+cpp.
 
 
 
@@ -898,14 +893,14 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), a
 
 
 \begin{DoxyCode}
-219                                           \{
-220   \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_aa07610c11963b1db6710e3c76ceea456}{read}();
-221   \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \hyperlink{namespaceshell_a5ea2525995cedc3efd69ea8a7f034d1e}{data}=\hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a75e9c318dbac3a39402179070943d4bc}{dataU8}()[0];
-222   \textcolor{keywordflow}{if} (!value) data |=  2 ;
-223   \textcolor{keywordflow}{else}        data &= ~2 ;
-224   \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,data);
-225   \textcolor{keywordflow}{return} \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
-226 \}
+211                                           \{
+212   \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_aa07610c11963b1db6710e3c76ceea456}{read}();
+213   \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \hyperlink{namespaceshell_a5ea2525995cedc3efd69ea8a7f034d1e}{data}=\hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a75e9c318dbac3a39402179070943d4bc}{dataU8}()[0];
+214   \textcolor{keywordflow}{if} (!value) data |=  2 ;
+215   \textcolor{keywordflow}{else}        data &= ~2 ;
+216   \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,data);
+217   \textcolor{keywordflow}{return} \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
+218 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_ad0a662adc6070427f0e1962c20a92de6}\label{classFePGA_ad0a662adc6070427f0e1962c20a92de6}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!set\+Spi\+Sub\+Add@{set\+Spi\+Sub\+Add}}
@@ -915,7 +910,7 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), a
 
 
 
-Definition at line 236 of file Fe\+P\+G\+A.\+cpp.
+Definition at line 228 of file Fe\+P\+G\+A.\+cpp.
 
 
 
@@ -927,9 +922,9 @@ Referenced by test\+Sequence().
 
 
 \begin{DoxyCode}
-236                                                        \{
-237   \hyperlink{classFePGA_a4f2f5d175aeb6dcaf497f81d2f075411}{m\_spiSubAdd} = value & 0x7F;  \textcolor{comment}{//WARNING !!!! What Values to put here ??}
-238 \}
+228                                                        \{
+229   \hyperlink{classFePGA_a4f2f5d175aeb6dcaf497f81d2f075411}{m\_spiSubAdd} = value & 0x7F;  \textcolor{comment}{//WARNING !!!! What Values to put here ??}
+230 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_aa0657c6ef809f3f6b54613f237750cc4}\label{classFePGA_aa0657c6ef809f3f6b54613f237750cc4}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!setup\+Reg@{setup\+Reg}}
@@ -939,7 +934,7 @@ Referenced by test\+Sequence().
 
 
 
-Definition at line 100 of file Fe\+P\+G\+A.\+h.
+Definition at line 97 of file Fe\+P\+G\+A.\+h.
 
 
 
@@ -951,7 +946,7 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
 
 
 \begin{DoxyCode}
-100 \{ \textcolor{keywordflow}{return} \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg};  \}
+97 \{ \textcolor{keywordflow}{return} \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg};  \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_ab54f9f61e87f1cced6c4ba19eb38a848}\label{classFePGA_ab54f9f61e87f1cced6c4ba19eb38a848}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!spi@{spi}}
@@ -961,7 +956,7 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
 
 
 
-Definition at line 85 of file Fe\+P\+G\+A.\+h.
+Definition at line 82 of file Fe\+P\+G\+A.\+h.
 
 
 
@@ -973,9 +968,9 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
 
 
 \begin{DoxyCode}
-85                     \{
-86     \textcolor{keywordflow}{return} \hyperlink{classFePGA_a922a56250b29c9842cdb8095cae8c976}{m\_usbspi};
-87   \}
+82                     \{
+83     \textcolor{keywordflow}{return} \hyperlink{classFePGA_a922a56250b29c9842cdb8095cae8c976}{m\_usbspi};
+84   \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_a721de3fa12e207392cd6156027d2c776}\label{classFePGA_a721de3fa12e207392cd6156027d2c776}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!spi\+Add@{spi\+Add}}
@@ -995,7 +990,7 @@ Referenced by test\+Sequence().
 
 
 
-Definition at line 228 of file Fe\+P\+G\+A.\+cpp.
+Definition at line 220 of file Fe\+P\+G\+A.\+cpp.
 
 
 
@@ -1007,10 +1002,10 @@ Referenced by test\+Sequence().
 
 
 \begin{DoxyCode}
-228                       \{
-229   \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_aa07610c11963b1db6710e3c76ceea456}{read}();
-230   \textcolor{keywordflow}{return} (! ( \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a75e9c318dbac3a39402179070943d4bc}{dataU8}(0) & 2 ) ) ;
-231 \}
+220                       \{
+221   \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_aa07610c11963b1db6710e3c76ceea456}{read}();
+222   \textcolor{keywordflow}{return} (! ( \hyperlink{classFePGA_a0255fe229013986b4387c3a75ddf4e97}{m\_setupReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a75e9c318dbac3a39402179070943d4bc}{dataU8}(0) & 2 ) ) ;
+223 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_a637b93fed75b576a54e723acb36cb6a3}\label{classFePGA_a637b93fed75b576a54e723acb36cb6a3}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!spi\+Read@{spi\+Read}}
@@ -1020,7 +1015,7 @@ Referenced by test\+Sequence().
 
 
 
-Definition at line 110 of file Fe\+P\+G\+A.\+cpp.
+Definition at line 102 of file Fe\+P\+G\+A.\+cpp.
 
 
 
@@ -1032,27 +1027,27 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), C
 
 
 \begin{DoxyCode}
-110                                                                                          \{ 
-111   \textcolor{comment}{// mode block pour read les mots dans un vecteur values}
-112 
-113   \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} val = subadd | 0x80 ; 
-114   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{setSize}(16,1);
-115   \hyperlink{classFePGA_a3ee7f973bfad39b48bbc1a185e9ffaec}{m\_rxSpiFifo}->\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{setSize}(16,nwords+1);
-116   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,(nwords+1)&0xFF);
-117   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,((nwords+1)>>8)&0xFF);
-118   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
-119   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,val);
-120   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,0);
-121   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
-122   \hyperlink{classStatusCode}{StatusCode} status = \hyperlink{classFePGA_a003ee241fb5f32fb3442174db3fe6f49}{m\_transmitSpiReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();  
-123   \textcolor{comment}{//  usleep(100000);}
-124   \hyperlink{classFePGA_a3ee7f973bfad39b48bbc1a185e9ffaec}{m\_rxSpiFifo}->\hyperlink{classIOobject_aa07610c11963b1db6710e3c76ceea456}{read}();
-125   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} w=0; w<nwords; ++w) \{
-126     values[w]=((\hyperlink{classFePGA_a3ee7f973bfad39b48bbc1a185e9ffaec}{m\_rxSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a75e9c318dbac3a39402179070943d4bc}{dataU8}(2*w+2))&0xFF)+
-127       (((\hyperlink{classFePGA_a3ee7f973bfad39b48bbc1a185e9ffaec}{m\_rxSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a75e9c318dbac3a39402179070943d4bc}{dataU8}(2*w+3))&0xFF)<<8);
-128   \}
-129   \textcolor{keywordflow}{return} status;
-130 \}
+102                                                                                          \{ 
+103   \textcolor{comment}{// mode block pour read les mots dans un vecteur values}
+104 
+105   \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} val = subadd | 0x80 ; 
+106   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{setSize}(16,1);
+107   \hyperlink{classFePGA_a3ee7f973bfad39b48bbc1a185e9ffaec}{m\_rxSpiFifo}->\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{setSize}(16,nwords+1);
+108   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,(nwords+1)&0xFF);
+109   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,((nwords+1)>>8)&0xFF);
+110   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
+111   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,val);
+112   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,0);
+113   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
+114   \hyperlink{classStatusCode}{StatusCode} status = \hyperlink{classFePGA_a003ee241fb5f32fb3442174db3fe6f49}{m\_transmitSpiReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();  
+115   \textcolor{comment}{//  usleep(100000);}
+116   \hyperlink{classFePGA_a3ee7f973bfad39b48bbc1a185e9ffaec}{m\_rxSpiFifo}->\hyperlink{classIOobject_aa07610c11963b1db6710e3c76ceea456}{read}();
+117   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} w=0; w<nwords; ++w) \{
+118     values[w]=((\hyperlink{classFePGA_a3ee7f973bfad39b48bbc1a185e9ffaec}{m\_rxSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a75e9c318dbac3a39402179070943d4bc}{dataU8}(2*w+2))&0xFF)+
+119       (((\hyperlink{classFePGA_a3ee7f973bfad39b48bbc1a185e9ffaec}{m\_rxSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a75e9c318dbac3a39402179070943d4bc}{dataU8}(2*w+3))&0xFF)<<8);
+120   \}
+121   \textcolor{keywordflow}{return} status;
+122 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_a41fb676237f8906ec5a0c1b9084ad33e}\label{classFePGA_a41fb676237f8906ec5a0c1b9084ad33e}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!spi\+Read@{spi\+Read}}
@@ -1062,7 +1057,7 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), C
 
 
 
-Definition at line 152 of file Fe\+P\+G\+A.\+cpp.
+Definition at line 144 of file Fe\+P\+G\+A.\+cpp.
 
 
 
@@ -1070,34 +1065,34 @@ References I\+Odata\+::data\+U8(), I\+Oobject\+::io(), m\+\_\+ctrl\+Spi\+Reg, m\
 
 
 \begin{DoxyCode}
-152                                                                   \{ 
-153   \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} val = subadd | 0x80 ; 
-154   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{setSize}(16,1);
-155   \hyperlink{classFePGA_a3ee7f973bfad39b48bbc1a185e9ffaec}{m\_rxSpiFifo}->\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{setSize}(16,nwords+1);
-156   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,(nwords+1)&0xFF);
-157   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,((nwords+1)>>8)&0xFF);
-158   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
-159   \textcolor{comment}{//  m\_ctrlSpiReg->read();}
-160   \textcolor{comment}{//  m\_ctrlSpiReg->dump();}
-161   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,val);
-162   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,0);
-163   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
-164   \hyperlink{classStatusCode}{StatusCode} status = \hyperlink{classFePGA_a003ee241fb5f32fb3442174db3fe6f49}{m\_transmitSpiReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();  
-165   \textcolor{comment}{//  usleep(100000);}
-166   \hyperlink{classFePGA_a3ee7f973bfad39b48bbc1a185e9ffaec}{m\_rxSpiFifo}->\hyperlink{classIOobject_aa07610c11963b1db6710e3c76ceea456}{read}();
-167   PyObject* values = PyList\_New(0);
-168   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} w=0; w<nwords; ++w) \{
-169     \textcolor{comment}{//    m\_rxSpiFifo->dump();}
-170    PyList\_Append(values,
-171                  PyInt\_FromLong( (\textcolor{keywordtype}{long} \textcolor{keywordtype}{int}) (
-172                                              ((\hyperlink{classFePGA_a3ee7f973bfad39b48bbc1a185e9ffaec}{m\_rxSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->
+144                                                                   \{ 
+145   \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} val = subadd | 0x80 ; 
+146   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{setSize}(16,1);
+147   \hyperlink{classFePGA_a3ee7f973bfad39b48bbc1a185e9ffaec}{m\_rxSpiFifo}->\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{setSize}(16,nwords+1);
+148   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,(nwords+1)&0xFF);
+149   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,((nwords+1)>>8)&0xFF);
+150   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
+151   \textcolor{comment}{//  m\_ctrlSpiReg->read();}
+152   \textcolor{comment}{//  m\_ctrlSpiReg->dump();}
+153   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,val);
+154   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,0);
+155   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
+156   \hyperlink{classStatusCode}{StatusCode} status = \hyperlink{classFePGA_a003ee241fb5f32fb3442174db3fe6f49}{m\_transmitSpiReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();  
+157   \textcolor{comment}{//  usleep(100000);}
+158   \hyperlink{classFePGA_a3ee7f973bfad39b48bbc1a185e9ffaec}{m\_rxSpiFifo}->\hyperlink{classIOobject_aa07610c11963b1db6710e3c76ceea456}{read}();
+159   PyObject* values = PyList\_New(0);
+160   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} w=0; w<nwords; ++w) \{
+161     \textcolor{comment}{//    m\_rxSpiFifo->dump();}
+162    PyList\_Append(values,
+163                  PyInt\_FromLong( (\textcolor{keywordtype}{long} \textcolor{keywordtype}{int}) (
+164                                              ((\hyperlink{classFePGA_a3ee7f973bfad39b48bbc1a185e9ffaec}{m\_rxSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->
       \hyperlink{classIOdata_a75e9c318dbac3a39402179070943d4bc}{dataU8}(2*w+2))&0xFF) + 
-173                                              (((\hyperlink{classFePGA_a3ee7f973bfad39b48bbc1a185e9ffaec}{m\_rxSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->
+165                                              (((\hyperlink{classFePGA_a3ee7f973bfad39b48bbc1a185e9ffaec}{m\_rxSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->
       \hyperlink{classIOdata_a75e9c318dbac3a39402179070943d4bc}{dataU8}(2*w+3))&0xFF)<<8)
-174                                              )));
-175   \}
-176   \textcolor{keywordflow}{return} values;
-177 \} 
+166                                              )));
+167   \}
+168   \textcolor{keywordflow}{return} values;
+169 \} 
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_a165f5b70ad30af106ecf9a3ace71d4eb}\label{classFePGA_a165f5b70ad30af106ecf9a3ace71d4eb}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!spi\+Read@{spi\+Read}}
@@ -1107,7 +1102,7 @@ References I\+Odata\+::data\+U8(), I\+Oobject\+::io(), m\+\_\+ctrl\+Spi\+Reg, m\
 
 
 
-Definition at line 195 of file Fe\+P\+G\+A.\+cpp.
+Definition at line 187 of file Fe\+P\+G\+A.\+cpp.
 
 
 
@@ -1115,24 +1110,24 @@ References I\+Odata\+::data\+U8(), I\+Oobject\+::io(), m\+\_\+ctrl\+Spi\+Reg, m\
 
 
 \begin{DoxyCode}
-195                                                \{
-196   \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} val = subadd | 0x80 ; 
-197   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{setSize}(16,1);
-198   \hyperlink{classFePGA_a3ee7f973bfad39b48bbc1a185e9ffaec}{m\_rxSpiFifo}->\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{setSize}(16,1);
-199   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,1);
-200   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,0);
-201   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
-202   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,val);
-203   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,0);
-204   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
-205   \textcolor{comment}{//  m\_txSpiFifo->dump();}
-206   \hyperlink{classStatusCode}{StatusCode} status = \hyperlink{classFePGA_a003ee241fb5f32fb3442174db3fe6f49}{m\_transmitSpiReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();  
-207   \textcolor{comment}{//  usleep(100000);}
-208   \hyperlink{classFePGA_a3ee7f973bfad39b48bbc1a185e9ffaec}{m\_rxSpiFifo}->\hyperlink{classIOobject_aa07610c11963b1db6710e3c76ceea456}{read}();
-209   \textcolor{comment}{//  m\_rxSpiFifo->dump();}
-210   \textcolor{keywordflow}{return}   ((\hyperlink{classFePGA_a3ee7f973bfad39b48bbc1a185e9ffaec}{m\_rxSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a75e9c318dbac3a39402179070943d4bc}{dataU8}(0))&0xFF) + (((
+187                                                \{
+188   \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} val = subadd | 0x80 ; 
+189   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{setSize}(16,1);
+190   \hyperlink{classFePGA_a3ee7f973bfad39b48bbc1a185e9ffaec}{m\_rxSpiFifo}->\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{setSize}(16,1);
+191   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,1);
+192   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,0);
+193   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
+194   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,val);
+195   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,0);
+196   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
+197   \textcolor{comment}{//  m\_txSpiFifo->dump();}
+198   \hyperlink{classStatusCode}{StatusCode} status = \hyperlink{classFePGA_a003ee241fb5f32fb3442174db3fe6f49}{m\_transmitSpiReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();  
+199   \textcolor{comment}{//  usleep(100000);}
+200   \hyperlink{classFePGA_a3ee7f973bfad39b48bbc1a185e9ffaec}{m\_rxSpiFifo}->\hyperlink{classIOobject_aa07610c11963b1db6710e3c76ceea456}{read}();
+201   \textcolor{comment}{//  m\_rxSpiFifo->dump();}
+202   \textcolor{keywordflow}{return}   ((\hyperlink{classFePGA_a3ee7f973bfad39b48bbc1a185e9ffaec}{m\_rxSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a75e9c318dbac3a39402179070943d4bc}{dataU8}(0))&0xFF) + (((
       \hyperlink{classFePGA_a3ee7f973bfad39b48bbc1a185e9ffaec}{m\_rxSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a75e9c318dbac3a39402179070943d4bc}{dataU8}(1))&0xFF)<<8);
-211 \} 
+203 \} 
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_a6637adb1cd981cf398ea9f1c3feafe83}\label{classFePGA_a6637adb1cd981cf398ea9f1c3feafe83}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!spi\+Sub\+Add@{spi\+Sub\+Add}}
@@ -1142,7 +1137,7 @@ References I\+Odata\+::data\+U8(), I\+Oobject\+::io(), m\+\_\+ctrl\+Spi\+Reg, m\
 
 
 
-Definition at line 240 of file Fe\+P\+G\+A.\+cpp.
+Definition at line 232 of file Fe\+P\+G\+A.\+cpp.
 
 
 
@@ -1154,9 +1149,9 @@ Referenced by test\+Sequence().
 
 
 \begin{DoxyCode}
-240                                   \{
-241   \textcolor{keywordflow}{return} ( \hyperlink{classFePGA_a4f2f5d175aeb6dcaf497f81d2f075411}{m\_spiSubAdd} ) ;
-242 \}
+232                                   \{
+233   \textcolor{keywordflow}{return} ( \hyperlink{classFePGA_a4f2f5d175aeb6dcaf497f81d2f075411}{m\_spiSubAdd} ) ;
+234 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_ac3e8b10fc267b44fef1e651cab77d2ab}\label{classFePGA_ac3e8b10fc267b44fef1e651cab77d2ab}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!spi\+Write@{spi\+Write}}
@@ -1166,7 +1161,7 @@ Referenced by test\+Sequence().
 
 
 
-Definition at line 92 of file Fe\+P\+G\+A.\+cpp.
+Definition at line 84 of file Fe\+P\+G\+A.\+cpp.
 
 
 
@@ -1178,23 +1173,23 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), a
 
 
 \begin{DoxyCode}
-92                                                                                         \{
-93   \textcolor{comment}{// mode block pour write les mots dans un vecteur values}
-94 
-95   \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} val = subadd & 0x7F; 
-96   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{setSize}(16,nwords+1);
-97   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,nwords&0xFF);
-98   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,(nwords>>8)&0xFF);
-99   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
-100   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,val);
-101   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,0);
-102   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} w=0; w<nwords; ++w) \{
-103     \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(2*w+2,values[w]&0xFF);
-104     \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(2*w+3,(values[w]>>8)&0xFF);
-105   \}
-106   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
-107   \textcolor{keywordflow}{return} \hyperlink{classFePGA_a003ee241fb5f32fb3442174db3fe6f49}{m\_transmitSpiReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
-108 \}
+84                                                                                         \{
+85   \textcolor{comment}{// mode block pour write les mots dans un vecteur values}
+86 
+87   \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} val = subadd & 0x7F; 
+88   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{setSize}(16,nwords+1);
+89   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,nwords&0xFF);
+90   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,(nwords>>8)&0xFF);
+91   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
+92   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,val);
+93   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,0);
+94   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} w=0; w<nwords; ++w) \{
+95     \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(2*w+2,values[w]&0xFF);
+96     \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(2*w+3,(values[w]>>8)&0xFF);
+97   \}
+98   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
+99   \textcolor{keywordflow}{return} \hyperlink{classFePGA_a003ee241fb5f32fb3442174db3fe6f49}{m\_transmitSpiReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
+100 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_aa6aebdd1ccb236f9009a29243f3c7c2b}\label{classFePGA_aa6aebdd1ccb236f9009a29243f3c7c2b}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!spi\+Write@{spi\+Write}}
@@ -1204,7 +1199,7 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E(), a
 
 
 
-Definition at line 132 of file Fe\+P\+G\+A.\+cpp.
+Definition at line 124 of file Fe\+P\+G\+A.\+cpp.
 
 
 
@@ -1212,25 +1207,25 @@ References I\+Oobject\+::io(), m\+\_\+ctrl\+Spi\+Reg, m\+\_\+transmit\+Spi\+Reg,
 
 
 \begin{DoxyCode}
-132                                                                                    \{
-133   \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} val = subadd & 0x7F; 
-134   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{setSize}(16,nwords+1);
-135   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,nwords&0xFF);
-136   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,(nwords>>8)&0xFF);
-137   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
-138   \textcolor{comment}{//  m\_ctrlSpiReg->read();}
-139   \textcolor{comment}{//  m\_ctrlSpiReg->dump();}
-140   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,val);
-141   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,0);
-142   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} w=0; w<nwords; ++w) \{
-143     val = PyInt\_AsLong(PyList\_GetItem(value,w));
-144     \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(2*w+2,val&0xFF);
-145     \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(2*w+3,(val>>8)&0xFF);
-146   \}
-147   \textcolor{comment}{//  m\_txSpiFifo->dump();}
-148   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
-149   \textcolor{keywordflow}{return} \hyperlink{classFePGA_a003ee241fb5f32fb3442174db3fe6f49}{m\_transmitSpiReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
-150 \}
+124                                                                                    \{
+125   \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} val = subadd & 0x7F; 
+126   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{setSize}(16,nwords+1);
+127   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,nwords&0xFF);
+128   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,(nwords>>8)&0xFF);
+129   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
+130   \textcolor{comment}{//  m\_ctrlSpiReg->read();}
+131   \textcolor{comment}{//  m\_ctrlSpiReg->dump();}
+132   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,val);
+133   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,0);
+134   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} w=0; w<nwords; ++w) \{
+135     val = PyInt\_AsLong(PyList\_GetItem(value,w));
+136     \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(2*w+2,val&0xFF);
+137     \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(2*w+3,(val>>8)&0xFF);
+138   \}
+139   \textcolor{comment}{//  m\_txSpiFifo->dump();}
+140   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
+141   \textcolor{keywordflow}{return} \hyperlink{classFePGA_a003ee241fb5f32fb3442174db3fe6f49}{m\_transmitSpiReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
+142 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_ab41df6b1d6a147fbf5611e54058f902d}\label{classFePGA_ab41df6b1d6a147fbf5611e54058f902d}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!spi\+Write@{spi\+Write}}
@@ -1240,7 +1235,7 @@ References I\+Oobject\+::io(), m\+\_\+ctrl\+Spi\+Reg, m\+\_\+transmit\+Spi\+Reg,
 
 
 
-Definition at line 179 of file Fe\+P\+G\+A.\+cpp.
+Definition at line 171 of file Fe\+P\+G\+A.\+cpp.
 
 
 
@@ -1248,21 +1243,21 @@ References I\+Oobject\+::io(), m\+\_\+ctrl\+Spi\+Reg, m\+\_\+transmit\+Spi\+Reg,
 
 
 \begin{DoxyCode}
-179                                                                  \{
-180   \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} val = subadd & 0x7F;
-181   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{setSize}(16,2);
-182   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,1);
-183   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,0);
-184   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
-185   \textcolor{comment}{//  m\_ctrlSpiReg->read();}
-186   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,val);
-187   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,0);
-188   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(2,value&0xFF);
-189   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(3,(value>>8)&0xFF);
-190   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
-191   \textcolor{comment}{//  m\_txSpiFifo->dump();}
-192   \textcolor{keywordflow}{return} \hyperlink{classFePGA_a003ee241fb5f32fb3442174db3fe6f49}{m\_transmitSpiReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
-193 \}
+171                                                                  \{
+172   \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} val = subadd & 0x7F;
+173   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classRAM_adcf2ebb12f1a3e833ce7d5a33670c29d}{setSize}(16,2);
+174   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,1);
+175   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,0);
+176   \hyperlink{classFePGA_a8fb76733a688dff6d91892a49a97a21f}{m\_ctrlSpiReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
+177   \textcolor{comment}{//  m\_ctrlSpiReg->read();}
+178   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(0,val);
+179   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(1,0);
+180   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(2,value&0xFF);
+181   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_af04fb94137c3d86849f478ac5afab5d1}{io}()->\hyperlink{classIOdata_a6c4fb2f2af01889ada889c2b7aceb24d}{setU8}(3,(value>>8)&0xFF);
+182   \hyperlink{classFePGA_a5b3e4deb73a882e6f044450d8a733558}{m\_txSpiFifo}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
+183   \textcolor{comment}{//  m\_txSpiFifo->dump();}
+184   \textcolor{keywordflow}{return} \hyperlink{classFePGA_a003ee241fb5f32fb3442174db3fe6f49}{m\_transmitSpiReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
+185 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_a3d5a3231a960cd451bb37bb9120422e9}\label{classFePGA_a3d5a3231a960cd451bb37bb9120422e9}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!test\+Sequence@{test\+Sequence}}
@@ -1272,7 +1267,7 @@ References I\+Oobject\+::io(), m\+\_\+ctrl\+Spi\+Reg, m\+\_\+transmit\+Spi\+Reg,
 
 
 
-Definition at line 105 of file Fe\+P\+G\+A.\+h.
+Definition at line 102 of file Fe\+P\+G\+A.\+h.
 
 
 
@@ -1280,10 +1275,10 @@ References i2c\+Add(), i2c\+Buffer(), i2c\+Data(), i2c\+G\+B\+T\+S\+C\+A(), i2c\
 
 
 \begin{DoxyCode}
-105                             \{
-106     \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"FePGA testSequence."});
-107     \textcolor{keywordflow}{return} \hyperlink{classFePGA_a67bc3c8f923b673100974fd86096393e}{m\_testSeqReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
-108   \};
+102                             \{
+103     \hyperlink{classObject_a644fd329ea4cb85f54fa6846484b84a8}{info}(\textcolor{stringliteral}{"FePGA testSequence."});
+104     \textcolor{keywordflow}{return} \hyperlink{classFePGA_a67bc3c8f923b673100974fd86096393e}{m\_testSeqReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
+105   \};
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_ac7698a9f59f7290a6bb648030976597f}\label{classFePGA_ac7698a9f59f7290a6bb648030976597f}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!transmit\+Spi@{transmit\+Spi}}
@@ -1293,17 +1288,17 @@ References i2c\+Add(), i2c\+Buffer(), i2c\+Data(), i2c\+G\+B\+T\+S\+C\+A(), i2c\
 
 
 
-Definition at line 166 of file Fe\+P\+G\+A.\+h.
+Definition at line 163 of file Fe\+P\+G\+A.\+h.
 
 
 
-References m\+\_\+transmit\+Spi\+Reg, and I\+Oobject\+::write().
+References Attrib\+::add(), m\+\_\+transmit\+Spi\+Reg, Make\+R\+A\+M(), Make\+Register(), Object\+::name(), and I\+Oobject\+::write().
 
 
 \begin{DoxyCode}
-166                            \{
-167     \textcolor{keywordflow}{return} \hyperlink{classFePGA_a003ee241fb5f32fb3442174db3fe6f49}{m\_transmitSpiReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
-168   \}
+163                            \{
+164     \textcolor{keywordflow}{return} \hyperlink{classFePGA_a003ee241fb5f32fb3442174db3fe6f49}{m\_transmitSpiReg}->\hyperlink{classIOobject_a9f6984bc9f0fadcf800f1be2523ac744}{write}();
+165   \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_ad23605ae261d2aa0562cbb732661b2c4}\label{classFePGA_ad23605ae261d2aa0562cbb732661b2c4}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!update@{update}}
@@ -1317,7 +1312,7 @@ Implements \hyperlink{classElement_a4e6c83efae95616ebddd03c793a26661}{Element}.
 
 
 
-Definition at line 96 of file Fe\+P\+G\+A.\+h.
+Definition at line 93 of file Fe\+P\+G\+A.\+h.
 
 
 
@@ -1325,8 +1320,8 @@ Referenced by App\+Frame.\+App\+Frame\+::delete\+Hardware(), Conf\+Frame.\+Conf\
 
 
 \begin{DoxyCode}
-96                  \{
-97   \};
+93                  \{
+94   \};
 \end{DoxyCode}
 \mbox{\Hypertarget{classFePGA_a4a7889dc3c2f88f623876ca475e66410}\label{classFePGA_a4a7889dc3c2f88f623876ca475e66410}} 
 \index{Fe\+P\+GA@{Fe\+P\+GA}!usb@{usb}}
@@ -1336,7 +1331,7 @@ Referenced by App\+Frame.\+App\+Frame\+::delete\+Hardware(), Conf\+Frame.\+Conf\
 
 
 
-Definition at line 77 of file Fe\+P\+G\+A.\+h.
+Definition at line 74 of file Fe\+P\+G\+A.\+h.
 
 
 
@@ -1348,9 +1343,9 @@ Referenced by B\+O\+O\+S\+T\+\_\+\+P\+Y\+T\+H\+O\+N\+\_\+\+M\+O\+D\+U\+L\+E().
 
 
 \begin{DoxyCode}
-77                          \{
-78     \textcolor{keywordflow}{return} \hyperlink{classFePGA_afb7947e600a66d914ee524acec3d8b1f}{m\_usb};
-79   \}
+74                          \{
+75     \textcolor{keywordflow}{return} \hyperlink{classFePGA_afb7947e600a66d914ee524acec3d8b1f}{m\_usb};
+76   \}
 \end{DoxyCode}
 
 

@@ -290,7 +290,7 @@ var searchData=
   ['specsinterface',['SpecsInterface',['../classSpecsInterface.html',1,'SpecsInterface'],['../classSpecsInterface.html#a33b267de6a6447965f068adea3aba138',1,'SpecsInterface::SpecsInterface()']]],
   ['specsinterface_2ecpp',['SpecsInterface.cpp',['../SpecsInterface_8cpp.html',1,'']]],
   ['specsinterface_2eh',['SpecsInterface.h',['../SpecsInterface_8h.html',1,'']]],
-  ['specsmaster',['SpecsMaster',['../classSpecsMaster.html',1,'SpecsMaster'],['../classSpecsInterface.html#a3d497c965fb6ec06b49a54b7901a22b2',1,'SpecsInterface::specsMaster()'],['../classSpecsMaster.html#a2d24cd3fc33848913b0da110b2a804cb',1,'SpecsMaster::specsMaster()'],['../classSpecsMaster.html#a39e073d13593ceab986026816aa5a651',1,'SpecsMaster::SpecsMaster()']]],
+  ['specsmaster',['SpecsMaster',['../classSpecsMaster.html',1,'SpecsMaster'],['../classSpecsMaster.html#a39e073d13593ceab986026816aa5a651',1,'SpecsMaster::SpecsMaster()'],['../classSpecsInterface.html#a3d497c965fb6ec06b49a54b7901a22b2',1,'SpecsInterface::specsMaster()'],['../classSpecsMaster.html#a2d24cd3fc33848913b0da110b2a804cb',1,'SpecsMaster::specsMaster()']]],
   ['specsmaster_2ecpp',['SpecsMaster.cpp',['../SpecsMaster_8cpp.html',1,'']]],
   ['specsmaster_2eh',['SpecsMaster.h',['../SpecsMaster_8h.html',1,'']]],
   ['specsmasterdevice',['specsMasterDevice',['../classSpecsInterface.html#aa8aeaa74acf2c913905ea996d153a6ef',1,'SpecsInterface::specsMasterDevice()'],['../classSpecsMaster.html#a960d149cda43c1f5744cbb057cb75d1f',1,'SpecsMaster::specsMasterDevice()']]],

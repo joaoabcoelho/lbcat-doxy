@@ -237,7 +237,7 @@ var searchData=
   ['specsglue',['SpecsGlue',['../classSpecsGlue.html#a156288b9b0cd7768aef82e6207116bba',1,'SpecsGlue']]],
   ['specsi2c',['SpecsI2c',['../classSpecsI2c.html#a636725670b2007c82cf7d7f86412b286',1,'SpecsI2c::SpecsI2c()'],['../classSpecsI2c.html#af6d0f5efd7a370d9cd0cd8f90371413e',1,'SpecsI2c::SpecsI2c(unsigned char i)']]],
   ['specsinterface',['SpecsInterface',['../classSpecsInterface.html#a33b267de6a6447965f068adea3aba138',1,'SpecsInterface']]],
-  ['specsmaster',['specsMaster',['../classSpecsInterface.html#a3d497c965fb6ec06b49a54b7901a22b2',1,'SpecsInterface::specsMaster()'],['../classSpecsMaster.html#a2d24cd3fc33848913b0da110b2a804cb',1,'SpecsMaster::specsMaster()'],['../classSpecsMaster.html#a39e073d13593ceab986026816aa5a651',1,'SpecsMaster::SpecsMaster()']]],
+  ['specsmaster',['SpecsMaster',['../classSpecsMaster.html#a39e073d13593ceab986026816aa5a651',1,'SpecsMaster::SpecsMaster()'],['../classSpecsInterface.html#a3d497c965fb6ec06b49a54b7901a22b2',1,'SpecsInterface::specsMaster()'],['../classSpecsMaster.html#a2d24cd3fc33848913b0da110b2a804cb',1,'SpecsMaster::specsMaster()']]],
   ['specsmasterdevice',['specsMasterDevice',['../classSpecsInterface.html#aa8aeaa74acf2c913905ea996d153a6ef',1,'SpecsInterface::specsMasterDevice()'],['../classSpecsMaster.html#a960d149cda43c1f5744cbb057cb75d1f',1,'SpecsMaster::specsMasterDevice()']]],
   ['specsmezzanine',['SpecsMezzanine',['../classSpecsMezzanine.html#af2540a0c20cfd5d36d4de0b0a8428709',1,'SpecsMezzanine']]],
   ['specsparallelbus',['SpecsParallelBus',['../classSpecsParallelBus.html#a0524178fd48219de7af182202ccc0d8c',1,'SpecsParallelBus']]],
